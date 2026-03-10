@@ -1,0 +1,212 @@
+[
+  {
+    "id": "asteroid-collision",
+    "name": "Asteroid Collision",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Asteroid Collision\n\ndef solve():\n    pass\n",
+    "go_template": "// Asteroid Collision\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "car-fleet",
+    "name": "Car Fleet",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Car Fleet\n\ndef solve():\n    pass\n",
+    "go_template": "// Car Fleet\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "crawler-log-folder",
+    "name": "Crawler Log Folder",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Crawler Log Folder\n\ndef solve():\n    pass\n",
+    "go_template": "// Crawler Log Folder\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "daily-temperatures",
+    "name": "Daily Temperatures",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Daily Temperatures\n\ndef solve():\n    pass\n",
+    "go_template": "// Daily Temperatures\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "evaluate-reverse-polish-notation",
+    "name": "Evaluate Reverse Polish Notation",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Evaluate Reverse Polish Notation\n\ndef solve():\n    pass\n",
+    "go_template": "// Evaluate Reverse Polish Notation\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "generate-parentheses",
+    "name": "Generate Parentheses",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Generate Parentheses\n\ndef solve():\n    pass\n",
+    "go_template": "// Generate Parentheses\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "implement-queue-using-stacks",
+    "name": "Implement Queue Using Stacks",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Implement Queue Using Stacks\n\ndef solve():\n    pass\n",
+    "go_template": "// Implement Queue Using Stacks\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "largest-rectangle-in-histogram",
+    "name": "Largest Rectangle In Histogram",
+    "difficulty": "Hard",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Largest Rectangle In Histogram\n\ndef solve():\n    pass\n",
+    "go_template": "// Largest Rectangle In Histogram\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "maximal-rectangle",
+    "name": "Maximal Rectangle",
+    "difficulty": "Hard",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Maximal Rectangle\n\ndef solve():\n    pass\n",
+    "go_template": "// Maximal Rectangle\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "min-stack",
+    "name": "Min Stack",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Min Stack\n\ndef solve():\n    pass\n",
+    "go_template": "// Min Stack\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "next-greater-element-ii",
+    "name": "Next Greater Element Ii",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Next Greater Element Ii\n\ndef solve():\n    pass\n",
+    "go_template": "// Next Greater Element Ii\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "next-smaller",
+    "name": "Next Smaller",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Next Smaller\n\ndef solve():\n    pass\n",
+    "go_template": "// Next Smaller\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "number-of-nges-to-the-right",
+    "name": "Number Of Nges To The Right",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Number Of Nges To The Right\n\ndef solve():\n    pass\n",
+    "go_template": "// Number Of Nges To The Right\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "online-stock-span",
+    "name": "Online Stock Span",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Online Stock Span\n\ndef solve():\n    pass\n",
+    "go_template": "// Online Stock Span\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "remove-k-digits",
+    "name": "Remove K Digits",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Remove K Digits\n\ndef solve():\n    pass\n",
+    "go_template": "// Remove K Digits\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "stack-using-linkedlist",
+    "name": "Stack Using Linkedlist",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Stack Using Linkedlist\n\ndef solve():\n    pass\n",
+    "go_template": "// Stack Using Linkedlist\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "stack-using-one-queue",
+    "name": "Stack Using One Queue",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Stack Using One Queue\n\ndef solve():\n    pass\n",
+    "go_template": "// Stack Using One Queue\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "stack-using-two-queue",
+    "name": "Stack Using Two Queue",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Stack Using Two Queue\n\ndef solve():\n    pass\n",
+    "go_template": "// Stack Using Two Queue\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "sum-of-subarray-minimums",
+    "name": "Sum Of Subarray Minimums",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Sum Of Subarray Minimums\n\ndef solve():\n    pass\n",
+    "go_template": "// Sum Of Subarray Minimums\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "sum-of-subarray-ranges",
+    "name": "Sum Of Subarray Ranges",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Sum Of Subarray Ranges\n\ndef solve():\n    pass\n",
+    "go_template": "// Sum Of Subarray Ranges\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "valid-parentheses",
+    "name": "Valid Parentheses",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Valid Parentheses\n\ndef solve():\n    pass\n",
+    "go_template": "// Valid Parentheses\n\npackage main\n\nfunc solve() {\n\n}\n"
+  }
+]

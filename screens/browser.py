@@ -7,8 +7,7 @@ from textual.widgets import Header, Footer, Static, ListView
 from textual.screen import Screen
 
 from data import (
-    load_sheet, load_enriched, load_progress, slug_from_name,
-    make_stub_problem, short_topic, get_solution_path,
+    load_sheet, load_progress, get_problem, short_topic, get_solution_path,
 )
 from widgets import TopicItem, ProblemItem
 
@@ -72,7 +71,6 @@ class ProblemBrowser(Screen):
         self.topic_keys = list(self.all_topics.keys())
         self.current_topic = None
         self.difficulty_filter = None
-        self._enriched_cache: dict[str, dict[str, dict] | None] = {}
         self._problem_list_index: int | None = None
 
     def compose(self) -> ComposeResult:
@@ -90,36 +88,20 @@ class ProblemBrowser(Screen):
 
     # ─── Data helpers ───
 
-    def _get_enriched(self, topic_key: str) -> dict[str, dict] | None:
-        if topic_key not in self._enriched_cache:
-            self._enriched_cache[topic_key] = load_enriched(topic_key)
-        return self._enriched_cache[topic_key]
-
-    def _get_problem_obj(self, topic_key: str, name: str) -> dict:
-        enriched = self._get_enriched(topic_key)
-        if enriched:
-            slug = slug_from_name(name)
-            if slug in enriched:
-                return enriched[slug]
-            for p in enriched.values():
-                if slug_from_name(p.get("name", "")) == slug:
-                    return p
-        return make_stub_problem(name, topic_key)
-
-    def _filtered_names(self, topic_key: str) -> list[str]:
-        names = self.all_topics.get(topic_key, [])
+    def _filtered_ids(self, topic_key: str) -> list[str]:
+        """Return problem IDs for a topic, filtered by current difficulty."""
+        ids = self.all_topics.get(topic_key, [])
         if not self.difficulty_filter:
-            return names
+            return ids
         result = []
-        for n in names:
-            pid = slug_from_name(n)
+        for pid in ids:
             if self.difficulty_filter == "Bookmarked":
                 if self.progress.get(pid, {}).get("bookmarked", False):
-                    result.append(n)
+                    result.append(pid)
             else:
-                prob = self._get_problem_obj(topic_key, n)
+                prob = get_problem(pid)
                 if prob.get("difficulty") == self.difficulty_filter:
-                    result.append(n)
+                    result.append(pid)
         return result
 
     # ─── Build UI ───
@@ -141,13 +123,13 @@ class ProblemBrowser(Screen):
     def _build_topic_items(self) -> list[TopicItem]:
         items = []
         for key in self.topic_keys:
-            filtered = self._filtered_names(key)
+            filtered = self._filtered_ids(key)
             if self.difficulty_filter and not filtered:
                 continue
             total = len(filtered)
             done = sum(
-                1 for n in filtered
-                if self.progress.get(slug_from_name(n), {}).get("solved", False)
+                1 for pid in filtered
+                if self.progress.get(pid, {}).get("solved", False)
             )
             items.append(TopicItem(key, total, done))
         return items
@@ -156,9 +138,9 @@ class ProblemBrowser(Screen):
         total = sum(len(v) for v in self.all_topics.values())
         done = sum(
             1
-            for names in self.all_topics.values()
-            for n in names
-            if self.progress.get(slug_from_name(n), {}).get("solved", False)
+            for ids in self.all_topics.values()
+            for pid in ids
+            if self.progress.get(pid, {}).get("solved", False)
         )
         pct = int(done / total * 100) if total > 0 else 0
         filled = pct // 5
@@ -174,9 +156,8 @@ class ProblemBrowser(Screen):
             return
         problem_list = self.query_one("#problem-list", ListView)
         problem_list.clear()
-        for name in self._filtered_names(self.current_topic):
-            prob = self._get_problem_obj(self.current_topic, name)
-            pid = prob["id"]
+        for pid in self._filtered_ids(self.current_topic):
+            prob = get_problem(pid)
             solved = self.progress.get(pid, {}).get("solved", False)
             bookmarked = self.progress.get(pid, {}).get("bookmarked", False)
             started = not solved and (
@@ -238,9 +219,9 @@ class ProblemBrowser(Screen):
     def action_show_stats(self):
         from screens.stats import StatsScreen
         all_problems = []
-        for key, names in self.all_topics.items():
-            for n in names:
-                all_problems.append(self._get_problem_obj(key, n))
+        for key, ids in self.all_topics.items():
+            for pid in ids:
+                all_problems.append(get_problem(pid))
         self.app.push_screen(StatsScreen(all_problems, self.progress, self.all_topics))
 
     # ─── Navigation ───

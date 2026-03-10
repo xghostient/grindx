@@ -5,7 +5,7 @@ from textual.binding import Binding
 from textual.widgets import Header, Footer, Static, ListView, ListItem, Label
 from textual.screen import Screen
 
-from data import list_sheets, load_progress, slug_from_name
+from data import list_sheets, load_progress
 
 
 class SheetItem(ListItem):
@@ -100,9 +100,9 @@ class WelcomeScreen(Screen):
         from data import load_sheet
         topics = load_sheet(sheet["path"])
         count = 0
-        for names in topics.values():
-            for n in names:
-                if self.progress.get(slug_from_name(n), {}).get("solved", False):
+        for ids in topics.values():
+            for pid in ids:
+                if self.progress.get(pid, {}).get("solved", False):
                     count += 1
         return count
 

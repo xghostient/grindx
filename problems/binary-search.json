@@ -1,0 +1,404 @@
+[
+  {
+    "id": "binary-search",
+    "name": "Binary Search",
+    "difficulty": "Easy",
+    "description": "Given a sorted array of integers nums and a target value, return the index of target if found. If not found, return -1. You must write an algorithm with O(log n) runtime complexity.",
+    "examples": [
+      {"input": "nums = [-1,0,3,5,9,12], target = 9", "output": "4"},
+      {"input": "nums = [-1,0,3,5,9,12], target = 2", "output": "-1"}
+    ],
+    "constraints": "-10^4 <= nums.length <= 10^4. nums is sorted in ascending order. All values are unique. -10^4 <= target <= 10^4.",
+    "python_template": "# Binary Search\n\nfrom typing import List\n\ndef search(nums: List[int], target: int) -> int:\n    pass\n",
+    "go_template": "// Binary Search\n\npackage main\n\nfunc search(nums []int, target int) int {\n\n}\n"
+  },
+  {
+    "id": "search-insert-position",
+    "name": "Search Insert Position",
+    "difficulty": "Easy",
+    "description": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be inserted in order. You must write an algorithm with O(log n) runtime complexity.",
+    "examples": [
+      {"input": "nums = [1,3,5,6], target = 5", "output": "2"},
+      {"input": "nums = [1,3,5,6], target = 2", "output": "1"},
+      {"input": "nums = [1,3,5,6], target = 7", "output": "4"}
+    ],
+    "constraints": "1 <= nums.length <= 10^4. -10^4 <= nums[i] <= 10^4. nums contains distinct values sorted in ascending order.",
+    "python_template": "# Search Insert Position\n\nfrom typing import List\n\ndef searchInsert(nums: List[int], target: int) -> int:\n    pass\n",
+    "go_template": "// Search Insert Position\n\npackage main\n\nfunc searchInsert(nums []int, target int) int {\n\n}\n"
+  },
+  {
+    "id": "ceil-floor",
+    "name": "Ceil and Floor in Sorted Array",
+    "difficulty": "Easy",
+    "description": "Given a sorted array and a target value x, find the floor and ceiling of x. Floor is the largest element <= x. Ceiling is the smallest element >= x. If floor or ceiling doesn't exist, return -1.",
+    "examples": [
+      {"input": "arr = [1, 2, 8, 10, 10, 12, 19], x = 5", "output": "Floor: 2, Ceil: 8"},
+      {"input": "arr = [1, 2, 8, 10, 10, 12, 19], x = 10", "output": "Floor: 10, Ceil: 10"},
+      {"input": "arr = [1, 2, 8, 10, 10, 12, 19], x = 20", "output": "Floor: 19, Ceil: -1"}
+    ],
+    "constraints": "1 <= arr.length <= 10^5. 1 <= arr[i] <= 10^6. Array is sorted in non-decreasing order.",
+    "python_template": "# Ceil and Floor in Sorted Array\n\nfrom typing import List, Tuple\n\ndef find_floor_ceil(arr: List[int], x: int) -> Tuple[int, int]:\n    \"\"\"Return (floor, ceil). Use -1 if not found.\"\"\"\n    pass\n",
+    "go_template": "// Ceil and Floor in Sorted Array\n\npackage main\n\nfunc findFloorCeil(arr []int, x int) (int, int) {\n\n}\n"
+  },
+  {
+    "id": "find-first-and-last-position-of-element-in-sorted-array",
+    "name": "Find First and Last Position of Element in Sorted Array",
+    "difficulty": "Medium",
+    "description": "Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found, return [-1, -1]. You must write an algorithm with O(log n) runtime complexity.",
+    "examples": [
+      {"input": "nums = [5,7,7,8,8,10], target = 8", "output": "[3, 4]"},
+      {"input": "nums = [5,7,7,8,8,10], target = 6", "output": "[-1, -1]"},
+      {"input": "nums = [], target = 0", "output": "[-1, -1]"}
+    ],
+    "constraints": "0 <= nums.length <= 10^5. -10^9 <= nums[i] <= 10^9. nums is sorted in non-decreasing order.",
+    "python_template": "# Find First and Last Position of Element in Sorted Array\n\nfrom typing import List\n\ndef searchRange(nums: List[int], target: int) -> List[int]:\n    pass\n",
+    "go_template": "// Find First and Last Position of Element in Sorted Array\n\npackage main\n\nfunc searchRange(nums []int, target int) []int {\n\n}\n"
+  },
+  {
+    "id": "rotation",
+    "name": "Number of Rotations in Sorted Array",
+    "difficulty": "Easy",
+    "description": "Given a sorted array that has been rotated some number of times, find the number of times the array has been rotated. The number of rotations equals the index of the minimum element.",
+    "examples": [
+      {"input": "arr = [15, 18, 2, 3, 6, 12]", "output": "2"},
+      {"input": "arr = [7, 9, 11, 12, 5]", "output": "4"},
+      {"input": "arr = [1, 2, 3, 4, 5]", "output": "0"}
+    ],
+    "constraints": "1 <= arr.length <= 10^5. All elements are distinct.",
+    "python_template": "# Number of Rotations in Sorted Array\n\nfrom typing import List\n\ndef countRotations(arr: List[int]) -> int:\n    pass\n",
+    "go_template": "// Number of Rotations in Sorted Array\n\npackage main\n\nfunc countRotations(arr []int) int {\n\n}\n"
+  },
+  {
+    "id": "find-minimum-in-rotated-sorted-array",
+    "name": "Find Minimum in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "description": "Given a sorted rotated array of unique elements, return the minimum element. You must write an algorithm that runs in O(log n) time.",
+    "examples": [
+      {"input": "nums = [3,4,5,1,2]", "output": "1"},
+      {"input": "nums = [4,5,6,7,0,1,2]", "output": "0"},
+      {"input": "nums = [11,13,15,17]", "output": "11"}
+    ],
+    "constraints": "1 <= nums.length <= 5000. -5000 <= nums[i] <= 5000. All values are unique. nums is a rotated sorted array.",
+    "python_template": "# Find Minimum in Rotated Sorted Array\n\nfrom typing import List\n\ndef findMin(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// Find Minimum in Rotated Sorted Array\n\npackage main\n\nfunc findMin(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "search-in-rotated-sorted-array",
+    "name": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "description": "Given a rotated sorted array of distinct integers and a target, return the index of target or -1 if not found. You must write an algorithm with O(log n) runtime complexity.",
+    "examples": [
+      {"input": "nums = [4,5,6,7,0,1,2], target = 0", "output": "4"},
+      {"input": "nums = [4,5,6,7,0,1,2], target = 3", "output": "-1"},
+      {"input": "nums = [1], target = 0", "output": "-1"}
+    ],
+    "constraints": "1 <= nums.length <= 5000. -10^4 <= nums[i] <= 10^4. All values are unique. nums is a rotated sorted array.",
+    "python_template": "# Search in Rotated Sorted Array\n\nfrom typing import List\n\ndef search(nums: List[int], target: int) -> int:\n    pass\n",
+    "go_template": "// Search in Rotated Sorted Array\n\npackage main\n\nfunc search(nums []int, target int) int {\n\n}\n"
+  },
+  {
+    "id": "search-in-rotated-sorted-array-ii",
+    "name": "Search in Rotated Sorted Array II",
+    "difficulty": "Medium",
+    "description": "Given a rotated sorted array that may contain duplicates, return true if target is in the array, false otherwise. Try to minimize the overall operation steps.",
+    "examples": [
+      {"input": "nums = [2,5,6,0,0,1,2], target = 0", "output": "true"},
+      {"input": "nums = [2,5,6,0,0,1,2], target = 3", "output": "false"}
+    ],
+    "constraints": "1 <= nums.length <= 5000. -10^4 <= nums[i] <= 10^4. nums may contain duplicates.",
+    "python_template": "# Search in Rotated Sorted Array II\n\nfrom typing import List\n\ndef search(nums: List[int], target: int) -> bool:\n    pass\n",
+    "go_template": "// Search in Rotated Sorted Array II\n\npackage main\n\nfunc search(nums []int, target int) bool {\n\n}\n"
+  },
+  {
+    "id": "single-element",
+    "name": "Single Element in a Sorted Array",
+    "difficulty": "Medium",
+    "description": "Given a sorted array where every element appears exactly twice except for one element which appears exactly once, find the single element. Your solution must run in O(log n) time and O(1) space.",
+    "examples": [
+      {"input": "nums = [1,1,2,3,3,4,4,8,8]", "output": "2"},
+      {"input": "nums = [3,3,7,7,10,11,11]", "output": "10"}
+    ],
+    "constraints": "1 <= nums.length <= 10^5. 0 <= nums[i] <= 10^5.",
+    "python_template": "# Single Element in a Sorted Array\n\nfrom typing import List\n\ndef singleNonDuplicate(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// Single Element in a Sorted Array\n\npackage main\n\nfunc singleNonDuplicate(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "peak-element",
+    "name": "Find Peak Element",
+    "difficulty": "Medium",
+    "description": "A peak element is an element strictly greater than its neighbors. Given an integer array nums, find a peak element and return its index. If the array contains multiple peaks, return the index of any of them. You must write an algorithm that runs in O(log n) time.",
+    "examples": [
+      {"input": "nums = [1,2,3,1]", "output": "2"},
+      {"input": "nums = [1,2,1,3,5,6,4]", "output": "5 (or 1)"}
+    ],
+    "constraints": "1 <= nums.length <= 1000. -2^31 <= nums[i] <= 2^31 - 1. nums[i] != nums[i + 1] for all valid i.",
+    "python_template": "# Find Peak Element\n\nfrom typing import List\n\ndef findPeakElement(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// Find Peak Element\n\npackage main\n\nfunc findPeakElement(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "peak-element-02",
+    "name": "Peak Element in 2D Matrix",
+    "difficulty": "Hard",
+    "description": "Given a 2D grid where no two adjacent cells are equal, find any peak element. A peak element is strictly greater than all of its adjacent neighbors (up, down, left, right). Return the row and column of any peak.",
+    "examples": [
+      {"input": "mat = [[1,4],[3,2]]", "output": "[0, 1] (value 4 is a peak)"},
+      {"input": "mat = [[10,20,15],[21,30,14],[7,16,32]]", "output": "[1, 1] (value 30 is a peak)"}
+    ],
+    "constraints": "1 <= m, n <= 500. 1 <= mat[i][j] <= 10^5. No two adjacent cells are equal.",
+    "python_template": "# Peak Element in 2D Matrix\n\nfrom typing import List\n\ndef findPeakGrid(mat: List[List[int]]) -> List[int]:\n    pass\n",
+    "go_template": "// Peak Element in 2D Matrix\n\npackage main\n\nfunc findPeakGrid(mat [][]int) []int {\n\n}\n"
+  },
+  {
+    "id": "sqrtx",
+    "name": "Sqrt(x)",
+    "difficulty": "Easy",
+    "description": "Given a non-negative integer x, return the square root of x rounded down to the nearest integer. Do not use any built-in exponent function or operator.",
+    "examples": [
+      {"input": "x = 4", "output": "2"},
+      {"input": "x = 8", "output": "2 (sqrt(8) = 2.828..., rounded down)"}
+    ],
+    "constraints": "0 <= x <= 2^31 - 1.",
+    "python_template": "# Sqrt(x)\n\ndef mySqrt(x: int) -> int:\n    pass\n",
+    "go_template": "// Sqrt(x)\n\npackage main\n\nfunc mySqrt(x int) int {\n\n}\n"
+  },
+  {
+    "id": "nth-root",
+    "name": "Nth Root of M",
+    "difficulty": "Easy",
+    "description": "Given two integers n and m, find the nth root of m. If the nth root is not an integer, return -1. The nth root of m is a number x such that x^n = m.",
+    "examples": [
+      {"input": "n = 3, m = 27", "output": "3 (3^3 = 27)"},
+      {"input": "n = 4, m = 69", "output": "-1 (no integer x where x^4 = 69)"},
+      {"input": "n = 2, m = 9", "output": "3"}
+    ],
+    "constraints": "1 <= n <= 30. 1 <= m <= 10^9.",
+    "python_template": "# Nth Root of M\n\ndef nthRoot(n: int, m: int) -> int:\n    \"\"\"Return nth root of m if integer, else -1.\"\"\"\n    pass\n",
+    "go_template": "// Nth Root of M\n\npackage main\n\nfunc nthRoot(n int, m int) int {\n\n}\n"
+  },
+  {
+    "id": "koko-eating-bananas",
+    "name": "Koko Eating Bananas",
+    "difficulty": "Medium",
+    "description": "Koko loves bananas. There are n piles of bananas, the ith pile has piles[i] bananas. Guards will come back in h hours. Koko can decide her eating speed k (bananas per hour). Each hour she picks a pile and eats k bananas from it. If the pile has less than k bananas, she eats all and won't eat more that hour. Return the minimum integer k such that she can eat all bananas within h hours.",
+    "examples": [
+      {"input": "piles = [3,6,7,11], h = 8", "output": "4"},
+      {"input": "piles = [30,11,23,4,20], h = 5", "output": "30"},
+      {"input": "piles = [30,11,23,4,20], h = 6", "output": "23"}
+    ],
+    "constraints": "1 <= piles.length <= 10^4. piles.length <= h <= 10^9. 1 <= piles[i] <= 10^9.",
+    "python_template": "# Koko Eating Bananas\n\nfrom typing import List\n\ndef minEatingSpeed(piles: List[int], h: int) -> int:\n    pass\n",
+    "go_template": "// Koko Eating Bananas\n\npackage main\n\nfunc minEatingSpeed(piles []int, h int) int {\n\n}\n"
+  },
+  {
+    "id": "min-days-m-bouqets",
+    "name": "Minimum Number of Days to Make M Bouquets",
+    "difficulty": "Medium",
+    "description": "Given an array bloomDay, an integer m (number of bouquets needed) and an integer k (adjacent flowers per bouquet), return the minimum number of days to wait to make m bouquets from the garden. If impossible, return -1. Each flower can only be used in one bouquet.",
+    "examples": [
+      {"input": "bloomDay = [1,10,3,10,2], m = 3, k = 1", "output": "3"},
+      {"input": "bloomDay = [1,10,3,10,2], m = 3, k = 2", "output": "-1"},
+      {"input": "bloomDay = [7,7,7,7,12,7,7], m = 2, k = 3", "output": "12"}
+    ],
+    "constraints": "1 <= bloomDay.length <= 10^5. 1 <= bloomDay[i] <= 10^9. 1 <= m <= 10^6. 1 <= k <= bloomDay.length.",
+    "python_template": "# Minimum Number of Days to Make M Bouquets\n\nfrom typing import List\n\ndef minDays(bloomDay: List[int], m: int, k: int) -> int:\n    pass\n",
+    "go_template": "// Minimum Number of Days to Make M Bouquets\n\npackage main\n\nfunc minDays(bloomDay []int, m int, k int) int {\n\n}\n"
+  },
+  {
+    "id": "smallest-divisor",
+    "name": "Find the Smallest Divisor Given a Threshold",
+    "difficulty": "Medium",
+    "description": "Given an array of integers nums and an integer threshold, choose a positive integer divisor, divide all elements by it, and sum the division results (rounded up). Find the smallest divisor such that the sum is <= threshold.",
+    "examples": [
+      {"input": "nums = [1,2,5,9], threshold = 6", "output": "5"},
+      {"input": "nums = [44,22,33,11,1], threshold = 5", "output": "44"}
+    ],
+    "constraints": "1 <= nums.length <= 5 * 10^4. 1 <= nums[i] <= 10^6. nums.length <= threshold <= 10^6.",
+    "python_template": "# Find the Smallest Divisor Given a Threshold\n\nfrom typing import List\n\ndef smallestDivisor(nums: List[int], threshold: int) -> int:\n    pass\n",
+    "go_template": "// Find the Smallest Divisor Given a Threshold\n\npackage main\n\nfunc smallestDivisor(nums []int, threshold int) int {\n\n}\n"
+  },
+  {
+    "id": "capacity-to-ship-packages-within-d-days",
+    "name": "Capacity To Ship Packages Within D Days",
+    "difficulty": "Medium",
+    "description": "Packages on a conveyor belt must be shipped within days days. The ith package has weight weights[i]. Packages are loaded in order, and the ship has a weight capacity. Return the least weight capacity of the ship that will result in all packages being shipped within days days.",
+    "examples": [
+      {"input": "weights = [1,2,3,4,5,6,7,8,9,10], days = 5", "output": "15"},
+      {"input": "weights = [3,2,2,4,1,4], days = 3", "output": "6"},
+      {"input": "weights = [1,2,3,1,1], days = 4", "output": "3"}
+    ],
+    "constraints": "1 <= days <= weights.length <= 5 * 10^4. 1 <= weights[i] <= 500.",
+    "python_template": "# Capacity To Ship Packages Within D Days\n\nfrom typing import List\n\ndef shipWithinDays(weights: List[int], days: int) -> int:\n    pass\n",
+    "go_template": "// Capacity To Ship Packages Within D Days\n\npackage main\n\nfunc shipWithinDays(weights []int, days int) int {\n\n}\n"
+  },
+  {
+    "id": "kth-missing-pos",
+    "name": "Kth Missing Positive Number",
+    "difficulty": "Easy",
+    "description": "Given an array of positive integers sorted in strictly increasing order and an integer k, return the kth positive integer that is missing from the array.",
+    "examples": [
+      {"input": "arr = [2,3,4,7,11], k = 5", "output": "9 (missing: 1,5,6,8,9)"},
+      {"input": "arr = [1,2,3,4], k = 2", "output": "6 (missing: 5,6)"}
+    ],
+    "constraints": "1 <= arr.length <= 1000. 1 <= arr[i] <= 1000. 1 <= k <= 1000. arr is sorted in strictly increasing order.",
+    "python_template": "# Kth Missing Positive Number\n\nfrom typing import List\n\ndef findKthPositive(arr: List[int], k: int) -> int:\n    pass\n",
+    "go_template": "// Kth Missing Positive Number\n\npackage main\n\nfunc findKthPositive(arr []int, k int) int {\n\n}\n"
+  },
+  {
+    "id": "aggressive-cows",
+    "name": "Aggressive Cows",
+    "difficulty": "Medium",
+    "description": "Given an array of stall positions and an integer k (number of cows), place k cows in the stalls such that the minimum distance between any two cows is maximized. Return the largest minimum distance.",
+    "examples": [
+      {"input": "stalls = [1, 2, 4, 8, 9], k = 3", "output": "3 (place at 1, 4, 8)"},
+      {"input": "stalls = [10, 1, 2, 7, 5], k = 3", "output": "4 (place at 1, 5, 10)"}
+    ],
+    "constraints": "2 <= stalls.length <= 10^5. 0 <= stalls[i] <= 10^9. 2 <= k <= stalls.length.",
+    "python_template": "# Aggressive Cows\n\nfrom typing import List\n\ndef aggressiveCows(stalls: List[int], k: int) -> int:\n    pass\n",
+    "go_template": "// Aggressive Cows\n\npackage main\n\nimport \"sort\"\n\nfunc aggressiveCows(stalls []int, k int) int {\n\n}\n"
+  },
+  {
+    "id": "book-allocation-problem",
+    "name": "Book Allocation Problem",
+    "difficulty": "Medium",
+    "description": "Given an array where arr[i] represents the number of pages in the ith book and m students, allocate books such that: each student gets at least one book, books are allocated contiguously, and the maximum number of pages assigned to a student is minimized. Return this minimized maximum. If allocation is impossible, return -1.",
+    "examples": [
+      {"input": "arr = [12, 34, 67, 90], m = 2", "output": "113 (student1: [12,34,67], student2: [90])"},
+      {"input": "arr = [25, 46, 28, 49, 24], m = 4", "output": "71"}
+    ],
+    "constraints": "1 <= arr.length <= 10^5. 1 <= arr[i] <= 10^6. 1 <= m <= 10^5.",
+    "python_template": "# Book Allocation Problem\n\nfrom typing import List\n\ndef allocateBooks(arr: List[int], m: int) -> int:\n    \"\"\"Return minimized maximum pages, or -1 if impossible.\"\"\"\n    pass\n",
+    "go_template": "// Book Allocation Problem\n\npackage main\n\nfunc allocateBooks(arr []int, m int) int {\n\n}\n"
+  },
+  {
+    "id": "painters-partition",
+    "name": "Painter's Partition Problem",
+    "difficulty": "Hard",
+    "description": "Given an array of board lengths and k painters, each painter paints contiguous boards. Each unit of board takes 1 unit of time. Find the minimum time to paint all boards. (Same pattern as book allocation / split array largest sum.)",
+    "examples": [
+      {"input": "boards = [10, 20, 30, 40], k = 2", "output": "60 (painter1: [10,20,30], painter2: [40])"},
+      {"input": "boards = [5, 5, 5, 5], k = 2", "output": "10"}
+    ],
+    "constraints": "1 <= boards.length <= 10^5. 1 <= boards[i] <= 10^6. 1 <= k <= boards.length.",
+    "python_template": "# Painter's Partition Problem\n\nfrom typing import List\n\ndef paintersPartition(boards: List[int], k: int) -> int:\n    pass\n",
+    "go_template": "// Painter's Partition Problem\n\npackage main\n\nfunc paintersPartition(boards []int, k int) int {\n\n}\n"
+  },
+  {
+    "id": "split-array-largest-sum",
+    "name": "Split Array Largest Sum",
+    "difficulty": "Hard",
+    "description": "Given an integer array nums and an integer k, split nums into k non-empty subarrays such that the largest sum among the subarrays is minimized. Return the minimized largest sum.",
+    "examples": [
+      {"input": "nums = [7,2,5,10,8], k = 2", "output": "18 ([7,2,5] and [10,8])"},
+      {"input": "nums = [1,2,3,4,5], k = 2", "output": "9 ([1,2,3,4] and [5], or [1,2,3] and [4,5])"}
+    ],
+    "constraints": "1 <= nums.length <= 1000. 0 <= nums[i] <= 10^6. 1 <= k <= min(50, nums.length).",
+    "python_template": "# Split Array Largest Sum\n\nfrom typing import List\n\ndef splitArray(nums: List[int], k: int) -> int:\n    pass\n",
+    "go_template": "// Split Array Largest Sum\n\npackage main\n\nfunc splitArray(nums []int, k int) int {\n\n}\n"
+  },
+  {
+    "id": "search-a-2d-matrix",
+    "name": "Search a 2D Matrix",
+    "difficulty": "Medium",
+    "description": "Given an m x n matrix where each row is sorted in ascending order and the first integer of each row is greater than the last integer of the previous row, determine if a target value exists in the matrix. Write an efficient algorithm.",
+    "examples": [
+      {"input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3", "output": "true"},
+      {"input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13", "output": "false"}
+    ],
+    "constraints": "m == matrix.length. n == matrix[i].length. 1 <= m, n <= 100. -10^4 <= matrix[i][j], target <= 10^4.",
+    "python_template": "# Search a 2D Matrix\n\nfrom typing import List\n\ndef searchMatrix(matrix: List[List[int]], target: int) -> bool:\n    pass\n",
+    "go_template": "// Search a 2D Matrix\n\npackage main\n\nfunc searchMatrix(matrix [][]int, target int) bool {\n\n}\n"
+  },
+  {
+    "id": "2d-matrix-bs-hard",
+    "name": "Search a 2D Matrix II",
+    "difficulty": "Medium",
+    "description": "Write an efficient algorithm to search for a target value in an m x n matrix. Each row is sorted in ascending order from left to right. Each column is sorted in ascending order from top to bottom.",
+    "examples": [
+      {"input": "matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5", "output": "true"},
+      {"input": "matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20", "output": "false"}
+    ],
+    "constraints": "m == matrix.length. n == matrix[i].length. 1 <= n, m <= 300. -10^9 <= matrix[i][j] <= 10^9. Rows and columns are sorted independently.",
+    "python_template": "# Search a 2D Matrix II\n\nfrom typing import List\n\ndef searchMatrix(matrix: List[List[int]], target: int) -> bool:\n    pass\n",
+    "go_template": "// Search a 2D Matrix II\n\npackage main\n\nfunc searchMatrix(matrix [][]int, target int) bool {\n\n}\n"
+  },
+  {
+    "id": "max-1s-row",
+    "name": "Row with Maximum Number of 1s",
+    "difficulty": "Easy",
+    "description": "Given a 2D binary matrix where each row is sorted (0s before 1s), find the row with the maximum number of 1s. If multiple rows have the same count, return the smallest index.",
+    "examples": [
+      {"input": "mat = [[0,1,1,1],[0,0,1,1],[1,1,1,1],[0,0,0,0]]", "output": "2 (row 2 has 4 ones)"},
+      {"input": "mat = [[0,0],[0,1]]", "output": "1 (row 1 has 1 one)"}
+    ],
+    "constraints": "1 <= m, n <= 100. matrix[i][j] is 0 or 1. Each row is sorted in non-decreasing order.",
+    "python_template": "# Row with Maximum Number of 1s\n\nfrom typing import List\n\ndef rowWithMax1s(mat: List[List[int]]) -> int:\n    pass\n",
+    "go_template": "// Row with Maximum Number of 1s\n\npackage main\n\nfunc rowWithMax1s(mat [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "median-in-matrix",
+    "name": "Median in a Row-Wise Sorted Matrix",
+    "difficulty": "Hard",
+    "description": "Given a row-wise sorted matrix of size m x n where m and n are always odd, find the median of the matrix. The median is the middle value when all elements are sorted.",
+    "examples": [
+      {"input": "mat = [[1,3,5],[2,6,9],[3,6,9]]", "output": "5 (sorted: 1,2,3,3,5,6,6,9,9)"},
+      {"input": "mat = [[1],[2],[3]]", "output": "2"}
+    ],
+    "constraints": "1 <= m, n <= 400. m * n is always odd. 1 <= mat[i][j] <= 2000. Each row is sorted in non-decreasing order.",
+    "python_template": "# Median in a Row-Wise Sorted Matrix\n\nfrom typing import List\n\ndef findMedian(mat: List[List[int]]) -> int:\n    pass\n",
+    "go_template": "// Median in a Row-Wise Sorted Matrix\n\npackage main\n\nfunc findMedian(mat [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "median-of-two-sorted-arrays",
+    "name": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "description": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be O(log(m+n)).",
+    "examples": [
+      {"input": "nums1 = [1,3], nums2 = [2]", "output": "2.0"},
+      {"input": "nums1 = [1,2], nums2 = [3,4]", "output": "2.5"}
+    ],
+    "constraints": "0 <= m, n <= 1000. 1 <= m + n <= 2000. -10^6 <= nums1[i], nums2[i] <= 10^6.",
+    "python_template": "# Median of Two Sorted Arrays\n\nfrom typing import List\n\ndef findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:\n    pass\n",
+    "go_template": "// Median of Two Sorted Arrays\n\npackage main\n\nfunc findMedianSortedArrays(nums1 []int, nums2 []int) float64 {\n\n}\n"
+  },
+  {
+    "id": "first-bad-version",
+    "name": "First Bad Version",
+    "difficulty": "Easy",
+    "description": "You are a product manager. The latest version of your product fails the quality check. Since each version is based on the previous version, all versions after a bad version are also bad. Given n versions [1, 2, ..., n], find the first bad version. You are given an API isBadVersion(version) which returns whether version is bad. Minimize the number of API calls.",
+    "examples": [
+      {"input": "n = 5, bad = 4", "output": "4"},
+      {"input": "n = 1, bad = 1", "output": "1"}
+    ],
+    "constraints": "1 <= bad <= n <= 2^31 - 1.",
+    "python_template": "# First Bad Version\n# The isBadVersion API is already defined for you.\n# def isBadVersion(version: int) -> bool:\n\ndef firstBadVersion(n: int) -> int:\n    pass\n",
+    "go_template": "// First Bad Version\n// The isBadVersion API is already defined.\n// func isBadVersion(version int) bool\n\npackage main\n\nfunc firstBadVersion(n int) int {\n\n}\n"
+  },
+  {
+    "id": "time-based-key-value-store",
+    "name": "Time Based Key-Value Store",
+    "difficulty": "Medium",
+    "description": "Design a time-based key-value data structure that can store multiple values for the same key at different timestamps and retrieve the key's value at a certain timestamp. Implement set(key, value, timestamp) and get(key, timestamp) which returns the value with the largest timestamp <= the given timestamp.",
+    "examples": [
+      {"input": "set(\"foo\", \"bar\", 1), get(\"foo\", 1)", "output": "\"bar\""},
+      {"input": "set(\"foo\", \"bar\", 1), get(\"foo\", 3)", "output": "\"bar\""},
+      {"input": "set(\"foo\", \"bar\", 1), set(\"foo\", \"bar2\", 4), get(\"foo\", 4)", "output": "\"bar2\""},
+      {"input": "set(\"foo\", \"bar\", 1), set(\"foo\", \"bar2\", 4), get(\"foo\", 5)", "output": "\"bar2\""}
+    ],
+    "constraints": "1 <= key.length, value.length <= 100. 1 <= timestamp <= 10^7. All timestamps of set are strictly increasing. At most 2 * 10^5 calls to set and get.",
+    "python_template": "# Time Based Key-Value Store\n\nclass TimeMap:\n    def __init__(self):\n        pass\n\n    def set(self, key: str, value: str, timestamp: int) -> None:\n        pass\n\n    def get(self, key: str, timestamp: int) -> str:\n        pass\n",
+    "go_template": "// Time Based Key-Value Store\n\npackage main\n\ntype TimeMap struct {\n}\n\nfunc Constructor() TimeMap {\n\treturn TimeMap{}\n}\n\nfunc (t *TimeMap) Set(key string, value string, timestamp int) {\n}\n\nfunc (t *TimeMap) Get(key string, timestamp int) string {\n\treturn \"\"\n}\n"
+  },
+  {
+    "id": "maximum-profit-in-job-scheduling",
+    "name": "Maximum Profit in Job Scheduling",
+    "difficulty": "Hard",
+    "description": "Given n jobs where each job has a startTime, endTime, and profit, find the maximum profit you can take such that no two jobs in the subset overlap. If you choose a job that ends at time t, you can start another job at time t.",
+    "examples": [
+      {"input": "startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]", "output": "120 (jobs 1 and 4: 50+70)"},
+      {"input": "startTime = [1,2,3,4,6], endTime = [3,5,10,6,9], profit = [20,20,100,70,60]", "output": "150 (jobs 1, 4, 5: 20+70+60)"}
+    ],
+    "constraints": "1 <= startTime.length == endTime.length == profit.length <= 5 * 10^4. 1 <= startTime[i] < endTime[i] <= 10^9. 1 <= profit[i] <= 10^4.",
+    "python_template": "# Maximum Profit in Job Scheduling\n\nfrom typing import List\n\ndef jobScheduling(startTime: List[int], endTime: List[int], profit: List[int]) -> int:\n    pass\n",
+    "go_template": "// Maximum Profit in Job Scheduling\n\npackage main\n\nfunc jobScheduling(startTime []int, endTime []int, profit []int) int {\n\n}\n"
+  }
+]

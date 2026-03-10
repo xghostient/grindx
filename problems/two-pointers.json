@@ -1,0 +1,22 @@
+[
+  {
+    "id": "trapping-rain-water",
+    "name": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Trapping Rain Water\n\ndef solve():\n    pass\n",
+    "go_template": "// Trapping Rain Water\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "two-sum-ii-input-array-is-sorted",
+    "name": "Two Sum Ii Input Array Is Sorted",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Two Sum Ii Input Array Is Sorted\n\ndef solve():\n    pass\n",
+    "go_template": "// Two Sum Ii Input Array Is Sorted\n\npackage main\n\nfunc solve() {\n\n}\n"
+  }
+]

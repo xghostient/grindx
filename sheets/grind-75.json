@@ -1,110 +1,110 @@
 {
   "Array": [
-    "TWO-SUM",
-    "BEST-TIME-TO-BUY-AND-SELL-STOCK",
-    "MAJORITY-ELEMENT",
-    "CONTAINS-DUPLICATE",
-    "MAXIMUM-SUBARRAY",
-    "INSERT-INTERVAL",
-    "3SUM",
-    "PRODUCT-OF-ARRAY-EXCEPT-SELF",
-    "COMBINATION-SUM",
-    "MERGE-INTERVALS",
-    "SORT-COLORS",
-    "CONTAINER-WITH-MOST-WATER"
+    "two-sum",
+    "best-time-to-buy-and-sell-stock",
+    "majority-element",
+    "contains-duplicate",
+    "maximum-subarray",
+    "insert-interval",
+    "3sum",
+    "product-of-array-except-self",
+    "combination-sum",
+    "merge-intervals",
+    "sort-colors",
+    "container-with-most-water"
   ],
   "Stack": [
-    "VALID-PARENTHESES",
-    "IMPLEMENT-QUEUE-USING-STACKS",
-    "MIN-STACK",
-    "EVALUATE-REVERSE-POLISH-NOTATION",
-    "TRAPPING-RAIN-WATER",
-    "LARGEST-RECTANGLE-IN-HISTOGRAM",
-    "DAILY-TEMPERATURES"
+    "valid-parentheses",
+    "implement-queue-using-stacks",
+    "min-stack",
+    "evaluate-reverse-polish-notation",
+    "trapping-rain-water",
+    "largest-rectangle-in-histogram",
+    "daily-temperatures"
   ],
   "Linked List": [
-    "MERGE-TWO-SORTED-LISTS",
-    "LINKED-LIST-CYCLE",
-    "REVERSE-LINKED-LIST",
-    "MIDDLE-OF-THE-LINKED-LIST",
-    "LRU-CACHE"
+    "merge-two-sorted-lists",
+    "linked-list-cycle",
+    "reverse-linked-list",
+    "middle-of-the-linked-list",
+    "lru-cache"
   ],
   "String": [
-    "VALID-PALINDROME",
-    "VALID-ANAGRAM",
-    "LONGEST-PALINDROME",
-    "LONGEST-SUBSTRING-WITHOUT-REPEATING-CHARACTERS",
-    "STRING-TO-INTEGER-ATOI",
-    "LONGEST-PALINDROMIC-SUBSTRING",
-    "FIND-ALL-ANAGRAMS-IN-A-STRING",
-    "MINIMUM-WINDOW-SUBSTRING"
+    "valid-palindrome",
+    "valid-anagram",
+    "longest-palindrome",
+    "longest-substring-without-repeating-characters",
+    "string-to-integer-atoi",
+    "longest-palindromic-substring",
+    "find-all-anagrams-in-a-string",
+    "minimum-window-substring"
   ],
   "Binary Search": [
-    "BINARY-SEARCH",
-    "FIRST-BAD-VERSION",
-    "SEARCH-IN-ROTATED-SORTED-ARRAY",
-    "TIME-BASED-KEY-VALUE-STORE",
-    "FIND-MINIMUM-IN-ROTATED-SORTED-ARRAY",
-    "MAXIMUM-PROFIT-IN-JOB-SCHEDULING"
+    "binary-search",
+    "first-bad-version",
+    "search-in-rotated-sorted-array",
+    "time-based-key-value-store",
+    "find-minimum-in-rotated-sorted-array",
+    "maximum-profit-in-job-scheduling"
   ],
   "Tree": [
-    "INVERT-BINARY-TREE",
-    "BALANCED-BINARY-TREE",
-    "LOWEST-COMMON-ANCESTOR-OF-A-BINARY-SEARCH-TREE",
-    "BINARY-TREE-LEVEL-ORDER-TRAVERSAL",
-    "VALIDATE-BINARY-SEARCH-TREE",
-    "MAXIMUM-DEPTH-OF-BINARY-TREE",
-    "BINARY-TREE-RIGHT-SIDE-VIEW",
-    "CONSTRUCT-BINARY-TREE-FROM-PREORDER-AND-INORDER-TRAVERSAL",
-    "SERIALIZE-AND-DESERIALIZE-BINARY-TREE",
-    "KTH-SMALLEST-ELEMENT-IN-A-BST"
+    "invert-binary-tree",
+    "balanced-binary-tree",
+    "lowest-common-ancestor-of-a-binary-search-tree",
+    "binary-tree-level-order-traversal",
+    "validate-binary-search-tree",
+    "maximum-depth-of-binary-tree",
+    "binary-tree-right-side-view",
+    "construct-binary-tree-from-preorder-and-inorder-traversal",
+    "serialize-and-deserialize-binary-tree",
+    "kth-smallest-element-in-a-bst"
   ],
   "Graph": [
-    "FLOOD-FILL",
-    "01-MATRIX",
-    "CLONE-GRAPH",
-    "COURSE-SCHEDULE",
-    "NUMBER-OF-ISLANDS",
-    "ROTTING-ORANGES",
-    "ACCOUNTS-MERGE",
-    "WORD-LADDER",
-    "MINIMUM-HEIGHT-TREES"
+    "flood-fill",
+    "01-matrix",
+    "clone-graph",
+    "course-schedule",
+    "number-of-islands",
+    "rotting-oranges",
+    "accounts-merge",
+    "word-ladder",
+    "minimum-height-trees"
   ],
   "Dynamic Programming": [
-    "CLIMBING-STAIRS",
-    "COIN-CHANGE",
-    "UNIQUE-PATHS",
-    "WORD-BREAK",
-    "LONGEST-INCREASING-SUBSEQUENCE",
-    "PARTITION-EQUAL-SUBSET-SUM",
-    "MAXIMUM-PRODUCT-SUBARRAY"
+    "climbing-stairs",
+    "coin-change",
+    "unique-paths",
+    "word-break",
+    "longest-increasing-subsequence",
+    "partition-equal-subset-sum",
+    "maximum-product-subarray"
   ],
   "Binary": [
-    "ADD-BINARY",
-    "COUNTING-BITS",
-    "NUMBER-OF-1-BITS",
-    "SINGLE-NUMBER",
-    "MISSING-NUMBER"
+    "add-binary",
+    "counting-bits",
+    "number-of-1-bits",
+    "single-number",
+    "missing-number"
   ],
   "Heap": [
-    "K-CLOSEST-POINTS-TO-ORIGIN",
-    "TASK-SCHEDULER",
-    "FIND-MEDIAN-FROM-DATA-STREAM",
-    "MERGE-K-SORTED-LISTS",
-    "TOP-K-FREQUENT-ELEMENTS"
+    "k-closest-points-to-origin",
+    "task-scheduler",
+    "find-median-from-data-stream",
+    "merge-k-sorted-lists",
+    "top-k-frequent-elements"
   ],
   "Trie": [
-    "IMPLEMENT-TRIE-PREFIX-TREE",
-    "WORD-SEARCH-II"
+    "implement-trie-prefix-tree",
+    "word-search-ii"
   ],
   "Recursion": [
-    "PERMUTATIONS",
-    "SUBSETS",
-    "LETTER-COMBINATIONS-OF-A-PHONE-NUMBER"
+    "permutations",
+    "subsets",
+    "letter-combinations-of-a-phone-number"
   ],
   "Matrix": [
-    "SPIRAL-MATRIX",
-    "SET-MATRIX-ZEROES",
-    "ROTATE-IMAGE"
+    "spiral-matrix",
+    "set-matrix-zeroes",
+    "rotate-image"
   ]
 }

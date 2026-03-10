@@ -1,0 +1,272 @@
+[
+  {
+    "id": "check-rotation",
+    "name": "Check Rotation",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Check Rotation\n\ndef solve():\n    pass\n",
+    "go_template": "// Check Rotation\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "count-and-say",
+    "name": "Count And Say",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Count And Say\n\ndef solve():\n    pass\n",
+    "go_template": "// Count And Say\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "count-palindromic-subseq",
+    "name": "Count Palindromic Subseq",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Count Palindromic Subseq\n\ndef solve():\n    pass\n",
+    "go_template": "// Count Palindromic Subseq\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "count-substrs",
+    "name": "Count Substrs",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Count Substrs\n\ndef solve():\n    pass\n",
+    "go_template": "// Count Substrs\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "encode-and-decode-strings",
+    "name": "Encode And Decode Strings",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Encode And Decode Strings\n\ndef solve():\n    pass\n",
+    "go_template": "// Encode And Decode Strings\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "find-all-anagrams-in-a-string",
+    "name": "Find All Anagrams In A String",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Find All Anagrams In A String\n\ndef solve():\n    pass\n",
+    "go_template": "// Find All Anagrams In A String\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "find-the-index-of-the-first-occurrence-in-a-string",
+    "name": "Find The Index Of The First Occurrence In A String",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Find The Index Of The First Occurrence In A String\n\ndef solve():\n    pass\n",
+    "go_template": "// Find The Index Of The First Occurrence In A String\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "group-anagrams",
+    "name": "Group Anagrams",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Group Anagrams\n\ndef solve():\n    pass\n",
+    "go_template": "// Group Anagrams\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "kmp-pattern-matching",
+    "name": "Kmp Pattern Matching",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Kmp Pattern Matching\n\ndef solve():\n    pass\n",
+    "go_template": "// Kmp Pattern Matching\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "largest-odd-num-in-string",
+    "name": "Largest Odd Num In String",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Largest Odd Num In String\n\ndef solve():\n    pass\n",
+    "go_template": "// Largest Odd Num In String\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "longest-common-prefix",
+    "name": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Longest Common Prefix\n\ndef solve():\n    pass\n",
+    "go_template": "// Longest Common Prefix\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "longest-happy-prefix",
+    "name": "Longest Happy Prefix",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Longest Happy Prefix\n\ndef solve():\n    pass\n",
+    "go_template": "// Longest Happy Prefix\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "longest-palindrome",
+    "name": "Longest Palindrome",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Longest Palindrome\n\ndef solve():\n    pass\n",
+    "go_template": "// Longest Palindrome\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "longest-palindromic-substring",
+    "name": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Longest Palindromic Substring\n\ndef solve():\n    pass\n",
+    "go_template": "// Longest Palindromic Substring\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "max-score-from-removing-substr",
+    "name": "Max Score From Removing Substr",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Max Score From Removing Substr\n\ndef solve():\n    pass\n",
+    "go_template": "// Max Score From Removing Substr\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "minimum-add-to-make-parentheses-valid",
+    "name": "Minimum Add To Make Parentheses Valid",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Minimum Add To Make Parentheses Valid\n\ndef solve():\n    pass\n",
+    "go_template": "// Minimum Add To Make Parentheses Valid\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "palindromic-substrings",
+    "name": "Palindromic Substrings",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Palindromic Substrings\n\ndef solve():\n    pass\n",
+    "go_template": "// Palindromic Substrings\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "rabin-karp-repeated-string-match",
+    "name": "Rabin Karp Repeated String Match",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Rabin Karp Repeated String Match\n\ndef solve():\n    pass\n",
+    "go_template": "// Rabin Karp Repeated String Match\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "remove-outermost-parentheses",
+    "name": "Remove Outermost Parentheses",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Remove Outermost Parentheses\n\ndef solve():\n    pass\n",
+    "go_template": "// Remove Outermost Parentheses\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "reverse-words-in-a-string",
+    "name": "Reverse Words In A String",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Reverse Words In A String\n\ndef solve():\n    pass\n",
+    "go_template": "// Reverse Words In A String\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "roman-to-integer",
+    "name": "Roman To Integer",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Roman To Integer\n\ndef solve():\n    pass\n",
+    "go_template": "// Roman To Integer\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "shortest-palindrome",
+    "name": "Shortest Palindrome",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Shortest Palindrome\n\ndef solve():\n    pass\n",
+    "go_template": "// Shortest Palindrome\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "sort-characters-by-frequency",
+    "name": "Sort Characters By Frequency",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Sort Characters By Frequency\n\ndef solve():\n    pass\n",
+    "go_template": "// Sort Characters By Frequency\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "string-to-integer-atoi",
+    "name": "String To Integer Atoi",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# String To Integer Atoi\n\ndef solve():\n    pass\n",
+    "go_template": "// String To Integer Atoi\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "sum-of-beauty-of-all-substr",
+    "name": "Sum Of Beauty Of All Substr",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Sum Of Beauty Of All Substr\n\ndef solve():\n    pass\n",
+    "go_template": "// Sum Of Beauty Of All Substr\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "valid-anagram",
+    "name": "Valid Anagram",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Valid Anagram\n\ndef solve():\n    pass\n",
+    "go_template": "// Valid Anagram\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "valid-palindrome",
+    "name": "Valid Palindrome",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Valid Palindrome\n\ndef solve():\n    pass\n",
+    "go_template": "// Valid Palindrome\n\npackage main\n\nfunc solve() {\n\n}\n"
+  }
+]

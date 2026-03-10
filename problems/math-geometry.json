@@ -1,0 +1,52 @@
+[
+  {
+    "id": "detect-squares",
+    "name": "Detect Squares",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Detect Squares\n\ndef solve():\n    pass\n",
+    "go_template": "// Detect Squares\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "happy-number",
+    "name": "Happy Number",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Happy Number\n\ndef solve():\n    pass\n",
+    "go_template": "// Happy Number\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "multiply-strings",
+    "name": "Multiply Strings",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Multiply Strings\n\ndef solve():\n    pass\n",
+    "go_template": "// Multiply Strings\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "plus-one",
+    "name": "Plus One",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Plus One\n\ndef solve():\n    pass\n",
+    "go_template": "// Plus One\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "pow-x-n",
+    "name": "Pow X N",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Pow X N\n\ndef solve():\n    pass\n",
+    "go_template": "// Pow X N\n\npackage main\n\nfunc solve() {\n\n}\n"
+  }
+]

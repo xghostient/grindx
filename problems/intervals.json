@@ -1,0 +1,62 @@
+[
+  {
+    "id": "insert-interval",
+    "name": "Insert Interval",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Insert Interval\n\ndef solve():\n    pass\n",
+    "go_template": "// Insert Interval\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "meeting-rooms",
+    "name": "Meeting Rooms",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Meeting Rooms\n\ndef solve():\n    pass\n",
+    "go_template": "// Meeting Rooms\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "meeting-rooms-ii",
+    "name": "Meeting Rooms Ii",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Meeting Rooms Ii\n\ndef solve():\n    pass\n",
+    "go_template": "// Meeting Rooms Ii\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "merge-intervals",
+    "name": "Merge Intervals",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Merge Intervals\n\ndef solve():\n    pass\n",
+    "go_template": "// Merge Intervals\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "minimum-interval-to-include-each-query",
+    "name": "Minimum Interval To Include Each Query",
+    "difficulty": "Hard",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Minimum Interval To Include Each Query\n\ndef solve():\n    pass\n",
+    "go_template": "// Minimum Interval To Include Each Query\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "non-overlapping-intervals",
+    "name": "Non Overlapping Intervals",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Non Overlapping Intervals\n\ndef solve():\n    pass\n",
+    "go_template": "// Non Overlapping Intervals\n\npackage main\n\nfunc solve() {\n\n}\n"
+  }
+]

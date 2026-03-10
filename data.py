@@ -7,17 +7,14 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
 SHEETS_DIR = BASE_DIR / "sheets"
-ENRICHED_DIR = BASE_DIR / "enriched"
+PROBLEMS_DIR = BASE_DIR / "problems"
 PROGRESS_FILE = BASE_DIR / "progress.json"
 PROGRESS_BACKUP_DIR = BASE_DIR / ".backups"
 SOLUTIONS_DIR = BASE_DIR / "solutions"
 
 LANG_EXT = {"Python": ".py", "Go": ".go"}
 
-# Map topic keys to enriched JSON files — add more as you enrich topics
-ENRICHED_MAP = {
-    "Step 16 - Dynamic Programming": "dp_problems.json",
-}
+_problems_cache: dict[str, dict] | None = None
 
 
 def slug_from_name(name: str) -> str:
@@ -73,33 +70,38 @@ def load_sheet(sheet_path: Path) -> dict[str, list[str]]:
         raise SystemExit(f"Cannot load {sheet_path}: {e}")
 
 
-# ─── Enriched problems ───
+# ─── Problems ───
 
 
-def load_enriched(topic_key: str) -> dict[str, dict] | None:
-    fname = ENRICHED_MAP.get(topic_key)
-    if not fname:
-        return None
-    path = ENRICHED_DIR / fname
-    if not path.exists():
-        return None
-    try:
-        with open(path) as f:
-            data = json.load(f)
-        return {p["id"]: p for p in data}
-    except (json.JSONDecodeError, KeyError):
-        return None
+def load_all_problems() -> dict[str, dict]:
+    """Load all problems from problems/*.json into {id: problem_dict}."""
+    global _problems_cache
+    if _problems_cache is not None:
+        return _problems_cache
+    _problems_cache = {}
+    if not PROBLEMS_DIR.exists():
+        return _problems_cache
+    for path in PROBLEMS_DIR.glob("*.json"):
+        try:
+            with open(path) as f:
+                for p in json.load(f):
+                    _problems_cache[p["id"]] = p
+        except (json.JSONDecodeError, KeyError, OSError):
+            continue
+    return _problems_cache
 
 
-def make_stub_problem(name: str, topic: str) -> dict:
-    pid = slug_from_name(name)
-    pretty = name_from_slug(name)
+def get_problem(problem_id: str) -> dict:
+    """Look up a problem by ID, fall back to stub if not found."""
+    problems = load_all_problems()
+    if problem_id in problems:
+        return problems[problem_id]
+    pretty = name_from_slug(problem_id)
     return {
-        "id": pid,
+        "id": problem_id,
         "name": pretty,
         "difficulty": "",
-        "category": topic,
-        "description": f"Solve: {pretty}",
+        "description": "",
         "examples": [],
         "constraints": "",
         "python_template": f"# {pretty}\n\ndef solve():\n    pass\n",

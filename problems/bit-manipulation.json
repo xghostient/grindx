@@ -1,0 +1,172 @@
+[
+  {
+    "id": "add-binary",
+    "name": "Add Binary",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Add Binary\n\ndef solve():\n    pass\n",
+    "go_template": "// Add Binary\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "all-div-of-a-num",
+    "name": "All Div Of A Num",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# All Div Of A Num\n\ndef solve():\n    pass\n",
+    "go_template": "// All Div Of A Num\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "check-ith-bit",
+    "name": "Check Ith Bit",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Check Ith Bit\n\ndef solve():\n    pass\n",
+    "go_template": "// Check Ith Bit\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "count-bits-to-flip-a-to-b",
+    "name": "Count Bits To Flip A To B",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Count Bits To Flip A To B\n\ndef solve():\n    pass\n",
+    "go_template": "// Count Bits To Flip A To B\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "counting-bits",
+    "name": "Counting Bits",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Counting Bits\n\ndef solve():\n    pass\n",
+    "go_template": "// Counting Bits\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "divide-two-integers",
+    "name": "Divide Two Integers",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Divide Two Integers\n\ndef solve():\n    pass\n",
+    "go_template": "// Divide Two Integers\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "missing-number",
+    "name": "Missing Number",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Missing Number\n\ndef solve():\n    pass\n",
+    "go_template": "// Missing Number\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "number-of-1-bits",
+    "name": "Number Of 1 Bits",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Number Of 1 Bits\n\ndef solve():\n    pass\n",
+    "go_template": "// Number Of 1 Bits\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "power-of-two",
+    "name": "Power Of Two",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Power Of Two\n\ndef solve():\n    pass\n",
+    "go_template": "// Power Of Two\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "prime-factorisation",
+    "name": "Prime Factorisation",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Prime Factorisation\n\ndef solve():\n    pass\n",
+    "go_template": "// Prime Factorisation\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "reverse-bits",
+    "name": "Reverse Bits",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Reverse Bits\n\ndef solve():\n    pass\n",
+    "go_template": "// Reverse Bits\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "reverse-integer",
+    "name": "Reverse Integer",
+    "difficulty": "Medium",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Reverse Integer\n\ndef solve():\n    pass\n",
+    "go_template": "// Reverse Integer\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "set-unset-rightmost-unset",
+    "name": "Set Unset Rightmost Unset",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Set Unset Rightmost Unset\n\ndef solve():\n    pass\n",
+    "go_template": "// Set Unset Rightmost Unset\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "sieve",
+    "name": "Sieve",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Sieve\n\ndef solve():\n    pass\n",
+    "go_template": "// Sieve\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "single-number",
+    "name": "Single Number",
+    "difficulty": "Easy",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Single Number\n\ndef solve():\n    pass\n",
+    "go_template": "// Single Number\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "two-numbers-with-odd-occurence",
+    "name": "Two Numbers With Odd Occurence",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Two Numbers With Odd Occurence\n\ndef solve():\n    pass\n",
+    "go_template": "// Two Numbers With Odd Occurence\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "xor-l-to-r",
+    "name": "Xor L To R",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Xor L To R\n\ndef solve():\n    pass\n",
+    "go_template": "// Xor L To R\n\npackage main\n\nfunc solve() {\n\n}\n"
+  }
+]

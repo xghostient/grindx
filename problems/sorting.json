@@ -1,0 +1,52 @@
+[
+  {
+    "id": "bubble-sort",
+    "name": "Bubble Sort",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Bubble Sort\n\ndef solve():\n    pass\n",
+    "go_template": "// Bubble Sort\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "insertion-sort",
+    "name": "Insertion Sort",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Insertion Sort\n\ndef solve():\n    pass\n",
+    "go_template": "// Insertion Sort\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "merge-sort",
+    "name": "Merge Sort",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Merge Sort\n\ndef solve():\n    pass\n",
+    "go_template": "// Merge Sort\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "quick-sort",
+    "name": "Quick Sort",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Quick Sort\n\ndef solve():\n    pass\n",
+    "go_template": "// Quick Sort\n\npackage main\n\nfunc solve() {\n\n}\n"
+  },
+  {
+    "id": "selection-sort",
+    "name": "Selection Sort",
+    "difficulty": "",
+    "description": "",
+    "examples": [],
+    "constraints": "",
+    "python_template": "# Selection Sort\n\ndef solve():\n    pass\n",
+    "go_template": "// Selection Sort\n\npackage main\n\nfunc solve() {\n\n}\n"
+  }
+]

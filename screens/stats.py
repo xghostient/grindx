@@ -7,7 +7,7 @@ from textual.containers import Vertical
 from textual.widgets import Header, Footer, Static
 from textual.screen import Screen
 
-from data import slug_from_name, short_topic, fmt_duration
+from data import short_topic, fmt_duration
 
 
 class StatsScreen(Screen):
@@ -69,9 +69,9 @@ class StatsScreen(Screen):
             # By topic
             tlines = "\n  [bold]By Topic:[/bold]"
             for key in self.all_topics:
-                names = self.all_topics[key]
-                ts = sum(1 for n in names if self.progress.get(slug_from_name(n), {}).get("solved", False))
-                tt = len(names)
+                ids = self.all_topics[key]
+                ts = sum(1 for pid in ids if self.progress.get(pid, {}).get("solved", False))
+                tt = len(ids)
                 tp = int(ts / tt * 100) if tt > 0 else 0
                 f = tp // 10
                 b = "█" * f + "░" * (10 - f)
