@@ -13,6 +13,7 @@ from ..data import (
     load_solution, save_solution, load_progress,
     save_progress, fmt_duration,
     TEMPLATE_KEY, LANG_ORDER, EDITOR_LANG,
+    get_preferred_lang, set_preferred_lang,
 )
 from ..widgets import CodeEditor
 
@@ -75,7 +76,7 @@ class SolveScreen(Screen):
         super().__init__()
         self.problem = problem
         self.progress = progress
-        self.lang = "Python"
+        self.lang = get_preferred_lang()
         self._initial_code = ""
         self._timer_running = False
         self._timer_start = 0.0
@@ -121,7 +122,7 @@ class SolveScreen(Screen):
                 code = self._load_or_template()
                 yield CodeEditor(
                     code,
-                    language="python",
+                    language=EDITOR_LANG[self.lang],
                     id="code-editor",
                     tab_behavior="indent",
                     show_line_numbers=True,
@@ -254,6 +255,7 @@ class SolveScreen(Screen):
         save_solution(self.problem["id"], self.lang, editor.text)
         idx = LANG_ORDER.index(self.lang)
         self.lang = LANG_ORDER[(idx + 1) % len(LANG_ORDER)]
+        set_preferred_lang(self.lang, self.progress)
         self.query_one("#lang-indicator", Static).update(f"  Language: {self.lang}")
         code = self._load_or_template()
         editor.text = code

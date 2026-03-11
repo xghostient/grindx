@@ -200,3 +200,18 @@ def load_solution(problem_id: str, lang: str) -> str:
 def save_solution(problem_id: str, lang: str, code: str):
     path = get_solution_path(problem_id, lang)
     path.write_text(code)
+
+
+# ─── Settings (stored inside progress.json under _settings) ───
+
+
+def get_preferred_lang() -> str:
+    progress = load_progress()
+    return progress.get("_settings", {}).get("lang", "Python")
+
+
+def set_preferred_lang(lang: str, progress: dict):
+    if "_settings" not in progress:
+        progress["_settings"] = {}
+    progress["_settings"]["lang"] = lang
+    save_progress(progress)
