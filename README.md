@@ -20,6 +20,12 @@ Distraction-free DSA practice in your terminal. Zero network footprint.
 pip install grindx
 ```
 
+Or with [pipx](https://pipx.pypa.io/) (recommended for CLI tools):
+
+```bash
+pipx install grindx
+```
+
 Or run from source:
 
 ```bash
