@@ -2,5 +2,5 @@
 
 from textual_serve.server import Server
 
-server = Server("python3 app.py")
+server = Server("python3 -m grindx")
 server.serve()

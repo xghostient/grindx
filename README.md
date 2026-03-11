@@ -7,7 +7,7 @@ Distraction-free DSA practice in your terminal. Zero network footprint.
 
 ## Why grindx?
 
-- **Zero network calls** — everything runs locally, no API hits, no tracking
+- **Zero network calls** — everything runs locally, no tracking (optional AI review)
 - **Terminal-native** — practice DSA without leaving your terminal or opening a browser
 - **Multiple sheets** — Striver A2Z (316), Blind 75, NeetCode 150, Grind 75 built-in
 - **Python & Go** — switch languages on the fly with `Ctrl+L`
@@ -26,14 +26,15 @@ Or run from source:
 git clone https://github.com/xghostient/grindx.git
 cd grindx
 python3 -m venv .venv && source .venv/bin/activate
-pip install textual tree-sitter tree-sitter-python tree-sitter-go
-python app.py
+pip install -e .
+grindx
 ```
 
 ## Usage
 
 ```bash
-grindx
+grindx            # CLI entry point
+python -m grindx  # or as a module
 ```
 
 ### Navigation
@@ -63,10 +64,15 @@ grindx
 |-----|--------|
 | `Ctrl+S` | Save code |
 | `Ctrl+D` | Toggle solved |
+| `Ctrl+E` | AI review |
 | `Ctrl+L` | Switch Python / Go |
 | `Ctrl+B` | Toggle bookmark |
 | `Ctrl+T` | Pause / resume timer |
 | `Ctrl+R` | Reset timer |
+| `Ctrl+Shift+C` | Copy selection to clipboard |
+| `Ctrl+Shift+V` | Paste from clipboard |
+| `Alt+↑` / `Alt+↓` | Move line up / down |
+| `Alt+Shift+↓` | Duplicate line |
 | `Esc` | Save & go back |
 
 ## Features
@@ -79,7 +85,7 @@ grindx
 
 **Stats dashboard** — overall progress, per-difficulty breakdown, per-topic progress bars, current streak, and top 10 best times.
 
-**Sheet-agnostic** — drop any JSON file into `sheets/` and it auto-appears on the welcome screen. Format:
+**Sheet-agnostic** — built-in sheets live inside the package (`grindx/sheets/`). Format:
 
 ```json
 {
@@ -88,7 +94,42 @@ grindx
 }
 ```
 
-**Progress safety** — automatic backups with corruption recovery. Your progress and solutions are gitignored by default.
+**Progress safety** — automatic backups with corruption recovery. Progress, solutions, and backups are stored in `~/.grindx/` so they persist across installs and upgrades.
+
+## AI Review (optional)
+
+Press `Ctrl+E` on the solve screen to get AI-powered feedback on your solution — correctness, edge cases, complexity analysis, and a pass/fail verdict.
+
+### Setup
+
+Set two environment variables:
+
+```bash
+export GRINDX_AI_PROVIDER=groq              # or ollama, anthropic, openai
+export GRINDX_AI_MODEL=llama-3.3-70b-versatile  # optional, sensible defaults per provider
+export GRINDX_AI_KEY=gsk_...                # not needed for ollama
+export GRINDX_AI_URL=https://custom.api/v1  # optional, auto-detected per provider
+```
+
+Or create `~/.grindx.toml`:
+
+```toml
+[ai]
+provider = "groq"
+model = "llama-3.3-70b-versatile"
+api_key = "gsk_..."
+```
+
+### Supported Providers
+
+| Provider | API Key | Default Model | Notes |
+|----------|---------|---------------|-------|
+| `ollama` | No | llama3 | Local, free, no network |
+| `groq` | Yes | llama-3.3-70b-versatile | Fast, free tier available |
+| `anthropic` | Yes | claude-sonnet-4-20250514 | Claude |
+| `openai` | Yes | gpt-4o | GPT |
+
+Any OpenAI-compatible API works — set provider to `openai` and add `base_url`.
 
 ## Built with
 

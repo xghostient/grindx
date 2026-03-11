@@ -4,3 +4,9 @@ __pycache__/
 progress.json
 .backups/
 solutions/
+dist/
+build/
+*.egg-info/
+.claude/
+scripts/
+PLAN-*.md

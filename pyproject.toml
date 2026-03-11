@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grindx"
+version = "0.1.0"
+description = "Distraction-free DSA practice in your terminal"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "xghostient" }]
+keywords = ["dsa", "leetcode", "terminal", "tui", "practice"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Topic :: Education",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "textual>=1.0.0",
+    "tree-sitter>=0.21.0",
+    "tree-sitter-python>=0.21.0",
+    "tree-sitter-go>=0.21.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/xghostient/grindx"
+Repository = "https://github.com/xghostient/grindx"
+
+[project.scripts]
+grindx = "grindx.app:main"
+
+[tool.setuptools.packages.find]
+include = ["grindx*"]
+
+[tool.setuptools.package-data]
+grindx = ["sheets/*.json", "problems/*.json"]
