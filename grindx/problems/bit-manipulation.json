@@ -1,0 +1,238 @@
+[
+  {
+    "id": "add-binary",
+    "name": "Add Binary",
+    "difficulty": "Easy",
+    "description": "Given two binary strings a and b, return their sum as a binary string.",
+    "examples": [
+      {"input": "a = \"11\", b = \"1\"", "output": "\"100\""},
+      {"input": "a = \"1010\", b = \"1011\"", "output": "\"10101\""}
+    ],
+    "constraints": "1 <= a.length, b.length <= 10^4. a and b consist only of '0' or '1'. Each string does not contain leading zeros except '0' itself.",
+    "python_template": "# Add Binary\n\ndef addBinary(a: str, b: str) -> str:\n    pass\n",
+    "go_template": "// Add Binary\n\npackage main\n\nfunc addBinary(a string, b string) string {\n\n}\n"
+  },
+  {
+    "id": "all-div-of-a-num",
+    "name": "All Divisors of a Number",
+    "difficulty": "Easy",
+    "description": "Given an integer n, find all the divisors of n and return them in sorted order. A divisor of n is any integer d such that n % d == 0.",
+    "examples": [
+      {"input": "n = 36", "output": "[1, 2, 3, 4, 6, 9, 12, 18, 36]"},
+      {"input": "n = 7", "output": "[1, 7]"},
+      {"input": "n = 1", "output": "[1]"}
+    ],
+    "constraints": "1 <= n <= 10^6.",
+    "python_template": "# All Divisors of a Number\n\nfrom typing import List\n\ndef allDivisors(n: int) -> List[int]:\n    pass\n",
+    "go_template": "// All Divisors of a Number\n\npackage main\n\nfunc allDivisors(n int) []int {\n\n}\n"
+  },
+  {
+    "id": "check-ith-bit",
+    "name": "Check if ith Bit is Set",
+    "difficulty": "Easy",
+    "description": "Given a number n and a bit position i (0-indexed from right), check whether the ith bit of n is set (1) or not (0).",
+    "examples": [
+      {"input": "n = 5, i = 2", "output": "true (5 = 101, bit 2 is 1)"},
+      {"input": "n = 5, i = 1", "output": "false (5 = 101, bit 1 is 0)"},
+      {"input": "n = 8, i = 3", "output": "true (8 = 1000, bit 3 is 1)"}
+    ],
+    "constraints": "0 <= n <= 10^9. 0 <= i <= 30.",
+    "python_template": "# Check if ith Bit is Set\n\ndef checkIthBit(n: int, i: int) -> bool:\n    pass\n",
+    "go_template": "// Check if ith Bit is Set\n\npackage main\n\nfunc checkIthBit(n int, i int) bool {\n\n}\n"
+  },
+  {
+    "id": "count-bits-to-flip-a-to-b",
+    "name": "Minimum Bit Flips to Convert",
+    "difficulty": "Easy",
+    "description": "Given two integers start and goal, return the minimum number of bit flips to convert start to goal. A bit flip is changing a bit from 0 to 1 or from 1 to 0. Hint: count set bits in start XOR goal.",
+    "examples": [
+      {"input": "start = 10, goal = 7", "output": "3 (10=1010, 7=0111, XOR=1101, 3 bits differ)"},
+      {"input": "start = 3, goal = 4", "output": "3 (3=011, 4=100)"},
+      {"input": "start = 0, goal = 0", "output": "0"}
+    ],
+    "constraints": "0 <= start, goal <= 10^9.",
+    "python_template": "# Minimum Bit Flips to Convert\n\ndef minBitFlips(start: int, goal: int) -> int:\n    pass\n",
+    "go_template": "// Minimum Bit Flips to Convert\n\npackage main\n\nfunc minBitFlips(start int, goal int) int {\n\n}\n"
+  },
+  {
+    "id": "counting-bits",
+    "name": "Counting Bits",
+    "difficulty": "Easy",
+    "description": "Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.",
+    "examples": [
+      {"input": "n = 2", "output": "[0,1,1]"},
+      {"input": "n = 5", "output": "[0,1,1,2,1,2]"}
+    ],
+    "constraints": "0 <= n <= 10^5.",
+    "python_template": "# Counting Bits\n\nfrom typing import List\n\ndef countBits(n: int) -> List[int]:\n    pass\n",
+    "go_template": "// Counting Bits\n\npackage main\n\nfunc countBits(n int) []int {\n\n}\n"
+  },
+  {
+    "id": "divide-two-integers",
+    "name": "Divide Two Integers",
+    "difficulty": "Medium",
+    "description": "Given two integers dividend and divisor, divide them without using multiplication, division, or mod operators. Return the quotient truncated toward zero. If the quotient overflows 32-bit signed integer range, return 2^31 - 1.",
+    "examples": [
+      {"input": "dividend = 10, divisor = 3", "output": "3"},
+      {"input": "dividend = 7, divisor = -3", "output": "-2"},
+      {"input": "dividend = -2147483648, divisor = -1", "output": "2147483647 (overflow clamped)"}
+    ],
+    "constraints": "-2^31 <= dividend, divisor <= 2^31 - 1. divisor != 0.",
+    "python_template": "# Divide Two Integers\n\ndef divide(dividend: int, divisor: int) -> int:\n    pass\n",
+    "go_template": "// Divide Two Integers\n\npackage main\n\nfunc divide(dividend int, divisor int) int {\n\n}\n"
+  },
+  {
+    "id": "missing-number",
+    "name": "Missing Number",
+    "difficulty": "Easy",
+    "description": "Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array. Solve in O(n) time and O(1) extra space using XOR or math.",
+    "examples": [
+      {"input": "nums = [3,0,1]", "output": "2"},
+      {"input": "nums = [0,1]", "output": "2"},
+      {"input": "nums = [9,6,4,2,3,5,7,0,1]", "output": "8"}
+    ],
+    "constraints": "n == nums.length. 1 <= n <= 10^4. 0 <= nums[i] <= n. All values are unique.",
+    "python_template": "# Missing Number\n\nfrom typing import List\n\ndef missingNumber(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// Missing Number\n\npackage main\n\nfunc missingNumber(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "number-of-1-bits",
+    "name": "Number of 1 Bits",
+    "difficulty": "Easy",
+    "description": "Given a positive integer n, return the number of set bits (1s) in its binary representation (also known as the Hamming weight).",
+    "examples": [
+      {"input": "n = 11", "output": "3 (11 = 1011)"},
+      {"input": "n = 128", "output": "1 (128 = 10000000)"},
+      {"input": "n = 2147483645", "output": "30"}
+    ],
+    "constraints": "1 <= n <= 2^31 - 1.",
+    "python_template": "# Number of 1 Bits\n\ndef hammingWeight(n: int) -> int:\n    pass\n",
+    "go_template": "// Number of 1 Bits\n\npackage main\n\nfunc hammingWeight(n uint32) int {\n\n}\n"
+  },
+  {
+    "id": "power-of-two",
+    "name": "Power of Two",
+    "difficulty": "Easy",
+    "description": "Given an integer n, return true if it is a power of two. Otherwise, return false. An integer is a power of two if there exists x such that n == 2^x. Hint: a power of two has exactly one set bit.",
+    "examples": [
+      {"input": "n = 1", "output": "true (2^0)"},
+      {"input": "n = 16", "output": "true (2^4)"},
+      {"input": "n = 3", "output": "false"},
+      {"input": "n = 0", "output": "false"}
+    ],
+    "constraints": "-2^31 <= n <= 2^31 - 1.",
+    "python_template": "# Power of Two\n\ndef isPowerOfTwo(n: int) -> bool:\n    pass\n",
+    "go_template": "// Power of Two\n\npackage main\n\nfunc isPowerOfTwo(n int) bool {\n\n}\n"
+  },
+  {
+    "id": "prime-factorisation",
+    "name": "Prime Factorisation",
+    "difficulty": "Easy",
+    "description": "Given a number n, find all its prime factors and return them in sorted order. Each prime factor should appear as many times as it divides n.",
+    "examples": [
+      {"input": "n = 12", "output": "[2, 2, 3]"},
+      {"input": "n = 100", "output": "[2, 2, 5, 5]"},
+      {"input": "n = 7", "output": "[7]"}
+    ],
+    "constraints": "2 <= n <= 10^6.",
+    "python_template": "# Prime Factorisation\n\nfrom typing import List\n\ndef primeFactors(n: int) -> List[int]:\n    pass\n",
+    "go_template": "// Prime Factorisation\n\npackage main\n\nfunc primeFactors(n int) []int {\n\n}\n"
+  },
+  {
+    "id": "reverse-bits",
+    "name": "Reverse Bits",
+    "difficulty": "Easy",
+    "description": "Reverse bits of a given 32-bit unsigned integer. Return the integer formed by reversing all 32 bits.",
+    "examples": [
+      {"input": "n = 43261596 (00000010100101000001111010011100)", "output": "964176192 (00111001011110000010100101000000)"},
+      {"input": "n = 4294967293 (11111111111111111111111111111101)", "output": "3221225471 (10111111111111111111111111111111)"}
+    ],
+    "constraints": "The input is a 32-bit unsigned integer.",
+    "python_template": "# Reverse Bits\n\ndef reverseBits(n: int) -> int:\n    pass\n",
+    "go_template": "// Reverse Bits\n\npackage main\n\nfunc reverseBits(num uint32) uint32 {\n\n}\n"
+  },
+  {
+    "id": "reverse-integer",
+    "name": "Reverse Integer",
+    "difficulty": "Medium",
+    "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.",
+    "examples": [
+      {"input": "x = 123", "output": "321"},
+      {"input": "x = -123", "output": "-321"},
+      {"input": "x = 120", "output": "21"},
+      {"input": "x = 0", "output": "0"}
+    ],
+    "constraints": "-2^31 <= x <= 2^31 - 1.",
+    "python_template": "# Reverse Integer\n\ndef reverse(x: int) -> int:\n    pass\n",
+    "go_template": "// Reverse Integer\n\npackage main\n\nfunc reverse(x int) int {\n\n}\n"
+  },
+  {
+    "id": "set-unset-rightmost-unset",
+    "name": "Set the Rightmost Unset Bit",
+    "difficulty": "Easy",
+    "description": "Given a non-negative integer n, set the rightmost unset (0) bit of n to 1 and return the result. If all bits are already set, return n as-is.",
+    "examples": [
+      {"input": "n = 6", "output": "7 (110 -> 111)"},
+      {"input": "n = 9", "output": "11 (1001 -> 1011)"},
+      {"input": "n = 15", "output": "15 (1111 -> all bits set, no change)"}
+    ],
+    "constraints": "0 <= n <= 10^9.",
+    "python_template": "# Set the Rightmost Unset Bit\n\ndef setRightmostUnset(n: int) -> int:\n    pass\n",
+    "go_template": "// Set the Rightmost Unset Bit\n\npackage main\n\nfunc setRightmostUnset(n int) int {\n\n}\n"
+  },
+  {
+    "id": "sieve",
+    "name": "Sieve of Eratosthenes",
+    "difficulty": "Easy",
+    "description": "Given an integer n, return all prime numbers less than or equal to n using the Sieve of Eratosthenes algorithm.",
+    "examples": [
+      {"input": "n = 10", "output": "[2, 3, 5, 7]"},
+      {"input": "n = 20", "output": "[2, 3, 5, 7, 11, 13, 17, 19]"},
+      {"input": "n = 1", "output": "[]"}
+    ],
+    "constraints": "0 <= n <= 10^6.",
+    "python_template": "# Sieve of Eratosthenes\n\nfrom typing import List\n\ndef sieve(n: int) -> List[int]:\n    pass\n",
+    "go_template": "// Sieve of Eratosthenes\n\npackage main\n\nfunc sieve(n int) []int {\n\n}\n"
+  },
+  {
+    "id": "single-number",
+    "name": "Single Number",
+    "difficulty": "Easy",
+    "description": "Given a non-empty array of integers nums, every element appears twice except for one. Find that single one. You must use O(1) extra space. Hint: XOR all elements.",
+    "examples": [
+      {"input": "nums = [2,2,1]", "output": "1"},
+      {"input": "nums = [4,1,2,1,2]", "output": "4"},
+      {"input": "nums = [1]", "output": "1"}
+    ],
+    "constraints": "1 <= nums.length <= 3 * 10^4. -3 * 10^4 <= nums[i] <= 3 * 10^4. Every element appears twice except one.",
+    "python_template": "# Single Number\n\nfrom typing import List\n\ndef singleNumber(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// Single Number\n\npackage main\n\nfunc singleNumber(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "two-numbers-with-odd-occurence",
+    "name": "Two Numbers with Odd Occurrences",
+    "difficulty": "Medium",
+    "description": "Given an array where every element occurs twice except two elements which occur once. Find those two elements. Hint: XOR all elements to get a^b, then use a set bit to partition elements into two groups.",
+    "examples": [
+      {"input": "arr = [4, 2, 4, 5, 2, 3, 3, 1]", "output": "[5, 1]"},
+      {"input": "arr = [2, 3, 2, 4]", "output": "[3, 4]"}
+    ],
+    "constraints": "2 <= arr.length <= 10^6. arr.length is even. Exactly two elements appear once.",
+    "python_template": "# Two Numbers with Odd Occurrences\n\nfrom typing import List\n\ndef twoOddOccurrences(arr: List[int]) -> List[int]:\n    pass\n",
+    "go_template": "// Two Numbers with Odd Occurrences\n\npackage main\n\nfunc twoOddOccurrences(arr []int) []int {\n\n}\n"
+  },
+  {
+    "id": "xor-l-to-r",
+    "name": "XOR from L to R",
+    "difficulty": "Easy",
+    "description": "Given two integers L and R, find the XOR of all numbers from L to R (inclusive). Use the pattern: XOR(1 to N) cycles every 4 values. So XOR(L to R) = XOR(1 to R) ^ XOR(1 to L-1).",
+    "examples": [
+      {"input": "L = 3, R = 5", "output": "6 (3^4^5 = 6)"},
+      {"input": "L = 1, R = 4", "output": "4 (1^2^3^4 = 4)"},
+      {"input": "L = 5, R = 5", "output": "5"}
+    ],
+    "constraints": "1 <= L <= R <= 10^9.",
+    "python_template": "# XOR from L to R\n\ndef xorRange(L: int, R: int) -> int:\n    pass\n",
+    "go_template": "// XOR from L to R\n\npackage main\n\nfunc xorRange(L int, R int) int {\n\n}\n"
+  }
+]

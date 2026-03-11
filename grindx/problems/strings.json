@@ -1,0 +1,365 @@
+[
+  {
+    "id": "check-rotation",
+    "name": "Check if Strings are Rotations",
+    "difficulty": "Easy",
+    "description": "Given two strings s1 and s2, check if s2 is a rotation of s1. A rotation means moving some characters from the front to the back. For example, \"abcde\" rotated by 2 gives \"cdeab\". Hint: if s2 is a rotation of s1, then s2 is always a substring of s1 + s1.",
+    "examples": [
+      {"input": "s1 = \"abcde\", s2 = \"cdeab\"", "output": "true"},
+      {"input": "s1 = \"abcde\", s2 = \"abced\"", "output": "false"},
+      {"input": "s1 = \"a\", s2 = \"a\"", "output": "true"}
+    ],
+    "constraints": "1 <= s1.length, s2.length <= 10^5. s1 and s2 consist of lowercase English letters.",
+    "python_template": "# Check if Strings are Rotations\n\ndef isRotation(s1: str, s2: str) -> bool:\n    pass\n",
+    "go_template": "// Check if Strings are Rotations\n\npackage main\n\nfunc isRotation(s1, s2 string) bool {\n    return false\n}\n"
+  },
+  {
+    "id": "count-and-say",
+    "name": "Count and Say",
+    "difficulty": "Medium",
+    "description": "The count-and-say sequence is a sequence of digit strings defined by the recursive formula: countAndSay(1) = \"1\". countAndSay(n) is the run-length encoding of countAndSay(n - 1). Run-length encoding replaces consecutive identical characters with the count followed by the character. For example, \"3322251\" becomes \"23321511\" (two 3s, three 2s, one 5, one 1). Given a positive integer n, return the nth element of the count-and-say sequence.",
+    "examples": [
+      {"input": "n = 1", "output": "\"1\""},
+      {"input": "n = 4", "output": "\"1211\" (1 → 11 → 21 → 1211)"},
+      {"input": "n = 5", "output": "\"111221\""}
+    ],
+    "constraints": "1 <= n <= 30.",
+    "python_template": "# Count and Say\n\ndef countAndSay(n: int) -> str:\n    pass\n",
+    "go_template": "// Count and Say\n\npackage main\n\nfunc countAndSay(n int) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "count-palindromic-subseq",
+    "name": "Count Palindromic Subsequences",
+    "difficulty": "Hard",
+    "description": "Given a string s, return the number of different non-empty palindromic subsequences in s. Since the answer may be very large, return it modulo 10^9 + 7. A subsequence is a sequence derived by deleting some or no characters without changing the order.",
+    "examples": [
+      {"input": "s = \"bccb\"", "output": "6 (b, c, bb, bc, cb, bccb — wait, palindromic ones: b, c, bb, cc, bcb, bccb → 6)"},
+      {"input": "s = \"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"", "output": "104860361"},
+      {"input": "s = \"a\"", "output": "1"}
+    ],
+    "constraints": "1 <= s.length <= 1000. s consists only of lowercase English letters.",
+    "python_template": "# Count Palindromic Subsequences\n\ndef countPalindromicSubsequences(s: str) -> int:\n    pass\n",
+    "go_template": "// Count Palindromic Subsequences\n\npackage main\n\nfunc countPalindromicSubsequences(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "count-substrs",
+    "name": "Count Substrings with All Three Characters",
+    "difficulty": "Medium",
+    "description": "Given a string s consisting only of characters a, b and c, return the number of substrings containing at least one occurrence of all these characters a, b and c.",
+    "examples": [
+      {"input": "s = \"abcabc\"", "output": "10"},
+      {"input": "s = \"aaacb\"", "output": "3"},
+      {"input": "s = \"abc\"", "output": "1"}
+    ],
+    "constraints": "3 <= s.length <= 5 * 10^4. s only consists of a, b or c characters.",
+    "python_template": "# Count Substrings with All Three Characters\n\ndef numberOfSubstrings(s: str) -> int:\n    pass\n",
+    "go_template": "// Count Substrings with All Three Characters\n\npackage main\n\nfunc numberOfSubstrings(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "encode-and-decode-strings",
+    "name": "Encode and Decode Strings",
+    "difficulty": "Medium",
+    "description": "Design an algorithm to encode a list of strings to a single string and decode it back. The encoded string should be able to handle any characters including delimiters. Implement encode(strs) and decode(s). A common approach: prefix each string with its length followed by a delimiter like '#'.",
+    "examples": [
+      {"input": "strs = [\"hello\",\"world\"]", "output": "encode → \"5#hello5#world\", decode → [\"hello\",\"world\"]"},
+      {"input": "strs = [\"\"]", "output": "encode → \"0#\", decode → [\"\"]"},
+      {"input": "strs = [\"we\",\"say\",\":\",\"yes\"]", "output": "encode → \"2#we3#say1#:3#yes\", decode → [\"we\",\"say\",\":\",\"yes\"]"}
+    ],
+    "constraints": "0 <= strs.length <= 200. 0 <= strs[i].length <= 200. strs[i] contains any possible characters.",
+    "python_template": "# Encode and Decode Strings\n\nfrom typing import List\n\ndef encode(strs: List[str]) -> str:\n    pass\n\ndef decode(s: str) -> List[str]:\n    pass\n",
+    "go_template": "// Encode and Decode Strings\n\npackage main\n\nfunc encode(strs []string) string {\n    return \"\"\n}\n\nfunc decode(s string) []string {\n    return nil\n}\n"
+  },
+  {
+    "id": "find-all-anagrams-in-a-string",
+    "name": "Find All Anagrams in a String",
+    "difficulty": "Medium",
+    "description": "Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order. An anagram is a word formed by rearranging the letters of another word using all the original letters exactly once.",
+    "examples": [
+      {"input": "s = \"cbaebabacd\", p = \"abc\"", "output": "[0,6]"},
+      {"input": "s = \"abab\", p = \"ab\"", "output": "[0,1,2]"}
+    ],
+    "constraints": "1 <= s.length, p.length <= 3 * 10^4. s and p consist of lowercase English letters.",
+    "python_template": "# Find All Anagrams in a String\n\nfrom typing import List\n\ndef findAnagrams(s: str, p: str) -> List[int]:\n    pass\n",
+    "go_template": "// Find All Anagrams in a String\n\npackage main\n\nfunc findAnagrams(s string, p string) []int {\n    return nil\n}\n"
+  },
+  {
+    "id": "find-the-index-of-the-first-occurrence-in-a-string",
+    "name": "Find the Index of the First Occurrence in a String",
+    "difficulty": "Easy",
+    "description": "Given two strings haystack and needle, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+    "examples": [
+      {"input": "haystack = \"sadbutsad\", needle = \"sad\"", "output": "0"},
+      {"input": "haystack = \"leetcode\", needle = \"leeto\"", "output": "-1"},
+      {"input": "haystack = \"hello\", needle = \"ll\"", "output": "2"}
+    ],
+    "constraints": "1 <= haystack.length, needle.length <= 10^4. haystack and needle consist of only lowercase English characters.",
+    "python_template": "# Find the Index of the First Occurrence in a String\n\ndef strStr(haystack: str, needle: str) -> int:\n    pass\n",
+    "go_template": "// Find the Index of the First Occurrence in a String\n\npackage main\n\nfunc strStr(haystack string, needle string) int {\n    return -1\n}\n"
+  },
+  {
+    "id": "group-anagrams",
+    "name": "Group Anagrams",
+    "difficulty": "Medium",
+    "description": "Given an array of strings strs, group the anagrams together. You can return the answer in any order. An anagram is a word formed by rearranging the letters of another word using all the original letters exactly once.",
+    "examples": [
+      {"input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]", "output": "[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]"},
+      {"input": "strs = [\"\"]", "output": "[[\"\"]]"},
+      {"input": "strs = [\"a\"]", "output": "[[\"a\"]]"}
+    ],
+    "constraints": "1 <= strs.length <= 10^4. 0 <= strs[i].length <= 100. strs[i] consists of lowercase English letters.",
+    "python_template": "# Group Anagrams\n\nfrom typing import List\n\ndef groupAnagrams(strs: List[str]) -> List[List[str]]:\n    pass\n",
+    "go_template": "// Group Anagrams\n\npackage main\n\nfunc groupAnagrams(strs []string) [][]string {\n    return nil\n}\n"
+  },
+  {
+    "id": "kmp-pattern-matching",
+    "name": "KMP Pattern Matching",
+    "difficulty": "Medium",
+    "description": "Implement the Knuth-Morris-Pratt (KMP) string matching algorithm. Given a text string and a pattern string, find all occurrences of the pattern in the text. Build the LPS (Longest Proper Prefix which is also Suffix) array, then use it to avoid re-checking characters. Return all starting indices where pattern occurs.",
+    "examples": [
+      {"input": "text = \"aabaacaadaabaaba\", pattern = \"aaba\"", "output": "[0, 9, 12]"},
+      {"input": "text = \"abcdef\", pattern = \"xyz\"", "output": "[]"},
+      {"input": "text = \"aaaaaa\", pattern = \"aa\"", "output": "[0, 1, 2, 3, 4]"}
+    ],
+    "constraints": "1 <= text.length <= 10^5. 1 <= pattern.length <= text.length.",
+    "python_template": "# KMP Pattern Matching\n\nfrom typing import List\n\ndef kmpSearch(text: str, pattern: str) -> List[int]:\n    pass\n",
+    "go_template": "// KMP Pattern Matching\n\npackage main\n\nfunc kmpSearch(text, pattern string) []int {\n    return nil\n}\n"
+  },
+  {
+    "id": "largest-odd-num-in-string",
+    "name": "Largest Odd Number in String",
+    "difficulty": "Easy",
+    "description": "You are given a string num, representing a large integer. Return the largest-valued odd integer (as a string) that is a non-empty substring of num, or an empty string if no odd integer exists. A substring is a contiguous sequence of characters within a string.",
+    "examples": [
+      {"input": "num = \"52\"", "output": "\"5\""},
+      {"input": "num = \"4206\"", "output": "\"\""},
+      {"input": "num = \"35427\"", "output": "\"35427\""}
+    ],
+    "constraints": "1 <= num.length <= 10^5. num only consists of digits and does not contain any leading zeros.",
+    "python_template": "# Largest Odd Number in String\n\ndef largestOddNumber(num: str) -> str:\n    pass\n",
+    "go_template": "// Largest Odd Number in String\n\npackage main\n\nfunc largestOddNumber(num string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "longest-common-prefix",
+    "name": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "description": "Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string.",
+    "examples": [
+      {"input": "strs = [\"flower\",\"flow\",\"flight\"]", "output": "\"fl\""},
+      {"input": "strs = [\"dog\",\"racecar\",\"car\"]", "output": "\"\""},
+      {"input": "strs = [\"ab\",\"a\"]", "output": "\"a\""}
+    ],
+    "constraints": "1 <= strs.length <= 200. 0 <= strs[i].length <= 200. strs[i] consists of only lowercase English letters.",
+    "python_template": "# Longest Common Prefix\n\nfrom typing import List\n\ndef longestCommonPrefix(strs: List[str]) -> str:\n    pass\n",
+    "go_template": "// Longest Common Prefix\n\npackage main\n\nfunc longestCommonPrefix(strs []string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "longest-happy-prefix",
+    "name": "Longest Happy Prefix",
+    "difficulty": "Hard",
+    "description": "A string is called a happy prefix if it is a non-empty prefix which is also a suffix (excluding itself). Given a string s, return the longest happy prefix of s. Return an empty string if no such prefix exists. This is directly related to the KMP failure function / LPS array.",
+    "examples": [
+      {"input": "s = \"level\"", "output": "\"l\""},
+      {"input": "s = \"ababab\"", "output": "\"abab\""},
+      {"input": "s = \"a\"", "output": "\"\""}
+    ],
+    "constraints": "1 <= s.length <= 10^5. s contains only lowercase English letters.",
+    "python_template": "# Longest Happy Prefix\n\ndef longestPrefix(s: str) -> str:\n    pass\n",
+    "go_template": "// Longest Happy Prefix\n\npackage main\n\nfunc longestPrefix(s string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "longest-palindrome",
+    "name": "Longest Palindrome",
+    "difficulty": "Easy",
+    "description": "Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters. Letters are case sensitive.",
+    "examples": [
+      {"input": "s = \"abccccdd\"", "output": "7 (one possible palindrome: \"dccaccd\")"},
+      {"input": "s = \"a\"", "output": "1"},
+      {"input": "s = \"Aa\"", "output": "1"}
+    ],
+    "constraints": "1 <= s.length <= 2000. s consists of lowercase and/or uppercase English letters only.",
+    "python_template": "# Longest Palindrome\n\ndef longestPalindrome(s: str) -> int:\n    pass\n",
+    "go_template": "// Longest Palindrome\n\npackage main\n\nfunc longestPalindrome(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "longest-palindromic-substring",
+    "name": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "description": "Given a string s, return the longest palindromic substring in s. Use expand-around-center approach for O(n^2) time and O(1) space.",
+    "examples": [
+      {"input": "s = \"babad\"", "output": "\"bab\" (or \"aba\")"},
+      {"input": "s = \"cbbd\"", "output": "\"bb\""},
+      {"input": "s = \"a\"", "output": "\"a\""}
+    ],
+    "constraints": "1 <= s.length <= 1000. s consist of only digits and English letters.",
+    "python_template": "# Longest Palindromic Substring\n\ndef longestPalindrome(s: str) -> str:\n    pass\n",
+    "go_template": "// Longest Palindromic Substring\n\npackage main\n\nfunc longestPalindrome(s string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "max-score-from-removing-substr",
+    "name": "Maximum Score From Removing Substrings",
+    "difficulty": "Medium",
+    "description": "You are given a string s and two integers x and y. You can perform two types of operations any number of times: Remove substring \"ab\" and gain x points. Remove substring \"ba\" and gain y points. Return the maximum points you can gain after applying the above operations on s. Greedy: always remove the higher-scoring pair first.",
+    "examples": [
+      {"input": "s = \"cdbcbbaaabab\", x = 4, y = 5", "output": "19"},
+      {"input": "s = \"aabbaaxybbaabb\", x = 5, y = 4", "output": "20"},
+      {"input": "s = \"ab\", x = 1, y = 1", "output": "1"}
+    ],
+    "constraints": "1 <= s.length <= 10^5. 1 <= x, y <= 10^4. s consists of lowercase English letters.",
+    "python_template": "# Maximum Score From Removing Substrings\n\ndef maximumGain(s: str, x: int, y: int) -> int:\n    pass\n",
+    "go_template": "// Maximum Score From Removing Substrings\n\npackage main\n\nfunc maximumGain(s string, x int, y int) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "minimum-add-to-make-parentheses-valid",
+    "name": "Minimum Add to Make Parentheses Valid",
+    "difficulty": "Medium",
+    "description": "A parentheses string is valid if every opening parenthesis '(' has a corresponding closing parenthesis ')' and vice versa. Given a parentheses string s, return the minimum number of parentheses we must add to make the string valid.",
+    "examples": [
+      {"input": "s = \"())\"", "output": "1"},
+      {"input": "s = \"(((\"", "output": "3"},
+      {"input": "s = \"()\"", "output": "0"}
+    ],
+    "constraints": "1 <= s.length <= 1000. s consists of '(' and ')' characters only.",
+    "python_template": "# Minimum Add to Make Parentheses Valid\n\ndef minAddToMakeValid(s: str) -> int:\n    pass\n",
+    "go_template": "// Minimum Add to Make Parentheses Valid\n\npackage main\n\nfunc minAddToMakeValid(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "palindromic-substrings",
+    "name": "Palindromic Substrings",
+    "difficulty": "Medium",
+    "description": "Given a string s, return the number of palindromic substrings in it. A string is a palindrome when it reads the same backward as forward. A substring is a contiguous sequence of characters within the string.",
+    "examples": [
+      {"input": "s = \"abc\"", "output": "3 (\"a\", \"b\", \"c\")"},
+      {"input": "s = \"aaa\"", "output": "6 (\"a\", \"a\", \"a\", \"aa\", \"aa\", \"aaa\")"}
+    ],
+    "constraints": "1 <= s.length <= 1000. s consists of lowercase English letters.",
+    "python_template": "# Palindromic Substrings\n\ndef countSubstrings(s: str) -> int:\n    pass\n",
+    "go_template": "// Palindromic Substrings\n\npackage main\n\nfunc countSubstrings(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "rabin-karp-repeated-string-match",
+    "name": "Repeated String Match (Rabin-Karp)",
+    "difficulty": "Medium",
+    "description": "Given two strings a and b, return the minimum number of times you should repeat string a so that string b is a substring of the repeated string. If it is impossible, return -1. Use Rabin-Karp or any string matching algorithm for efficiency.",
+    "examples": [
+      {"input": "a = \"abcd\", b = \"cdabcdab\"", "output": "3 (\"abcdabcdabcd\" contains \"cdabcdab\")"},
+      {"input": "a = \"a\", b = \"aa\"", "output": "2"},
+      {"input": "a = \"abc\", b = \"xyz\"", "output": "-1"}
+    ],
+    "constraints": "1 <= a.length, b.length <= 10^4. a and b consist of lowercase English letters.",
+    "python_template": "# Repeated String Match (Rabin-Karp)\n\ndef repeatedStringMatch(a: str, b: str) -> int:\n    pass\n",
+    "go_template": "// Repeated String Match (Rabin-Karp)\n\npackage main\n\nfunc repeatedStringMatch(a string, b string) int {\n    return -1\n}\n"
+  },
+  {
+    "id": "remove-outermost-parentheses",
+    "name": "Remove Outermost Parentheses",
+    "difficulty": "Easy",
+    "description": "A valid parentheses string s is primitive if it is nonempty, and there does not exist a way to split it into s = A + B, with A and B nonempty valid parentheses strings. Given a valid parentheses string s, consider its primitive decomposition. Return s after removing the outermost parentheses of every primitive string in the primitive decomposition of s.",
+    "examples": [
+      {"input": "s = \"(()())(())\"", "output": "\"()()()\""},
+      {"input": "s = \"(()())(())(()(()))\"", "output": "\"()()()()(())\""},
+      {"input": "s = \"()()\"", "output": "\"\""}
+    ],
+    "constraints": "1 <= s.length <= 10^5. s is a valid parentheses string. s[i] is either '(' or ')'.",
+    "python_template": "# Remove Outermost Parentheses\n\ndef removeOuterParentheses(s: str) -> str:\n    pass\n",
+    "go_template": "// Remove Outermost Parentheses\n\npackage main\n\nfunc removeOuterParentheses(s string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "reverse-words-in-a-string",
+    "name": "Reverse Words in a String",
+    "difficulty": "Medium",
+    "description": "Given an input string s, reverse the order of the words. A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space. Return a string of the words in reverse order concatenated by a single space. Note that s may contain leading or trailing spaces or multiple spaces between two words.",
+    "examples": [
+      {"input": "s = \"the sky is blue\"", "output": "\"blue is sky the\""},
+      {"input": "s = \"  hello world  \"", "output": "\"world hello\""},
+      {"input": "s = \"a good   example\"", "output": "\"example good a\""}
+    ],
+    "constraints": "1 <= s.length <= 10^4. s contains English letters (upper and lower case), digits, and spaces ' '.",
+    "python_template": "# Reverse Words in a String\n\ndef reverseWords(s: str) -> str:\n    pass\n",
+    "go_template": "// Reverse Words in a String\n\npackage main\n\nfunc reverseWords(s string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "roman-to-integer",
+    "name": "Roman to Integer",
+    "difficulty": "Easy",
+    "description": "Roman numerals are represented by seven symbols: I(1), V(5), X(10), L(50), C(100), D(500), M(1000). Some subtractive combinations: IV=4, IX=9, XL=40, XC=90, CD=400, CM=900. Given a roman numeral, convert it to an integer.",
+    "examples": [
+      {"input": "s = \"III\"", "output": "3"},
+      {"input": "s = \"LVIII\"", "output": "58"},
+      {"input": "s = \"MCMXCIV\"", "output": "1994"}
+    ],
+    "constraints": "1 <= s.length <= 15. s contains only the characters I, V, X, L, C, D, M. It is guaranteed that s is a valid roman numeral in the range [1, 3999].",
+    "python_template": "# Roman to Integer\n\ndef romanToInt(s: str) -> int:\n    pass\n",
+    "go_template": "// Roman to Integer\n\npackage main\n\nfunc romanToInt(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "shortest-palindrome",
+    "name": "Shortest Palindrome",
+    "difficulty": "Hard",
+    "description": "You are given a string s. You can convert s to a palindrome by adding characters in front of it. Return the shortest palindrome you can find by performing this transformation. This is equivalent to finding the longest palindromic prefix of s, then prepending the reverse of the remaining suffix. KMP / Z-algorithm can solve this in O(n).",
+    "examples": [
+      {"input": "s = \"aacecaaa\"", "output": "\"aaacecaaa\""},
+      {"input": "s = \"abcd\"", "output": "\"dcbabcd\""},
+      {"input": "s = \"a\"", "output": "\"a\""}
+    ],
+    "constraints": "0 <= s.length <= 5 * 10^4. s consists of lowercase English letters only.",
+    "python_template": "# Shortest Palindrome\n\ndef shortestPalindrome(s: str) -> str:\n    pass\n",
+    "go_template": "// Shortest Palindrome\n\npackage main\n\nfunc shortestPalindrome(s string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "sort-characters-by-frequency",
+    "name": "Sort Characters By Frequency",
+    "difficulty": "Medium",
+    "description": "Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string. Return the sorted string. If there are multiple answers, return any of them.",
+    "examples": [
+      {"input": "s = \"tree\"", "output": "\"eert\" (or \"eetr\")"},
+      {"input": "s = \"cccaaa\"", "output": "\"aaaccc\" (or \"cccaaa\")"},
+      {"input": "s = \"Aabb\"", "output": "\"bbAa\" (or \"bbaA\")"}
+    ],
+    "constraints": "1 <= s.length <= 5 * 10^5. s consists of uppercase and lowercase English letters and digits.",
+    "python_template": "# Sort Characters By Frequency\n\ndef frequencySort(s: str) -> str:\n    pass\n",
+    "go_template": "// Sort Characters By Frequency\n\npackage main\n\nfunc frequencySort(s string) string {\n    return \"\"\n}\n"
+  },
+  {
+    "id": "string-to-integer-atoi",
+    "name": "String to Integer (atoi)",
+    "difficulty": "Medium",
+    "description": "Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer. The algorithm: 1) Read and ignore leading whitespace. 2) Check if the next character is '-' or '+' (optional sign). 3) Read digits until a non-digit character or end of input. 4) Convert digits to integer. 5) Clamp the result to the 32-bit signed integer range [-2^31, 2^31 - 1].",
+    "examples": [
+      {"input": "s = \"42\"", "output": "42"},
+      {"input": "s = \"   -42\"", "output": "-42"},
+      {"input": "s = \"4193 with words\"", "output": "4193"},
+      {"input": "s = \"words and 987\"", "output": "0"}
+    ],
+    "constraints": "0 <= s.length <= 200. s consists of English letters, digits, ' ', '+', '-', and '.'.",
+    "python_template": "# String to Integer (atoi)\n\ndef myAtoi(s: str) -> int:\n    pass\n",
+    "go_template": "// String to Integer (atoi)\n\npackage main\n\nfunc myAtoi(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "sum-of-beauty-of-all-substr",
+    "name": "Sum of Beauty of All Substrings",
+    "difficulty": "Medium",
+    "description": "The beauty of a string is the difference in frequencies between the most frequent and least frequent characters. Given a string s, return the sum of beauty of all of its substrings.",
+    "examples": [
+      {"input": "s = \"aabcb\"", "output": "5"},
+      {"input": "s = \"aabcbaa\"", "output": "17"},
+      {"input": "s = \"a\"", "output": "0"}
+    ],
+    "constraints": "1 <= s.length <= 500. s consists of only lowercase English letters.",
+    "python_template": "# Sum of Beauty of All Substrings\n\ndef beautySum(s: str) -> int:\n    pass\n",
+    "go_template": "// Sum of Beauty of All Substrings\n\npackage main\n\nfunc beautySum(s string) int {\n    return 0\n}\n"
+  },
+  {
+    "id": "valid-anagram",
+    "name": "Valid Anagram",
+    "difficulty": "Easy",
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise. An anagram is a word formed by rearranging the letters of another word using all the original letters exactly once.",
+    "examples": [
+      {"input": "s = \"anagram\", t = \"nagaram\"", "output": "true"},
+      {"input": "s = \"rat\", t = \"car\"", "output": "false"},
+      {"input": "s = \"a\", t = \"ab\"", "output": "false"}
+    ],
+    "constraints": "1 <= s.length, t.length <= 5 * 10^4. s and t consist of lowercase English letters.",
+    "python_template": "# Valid Anagram\n\ndef isAnagram(s: str, t: str) -> bool:\n    pass\n",
+    "go_template": "// Valid Anagram\n\npackage main\n\nfunc isAnagram(s string, t string) bool {\n    return false\n}\n"
+  }
+]

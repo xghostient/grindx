@@ -1,0 +1,201 @@
+[
+  {
+    "id": "better-string",
+    "name": "Better String",
+    "difficulty": "Medium",
+    "description": "Given two strings str1 and str2, return the string that has the greater number of distinct subsequences. A subsequence is a sequence derived from another string by deleting some or no characters without changing the order. If both strings have the same number of distinct subsequences, return str1.",
+    "examples": [
+      {"input": "str1 = \"gfg\", str2 = \"ggg\"", "output": "\"gfg\" (gfg has 7 distinct subsequences: '', g, f, gf, fg, gg, gfg; ggg has 4: '', g, gg, ggg)"},
+      {"input": "str1 = \"a\", str2 = \"b\"", "output": "\"a\" (both have 2 distinct subsequences, return str1)"}
+    ],
+    "constraints": "1 <= str1.length, str2.length <= 30. Strings contain only lowercase English letters.",
+    "python_template": "# Better String\n\ndef betterString(str1: str, str2: str) -> str:\n    pass\n",
+    "go_template": "// Better String\n\npackage main\n\nfunc betterString(str1, str2 string) string {\n\n}\n"
+  },
+  {
+    "id": "combination-sum-ii",
+    "name": "Combination Sum II",
+    "difficulty": "Medium",
+    "description": "Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target. Each number in candidates may only be used once in the combination. The solution set must not contain duplicate combinations.",
+    "examples": [
+      {"input": "candidates = [10,1,2,7,6,1,5], target = 8", "output": "[[1,1,6],[1,2,5],[1,7],[2,6]]"},
+      {"input": "candidates = [2,5,2,1,2], target = 5", "output": "[[1,2,2],[5]]"}
+    ],
+    "constraints": "1 <= candidates.length <= 100. 1 <= candidates[i] <= 50. 1 <= target <= 30.",
+    "python_template": "# Combination Sum II\n\nfrom typing import List\n\ndef combinationSum2(candidates: List[int], target: int) -> List[List[int]]:\n    pass\n",
+    "go_template": "// Combination Sum II\n\npackage main\n\nfunc combinationSum2(candidates []int, target int) [][]int {\n\n}\n"
+  },
+  {
+    "id": "combination-sum-iii",
+    "name": "Combination Sum III",
+    "difficulty": "Medium",
+    "description": "Find all valid combinations of k numbers that sum up to n such that only numbers 1 through 9 are used, and each number is used at most once. Return a list of all possible valid combinations. The list must not contain the same combination twice, and the combinations may be returned in any order.",
+    "examples": [
+      {"input": "k = 3, n = 7", "output": "[[1,2,4]]"},
+      {"input": "k = 3, n = 9", "output": "[[1,2,6],[1,3,5],[2,3,4]]"},
+      {"input": "k = 4, n = 1", "output": "[]"}
+    ],
+    "constraints": "2 <= k <= 9. 1 <= n <= 60.",
+    "python_template": "# Combination Sum III\n\nfrom typing import List\n\ndef combinationSum3(k: int, n: int) -> List[List[int]]:\n    pass\n",
+    "go_template": "// Combination Sum III\n\npackage main\n\nfunc combinationSum3(k int, n int) [][]int {\n\n}\n"
+  },
+  {
+    "id": "generate-all-bin-strings",
+    "name": "Generate All Binary Strings",
+    "difficulty": "Easy",
+    "description": "Given an integer n, generate all binary strings of length n such that no two consecutive characters are '1'. Return all valid strings in any order.",
+    "examples": [
+      {"input": "n = 2", "output": "[\"00\", \"01\", \"10\"]"},
+      {"input": "n = 3", "output": "[\"000\", \"001\", \"010\", \"100\", \"101\"]"},
+      {"input": "n = 1", "output": "[\"0\", \"1\"]"}
+    ],
+    "constraints": "1 <= n <= 20.",
+    "python_template": "# Generate All Binary Strings\n\nfrom typing import List\n\ndef generateBinaryStrings(n: int) -> List[str]:\n    pass\n",
+    "go_template": "// Generate All Binary Strings\n\npackage main\n\nfunc generateBinaryStrings(n int) []string {\n\n}\n"
+  },
+  {
+    "id": "letter-combinations-of-a-phone-number",
+    "name": "Letter Combinations of a Phone Number",
+    "difficulty": "Medium",
+    "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. The mapping of digit to letters is: 2->abc, 3->def, 4->ghi, 5->jkl, 6->mno, 7->pqrs, 8->tuv, 9->wxyz. Return the answer in any order. If the input is empty, return an empty list.",
+    "examples": [
+      {"input": "digits = \"23\"", "output": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"},
+      {"input": "digits = \"\"", "output": "[]"},
+      {"input": "digits = \"2\"", "output": "[\"a\",\"b\",\"c\"]"}
+    ],
+    "constraints": "0 <= digits.length <= 4. digits[i] is a digit in the range ['2', '9'].",
+    "python_template": "# Letter Combinations of a Phone Number\n\nfrom typing import List\n\ndef letterCombinations(digits: str) -> List[str]:\n    pass\n",
+    "go_template": "// Letter Combinations of a Phone Number\n\npackage main\n\nfunc letterCombinations(digits string) []string {\n\n}\n"
+  },
+  {
+    "id": "m-coloring-problem",
+    "name": "M-Coloring Problem",
+    "difficulty": "Medium",
+    "description": "Given an undirected graph represented as an adjacency list and an integer m, determine if the graph can be colored with at most m colors such that no two adjacent vertices share the same color. Return true if possible, false otherwise.",
+    "examples": [
+      {"input": "n = 4, edges = [[0,1],[1,2],[2,3],[3,0],[0,2]], m = 3", "output": "true"},
+      {"input": "n = 3, edges = [[0,1],[1,2],[0,2]], m = 2", "output": "false (triangle needs at least 3 colors)"}
+    ],
+    "constraints": "1 <= n <= 20. 1 <= m <= n. 0 <= edges.length <= n*(n-1)/2.",
+    "python_template": "# M-Coloring Problem\n\nfrom typing import List\n\ndef graphColoring(n: int, edges: List[List[int]], m: int) -> bool:\n    pass\n",
+    "go_template": "// M-Coloring Problem\n\npackage main\n\nfunc graphColoring(n int, edges [][]int, m int) bool {\n\n}\n"
+  },
+  {
+    "id": "n-queens",
+    "name": "N-Queens",
+    "difficulty": "Hard",
+    "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration where 'Q' indicates a queen and '.' indicates an empty space.",
+    "examples": [
+      {"input": "n = 4", "output": "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]"},
+      {"input": "n = 1", "output": "[[\"Q\"]]"}
+    ],
+    "constraints": "1 <= n <= 9.",
+    "python_template": "# N-Queens\n\nfrom typing import List\n\ndef solveNQueens(n: int) -> List[List[str]]:\n    pass\n",
+    "go_template": "// N-Queens\n\npackage main\n\nfunc solveNQueens(n int) [][]string {\n\n}\n"
+  },
+  {
+    "id": "palindrome-partitioning",
+    "name": "Palindrome Partitioning",
+    "difficulty": "Medium",
+    "description": "Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitionings of s.",
+    "examples": [
+      {"input": "s = \"aab\"", "output": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]"},
+      {"input": "s = \"a\"", "output": "[[\"a\"]]"}
+    ],
+    "constraints": "1 <= s.length <= 16. s contains only lowercase English letters.",
+    "python_template": "# Palindrome Partitioning\n\nfrom typing import List\n\ndef partition(s: str) -> List[List[str]]:\n    pass\n",
+    "go_template": "// Palindrome Partitioning\n\npackage main\n\nfunc partition(s string) [][]string {\n\n}\n"
+  },
+  {
+    "id": "permutations",
+    "name": "Permutations",
+    "difficulty": "Medium",
+    "description": "Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.",
+    "examples": [
+      {"input": "nums = [1,2,3]", "output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]"},
+      {"input": "nums = [0,1]", "output": "[[0,1],[1,0]]"},
+      {"input": "nums = [1]", "output": "[[1]]"}
+    ],
+    "constraints": "1 <= nums.length <= 6. -10 <= nums[i] <= 10. All integers of nums are unique.",
+    "python_template": "# Permutations\n\nfrom typing import List\n\ndef permute(nums: List[int]) -> List[List[int]]:\n    pass\n",
+    "go_template": "// Permutations\n\npackage main\n\nfunc permute(nums []int) [][]int {\n\n}\n"
+  },
+  {
+    "id": "rat-in-a-maze",
+    "name": "Rat in a Maze",
+    "difficulty": "Medium",
+    "description": "Consider a rat placed at (0, 0) in a square matrix of order n x n. The rat has to reach the destination at (n-1, n-1). Find all possible paths that the rat can take from source to destination. The rat can move up (U), down (D), left (L), right (R). Value 0 in a cell means the cell is blocked, value 1 means the rat can move through it. In a path, no cell can be visited more than once. Return sorted list of path strings.",
+    "examples": [
+      {"input": "maze = [[1,0,0,0],[1,1,0,1],[1,1,0,0],[0,1,1,1]]", "output": "[\"DDRDRR\", \"DRDDRR\"]"},
+      {"input": "maze = [[1,0],[1,1]]", "output": "[\"DR\"]"}
+    ],
+    "constraints": "2 <= n <= 5. 0 <= maze[i][j] <= 1. If maze[0][0] = 0 or maze[n-1][n-1] = 0, return empty list.",
+    "python_template": "# Rat in a Maze\n\nfrom typing import List\n\ndef findPath(maze: List[List[int]]) -> List[str]:\n    pass\n",
+    "go_template": "// Rat in a Maze\n\npackage main\n\nfunc findPath(maze [][]int) []string {\n\n}\n"
+  },
+  {
+    "id": "reverse-stack",
+    "name": "Reverse a Stack using Recursion",
+    "difficulty": "Easy",
+    "description": "Given a stack, reverse the elements of the stack using only recursion. You are not allowed to use any loop constructs or extra data structures. You must use the call stack itself to reverse the elements in-place.",
+    "examples": [
+      {"input": "stack = [1, 2, 3, 4, 5] (top is 5)", "output": "[5, 4, 3, 2, 1] (top is 1)"},
+      {"input": "stack = [1, 2] (top is 2)", "output": "[2, 1] (top is 1)"}
+    ],
+    "constraints": "1 <= stack.size <= 1000. -10^9 <= stack[i] <= 10^9.",
+    "python_template": "# Reverse a Stack using Recursion\n\ndef reverseStack(stack: list) -> None:\n    pass\n",
+    "go_template": "// Reverse a Stack using Recursion\n\npackage main\n\nfunc reverseStack(stack *[]int) {\n\n}\n"
+  },
+  {
+    "id": "subsets",
+    "name": "Subsets",
+    "difficulty": "Medium",
+    "description": "Given an integer array nums of unique elements, return all possible subsets (the power set). The solution set must not contain duplicate subsets. Return the subsets in any order.",
+    "examples": [
+      {"input": "nums = [1,2,3]", "output": "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]"},
+      {"input": "nums = [0]", "output": "[[],[0]]"}
+    ],
+    "constraints": "1 <= nums.length <= 10. -10 <= nums[i] <= 10. All elements of nums are unique.",
+    "python_template": "# Subsets\n\nfrom typing import List\n\ndef subsets(nums: List[int]) -> List[List[int]]:\n    pass\n",
+    "go_template": "// Subsets\n\npackage main\n\nfunc subsets(nums []int) [][]int {\n\n}\n"
+  },
+  {
+    "id": "subsets-ii",
+    "name": "Subsets II",
+    "difficulty": "Medium",
+    "description": "Given an integer array nums that may contain duplicates, return all possible subsets (the power set). The solution set must not contain duplicate subsets. Return the solution in any order.",
+    "examples": [
+      {"input": "nums = [1,2,2]", "output": "[[],[1],[1,2],[1,2,2],[2],[2,2]]"},
+      {"input": "nums = [0]", "output": "[[],[0]]"}
+    ],
+    "constraints": "1 <= nums.length <= 10. -10 <= nums[i] <= 10.",
+    "python_template": "# Subsets II\n\nfrom typing import List\n\ndef subsetsWithDup(nums: List[int]) -> List[List[int]]:\n    pass\n",
+    "go_template": "// Subsets II\n\npackage main\n\nfunc subsetsWithDup(nums []int) [][]int {\n\n}\n"
+  },
+  {
+    "id": "sudoku-solver",
+    "name": "Sudoku Solver",
+    "difficulty": "Hard",
+    "description": "Write a program to solve a Sudoku puzzle by filling the empty cells. A sudoku solution must satisfy all of the following rules: Each of the digits 1-9 must occur exactly once in each row, each column, and each of the 9 3x3 sub-boxes. The '.' character indicates empty cells.",
+    "examples": [
+      {"input": "board = [[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"],[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"],[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"],[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"],[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"],[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"],[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"],[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"],[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]", "output": "[[\"5\",\"3\",\"4\",\"6\",\"7\",\"8\",\"9\",\"1\",\"2\"],[\"6\",\"7\",\"2\",\"1\",\"9\",\"5\",\"3\",\"4\",\"8\"],[\"1\",\"9\",\"8\",\"3\",\"4\",\"2\",\"5\",\"6\",\"7\"],[\"8\",\"5\",\"9\",\"7\",\"6\",\"1\",\"4\",\"2\",\"3\"],[\"4\",\"2\",\"6\",\"8\",\"5\",\"3\",\"7\",\"9\",\"1\"],[\"7\",\"1\",\"3\",\"9\",\"2\",\"4\",\"8\",\"5\",\"6\"],[\"9\",\"6\",\"1\",\"5\",\"3\",\"7\",\"2\",\"8\",\"4\"],[\"2\",\"8\",\"7\",\"4\",\"1\",\"9\",\"6\",\"3\",\"5\"],[\"3\",\"4\",\"5\",\"2\",\"8\",\"6\",\"1\",\"7\",\"9\"]]"}
+    ],
+    "constraints": "board.length == 9. board[i].length == 9. board[i][j] is a digit or '.'. It is guaranteed that the input board has only one solution.",
+    "python_template": "# Sudoku Solver\n\nfrom typing import List\n\ndef solveSudoku(board: List[List[str]]) -> None:\n    pass\n",
+    "go_template": "// Sudoku Solver\n\npackage main\n\nfunc solveSudoku(board [][]byte) {\n\n}\n"
+  },
+  {
+    "id": "word-search",
+    "name": "Word Search",
+    "difficulty": "Medium",
+    "description": "Given an m x n grid of characters board and a string word, return true if word exists in the grid. The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.",
+    "examples": [
+      {"input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCCED\"", "output": "true"},
+      {"input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"SEE\"", "output": "true"},
+      {"input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCB\"", "output": "false"}
+    ],
+    "constraints": "m == board.length. n == board[i].length. 1 <= m, n <= 6. 1 <= word.length <= 15. board and word consist of only lowercase and uppercase English letters.",
+    "python_template": "# Word Search\n\nfrom typing import List\n\ndef exist(board: List[List[str]], word: str) -> bool:\n    pass\n",
+    "go_template": "// Word Search\n\npackage main\n\nfunc exist(board [][]byte, word string) bool {\n\n}\n"
+  }
+]

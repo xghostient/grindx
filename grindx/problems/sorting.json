@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bubble-sort",
+    "name": "Bubble Sort",
+    "difficulty": "Easy",
+    "description": "Implement the bubble sort algorithm. Repeatedly step through the array, compare adjacent elements, and swap them if they are in the wrong order. The pass through the array is repeated until the array is sorted. Optimize by stopping early if no swaps occur in a pass. Time: O(n^2), Space: O(1).",
+    "examples": [
+      {"input": "arr = [64, 34, 25, 12, 22, 11, 90]", "output": "[11, 12, 22, 25, 34, 64, 90]"},
+      {"input": "arr = [5, 1, 4, 2, 8]", "output": "[1, 2, 4, 5, 8]"},
+      {"input": "arr = [1, 2, 3]", "output": "[1, 2, 3] (already sorted, early exit)"}
+    ],
+    "constraints": "1 <= arr.length <= 10^4. -10^4 <= arr[i] <= 10^4.",
+    "python_template": "# Bubble Sort\n\nfrom typing import List\n\ndef bubbleSort(arr: List[int]) -> List[int]:\n    pass\n",
+    "go_template": "// Bubble Sort\n\npackage main\n\nfunc bubbleSort(arr []int) []int {\n    return arr\n}\n"
+  },
+  {
+    "id": "insertion-sort",
+    "name": "Insertion Sort",
+    "difficulty": "Easy",
+    "description": "Implement the insertion sort algorithm. Build the sorted array one element at a time by repeatedly taking the next element and inserting it into its correct position among the already-sorted elements. Time: O(n^2), Space: O(1). Efficient for small or nearly sorted arrays.",
+    "examples": [
+      {"input": "arr = [12, 11, 13, 5, 6]", "output": "[5, 6, 11, 12, 13]"},
+      {"input": "arr = [4, 3, 2, 10, 12, 1, 5, 6]", "output": "[1, 2, 3, 4, 5, 6, 10, 12]"},
+      {"input": "arr = [1]", "output": "[1]"}
+    ],
+    "constraints": "1 <= arr.length <= 10^4. -10^4 <= arr[i] <= 10^4.",
+    "python_template": "# Insertion Sort\n\nfrom typing import List\n\ndef insertionSort(arr: List[int]) -> List[int]:\n    pass\n",
+    "go_template": "// Insertion Sort\n\npackage main\n\nfunc insertionSort(arr []int) []int {\n    return arr\n}\n"
+  },
+  {
+    "id": "merge-sort",
+    "name": "Merge Sort",
+    "difficulty": "Medium",
+    "description": "Implement the merge sort algorithm. Divide the array into two halves, recursively sort each half, then merge the two sorted halves. Time: O(n log n), Space: O(n). This is a stable, divide-and-conquer sorting algorithm.",
+    "examples": [
+      {"input": "arr = [38, 27, 43, 3, 9, 82, 10]", "output": "[3, 9, 10, 27, 38, 43, 82]"},
+      {"input": "arr = [5, 2, 4, 7, 1, 3, 2, 6]", "output": "[1, 2, 2, 3, 4, 5, 6, 7]"},
+      {"input": "arr = [1]", "output": "[1]"}
+    ],
+    "constraints": "1 <= arr.length <= 10^5. -10^4 <= arr[i] <= 10^4.",
+    "python_template": "# Merge Sort\n\nfrom typing import List\n\ndef mergeSort(arr: List[int]) -> List[int]:\n    pass\n",
+    "go_template": "// Merge Sort\n\npackage main\n\nfunc mergeSort(arr []int) []int {\n    return arr\n}\n"
+  },
+  {
+    "id": "quick-sort",
+    "name": "Quick Sort",
+    "difficulty": "Medium",
+    "description": "Implement the quick sort algorithm. Pick a pivot element, partition the array such that elements less than the pivot come before it and elements greater come after, then recursively sort the partitions. Time: O(n log n) average, O(n^2) worst case. Space: O(log n) stack space.",
+    "examples": [
+      {"input": "arr = [10, 7, 8, 9, 1, 5]", "output": "[1, 5, 7, 8, 9, 10]"},
+      {"input": "arr = [3, 6, 8, 10, 1, 2, 1]", "output": "[1, 1, 2, 3, 6, 8, 10]"},
+      {"input": "arr = [1]", "output": "[1]"}
+    ],
+    "constraints": "1 <= arr.length <= 10^5. -10^4 <= arr[i] <= 10^4.",
+    "python_template": "# Quick Sort\n\nfrom typing import List\n\ndef quickSort(arr: List[int]) -> List[int]:\n    pass\n",
+    "go_template": "// Quick Sort\n\npackage main\n\nfunc quickSort(arr []int) []int {\n    return arr\n}\n"
+  },
+  {
+    "id": "selection-sort",
+    "name": "Selection Sort",
+    "difficulty": "Easy",
+    "description": "Implement the selection sort algorithm. Repeatedly find the minimum element from the unsorted portion and swap it with the first unsorted element. Time: O(n^2), Space: O(1). Simple but inefficient for large datasets.",
+    "examples": [
+      {"input": "arr = [64, 25, 12, 22, 11]", "output": "[11, 12, 22, 25, 64]"},
+      {"input": "arr = [29, 10, 14, 37, 13]", "output": "[10, 13, 14, 29, 37]"},
+      {"input": "arr = [1, 2, 3]", "output": "[1, 2, 3]"}
+    ],
+    "constraints": "1 <= arr.length <= 10^4. -10^4 <= arr[i] <= 10^4.",
+    "python_template": "# Selection Sort\n\nfrom typing import List\n\ndef selectionSort(arr: List[int]) -> List[int]:\n    pass\n",
+    "go_template": "// Selection Sort\n\npackage main\n\nfunc selectionSort(arr []int) []int {\n    return arr\n}\n"
+  }
+]

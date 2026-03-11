@@ -1,0 +1,798 @@
+[
+  {
+    "id": "0-1-knapsack",
+    "name": "0/1 Knapsack",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given N items with weight and value, and a knapsack of capacity W, find the maximum value you can carry. Each item can be taken at most once.",
+    "examples": [
+      {"input": "W = 4, wt = [4, 5, 1], val = [1, 2, 3]", "output": "3"},
+      {"input": "W = 3, wt = [4, 5, 6], val = [1, 2, 3]", "output": "0"}
+    ],
+    "constraints": "1 <= N <= 1000, 1 <= W <= 1000",
+    "python_template": "def knapsack(W: int, wt: list[int], val: list[int]) -> int:\n    pass\n",
+    "go_template": "func knapsack(W int, wt, val []int) int {\n\n}\n"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-ii",
+    "name": "Best Time to Buy and Sell Stock II",
+    "difficulty": "Medium",
+    "category": "Stock DP",
+    "description": "You are given an array prices where prices[i] is the price of a stock on the ith day. You may complete as many transactions as you like (buy one and sell one share multiple times). You cannot hold more than one share at a time. Return the maximum profit.",
+    "examples": [
+      {"input": "prices = [7,1,5,3,6,4]", "output": "7 (buy at 1, sell at 5, buy at 3, sell at 6)"},
+      {"input": "prices = [1,2,3,4,5]", "output": "4 (buy at 1, sell at 5)"},
+      {"input": "prices = [7,6,4,3,1]", "output": "0"}
+    ],
+    "constraints": "1 <= prices.length <= 3 * 10^4. 0 <= prices[i] <= 10^4.",
+    "python_template": "# Best Time to Buy and Sell Stock II\n\nfrom typing import List\n\ndef maxProfit(prices: List[int]) -> int:\n    pass\n",
+    "go_template": "// Best Time to Buy and Sell Stock II\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\n}\n"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-iii",
+    "name": "Best Time to Buy and Sell Stock III",
+    "difficulty": "Hard",
+    "category": "Stock DP",
+    "description": "You are given an array prices where prices[i] is the price of a stock on the ith day. You may complete at most two transactions. You cannot hold more than one share at a time. Return the maximum profit.",
+    "examples": [
+      {"input": "prices = [3,3,5,0,0,3,1,4]", "output": "6 (buy at 0, sell at 5, buy at 1, sell at 4)"},
+      {"input": "prices = [1,2,3,4,5]", "output": "4 (buy at 1, sell at 5)"},
+      {"input": "prices = [7,6,4,3,1]", "output": "0"}
+    ],
+    "constraints": "1 <= prices.length <= 10^5. 0 <= prices[i] <= 10^5.",
+    "python_template": "# Best Time to Buy and Sell Stock III\n\nfrom typing import List\n\ndef maxProfit(prices: List[int]) -> int:\n    pass\n",
+    "go_template": "// Best Time to Buy and Sell Stock III\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\n}\n"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-iv",
+    "name": "Best Time to Buy and Sell Stock IV",
+    "difficulty": "Hard",
+    "category": "Stock DP",
+    "description": "You are given an integer k and an array prices where prices[i] is the price of a stock on the ith day. You may complete at most k transactions. You cannot hold more than one share at a time. Return the maximum profit.",
+    "examples": [
+      {"input": "k = 2, prices = [2,4,1]", "output": "2 (buy at 2, sell at 4)"},
+      {"input": "k = 2, prices = [3,2,6,5,0,3]", "output": "7 (buy at 2, sell at 6, buy at 0, sell at 3)"}
+    ],
+    "constraints": "1 <= k <= 100. 1 <= prices.length <= 1000. 0 <= prices[i] <= 1000.",
+    "python_template": "# Best Time to Buy and Sell Stock IV\n\nfrom typing import List\n\ndef maxProfit(k: int, prices: List[int]) -> int:\n    pass\n",
+    "go_template": "// Best Time to Buy and Sell Stock IV\n\npackage main\n\nfunc maxProfit(k int, prices []int) int {\n\n}\n"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-with-cooldown",
+    "name": "Best Time to Buy and Sell Stock with Cooldown",
+    "difficulty": "Medium",
+    "category": "Stock DP",
+    "description": "You are given an array prices where prices[i] is the price of a stock on the ith day. You may complete as many transactions as you like with the following restriction: after you sell, you cannot buy the next day (1-day cooldown). Return the maximum profit.",
+    "examples": [
+      {"input": "prices = [1,2,3,0,2]", "output": "3 (buy at 1, sell at 3, cooldown, buy at 0, sell at 2)"},
+      {"input": "prices = [1]", "output": "0"}
+    ],
+    "constraints": "1 <= prices.length <= 5000. 0 <= prices[i] <= 1000.",
+    "python_template": "# Best Time to Buy and Sell Stock with Cooldown\n\nfrom typing import List\n\ndef maxProfit(prices: List[int]) -> int:\n    pass\n",
+    "go_template": "// Best Time to Buy and Sell Stock with Cooldown\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\n}\n"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+    "name": "Best Time to Buy and Sell Stock with Transaction Fee",
+    "difficulty": "Medium",
+    "category": "Stock DP",
+    "description": "You are given an array prices where prices[i] is the price of a stock on the ith day, and an integer fee representing a transaction fee. You may complete as many transactions as you like, but you must pay the fee for each transaction. Return the maximum profit.",
+    "examples": [
+      {"input": "prices = [1,3,2,8,4,9], fee = 2", "output": "8 (buy at 1, sell at 8, buy at 4, sell at 9)"},
+      {"input": "prices = [1,3,7,5,10,3], fee = 3", "output": "6"}
+    ],
+    "constraints": "1 <= prices.length <= 5 * 10^4. 1 <= prices[i] <= 5 * 10^4. 0 <= fee <= 5 * 10^4.",
+    "python_template": "# Best Time to Buy and Sell Stock with Transaction Fee\n\nfrom typing import List\n\ndef maxProfit(prices: List[int], fee: int) -> int:\n    pass\n",
+    "go_template": "// Best Time to Buy and Sell Stock with Transaction Fee\n\npackage main\n\nfunc maxProfit(prices []int, fee int) int {\n\n}\n"
+  },
+  {
+    "id": "burst-balloons",
+    "name": "Burst Balloons",
+    "difficulty": "Hard",
+    "category": "MCM/Partition",
+    "description": "You are given n balloons indexed 0 to n-1. Each balloon is painted with a number on it represented by nums. You burst all balloons. When you burst balloon i, you get nums[i-1] * nums[i] * nums[i+1] coins (boundaries are treated as 1). Return the maximum coins you can collect by bursting all balloons wisely.",
+    "examples": [
+      {"input": "nums = [3,1,5,8]", "output": "167 (burst 1, then 5, then 3, then 8)"},
+      {"input": "nums = [1,5]", "output": "10"}
+    ],
+    "constraints": "1 <= n <= 300. 0 <= nums[i] <= 100.",
+    "python_template": "# Burst Balloons\n\nfrom typing import List\n\ndef maxCoins(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// Burst Balloons\n\npackage main\n\nfunc maxCoins(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "choco-pickup",
+    "name": "Cherry Pickup II",
+    "difficulty": "Hard",
+    "category": "Grid DP",
+    "description": "Given a grid of chocolates, two robots start at the top-left and top-right corners. Each robot moves down one row per step (down, down-left, or down-right). Both collect chocolates in their cell (shared cell counted once). Find the maximum total chocolates collected.",
+    "examples": [
+      {"input": "grid = [[3,1,1],[2,5,1],[1,5,5],[2,1,1]]", "output": "24"},
+      {"input": "grid = [[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]", "output": "28"}
+    ],
+    "constraints": "rows == grid.length, cols == grid[i].length, 2 <= rows, cols <= 70",
+    "python_template": "class Solution:\n    def cherryPickup(self, grid: list[list[int]]) -> int:\n        pass\n",
+    "go_template": "func cherryPickup(grid [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "climbing-stairs",
+    "name": "Climbing Stairs",
+    "difficulty": "Easy",
+    "category": "1D DP",
+    "description": "You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    "examples": [
+      {"input": "n = 2", "output": "2"},
+      {"input": "n = 3", "output": "3"}
+    ],
+    "constraints": "1 <= n <= 45",
+    "python_template": "class Solution:\n    def climbStairs(self, n: int) -> int:\n        pass\n",
+    "go_template": "func climbStairs(n int) int {\n\n}\n"
+  },
+  {
+    "id": "coin-change",
+    "name": "Coin Change",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "You are given an integer array coins representing coin denominations and an integer amount. Return the fewest number of coins needed to make up that amount. If it cannot be made up, return -1. You may use each coin an unlimited number of times.",
+    "examples": [
+      {"input": "coins = [1,5,11], amount = 11", "output": "1"},
+      {"input": "coins = [2], amount = 3", "output": "-1"},
+      {"input": "coins = [1], amount = 0", "output": "0"}
+    ],
+    "constraints": "1 <= coins.length <= 12. 1 <= coins[i] <= 2^31 - 1. 0 <= amount <= 10^4.",
+    "python_template": "# Coin Change\n\nfrom typing import List\n\ndef coinChange(coins: List[int], amount: int) -> int:\n    pass\n",
+    "go_template": "// Coin Change\n\npackage main\n\nfunc coinChange(coins []int, amount int) int {\n\n}\n"
+  },
+  {
+    "id": "coin-change-ii",
+    "name": "Coin Change II",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "You are given an integer array coins representing coin denominations and an integer amount. Return the number of combinations that make up that amount. You may use each coin an unlimited number of times. The answer is guaranteed to fit in a 32-bit integer.",
+    "examples": [
+      {"input": "amount = 5, coins = [1,2,5]", "output": "4 (5, 2+2+1, 2+1+1+1, 1+1+1+1+1)"},
+      {"input": "amount = 3, coins = [2]", "output": "0"},
+      {"input": "amount = 10, coins = [10]", "output": "1"}
+    ],
+    "constraints": "1 <= coins.length <= 300. 1 <= coins[i] <= 5000. 0 <= amount <= 5000.",
+    "python_template": "# Coin Change II\n\nfrom typing import List\n\ndef change(amount: int, coins: List[int]) -> int:\n    pass\n",
+    "go_template": "// Coin Change II\n\npackage main\n\nfunc change(amount int, coins []int) int {\n\n}\n"
+  },
+  {
+    "id": "combination-sum-iv",
+    "name": "Combination Sum IV",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given an array of distinct positive integers nums and a target, return the number of possible combinations that add up to target. Different orderings count as different combinations.",
+    "examples": [
+      {"input": "nums = [1,2,3], target = 4", "output": "7 (sequences: [1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1])"},
+      {"input": "nums = [9], target = 3", "output": "0"}
+    ],
+    "constraints": "1 <= nums.length <= 200. 1 <= nums[i] <= 1000. All nums are unique. 1 <= target <= 1000.",
+    "python_template": "# Combination Sum IV\n\nfrom typing import List\n\ndef combinationSum4(nums: List[int], target: int) -> int:\n    pass\n",
+    "go_template": "// Combination Sum IV\n\npackage main\n\nfunc combinationSum4(nums []int, target int) int {\n\n}\n"
+  },
+  {
+    "id": "decode-ways",
+    "name": "Decode Ways",
+    "difficulty": "Medium",
+    "category": "1D DP",
+    "description": "A message containing letters A-Z can be encoded as numbers 1-26 ('A'->1, 'B'->2, ..., 'Z'->26). Given a string s containing only digits, return the number of ways to decode it. '06' is not valid because '6' != '06'.",
+    "examples": [
+      {"input": "s = \"12\"", "output": "2 (\"AB\" or \"L\")"},
+      {"input": "s = \"226\"", "output": "3 (\"BZ\", \"VF\", \"BBF\")"},
+      {"input": "s = \"06\"", "output": "0 (leading zero is invalid)"}
+    ],
+    "constraints": "1 <= s.length <= 100. s contains only digits and may contain leading zeros.",
+    "python_template": "# Decode Ways\n\ndef numDecodings(s: str) -> int:\n    pass\n",
+    "go_template": "// Decode Ways\n\npackage main\n\nfunc numDecodings(s string) int {\n\n}\n"
+  },
+  {
+    "id": "delete-operationg-make-string-same",
+    "name": "Delete Operations for Two Strings",
+    "difficulty": "Medium",
+    "category": "Strings DP",
+    "description": "Given two strings word1 and word2, return the minimum number of steps to make word1 and word2 the same. In each step, you can delete one character from either string.",
+    "examples": [
+      {"input": "word1 = \"sea\", word2 = \"eat\"", "output": "2"},
+      {"input": "word1 = \"leetcode\", word2 = \"etco\"", "output": "4"}
+    ],
+    "constraints": "1 <= word1.length, word2.length <= 500",
+    "python_template": "class Solution:\n    def minDistance(self, word1: str, word2: str) -> int:\n        pass\n",
+    "go_template": "func minDistance(word1 string, word2 string) int {\n\n}\n"
+  },
+  {
+    "id": "distinct-subsequences",
+    "name": "Distinct Subsequences",
+    "difficulty": "Hard",
+    "category": "Strings DP",
+    "description": "Given two strings s and t, return the number of distinct subsequences of s which equals t. A subsequence is a sequence derived from another by deleting some or no characters without changing the order.",
+    "examples": [
+      {"input": "s = \"rabbbit\", t = \"rabbit\"", "output": "3"},
+      {"input": "s = \"babgbag\", t = \"bag\"", "output": "5"}
+    ],
+    "constraints": "1 <= s.length, t.length <= 1000. s and t consist of English letters.",
+    "python_template": "# Distinct Subsequences\n\ndef numDistinct(s: str, t: str) -> int:\n    pass\n",
+    "go_template": "// Distinct Subsequences\n\npackage main\n\nfunc numDistinct(s string, t string) int {\n\n}\n"
+  },
+  {
+    "id": "dp-square-count-submatrics",
+    "name": "Count Square Submatrices with All Ones",
+    "difficulty": "Medium",
+    "category": "Grid DP",
+    "description": "Given an m x n binary matrix, return the total number of square submatrices that have all ones.",
+    "examples": [
+      {"input": "matrix = [[0,1,1,1],[1,1,1,1],[0,1,1,1]]", "output": "15"},
+      {"input": "matrix = [[1,0,1],[1,1,0],[1,1,0]]", "output": "7"}
+    ],
+    "constraints": "1 <= m, n <= 300, matrix[i][j] is 0 or 1",
+    "python_template": "class Solution:\n    def countSquares(self, matrix: list[list[int]]) -> int:\n        pass\n",
+    "go_template": "func countSquares(matrix [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "edit-distance",
+    "name": "Edit Distance",
+    "difficulty": "Medium",
+    "category": "Strings DP",
+    "description": "Given two strings word1 and word2, return the minimum number of operations (insert, delete, replace) to convert word1 to word2.",
+    "examples": [
+      {"input": "word1 = \"horse\", word2 = \"ros\"", "output": "3"},
+      {"input": "word1 = \"intention\", word2 = \"execution\"", "output": "5"}
+    ],
+    "constraints": "0 <= word1.length, word2.length <= 500",
+    "python_template": "class Solution:\n    def minDistance(self, word1: str, word2: str) -> int:\n        pass\n",
+    "go_template": "func minDistance(word1 string, word2 string) int {\n\n}\n"
+  },
+  {
+    "id": "frog-jump",
+    "name": "Frog Jump (Cost)",
+    "difficulty": "Easy",
+    "category": "1D DP",
+    "description": "A frog wants to climb from the 0th stair to the (n-1)th stair. The frog can jump 1 or 2 steps at a time. The cost of a jump is abs(height[i] - height[j]). Find the minimum cost to reach the last stair.",
+    "examples": [
+      {"input": "heights = [10, 20, 30, 10]", "output": "20"},
+      {"input": "heights = [10, 50, 10]", "output": "0"}
+    ],
+    "constraints": "1 <= n <= 10^5, 1 <= heights[i] <= 1000",
+    "python_template": "def frogJump(heights: list[int]) -> int:\n    pass\n",
+    "go_template": "func frogJump(heights []int) int {\n\n}\n"
+  },
+  {
+    "id": "house-robber",
+    "name": "House Robber",
+    "difficulty": "Medium",
+    "category": "1D DP",
+    "description": "You are a robber planning to rob houses along a street. Each house has a certain amount of money. Adjacent houses have connected security systems — if two adjacent houses are broken into on the same night, the police will be alerted. Return the maximum amount of money you can rob without alerting the police.",
+    "examples": [
+      {"input": "nums = [1,2,3,1]", "output": "4 (rob house 1 and 3)"},
+      {"input": "nums = [2,7,9,3,1]", "output": "12 (rob house 1, 3, and 5)"}
+    ],
+    "constraints": "1 <= nums.length <= 100. 0 <= nums[i] <= 400.",
+    "python_template": "# House Robber\n\nfrom typing import List\n\ndef rob(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// House Robber\n\npackage main\n\nfunc rob(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "house-robber-ii",
+    "name": "House Robber II",
+    "difficulty": "Medium",
+    "category": "1D DP",
+    "description": "All houses are arranged in a circle. Adjacent houses have connected security systems. You cannot rob two adjacent houses. The first and last houses are also adjacent. Return the maximum amount you can rob.",
+    "examples": [
+      {"input": "nums = [2,3,2]", "output": "3 (rob house 2)"},
+      {"input": "nums = [1,2,3,1]", "output": "4 (rob house 1 and 3)"},
+      {"input": "nums = [1,2,3]", "output": "3"}
+    ],
+    "constraints": "1 <= nums.length <= 100. 0 <= nums[i] <= 1000.",
+    "python_template": "# House Robber II\n\nfrom typing import List\n\ndef rob(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// House Robber II\n\npackage main\n\nfunc rob(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "interleaving-string",
+    "name": "Interleaving String",
+    "difficulty": "Medium",
+    "category": "Strings DP",
+    "description": "Given strings s1, s2, and s3, determine whether s3 is formed by an interleaving of s1 and s2. An interleaving is a configuration where s3 contains all characters of s1 and s2 and the relative order of characters from each string is preserved.",
+    "examples": [
+      {"input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbcbcac\"", "output": "true"},
+      {"input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbbaccc\"", "output": "false"},
+      {"input": "s1 = \"\", s2 = \"\", s3 = \"\"", "output": "true"}
+    ],
+    "constraints": "0 <= s1.length, s2.length <= 100. 0 <= s3.length <= 200. s1, s2, s3 consist of lowercase English letters.",
+    "python_template": "# Interleaving String\n\ndef isInterleave(s1: str, s2: str, s3: str) -> bool:\n    pass\n",
+    "go_template": "// Interleaving String\n\npackage main\n\nfunc isInterleave(s1 string, s2 string, s3 string) bool {\n\n}\n"
+  },
+  {
+    "id": "jump-game",
+    "name": "Jump Game",
+    "difficulty": "Medium",
+    "category": "1D DP",
+    "description": "You are given an integer array nums. You are initially at the first index. Each element represents your maximum jump length from that position. Return true if you can reach the last index.",
+    "examples": [
+      {"input": "nums = [2,3,1,1,4]", "output": "true (jump 1->2->last)"},
+      {"input": "nums = [3,2,1,0,4]", "output": "false (always stuck at index 3)"}
+    ],
+    "constraints": "1 <= nums.length <= 10^4. 0 <= nums[i] <= 10^5.",
+    "python_template": "# Jump Game\n\nfrom typing import List\n\ndef canJump(nums: List[int]) -> bool:\n    pass\n",
+    "go_template": "// Jump Game\n\npackage main\n\nfunc canJump(nums []int) bool {\n\n}\n"
+  },
+  {
+    "id": "lis-01-implement",
+    "name": "Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "category": "LIS",
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.",
+    "examples": [
+      {"input": "nums = [10, 9, 2, 5, 3, 7, 101, 18]", "output": "4"},
+      {"input": "nums = [0, 1, 0, 3, 2, 3]", "output": "4"}
+    ],
+    "constraints": "1 <= nums.length <= 2500, -10^4 <= nums[i] <= 10^4",
+    "python_template": "class Solution:\n    def lengthOfLIS(self, nums: list[int]) -> int:\n        pass\n",
+    "go_template": "func lengthOfLIS(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "lis-02-print-lis",
+    "name": "Print Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "category": "LIS",
+    "description": "Given an integer array, find and print the actual longest increasing subsequence (not just the length).",
+    "examples": [
+      {"input": "nums = [10, 22, 9, 33, 21, 50, 41, 60]", "output": "[10, 22, 33, 50, 60]"},
+      {"input": "nums = [5, 4, 11, 1, 16, 8]", "output": "[5, 11, 16]"}
+    ],
+    "constraints": "1 <= nums.length <= 2500",
+    "python_template": "def printLIS(nums: list[int]) -> list[int]:\n    pass\n",
+    "go_template": "func printLIS(nums []int) []int {\n\n}\n"
+  },
+  {
+    "id": "lis-03-largest-div-subset",
+    "name": "Largest Divisible Subset",
+    "difficulty": "Medium",
+    "category": "LIS",
+    "description": "Given a set of distinct positive integers, find the largest subset such that every pair (a, b) satisfies a % b == 0 or b % a == 0.",
+    "examples": [
+      {"input": "nums = [1, 2, 3]", "output": "[1, 2]"},
+      {"input": "nums = [1, 2, 4, 8]", "output": "[1, 2, 4, 8]"}
+    ],
+    "constraints": "1 <= nums.length <= 1000, 1 <= nums[i] <= 2*10^9",
+    "python_template": "class Solution:\n    def largestDivisibleSubset(self, nums: list[int]) -> list[int]:\n        pass\n",
+    "go_template": "func largestDivisibleSubset(nums []int) []int {\n\n}\n"
+  },
+  {
+    "id": "lis-04-number-lis",
+    "name": "Number of Longest Increasing Subsequences",
+    "difficulty": "Hard",
+    "category": "LIS",
+    "description": "Given an integer array nums, return the number of longest increasing subsequences.",
+    "examples": [
+      {"input": "nums = [1, 3, 5, 4, 7]", "output": "2"},
+      {"input": "nums = [2, 2, 2, 2, 2]", "output": "5"}
+    ],
+    "constraints": "1 <= nums.length <= 2000, -10^6 <= nums[i] <= 10^6",
+    "python_template": "class Solution:\n    def findNumberOfLIS(self, nums: list[int]) -> int:\n        pass\n",
+    "go_template": "func findNumberOfLIS(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "lis-05-bitonic",
+    "name": "Longest Bitonic Subsequence",
+    "difficulty": "Medium",
+    "category": "LIS",
+    "description": "A bitonic subsequence first increases then decreases. Given an array, find the length of the longest bitonic subsequence.",
+    "examples": [
+      {"input": "nums = [1, 11, 2, 10, 4, 5, 2, 1]", "output": "6"},
+      {"input": "nums = [12, 11, 40, 5, 3, 1]", "output": "5"}
+    ],
+    "constraints": "1 <= n <= 1000",
+    "python_template": "def longestBitonicSubseq(nums: list[int]) -> int:\n    pass\n",
+    "go_template": "func longestBitonicSubseq(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "lis-06-longest-string-chain",
+    "name": "Longest String Chain",
+    "difficulty": "Medium",
+    "category": "LIS",
+    "description": "Given a list of words, find the longest chain where each word is formed by adding exactly one letter to the previous word. Words can be reordered.",
+    "examples": [
+      {"input": "words = [\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]", "output": "4"},
+      {"input": "words = [\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]", "output": "5"}
+    ],
+    "constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 16",
+    "python_template": "class Solution:\n    def longestStrChain(self, words: list[str]) -> int:\n        pass\n",
+    "go_template": "func longestStrChain(words []string) int {\n\n}\n"
+  },
+  {
+    "id": "longest-common-subsequence",
+    "name": "Longest Common Subsequence",
+    "difficulty": "Medium",
+    "category": "Strings DP",
+    "description": "Given two strings text1 and text2, return the length of their longest common subsequence. A subsequence is a sequence derived from another by deleting some or no characters without changing the relative order.",
+    "examples": [
+      {"input": "text1 = \"abcde\", text2 = \"ace\"", "output": "3 (\"ace\")"},
+      {"input": "text1 = \"abc\", text2 = \"abc\"", "output": "3"},
+      {"input": "text1 = \"abc\", text2 = \"def\"", "output": "0"}
+    ],
+    "constraints": "1 <= text1.length, text2.length <= 1000. text1 and text2 consist of lowercase English characters.",
+    "python_template": "# Longest Common Subsequence\n\ndef longestCommonSubsequence(text1: str, text2: str) -> int:\n    pass\n",
+    "go_template": "// Longest Common Subsequence\n\npackage main\n\nfunc longestCommonSubsequence(text1 string, text2 string) int {\n\n}\n"
+  },
+  {
+    "id": "longest-common-substring",
+    "name": "Longest Common Substring",
+    "difficulty": "Medium",
+    "category": "Strings DP",
+    "description": "Given two strings, find the length of the longest common substring (contiguous characters).",
+    "examples": [
+      {"input": "s1 = \"ABCDGH\", s2 = \"ACDGHR\"", "output": "4"},
+      {"input": "s1 = \"ABC\", s2 = \"ACB\"", "output": "1"}
+    ],
+    "constraints": "1 <= s1.length, s2.length <= 1000",
+    "python_template": "def longestCommonSubstring(s1: str, s2: str) -> int:\n    pass\n",
+    "go_template": "func longestCommonSubstring(s1, s2 string) int {\n\n}\n"
+  },
+  {
+    "id": "longest-increasing-path-in-a-matrix",
+    "name": "Longest Increasing Path in a Matrix",
+    "difficulty": "Hard",
+    "category": "Grid DP",
+    "description": "Given an m x n integers matrix, return the length of the longest increasing path. From each cell, you can move in four directions (up, down, left, right). You cannot move diagonally or outside the boundary.",
+    "examples": [
+      {"input": "matrix = [[9,9,4],[6,6,8],[2,1,1]]", "output": "4 (path: 1->2->6->9)"},
+      {"input": "matrix = [[3,4,5],[3,2,6],[2,2,1]]", "output": "4 (path: 3->4->5->6)"},
+      {"input": "matrix = [[1]]", "output": "1"}
+    ],
+    "constraints": "m == matrix.length. n == matrix[i].length. 1 <= m, n <= 200. 0 <= matrix[i][j] <= 2^31 - 1.",
+    "python_template": "# Longest Increasing Path in a Matrix\n\nfrom typing import List\n\ndef longestIncreasingPath(matrix: List[List[int]]) -> int:\n    pass\n",
+    "go_template": "// Longest Increasing Path in a Matrix\n\npackage main\n\nfunc longestIncreasingPath(matrix [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "longest-increasing-subsequence",
+    "name": "Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "category": "LIS",
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.",
+    "examples": [
+      {"input": "nums = [10,9,2,5,3,7,101,18]", "output": "4 ([2,3,7,101])"},
+      {"input": "nums = [0,1,0,3,2,3]", "output": "4"},
+      {"input": "nums = [7,7,7,7,7,7,7]", "output": "1"}
+    ],
+    "constraints": "1 <= nums.length <= 2500. -10^4 <= nums[i] <= 10^4.",
+    "python_template": "# Longest Increasing Subsequence\n\nfrom typing import List\n\ndef lengthOfLIS(nums: List[int]) -> int:\n    pass\n",
+    "go_template": "// Longest Increasing Subsequence\n\npackage main\n\nfunc lengthOfLIS(nums []int) int {\n\n}\n"
+  },
+  {
+    "id": "longest-palindromic-subsequence",
+    "name": "Longest Palindromic Subsequence",
+    "difficulty": "Medium",
+    "category": "Strings DP",
+    "description": "Given a string s, find the length of the longest palindromic subsequence. A subsequence is a sequence that can be derived by deleting some or no elements without changing the order of the remaining elements.",
+    "examples": [
+      {"input": "s = \"bbbab\"", "output": "4 (\"bbbb\")"},
+      {"input": "s = \"cbbd\"", "output": "2 (\"bb\")"}
+    ],
+    "constraints": "1 <= s.length <= 1000. s consists only of lowercase English letters.",
+    "python_template": "# Longest Palindromic Subsequence\n\ndef longestPalindromeSubseq(s: str) -> int:\n    pass\n",
+    "go_template": "// Longest Palindromic Subsequence\n\npackage main\n\nfunc longestPalindromeSubseq(s string) int {\n\n}\n"
+  },
+  {
+    "id": "mcm-01-mcm",
+    "name": "Matrix Chain Multiplication",
+    "difficulty": "Hard",
+    "category": "MCM/Partition",
+    "description": "Given dimensions of n matrices in an array, find the minimum number of scalar multiplications needed to multiply the chain of matrices.",
+    "examples": [
+      {"input": "arr = [40, 20, 30, 10, 30]", "output": "26000"},
+      {"input": "arr = [10, 20, 30, 40, 30]", "output": "30000"}
+    ],
+    "constraints": "2 <= N <= 100, 1 <= arr[i] <= 500",
+    "python_template": "def matrixChainMul(arr: list[int]) -> int:\n    pass\n",
+    "go_template": "func matrixChainMul(arr []int) int {\n\n}\n"
+  },
+  {
+    "id": "mcm-02-min-cost-to-cut-stick",
+    "name": "Minimum Cost to Cut a Stick",
+    "difficulty": "Hard",
+    "category": "MCM/Partition",
+    "description": "Given a wooden stick of length n and an array of cut positions, find the minimum total cost. The cost of each cut is the length of the stick being cut.",
+    "examples": [
+      {"input": "n = 7, cuts = [1, 3, 4, 5]", "output": "16"},
+      {"input": "n = 9, cuts = [5, 6, 1, 4, 2]", "output": "22"}
+    ],
+    "constraints": "2 <= n <= 10^6, 1 <= cuts.length <= min(n-1, 100)",
+    "python_template": "class Solution:\n    def minCost(self, n: int, cuts: list[int]) -> int:\n        pass\n",
+    "go_template": "func minCost(n int, cuts []int) int {\n\n}\n"
+  },
+  {
+    "id": "min-cost-climbing-stairs",
+    "name": "Min Cost Climbing Stairs",
+    "difficulty": "Easy",
+    "category": "1D DP",
+    "description": "You are given an integer array cost where cost[i] is the cost of the ith step. Once you pay the cost, you can climb one or two steps. You can start from step 0 or step 1. Return the minimum cost to reach the top of the floor (past the last step).",
+    "examples": [
+      {"input": "cost = [10,15,20]", "output": "15 (start at step 1, pay 15, climb two steps)"},
+      {"input": "cost = [1,100,1,1,1,100,1,1,100,1]", "output": "6"}
+    ],
+    "constraints": "2 <= cost.length <= 1000. 0 <= cost[i] <= 999.",
+    "python_template": "# Min Cost Climbing Stairs\n\nfrom typing import List\n\ndef minCostClimbingStairs(cost: List[int]) -> int:\n    pass\n",
+    "go_template": "// Min Cost Climbing Stairs\n\npackage main\n\nfunc minCostClimbingStairs(cost []int) int {\n\n}\n"
+  },
+  {
+    "id": "min-falling-path-sum",
+    "name": "Minimum Falling Path Sum",
+    "difficulty": "Medium",
+    "category": "Grid DP",
+    "description": "Given an n x n matrix, find the minimum sum of a falling path. A falling path starts at any element in the first row and moves to the element directly below, or diagonally left/right below.",
+    "examples": [
+      {"input": "matrix = [[2,1,3],[6,5,4],[7,8,9]]", "output": "13"},
+      {"input": "matrix = [[-19,57],[-40,-5]]", "output": "-59"}
+    ],
+    "constraints": "n == matrix.length == matrix[i].length, 1 <= n <= 100",
+    "python_template": "class Solution:\n    def minFallingPathSum(self, matrix: list[list[int]]) -> int:\n        pass\n",
+    "go_template": "func minFallingPathSum(matrix [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "min-insertions-to-make-string-palindrome",
+    "name": "Min Insertions to Make Palindrome",
+    "difficulty": "Hard",
+    "category": "Strings DP",
+    "description": "Given a string s, find the minimum number of insertions needed to make it a palindrome.",
+    "examples": [
+      {"input": "s = \"zzazz\"", "output": "0"},
+      {"input": "s = \"mbadm\"", "output": "2"}
+    ],
+    "constraints": "1 <= s.length <= 500",
+    "python_template": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        pass\n",
+    "go_template": "func minInsertions(s string) int {\n\n}\n"
+  },
+  {
+    "id": "min-path-sum-triangle",
+    "name": "Triangle Min Path Sum",
+    "difficulty": "Medium",
+    "category": "Grid DP",
+    "description": "Given a triangle array, find the minimum path sum from top to bottom. Each step you may move to an adjacent number on the row below (i.e., index i or i+1 of the next row).",
+    "examples": [
+      {"input": "triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]", "output": "11"},
+      {"input": "triangle = [[-10]]", "output": "-10"}
+    ],
+    "constraints": "1 <= triangle.length <= 200, triangle[0].length == 1",
+    "python_template": "class Solution:\n    def minimumTotal(self, triangle: list[list[int]]) -> int:\n        pass\n",
+    "go_template": "func minimumTotal(triangle [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "minimal-cost",
+    "name": "Minimal Cost (K jumps)",
+    "difficulty": "Medium",
+    "category": "1D DP",
+    "description": "A frog can jump from stair i to any stair from i+1 to i+k. The cost of jumping from i to j is abs(height[i] - height[j]). Find the minimum cost to reach the last stair from the first.",
+    "examples": [
+      {"input": "heights = [10, 30, 40, 50, 20], k = 3", "output": "30"},
+      {"input": "heights = [10, 20, 10], k = 1", "output": "20"}
+    ],
+    "constraints": "1 <= n <= 10^5, 1 <= k <= n",
+    "python_template": "def minimalCost(heights: list[int], k: int) -> int:\n    pass\n",
+    "go_template": "func minimalCost(heights []int, k int) int {\n\n}\n"
+  },
+  {
+    "id": "ninjas-training",
+    "name": "Ninja's Training",
+    "difficulty": "Medium",
+    "category": "2D DP",
+    "description": "A ninja has a training plan for n days. Each day he can perform one of 3 activities, earning points[i][0], points[i][1], or points[i][2]. He cannot perform the same activity on two consecutive days. Find the maximum points he can earn.",
+    "examples": [
+      {"input": "points = [[1,2,5],[3,1,1],[3,3,3]]", "output": "11"},
+      {"input": "points = [[10,40,70],[20,50,80],[30,60,90]]", "output": "210"}
+    ],
+    "constraints": "1 <= n <= 10^5, 1 <= points[i][j] <= 100",
+    "python_template": "def ninjaTraining(points: list[list[int]]) -> int:\n    pass\n",
+    "go_template": "func ninjaTraining(points [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "partition-equal-subset-sum",
+    "name": "Partition Equal Subset Sum",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given an integer array nums, return true if you can partition the array into two subsets such that the sum of elements in both subsets is equal.",
+    "examples": [
+      {"input": "nums = [1,5,11,5]", "output": "true (subsets [1,5,5] and [11])"},
+      {"input": "nums = [1,2,3,5]", "output": "false"}
+    ],
+    "constraints": "1 <= nums.length <= 200. 1 <= nums[i] <= 100.",
+    "python_template": "# Partition Equal Subset Sum\n\nfrom typing import List\n\ndef canPartition(nums: List[int]) -> bool:\n    pass\n",
+    "go_template": "// Partition Equal Subset Sum\n\npackage main\n\nfunc canPartition(nums []int) bool {\n\n}\n"
+  },
+  {
+    "id": "print-longest-common-subseq",
+    "name": "Print Longest Common Subsequence",
+    "difficulty": "Medium",
+    "category": "Strings DP",
+    "description": "Given two strings, find and return the longest common subsequence string (not just the length).",
+    "examples": [
+      {"input": "s1 = \"abcde\", s2 = \"bdgek\"", "output": "\"bde\""},
+      {"input": "s1 = \"abc\", s2 = \"abc\"", "output": "\"abc\""}
+    ],
+    "constraints": "1 <= s1.length, s2.length <= 1000",
+    "python_template": "def printLCS(s1: str, s2: str) -> str:\n    pass\n",
+    "go_template": "func printLCS(s1, s2 string) string {\n\n}\n"
+  },
+  {
+    "id": "regular-expression-matching",
+    "name": "Regular Expression Matching",
+    "difficulty": "Hard",
+    "category": "Strings DP",
+    "description": "Given a string s and a pattern p, implement regular expression matching with support for '.' (matches any single character) and '*' (matches zero or more of the preceding element). The matching should cover the entire string.",
+    "examples": [
+      {"input": "s = \"aa\", p = \"a\"", "output": "false"},
+      {"input": "s = \"aa\", p = \"a*\"", "output": "true"},
+      {"input": "s = \"ab\", p = \".*\"", "output": "true"}
+    ],
+    "constraints": "1 <= s.length <= 20. 1 <= p.length <= 20. s contains only lowercase English letters. p contains only lowercase English letters, '.', and '*'.",
+    "python_template": "# Regular Expression Matching\n\ndef isMatch(s: str, p: str) -> bool:\n    pass\n",
+    "go_template": "// Regular Expression Matching\n\npackage main\n\nfunc isMatch(s string, p string) bool {\n\n}\n"
+  },
+  {
+    "id": "shortest-common-superseq",
+    "name": "Shortest Common Supersequence",
+    "difficulty": "Hard",
+    "category": "Strings DP",
+    "description": "Given two strings str1 and str2, return the shortest string that has both str1 and str2 as subsequences.",
+    "examples": [
+      {"input": "str1 = \"abac\", str2 = \"cab\"", "output": "\"cabac\""},
+      {"input": "str1 = \"aaaaaaaa\", str2 = \"aaaaaaaa\"", "output": "\"aaaaaaaa\""}
+    ],
+    "constraints": "1 <= str1.length, str2.length <= 1000",
+    "python_template": "class Solution:\n    def shortestCommonSupersequence(self, str1: str, str2: str) -> str:\n        pass\n",
+    "go_template": "func shortestCommonSupersequence(str1, str2 string) string {\n\n}\n"
+  },
+  {
+    "id": "subseq-01-subset-sum-problem",
+    "name": "Subset Sum Problem",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given an array of non-negative integers and a target sum, determine if there is a subset of the array that adds up to exactly the target sum.",
+    "examples": [
+      {"input": "arr = [3, 34, 4, 12, 5, 2], target = 9", "output": "true"},
+      {"input": "arr = [3, 34, 4, 12, 5, 2], target = 30", "output": "false"}
+    ],
+    "constraints": "1 <= n <= 200, 1 <= arr[i] <= 200, 1 <= target <= 4*10^4",
+    "python_template": "def isSubsetSum(arr: list[int], target: int) -> bool:\n    pass\n",
+    "go_template": "func isSubsetSum(arr []int, target int) bool {\n\n}\n"
+  },
+  {
+    "id": "subseq-03-partition-arr-to-min-sum-diff",
+    "name": "Partition Array for Min Sum Diff",
+    "difficulty": "Hard",
+    "category": "Subsequences",
+    "description": "Partition an array into two subsets such that the absolute difference of their sums is minimized. Return the minimum difference.",
+    "examples": [
+      {"input": "arr = [1, 6, 11, 5]", "output": "1"},
+      {"input": "arr = [1, 2, 3, 4]", "output": "0"}
+    ],
+    "constraints": "1 <= n <= 100, 1 <= arr[i] <= 1000",
+    "python_template": "def minDifference(arr: list[int]) -> int:\n    pass\n",
+    "go_template": "func minDifference(arr []int) int {\n\n}\n"
+  },
+  {
+    "id": "subseq-04-count-subset-eq-to-given-sum",
+    "name": "Count Subsets with Sum K",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given an array of integers and a target sum, count the number of subsets that sum to exactly the target.",
+    "examples": [
+      {"input": "arr = [1, 2, 2, 3], target = 3", "output": "3"},
+      {"input": "arr = [1, 1, 1, 1], target = 1", "output": "4"}
+    ],
+    "constraints": "1 <= n <= 50, 0 <= arr[i] <= 1000, 1 <= target <= 1000",
+    "python_template": "def countSubsets(arr: list[int], target: int) -> int:\n    pass\n",
+    "go_template": "func countSubsets(arr []int, target int) int {\n\n}\n"
+  },
+  {
+    "id": "subseq-05-partn-with-given-diff",
+    "name": "Partitions with Given Difference",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given an array and a difference d, count the number of ways to partition the array into two subsets such that the difference of their sums equals d.",
+    "examples": [
+      {"input": "arr = [5, 2, 6, 4], d = 3", "output": "1"},
+      {"input": "arr = [1, 1, 1, 1], d = 0", "output": "6"}
+    ],
+    "constraints": "1 <= n <= 50, 0 <= arr[i] <= 50, 0 <= d <= 2500",
+    "python_template": "def countPartitions(arr: list[int], d: int) -> int:\n    pass\n",
+    "go_template": "func countPartitions(arr []int, d int) int {\n\n}\n"
+  },
+  {
+    "id": "subseq-09-knapsack",
+    "name": "Unbounded Knapsack",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given N items with weight and profit, and a knapsack of capacity W, find the maximum profit. You can take unlimited copies of each item.",
+    "examples": [
+      {"input": "N = 2, W = 3, profit = [5, 11], weight = [2, 3]", "output": "11"},
+      {"input": "N = 3, W = 10, profit = [1, 5, 8], weight = [1, 4, 6]", "output": "13"}
+    ],
+    "constraints": "1 <= N <= 1000, 1 <= W <= 1000",
+    "python_template": "def unboundedKnapsack(N: int, W: int, profit: list[int], weight: list[int]) -> int:\n    pass\n",
+    "go_template": "func unboundedKnapsack(N, W int, profit, weight []int) int {\n\n}\n"
+  },
+  {
+    "id": "subseq-10-rod-cutting",
+    "name": "Rod Cutting Problem",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "Given a rod of length n and prices for each piece length 1 to n, determine the maximum revenue obtainable by cutting up the rod and selling the pieces.",
+    "examples": [
+      {"input": "price = [1, 5, 8, 9, 10, 17, 17, 20], n = 8", "output": "22"},
+      {"input": "price = [3, 5, 8, 9, 10, 17, 17, 20], n = 8", "output": "24"}
+    ],
+    "constraints": "1 <= n <= 1000, 1 <= price[i] <= 10^6",
+    "python_template": "def rodCutting(price: list[int], n: int) -> int:\n    pass\n",
+    "go_template": "func rodCutting(price []int, n int) int {\n\n}\n"
+  },
+  {
+    "id": "target-sum",
+    "name": "Target Sum",
+    "difficulty": "Medium",
+    "category": "Subsequences",
+    "description": "You are given an integer array nums and an integer target. You want to build an expression by adding '+' or '-' before each element. Return the number of different expressions that evaluate to target.",
+    "examples": [
+      {"input": "nums = [1,1,1,1,1], target = 3", "output": "5"},
+      {"input": "nums = [1], target = 1", "output": "1"}
+    ],
+    "constraints": "1 <= nums.length <= 20. 0 <= nums[i] <= 1000. 0 <= sum(nums[i]) <= 1000. -1000 <= target <= 1000.",
+    "python_template": "# Target Sum\n\nfrom typing import List\n\ndef findTargetSumWays(nums: List[int], target: int) -> int:\n    pass\n",
+    "go_template": "// Target Sum\n\npackage main\n\nfunc findTargetSumWays(nums []int, target int) int {\n\n}\n"
+  },
+  {
+    "id": "unique-paths",
+    "name": "Unique Paths",
+    "difficulty": "Medium",
+    "category": "Grid DP",
+    "description": "A robot is located at the top-left corner of an m x n grid. It can only move right or down. How many possible unique paths are there to reach the bottom-right corner?",
+    "examples": [
+      {"input": "m = 3, n = 7", "output": "28"},
+      {"input": "m = 3, n = 2", "output": "3"}
+    ],
+    "constraints": "1 <= m, n <= 100.",
+    "python_template": "# Unique Paths\n\ndef uniquePaths(m: int, n: int) -> int:\n    pass\n",
+    "go_template": "// Unique Paths\n\npackage main\n\nfunc uniquePaths(m int, n int) int {\n\n}\n"
+  },
+  {
+    "id": "unique-paths-ii",
+    "name": "Unique Paths II",
+    "difficulty": "Medium",
+    "category": "Grid DP",
+    "description": "A robot is located at the top-left corner of an m x n grid. It can only move right or down. Some cells have obstacles (marked as 1). How many unique paths are there to reach the bottom-right corner?",
+    "examples": [
+      {"input": "obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]", "output": "2"},
+      {"input": "obstacleGrid = [[0,1],[0,0]]", "output": "1"}
+    ],
+    "constraints": "m == obstacleGrid.length. n == obstacleGrid[i].length. 1 <= m, n <= 100. obstacleGrid[i][j] is 0 or 1.",
+    "python_template": "# Unique Paths II\n\nfrom typing import List\n\ndef uniquePathsWithObstacles(obstacleGrid: List[List[int]]) -> int:\n    pass\n",
+    "go_template": "// Unique Paths II\n\npackage main\n\nfunc uniquePathsWithObstacles(obstacleGrid [][]int) int {\n\n}\n"
+  },
+  {
+    "id": "wildcard-matching",
+    "name": "Wildcard Matching",
+    "difficulty": "Hard",
+    "category": "Strings DP",
+    "description": "Given a string s and a pattern p, implement wildcard pattern matching. '?' matches any single character. '*' matches any sequence of characters (including empty).",
+    "examples": [
+      {"input": "s = \"aa\", p = \"a\"", "output": "false"},
+      {"input": "s = \"adceb\", p = \"*a*b\"", "output": "true"}
+    ],
+    "constraints": "0 <= s.length, p.length <= 2000",
+    "python_template": "class Solution:\n    def isMatch(self, s: str, p: str) -> bool:\n        pass\n",
+    "go_template": "func isMatch(s string, p string) bool {\n\n}\n"
+  },
+  {
+    "id": "word-break",
+    "name": "Word Break",
+    "difficulty": "Medium",
+    "category": "1D DP",
+    "description": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.",
+    "examples": [
+      {"input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]", "output": "true"},
+      {"input": "s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]", "output": "true"},
+      {"input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]", "output": "false"}
+    ],
+    "constraints": "1 <= s.length <= 300. 1 <= wordDict.length <= 1000. 1 <= wordDict[i].length <= 20. s and wordDict[i] consist of lowercase English letters.",
+    "python_template": "# Word Break\n\nfrom typing import List\n\ndef wordBreak(s: str, wordDict: List[str]) -> bool:\n    pass\n",
+    "go_template": "// Word Break\n\npackage main\n\nfunc wordBreak(s string, wordDict []string) bool {\n\n}\n"
+  }
+]
