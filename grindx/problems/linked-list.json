@@ -5,13 +5,25 @@
     "difficulty": "Easy",
     "description": "Given the head of a singly linked list, reverse the list and return the reversed list.",
     "examples": [
-      {"input": "head = [1,2,3,4,5]", "output": "[5,4,3,2,1]"},
-      {"input": "head = [1,2]", "output": "[2,1]"},
-      {"input": "head = []", "output": "[]"}
+      {
+        "input": "head = [1,2,3,4,5]",
+        "output": "[5,4,3,2,1]"
+      },
+      {
+        "input": "head = [1,2]",
+        "output": "[2,1]"
+      },
+      {
+        "input": "head = []",
+        "output": "[]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 5000]. -5000 <= Node.val <= 5000.",
     "python_template": "# Reverse Linked List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef reverseList(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Reverse Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc reverseList(head *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Reverse Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc reverseList(head *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Reverse Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* reverseList(ListNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Reverse Linked List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode reverseList(ListNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Reverse Linked List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction reverseList(head) {\n\n}\n"
   },
   {
     "id": "reverse-dll",
@@ -19,12 +31,21 @@
     "difficulty": "Easy",
     "description": "Given the head of a doubly linked list, reverse the list and return the new head. Each node has val, next, and prev pointers.",
     "examples": [
-      {"input": "head = [1,2,3,4]", "output": "[4,3,2,1]"},
-      {"input": "head = [1]", "output": "[1]"}
+      {
+        "input": "head = [1,2,3,4]",
+        "output": "[4,3,2,1]"
+      },
+      {
+        "input": "head = [1]",
+        "output": "[1]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 10^4]. -10^5 <= Node.val <= 10^5.",
     "python_template": "# Reverse a Doubly Linked List\n\nfrom typing import Optional\n\nclass DLLNode:\n    def __init__(self, val=0, next=None, prev=None):\n        self.val = val\n        self.next = next\n        self.prev = prev\n\ndef reverseDLL(head: Optional[DLLNode]) -> Optional[DLLNode]:\n    pass\n",
-    "go_template": "// Reverse a Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc reverseDLL(head *DLLNode) *DLLNode {\n\n}\n"
+    "go_template": "// Reverse a Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc reverseDLL(head *DLLNode) *DLLNode {\n\n}\n",
+    "cpp_template": "// Reverse a Doubly Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct DLLNode {\n    int val;\n    DLLNode* next;\n    DLLNode* prev;\n    DLLNode(int val = 0, DLLNode* next = nullptr, DLLNode* prev = nullptr) : val(val), next(next), prev(prev) {}\n};\n\nDLLNode* reverseDLL(DLLNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Reverse a Doubly Linked List\n\nclass DLLNode {\n    int val;\n    DLLNode next;\n    DLLNode prev;\n    DLLNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public DLLNode reverseDLL(DLLNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Reverse a Doubly Linked List\n\nclass DLLNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.prev = null;\n    }\n}\n\nfunction reverseDLL(head) {\n\n}\n"
   },
   {
     "id": "middle-of-the-linked-list",
@@ -32,12 +53,21 @@
     "difficulty": "Easy",
     "description": "Given the head of a singly linked list, return the middle node. If there are two middle nodes, return the second middle node.",
     "examples": [
-      {"input": "head = [1,2,3,4,5]", "output": "[3,4,5] (node with value 3)"},
-      {"input": "head = [1,2,3,4,5,6]", "output": "[4,5,6] (node with value 4)"}
+      {
+        "input": "head = [1,2,3,4,5]",
+        "output": "[3,4,5] (node with value 3)"
+      },
+      {
+        "input": "head = [1,2,3,4,5,6]",
+        "output": "[4,5,6] (node with value 4)"
+      }
     ],
     "constraints": "The number of nodes is in [1, 100]. 1 <= Node.val <= 100.",
     "python_template": "# Middle of the Linked List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef middleNode(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Middle of the Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc middleNode(head *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Middle of the Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc middleNode(head *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Middle of the Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* middleNode(ListNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Middle of the Linked List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode middleNode(ListNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Middle of the Linked List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction middleNode(head) {\n\n}\n"
   },
   {
     "id": "merge-two-sorted-lists",
@@ -45,13 +75,25 @@
     "difficulty": "Easy",
     "description": "Given the heads of two sorted linked lists, merge them into one sorted list by splicing together the nodes. Return the head of the merged list.",
     "examples": [
-      {"input": "list1 = [1,2,4], list2 = [1,3,4]", "output": "[1,1,2,3,4,4]"},
-      {"input": "list1 = [], list2 = []", "output": "[]"},
-      {"input": "list1 = [], list2 = [0]", "output": "[0]"}
+      {
+        "input": "list1 = [1,2,4], list2 = [1,3,4]",
+        "output": "[1,1,2,3,4,4]"
+      },
+      {
+        "input": "list1 = [], list2 = []",
+        "output": "[]"
+      },
+      {
+        "input": "list1 = [], list2 = [0]",
+        "output": "[0]"
+      }
     ],
     "constraints": "Both lists are sorted in non-decreasing order. The number of nodes in both lists is in [0, 50]. -100 <= Node.val <= 100.",
     "python_template": "# Merge Two Sorted Lists\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Merge Two Sorted Lists\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Merge Two Sorted Lists\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Merge Two Sorted Lists\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {\n    return nullptr;\n}\n",
+    "java_template": "// Merge Two Sorted Lists\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {\n        return null;\n    }\n}\n",
+    "js_template": "// Merge Two Sorted Lists\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction mergeTwoLists(list1, list2) {\n\n}\n"
   },
   {
     "id": "linked-list-cycle",
@@ -59,13 +101,25 @@
     "difficulty": "Easy",
     "description": "Given head of a linked list, determine if it has a cycle. A cycle exists if some node can be reached again by continuously following the next pointer. Use Floyd's tortoise and hare algorithm.",
     "examples": [
-      {"input": "head = [3,2,0,-4], pos = 1 (tail connects to node index 1)", "output": "true"},
-      {"input": "head = [1,2], pos = 0", "output": "true"},
-      {"input": "head = [1], pos = -1 (no cycle)", "output": "false"}
+      {
+        "input": "head = [3,2,0,-4], pos = 1 (tail connects to node index 1)",
+        "output": "true"
+      },
+      {
+        "input": "head = [1,2], pos = 0",
+        "output": "true"
+      },
+      {
+        "input": "head = [1], pos = -1 (no cycle)",
+        "output": "false"
+      }
     ],
     "constraints": "The number of nodes is in [0, 10^4]. -10^5 <= Node.val <= 10^5. pos is -1 or a valid index.",
     "python_template": "# Linked List Cycle\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef hasCycle(head: Optional[ListNode]) -> bool:\n    pass\n",
-    "go_template": "// Linked List Cycle\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc hasCycle(head *ListNode) bool {\n\n}\n"
+    "go_template": "// Linked List Cycle\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc hasCycle(head *ListNode) bool {\n\n}\n",
+    "cpp_template": "// Linked List Cycle\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nbool hasCycle(ListNode* head) {\n    return false;\n}\n",
+    "java_template": "// Linked List Cycle\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public boolean hasCycle(ListNode head) {\n        return false;\n    }\n}\n",
+    "js_template": "// Linked List Cycle\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction hasCycle(head) {\n\n}\n"
   },
   {
     "id": "linked-list-cycle-ii",
@@ -73,13 +127,25 @@
     "difficulty": "Medium",
     "description": "Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null. Use Floyd's algorithm: after slow and fast meet, reset one pointer to head and advance both by one until they meet at the cycle start.",
     "examples": [
-      {"input": "head = [3,2,0,-4], pos = 1", "output": "Node with value 2 (cycle starts at index 1)"},
-      {"input": "head = [1,2], pos = 0", "output": "Node with value 1"},
-      {"input": "head = [1], pos = -1", "output": "null"}
+      {
+        "input": "head = [3,2,0,-4], pos = 1",
+        "output": "Node with value 2 (cycle starts at index 1)"
+      },
+      {
+        "input": "head = [1,2], pos = 0",
+        "output": "Node with value 1"
+      },
+      {
+        "input": "head = [1], pos = -1",
+        "output": "null"
+      }
     ],
     "constraints": "The number of nodes is in [0, 10^4]. -10^5 <= Node.val <= 10^5.",
     "python_template": "# Linked List Cycle II\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Linked List Cycle II\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc detectCycle(head *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Linked List Cycle II\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc detectCycle(head *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Linked List Cycle II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* detectCycle(ListNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Linked List Cycle II\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode detectCycle(ListNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Linked List Cycle II\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction detectCycle(head) {\n\n}\n"
   },
   {
     "id": "length-of-cycle",
@@ -87,12 +153,21 @@
     "difficulty": "Easy",
     "description": "Given a linked list that may contain a cycle, find the length of the cycle. If no cycle exists, return 0. Use Floyd's algorithm to find the meeting point, then count nodes in the cycle.",
     "examples": [
-      {"input": "head = [1,2,3,4,5], cycle at node 2", "output": "4 (cycle: 2->3->4->5->2)"},
-      {"input": "head = [1,2,3], no cycle", "output": "0"}
+      {
+        "input": "head = [1,2,3,4,5], cycle at node 2",
+        "output": "4 (cycle: 2->3->4->5->2)"
+      },
+      {
+        "input": "head = [1,2,3], no cycle",
+        "output": "0"
+      }
     ],
     "constraints": "The number of nodes is in [0, 10^4]. -10^5 <= Node.val <= 10^5.",
     "python_template": "# Length of Cycle in Linked List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef cycleLength(head: Optional[ListNode]) -> int:\n    pass\n",
-    "go_template": "// Length of Cycle in Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc cycleLength(head *ListNode) int {\n\n}\n"
+    "go_template": "// Length of Cycle in Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc cycleLength(head *ListNode) int {\n\n}\n",
+    "cpp_template": "// Length of Cycle in Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nint cycleLength(ListNode* head) {\n    return 0;\n}\n",
+    "java_template": "// Length of Cycle in Linked List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public int cycleLength(ListNode head) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Length of Cycle in Linked List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction cycleLength(head) {\n\n}\n"
   },
   {
     "id": "palindrome-linked-list",
@@ -100,12 +175,21 @@
     "difficulty": "Easy",
     "description": "Given the head of a singly linked list, return true if it is a palindrome. Can you do it in O(n) time and O(1) space? Hint: find middle, reverse second half, compare.",
     "examples": [
-      {"input": "head = [1,2,2,1]", "output": "true"},
-      {"input": "head = [1,2]", "output": "false"}
+      {
+        "input": "head = [1,2,2,1]",
+        "output": "true"
+      },
+      {
+        "input": "head = [1,2]",
+        "output": "false"
+      }
     ],
     "constraints": "The number of nodes is in [1, 10^5]. 0 <= Node.val <= 9.",
     "python_template": "# Palindrome Linked List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef isPalindrome(head: Optional[ListNode]) -> bool:\n    pass\n",
-    "go_template": "// Palindrome Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc isPalindrome(head *ListNode) bool {\n\n}\n"
+    "go_template": "// Palindrome Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc isPalindrome(head *ListNode) bool {\n\n}\n",
+    "cpp_template": "// Palindrome Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nbool isPalindrome(ListNode* head) {\n    return false;\n}\n",
+    "java_template": "// Palindrome Linked List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public boolean isPalindrome(ListNode head) {\n        return false;\n    }\n}\n",
+    "js_template": "// Palindrome Linked List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction isPalindrome(head) {\n\n}\n"
   },
   {
     "id": "intersection-of-two-linked-lists",
@@ -113,12 +197,21 @@
     "difficulty": "Easy",
     "description": "Given the heads of two singly linked lists, return the node at which they intersect. If no intersection, return null. The lists do not have cycles. After function returns, lists must retain their original structure.",
     "examples": [
-      {"input": "listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], intersect at node 8", "output": "Node with value 8"},
-      {"input": "listA = [2,6,4], listB = [1,5], no intersection", "output": "null"}
+      {
+        "input": "listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], intersect at node 8",
+        "output": "Node with value 8"
+      },
+      {
+        "input": "listA = [2,6,4], listB = [1,5], no intersection",
+        "output": "null"
+      }
     ],
     "constraints": "listA has m nodes. listB has n nodes. 1 <= m, n <= 3 * 10^4. 1 <= Node.val <= 10^5.",
     "python_template": "# Intersection of Two Linked Lists\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef getIntersectionNode(headA: ListNode, headB: ListNode) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Intersection of Two Linked Lists\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc getIntersectionNode(headA, headB *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Intersection of Two Linked Lists\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc getIntersectionNode(headA, headB *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Intersection of Two Linked Lists\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {\n    return nullptr;\n}\n",
+    "java_template": "// Intersection of Two Linked Lists\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {\n        return null;\n    }\n}\n",
+    "js_template": "// Intersection of Two Linked Lists\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction getIntersectionNode(headA, headB) {\n\n}\n"
   },
   {
     "id": "remove-nth-node-from-end-of-list",
@@ -126,13 +219,25 @@
     "difficulty": "Medium",
     "description": "Given the head of a linked list, remove the nth node from the end and return the head. Use two-pointer technique with n gap.",
     "examples": [
-      {"input": "head = [1,2,3,4,5], n = 2", "output": "[1,2,3,5]"},
-      {"input": "head = [1], n = 1", "output": "[]"},
-      {"input": "head = [1,2], n = 1", "output": "[1]"}
+      {
+        "input": "head = [1,2,3,4,5], n = 2",
+        "output": "[1,2,3,5]"
+      },
+      {
+        "input": "head = [1], n = 1",
+        "output": "[]"
+      },
+      {
+        "input": "head = [1,2], n = 1",
+        "output": "[1]"
+      }
     ],
     "constraints": "The number of nodes is sz. 1 <= sz <= 30. 0 <= Node.val <= 100. 1 <= n <= sz.",
     "python_template": "# Remove Nth Node From End of List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Remove Nth Node From End of List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc removeNthFromEnd(head *ListNode, n int) *ListNode {\n\n}\n"
+    "go_template": "// Remove Nth Node From End of List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc removeNthFromEnd(head *ListNode, n int) *ListNode {\n\n}\n",
+    "cpp_template": "// Remove Nth Node From End of List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* removeNthFromEnd(ListNode* head, int n) {\n    return nullptr;\n}\n",
+    "java_template": "// Remove Nth Node From End of List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode removeNthFromEnd(ListNode head, int n) {\n        return null;\n    }\n}\n",
+    "js_template": "// Remove Nth Node From End of List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction removeNthFromEnd(head, n) {\n\n}\n"
   },
   {
     "id": "add-two-numbers",
@@ -140,13 +245,25 @@
     "difficulty": "Medium",
     "description": "Given two non-empty linked lists representing two non-negative integers stored in reverse order (each node is a single digit), add the two numbers and return the sum as a linked list.",
     "examples": [
-      {"input": "l1 = [2,4,3], l2 = [5,6,4]", "output": "[7,0,8] (342 + 465 = 807)"},
-      {"input": "l1 = [0], l2 = [0]", "output": "[0]"},
-      {"input": "l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]", "output": "[8,9,9,9,0,0,0,1]"}
+      {
+        "input": "l1 = [2,4,3], l2 = [5,6,4]",
+        "output": "[7,0,8] (342 + 465 = 807)"
+      },
+      {
+        "input": "l1 = [0], l2 = [0]",
+        "output": "[0]"
+      },
+      {
+        "input": "l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]",
+        "output": "[8,9,9,9,0,0,0,1]"
+      }
     ],
     "constraints": "The number of nodes in each list is in [1, 100]. 0 <= Node.val <= 9. Numbers do not contain leading zeros except the number 0 itself.",
     "python_template": "# Add Two Numbers\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Add Two Numbers\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Add Two Numbers\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Add Two Numbers\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {\n    return nullptr;\n}\n",
+    "java_template": "// Add Two Numbers\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\n        return null;\n    }\n}\n",
+    "js_template": "// Add Two Numbers\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction addTwoNumbers(l1, l2) {\n\n}\n"
   },
   {
     "id": "odd-even-linked-list",
@@ -154,12 +271,21 @@
     "difficulty": "Medium",
     "description": "Given the head of a singly linked list, group all odd-indexed nodes together followed by all even-indexed nodes. The first node is odd, the second is even, and so on. Do it in O(1) extra space and O(n) time.",
     "examples": [
-      {"input": "head = [1,2,3,4,5]", "output": "[1,3,5,2,4]"},
-      {"input": "head = [2,1,3,5,6,4,7]", "output": "[2,3,6,7,1,5,4]"}
+      {
+        "input": "head = [1,2,3,4,5]",
+        "output": "[1,3,5,2,4]"
+      },
+      {
+        "input": "head = [2,1,3,5,6,4,7]",
+        "output": "[2,3,6,7,1,5,4]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 10^4]. -10^6 <= Node.val <= 10^6.",
     "python_template": "# Odd Even Linked List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef oddEvenList(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Odd Even Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc oddEvenList(head *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Odd Even Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc oddEvenList(head *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Odd Even Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* oddEvenList(ListNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Odd Even Linked List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode oddEvenList(ListNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Odd Even Linked List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction oddEvenList(head) {\n\n}\n"
   },
   {
     "id": "sort-list",
@@ -167,13 +293,25 @@
     "difficulty": "Medium",
     "description": "Given the head of a linked list, sort it in ascending order in O(n log n) time and O(1) space. Use merge sort: find middle, split, recursively sort, merge.",
     "examples": [
-      {"input": "head = [4,2,1,3]", "output": "[1,2,3,4]"},
-      {"input": "head = [-1,5,3,4,0]", "output": "[-1,0,3,4,5]"},
-      {"input": "head = []", "output": "[]"}
+      {
+        "input": "head = [4,2,1,3]",
+        "output": "[1,2,3,4]"
+      },
+      {
+        "input": "head = [-1,5,3,4,0]",
+        "output": "[-1,0,3,4,5]"
+      },
+      {
+        "input": "head = []",
+        "output": "[]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 5 * 10^4]. -10^5 <= Node.val <= 10^5.",
     "python_template": "# Sort List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef sortList(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Sort List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc sortList(head *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Sort List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc sortList(head *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Sort List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* sortList(ListNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Sort List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode sortList(ListNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Sort List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction sortList(head) {\n\n}\n"
   },
   {
     "id": "reorder-list",
@@ -181,12 +319,21 @@
     "difficulty": "Medium",
     "description": "Given a singly linked list L0 -> L1 -> ... -> Ln-1 -> Ln, reorder it to L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 -> ... Do it in-place. Hint: find middle, reverse second half, merge alternately.",
     "examples": [
-      {"input": "head = [1,2,3,4]", "output": "[1,4,2,3]"},
-      {"input": "head = [1,2,3,4,5]", "output": "[1,5,2,4,3]"}
+      {
+        "input": "head = [1,2,3,4]",
+        "output": "[1,4,2,3]"
+      },
+      {
+        "input": "head = [1,2,3,4,5]",
+        "output": "[1,5,2,4,3]"
+      }
     ],
     "constraints": "The number of nodes is in [1, 5 * 10^4]. 1 <= Node.val <= 1000.",
     "python_template": "# Reorder List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef reorderList(head: Optional[ListNode]) -> None:\n    \"\"\"Modify in-place.\"\"\"\n    pass\n",
-    "go_template": "// Reorder List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc reorderList(head *ListNode) {\n\n}\n"
+    "go_template": "// Reorder List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc reorderList(head *ListNode) {\n\n}\n",
+    "cpp_template": "// Reorder List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nvoid reorderList(ListNode* head) {\n\n}\n",
+    "java_template": "// Reorder List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public void reorderList(ListNode head) {\n\n    }\n}\n",
+    "js_template": "// Reorder List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction reorderList(head) {\n\n}\n"
   },
   {
     "id": "rotate-list",
@@ -194,12 +341,21 @@
     "difficulty": "Medium",
     "description": "Given the head of a linked list, rotate the list to the right by k places.",
     "examples": [
-      {"input": "head = [1,2,3,4,5], k = 2", "output": "[4,5,1,2,3]"},
-      {"input": "head = [0,1,2], k = 4", "output": "[2,0,1]"}
+      {
+        "input": "head = [1,2,3,4,5], k = 2",
+        "output": "[4,5,1,2,3]"
+      },
+      {
+        "input": "head = [0,1,2], k = 4",
+        "output": "[2,0,1]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 500]. -100 <= Node.val <= 100. 0 <= k <= 2 * 10^9.",
     "python_template": "# Rotate List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef rotateRight(head: Optional[ListNode], k: int) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Rotate List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc rotateRight(head *ListNode, k int) *ListNode {\n\n}\n"
+    "go_template": "// Rotate List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc rotateRight(head *ListNode, k int) *ListNode {\n\n}\n",
+    "cpp_template": "// Rotate List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* rotateRight(ListNode* head, int k) {\n    return nullptr;\n}\n",
+    "java_template": "// Rotate List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode rotateRight(ListNode head, int k) {\n        return null;\n    }\n}\n",
+    "js_template": "// Rotate List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction rotateRight(head, k) {\n\n}\n"
   },
   {
     "id": "copy-list-with-random-pointer",
@@ -207,12 +363,21 @@
     "difficulty": "Medium",
     "description": "Given a linked list where each node has a next pointer and a random pointer (which can point to any node or null), construct a deep copy of the list. Return the head of the copied list.",
     "examples": [
-      {"input": "head = [[7,null],[13,0],[11,4],[10,2],[1,0]]", "output": "Deep copy of the list"},
-      {"input": "head = [[1,1],[2,1]]", "output": "Deep copy of the list"}
+      {
+        "input": "head = [[7,null],[13,0],[11,4],[10,2],[1,0]]",
+        "output": "Deep copy of the list"
+      },
+      {
+        "input": "head = [[1,1],[2,1]]",
+        "output": "Deep copy of the list"
+      }
     ],
     "constraints": "0 <= n <= 1000. -10^4 <= Node.val <= 10^4. Node.random is null or points to a node in the list.",
     "python_template": "# Copy List with Random Pointer\n\nfrom typing import Optional\n\nclass Node:\n    def __init__(self, val=0, next=None, random=None):\n        self.val = val\n        self.next = next\n        self.random = random\n\ndef copyRandomList(head: Optional[Node]) -> Optional[Node]:\n    pass\n",
-    "go_template": "// Copy List with Random Pointer\n\npackage main\n\ntype Node struct {\n\tVal    int\n\tNext   *Node\n\tRandom *Node\n}\n\nfunc copyRandomList(head *Node) *Node {\n\n}\n"
+    "go_template": "// Copy List with Random Pointer\n\npackage main\n\ntype Node struct {\n\tVal    int\n\tNext   *Node\n\tRandom *Node\n}\n\nfunc copyRandomList(head *Node) *Node {\n\n}\n",
+    "cpp_template": "// Copy List with Random Pointer\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct Node {\n    int val;\n    Node* next;\n    Node* random;\n    Node(int val = 0, Node* next = nullptr, Node* random = nullptr) : val(val), next(next), random(random) {}\n};\n\nNode* copyRandomList(Node* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Copy List with Random Pointer\n\nclass Node {\n    int val;\n    Node next;\n    Node random;\n    Node(int val) { this.val = val; }\n}\n\nclass Solution {\n    public Node copyRandomList(Node head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Copy List with Random Pointer\n\nclass Node {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.random = null;\n    }\n}\n\nfunction copyRandomList(head) {\n\n}\n"
   },
   {
     "id": "find-the-duplicate-number",
@@ -220,13 +385,25 @@
     "difficulty": "Medium",
     "description": "Given an array of n + 1 integers where each integer is in [1, n], there is exactly one repeated number. Find it without modifying the array and using O(1) extra space. Hint: treat indices as linked list pointers and use Floyd's cycle detection.",
     "examples": [
-      {"input": "nums = [1,3,4,2,2]", "output": "2"},
-      {"input": "nums = [3,1,3,4,2]", "output": "3"},
-      {"input": "nums = [3,3,3,3,3]", "output": "3"}
+      {
+        "input": "nums = [1,3,4,2,2]",
+        "output": "2"
+      },
+      {
+        "input": "nums = [3,1,3,4,2]",
+        "output": "3"
+      },
+      {
+        "input": "nums = [3,3,3,3,3]",
+        "output": "3"
+      }
     ],
     "constraints": "1 <= n <= 10^5. nums.length == n + 1. 1 <= nums[i] <= n. There is only one repeated number.",
     "python_template": "# Find the Duplicate Number\n\nfrom typing import List\n\ndef findDuplicate(nums: List[int]) -> int:\n    pass\n",
-    "go_template": "// Find the Duplicate Number\n\npackage main\n\nfunc findDuplicate(nums []int) int {\n\n}\n"
+    "go_template": "// Find the Duplicate Number\n\npackage main\n\nfunc findDuplicate(nums []int) int {\n\n}\n",
+    "cpp_template": "// Find the Duplicate Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findDuplicate(vector<int>& nums) {\n    return 0;\n}\n",
+    "java_template": "// Find the Duplicate Number\n\nclass Solution {\n    public int findDuplicate(int[] nums) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Find the Duplicate Number\n\nfunction findDuplicate(nums) {\n\n}\n"
   },
   {
     "id": "flatten-a-multilevel-doubly-linked-list",
@@ -234,11 +411,17 @@
     "difficulty": "Medium",
     "description": "Given a doubly linked list where some nodes have a child pointer to a separate doubly linked list, flatten all lists into a single-level doubly linked list. Child lists should be inserted between the node and its next.",
     "examples": [
-      {"input": "head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]", "output": "[1,2,3,7,8,11,12,9,10,4,5,6]"}
+      {
+        "input": "head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]",
+        "output": "[1,2,3,7,8,11,12,9,10,4,5,6]"
+      }
     ],
     "constraints": "The number of nodes is at most 1000. 1 <= Node.val <= 10^5.",
     "python_template": "# Flatten a Multilevel Doubly Linked List\n\nfrom typing import Optional\n\nclass Node:\n    def __init__(self, val=0, prev=None, next=None, child=None):\n        self.val = val\n        self.prev = prev\n        self.next = next\n        self.child = child\n\ndef flatten(head: Optional[Node]) -> Optional[Node]:\n    pass\n",
-    "go_template": "// Flatten a Multilevel Doubly Linked List\n\npackage main\n\ntype Node struct {\n\tVal   int\n\tPrev  *Node\n\tNext  *Node\n\tChild *Node\n}\n\nfunc flatten(head *Node) *Node {\n\n}\n"
+    "go_template": "// Flatten a Multilevel Doubly Linked List\n\npackage main\n\ntype Node struct {\n\tVal   int\n\tPrev  *Node\n\tNext  *Node\n\tChild *Node\n}\n\nfunc flatten(head *Node) *Node {\n\n}\n",
+    "cpp_template": "// Flatten a Multilevel Doubly Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct Node {\n    int val;\n    Node* prev;\n    Node* next;\n    Node* child;\n    Node(int val = 0, Node* prev = nullptr, Node* next = nullptr, Node* child = nullptr) : val(val), prev(prev), next(next), child(child) {}\n};\n\nNode* flatten(Node* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Flatten a Multilevel Doubly Linked List\n\nclass Node {\n    int val;\n    Node prev;\n    Node next;\n    Node child;\n    Node(int val) { this.val = val; }\n}\n\nclass Solution {\n    public Node flatten(Node head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Flatten a Multilevel Doubly Linked List\n\nclass Node {\n    constructor(val) {\n        this.val = val;\n        this.prev = null;\n        this.next = null;\n        this.child = null;\n    }\n}\n\nfunction flatten(head) {\n\n}\n"
   },
   {
     "id": "flatten-dll",
@@ -246,11 +429,17 @@
     "difficulty": "Medium",
     "description": "Given a linked list where every node has two pointers: next (right) and bottom (down). All bottom lists are sorted. Merge all lists into a single sorted list using the bottom pointer. Return the head.",
     "examples": [
-      {"input": "5->10->19->28, with bottom lists: 5->7->8->30, 10->20, 19->22->50, 28->35->40->45", "output": "5->7->8->10->19->20->22->28->30->35->40->45->50"}
+      {
+        "input": "5->10->19->28, with bottom lists: 5->7->8->30, 10->20, 19->22->50, 28->35->40->45",
+        "output": "5->7->8->10->19->20->22->28->30->35->40->45->50"
+      }
     ],
     "constraints": "Number of nodes <= 500. 1 <= Node.val <= 1000. All bottom lists are sorted.",
     "python_template": "# Flatten a Linked List with Next and Bottom Pointers\n\nclass Node:\n    def __init__(self, val=0, next=None, bottom=None):\n        self.val = val\n        self.next = next\n        self.bottom = bottom\n\ndef flatten(head: Node) -> Node:\n    pass\n",
-    "go_template": "// Flatten a Linked List with Next and Bottom Pointers\n\npackage main\n\ntype Node struct {\n\tVal    int\n\tNext   *Node\n\tBottom *Node\n}\n\nfunc flatten(head *Node) *Node {\n\n}\n"
+    "go_template": "// Flatten a Linked List with Next and Bottom Pointers\n\npackage main\n\ntype Node struct {\n\tVal    int\n\tNext   *Node\n\tBottom *Node\n}\n\nfunc flatten(head *Node) *Node {\n\n}\n",
+    "cpp_template": "// Flatten a Linked List with Next and Bottom Pointers\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct Node {\n    int val;\n    Node* next;\n    Node* bottom;\n    Node(int val = 0, Node* next = nullptr, Node* bottom = nullptr) : val(val), next(next), bottom(bottom) {}\n};\n\nNode* flatten(Node* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Flatten a Linked List with Next and Bottom Pointers\n\nclass Node {\n    int val;\n    Node next;\n    Node bottom;\n    Node(int val) { this.val = val; }\n}\n\nclass Solution {\n    public Node flatten(Node head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Flatten a Linked List with Next and Bottom Pointers\n\nclass Node {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.bottom = null;\n    }\n}\n\nfunction flatten(head) {\n\n}\n"
   },
   {
     "id": "lru-cache",
@@ -258,11 +447,17 @@
     "difficulty": "Medium",
     "description": "Design a data structure that follows the constraints of a Least Recently Used (LRU) cache. Implement get(key) and put(key, value). Both must run in O(1) time. When the cache reaches capacity, evict the least recently used key before inserting a new one.",
     "examples": [
-      {"input": "LRUCache(2), put(1,1), put(2,2), get(1)=1, put(3,3), get(2)=-1, put(4,4), get(1)=-1, get(3)=3, get(4)=4", "output": "See above"}
+      {
+        "input": "LRUCache(2), put(1,1), put(2,2), get(1)=1, put(3,3), get(2)=-1, put(4,4), get(1)=-1, get(3)=3, get(4)=4",
+        "output": "See above"
+      }
     ],
     "constraints": "1 <= capacity <= 3000. 0 <= key <= 10^4. 0 <= value <= 10^5. At most 2 * 10^5 calls to get and put.",
     "python_template": "# LRU Cache\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        pass\n\n    def get(self, key: int) -> int:\n        pass\n\n    def put(self, key: int, value: int) -> None:\n        pass\n",
-    "go_template": "// LRU Cache\n\npackage main\n\ntype LRUCache struct {\n}\n\nfunc Constructor(capacity int) LRUCache {\n\treturn LRUCache{}\n}\n\nfunc (c *LRUCache) Get(key int) int {\n\treturn -1\n}\n\nfunc (c *LRUCache) Put(key int, value int) {\n}\n"
+    "go_template": "// LRU Cache\n\npackage main\n\ntype LRUCache struct {\n}\n\nfunc Constructor(capacity int) LRUCache {\n\treturn LRUCache{}\n}\n\nfunc (c *LRUCache) Get(key int) int {\n\treturn -1\n}\n\nfunc (c *LRUCache) Put(key int, value int) {\n}\n",
+    "cpp_template": "// LRU Cache\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass LRUCache {\npublic:\n    LRUCache(int capacity) {\n\n    }\n\n    int Get(int key) {\n        return 0;\n    }\n\n    void Put(int key, int value) {\n\n    }\n};\n",
+    "java_template": "// LRU Cache\n\nimport java.util.*;\n\nclass LRUCache {\n    public LRUCache(int capacity) {\n\n    }\n\n    public int Get(int key) {\n        return 0;\n    }\n\n    public void Put(int key, int value) {\n\n    }\n}\n",
+    "js_template": "// LRU Cache\n\nclass LRUCache {\n    constructor(capacity) {\n\n    }\n\n    get(key) {\n\n    }\n\n    put(key, value) {\n\n    }\n}\n"
   },
   {
     "id": "insert-node-dll",
@@ -270,12 +465,21 @@
     "difficulty": "Easy",
     "description": "Given a doubly linked list and a position, insert a new node with a given value at the specified position. Handle insertion at head, tail, and middle.",
     "examples": [
-      {"input": "DLL = [1,3,5], pos = 1, val = 2", "output": "[1,2,3,5]"},
-      {"input": "DLL = [1,3,5], pos = 0, val = 0", "output": "[0,1,3,5]"}
+      {
+        "input": "DLL = [1,3,5], pos = 1, val = 2",
+        "output": "[1,2,3,5]"
+      },
+      {
+        "input": "DLL = [1,3,5], pos = 0, val = 0",
+        "output": "[0,1,3,5]"
+      }
     ],
     "constraints": "0 <= pos <= length of DLL. -10^5 <= val <= 10^5.",
     "python_template": "# Insert Node in Doubly Linked List\n\nclass DLLNode:\n    def __init__(self, val=0, next=None, prev=None):\n        self.val = val\n        self.next = next\n        self.prev = prev\n\ndef insertNode(head: DLLNode, pos: int, val: int) -> DLLNode:\n    pass\n",
-    "go_template": "// Insert Node in Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc insertNode(head *DLLNode, pos int, val int) *DLLNode {\n\n}\n"
+    "go_template": "// Insert Node in Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc insertNode(head *DLLNode, pos int, val int) *DLLNode {\n\n}\n",
+    "cpp_template": "// Insert Node in Doubly Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct DLLNode {\n    int val;\n    DLLNode* next;\n    DLLNode* prev;\n    DLLNode(int val = 0, DLLNode* next = nullptr, DLLNode* prev = nullptr) : val(val), next(next), prev(prev) {}\n};\n\nDLLNode* insertNode(DLLNode* head, int pos, int val) {\n    return nullptr;\n}\n",
+    "java_template": "// Insert Node in Doubly Linked List\n\nclass DLLNode {\n    int val;\n    DLLNode next;\n    DLLNode prev;\n    DLLNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public DLLNode insertNode(DLLNode head, int pos, int val) {\n        return null;\n    }\n}\n",
+    "js_template": "// Insert Node in Doubly Linked List\n\nclass DLLNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.prev = null;\n    }\n}\n\nfunction insertNode(head, pos, val) {\n\n}\n"
   },
   {
     "id": "remove-duplicates-dll",
@@ -283,12 +487,21 @@
     "difficulty": "Easy",
     "description": "Given a sorted doubly linked list, remove all duplicate nodes so that each value appears only once. Return the modified list.",
     "examples": [
-      {"input": "DLL = [1,1,2,3,3]", "output": "[1,2,3]"},
-      {"input": "DLL = [1,1,1,1]", "output": "[1]"}
+      {
+        "input": "DLL = [1,1,2,3,3]",
+        "output": "[1,2,3]"
+      },
+      {
+        "input": "DLL = [1,1,1,1]",
+        "output": "[1]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 300]. -100 <= Node.val <= 100. The list is sorted.",
     "python_template": "# Remove Duplicates from Sorted Doubly Linked List\n\nclass DLLNode:\n    def __init__(self, val=0, next=None, prev=None):\n        self.val = val\n        self.next = next\n        self.prev = prev\n\ndef removeDuplicates(head: DLLNode) -> DLLNode:\n    pass\n",
-    "go_template": "// Remove Duplicates from Sorted Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc removeDuplicates(head *DLLNode) *DLLNode {\n\n}\n"
+    "go_template": "// Remove Duplicates from Sorted Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc removeDuplicates(head *DLLNode) *DLLNode {\n\n}\n",
+    "cpp_template": "// Remove Duplicates from Sorted Doubly Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct DLLNode {\n    int val;\n    DLLNode* next;\n    DLLNode* prev;\n    DLLNode(int val = 0, DLLNode* next = nullptr, DLLNode* prev = nullptr) : val(val), next(next), prev(prev) {}\n};\n\nDLLNode* removeDuplicates(DLLNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Remove Duplicates from Sorted Doubly Linked List\n\nclass DLLNode {\n    int val;\n    DLLNode next;\n    DLLNode prev;\n    DLLNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public DLLNode removeDuplicates(DLLNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Remove Duplicates from Sorted Doubly Linked List\n\nclass DLLNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.prev = null;\n    }\n}\n\nfunction removeDuplicates(head) {\n\n}\n"
   },
   {
     "id": "remove-nodes-dll",
@@ -296,12 +509,21 @@
     "difficulty": "Easy",
     "description": "Given a doubly linked list and a reference to a node to be deleted, delete the node. Handle head, tail, and middle cases. Update prev and next pointers accordingly.",
     "examples": [
-      {"input": "DLL = [1,2,3,4], delete node with val 3", "output": "[1,2,4]"},
-      {"input": "DLL = [1,2,3], delete head (val 1)", "output": "[2,3]"}
+      {
+        "input": "DLL = [1,2,3,4], delete node with val 3",
+        "output": "[1,2,4]"
+      },
+      {
+        "input": "DLL = [1,2,3], delete head (val 1)",
+        "output": "[2,3]"
+      }
     ],
     "constraints": "The number of nodes is in [1, 10^4]. -10^5 <= Node.val <= 10^5.",
     "python_template": "# Delete Node in a Doubly Linked List\n\nclass DLLNode:\n    def __init__(self, val=0, next=None, prev=None):\n        self.val = val\n        self.next = next\n        self.prev = prev\n\ndef deleteNode(head: DLLNode, node: DLLNode) -> DLLNode:\n    pass\n",
-    "go_template": "// Delete Node in a Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc deleteNode(head *DLLNode, node *DLLNode) *DLLNode {\n\n}\n"
+    "go_template": "// Delete Node in a Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc deleteNode(head *DLLNode, node *DLLNode) *DLLNode {\n\n}\n",
+    "cpp_template": "// Delete Node in a Doubly Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct DLLNode {\n    int val;\n    DLLNode* next;\n    DLLNode* prev;\n    DLLNode(int val = 0, DLLNode* next = nullptr, DLLNode* prev = nullptr) : val(val), next(next), prev(prev) {}\n};\n\nDLLNode* deleteNode(DLLNode* head, DLLNode* node) {\n    return nullptr;\n}\n",
+    "java_template": "// Delete Node in a Doubly Linked List\n\nclass DLLNode {\n    int val;\n    DLLNode next;\n    DLLNode prev;\n    DLLNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public DLLNode deleteNode(DLLNode head, DLLNode node) {\n        return null;\n    }\n}\n",
+    "js_template": "// Delete Node in a Doubly Linked List\n\nclass DLLNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.prev = null;\n    }\n}\n\nfunction deleteNode(head, node) {\n\n}\n"
   },
   {
     "id": "pairs-in-dll",
@@ -309,12 +531,21 @@
     "difficulty": "Easy",
     "description": "Given a sorted doubly linked list and a target sum, find all pairs of nodes whose values add up to the target. Use two pointers from both ends.",
     "examples": [
-      {"input": "DLL = [1,2,4,5,6,8,9], target = 7", "output": "[(1,6), (2,5)]"},
-      {"input": "DLL = [1,5,6], target = 6", "output": "[(1,5)]"}
+      {
+        "input": "DLL = [1,2,4,5,6,8,9], target = 7",
+        "output": "[(1,6), (2,5)]"
+      },
+      {
+        "input": "DLL = [1,5,6], target = 6",
+        "output": "[(1,5)]"
+      }
     ],
     "constraints": "1 <= number of nodes <= 10^4. 1 <= Node.val <= 10^4. List is sorted in ascending order.",
     "python_template": "# Find Pairs with Given Sum in Sorted DLL\n\nfrom typing import List, Tuple\n\nclass DLLNode:\n    def __init__(self, val=0, next=None, prev=None):\n        self.val = val\n        self.next = next\n        self.prev = prev\n\ndef findPairs(head: DLLNode, target: int) -> List[Tuple[int, int]]:\n    pass\n",
-    "go_template": "// Find Pairs with Given Sum in Sorted DLL\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc findPairs(head *DLLNode, target int) [][2]int {\n\n}\n"
+    "go_template": "// Find Pairs with Given Sum in Sorted DLL\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc findPairs(head *DLLNode, target int) [][2]int {\n\n}\n",
+    "cpp_template": "// Find Pairs with Given Sum in Sorted DLL\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct DLLNode {\n    int val;\n    DLLNode* next;\n    DLLNode* prev;\n    DLLNode(int val = 0, DLLNode* next = nullptr, DLLNode* prev = nullptr) : val(val), next(next), prev(prev) {}\n};\n\n[][2]int findPairs(DLLNode* head, int target) {\n    return {};\n}\n",
+    "java_template": "// Find Pairs with Given Sum in Sorted DLL\n\nclass DLLNode {\n    int val;\n    DLLNode next;\n    DLLNode prev;\n    DLLNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public [][2]int findPairs(DLLNode head, int target) {\n        return null;\n    }\n}\n",
+    "js_template": "// Find Pairs with Given Sum in Sorted DLL\n\nclass DLLNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.prev = null;\n    }\n}\n\nfunction findPairs(head, target) {\n\n}\n"
   },
   {
     "id": "insert-gcd-in-linked-list",
@@ -322,12 +553,21 @@
     "difficulty": "Medium",
     "description": "Given the head of a linked list, insert a new node with the GCD of every pair of adjacent nodes between them. Return the modified list.",
     "examples": [
-      {"input": "head = [18,6,10,3]", "output": "[18,6,6,2,10,1,3]"},
-      {"input": "head = [7]", "output": "[7]"}
+      {
+        "input": "head = [18,6,10,3]",
+        "output": "[18,6,6,2,10,1,3]"
+      },
+      {
+        "input": "head = [7]",
+        "output": "[7]"
+      }
     ],
     "constraints": "The number of nodes is in [1, 5000]. 1 <= Node.val <= 1000.",
     "python_template": "# Insert Greatest Common Divisors in Linked List\n\nfrom typing import Optional\nfrom math import gcd\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef insertGreatestCommonDivisors(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Insert Greatest Common Divisors in Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc insertGreatestCommonDivisors(head *ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Insert Greatest Common Divisors in Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc insertGreatestCommonDivisors(head *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Insert Greatest Common Divisors in Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* insertGreatestCommonDivisors(ListNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Insert Greatest Common Divisors in Linked List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode insertGreatestCommonDivisors(ListNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Insert Greatest Common Divisors in Linked List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction insertGreatestCommonDivisors(head) {\n\n}\n"
   },
   {
     "id": "split-linked-list-in-parts",
@@ -335,12 +575,21 @@
     "difficulty": "Medium",
     "description": "Given the head of a linked list and an integer k, split the list into k consecutive parts. Parts should be as equal in size as possible — earlier parts should be at most one node larger. Parts that have no nodes should be null.",
     "examples": [
-      {"input": "head = [1,2,3], k = 5", "output": "[[1],[2],[3],[],[]]"},
-      {"input": "head = [1,2,3,4,5,6,7,8,9,10], k = 3", "output": "[[1,2,3,4],[5,6,7],[8,9,10]]"}
+      {
+        "input": "head = [1,2,3], k = 5",
+        "output": "[[1],[2],[3],[],[]]"
+      },
+      {
+        "input": "head = [1,2,3,4,5,6,7,8,9,10], k = 3",
+        "output": "[[1,2,3,4],[5,6,7],[8,9,10]]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 1000]. 0 <= Node.val <= 1000. 1 <= k <= 50.",
     "python_template": "# Split Linked List in Parts\n\nfrom typing import Optional, List\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef splitListToParts(head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:\n    pass\n",
-    "go_template": "// Split Linked List in Parts\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc splitListToParts(head *ListNode, k int) []*ListNode {\n\n}\n"
+    "go_template": "// Split Linked List in Parts\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc splitListToParts(head *ListNode, k int) []*ListNode {\n\n}\n",
+    "cpp_template": "// Split Linked List in Parts\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nvector<ListNode*> splitListToParts(ListNode* head, int k) {\n    return {};\n}\n",
+    "java_template": "// Split Linked List in Parts\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode[] splitListToParts(ListNode head, int k) {\n        return new ListNode[]{};\n    }\n}\n",
+    "js_template": "// Split Linked List in Parts\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction splitListToParts(head, k) {\n\n}\n"
   },
   {
     "id": "merge-k-sorted-lists",
@@ -348,13 +597,25 @@
     "difficulty": "Hard",
     "description": "Given an array of k linked lists, each sorted in ascending order, merge all into one sorted linked list and return it. Use a min-heap or divide-and-conquer.",
     "examples": [
-      {"input": "lists = [[1,4,5],[1,3,4],[2,6]]", "output": "[1,1,2,3,4,4,5,6]"},
-      {"input": "lists = []", "output": "[]"},
-      {"input": "lists = [[]]", "output": "[]"}
+      {
+        "input": "lists = [[1,4,5],[1,3,4],[2,6]]",
+        "output": "[1,1,2,3,4,4,5,6]"
+      },
+      {
+        "input": "lists = []",
+        "output": "[]"
+      },
+      {
+        "input": "lists = [[]]",
+        "output": "[]"
+      }
     ],
     "constraints": "k == lists.length. 0 <= k <= 10^4. 0 <= lists[i].length <= 500. -10^4 <= lists[i][j] <= 10^4. Each list is sorted in ascending order. Sum of all lists[i].length <= 10^4.",
     "python_template": "# Merge K Sorted Lists\n\nfrom typing import List, Optional\nimport heapq\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef mergeKLists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Merge K Sorted Lists\n\npackage main\n\nimport \"container/heap\"\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc mergeKLists(lists []*ListNode) *ListNode {\n\n}\n"
+    "go_template": "// Merge K Sorted Lists\n\npackage main\n\nimport \"container/heap\"\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc mergeKLists(lists []*ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Merge K Sorted Lists\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* mergeKLists(vector<ListNode*>& lists) {\n    return nullptr;\n}\n",
+    "java_template": "// Merge K Sorted Lists\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode mergeKLists(ListNode[] lists) {\n        return null;\n    }\n}\n",
+    "js_template": "// Merge K Sorted Lists\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction mergeKLists(lists) {\n\n}\n"
   },
   {
     "id": "reverse-nodes-in-k-group",
@@ -362,11 +623,20 @@
     "difficulty": "Hard",
     "description": "Given the head of a linked list, reverse the nodes k at a time and return the modified list. If the number of remaining nodes is less than k, leave them as-is. You may not alter the values, only the nodes.",
     "examples": [
-      {"input": "head = [1,2,3,4,5], k = 2", "output": "[2,1,4,3,5]"},
-      {"input": "head = [1,2,3,4,5], k = 3", "output": "[3,2,1,4,5]"}
+      {
+        "input": "head = [1,2,3,4,5], k = 2",
+        "output": "[2,1,4,3,5]"
+      },
+      {
+        "input": "head = [1,2,3,4,5], k = 3",
+        "output": "[3,2,1,4,5]"
+      }
     ],
     "constraints": "The number of nodes is n. 1 <= k <= n <= 5000. 0 <= Node.val <= 1000.",
     "python_template": "# Reverse Nodes in k-Group\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Reverse Nodes in k-Group\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc reverseKGroup(head *ListNode, k int) *ListNode {\n\n}\n"
+    "go_template": "// Reverse Nodes in k-Group\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc reverseKGroup(head *ListNode, k int) *ListNode {\n\n}\n",
+    "cpp_template": "// Reverse Nodes in k-Group\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* reverseKGroup(ListNode* head, int k) {\n    return nullptr;\n}\n",
+    "java_template": "// Reverse Nodes in k-Group\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode reverseKGroup(ListNode head, int k) {\n        return null;\n    }\n}\n",
+    "js_template": "// Reverse Nodes in k-Group\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction reverseKGroup(head, k) {\n\n}\n"
   }
 ]

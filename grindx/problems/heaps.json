@@ -5,12 +5,21 @@
     "difficulty": "Medium",
     "description": "Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and get the 10 most recent tweets in their news feed. Implement the Twitter class:\n- Twitter() Initializes the twitter object.\n- postTweet(userId, tweetId) Composes a new tweet with ID tweetId by the user userId.\n- getNewsFeed(userId) Retrieves the 10 most recent tweet IDs in the user's news feed (includes own tweets and tweets from followed users), ordered from most recent to least recent.\n- follow(followerId, followeeId) The user with ID followerId follows the user with ID followeeId.\n- unfollow(followerId, followeeId) The user with ID followerId unfollows the user with ID followeeId.",
     "examples": [
-      {"input": "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[1,5],[1],[1,2],[1],[1,2],[1]]", "output": "[null,null,[5],null,[6,5],null,[5]]"},
-      {"input": "[\"Twitter\",\"postTweet\",\"postTweet\",\"getNewsFeed\"]\n[[],[1,1],[1,2],[1]]", "output": "[null,null,null,[2,1]]"}
+      {
+        "input": "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[1,5],[1],[1,2],[1],[1,2],[1]]",
+        "output": "[null,null,[5],null,[6,5],null,[5]]"
+      },
+      {
+        "input": "[\"Twitter\",\"postTweet\",\"postTweet\",\"getNewsFeed\"]\n[[],[1,1],[1,2],[1]]",
+        "output": "[null,null,null,[2,1]]"
+      }
     ],
     "constraints": "1 <= userId, followerId, followeeId <= 500. 0 <= tweetId <= 10^4. At most 3 * 10^4 calls total.",
     "python_template": "# Design Twitter\n\nfrom typing import List\n\nclass Twitter:\n    def __init__(self):\n        pass\n\n    def postTweet(self, userId: int, tweetId: int) -> None:\n        pass\n\n    def getNewsFeed(self, userId: int) -> List[int]:\n        pass\n\n    def follow(self, followerId: int, followeeId: int) -> None:\n        pass\n\n    def unfollow(self, followerId: int, followeeId: int) -> None:\n        pass\n",
-    "go_template": "// Design Twitter\n\npackage main\n\ntype Twitter struct {\n\n}\n\nfunc Constructor() Twitter {\n    return Twitter{}\n}\n\nfunc (t *Twitter) PostTweet(userId int, tweetId int) {\n\n}\n\nfunc (t *Twitter) GetNewsFeed(userId int) []int {\n    return nil\n}\n\nfunc (t *Twitter) Follow(followerId int, followeeId int) {\n\n}\n\nfunc (t *Twitter) Unfollow(followerId int, followeeId int) {\n\n}\n"
+    "go_template": "// Design Twitter\n\npackage main\n\ntype Twitter struct {\n\n}\n\nfunc Constructor() Twitter {\n    return Twitter{}\n}\n\nfunc (t *Twitter) PostTweet(userId int, tweetId int) {\n\n}\n\nfunc (t *Twitter) GetNewsFeed(userId int) []int {\n    return nil\n}\n\nfunc (t *Twitter) Follow(followerId int, followeeId int) {\n\n}\n\nfunc (t *Twitter) Unfollow(followerId int, followeeId int) {\n\n}\n",
+    "cpp_template": "// Design Twitter\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Twitter {\npublic:\n    Twitter() {\n\n    }\n\n    void PostTweet(int userId, int tweetId) {\n\n    }\n\n    vector<int> GetNewsFeed(int userId) {\n        return {};\n    }\n\n    void Follow(int followerId, int followeeId) {\n\n    }\n\n    void Unfollow(int followerId, int followeeId) {\n\n    }\n};\n",
+    "java_template": "// Design Twitter\n\nimport java.util.*;\n\nclass Twitter {\n    public Twitter() {\n\n    }\n\n    public void PostTweet(int userId, int tweetId) {\n\n    }\n\n    public int[] GetNewsFeed(int userId) {\n        return new int[]{};\n    }\n\n    public void Follow(int followerId, int followeeId) {\n\n    }\n\n    public void Unfollow(int followerId, int followeeId) {\n\n    }\n}\n",
+    "js_template": "// Design Twitter\n\nclass Twitter {\n    constructor() {\n\n    }\n\n    postTweet(userId, tweetId) {\n\n    }\n\n    getNewsFeed(userId) {\n\n    }\n\n    follow(followerId, followeeId) {\n\n    }\n\n    unfollow(followerId, followeeId) {\n\n    }\n}\n"
   },
   {
     "id": "divide-arr-in-sets-of-k-consec-numbers",
@@ -18,13 +27,25 @@
     "difficulty": "Medium",
     "description": "Given an array of integers nums and a positive integer k, check whether it is possible to divide this array into sets of k consecutive numbers. Return true if it is possible, otherwise return false.",
     "examples": [
-      {"input": "nums = [1,2,3,3,4,4,5,6], k = 4", "output": "true (sets: [1,2,3,4] and [3,4,5,6])"},
-      {"input": "nums = [3,2,1,2,3,4,3,4,5,9,10,11], k = 3", "output": "true (sets: [1,2,3],[2,3,4],[3,4,5],[9,10,11])"},
-      {"input": "nums = [1,2,3,4], k = 3", "output": "false"}
+      {
+        "input": "nums = [1,2,3,3,4,4,5,6], k = 4",
+        "output": "true (sets: [1,2,3,4] and [3,4,5,6])"
+      },
+      {
+        "input": "nums = [3,2,1,2,3,4,3,4,5,9,10,11], k = 3",
+        "output": "true (sets: [1,2,3],[2,3,4],[3,4,5],[9,10,11])"
+      },
+      {
+        "input": "nums = [1,2,3,4], k = 3",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= k <= nums.length <= 10^5. 1 <= nums[i] <= 10^9.",
     "python_template": "# Divide Array in Sets of K Consecutive Numbers\n\nfrom typing import List\n\ndef isPossibleDivide(nums: List[int], k: int) -> bool:\n    pass\n",
-    "go_template": "// Divide Array in Sets of K Consecutive Numbers\n\npackage main\n\nfunc isPossibleDivide(nums []int, k int) bool {\n\n}\n"
+    "go_template": "// Divide Array in Sets of K Consecutive Numbers\n\npackage main\n\nfunc isPossibleDivide(nums []int, k int) bool {\n\n}\n",
+    "cpp_template": "// Divide Array in Sets of K Consecutive Numbers\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isPossibleDivide(vector<int>& nums, int k) {\n    return false;\n}\n",
+    "java_template": "// Divide Array in Sets of K Consecutive Numbers\n\nclass Solution {\n    public boolean isPossibleDivide(int[] nums, int k) {\n        return false;\n    }\n}\n",
+    "js_template": "// Divide Array in Sets of K Consecutive Numbers\n\nfunction isPossibleDivide(nums, k) {\n\n}\n"
   },
   {
     "id": "find-median-from-data-stream",
@@ -32,12 +53,21 @@
     "difficulty": "Hard",
     "description": "The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values. Implement the MedianFinder class:\n- MedianFinder() initializes the MedianFinder object.\n- addNum(num) adds the integer num to the data structure.\n- findMedian() returns the median of all elements so far.",
     "examples": [
-      {"input": "[\"MedianFinder\",\"addNum\",\"addNum\",\"findMedian\",\"addNum\",\"findMedian\"]\n[[],[1],[2],[],[3],[]]", "output": "[null,null,null,1.5,null,2.0]"},
-      {"input": "[\"MedianFinder\",\"addNum\",\"findMedian\"]\n[[],[5],[]]", "output": "[null,null,5.0]"}
+      {
+        "input": "[\"MedianFinder\",\"addNum\",\"addNum\",\"findMedian\",\"addNum\",\"findMedian\"]\n[[],[1],[2],[],[3],[]]",
+        "output": "[null,null,null,1.5,null,2.0]"
+      },
+      {
+        "input": "[\"MedianFinder\",\"addNum\",\"findMedian\"]\n[[],[5],[]]",
+        "output": "[null,null,5.0]"
+      }
     ],
     "constraints": "-10^5 <= num <= 10^5. There will be at least one element before calling findMedian. At most 5 * 10^4 calls to addNum and findMedian.",
     "python_template": "# Find Median from Data Stream\n\nclass MedianFinder:\n    def __init__(self):\n        pass\n\n    def addNum(self, num: int) -> None:\n        pass\n\n    def findMedian(self) -> float:\n        pass\n",
-    "go_template": "// Find Median from Data Stream\n\npackage main\n\ntype MedianFinder struct {\n\n}\n\nfunc Constructor() MedianFinder {\n    return MedianFinder{}\n}\n\nfunc (mf *MedianFinder) AddNum(num int) {\n\n}\n\nfunc (mf *MedianFinder) FindMedian() float64 {\n    return 0.0\n}\n"
+    "go_template": "// Find Median from Data Stream\n\npackage main\n\ntype MedianFinder struct {\n\n}\n\nfunc Constructor() MedianFinder {\n    return MedianFinder{}\n}\n\nfunc (mf *MedianFinder) AddNum(num int) {\n\n}\n\nfunc (mf *MedianFinder) FindMedian() float64 {\n    return 0.0\n}\n",
+    "cpp_template": "// Find Median from Data Stream\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass MedianFinder {\npublic:\n    MedianFinder() {\n\n    }\n\n    void AddNum(int num) {\n\n    }\n\n    double FindMedian() {\n        return 0.0;\n    }\n};\n",
+    "java_template": "// Find Median from Data Stream\n\nimport java.util.*;\n\nclass MedianFinder {\n    public MedianFinder() {\n\n    }\n\n    public void AddNum(int num) {\n\n    }\n\n    public double FindMedian() {\n        return 0.0;\n    }\n}\n",
+    "js_template": "// Find Median from Data Stream\n\nclass MedianFinder {\n    constructor() {\n\n    }\n\n    addNum(num) {\n\n    }\n\n    findMedian() {\n\n    }\n}\n"
   },
   {
     "id": "heap-sort",
@@ -45,13 +75,25 @@
     "difficulty": "Easy",
     "description": "Implement the heap sort algorithm. Given an array of integers, sort it in ascending order using heap sort. Build a max-heap from the array, then repeatedly extract the maximum element and place it at the end. Sort the array in-place.",
     "examples": [
-      {"input": "arr = [12, 11, 13, 5, 6, 7]", "output": "[5, 6, 7, 11, 12, 13]"},
-      {"input": "arr = [4, 1, 3, 9, 7]", "output": "[1, 3, 4, 7, 9]"},
-      {"input": "arr = [1]", "output": "[1]"}
+      {
+        "input": "arr = [12, 11, 13, 5, 6, 7]",
+        "output": "[5, 6, 7, 11, 12, 13]"
+      },
+      {
+        "input": "arr = [4, 1, 3, 9, 7]",
+        "output": "[1, 3, 4, 7, 9]"
+      },
+      {
+        "input": "arr = [1]",
+        "output": "[1]"
+      }
     ],
     "constraints": "1 <= arr.length <= 10^5. -10^4 <= arr[i] <= 10^4.",
     "python_template": "# Heap Sort\n\nfrom typing import List\n\ndef heapSort(arr: List[int]) -> List[int]:\n    pass\n",
-    "go_template": "// Heap Sort\n\npackage main\n\nfunc heapSort(arr []int) []int {\n    return arr\n}\n"
+    "go_template": "// Heap Sort\n\npackage main\n\nfunc heapSort(arr []int) []int {\n    return arr\n}\n",
+    "cpp_template": "// Heap Sort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> heapSort(vector<int>& arr) {\n    return {};\n}\n",
+    "java_template": "// Heap Sort\n\nclass Solution {\n    public int[] heapSort(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Heap Sort\n\nfunction heapSort(arr) {\n\n}\n"
   },
   {
     "id": "intro-implement",
@@ -59,12 +101,21 @@
     "difficulty": "Easy",
     "description": "Implement a min-heap data structure from scratch that supports the following operations:\n- insert(val): Insert a value into the heap.\n- extractMin(): Remove and return the minimum element.\n- peek(): Return the minimum element without removing it.\n- size(): Return the number of elements in the heap.\nDo not use any built-in heap/priority queue library.",
     "examples": [
-      {"input": "insert(3), insert(1), insert(2), peek(), extractMin(), peek()", "output": "peek()=1, extractMin()=1, peek()=2"},
-      {"input": "insert(5), insert(3), insert(8), insert(1), extractMin(), extractMin()", "output": "extractMin()=1, extractMin()=3"}
+      {
+        "input": "insert(3), insert(1), insert(2), peek(), extractMin(), peek()",
+        "output": "peek()=1, extractMin()=1, peek()=2"
+      },
+      {
+        "input": "insert(5), insert(3), insert(8), insert(1), extractMin(), extractMin()",
+        "output": "extractMin()=1, extractMin()=3"
+      }
     ],
     "constraints": "1 <= val <= 10^5. extractMin and peek are only called when heap is non-empty. At most 10^4 operations.",
     "python_template": "# Implement a Min-Heap\n\nclass MinHeap:\n    def __init__(self):\n        self.heap = []\n\n    def insert(self, val: int) -> None:\n        pass\n\n    def extractMin(self) -> int:\n        pass\n\n    def peek(self) -> int:\n        pass\n\n    def size(self) -> int:\n        pass\n",
-    "go_template": "// Implement a Min-Heap\n\npackage main\n\ntype MinHeap struct {\n    heap []int\n}\n\nfunc NewMinHeap() *MinHeap {\n    return &MinHeap{}\n}\n\nfunc (h *MinHeap) Insert(val int) {\n\n}\n\nfunc (h *MinHeap) ExtractMin() int {\n    return 0\n}\n\nfunc (h *MinHeap) Peek() int {\n    return 0\n}\n\nfunc (h *MinHeap) Size() int {\n    return 0\n}\n"
+    "go_template": "// Implement a Min-Heap\n\npackage main\n\ntype MinHeap struct {\n    heap []int\n}\n\nfunc NewMinHeap() *MinHeap {\n    return &MinHeap{}\n}\n\nfunc (h *MinHeap) Insert(val int) {\n\n}\n\nfunc (h *MinHeap) ExtractMin() int {\n    return 0\n}\n\nfunc (h *MinHeap) Peek() int {\n    return 0\n}\n\nfunc (h *MinHeap) Size() int {\n    return 0\n}\n",
+    "cpp_template": "// Implement a Min-Heap\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass MinHeap {\npublic:\n    MinHeap() {\n\n    }\n\n    void Insert(int val) {\n\n    }\n\n    int ExtractMin() {\n        return 0;\n    }\n\n    int Peek() {\n        return 0;\n    }\n\n    int Size() {\n        return 0;\n    }\n};\n",
+    "java_template": "// Implement a Min-Heap\n\nimport java.util.*;\n\nclass MinHeap {\n    public MinHeap() {\n\n    }\n\n    public void Insert(int val) {\n\n    }\n\n    public int ExtractMin() {\n        return 0;\n    }\n\n    public int Peek() {\n        return 0;\n    }\n\n    public int Size() {\n        return 0;\n    }\n}\n",
+    "js_template": "// Implement a Min-Heap\n\nclass MinHeap {\n    constructor() {\n\n    }\n\n    insert(val) {\n\n    }\n\n    extractMin() {\n\n    }\n\n    peek() {\n\n    }\n\n    size() {\n\n    }\n}\n"
   },
   {
     "id": "k-closest-points-to-origin",
@@ -72,12 +123,21 @@
     "difficulty": "Medium",
     "description": "Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0). The distance between two points on the X-Y plane is the Euclidean distance sqrt(xi^2 + yi^2). You may return the answer in any order.",
     "examples": [
-      {"input": "points = [[1,3],[-2,2]], k = 1", "output": "[[-2,2]]"},
-      {"input": "points = [[3,3],[5,-1],[-2,4]], k = 2", "output": "[[3,3],[-2,4]]"}
+      {
+        "input": "points = [[1,3],[-2,2]], k = 1",
+        "output": "[[-2,2]]"
+      },
+      {
+        "input": "points = [[3,3],[5,-1],[-2,4]], k = 2",
+        "output": "[[3,3],[-2,4]]"
+      }
     ],
     "constraints": "1 <= k <= points.length <= 10^4. -10^4 <= xi, yi <= 10^4.",
     "python_template": "# K Closest Points to Origin\n\nfrom typing import List\n\ndef kClosest(points: List[List[int]], k: int) -> List[List[int]]:\n    pass\n",
-    "go_template": "// K Closest Points to Origin\n\npackage main\n\nfunc kClosest(points [][]int, k int) [][]int {\n    return nil\n}\n"
+    "go_template": "// K Closest Points to Origin\n\npackage main\n\nfunc kClosest(points [][]int, k int) [][]int {\n    return nil\n}\n",
+    "cpp_template": "// K Closest Points to Origin\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> kClosest(vector<vector<int>>& points, int k) {\n    return {};\n}\n",
+    "java_template": "// K Closest Points to Origin\n\nclass Solution {\n    public int[][] kClosest(int[][] points, int k) {\n        return new int[][]{};\n    }\n}\n",
+    "js_template": "// K Closest Points to Origin\n\nfunction kClosest(points, k) {\n\n}\n"
   },
   {
     "id": "kth-largest-element-in-a-stream",
@@ -85,12 +145,21 @@
     "difficulty": "Easy",
     "description": "Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element. Implement KthLargest class:\n- KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.\n- int add(int val) Appends the integer val to the stream and returns the element representing the kth largest element in the stream.",
     "examples": [
-      {"input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]", "output": "[null,4,5,5,8,8]"},
-      {"input": "[\"KthLargest\",\"add\",\"add\"]\n[[1,[]],[1],[2]]", "output": "[null,1,2]"}
+      {
+        "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]",
+        "output": "[null,4,5,5,8,8]"
+      },
+      {
+        "input": "[\"KthLargest\",\"add\",\"add\"]\n[[1,[]],[1],[2]]",
+        "output": "[null,1,2]"
+      }
     ],
     "constraints": "1 <= k <= 10^4. 0 <= nums.length <= 10^4. -10^4 <= nums[i] <= 10^4. -10^4 <= val <= 10^4. At most 10^4 calls to add.",
     "python_template": "# Kth Largest Element in a Stream\n\nfrom typing import List\n\nclass KthLargest:\n    def __init__(self, k: int, nums: List[int]):\n        pass\n\n    def add(self, val: int) -> int:\n        pass\n",
-    "go_template": "// Kth Largest Element in a Stream\n\npackage main\n\ntype KthLargest struct {\n\n}\n\nfunc Constructor(k int, nums []int) KthLargest {\n    return KthLargest{}\n}\n\nfunc (kl *KthLargest) Add(val int) int {\n    return 0\n}\n"
+    "go_template": "// Kth Largest Element in a Stream\n\npackage main\n\ntype KthLargest struct {\n\n}\n\nfunc Constructor(k int, nums []int) KthLargest {\n    return KthLargest{}\n}\n\nfunc (kl *KthLargest) Add(val int) int {\n    return 0\n}\n",
+    "cpp_template": "// Kth Largest Element in a Stream\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass KthLargest {\npublic:\n    KthLargest(int k, vector<int> nums) {\n\n    }\n\n    int Add(int val) {\n        return 0;\n    }\n};\n",
+    "java_template": "// Kth Largest Element in a Stream\n\nimport java.util.*;\n\nclass KthLargest {\n    public KthLargest(int k, int[] nums) {\n\n    }\n\n    public int Add(int val) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Kth Largest Element in a Stream\n\nclass KthLargest {\n    constructor(k, nums) {\n\n    }\n\n    add(val) {\n\n    }\n}\n"
   },
   {
     "id": "kth-largest-element-in-an-array",
@@ -98,12 +167,21 @@
     "difficulty": "Medium",
     "description": "Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in the sorted order, not the kth distinct element. Can you solve it without sorting?",
     "examples": [
-      {"input": "nums = [3,2,1,5,6,4], k = 2", "output": "5"},
-      {"input": "nums = [3,2,3,1,2,4,5,5,6], k = 4", "output": "4"}
+      {
+        "input": "nums = [3,2,1,5,6,4], k = 2",
+        "output": "5"
+      },
+      {
+        "input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
+        "output": "4"
+      }
     ],
     "constraints": "1 <= k <= nums.length <= 10^5. -10^4 <= nums[i] <= 10^4.",
     "python_template": "# Kth Largest Element in an Array\n\nfrom typing import List\n\ndef findKthLargest(nums: List[int], k: int) -> int:\n    pass\n",
-    "go_template": "// Kth Largest Element in an Array\n\npackage main\n\nfunc findKthLargest(nums []int, k int) int {\n    return 0\n}\n"
+    "go_template": "// Kth Largest Element in an Array\n\npackage main\n\nfunc findKthLargest(nums []int, k int) int {\n    return 0\n}\n",
+    "cpp_template": "// Kth Largest Element in an Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findKthLargest(vector<int>& nums, int k) {\n    return 0;\n}\n",
+    "java_template": "// Kth Largest Element in an Array\n\nclass Solution {\n    public int findKthLargest(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Kth Largest Element in an Array\n\nfunction findKthLargest(nums, k) {\n\n}\n"
   },
   {
     "id": "last-stone-weight",
@@ -111,13 +189,25 @@
     "difficulty": "Easy",
     "description": "You are given an array of integers stones where stones[i] is the weight of the ith stone. We play a game with the stones: on each turn, we choose the heaviest two stones and smash them together. If x == y, both stones are destroyed. If x != y, the stone of weight x is destroyed and the stone of weight y has new weight y - x. At the end, there is at most one stone left. Return its weight, or 0 if there are no stones left.",
     "examples": [
-      {"input": "stones = [2,7,4,1,8,1]", "output": "1 (smash 7&8→1, 2&4→2, 1&2→1, 1&1→0, left with 1)"},
-      {"input": "stones = [1]", "output": "1"},
-      {"input": "stones = [3,3]", "output": "0"}
+      {
+        "input": "stones = [2,7,4,1,8,1]",
+        "output": "1 (smash 7&8→1, 2&4→2, 1&2→1, 1&1→0, left with 1)"
+      },
+      {
+        "input": "stones = [1]",
+        "output": "1"
+      },
+      {
+        "input": "stones = [3,3]",
+        "output": "0"
+      }
     ],
     "constraints": "1 <= stones.length <= 30. 1 <= stones[i] <= 1000.",
     "python_template": "# Last Stone Weight\n\nfrom typing import List\n\ndef lastStoneWeight(stones: List[int]) -> int:\n    pass\n",
-    "go_template": "// Last Stone Weight\n\npackage main\n\nfunc lastStoneWeight(stones []int) int {\n    return 0\n}\n"
+    "go_template": "// Last Stone Weight\n\npackage main\n\nfunc lastStoneWeight(stones []int) int {\n    return 0\n}\n",
+    "cpp_template": "// Last Stone Weight\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint lastStoneWeight(vector<int>& stones) {\n    return 0;\n}\n",
+    "java_template": "// Last Stone Weight\n\nclass Solution {\n    public int lastStoneWeight(int[] stones) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Last Stone Weight\n\nfunction lastStoneWeight(stones) {\n\n}\n"
   },
   {
     "id": "max-combination-sum",
@@ -125,12 +215,21 @@
     "difficulty": "Medium",
     "description": "Given two integer arrays A and B of size n each, find the maximum k valid sum combinations from all possible sum combinations. A sum combination is formed by taking one element from array A and another from array B. Return the k maximum sum combinations in descending order.",
     "examples": [
-      {"input": "A = [3, 2], B = [1, 4], k = 2", "output": "[7, 6] (3+4=7, 2+4=6)"},
-      {"input": "A = [1, 4, 2, 3], B = [2, 5, 1, 6], k = 3", "output": "[10, 9, 9] (4+6=10, 3+6=9, 4+5=9)"}
+      {
+        "input": "A = [3, 2], B = [1, 4], k = 2",
+        "output": "[7, 6] (3+4=7, 2+4=6)"
+      },
+      {
+        "input": "A = [1, 4, 2, 3], B = [2, 5, 1, 6], k = 3",
+        "output": "[10, 9, 9] (4+6=10, 3+6=9, 4+5=9)"
+      }
     ],
     "constraints": "1 <= n <= 10^5. 1 <= k <= n. 1 <= A[i], B[i] <= 10^5.",
     "python_template": "# Maximum Sum Combination\n\nfrom typing import List\n\ndef maxSumCombinations(A: List[int], B: List[int], k: int) -> List[int]:\n    pass\n",
-    "go_template": "// Maximum Sum Combination\n\npackage main\n\nfunc maxSumCombinations(A, B []int, k int) []int {\n    return nil\n}\n"
+    "go_template": "// Maximum Sum Combination\n\npackage main\n\nfunc maxSumCombinations(A, B []int, k int) []int {\n    return nil\n}\n",
+    "cpp_template": "// Maximum Sum Combination\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> maxSumCombinations(vector<int>& A, vector<int>& B, int k) {\n    return {};\n}\n",
+    "java_template": "// Maximum Sum Combination\n\nclass Solution {\n    public int[] maxSumCombinations(int[] A, int[] B, int k) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Maximum Sum Combination\n\nfunction maxSumCombinations(A, B, k) {\n\n}\n"
   },
   {
     "id": "min-cost-of-rope",
@@ -138,13 +237,25 @@
     "difficulty": "Easy",
     "description": "Given an array of rope lengths, connect all ropes into one rope. The cost of connecting two ropes is the sum of their lengths. Return the minimum total cost to connect all ropes. You should always connect the two smallest ropes first (greedy approach using a min-heap).",
     "examples": [
-      {"input": "ropes = [4, 3, 2, 6]", "output": "29 (connect 2+3=5 cost 5, connect 4+5=9 cost 9, connect 6+9=15 cost 15, total=29)"},
-      {"input": "ropes = [1, 2, 3]", "output": "9 (connect 1+2=3 cost 3, connect 3+3=6 cost 6, total=9)"},
-      {"input": "ropes = [5]", "output": "0 (only one rope, no connections needed)"}
+      {
+        "input": "ropes = [4, 3, 2, 6]",
+        "output": "29 (connect 2+3=5 cost 5, connect 4+5=9 cost 9, connect 6+9=15 cost 15, total=29)"
+      },
+      {
+        "input": "ropes = [1, 2, 3]",
+        "output": "9 (connect 1+2=3 cost 3, connect 3+3=6 cost 6, total=9)"
+      },
+      {
+        "input": "ropes = [5]",
+        "output": "0 (only one rope, no connections needed)"
+      }
     ],
     "constraints": "1 <= ropes.length <= 10^5. 1 <= ropes[i] <= 10^6.",
     "python_template": "# Minimum Cost of Ropes\n\nfrom typing import List\n\ndef minCostOfRopes(ropes: List[int]) -> int:\n    pass\n",
-    "go_template": "// Minimum Cost of Ropes\n\npackage main\n\nfunc minCostOfRopes(ropes []int) int {\n    return 0\n}\n"
+    "go_template": "// Minimum Cost of Ropes\n\npackage main\n\nfunc minCostOfRopes(ropes []int) int {\n    return 0\n}\n",
+    "cpp_template": "// Minimum Cost of Ropes\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minCostOfRopes(vector<int>& ropes) {\n    return 0;\n}\n",
+    "java_template": "// Minimum Cost of Ropes\n\nclass Solution {\n    public int minCostOfRopes(int[] ropes) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Minimum Cost of Ropes\n\nfunction minCostOfRopes(ropes) {\n\n}\n"
   },
   {
     "id": "replace-with-rank",
@@ -152,13 +263,25 @@
     "difficulty": "Easy",
     "description": "Given an array of n integers, replace each element with its rank. The rank represents how large the element is. The smallest element has rank 1. If two elements are equal, they have the same rank. Ranks should be as small as possible.",
     "examples": [
-      {"input": "arr = [20, 15, 26, 2, 98, 6]", "output": "[4, 3, 5, 1, 6, 2]"},
-      {"input": "arr = [10, 10, 10]", "output": "[1, 1, 1]"},
-      {"input": "arr = [1, 5, 3]", "output": "[1, 3, 2]"}
+      {
+        "input": "arr = [20, 15, 26, 2, 98, 6]",
+        "output": "[4, 3, 5, 1, 6, 2]"
+      },
+      {
+        "input": "arr = [10, 10, 10]",
+        "output": "[1, 1, 1]"
+      },
+      {
+        "input": "arr = [1, 5, 3]",
+        "output": "[1, 3, 2]"
+      }
     ],
     "constraints": "1 <= n <= 10^5. 1 <= arr[i] <= 10^9.",
     "python_template": "# Replace Elements with Rank\n\nfrom typing import List\n\ndef replaceWithRank(arr: List[int]) -> List[int]:\n    pass\n",
-    "go_template": "// Replace Elements with Rank\n\npackage main\n\nfunc replaceWithRank(arr []int) []int {\n    return nil\n}\n"
+    "go_template": "// Replace Elements with Rank\n\npackage main\n\nfunc replaceWithRank(arr []int) []int {\n    return nil\n}\n",
+    "cpp_template": "// Replace Elements with Rank\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> replaceWithRank(vector<int>& arr) {\n    return {};\n}\n",
+    "java_template": "// Replace Elements with Rank\n\nclass Solution {\n    public int[] replaceWithRank(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Replace Elements with Rank\n\nfunction replaceWithRank(arr) {\n\n}\n"
   },
   {
     "id": "task-scheduler",
@@ -166,13 +289,25 @@
     "difficulty": "Medium",
     "description": "You are given an array of CPU tasks, each represented by a character, and a cooling interval n. Each cycle allows completion of one task. Tasks can be completed in any order, but there's a constraint: identical tasks must be separated by at least n intervals. Return the minimum number of intervals the CPU will take to finish all tasks.",
     "examples": [
-      {"input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 2", "output": "8 (A -> B -> idle -> A -> B -> idle -> A -> B)"},
-      {"input": "tasks = [\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"], n = 1", "output": "6 (A -> B -> C -> A -> D -> B, no idle needed)"},
-      {"input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 0", "output": "6"}
+      {
+        "input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 2",
+        "output": "8 (A -> B -> idle -> A -> B -> idle -> A -> B)"
+      },
+      {
+        "input": "tasks = [\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"], n = 1",
+        "output": "6 (A -> B -> C -> A -> D -> B, no idle needed)"
+      },
+      {
+        "input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 0",
+        "output": "6"
+      }
     ],
     "constraints": "1 <= tasks.length <= 10^4. tasks[i] is an uppercase English letter. 0 <= n <= 100.",
     "python_template": "# Task Scheduler\n\nfrom typing import List\n\ndef leastInterval(tasks: List[str], n: int) -> int:\n    pass\n",
-    "go_template": "// Task Scheduler\n\npackage main\n\nfunc leastInterval(tasks []byte, n int) int {\n    return 0\n}\n"
+    "go_template": "// Task Scheduler\n\npackage main\n\nfunc leastInterval(tasks []byte, n int) int {\n    return 0\n}\n",
+    "cpp_template": "// Task Scheduler\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint leastInterval(string& tasks, int n) {\n    return 0;\n}\n",
+    "java_template": "// Task Scheduler\n\nclass Solution {\n    public int leastInterval(char[] tasks, int n) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Task Scheduler\n\nfunction leastInterval(tasks, n) {\n\n}\n"
   },
   {
     "id": "top-k-frequent-elements",
@@ -180,12 +315,24 @@
     "difficulty": "Medium",
     "description": "Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.",
     "examples": [
-      {"input": "nums = [1,1,1,2,2,3], k = 2", "output": "[1,2]"},
-      {"input": "nums = [1], k = 1", "output": "[1]"},
-      {"input": "nums = [4,1,-1,2,-1,2,3], k = 2", "output": "[-1,2]"}
+      {
+        "input": "nums = [1,1,1,2,2,3], k = 2",
+        "output": "[1,2]"
+      },
+      {
+        "input": "nums = [1], k = 1",
+        "output": "[1]"
+      },
+      {
+        "input": "nums = [4,1,-1,2,-1,2,3], k = 2",
+        "output": "[-1,2]"
+      }
     ],
     "constraints": "1 <= nums.length <= 10^5. -10^4 <= nums[i] <= 10^4. k is in the range [1, the number of unique elements]. The answer is guaranteed to be unique.",
     "python_template": "# Top K Frequent Elements\n\nfrom typing import List\n\ndef topKFrequent(nums: List[int], k: int) -> List[int]:\n    pass\n",
-    "go_template": "// Top K Frequent Elements\n\npackage main\n\nfunc topKFrequent(nums []int, k int) []int {\n    return nil\n}\n"
+    "go_template": "// Top K Frequent Elements\n\npackage main\n\nfunc topKFrequent(nums []int, k int) []int {\n    return nil\n}\n",
+    "cpp_template": "// Top K Frequent Elements\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> topKFrequent(vector<int>& nums, int k) {\n    return {};\n}\n",
+    "java_template": "// Top K Frequent Elements\n\nclass Solution {\n    public int[] topKFrequent(int[] nums, int k) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Top K Frequent Elements\n\nfunction topKFrequent(nums, k) {\n\n}\n"
   }
 ]

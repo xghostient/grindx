@@ -5,12 +5,21 @@
     "difficulty": "Easy",
     "description": "Given a directed graph represented as an adjacency list, return the BFS traversal of the graph starting from node 0.",
     "examples": [
-      {"input": "adj = [[1,2],[3],[3,4],[],[]]", "output": "[0,1,2,3,4]"},
-      {"input": "adj = [[1],[2],[]]", "output": "[0,1,2]"}
+      {
+        "input": "adj = [[1,2],[3],[3,4],[],[]]",
+        "output": "[0,1,2,3,4]"
+      },
+      {
+        "input": "adj = [[1],[2],[]]",
+        "output": "[0,1,2]"
+      }
     ],
     "constraints": "1 <= V <= 10^4. 0 <= E <= 10^4.",
     "python_template": "# BFS of Graph\n\nfrom typing import List\nfrom collections import deque\n\ndef bfs(adj: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// BFS of Graph\n\npackage main\n\nfunc bfs(adj [][]int) []int {\n\n}\n"
+    "go_template": "// BFS of Graph\n\npackage main\n\nfunc bfs(adj [][]int) []int {\n\n}\n",
+    "cpp_template": "// BFS of Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> bfs(vector<vector<int>>& adj) {\n    return {};\n}\n",
+    "java_template": "// BFS of Graph\n\nclass Solution {\n    public int[] bfs(int[][] adj) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// BFS of Graph\n\nfunction bfs(adj) {\n\n}\n"
   },
   {
     "id": "dfs",
@@ -18,12 +27,21 @@
     "difficulty": "Easy",
     "description": "Given a directed graph represented as an adjacency list, return the DFS traversal of the graph starting from node 0.",
     "examples": [
-      {"input": "adj = [[1,2],[3],[3,4],[],[]]", "output": "[0,1,3,2,4]"},
-      {"input": "adj = [[1],[2],[]]", "output": "[0,1,2]"}
+      {
+        "input": "adj = [[1,2],[3],[3,4],[],[]]",
+        "output": "[0,1,3,2,4]"
+      },
+      {
+        "input": "adj = [[1],[2],[]]",
+        "output": "[0,1,2]"
+      }
     ],
     "constraints": "1 <= V <= 10^4. 0 <= E <= 10^4.",
     "python_template": "# DFS of Graph\n\nfrom typing import List\n\ndef dfs(adj: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// DFS of Graph\n\npackage main\n\nfunc dfs(adj [][]int) []int {\n\n}\n"
+    "go_template": "// DFS of Graph\n\npackage main\n\nfunc dfs(adj [][]int) []int {\n\n}\n",
+    "cpp_template": "// DFS of Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> dfs(vector<vector<int>>& adj) {\n    return {};\n}\n",
+    "java_template": "// DFS of Graph\n\nclass Solution {\n    public int[] dfs(int[][] adj) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// DFS of Graph\n\nfunction dfs(adj) {\n\n}\n"
   },
   {
     "id": "flood-fill",
@@ -31,12 +49,21 @@
     "difficulty": "Easy",
     "description": "Given an m x n image grid, a starting pixel (sr, sc), and a color, perform a flood fill. Starting from the pixel, color all connected pixels (4-directionally) that share the same original color with the new color.",
     "examples": [
-      {"input": "image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2", "output": "[[2,2,2],[2,2,0],[2,0,1]]"},
-      {"input": "image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0", "output": "[[0,0,0],[0,0,0]]"}
+      {
+        "input": "image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2",
+        "output": "[[2,2,2],[2,2,0],[2,0,1]]"
+      },
+      {
+        "input": "image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0",
+        "output": "[[0,0,0],[0,0,0]]"
+      }
     ],
     "constraints": "m == image.length. n == image[i].length. 1 <= m, n <= 50. 0 <= image[i][j], color < 2^16.",
     "python_template": "# Flood Fill\n\nfrom typing import List\n\ndef floodFill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:\n    pass\n",
-    "go_template": "// Flood Fill\n\npackage main\n\nfunc floodFill(image [][]int, sr int, sc int, color int) [][]int {\n\n}\n"
+    "go_template": "// Flood Fill\n\npackage main\n\nfunc floodFill(image [][]int, sr int, sc int, color int) [][]int {\n\n}\n",
+    "cpp_template": "// Flood Fill\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {\n    return {};\n}\n",
+    "java_template": "// Flood Fill\n\nclass Solution {\n    public int[][] floodFill(int[][] image, int sr, int sc, int color) {\n        return new int[][]{};\n    }\n}\n",
+    "js_template": "// Flood Fill\n\nfunction floodFill(image, sr, sc, color) {\n\n}\n"
   },
   {
     "id": "number-of-islands",
@@ -44,12 +71,21 @@
     "difficulty": "Medium",
     "description": "Given an m x n 2D grid of '1's (land) and '0's (water), return the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.",
     "examples": [
-      {"input": "grid = [[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]", "output": "1"},
-      {"input": "grid = [[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]", "output": "3"}
+      {
+        "input": "grid = [[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]",
+        "output": "1"
+      },
+      {
+        "input": "grid = [[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]",
+        "output": "3"
+      }
     ],
     "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 300. grid[i][j] is '0' or '1'.",
     "python_template": "# Number of Islands\n\nfrom typing import List\n\ndef numIslands(grid: List[List[str]]) -> int:\n    pass\n",
-    "go_template": "// Number of Islands\n\npackage main\n\nfunc numIslands(grid [][]byte) int {\n\n}\n"
+    "go_template": "// Number of Islands\n\npackage main\n\nfunc numIslands(grid [][]byte) int {\n\n}\n",
+    "cpp_template": "// Number of Islands\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numIslands(vector<string>& grid) {\n    return 0;\n}\n",
+    "java_template": "// Number of Islands\n\nclass Solution {\n    public int numIslands(char[][] grid) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Number of Islands\n\nfunction numIslands(grid) {\n\n}\n"
   },
   {
     "id": "max-area-of-island",
@@ -57,12 +93,21 @@
     "difficulty": "Medium",
     "description": "Given an m x n binary matrix grid, return the area of the largest island. An island is a group of 1's connected 4-directionally. If there is no island, return 0.",
     "examples": [
-      {"input": "grid = [[0,0,1,0,0],[0,1,1,1,0],[0,0,1,0,0]]", "output": "5"},
-      {"input": "grid = [[0,0,0,0,0]]", "output": "0"}
+      {
+        "input": "grid = [[0,0,1,0,0],[0,1,1,1,0],[0,0,1,0,0]]",
+        "output": "5"
+      },
+      {
+        "input": "grid = [[0,0,0,0,0]]",
+        "output": "0"
+      }
     ],
     "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 50. grid[i][j] is 0 or 1.",
     "python_template": "# Max Area of Island\n\nfrom typing import List\n\ndef maxAreaOfIsland(grid: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Max Area of Island\n\npackage main\n\nfunc maxAreaOfIsland(grid [][]int) int {\n\n}\n"
+    "go_template": "// Max Area of Island\n\npackage main\n\nfunc maxAreaOfIsland(grid [][]int) int {\n\n}\n",
+    "cpp_template": "// Max Area of Island\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxAreaOfIsland(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+    "java_template": "// Max Area of Island\n\nclass Solution {\n    public int maxAreaOfIsland(int[][] grid) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Max Area of Island\n\nfunction maxAreaOfIsland(grid) {\n\n}\n"
   },
   {
     "id": "clone-graph",
@@ -70,12 +115,21 @@
     "difficulty": "Medium",
     "description": "Given a reference of a node in a connected undirected graph, return a deep copy (clone) of the graph. Each node has a value and a list of its neighbors.",
     "examples": [
-      {"input": "adjList = [[2,4],[1,3],[2,4],[1,3]]", "output": "[[2,4],[1,3],[2,4],[1,3]] (deep copy)"},
-      {"input": "adjList = [[]]", "output": "[[]]"}
+      {
+        "input": "adjList = [[2,4],[1,3],[2,4],[1,3]]",
+        "output": "[[2,4],[1,3],[2,4],[1,3]] (deep copy)"
+      },
+      {
+        "input": "adjList = [[]]",
+        "output": "[[]]"
+      }
     ],
     "constraints": "The number of nodes is in [0, 100]. 1 <= Node.val <= 100. All values are unique. No repeated edges or self-loops.",
     "python_template": "# Clone Graph\n\nclass Node:\n    def __init__(self, val=0, neighbors=None):\n        self.val = val\n        self.neighbors = neighbors if neighbors is not None else []\n\ndef cloneGraph(node: Node) -> Node:\n    pass\n",
-    "go_template": "// Clone Graph\n\npackage main\n\ntype Node struct {\n\tVal       int\n\tNeighbors []*Node\n}\n\nfunc cloneGraph(node *Node) *Node {\n\n}\n"
+    "go_template": "// Clone Graph\n\npackage main\n\ntype Node struct {\n\tVal       int\n\tNeighbors []*Node\n}\n\nfunc cloneGraph(node *Node) *Node {\n\n}\n",
+    "cpp_template": "// Clone Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct Node {\n    int val;\n    vector<Node*> neighbors;\n    Node(int val = 0, vector<Node*> neighbors) : val(val), neighbors(neighbors) {}\n};\n\nNode* cloneGraph(Node* node) {\n    return nullptr;\n}\n",
+    "java_template": "// Clone Graph\n\nclass Node {\n    int val;\n    Node[] neighbors;\n    Node(int val) { this.val = val; }\n}\n\nclass Solution {\n    public Node cloneGraph(Node node) {\n        return null;\n    }\n}\n",
+    "js_template": "// Clone Graph\n\nclass Node {\n    constructor(val) {\n        this.val = val;\n        this.neighbors = null;\n    }\n}\n\nfunction cloneGraph(node) {\n\n}\n"
   },
   {
     "id": "rotting-oranges",
@@ -83,13 +137,25 @@
     "difficulty": "Medium",
     "description": "Given an m x n grid where 0 = empty, 1 = fresh orange, 2 = rotten orange. Every minute, any fresh orange adjacent (4-directionally) to a rotten orange becomes rotten. Return the minimum number of minutes until no fresh orange remains. If impossible, return -1.",
     "examples": [
-      {"input": "grid = [[2,1,1],[1,1,0],[0,1,1]]", "output": "4"},
-      {"input": "grid = [[2,1,1],[0,1,1],[1,0,1]]", "output": "-1"},
-      {"input": "grid = [[0,2]]", "output": "0"}
+      {
+        "input": "grid = [[2,1,1],[1,1,0],[0,1,1]]",
+        "output": "4"
+      },
+      {
+        "input": "grid = [[2,1,1],[0,1,1],[1,0,1]]",
+        "output": "-1"
+      },
+      {
+        "input": "grid = [[0,2]]",
+        "output": "0"
+      }
     ],
     "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 10. grid[i][j] is 0, 1, or 2.",
     "python_template": "# Rotting Oranges\n\nfrom typing import List\nfrom collections import deque\n\ndef orangesRotting(grid: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Rotting Oranges\n\npackage main\n\nfunc orangesRotting(grid [][]int) int {\n\n}\n"
+    "go_template": "// Rotting Oranges\n\npackage main\n\nfunc orangesRotting(grid [][]int) int {\n\n}\n",
+    "cpp_template": "// Rotting Oranges\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint orangesRotting(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+    "java_template": "// Rotting Oranges\n\nclass Solution {\n    public int orangesRotting(int[][] grid) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Rotting Oranges\n\nfunction orangesRotting(grid) {\n\n}\n"
   },
   {
     "id": "01-matrix",
@@ -97,12 +163,21 @@
     "difficulty": "Medium",
     "description": "Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell. The distance between two adjacent cells is 1. Use multi-source BFS starting from all 0s.",
     "examples": [
-      {"input": "mat = [[0,0,0],[0,1,0],[0,0,0]]", "output": "[[0,0,0],[0,1,0],[0,0,0]]"},
-      {"input": "mat = [[0,0,0],[0,1,0],[1,1,1]]", "output": "[[0,0,0],[0,1,0],[1,2,1]]"}
+      {
+        "input": "mat = [[0,0,0],[0,1,0],[0,0,0]]",
+        "output": "[[0,0,0],[0,1,0],[0,0,0]]"
+      },
+      {
+        "input": "mat = [[0,0,0],[0,1,0],[1,1,1]]",
+        "output": "[[0,0,0],[0,1,0],[1,2,1]]"
+      }
     ],
     "constraints": "m == mat.length. n == mat[i].length. 1 <= m, n <= 10^4. 1 <= m * n <= 10^4. mat[i][j] is 0 or 1. There is at least one 0.",
     "python_template": "# 01 Matrix\n\nfrom typing import List\nfrom collections import deque\n\ndef updateMatrix(mat: List[List[int]]) -> List[List[int]]:\n    pass\n",
-    "go_template": "// 01 Matrix\n\npackage main\n\nfunc updateMatrix(mat [][]int) [][]int {\n\n}\n"
+    "go_template": "// 01 Matrix\n\npackage main\n\nfunc updateMatrix(mat [][]int) [][]int {\n\n}\n",
+    "cpp_template": "// 01 Matrix\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> updateMatrix(vector<vector<int>>& mat) {\n    return {};\n}\n",
+    "java_template": "// 01 Matrix\n\nclass Solution {\n    public int[][] updateMatrix(int[][] mat) {\n        return new int[][]{};\n    }\n}\n",
+    "js_template": "// 01 Matrix\n\nfunction updateMatrix(mat) {\n\n}\n"
   },
   {
     "id": "surrounded-regions",
@@ -110,12 +185,21 @@
     "difficulty": "Medium",
     "description": "Given an m x n matrix board containing 'X' and 'O', capture all regions that are 4-directionally surrounded by 'X'. A region is captured by flipping all 'O's into 'X's. 'O's on the border or connected to border 'O's are not captured.",
     "examples": [
-      {"input": "board = [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]", "output": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"},
-      {"input": "board = [[\"X\"]]", "output": "[[\"X\"]]"}
+      {
+        "input": "board = [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
+        "output": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"
+      },
+      {
+        "input": "board = [[\"X\"]]",
+        "output": "[[\"X\"]]"
+      }
     ],
     "constraints": "m == board.length. n == board[i].length. 1 <= m, n <= 200. board[i][j] is 'X' or 'O'.",
     "python_template": "# Surrounded Regions\n\nfrom typing import List\n\ndef solve(board: List[List[str]]) -> None:\n    \"\"\"Modify board in-place.\"\"\"\n    pass\n",
-    "go_template": "// Surrounded Regions\n\npackage main\n\nfunc solve(board [][]byte) {\n\n}\n"
+    "go_template": "// Surrounded Regions\n\npackage main\n\nfunc solve(board [][]byte) {\n\n}\n",
+    "cpp_template": "// Surrounded Regions\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid solve(vector<string>& board) {\n\n}\n",
+    "java_template": "// Surrounded Regions\n\nclass Solution {\n    public void solve(char[][] board) {\n\n    }\n}\n",
+    "js_template": "// Surrounded Regions\n\nfunction solve(board) {\n\n}\n"
   },
   {
     "id": "enclaves",
@@ -123,12 +207,21 @@
     "difficulty": "Medium",
     "description": "Given an m x n binary matrix grid where 0 = sea, 1 = land, return the number of land cells that cannot reach any border by walking only through land cells.",
     "examples": [
-      {"input": "grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]", "output": "3"},
-      {"input": "grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]", "output": "0"}
+      {
+        "input": "grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]",
+        "output": "3"
+      },
+      {
+        "input": "grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]",
+        "output": "0"
+      }
     ],
     "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 500. grid[i][j] is 0 or 1.",
     "python_template": "# Number of Enclaves\n\nfrom typing import List\n\ndef numEnclaves(grid: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Number of Enclaves\n\npackage main\n\nfunc numEnclaves(grid [][]int) int {\n\n}\n"
+    "go_template": "// Number of Enclaves\n\npackage main\n\nfunc numEnclaves(grid [][]int) int {\n\n}\n",
+    "cpp_template": "// Number of Enclaves\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numEnclaves(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+    "java_template": "// Number of Enclaves\n\nclass Solution {\n    public int numEnclaves(int[][] grid) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Number of Enclaves\n\nfunction numEnclaves(grid) {\n\n}\n"
   },
   {
     "id": "number-of-provinces",
@@ -136,12 +229,21 @@
     "difficulty": "Medium",
     "description": "There are n cities. Some are connected directly, some indirectly, and some not at all. A province is a group of directly or indirectly connected cities. Given an n x n adjacency matrix isConnected, return the total number of provinces.",
     "examples": [
-      {"input": "isConnected = [[1,1,0],[1,1,0],[0,0,1]]", "output": "2"},
-      {"input": "isConnected = [[1,0,0],[0,1,0],[0,0,1]]", "output": "3"}
+      {
+        "input": "isConnected = [[1,1,0],[1,1,0],[0,0,1]]",
+        "output": "2"
+      },
+      {
+        "input": "isConnected = [[1,0,0],[0,1,0],[0,0,1]]",
+        "output": "3"
+      }
     ],
     "constraints": "1 <= n <= 200. n == isConnected.length. isConnected[i][j] is 0 or 1. isConnected[i][i] == 1. isConnected[i][j] == isConnected[j][i].",
     "python_template": "# Number of Provinces\n\nfrom typing import List\n\ndef findCircleNum(isConnected: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Number of Provinces\n\npackage main\n\nfunc findCircleNum(isConnected [][]int) int {\n\n}\n"
+    "go_template": "// Number of Provinces\n\npackage main\n\nfunc findCircleNum(isConnected [][]int) int {\n\n}\n",
+    "cpp_template": "// Number of Provinces\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findCircleNum(vector<vector<int>>& isConnected) {\n    return 0;\n}\n",
+    "java_template": "// Number of Provinces\n\nclass Solution {\n    public int findCircleNum(int[][] isConnected) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Number of Provinces\n\nfunction findCircleNum(isConnected) {\n\n}\n"
   },
   {
     "id": "walls-and-gates",
@@ -149,11 +251,17 @@
     "difficulty": "Medium",
     "description": "Given an m x n grid initialized with INF (2^31-1) for empty rooms, 0 for gates, and -1 for walls, fill each empty room with the distance to its nearest gate. If impossible to reach a gate, leave as INF.",
     "examples": [
-      {"input": "rooms = [[INF,-1,0,INF],[INF,INF,INF,-1],[INF,-1,INF,-1],[0,-1,INF,INF]]", "output": "[[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]"}
+      {
+        "input": "rooms = [[INF,-1,0,INF],[INF,INF,INF,-1],[INF,-1,INF,-1],[0,-1,INF,INF]]",
+        "output": "[[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]"
+      }
     ],
     "constraints": "m == rooms.length. n == rooms[i].length. 1 <= m, n <= 250. rooms[i][j] is -1, 0, or 2^31-1.",
     "python_template": "# Walls and Gates\n\nfrom typing import List\nfrom collections import deque\n\ndef wallsAndGates(rooms: List[List[int]]) -> None:\n    \"\"\"Modify rooms in-place.\"\"\"\n    pass\n",
-    "go_template": "// Walls and Gates\n\npackage main\n\nimport \"math\"\n\nfunc wallsAndGates(rooms [][]int) {\n\n}\n"
+    "go_template": "// Walls and Gates\n\npackage main\n\nimport \"math\"\n\nfunc wallsAndGates(rooms [][]int) {\n\n}\n",
+    "cpp_template": "// Walls and Gates\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid wallsAndGates(vector<vector<int>>& rooms) {\n\n}\n",
+    "java_template": "// Walls and Gates\n\nclass Solution {\n    public void wallsAndGates(int[][] rooms) {\n\n    }\n}\n",
+    "js_template": "// Walls and Gates\n\nfunction wallsAndGates(rooms) {\n\n}\n"
   },
   {
     "id": "pacific-atlantic-water-flow",
@@ -161,12 +269,21 @@
     "difficulty": "Medium",
     "description": "Given an m x n matrix of heights, water can flow from a cell to an adjacent cell (4-directionally) if the adjacent cell's height is <= current. The Pacific ocean touches the top and left edges. The Atlantic ocean touches the bottom and right edges. Return a list of cells where water can flow to both oceans.",
     "examples": [
-      {"input": "heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]", "output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]"},
-      {"input": "heights = [[1]]", "output": "[[0,0]]"}
+      {
+        "input": "heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]",
+        "output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]"
+      },
+      {
+        "input": "heights = [[1]]",
+        "output": "[[0,0]]"
+      }
     ],
     "constraints": "m == heights.length. n == heights[i].length. 1 <= m, n <= 200. 0 <= heights[i][j] <= 10^5.",
     "python_template": "# Pacific Atlantic Water Flow\n\nfrom typing import List\n\ndef pacificAtlantic(heights: List[List[int]]) -> List[List[int]]:\n    pass\n",
-    "go_template": "// Pacific Atlantic Water Flow\n\npackage main\n\nfunc pacificAtlantic(heights [][]int) [][]int {\n\n}\n"
+    "go_template": "// Pacific Atlantic Water Flow\n\npackage main\n\nfunc pacificAtlantic(heights [][]int) [][]int {\n\n}\n",
+    "cpp_template": "// Pacific Atlantic Water Flow\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {\n    return {};\n}\n",
+    "java_template": "// Pacific Atlantic Water Flow\n\nclass Solution {\n    public int[][] pacificAtlantic(int[][] heights) {\n        return new int[][]{};\n    }\n}\n",
+    "js_template": "// Pacific Atlantic Water Flow\n\nfunction pacificAtlantic(heights) {\n\n}\n"
   },
   {
     "id": "bipartite-graph",
@@ -174,12 +291,21 @@
     "difficulty": "Medium",
     "description": "Given an undirected graph represented as an adjacency list, determine if the graph is bipartite. A graph is bipartite if the nodes can be partitioned into two sets such that every edge connects a node in one set to a node in the other.",
     "examples": [
-      {"input": "graph = [[1,2,3],[0,2],[0,1,3],[0,2]]", "output": "false"},
-      {"input": "graph = [[1,3],[0,2],[1,3],[0,2]]", "output": "true"}
+      {
+        "input": "graph = [[1,2,3],[0,2],[0,1,3],[0,2]]",
+        "output": "false"
+      },
+      {
+        "input": "graph = [[1,3],[0,2],[1,3],[0,2]]",
+        "output": "true"
+      }
     ],
     "constraints": "1 <= graph.length <= 100. 0 <= graph[i].length < 100. graph[u] does not contain u. All values in graph[u] are unique.",
     "python_template": "# Is Graph Bipartite?\n\nfrom typing import List\n\ndef isBipartite(graph: List[List[int]]) -> bool:\n    pass\n",
-    "go_template": "// Is Graph Bipartite?\n\npackage main\n\nfunc isBipartite(graph [][]int) bool {\n\n}\n"
+    "go_template": "// Is Graph Bipartite?\n\npackage main\n\nfunc isBipartite(graph [][]int) bool {\n\n}\n",
+    "cpp_template": "// Is Graph Bipartite?\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isBipartite(vector<vector<int>>& graph) {\n    return false;\n}\n",
+    "java_template": "// Is Graph Bipartite?\n\nclass Solution {\n    public boolean isBipartite(int[][] graph) {\n        return false;\n    }\n}\n",
+    "js_template": "// Is Graph Bipartite?\n\nfunction isBipartite(graph) {\n\n}\n"
   },
   {
     "id": "undirected-graph-cycle-bfs",
@@ -187,12 +313,21 @@
     "difficulty": "Medium",
     "description": "Given an undirected graph with V vertices and E edges, detect whether the graph contains a cycle using BFS. Return true if a cycle exists.",
     "examples": [
-      {"input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,0]]", "output": "true"},
-      {"input": "V = 3, edges = [[0,1],[1,2]]", "output": "false"}
+      {
+        "input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,0]]",
+        "output": "true"
+      },
+      {
+        "input": "V = 3, edges = [[0,1],[1,2]]",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= V <= 10^5. 0 <= E <= 10^5.",
     "python_template": "# Detect Cycle in Undirected Graph (BFS)\n\nfrom typing import List\nfrom collections import deque\n\ndef isCycle(V: int, adj: List[List[int]]) -> bool:\n    pass\n",
-    "go_template": "// Detect Cycle in Undirected Graph (BFS)\n\npackage main\n\nfunc isCycle(V int, adj [][]int) bool {\n\n}\n"
+    "go_template": "// Detect Cycle in Undirected Graph (BFS)\n\npackage main\n\nfunc isCycle(V int, adj [][]int) bool {\n\n}\n",
+    "cpp_template": "// Detect Cycle in Undirected Graph (BFS)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isCycle(int V, vector<vector<int>>& adj) {\n    return false;\n}\n",
+    "java_template": "// Detect Cycle in Undirected Graph (BFS)\n\nclass Solution {\n    public boolean isCycle(int V, int[][] adj) {\n        return false;\n    }\n}\n",
+    "js_template": "// Detect Cycle in Undirected Graph (BFS)\n\nfunction isCycle(V, adj) {\n\n}\n"
   },
   {
     "id": "undirected-graph-cycle-dfs",
@@ -200,12 +335,21 @@
     "difficulty": "Medium",
     "description": "Given an undirected graph with V vertices and E edges, detect whether the graph contains a cycle using DFS. Return true if a cycle exists.",
     "examples": [
-      {"input": "V = 5, edges = [[0,1],[1,2],[2,3],[3,4],[4,1]]", "output": "true"},
-      {"input": "V = 3, edges = [[0,1],[1,2]]", "output": "false"}
+      {
+        "input": "V = 5, edges = [[0,1],[1,2],[2,3],[3,4],[4,1]]",
+        "output": "true"
+      },
+      {
+        "input": "V = 3, edges = [[0,1],[1,2]]",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= V <= 10^5. 0 <= E <= 10^5.",
     "python_template": "# Detect Cycle in Undirected Graph (DFS)\n\nfrom typing import List\n\ndef isCycle(V: int, adj: List[List[int]]) -> bool:\n    pass\n",
-    "go_template": "// Detect Cycle in Undirected Graph (DFS)\n\npackage main\n\nfunc isCycle(V int, adj [][]int) bool {\n\n}\n"
+    "go_template": "// Detect Cycle in Undirected Graph (DFS)\n\npackage main\n\nfunc isCycle(V int, adj [][]int) bool {\n\n}\n",
+    "cpp_template": "// Detect Cycle in Undirected Graph (DFS)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isCycle(int V, vector<vector<int>>& adj) {\n    return false;\n}\n",
+    "java_template": "// Detect Cycle in Undirected Graph (DFS)\n\nclass Solution {\n    public boolean isCycle(int V, int[][] adj) {\n        return false;\n    }\n}\n",
+    "js_template": "// Detect Cycle in Undirected Graph (DFS)\n\nfunction isCycle(V, adj) {\n\n}\n"
   },
   {
     "id": "directed-graph-cycle-bfs",
@@ -213,12 +357,21 @@
     "difficulty": "Medium",
     "description": "Given a directed graph with V vertices, detect whether it contains a cycle using BFS (Kahn's algorithm). If topological sort doesn't include all vertices, a cycle exists.",
     "examples": [
-      {"input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,1]]", "output": "true"},
-      {"input": "V = 3, edges = [[0,1],[1,2]]", "output": "false"}
+      {
+        "input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,1]]",
+        "output": "true"
+      },
+      {
+        "input": "V = 3, edges = [[0,1],[1,2]]",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= V <= 10^5. 0 <= E <= 10^5.",
     "python_template": "# Detect Cycle in Directed Graph (BFS / Kahn's)\n\nfrom typing import List\nfrom collections import deque\n\ndef isCyclic(V: int, adj: List[List[int]]) -> bool:\n    pass\n",
-    "go_template": "// Detect Cycle in Directed Graph (BFS / Kahn's)\n\npackage main\n\nfunc isCyclic(V int, adj [][]int) bool {\n\n}\n"
+    "go_template": "// Detect Cycle in Directed Graph (BFS / Kahn's)\n\npackage main\n\nfunc isCyclic(V int, adj [][]int) bool {\n\n}\n",
+    "cpp_template": "// Detect Cycle in Directed Graph (BFS / Kahn's)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isCyclic(int V, vector<vector<int>>& adj) {\n    return false;\n}\n",
+    "java_template": "// Detect Cycle in Directed Graph (BFS / Kahn's)\n\nclass Solution {\n    public boolean isCyclic(int V, int[][] adj) {\n        return false;\n    }\n}\n",
+    "js_template": "// Detect Cycle in Directed Graph (BFS / Kahn's)\n\nfunction isCyclic(V, adj) {\n\n}\n"
   },
   {
     "id": "directed-graph-cycle-dfs",
@@ -226,12 +379,21 @@
     "difficulty": "Medium",
     "description": "Given a directed graph with V vertices, detect whether it contains a cycle using DFS with recursion stack tracking.",
     "examples": [
-      {"input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,1]]", "output": "true"},
-      {"input": "V = 3, edges = [[0,1],[1,2]]", "output": "false"}
+      {
+        "input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,1]]",
+        "output": "true"
+      },
+      {
+        "input": "V = 3, edges = [[0,1],[1,2]]",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= V <= 10^5. 0 <= E <= 10^5.",
     "python_template": "# Detect Cycle in Directed Graph (DFS)\n\nfrom typing import List\n\ndef isCyclic(V: int, adj: List[List[int]]) -> bool:\n    pass\n",
-    "go_template": "// Detect Cycle in Directed Graph (DFS)\n\npackage main\n\nfunc isCyclic(V int, adj [][]int) bool {\n\n}\n"
+    "go_template": "// Detect Cycle in Directed Graph (DFS)\n\npackage main\n\nfunc isCyclic(V int, adj [][]int) bool {\n\n}\n",
+    "cpp_template": "// Detect Cycle in Directed Graph (DFS)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isCyclic(int V, vector<vector<int>>& adj) {\n    return false;\n}\n",
+    "java_template": "// Detect Cycle in Directed Graph (DFS)\n\nclass Solution {\n    public boolean isCyclic(int V, int[][] adj) {\n        return false;\n    }\n}\n",
+    "js_template": "// Detect Cycle in Directed Graph (DFS)\n\nfunction isCyclic(V, adj) {\n\n}\n"
   },
   {
     "id": "topological-sort-bfs-kahns-algo",
@@ -239,12 +401,21 @@
     "difficulty": "Medium",
     "description": "Given a DAG with V vertices, return a topological ordering of the vertices using BFS (Kahn's algorithm). Compute in-degrees, process nodes with in-degree 0 first.",
     "examples": [
-      {"input": "V = 4, edges = [[0,1],[1,2],[3,1],[3,2]]", "output": "[0,3,1,2] or [3,0,1,2]"},
-      {"input": "V = 6, edges = [[2,3],[3,1],[4,0],[4,1],[5,0],[5,2]]", "output": "[4,5,0,2,3,1] (one valid ordering)"}
+      {
+        "input": "V = 4, edges = [[0,1],[1,2],[3,1],[3,2]]",
+        "output": "[0,3,1,2] or [3,0,1,2]"
+      },
+      {
+        "input": "V = 6, edges = [[2,3],[3,1],[4,0],[4,1],[5,0],[5,2]]",
+        "output": "[4,5,0,2,3,1] (one valid ordering)"
+      }
     ],
     "constraints": "2 <= V <= 10^4. 1 <= E <= V*(V-1)/2.",
     "python_template": "# Topological Sort (BFS / Kahn's Algorithm)\n\nfrom typing import List\nfrom collections import deque\n\ndef topoSort(V: int, adj: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// Topological Sort (BFS / Kahn's Algorithm)\n\npackage main\n\nfunc topoSort(V int, adj [][]int) []int {\n\n}\n"
+    "go_template": "// Topological Sort (BFS / Kahn's Algorithm)\n\npackage main\n\nfunc topoSort(V int, adj [][]int) []int {\n\n}\n",
+    "cpp_template": "// Topological Sort (BFS / Kahn's Algorithm)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> topoSort(int V, vector<vector<int>>& adj) {\n    return {};\n}\n",
+    "java_template": "// Topological Sort (BFS / Kahn's Algorithm)\n\nclass Solution {\n    public int[] topoSort(int V, int[][] adj) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Topological Sort (BFS / Kahn's Algorithm)\n\nfunction topoSort(V, adj) {\n\n}\n"
   },
   {
     "id": "topological-sort-dfs",
@@ -252,12 +423,21 @@
     "difficulty": "Medium",
     "description": "Given a DAG with V vertices, return a topological ordering using DFS. Use a stack to collect nodes in reverse finish order.",
     "examples": [
-      {"input": "V = 4, edges = [[0,1],[1,2],[3,1],[3,2]]", "output": "[3,0,1,2] (one valid ordering)"},
-      {"input": "V = 6, edges = [[2,3],[3,1],[4,0],[4,1],[5,0],[5,2]]", "output": "[5,4,2,3,1,0] (one valid ordering)"}
+      {
+        "input": "V = 4, edges = [[0,1],[1,2],[3,1],[3,2]]",
+        "output": "[3,0,1,2] (one valid ordering)"
+      },
+      {
+        "input": "V = 6, edges = [[2,3],[3,1],[4,0],[4,1],[5,0],[5,2]]",
+        "output": "[5,4,2,3,1,0] (one valid ordering)"
+      }
     ],
     "constraints": "2 <= V <= 10^4. 1 <= E <= V*(V-1)/2.",
     "python_template": "# Topological Sort (DFS)\n\nfrom typing import List\n\ndef topoSort(V: int, adj: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// Topological Sort (DFS)\n\npackage main\n\nfunc topoSort(V int, adj [][]int) []int {\n\n}\n"
+    "go_template": "// Topological Sort (DFS)\n\npackage main\n\nfunc topoSort(V int, adj [][]int) []int {\n\n}\n",
+    "cpp_template": "// Topological Sort (DFS)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> topoSort(int V, vector<vector<int>>& adj) {\n    return {};\n}\n",
+    "java_template": "// Topological Sort (DFS)\n\nclass Solution {\n    public int[] topoSort(int V, int[][] adj) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Topological Sort (DFS)\n\nfunction topoSort(V, adj) {\n\n}\n"
   },
   {
     "id": "course-schedule",
@@ -265,12 +445,21 @@
     "difficulty": "Medium",
     "description": "There are numCourses courses labeled 0 to numCourses-1. Given prerequisites where prerequisites[i] = [a, b] means you must take b before a, return true if you can finish all courses (i.e., no cycle in the prerequisite graph).",
     "examples": [
-      {"input": "numCourses = 2, prerequisites = [[1,0]]", "output": "true"},
-      {"input": "numCourses = 2, prerequisites = [[1,0],[0,1]]", "output": "false"}
+      {
+        "input": "numCourses = 2, prerequisites = [[1,0]]",
+        "output": "true"
+      },
+      {
+        "input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= numCourses <= 2000. 0 <= prerequisites.length <= 5000. All pairs are unique.",
     "python_template": "# Course Schedule\n\nfrom typing import List\n\ndef canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:\n    pass\n",
-    "go_template": "// Course Schedule\n\npackage main\n\nfunc canFinish(numCourses int, prerequisites [][]int) bool {\n\n}\n"
+    "go_template": "// Course Schedule\n\npackage main\n\nfunc canFinish(numCourses int, prerequisites [][]int) bool {\n\n}\n",
+    "cpp_template": "// Course Schedule\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool canFinish(int numCourses, vector<vector<int>>& prerequisites) {\n    return false;\n}\n",
+    "java_template": "// Course Schedule\n\nclass Solution {\n    public boolean canFinish(int numCourses, int[][] prerequisites) {\n        return false;\n    }\n}\n",
+    "js_template": "// Course Schedule\n\nfunction canFinish(numCourses, prerequisites) {\n\n}\n"
   },
   {
     "id": "course-schedule-ii",
@@ -278,13 +467,25 @@
     "difficulty": "Medium",
     "description": "There are numCourses courses. Given prerequisites, return the ordering of courses you should take to finish all. If impossible, return an empty array. If multiple valid orderings, return any.",
     "examples": [
-      {"input": "numCourses = 2, prerequisites = [[1,0]]", "output": "[0,1]"},
-      {"input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]", "output": "[0,1,2,3] or [0,2,1,3]"},
-      {"input": "numCourses = 1, prerequisites = []", "output": "[0]"}
+      {
+        "input": "numCourses = 2, prerequisites = [[1,0]]",
+        "output": "[0,1]"
+      },
+      {
+        "input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
+        "output": "[0,1,2,3] or [0,2,1,3]"
+      },
+      {
+        "input": "numCourses = 1, prerequisites = []",
+        "output": "[0]"
+      }
     ],
     "constraints": "1 <= numCourses <= 2000. 0 <= prerequisites.length <= numCourses * (numCourses - 1).",
     "python_template": "# Course Schedule II\n\nfrom typing import List\n\ndef findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// Course Schedule II\n\npackage main\n\nfunc findOrder(numCourses int, prerequisites [][]int) []int {\n\n}\n"
+    "go_template": "// Course Schedule II\n\npackage main\n\nfunc findOrder(numCourses int, prerequisites [][]int) []int {\n\n}\n",
+    "cpp_template": "// Course Schedule II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {\n    return {};\n}\n",
+    "java_template": "// Course Schedule II\n\nclass Solution {\n    public int[] findOrder(int numCourses, int[][] prerequisites) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Course Schedule II\n\nfunction findOrder(numCourses, prerequisites) {\n\n}\n"
   },
   {
     "id": "eventual-safe-states",
@@ -292,12 +493,21 @@
     "difficulty": "Medium",
     "description": "Given a directed graph, a node is safe if every possible path from that node leads to a terminal node (no outgoing edges). Return all safe nodes sorted in ascending order.",
     "examples": [
-      {"input": "graph = [[1,2],[2,3],[5],[0],[5],[],[]]", "output": "[2,4,5,6]"},
-      {"input": "graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]", "output": "[4]"}
+      {
+        "input": "graph = [[1,2],[2,3],[5],[0],[5],[],[]]",
+        "output": "[2,4,5,6]"
+      },
+      {
+        "input": "graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]",
+        "output": "[4]"
+      }
     ],
     "constraints": "n == graph.length. 1 <= n <= 10^4. 0 <= graph[i].length <= n.",
     "python_template": "# Find Eventual Safe States\n\nfrom typing import List\n\ndef eventualSafeNodes(graph: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// Find Eventual Safe States\n\npackage main\n\nfunc eventualSafeNodes(graph [][]int) []int {\n\n}\n"
+    "go_template": "// Find Eventual Safe States\n\npackage main\n\nfunc eventualSafeNodes(graph [][]int) []int {\n\n}\n",
+    "cpp_template": "// Find Eventual Safe States\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> eventualSafeNodes(vector<vector<int>>& graph) {\n    return {};\n}\n",
+    "java_template": "// Find Eventual Safe States\n\nclass Solution {\n    public int[] eventualSafeNodes(int[][] graph) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Find Eventual Safe States\n\nfunction eventualSafeNodes(graph) {\n\n}\n"
   },
   {
     "id": "longest-consecutive-sequence",
@@ -305,12 +515,21 @@
     "difficulty": "Medium",
     "description": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.",
     "examples": [
-      {"input": "nums = [100,4,200,1,3,2]", "output": "4 (sequence: [1,2,3,4])"},
-      {"input": "nums = [0,3,7,2,5,8,4,6,0,1]", "output": "9 (sequence: [0,1,2,3,4,5,6,7,8])"}
+      {
+        "input": "nums = [100,4,200,1,3,2]",
+        "output": "4 (sequence: [1,2,3,4])"
+      },
+      {
+        "input": "nums = [0,3,7,2,5,8,4,6,0,1]",
+        "output": "9 (sequence: [0,1,2,3,4,5,6,7,8])"
+      }
     ],
     "constraints": "0 <= nums.length <= 10^5. -10^9 <= nums[i] <= 10^9.",
     "python_template": "# Longest Consecutive Sequence\n\nfrom typing import List\n\ndef longestConsecutive(nums: List[int]) -> int:\n    pass\n",
-    "go_template": "// Longest Consecutive Sequence\n\npackage main\n\nfunc longestConsecutive(nums []int) int {\n\n}\n"
+    "go_template": "// Longest Consecutive Sequence\n\npackage main\n\nfunc longestConsecutive(nums []int) int {\n\n}\n",
+    "cpp_template": "// Longest Consecutive Sequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestConsecutive(vector<int>& nums) {\n    return 0;\n}\n",
+    "java_template": "// Longest Consecutive Sequence\n\nclass Solution {\n    public int longestConsecutive(int[] nums) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Longest Consecutive Sequence\n\nfunction longestConsecutive(nums) {\n\n}\n"
   },
   {
     "id": "number-of-connected-components-in-an-undirected-graph",
@@ -318,12 +537,21 @@
     "difficulty": "Medium",
     "description": "Given n nodes labeled 0 to n-1 and a list of undirected edges, return the number of connected components in the graph.",
     "examples": [
-      {"input": "n = 5, edges = [[0,1],[1,2],[3,4]]", "output": "2"},
-      {"input": "n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]", "output": "1"}
+      {
+        "input": "n = 5, edges = [[0,1],[1,2],[3,4]]",
+        "output": "2"
+      },
+      {
+        "input": "n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]",
+        "output": "1"
+      }
     ],
     "constraints": "1 <= n <= 2000. 0 <= edges.length <= 5000. No duplicate edges.",
     "python_template": "# Number of Connected Components in an Undirected Graph\n\nfrom typing import List\n\ndef countComponents(n: int, edges: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Number of Connected Components in an Undirected Graph\n\npackage main\n\nfunc countComponents(n int, edges [][]int) int {\n\n}\n"
+    "go_template": "// Number of Connected Components in an Undirected Graph\n\npackage main\n\nfunc countComponents(n int, edges [][]int) int {\n\n}\n",
+    "cpp_template": "// Number of Connected Components in an Undirected Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countComponents(int n, vector<vector<int>>& edges) {\n    return 0;\n}\n",
+    "java_template": "// Number of Connected Components in an Undirected Graph\n\nclass Solution {\n    public int countComponents(int n, int[][] edges) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Number of Connected Components in an Undirected Graph\n\nfunction countComponents(n, edges) {\n\n}\n"
   },
   {
     "id": "graph-valid-tree",
@@ -331,12 +559,21 @@
     "difficulty": "Medium",
     "description": "Given n nodes labeled 0 to n-1 and a list of undirected edges, determine if these edges form a valid tree. A valid tree has no cycles and all nodes are connected.",
     "examples": [
-      {"input": "n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]", "output": "true"},
-      {"input": "n = 5, edges = [[0,1],[1,2],[2,3],[1,3],[1,4]]", "output": "false (cycle)"}
+      {
+        "input": "n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]",
+        "output": "true"
+      },
+      {
+        "input": "n = 5, edges = [[0,1],[1,2],[2,3],[1,3],[1,4]]",
+        "output": "false (cycle)"
+      }
     ],
     "constraints": "1 <= n <= 2000. 0 <= edges.length <= 5000.",
     "python_template": "# Graph Valid Tree\n\nfrom typing import List\n\ndef validTree(n: int, edges: List[List[int]]) -> bool:\n    pass\n",
-    "go_template": "// Graph Valid Tree\n\npackage main\n\nfunc validTree(n int, edges [][]int) bool {\n\n}\n"
+    "go_template": "// Graph Valid Tree\n\npackage main\n\nfunc validTree(n int, edges [][]int) bool {\n\n}\n",
+    "cpp_template": "// Graph Valid Tree\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool validTree(int n, vector<vector<int>>& edges) {\n    return false;\n}\n",
+    "java_template": "// Graph Valid Tree\n\nclass Solution {\n    public boolean validTree(int n, int[][] edges) {\n        return false;\n    }\n}\n",
+    "js_template": "// Graph Valid Tree\n\nfunction validTree(n, edges) {\n\n}\n"
   },
   {
     "id": "redundant-connection",
@@ -344,12 +581,21 @@
     "difficulty": "Medium",
     "description": "Given a graph that started as a tree with n nodes, one additional edge was added. Find the edge that can be removed so the result is still a tree. If there are multiple answers, return the one that occurs last in the input.",
     "examples": [
-      {"input": "edges = [[1,2],[1,3],[2,3]]", "output": "[2,3]"},
-      {"input": "edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]", "output": "[1,4]"}
+      {
+        "input": "edges = [[1,2],[1,3],[2,3]]",
+        "output": "[2,3]"
+      },
+      {
+        "input": "edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]",
+        "output": "[1,4]"
+      }
     ],
     "constraints": "n == edges.length. 3 <= n <= 1000. edges[i] = [a, b] with 1 <= a < b <= n. No repeated edges.",
     "python_template": "# Redundant Connection\n\nfrom typing import List\n\ndef findRedundantConnection(edges: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// Redundant Connection\n\npackage main\n\nfunc findRedundantConnection(edges [][]int) []int {\n\n}\n"
+    "go_template": "// Redundant Connection\n\npackage main\n\nfunc findRedundantConnection(edges [][]int) []int {\n\n}\n",
+    "cpp_template": "// Redundant Connection\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findRedundantConnection(vector<vector<int>>& edges) {\n    return {};\n}\n",
+    "java_template": "// Redundant Connection\n\nclass Solution {\n    public int[] findRedundantConnection(int[][] edges) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Redundant Connection\n\nfunction findRedundantConnection(edges) {\n\n}\n"
   },
   {
     "id": "operations-to-make-network-connected",
@@ -357,13 +603,25 @@
     "difficulty": "Medium",
     "description": "Given n computers and a list of connections, find the minimum number of cable moves needed to connect all computers. If impossible, return -1. You need at least n-1 cables total.",
     "examples": [
-      {"input": "n = 4, connections = [[0,1],[0,2],[1,2]]", "output": "1"},
-      {"input": "n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]", "output": "2"},
-      {"input": "n = 6, connections = [[0,1],[0,2],[0,3],[1,2]]", "output": "-1 (not enough cables)"}
+      {
+        "input": "n = 4, connections = [[0,1],[0,2],[1,2]]",
+        "output": "1"
+      },
+      {
+        "input": "n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]",
+        "output": "2"
+      },
+      {
+        "input": "n = 6, connections = [[0,1],[0,2],[0,3],[1,2]]",
+        "output": "-1 (not enough cables)"
+      }
     ],
     "constraints": "1 <= n <= 10^5. 1 <= connections.length <= min(n*(n-1)/2, 10^5).",
     "python_template": "# Number of Operations to Make Network Connected\n\nfrom typing import List\n\ndef makeConnected(n: int, connections: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Number of Operations to Make Network Connected\n\npackage main\n\nfunc makeConnected(n int, connections [][]int) int {\n\n}\n"
+    "go_template": "// Number of Operations to Make Network Connected\n\npackage main\n\nfunc makeConnected(n int, connections [][]int) int {\n\n}\n",
+    "cpp_template": "// Number of Operations to Make Network Connected\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint makeConnected(int n, vector<vector<int>>& connections) {\n    return 0;\n}\n",
+    "java_template": "// Number of Operations to Make Network Connected\n\nclass Solution {\n    public int makeConnected(int n, int[][] connections) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Number of Operations to Make Network Connected\n\nfunction makeConnected(n, connections) {\n\n}\n"
   },
   {
     "id": "accounts-merge",
@@ -371,11 +629,17 @@
     "difficulty": "Medium",
     "description": "Given a list of accounts where each account has a name and a list of emails, merge accounts that share common emails. Two accounts belong to the same person if they share at least one email. Return merged accounts with emails sorted.",
     "examples": [
-      {"input": "accounts = [[\"John\",\"j1@mail.com\",\"j2@mail.com\"],[\"John\",\"j1@mail.com\",\"j3@mail.com\"],[\"Mary\",\"m@mail.com\"]]", "output": "[[\"John\",\"j1@mail.com\",\"j2@mail.com\",\"j3@mail.com\"],[\"Mary\",\"m@mail.com\"]]"}
+      {
+        "input": "accounts = [[\"John\",\"j1@mail.com\",\"j2@mail.com\"],[\"John\",\"j1@mail.com\",\"j3@mail.com\"],[\"Mary\",\"m@mail.com\"]]",
+        "output": "[[\"John\",\"j1@mail.com\",\"j2@mail.com\",\"j3@mail.com\"],[\"Mary\",\"m@mail.com\"]]"
+      }
     ],
     "constraints": "1 <= accounts.length <= 1000. 2 <= accounts[i].length <= 10. 1 <= emails[j].length <= 30.",
     "python_template": "# Accounts Merge\n\nfrom typing import List\n\ndef accountsMerge(accounts: List[List[str]]) -> List[List[str]]:\n    pass\n",
-    "go_template": "// Accounts Merge\n\npackage main\n\nfunc accountsMerge(accounts [][]string) [][]string {\n\n}\n"
+    "go_template": "// Accounts Merge\n\npackage main\n\nfunc accountsMerge(accounts [][]string) [][]string {\n\n}\n",
+    "cpp_template": "// Accounts Merge\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {\n    return {};\n}\n",
+    "java_template": "// Accounts Merge\n\nclass Solution {\n    public String[][] accountsMerge(String[][] accounts) {\n        return new String[][]{};\n    }\n}\n",
+    "js_template": "// Accounts Merge\n\nfunction accountsMerge(accounts) {\n\n}\n"
   },
   {
     "id": "most-stones-removed-within-same-row",
@@ -383,12 +647,21 @@
     "difficulty": "Medium",
     "description": "On a 2D plane, n stones are placed at integer coordinates. A stone can be removed if it shares a row or column with another stone that has not been removed. Return the largest possible number of stones that can be removed.",
     "examples": [
-      {"input": "stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]", "output": "5"},
-      {"input": "stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]", "output": "3"}
+      {
+        "input": "stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]",
+        "output": "5"
+      },
+      {
+        "input": "stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]",
+        "output": "3"
+      }
     ],
     "constraints": "1 <= stones.length <= 1000. 0 <= stones[i][j] <= 10^4. No two stones are at the same position.",
     "python_template": "# Most Stones Removed with Same Row or Column\n\nfrom typing import List\n\ndef removeStones(stones: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Most Stones Removed with Same Row or Column\n\npackage main\n\nfunc removeStones(stones [][]int) int {\n\n}\n"
+    "go_template": "// Most Stones Removed with Same Row or Column\n\npackage main\n\nfunc removeStones(stones [][]int) int {\n\n}\n",
+    "cpp_template": "// Most Stones Removed with Same Row or Column\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint removeStones(vector<vector<int>>& stones) {\n    return 0;\n}\n",
+    "java_template": "// Most Stones Removed with Same Row or Column\n\nclass Solution {\n    public int removeStones(int[][] stones) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Most Stones Removed with Same Row or Column\n\nfunction removeStones(stones) {\n\n}\n"
   },
   {
     "id": "make-a-large-island",
@@ -396,13 +669,25 @@
     "difficulty": "Hard",
     "description": "Given an n x n binary grid, you can change at most one 0 to 1. Return the size of the largest island after this operation. An island is a 4-connected group of 1s.",
     "examples": [
-      {"input": "grid = [[1,0],[0,1]]", "output": "3"},
-      {"input": "grid = [[1,1],[1,0]]", "output": "4"},
-      {"input": "grid = [[1,1],[1,1]]", "output": "4"}
+      {
+        "input": "grid = [[1,0],[0,1]]",
+        "output": "3"
+      },
+      {
+        "input": "grid = [[1,1],[1,0]]",
+        "output": "4"
+      },
+      {
+        "input": "grid = [[1,1],[1,1]]",
+        "output": "4"
+      }
     ],
     "constraints": "n == grid.length. n == grid[i].length. 1 <= n <= 500. grid[i][j] is 0 or 1.",
     "python_template": "# Making A Large Island\n\nfrom typing import List\n\ndef largestIsland(grid: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Making A Large Island\n\npackage main\n\nfunc largestIsland(grid [][]int) int {\n\n}\n"
+    "go_template": "// Making A Large Island\n\npackage main\n\nfunc largestIsland(grid [][]int) int {\n\n}\n",
+    "cpp_template": "// Making A Large Island\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint largestIsland(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+    "java_template": "// Making A Large Island\n\nclass Solution {\n    public int largestIsland(int[][] grid) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Making A Large Island\n\nfunction largestIsland(grid) {\n\n}\n"
   },
   {
     "id": "disjoint-set-implementation",
@@ -410,12 +695,21 @@
     "difficulty": "Medium",
     "description": "Implement a Disjoint Set Union (Union-Find) data structure with union by rank and path compression. Support: find(x) to find the root of x's set, union(x, y) to merge the sets containing x and y.",
     "examples": [
-      {"input": "n=5, union(0,1), union(2,3), union(1,3), find(0)==find(3)?", "output": "true (all in same set)"},
-      {"input": "n=5, union(0,1), find(0)==find(4)?", "output": "false (different sets)"}
+      {
+        "input": "n=5, union(0,1), union(2,3), union(1,3), find(0)==find(3)?",
+        "output": "true (all in same set)"
+      },
+      {
+        "input": "n=5, union(0,1), find(0)==find(4)?",
+        "output": "false (different sets)"
+      }
     ],
     "constraints": "1 <= n <= 10^5. Operations: union, find.",
     "python_template": "# Disjoint Set Union (Union-Find)\n\nclass DSU:\n    def __init__(self, n: int):\n        pass\n\n    def find(self, x: int) -> int:\n        pass\n\n    def union(self, x: int, y: int) -> bool:\n        \"\"\"Return False if already in same set.\"\"\"\n        pass\n",
-    "go_template": "// Disjoint Set Union (Union-Find)\n\npackage main\n\ntype DSU struct {\n\tparent []int\n\trank   []int\n}\n\nfunc NewDSU(n int) *DSU {\n\treturn nil\n}\n\nfunc (d *DSU) Find(x int) int {\n\treturn 0\n}\n\nfunc (d *DSU) Union(x, y int) bool {\n\treturn false\n}\n"
+    "go_template": "// Disjoint Set Union (Union-Find)\n\npackage main\n\ntype DSU struct {\n\tparent []int\n\trank   []int\n}\n\nfunc NewDSU(n int) *DSU {\n\treturn nil\n}\n\nfunc (d *DSU) Find(x int) int {\n\treturn 0\n}\n\nfunc (d *DSU) Union(x, y int) bool {\n\treturn false\n}\n",
+    "cpp_template": "// Disjoint Set Union (Union-Find)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass DSU {\npublic:\n    DSU() {\n\n    }\n\n    int Find(int x) {\n        return 0;\n    }\n\n    bool Union(int x, int y) {\n        return false;\n    }\n};\n",
+    "java_template": "// Disjoint Set Union (Union-Find)\n\nimport java.util.*;\n\nclass DSU {\n    public DSU() {\n\n    }\n\n    public int Find(int x) {\n        return 0;\n    }\n\n    public boolean Union(int x, int y) {\n        return false;\n    }\n}\n",
+    "js_template": "// Disjoint Set Union (Union-Find)\n\nclass DSU {\n    constructor() {\n\n    }\n\n    find(x) {\n\n    }\n\n    union(x, y) {\n\n    }\n}\n"
   },
   {
     "id": "djikstra-algorithm",
@@ -423,12 +717,21 @@
     "difficulty": "Medium",
     "description": "Given a weighted directed graph with V vertices and E edges, and a source vertex, find the shortest distance from source to all other vertices using Dijkstra's algorithm. If a vertex is unreachable, distance is -1.",
     "examples": [
-      {"input": "V=3, edges=[[0,1,1],[0,2,6],[1,2,3]], src=0", "output": "[0,1,4]"},
-      {"input": "V=2, edges=[[0,1,9]], src=0", "output": "[0,9]"}
+      {
+        "input": "V=3, edges=[[0,1,1],[0,2,6],[1,2,3]], src=0",
+        "output": "[0,1,4]"
+      },
+      {
+        "input": "V=2, edges=[[0,1,9]], src=0",
+        "output": "[0,9]"
+      }
     ],
     "constraints": "1 <= V <= 10^5. 0 <= E <= V*(V-1)/2. 0 <= weight <= 10^4. No negative weights.",
     "python_template": "# Dijkstra's Algorithm\n\nfrom typing import List\nimport heapq\n\ndef dijkstra(V: int, adj: List[List[List[int]]], src: int) -> List[int]:\n    \"\"\"adj[u] = [[v, w], ...]. Return shortest distances from src.\"\"\"\n    pass\n",
-    "go_template": "// Dijkstra's Algorithm\n\npackage main\n\nimport \"container/heap\"\n\nfunc dijkstra(V int, adj [][][2]int, src int) []int {\n\n}\n"
+    "go_template": "// Dijkstra's Algorithm\n\npackage main\n\nimport \"container/heap\"\n\nfunc dijkstra(V int, adj [][][2]int, src int) []int {\n\n}\n",
+    "cpp_template": "// Dijkstra's Algorithm\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> dijkstra(int V, [][][2]int adj, int src) {\n    return {};\n}\n",
+    "java_template": "// Dijkstra's Algorithm\n\nclass Solution {\n    public int[] dijkstra(int V, [][][2]int adj, int src) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Dijkstra's Algorithm\n\nfunction dijkstra(V, adj, src) {\n\n}\n"
   },
   {
     "id": "bellman-ford",
@@ -436,12 +739,21 @@
     "difficulty": "Medium",
     "description": "Given a weighted directed graph with V vertices and E edges (possibly negative weights), find the shortest distances from source to all vertices. Detect negative weight cycles. If a vertex is unreachable, distance is 10^8.",
     "examples": [
-      {"input": "V=5, edges=[[0,1,5],[0,2,4],[1,3,3],[2,1,-6],[3,2,4]], src=0", "output": "[0,-2,-8,1,-4] (after relaxation)"},
-      {"input": "V=2, edges=[[0,1,9]], src=0", "output": "[0,9]"}
+      {
+        "input": "V=5, edges=[[0,1,5],[0,2,4],[1,3,3],[2,1,-6],[3,2,4]], src=0",
+        "output": "[0,-2,-8,1,-4] (after relaxation)"
+      },
+      {
+        "input": "V=2, edges=[[0,1,9]], src=0",
+        "output": "[0,9]"
+      }
     ],
     "constraints": "1 <= V <= 500. 1 <= E <= V*(V-1)/2. -1000 <= weight <= 1000.",
     "python_template": "# Bellman-Ford Algorithm\n\nfrom typing import List\n\ndef bellmanFord(V: int, edges: List[List[int]], src: int) -> List[int]:\n    \"\"\"edges[i] = [u, v, w]. Return distances or [-1] if negative cycle.\"\"\"\n    pass\n",
-    "go_template": "// Bellman-Ford Algorithm\n\npackage main\n\nfunc bellmanFord(V int, edges [][]int, src int) []int {\n\n}\n"
+    "go_template": "// Bellman-Ford Algorithm\n\npackage main\n\nfunc bellmanFord(V int, edges [][]int, src int) []int {\n\n}\n",
+    "cpp_template": "// Bellman-Ford Algorithm\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> bellmanFord(int V, vector<vector<int>>& edges, int src) {\n    return {};\n}\n",
+    "java_template": "// Bellman-Ford Algorithm\n\nclass Solution {\n    public int[] bellmanFord(int V, int[][] edges, int src) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Bellman-Ford Algorithm\n\nfunction bellmanFord(V, edges, src) {\n\n}\n"
   },
   {
     "id": "floyd-warshall",
@@ -449,11 +761,17 @@
     "difficulty": "Medium",
     "description": "Given an adjacency matrix of a weighted directed graph, find the shortest distances between every pair of vertices. If no path exists, the distance remains as infinity (-1).",
     "examples": [
-      {"input": "matrix = [[0,3,-1,7],[8,0,2,-1],[-1,-1,0,1],[-1,-1,-1,0]]", "output": "[[0,3,5,6],[8,0,2,3],[-1,-1,0,1],[-1,-1,-1,0]]"}
+      {
+        "input": "matrix = [[0,3,-1,7],[8,0,2,-1],[-1,-1,0,1],[-1,-1,-1,0]]",
+        "output": "[[0,3,5,6],[8,0,2,3],[-1,-1,0,1],[-1,-1,-1,0]]"
+      }
     ],
     "constraints": "1 <= V <= 500. -1000 <= matrix[i][j] <= 1000. matrix[i][i] = 0. -1 means no edge.",
     "python_template": "# Floyd-Warshall Algorithm\n\nfrom typing import List\n\ndef floydWarshall(matrix: List[List[int]]) -> List[List[int]]:\n    \"\"\"Modify matrix in-place. -1 means no path.\"\"\"\n    pass\n",
-    "go_template": "// Floyd-Warshall Algorithm\n\npackage main\n\nfunc floydWarshall(matrix [][]int) [][]int {\n\n}\n"
+    "go_template": "// Floyd-Warshall Algorithm\n\npackage main\n\nfunc floydWarshall(matrix [][]int) [][]int {\n\n}\n",
+    "cpp_template": "// Floyd-Warshall Algorithm\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> floydWarshall(vector<vector<int>>& matrix) {\n    return {};\n}\n",
+    "java_template": "// Floyd-Warshall Algorithm\n\nclass Solution {\n    public int[][] floydWarshall(int[][] matrix) {\n        return new int[][]{};\n    }\n}\n",
+    "js_template": "// Floyd-Warshall Algorithm\n\nfunction floydWarshall(matrix) {\n\n}\n"
   },
   {
     "id": "network-delay-time",
@@ -461,13 +779,25 @@
     "difficulty": "Medium",
     "description": "Given n nodes and a list of travel times as directed edges times[i] = (u, v, w), send a signal from node k. Return the minimum time for all nodes to receive the signal. If impossible, return -1.",
     "examples": [
-      {"input": "times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2", "output": "2"},
-      {"input": "times = [[1,2,1]], n = 2, k = 1", "output": "1"},
-      {"input": "times = [[1,2,1]], n = 2, k = 2", "output": "-1"}
+      {
+        "input": "times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2",
+        "output": "2"
+      },
+      {
+        "input": "times = [[1,2,1]], n = 2, k = 1",
+        "output": "1"
+      },
+      {
+        "input": "times = [[1,2,1]], n = 2, k = 2",
+        "output": "-1"
+      }
     ],
     "constraints": "1 <= k <= n <= 100. 1 <= times.length <= 6000. 1 <= w <= 100.",
     "python_template": "# Network Delay Time\n\nfrom typing import List\nimport heapq\n\ndef networkDelayTime(times: List[List[int]], n: int, k: int) -> int:\n    pass\n",
-    "go_template": "// Network Delay Time\n\npackage main\n\nfunc networkDelayTime(times [][]int, n int, k int) int {\n\n}\n"
+    "go_template": "// Network Delay Time\n\npackage main\n\nfunc networkDelayTime(times [][]int, n int, k int) int {\n\n}\n",
+    "cpp_template": "// Network Delay Time\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint networkDelayTime(vector<vector<int>>& times, int n, int k) {\n    return 0;\n}\n",
+    "java_template": "// Network Delay Time\n\nclass Solution {\n    public int networkDelayTime(int[][] times, int n, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Network Delay Time\n\nfunction networkDelayTime(times, n, k) {\n\n}\n"
   },
   {
     "id": "cheapest-flights-within-k-stops",
@@ -475,13 +805,25 @@
     "difficulty": "Medium",
     "description": "Given n cities, flights as [from, to, price], find the cheapest price from src to dst with at most k stops. Return -1 if no such route exists. Use modified Bellman-Ford or BFS.",
     "examples": [
-      {"input": "n=4, flights=[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src=0, dst=3, k=1", "output": "700"},
-      {"input": "n=3, flights=[[0,1,100],[1,2,100],[0,2,500]], src=0, dst=2, k=1", "output": "200"},
-      {"input": "n=3, flights=[[0,1,100],[1,2,100],[0,2,500]], src=0, dst=2, k=0", "output": "500"}
+      {
+        "input": "n=4, flights=[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src=0, dst=3, k=1",
+        "output": "700"
+      },
+      {
+        "input": "n=3, flights=[[0,1,100],[1,2,100],[0,2,500]], src=0, dst=2, k=1",
+        "output": "200"
+      },
+      {
+        "input": "n=3, flights=[[0,1,100],[1,2,100],[0,2,500]], src=0, dst=2, k=0",
+        "output": "500"
+      }
     ],
     "constraints": "1 <= n <= 100. 0 <= flights.length <= n*(n-1)/2. 1 <= price <= 10^4. 0 <= k <= n - 2.",
     "python_template": "# Cheapest Flights Within K Stops\n\nfrom typing import List\n\ndef findCheapestPrice(n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:\n    pass\n",
-    "go_template": "// Cheapest Flights Within K Stops\n\npackage main\n\nfunc findCheapestPrice(n int, flights [][]int, src int, dst int, k int) int {\n\n}\n"
+    "go_template": "// Cheapest Flights Within K Stops\n\npackage main\n\nfunc findCheapestPrice(n int, flights [][]int, src int, dst int, k int) int {\n\n}\n",
+    "cpp_template": "// Cheapest Flights Within K Stops\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {\n    return 0;\n}\n",
+    "java_template": "// Cheapest Flights Within K Stops\n\nclass Solution {\n    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Cheapest Flights Within K Stops\n\nfunction findCheapestPrice(n, flights, src, dst, k) {\n\n}\n"
   },
   {
     "id": "minimum-effort-path",
@@ -489,13 +831,25 @@
     "difficulty": "Medium",
     "description": "Given a 2D grid of heights, find a path from top-left to bottom-right that minimizes the maximum absolute difference in heights between consecutive cells. You can move 4-directionally.",
     "examples": [
-      {"input": "heights = [[1,2,2],[3,8,2],[5,3,5]]", "output": "2"},
-      {"input": "heights = [[1,2,3],[3,8,4],[5,3,5]]", "output": "1"},
-      {"input": "heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]", "output": "0"}
+      {
+        "input": "heights = [[1,2,2],[3,8,2],[5,3,5]]",
+        "output": "2"
+      },
+      {
+        "input": "heights = [[1,2,3],[3,8,4],[5,3,5]]",
+        "output": "1"
+      },
+      {
+        "input": "heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]",
+        "output": "0"
+      }
     ],
     "constraints": "rows == heights.length. columns == heights[i].length. 1 <= rows, columns <= 100. 1 <= heights[i][j] <= 10^6.",
     "python_template": "# Path With Minimum Effort\n\nfrom typing import List\nimport heapq\n\ndef minimumEffortPath(heights: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Path With Minimum Effort\n\npackage main\n\nfunc minimumEffortPath(heights [][]int) int {\n\n}\n"
+    "go_template": "// Path With Minimum Effort\n\npackage main\n\nfunc minimumEffortPath(heights [][]int) int {\n\n}\n",
+    "cpp_template": "// Path With Minimum Effort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minimumEffortPath(vector<vector<int>>& heights) {\n    return 0;\n}\n",
+    "java_template": "// Path With Minimum Effort\n\nclass Solution {\n    public int minimumEffortPath(int[][] heights) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Path With Minimum Effort\n\nfunction minimumEffortPath(heights) {\n\n}\n"
   },
   {
     "id": "binary-maze-shortest-path",
@@ -503,13 +857,25 @@
     "difficulty": "Medium",
     "description": "Given an n x n binary grid, return the length of the shortest clear path from top-left to bottom-right. A clear path consists of cells with value 0. You can move in 8 directions. If no path exists, return -1.",
     "examples": [
-      {"input": "grid = [[0,1],[1,0]]", "output": "2"},
-      {"input": "grid = [[0,0,0],[1,1,0],[1,1,0]]", "output": "4"},
-      {"input": "grid = [[1,0,0],[1,1,0],[1,1,0]]", "output": "-1"}
+      {
+        "input": "grid = [[0,1],[1,0]]",
+        "output": "2"
+      },
+      {
+        "input": "grid = [[0,0,0],[1,1,0],[1,1,0]]",
+        "output": "4"
+      },
+      {
+        "input": "grid = [[1,0,0],[1,1,0],[1,1,0]]",
+        "output": "-1"
+      }
     ],
     "constraints": "n == grid.length. n == grid[i].length. 1 <= n <= 100. grid[i][j] is 0 or 1.",
     "python_template": "# Shortest Path in Binary Matrix\n\nfrom typing import List\nfrom collections import deque\n\ndef shortestPathBinaryMatrix(grid: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Shortest Path in Binary Matrix\n\npackage main\n\nfunc shortestPathBinaryMatrix(grid [][]int) int {\n\n}\n"
+    "go_template": "// Shortest Path in Binary Matrix\n\npackage main\n\nfunc shortestPathBinaryMatrix(grid [][]int) int {\n\n}\n",
+    "cpp_template": "// Shortest Path in Binary Matrix\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint shortestPathBinaryMatrix(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+    "java_template": "// Shortest Path in Binary Matrix\n\nclass Solution {\n    public int shortestPathBinaryMatrix(int[][] grid) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Shortest Path in Binary Matrix\n\nfunction shortestPathBinaryMatrix(grid) {\n\n}\n"
   },
   {
     "id": "shortest-path-ug",
@@ -517,12 +883,21 @@
     "difficulty": "Easy",
     "description": "Given an unweighted undirected graph with V vertices and E edges, find the shortest path from source to all other vertices using BFS. If unreachable, distance is -1.",
     "examples": [
-      {"input": "V=4, edges=[[0,1],[0,2],[1,3],[2,3]], src=0", "output": "[0,1,1,2]"},
-      {"input": "V=3, edges=[[0,1]], src=0", "output": "[0,1,-1]"}
+      {
+        "input": "V=4, edges=[[0,1],[0,2],[1,3],[2,3]], src=0",
+        "output": "[0,1,1,2]"
+      },
+      {
+        "input": "V=3, edges=[[0,1]], src=0",
+        "output": "[0,1,-1]"
+      }
     ],
     "constraints": "1 <= V <= 10^4. 0 <= E <= V*(V-1)/2.",
     "python_template": "# Shortest Path in Unweighted Graph\n\nfrom typing import List\nfrom collections import deque\n\ndef shortestPath(V: int, adj: List[List[int]], src: int) -> List[int]:\n    pass\n",
-    "go_template": "// Shortest Path in Unweighted Graph\n\npackage main\n\nfunc shortestPath(V int, adj [][]int, src int) []int {\n\n}\n"
+    "go_template": "// Shortest Path in Unweighted Graph\n\npackage main\n\nfunc shortestPath(V int, adj [][]int, src int) []int {\n\n}\n",
+    "cpp_template": "// Shortest Path in Unweighted Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> shortestPath(int V, vector<vector<int>>& adj, int src) {\n    return {};\n}\n",
+    "java_template": "// Shortest Path in Unweighted Graph\n\nclass Solution {\n    public int[] shortestPath(int V, int[][] adj, int src) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Shortest Path in Unweighted Graph\n\nfunction shortestPath(V, adj, src) {\n\n}\n"
   },
   {
     "id": "num-ways-to-arrive-at-destination",
@@ -530,12 +905,21 @@
     "difficulty": "Medium",
     "description": "Given n intersections and a list of roads [u, v, time], find the number of ways to arrive at intersection n-1 from intersection 0 in the shortest amount of time. Return the count modulo 10^9 + 7.",
     "examples": [
-      {"input": "n=7, roads=[[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]", "output": "4"},
-      {"input": "n=2, roads=[[1,0,10]]", "output": "1"}
+      {
+        "input": "n=7, roads=[[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]",
+        "output": "4"
+      },
+      {
+        "input": "n=2, roads=[[1,0,10]]",
+        "output": "1"
+      }
     ],
     "constraints": "1 <= n <= 200. n - 1 <= roads.length <= n * (n - 1) / 2. 1 <= time <= 10^9.",
     "python_template": "# Number of Ways to Arrive at Destination\n\nfrom typing import List\nimport heapq\n\ndef countPaths(n: int, roads: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Number of Ways to Arrive at Destination\n\npackage main\n\nfunc countPaths(n int, roads [][]int) int {\n\n}\n"
+    "go_template": "// Number of Ways to Arrive at Destination\n\npackage main\n\nfunc countPaths(n int, roads [][]int) int {\n\n}\n",
+    "cpp_template": "// Number of Ways to Arrive at Destination\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countPaths(int n, vector<vector<int>>& roads) {\n    return 0;\n}\n",
+    "java_template": "// Number of Ways to Arrive at Destination\n\nclass Solution {\n    public int countPaths(int n, int[][] roads) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Number of Ways to Arrive at Destination\n\nfunction countPaths(n, roads) {\n\n}\n"
   },
   {
     "id": "min-multiplications-to-reach-end",
@@ -543,12 +927,21 @@
     "difficulty": "Medium",
     "description": "Given an array of integers arr and two integers start and end, find the minimum number of multiplications needed to reach end from start. At each step, multiply current value by any element of arr and take mod 100000. Return -1 if impossible.",
     "examples": [
-      {"input": "arr = [2, 5, 7], start = 3, end = 30", "output": "2 (3->6->30)"},
-      {"input": "arr = [3, 4, 65], start = 7, end = 66175", "output": "4"}
+      {
+        "input": "arr = [2, 5, 7], start = 3, end = 30",
+        "output": "2 (3->6->30)"
+      },
+      {
+        "input": "arr = [3, 4, 65], start = 7, end = 66175",
+        "output": "4"
+      }
     ],
     "constraints": "1 <= arr.length <= 50. 1 <= arr[i] <= 10^5. 1 <= start, end < 10^5.",
     "python_template": "# Minimum Multiplications to Reach End\n\nfrom typing import List\nfrom collections import deque\n\ndef minimumMultiplications(arr: List[int], start: int, end: int) -> int:\n    pass\n",
-    "go_template": "// Minimum Multiplications to Reach End\n\npackage main\n\nfunc minimumMultiplications(arr []int, start int, end int) int {\n\n}\n"
+    "go_template": "// Minimum Multiplications to Reach End\n\npackage main\n\nfunc minimumMultiplications(arr []int, start int, end int) int {\n\n}\n",
+    "cpp_template": "// Minimum Multiplications to Reach End\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minimumMultiplications(vector<int>& arr, int start, int end) {\n    return 0;\n}\n",
+    "java_template": "// Minimum Multiplications to Reach End\n\nclass Solution {\n    public int minimumMultiplications(int[] arr, int start, int end) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Minimum Multiplications to Reach End\n\nfunction minimumMultiplications(arr, start, end) {\n\n}\n"
   },
   {
     "id": "smallest-distance-threshold",
@@ -556,12 +949,21 @@
     "difficulty": "Medium",
     "description": "Given n cities and weighted edges, find the city with the smallest number of cities reachable within distanceThreshold. If tied, return the city with the greatest number.",
     "examples": [
-      {"input": "n=4, edges=[[0,1,3],[1,2,1],[1,3,4],[2,3,1]], distanceThreshold=4", "output": "3"},
-      {"input": "n=5, edges=[[0,1,2],[0,4,8],[1,2,3],[1,4,2],[2,3,1],[3,4,1]], distanceThreshold=2", "output": "0"}
+      {
+        "input": "n=4, edges=[[0,1,3],[1,2,1],[1,3,4],[2,3,1]], distanceThreshold=4",
+        "output": "3"
+      },
+      {
+        "input": "n=5, edges=[[0,1,2],[0,4,8],[1,2,3],[1,4,2],[2,3,1],[3,4,1]], distanceThreshold=2",
+        "output": "0"
+      }
     ],
     "constraints": "2 <= n <= 100. 1 <= edges.length <= n*(n-1)/2. 1 <= weight, distanceThreshold <= 10^4.",
     "python_template": "# Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\nfrom typing import List\n\ndef findTheCity(n: int, edges: List[List[int]], distanceThreshold: int) -> int:\n    pass\n",
-    "go_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\npackage main\n\nfunc findTheCity(n int, edges [][]int, distanceThreshold int) int {\n\n}\n"
+    "go_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\npackage main\n\nfunc findTheCity(n int, edges [][]int, distanceThreshold int) int {\n\n}\n",
+    "cpp_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {\n    return 0;\n}\n",
+    "java_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\nclass Solution {\n    public int findTheCity(int n, int[][] edges, int distanceThreshold) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\nfunction findTheCity(n, edges, distanceThreshold) {\n\n}\n"
   },
   {
     "id": "mst-prims-algorithm",
@@ -569,12 +971,21 @@
     "difficulty": "Medium",
     "description": "Given a weighted undirected graph with V vertices and E edges, find the sum of weights of the minimum spanning tree using Prim's algorithm.",
     "examples": [
-      {"input": "V=5, edges=[[0,1,2],[0,3,6],[1,2,3],[1,3,8],[1,4,5],[2,4,7]]", "output": "16"},
-      {"input": "V=3, edges=[[0,1,5],[1,2,3],[0,2,1]]", "output": "4"}
+      {
+        "input": "V=5, edges=[[0,1,2],[0,3,6],[1,2,3],[1,3,8],[1,4,5],[2,4,7]]",
+        "output": "16"
+      },
+      {
+        "input": "V=3, edges=[[0,1,5],[1,2,3],[0,2,1]]",
+        "output": "4"
+      }
     ],
     "constraints": "2 <= V <= 10^5. V-1 <= E <= V*(V-1)/2. 1 <= weight <= 10^5.",
     "python_template": "# Minimum Spanning Tree (Prim's Algorithm)\n\nfrom typing import List\nimport heapq\n\ndef spanningTree(V: int, adj: List[List[List[int]]]) -> int:\n    \"\"\"adj[u] = [[v, w], ...]. Return MST weight sum.\"\"\"\n    pass\n",
-    "go_template": "// Minimum Spanning Tree (Prim's Algorithm)\n\npackage main\n\nfunc spanningTree(V int, adj [][][2]int) int {\n\n}\n"
+    "go_template": "// Minimum Spanning Tree (Prim's Algorithm)\n\npackage main\n\nfunc spanningTree(V int, adj [][][2]int) int {\n\n}\n",
+    "cpp_template": "// Minimum Spanning Tree (Prim's Algorithm)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint spanningTree(int V, [][][2]int adj) {\n    return 0;\n}\n",
+    "java_template": "// Minimum Spanning Tree (Prim's Algorithm)\n\nclass Solution {\n    public int spanningTree(int V, [][][2]int adj) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Minimum Spanning Tree (Prim's Algorithm)\n\nfunction spanningTree(V, adj) {\n\n}\n"
   },
   {
     "id": "mst-kruskal-algo",
@@ -582,12 +993,21 @@
     "difficulty": "Medium",
     "description": "Given a weighted undirected graph, find the sum of weights of the minimum spanning tree using Kruskal's algorithm. Sort edges by weight and use Union-Find to avoid cycles.",
     "examples": [
-      {"input": "V=5, edges=[[0,1,2],[0,3,6],[1,2,3],[1,3,8],[1,4,5],[2,4,7]]", "output": "16"},
-      {"input": "V=3, edges=[[0,1,5],[1,2,3],[0,2,1]]", "output": "4"}
+      {
+        "input": "V=5, edges=[[0,1,2],[0,3,6],[1,2,3],[1,3,8],[1,4,5],[2,4,7]]",
+        "output": "16"
+      },
+      {
+        "input": "V=3, edges=[[0,1,5],[1,2,3],[0,2,1]]",
+        "output": "4"
+      }
     ],
     "constraints": "2 <= V <= 10^5. V-1 <= E <= V*(V-1)/2. 1 <= weight <= 10^5.",
     "python_template": "# Minimum Spanning Tree (Kruskal's Algorithm)\n\nfrom typing import List\n\ndef kruskalMST(V: int, edges: List[List[int]]) -> int:\n    \"\"\"edges[i] = [u, v, w]. Return MST weight sum.\"\"\"\n    pass\n",
-    "go_template": "// Minimum Spanning Tree (Kruskal's Algorithm)\n\npackage main\n\nimport \"sort\"\n\nfunc kruskalMST(V int, edges [][]int) int {\n\n}\n"
+    "go_template": "// Minimum Spanning Tree (Kruskal's Algorithm)\n\npackage main\n\nimport \"sort\"\n\nfunc kruskalMST(V int, edges [][]int) int {\n\n}\n",
+    "cpp_template": "// Minimum Spanning Tree (Kruskal's Algorithm)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint kruskalMST(int V, vector<vector<int>>& edges) {\n    return 0;\n}\n",
+    "java_template": "// Minimum Spanning Tree (Kruskal's Algorithm)\n\nclass Solution {\n    public int kruskalMST(int V, int[][] edges) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Minimum Spanning Tree (Kruskal's Algorithm)\n\nfunction kruskalMST(V, edges) {\n\n}\n"
   },
   {
     "id": "min-cost-to-connect-all-points",
@@ -595,12 +1015,21 @@
     "difficulty": "Medium",
     "description": "Given an array of points on a 2D plane, return the minimum cost to connect all points. The cost of connecting two points is the Manhattan distance |xi - xj| + |yi - yj|. All points must be connected with exactly one simple path.",
     "examples": [
-      {"input": "points = [[0,0],[2,2],[3,10],[5,2],[7,0]]", "output": "20"},
-      {"input": "points = [[3,12],[-2,5],[-4,1]]", "output": "18"}
+      {
+        "input": "points = [[0,0],[2,2],[3,10],[5,2],[7,0]]",
+        "output": "20"
+      },
+      {
+        "input": "points = [[3,12],[-2,5],[-4,1]]",
+        "output": "18"
+      }
     ],
     "constraints": "1 <= points.length <= 1000. -10^6 <= xi, yi <= 10^6. All pairs (xi, yi) are distinct.",
     "python_template": "# Min Cost to Connect All Points\n\nfrom typing import List\nimport heapq\n\ndef minCostConnectPoints(points: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Min Cost to Connect All Points\n\npackage main\n\nfunc minCostConnectPoints(points [][]int) int {\n\n}\n"
+    "go_template": "// Min Cost to Connect All Points\n\npackage main\n\nfunc minCostConnectPoints(points [][]int) int {\n\n}\n",
+    "cpp_template": "// Min Cost to Connect All Points\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minCostConnectPoints(vector<vector<int>>& points) {\n    return 0;\n}\n",
+    "java_template": "// Min Cost to Connect All Points\n\nclass Solution {\n    public int minCostConnectPoints(int[][] points) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Min Cost to Connect All Points\n\nfunction minCostConnectPoints(points) {\n\n}\n"
   },
   {
     "id": "minimum-height-trees",
@@ -608,12 +1037,21 @@
     "difficulty": "Medium",
     "description": "Given a tree of n nodes labeled 0 to n-1 with n-1 edges, find all roots that minimize the tree height. These are the centroids of the tree. Hint: repeatedly peel leaf nodes.",
     "examples": [
-      {"input": "n = 4, edges = [[1,0],[1,2],[1,3]]", "output": "[1]"},
-      {"input": "n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]", "output": "[3,4]"}
+      {
+        "input": "n = 4, edges = [[1,0],[1,2],[1,3]]",
+        "output": "[1]"
+      },
+      {
+        "input": "n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]",
+        "output": "[3,4]"
+      }
     ],
     "constraints": "1 <= n <= 2 * 10^4. edges.length == n - 1. 0 <= edges[i][j] < n. All pairs are unique.",
     "python_template": "# Minimum Height Trees\n\nfrom typing import List\nfrom collections import deque\n\ndef findMinHeightTrees(n: int, edges: List[List[int]]) -> List[int]:\n    pass\n",
-    "go_template": "// Minimum Height Trees\n\npackage main\n\nfunc findMinHeightTrees(n int, edges [][]int) []int {\n\n}\n"
+    "go_template": "// Minimum Height Trees\n\npackage main\n\nfunc findMinHeightTrees(n int, edges [][]int) []int {\n\n}\n",
+    "cpp_template": "// Minimum Height Trees\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {\n    return {};\n}\n",
+    "java_template": "// Minimum Height Trees\n\nclass Solution {\n    public int[] findMinHeightTrees(int n, int[][] edges) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Minimum Height Trees\n\nfunction findMinHeightTrees(n, edges) {\n\n}\n"
   },
   {
     "id": "alien-dictionary",
@@ -621,13 +1059,25 @@
     "difficulty": "Hard",
     "description": "Given a sorted list of words in an alien language, derive the order of characters in that language. Return the characters in order. If invalid (cycle), return \"\". If multiple valid orderings, return any.",
     "examples": [
-      {"input": "words = [\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]", "output": "\"wertf\""},
-      {"input": "words = [\"z\",\"x\"]", "output": "\"zx\""},
-      {"input": "words = [\"z\",\"x\",\"z\"]", "output": "\"\" (invalid order)"}
+      {
+        "input": "words = [\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]",
+        "output": "\"wertf\""
+      },
+      {
+        "input": "words = [\"z\",\"x\"]",
+        "output": "\"zx\""
+      },
+      {
+        "input": "words = [\"z\",\"x\",\"z\"]",
+        "output": "\"\" (invalid order)"
+      }
     ],
     "constraints": "1 <= words.length <= 100. 1 <= words[i].length <= 100. words[i] consists of lowercase English letters.",
     "python_template": "# Alien Dictionary\n\nfrom typing import List\n\ndef alienOrder(words: List[str]) -> str:\n    pass\n",
-    "go_template": "// Alien Dictionary\n\npackage main\n\nfunc alienOrder(words []string) string {\n\n}\n"
+    "go_template": "// Alien Dictionary\n\npackage main\n\nfunc alienOrder(words []string) string {\n\n}\n",
+    "cpp_template": "// Alien Dictionary\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring alienOrder(vector<string>& words) {\n    return \"\";\n}\n",
+    "java_template": "// Alien Dictionary\n\nclass Solution {\n    public String alienOrder(String[] words) {\n        return \"\";\n    }\n}\n",
+    "js_template": "// Alien Dictionary\n\nfunction alienOrder(words) {\n\n}\n"
   },
   {
     "id": "reconstruct-itinerary",
@@ -635,12 +1085,21 @@
     "difficulty": "Hard",
     "description": "Given a list of airline tickets [from, to], reconstruct the itinerary starting from \"JFK\". If multiple valid itineraries, return the lexicographically smallest one. All tickets must be used exactly once.",
     "examples": [
-      {"input": "tickets = [[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]", "output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]"},
-      {"input": "tickets = [[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]", "output": "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]"}
+      {
+        "input": "tickets = [[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+        "output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]"
+      },
+      {
+        "input": "tickets = [[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]",
+        "output": "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]"
+      }
     ],
     "constraints": "1 <= tickets.length <= 300. tickets[i] = [from, to]. from.length == to.length == 3. All airports are uppercase letters.",
     "python_template": "# Reconstruct Itinerary\n\nfrom typing import List\n\ndef findItinerary(tickets: List[List[str]]) -> List[str]:\n    pass\n",
-    "go_template": "// Reconstruct Itinerary\n\npackage main\n\nimport \"sort\"\n\nfunc findItinerary(tickets [][]string) []string {\n\n}\n"
+    "go_template": "// Reconstruct Itinerary\n\npackage main\n\nimport \"sort\"\n\nfunc findItinerary(tickets [][]string) []string {\n\n}\n",
+    "cpp_template": "// Reconstruct Itinerary\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> findItinerary(vector<vector<string>>& tickets) {\n    return {};\n}\n",
+    "java_template": "// Reconstruct Itinerary\n\nclass Solution {\n    public String[] findItinerary(String[][] tickets) {\n        return new String[]{};\n    }\n}\n",
+    "js_template": "// Reconstruct Itinerary\n\nfunction findItinerary(tickets) {\n\n}\n"
   },
   {
     "id": "swim-in-rising-water",
@@ -648,12 +1107,21 @@
     "difficulty": "Hard",
     "description": "Given an n x n grid where grid[i][j] represents elevation, at time t the water depth is t everywhere. You can swim from (i,j) to adjacent cells if both elevations are <= t. Find the minimum time to swim from (0,0) to (n-1,n-1).",
     "examples": [
-      {"input": "grid = [[0,2],[1,3]]", "output": "3"},
-      {"input": "grid = [[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]", "output": "16"}
+      {
+        "input": "grid = [[0,2],[1,3]]",
+        "output": "3"
+      },
+      {
+        "input": "grid = [[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]",
+        "output": "16"
+      }
     ],
     "constraints": "n == grid.length. n == grid[i].length. 1 <= n <= 50. 0 <= grid[i][j] < n^2. Each value appears exactly once.",
     "python_template": "# Swim in Rising Water\n\nfrom typing import List\nimport heapq\n\ndef swimInWater(grid: List[List[int]]) -> int:\n    pass\n",
-    "go_template": "// Swim in Rising Water\n\npackage main\n\nfunc swimInWater(grid [][]int) int {\n\n}\n"
+    "go_template": "// Swim in Rising Water\n\npackage main\n\nfunc swimInWater(grid [][]int) int {\n\n}\n",
+    "cpp_template": "// Swim in Rising Water\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint swimInWater(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+    "java_template": "// Swim in Rising Water\n\nclass Solution {\n    public int swimInWater(int[][] grid) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Swim in Rising Water\n\nfunction swimInWater(grid) {\n\n}\n"
   },
   {
     "id": "word-ladder",
@@ -661,12 +1129,21 @@
     "difficulty": "Hard",
     "description": "Given beginWord, endWord, and a wordList, find the length of the shortest transformation sequence from beginWord to endWord. Each transformation changes exactly one letter, and each intermediate word must be in wordList. Return 0 if no sequence exists.",
     "examples": [
-      {"input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]", "output": "5 (hit->hot->dot->dog->cog)"},
-      {"input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]", "output": "0 (endWord not in wordList)"}
+      {
+        "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+        "output": "5 (hit->hot->dot->dog->cog)"
+      },
+      {
+        "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+        "output": "0 (endWord not in wordList)"
+      }
     ],
     "constraints": "1 <= beginWord.length <= 10. endWord.length == beginWord.length. 1 <= wordList.length <= 5000. All words have the same length. All lowercase English letters.",
     "python_template": "# Word Ladder\n\nfrom typing import List\nfrom collections import deque\n\ndef ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:\n    pass\n",
-    "go_template": "// Word Ladder\n\npackage main\n\nfunc ladderLength(beginWord string, endWord string, wordList []string) int {\n\n}\n"
+    "go_template": "// Word Ladder\n\npackage main\n\nfunc ladderLength(beginWord string, endWord string, wordList []string) int {\n\n}\n",
+    "cpp_template": "// Word Ladder\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint ladderLength(string& beginWord, string& endWord, vector<string>& wordList) {\n    return 0;\n}\n",
+    "java_template": "// Word Ladder\n\nclass Solution {\n    public int ladderLength(String beginWord, String endWord, String[] wordList) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Word Ladder\n\nfunction ladderLength(beginWord, endWord, wordList) {\n\n}\n"
   },
   {
     "id": "word-ladder-ii",
@@ -674,11 +1151,20 @@
     "difficulty": "Hard",
     "description": "Given beginWord, endWord, and wordList, find all shortest transformation sequences from beginWord to endWord. Each transformation changes one letter, each intermediate word must be in wordList.",
     "examples": [
-      {"input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]", "output": "[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]"},
-      {"input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]", "output": "[]"}
+      {
+        "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+        "output": "[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]"
+      },
+      {
+        "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+        "output": "[]"
+      }
     ],
     "constraints": "1 <= beginWord.length <= 5. endWord.length == beginWord.length. 1 <= wordList.length <= 500. All words same length.",
     "python_template": "# Word Ladder II\n\nfrom typing import List\nfrom collections import deque, defaultdict\n\ndef findLadders(beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:\n    pass\n",
-    "go_template": "// Word Ladder II\n\npackage main\n\nfunc findLadders(beginWord string, endWord string, wordList []string) [][]string {\n\n}\n"
+    "go_template": "// Word Ladder II\n\npackage main\n\nfunc findLadders(beginWord string, endWord string, wordList []string) [][]string {\n\n}\n",
+    "cpp_template": "// Word Ladder II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<string>> findLadders(string& beginWord, string& endWord, vector<string>& wordList) {\n    return {};\n}\n",
+    "java_template": "// Word Ladder II\n\nclass Solution {\n    public String[][] findLadders(String beginWord, String endWord, String[] wordList) {\n        return new String[][]{};\n    }\n}\n",
+    "js_template": "// Word Ladder II\n\nfunction findLadders(beginWord, endWord, wordList) {\n\n}\n"
   }
 ]

@@ -5,13 +5,25 @@
     "difficulty": "Easy",
     "description": "Assume you are an awesome parent and want to give your children some cookies. Each child i has a greed factor g[i], the minimum size cookie that will make them content. Each cookie j has size s[j]. If s[j] >= g[i], you can assign cookie j to child i and the child becomes content. Maximize the number of your content children. Each child gets at most one cookie.",
     "examples": [
-      {"input": "g = [1,2,3], s = [1,1]", "output": "1"},
-      {"input": "g = [1,2], s = [1,2,3]", "output": "2"},
-      {"input": "g = [10,9,8,7], s = [5,6,7,8]", "output": "2"}
+      {
+        "input": "g = [1,2,3], s = [1,1]",
+        "output": "1"
+      },
+      {
+        "input": "g = [1,2], s = [1,2,3]",
+        "output": "2"
+      },
+      {
+        "input": "g = [10,9,8,7], s = [5,6,7,8]",
+        "output": "2"
+      }
     ],
     "constraints": "1 <= g.length <= 3 * 10^4. 0 <= s.length <= 3 * 10^4. 1 <= g[i], s[j] <= 2^31 - 1.",
     "python_template": "# Assign Cookies\n\nfrom typing import List\n\ndef findContentChildren(g: List[int], s: List[int]) -> int:\n    pass\n",
-    "go_template": "// Assign Cookies\n\npackage main\n\nfunc findContentChildren(g []int, s []int) int {\n    return 0\n}\n"
+    "go_template": "// Assign Cookies\n\npackage main\n\nfunc findContentChildren(g []int, s []int) int {\n    return 0\n}\n",
+    "cpp_template": "// Assign Cookies\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findContentChildren(vector<int>& g, vector<int>& s) {\n    return 0;\n}\n",
+    "java_template": "// Assign Cookies\n\nclass Solution {\n    public int findContentChildren(int[] g, int[] s) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Assign Cookies\n\nfunction findContentChildren(g, s) {\n\n}\n"
   },
   {
     "id": "candy",
@@ -19,13 +31,25 @@
     "difficulty": "Hard",
     "description": "There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings. You are giving candies to these children subject to: Each child must have at least one candy. Children with a higher rating than their neighbors get more candies than their neighbors. Return the minimum number of candies you need to distribute.",
     "examples": [
-      {"input": "ratings = [1,0,2]", "output": "5 (candies: [2,1,2])"},
-      {"input": "ratings = [1,2,2]", "output": "4 (candies: [1,2,1])"},
-      {"input": "ratings = [1,3,2,2,1]", "output": "7 (candies: [1,2,1,2,1] — wait, [1,3,1,2,1] also doesn't work. Correct: [1,2,1,2,1]→7)"}
+      {
+        "input": "ratings = [1,0,2]",
+        "output": "5 (candies: [2,1,2])"
+      },
+      {
+        "input": "ratings = [1,2,2]",
+        "output": "4 (candies: [1,2,1])"
+      },
+      {
+        "input": "ratings = [1,3,2,2,1]",
+        "output": "7 (candies: [1,2,1,2,1] — wait, [1,3,1,2,1] also doesn't work. Correct: [1,2,1,2,1]→7)"
+      }
     ],
     "constraints": "n == ratings.length. 1 <= n <= 2 * 10^4. 0 <= ratings[i] <= 2 * 10^4.",
     "python_template": "# Candy\n\nfrom typing import List\n\ndef candy(ratings: List[int]) -> int:\n    pass\n",
-    "go_template": "// Candy\n\npackage main\n\nfunc candy(ratings []int) int {\n    return 0\n}\n"
+    "go_template": "// Candy\n\npackage main\n\nfunc candy(ratings []int) int {\n    return 0\n}\n",
+    "cpp_template": "// Candy\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint candy(vector<int>& ratings) {\n    return 0;\n}\n",
+    "java_template": "// Candy\n\nclass Solution {\n    public int candy(int[] ratings) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Candy\n\nfunction candy(ratings) {\n\n}\n"
   },
   {
     "id": "fractional-knapsack",
@@ -33,13 +57,25 @@
     "difficulty": "Medium",
     "description": "Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. You can break items — i.e., take fractions of items. Sort by value/weight ratio and greedily pick items.",
     "examples": [
-      {"input": "values = [60, 100, 120], weights = [10, 20, 30], W = 50", "output": "240.0 (take items 0 and 1 fully: 60+100=160, then 2/3 of item 2: 80 → total 240)"},
-      {"input": "values = [500], weights = [30], W = 10", "output": "166.67 (take 10/30 of the item)"},
-      {"input": "values = [10, 20], weights = [5, 10], W = 15", "output": "30.0"}
+      {
+        "input": "values = [60, 100, 120], weights = [10, 20, 30], W = 50",
+        "output": "240.0 (take items 0 and 1 fully: 60+100=160, then 2/3 of item 2: 80 → total 240)"
+      },
+      {
+        "input": "values = [500], weights = [30], W = 10",
+        "output": "166.67 (take 10/30 of the item)"
+      },
+      {
+        "input": "values = [10, 20], weights = [5, 10], W = 15",
+        "output": "30.0"
+      }
     ],
     "constraints": "1 <= n <= 10^5. 1 <= W <= 10^9. 1 <= values[i], weights[i] <= 10^4.",
     "python_template": "# Fractional Knapsack\n\nfrom typing import List\n\ndef fractionalKnapsack(values: List[int], weights: List[int], W: int) -> float:\n    pass\n",
-    "go_template": "// Fractional Knapsack\n\npackage main\n\nfunc fractionalKnapsack(values, weights []int, W int) float64 {\n    return 0.0\n}\n"
+    "go_template": "// Fractional Knapsack\n\npackage main\n\nfunc fractionalKnapsack(values, weights []int, W int) float64 {\n    return 0.0\n}\n",
+    "cpp_template": "// Fractional Knapsack\n\n#include <bits/stdc++.h>\nusing namespace std;\n\ndouble fractionalKnapsack(vector<int>& values, vector<int>& weights, int W) {\n    return 0.0;\n}\n",
+    "java_template": "// Fractional Knapsack\n\nclass Solution {\n    public double fractionalKnapsack(int[] values, int[] weights, int W) {\n        return 0.0;\n    }\n}\n",
+    "js_template": "// Fractional Knapsack\n\nfunction fractionalKnapsack(values, weights, W) {\n\n}\n"
   },
   {
     "id": "gas-station",
@@ -47,13 +83,25 @@
     "difficulty": "Medium",
     "description": "There are n gas stations along a circular route, where the amount of gas at the ith station is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from the ith station to the next (i + 1)th station. You begin the journey with an empty tank at one of the gas stations. Return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1. If a solution exists, it is guaranteed to be unique.",
     "examples": [
-      {"input": "gas = [1,2,3,4,5], cost = [3,4,5,1,2]", "output": "3"},
-      {"input": "gas = [2,3,4], cost = [3,4,3]", "output": "-1"},
-      {"input": "gas = [5,1,2,3,4], cost = [4,4,1,5,1]", "output": "4"}
+      {
+        "input": "gas = [1,2,3,4,5], cost = [3,4,5,1,2]",
+        "output": "3"
+      },
+      {
+        "input": "gas = [2,3,4], cost = [3,4,3]",
+        "output": "-1"
+      },
+      {
+        "input": "gas = [5,1,2,3,4], cost = [4,4,1,5,1]",
+        "output": "4"
+      }
     ],
     "constraints": "n == gas.length == cost.length. 1 <= n <= 10^5. 0 <= gas[i], cost[i] <= 10^4.",
     "python_template": "# Gas Station\n\nfrom typing import List\n\ndef canCompleteCircuit(gas: List[int], cost: List[int]) -> int:\n    pass\n",
-    "go_template": "// Gas Station\n\npackage main\n\nfunc canCompleteCircuit(gas []int, cost []int) int {\n    return -1\n}\n"
+    "go_template": "// Gas Station\n\npackage main\n\nfunc canCompleteCircuit(gas []int, cost []int) int {\n    return -1\n}\n",
+    "cpp_template": "// Gas Station\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint canCompleteCircuit(vector<int>& gas, vector<int>& cost) {\n    return 0;\n}\n",
+    "java_template": "// Gas Station\n\nclass Solution {\n    public int canCompleteCircuit(int[] gas, int[] cost) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Gas Station\n\nfunction canCompleteCircuit(gas, cost) {\n\n}\n"
   },
   {
     "id": "hand-of-straights",
@@ -61,13 +109,25 @@
     "difficulty": "Medium",
     "description": "Alice has some number of cards given as an integer array hand. She wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards. Return true if she can, otherwise return false.",
     "examples": [
-      {"input": "hand = [1,2,3,6,2,3,4,7,8], groupSize = 3", "output": "true ([1,2,3],[2,3,4],[6,7,8])"},
-      {"input": "hand = [1,2,3,4,5], groupSize = 4", "output": "false"},
-      {"input": "hand = [8,10,12], groupSize = 3", "output": "false"}
+      {
+        "input": "hand = [1,2,3,6,2,3,4,7,8], groupSize = 3",
+        "output": "true ([1,2,3],[2,3,4],[6,7,8])"
+      },
+      {
+        "input": "hand = [1,2,3,4,5], groupSize = 4",
+        "output": "false"
+      },
+      {
+        "input": "hand = [8,10,12], groupSize = 3",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= hand.length <= 10^4. 0 <= hand[i] <= 10^9. 1 <= groupSize <= hand.length.",
     "python_template": "# Hand of Straights\n\nfrom typing import List\n\ndef isNStraightHand(hand: List[int], groupSize: int) -> bool:\n    pass\n",
-    "go_template": "// Hand of Straights\n\npackage main\n\nfunc isNStraightHand(hand []int, groupSize int) bool {\n    return false\n}\n"
+    "go_template": "// Hand of Straights\n\npackage main\n\nfunc isNStraightHand(hand []int, groupSize int) bool {\n    return false\n}\n",
+    "cpp_template": "// Hand of Straights\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isNStraightHand(vector<int>& hand, int groupSize) {\n    return false;\n}\n",
+    "java_template": "// Hand of Straights\n\nclass Solution {\n    public boolean isNStraightHand(int[] hand, int groupSize) {\n        return false;\n    }\n}\n",
+    "js_template": "// Hand of Straights\n\nfunction isNStraightHand(hand, groupSize) {\n\n}\n"
   },
   {
     "id": "job-seq-problem",
@@ -75,12 +135,21 @@
     "difficulty": "Medium",
     "description": "Given a set of n jobs where each job i has a deadline and a profit. Every job takes 1 unit of time to complete and only one job can be scheduled at a time. Each job earns profit only if it is completed by its deadline. Find the maximum number of jobs that can be done and the maximum profit. Greedy: sort by profit descending, assign each job to the latest available slot before its deadline.",
     "examples": [
-      {"input": "jobs = [[1,4,20],[2,1,10],[3,1,40],[4,1,30]], format: [id, deadline, profit]", "output": "[2, 60] (jobs 3 and 1: profit 40+20=60)"},
-      {"input": "jobs = [[1,2,100],[2,1,19],[3,2,27],[4,1,25],[5,1,15]]", "output": "[2, 127] (jobs 1 and 3: profit 100+27=127)"}
+      {
+        "input": "jobs = [[1,4,20],[2,1,10],[3,1,40],[4,1,30]], format: [id, deadline, profit]",
+        "output": "[2, 60] (jobs 3 and 1: profit 40+20=60)"
+      },
+      {
+        "input": "jobs = [[1,2,100],[2,1,19],[3,2,27],[4,1,25],[5,1,15]]",
+        "output": "[2, 127] (jobs 1 and 3: profit 100+27=127)"
+      }
     ],
     "constraints": "1 <= n <= 10^5. 1 <= deadline <= n. 1 <= profit <= 500.",
     "python_template": "# Job Sequencing Problem\n\nfrom typing import List\n\ndef jobSequencing(jobs: List[List[int]]) -> List[int]:\n    \"\"\"Returns [number_of_jobs, max_profit]\"\"\"\n    pass\n",
-    "go_template": "// Job Sequencing Problem\n\npackage main\n\nfunc jobSequencing(jobs [][]int) []int {\n    return nil\n}\n"
+    "go_template": "// Job Sequencing Problem\n\npackage main\n\nfunc jobSequencing(jobs [][]int) []int {\n    return nil\n}\n",
+    "cpp_template": "// Job Sequencing Problem\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> jobSequencing(vector<vector<int>>& jobs) {\n    return {};\n}\n",
+    "java_template": "// Job Sequencing Problem\n\nclass Solution {\n    public int[] jobSequencing(int[][] jobs) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Job Sequencing Problem\n\nfunction jobSequencing(jobs) {\n\n}\n"
   },
   {
     "id": "jump-game-ii",
@@ -88,13 +157,25 @@
     "difficulty": "Medium",
     "description": "You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0]. Each element nums[i] represents the maximum length of a forward jump from index i. Return the minimum number of jumps to reach nums[n - 1]. You can assume that you can always reach the last index.",
     "examples": [
-      {"input": "nums = [2,3,1,1,4]", "output": "2 (jump 1 step from 0 to 1, then 3 steps to end)"},
-      {"input": "nums = [2,3,0,1,4]", "output": "2"},
-      {"input": "nums = [1,2,3]", "output": "2"}
+      {
+        "input": "nums = [2,3,1,1,4]",
+        "output": "2 (jump 1 step from 0 to 1, then 3 steps to end)"
+      },
+      {
+        "input": "nums = [2,3,0,1,4]",
+        "output": "2"
+      },
+      {
+        "input": "nums = [1,2,3]",
+        "output": "2"
+      }
     ],
     "constraints": "1 <= nums.length <= 10^4. 0 <= nums[i] <= 1000. It's guaranteed you can reach nums[n - 1].",
     "python_template": "# Jump Game II\n\nfrom typing import List\n\ndef jump(nums: List[int]) -> int:\n    pass\n",
-    "go_template": "// Jump Game II\n\npackage main\n\nfunc jump(nums []int) int {\n    return 0\n}\n"
+    "go_template": "// Jump Game II\n\npackage main\n\nfunc jump(nums []int) int {\n    return 0\n}\n",
+    "cpp_template": "// Jump Game II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint jump(vector<int>& nums) {\n    return 0;\n}\n",
+    "java_template": "// Jump Game II\n\nclass Solution {\n    public int jump(int[] nums) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Jump Game II\n\nfunction jump(nums) {\n\n}\n"
   },
   {
     "id": "merge-triplets-to-form-target-triplet",
@@ -102,13 +183,25 @@
     "difficulty": "Medium",
     "description": "A triplet is an array of three integers. You are given a 2D integer array triplets, where triplets[i] = [ai, bi, ci]. You are also given an integer array target = [x, y, z]. To form the target, you can select some triplets and update the target by taking the element-wise maximum. Return true if it is possible to obtain the target as the element-wise maximum of some subset of triplets.",
     "examples": [
-      {"input": "triplets = [[2,5,3],[1,8,4],[1,7,5]], target = [2,7,5]", "output": "true (pick triplets 0 and 2: max(2,1)=2, max(5,7)=7, max(3,5)=5)"},
-      {"input": "triplets = [[3,4,5],[4,5,6]], target = [3,2,5]", "output": "false"},
-      {"input": "triplets = [[2,5,3],[2,3,4],[1,2,5],[5,2,3]], target = [5,5,5]", "output": "true"}
+      {
+        "input": "triplets = [[2,5,3],[1,8,4],[1,7,5]], target = [2,7,5]",
+        "output": "true (pick triplets 0 and 2: max(2,1)=2, max(5,7)=7, max(3,5)=5)"
+      },
+      {
+        "input": "triplets = [[3,4,5],[4,5,6]], target = [3,2,5]",
+        "output": "false"
+      },
+      {
+        "input": "triplets = [[2,5,3],[2,3,4],[1,2,5],[5,2,3]], target = [5,5,5]",
+        "output": "true"
+      }
     ],
     "constraints": "1 <= triplets.length <= 10^5. triplets[i].length == target.length == 3. 1 <= ai, bi, ci, x, y, z <= 1000.",
     "python_template": "# Merge Triplets to Form Target Triplet\n\nfrom typing import List\n\ndef mergeTriplets(triplets: List[List[int]], target: List[int]) -> bool:\n    pass\n",
-    "go_template": "// Merge Triplets to Form Target Triplet\n\npackage main\n\nfunc mergeTriplets(triplets [][]int, target []int) bool {\n    return false\n}\n"
+    "go_template": "// Merge Triplets to Form Target Triplet\n\npackage main\n\nfunc mergeTriplets(triplets [][]int, target []int) bool {\n    return false\n}\n",
+    "cpp_template": "// Merge Triplets to Form Target Triplet\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool mergeTriplets(vector<vector<int>>& triplets, vector<int>& target) {\n    return false;\n}\n",
+    "java_template": "// Merge Triplets to Form Target Triplet\n\nclass Solution {\n    public boolean mergeTriplets(int[][] triplets, int[] target) {\n        return false;\n    }\n}\n",
+    "js_template": "// Merge Triplets to Form Target Triplet\n\nfunction mergeTriplets(triplets, target) {\n\n}\n"
   },
   {
     "id": "min-number-platforms",
@@ -116,13 +209,25 @@
     "difficulty": "Medium",
     "description": "Given arrival and departure times of all trains that reach a railway station, find the minimum number of platforms required so that no train has to wait. Consider that if a train arrives at time t and another departs at time t, the platform can be shared.",
     "examples": [
-      {"input": "arrival = [900, 940, 950, 1100, 1500, 1800], departure = [910, 1200, 1120, 1130, 1900, 2000]", "output": "3"},
-      {"input": "arrival = [900, 1100, 1235], departure = [1000, 1200, 1240]", "output": "1"},
-      {"input": "arrival = [100, 200, 300], departure = [900, 900, 900]", "output": "3"}
+      {
+        "input": "arrival = [900, 940, 950, 1100, 1500, 1800], departure = [910, 1200, 1120, 1130, 1900, 2000]",
+        "output": "3"
+      },
+      {
+        "input": "arrival = [900, 1100, 1235], departure = [1000, 1200, 1240]",
+        "output": "1"
+      },
+      {
+        "input": "arrival = [100, 200, 300], departure = [900, 900, 900]",
+        "output": "3"
+      }
     ],
     "constraints": "1 <= n <= 10^5. Times are in HHMM format (24-hour).",
     "python_template": "# Minimum Number of Platforms\n\nfrom typing import List\n\ndef minPlatforms(arrival: List[int], departure: List[int]) -> int:\n    pass\n",
-    "go_template": "// Minimum Number of Platforms\n\npackage main\n\nfunc minPlatforms(arrival, departure []int) int {\n    return 0\n}\n"
+    "go_template": "// Minimum Number of Platforms\n\npackage main\n\nfunc minPlatforms(arrival, departure []int) int {\n    return 0\n}\n",
+    "cpp_template": "// Minimum Number of Platforms\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minPlatforms(vector<int>& arrival, vector<int>& departure) {\n    return 0;\n}\n",
+    "java_template": "// Minimum Number of Platforms\n\nclass Solution {\n    public int minPlatforms(int[] arrival, int[] departure) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Minimum Number of Platforms\n\nfunction minPlatforms(arrival, departure) {\n\n}\n"
   },
   {
     "id": "n-meetings",
@@ -130,13 +235,25 @@
     "difficulty": "Easy",
     "description": "There is one meeting room. You are given n meetings with their start and end times. Find the maximum number of meetings that can be accommodated in the room. Only one meeting can be held at a time. A meeting can start at the same time another ends. Greedy: sort by end time and greedily pick non-overlapping meetings.",
     "examples": [
-      {"input": "start = [1, 3, 0, 5, 8, 5], end = [2, 4, 6, 7, 9, 9]", "output": "4 (meetings: [1,2], [3,4], [5,7], [8,9])"},
-      {"input": "start = [10, 12, 20], end = [20, 25, 30]", "output": "1"},
-      {"input": "start = [1, 2], end = [2, 3]", "output": "2"}
+      {
+        "input": "start = [1, 3, 0, 5, 8, 5], end = [2, 4, 6, 7, 9, 9]",
+        "output": "4 (meetings: [1,2], [3,4], [5,7], [8,9])"
+      },
+      {
+        "input": "start = [10, 12, 20], end = [20, 25, 30]",
+        "output": "1"
+      },
+      {
+        "input": "start = [1, 2], end = [2, 3]",
+        "output": "2"
+      }
     ],
     "constraints": "1 <= n <= 10^5. 0 <= start[i] < end[i] <= 10^5.",
     "python_template": "# N Meetings in One Room\n\nfrom typing import List\n\ndef maxMeetings(start: List[int], end: List[int]) -> int:\n    pass\n",
-    "go_template": "// N Meetings in One Room\n\npackage main\n\nfunc maxMeetings(start, end []int) int {\n    return 0\n}\n"
+    "go_template": "// N Meetings in One Room\n\npackage main\n\nfunc maxMeetings(start, end []int) int {\n    return 0\n}\n",
+    "cpp_template": "// N Meetings in One Room\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxMeetings(vector<int>& start, vector<int>& end) {\n    return 0;\n}\n",
+    "java_template": "// N Meetings in One Room\n\nclass Solution {\n    public int maxMeetings(int[] start, int[] end) {\n        return 0;\n    }\n}\n",
+    "js_template": "// N Meetings in One Room\n\nfunction maxMeetings(start, end) {\n\n}\n"
   },
   {
     "id": "page-fault",
@@ -144,13 +261,25 @@
     "difficulty": "Easy",
     "description": "In operating systems, a page fault occurs when a running program accesses a page that is not currently in memory. Given a sequence of page requests and memory capacity, find the total number of page faults using the Least Recently Used (LRU) page replacement algorithm.",
     "examples": [
-      {"input": "pages = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2], capacity = 4", "output": "7"},
-      {"input": "pages = [1, 2, 3, 4, 1, 2], capacity = 3", "output": "5"},
-      {"input": "pages = [1, 1, 1], capacity = 1", "output": "1"}
+      {
+        "input": "pages = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2], capacity = 4",
+        "output": "7"
+      },
+      {
+        "input": "pages = [1, 2, 3, 4, 1, 2], capacity = 3",
+        "output": "5"
+      },
+      {
+        "input": "pages = [1, 1, 1], capacity = 1",
+        "output": "1"
+      }
     ],
     "constraints": "1 <= pages.length <= 10^5. 0 <= pages[i] <= 10^4. 1 <= capacity <= pages.length.",
     "python_template": "# Page Faults in LRU\n\nfrom typing import List\n\ndef pageFaults(pages: List[int], capacity: int) -> int:\n    pass\n",
-    "go_template": "// Page Faults in LRU\n\npackage main\n\nfunc pageFaults(pages []int, capacity int) int {\n    return 0\n}\n"
+    "go_template": "// Page Faults in LRU\n\npackage main\n\nfunc pageFaults(pages []int, capacity int) int {\n    return 0\n}\n",
+    "cpp_template": "// Page Faults in LRU\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint pageFaults(vector<int>& pages, int capacity) {\n    return 0;\n}\n",
+    "java_template": "// Page Faults in LRU\n\nclass Solution {\n    public int pageFaults(int[] pages, int capacity) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Page Faults in LRU\n\nfunction pageFaults(pages, capacity) {\n\n}\n"
   },
   {
     "id": "partition-labels",
@@ -158,13 +287,25 @@
     "difficulty": "Medium",
     "description": "You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part. Return a list of integers representing the size of these parts. Greedy: track the last occurrence of each character, then expand the current partition until you reach the last occurrence of all characters seen so far.",
     "examples": [
-      {"input": "s = \"ababcbacadefegdehijhklij\"", "output": "[9,7,8]"},
-      {"input": "s = \"eccbbbbdec\"", "output": "[10]"},
-      {"input": "s = \"abc\"", "output": "[1,1,1]"}
+      {
+        "input": "s = \"ababcbacadefegdehijhklij\"",
+        "output": "[9,7,8]"
+      },
+      {
+        "input": "s = \"eccbbbbdec\"",
+        "output": "[10]"
+      },
+      {
+        "input": "s = \"abc\"",
+        "output": "[1,1,1]"
+      }
     ],
     "constraints": "1 <= s.length <= 500. s consists of lowercase English letters.",
     "python_template": "# Partition Labels\n\nfrom typing import List\n\ndef partitionLabels(s: str) -> List[int]:\n    pass\n",
-    "go_template": "// Partition Labels\n\npackage main\n\nfunc partitionLabels(s string) []int {\n    return nil\n}\n"
+    "go_template": "// Partition Labels\n\npackage main\n\nfunc partitionLabels(s string) []int {\n    return nil\n}\n",
+    "cpp_template": "// Partition Labels\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> partitionLabels(string& s) {\n    return {};\n}\n",
+    "java_template": "// Partition Labels\n\nclass Solution {\n    public int[] partitionLabels(String s) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Partition Labels\n\nfunction partitionLabels(s) {\n\n}\n"
   },
   {
     "id": "shortest-job-first",
@@ -172,13 +313,25 @@
     "difficulty": "Easy",
     "description": "Given an array of burst times of n processes, calculate the average waiting time using the Shortest Job First (non-preemptive) CPU scheduling algorithm. Processes are executed in order of their burst times (shortest first). Waiting time of a process = start time - arrival time (all arrive at time 0).",
     "examples": [
-      {"input": "burst = [6, 8, 7, 3]", "output": "7.0 (sorted: [3,6,7,8], wait: 0+3+9+16=28, avg=28/4=7.0)"},
-      {"input": "burst = [1, 2, 3]", "output": "1.0 (wait: 0+1+3=4, avg=4/3≈1.33 — actually 1.33)"},
-      {"input": "burst = [5, 5, 5]", "output": "5.0 (wait: 0+5+10=15, avg=15/3=5.0)"}
+      {
+        "input": "burst = [6, 8, 7, 3]",
+        "output": "7.0 (sorted: [3,6,7,8], wait: 0+3+9+16=28, avg=28/4=7.0)"
+      },
+      {
+        "input": "burst = [1, 2, 3]",
+        "output": "1.0 (wait: 0+1+3=4, avg=4/3≈1.33 — actually 1.33)"
+      },
+      {
+        "input": "burst = [5, 5, 5]",
+        "output": "5.0 (wait: 0+5+10=15, avg=15/3=5.0)"
+      }
     ],
     "constraints": "1 <= n <= 10^5. 1 <= burst[i] <= 10^4.",
     "python_template": "# Shortest Job First (SJF) Scheduling\n\nfrom typing import List\n\ndef sjfAvgWait(burst: List[int]) -> float:\n    pass\n",
-    "go_template": "// Shortest Job First (SJF) Scheduling\n\npackage main\n\nfunc sjfAvgWait(burst []int) float64 {\n    return 0.0\n}\n"
+    "go_template": "// Shortest Job First (SJF) Scheduling\n\npackage main\n\nfunc sjfAvgWait(burst []int) float64 {\n    return 0.0\n}\n",
+    "cpp_template": "// Shortest Job First (SJF) Scheduling\n\n#include <bits/stdc++.h>\nusing namespace std;\n\ndouble sjfAvgWait(vector<int>& burst) {\n    return 0.0;\n}\n",
+    "java_template": "// Shortest Job First (SJF) Scheduling\n\nclass Solution {\n    public double sjfAvgWait(int[] burst) {\n        return 0.0;\n    }\n}\n",
+    "js_template": "// Shortest Job First (SJF) Scheduling\n\nfunction sjfAvgWait(burst) {\n\n}\n"
   },
   {
     "id": "valid-parenthesis-string",
@@ -186,13 +339,28 @@
     "difficulty": "Medium",
     "description": "Given a string s containing only three types of characters: '(', ')' and '*', return true if s is valid. '*' can be treated as a '(', ')' or an empty string. A valid string has every '(' matched by ')' in the correct order. Greedy: track the range of possible open parentheses counts (lo, hi).",
     "examples": [
-      {"input": "s = \"()\"", "output": "true"},
-      {"input": "s = \"(*)\"", "output": "true"},
-      {"input": "s = \"(*))\"", "output": "true"},
-      {"input": "s = \")(\"", "output": "false"}
+      {
+        "input": "s = \"()\"",
+        "output": "true"
+      },
+      {
+        "input": "s = \"(*)\"",
+        "output": "true"
+      },
+      {
+        "input": "s = \"(*))\"",
+        "output": "true"
+      },
+      {
+        "input": "s = \")(\"",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= s.length <= 100. s consists of '(', ')' and '*' only.",
     "python_template": "# Valid Parenthesis String\n\ndef checkValidString(s: str) -> bool:\n    pass\n",
-    "go_template": "// Valid Parenthesis String\n\npackage main\n\nfunc checkValidString(s string) bool {\n    return false\n}\n"
+    "go_template": "// Valid Parenthesis String\n\npackage main\n\nfunc checkValidString(s string) bool {\n    return false\n}\n",
+    "cpp_template": "// Valid Parenthesis String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool checkValidString(string& s) {\n    return false;\n}\n",
+    "java_template": "// Valid Parenthesis String\n\nclass Solution {\n    public boolean checkValidString(String s) {\n        return false;\n    }\n}\n",
+    "js_template": "// Valid Parenthesis String\n\nfunction checkValidString(s) {\n\n}\n"
   }
 ]

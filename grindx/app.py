@@ -24,7 +24,7 @@ Solve Screen:
   Ctrl+S              Save code
   Ctrl+D              Toggle solved
   Ctrl+E              AI review
-  Ctrl+L              Switch Python / Go
+  Ctrl+L              Cycle language (Python → Go → C++ → Java → JS)
   Ctrl+B              Toggle bookmark
   Ctrl+T              Pause / resume timer
   Ctrl+R              Reset timer

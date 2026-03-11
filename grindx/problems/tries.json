@@ -5,12 +5,21 @@
     "difficulty": "Medium",
     "description": "Design a data structure that supports adding new words and finding if a string matches any previously added string. Implement the WordDictionary class:\n- WordDictionary() Initializes the object.\n- addWord(word) Adds word to the data structure.\n- search(word) Returns true if there is any string that matches word. word may contain dots '.' where dots can match any letter.\nUse a Trie with DFS for wildcard search.",
     "examples": [
-      {"input": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]", "output": "[null,null,null,null,false,true,true,true]"},
-      {"input": "[\"WordDictionary\",\"addWord\",\"search\",\"search\"]\n[[],[\"a\"],[\"a\"],[\".\"]]", "output": "[null,null,true,true]"}
+      {
+        "input": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]",
+        "output": "[null,null,null,null,false,true,true,true]"
+      },
+      {
+        "input": "[\"WordDictionary\",\"addWord\",\"search\",\"search\"]\n[[],[\"a\"],[\"a\"],[\".\"]]",
+        "output": "[null,null,true,true]"
+      }
     ],
     "constraints": "1 <= word.length <= 25. word in addWord consists of lowercase English letters. word in search consists of '.' or lowercase English letters. At most 10^4 calls to addWord and search.",
     "python_template": "# Design Add and Search Words Data Structure\n\nclass WordDictionary:\n    def __init__(self):\n        pass\n\n    def addWord(self, word: str) -> None:\n        pass\n\n    def search(self, word: str) -> bool:\n        pass\n",
-    "go_template": "// Design Add and Search Words Data Structure\n\npackage main\n\ntype WordDictionary struct {\n\n}\n\nfunc Constructor() WordDictionary {\n    return WordDictionary{}\n}\n\nfunc (wd *WordDictionary) AddWord(word string) {\n\n}\n\nfunc (wd *WordDictionary) Search(word string) bool {\n    return false\n}\n"
+    "go_template": "// Design Add and Search Words Data Structure\n\npackage main\n\ntype WordDictionary struct {\n\n}\n\nfunc Constructor() WordDictionary {\n    return WordDictionary{}\n}\n\nfunc (wd *WordDictionary) AddWord(word string) {\n\n}\n\nfunc (wd *WordDictionary) Search(word string) bool {\n    return false\n}\n",
+    "cpp_template": "// Design Add and Search Words Data Structure\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass WordDictionary {\npublic:\n    WordDictionary() {\n\n    }\n\n    void AddWord(string word) {\n\n    }\n\n    bool Search(string word) {\n        return false;\n    }\n};\n",
+    "java_template": "// Design Add and Search Words Data Structure\n\nimport java.util.*;\n\nclass WordDictionary {\n    public WordDictionary() {\n\n    }\n\n    public void AddWord(String word) {\n\n    }\n\n    public boolean Search(String word) {\n        return false;\n    }\n}\n",
+    "js_template": "// Design Add and Search Words Data Structure\n\nclass WordDictionary {\n    constructor() {\n\n    }\n\n    addWord(word) {\n\n    }\n\n    search(word) {\n\n    }\n}\n"
   },
   {
     "id": "dp-on-tries-min-valid-substring",
@@ -18,13 +27,25 @@
     "difficulty": "Medium",
     "description": "You are given a 0-indexed string s and a dictionary of words. You have to break s into one or more non-overlapping substrings such that each substring is present in the dictionary. There may be some extra characters in s which are not present in any substring. Return the minimum number of extra characters left over if you break up s optimally. Use a Trie to store the dictionary and DP to find the minimum extra characters.",
     "examples": [
-      {"input": "s = \"leetscode\", dictionary = [\"leet\",\"code\",\"leetcode\"]", "output": "1 (break as \"leet\" + \"s\" + \"code\", 1 extra character 's')"},
-      {"input": "s = \"sayhelloworld\", dictionary = [\"hello\",\"world\"]", "output": "3 (break as \"say\" + \"hello\" + \"world\", 3 extra chars 's','a','y')"},
-      {"input": "s = \"abc\", dictionary = [\"abc\"]", "output": "0"}
+      {
+        "input": "s = \"leetscode\", dictionary = [\"leet\",\"code\",\"leetcode\"]",
+        "output": "1 (break as \"leet\" + \"s\" + \"code\", 1 extra character 's')"
+      },
+      {
+        "input": "s = \"sayhelloworld\", dictionary = [\"hello\",\"world\"]",
+        "output": "3 (break as \"say\" + \"hello\" + \"world\", 3 extra chars 's','a','y')"
+      },
+      {
+        "input": "s = \"abc\", dictionary = [\"abc\"]",
+        "output": "0"
+      }
     ],
     "constraints": "1 <= s.length <= 50. 1 <= dictionary.length <= 50. 1 <= dictionary[i].length <= 50. dictionary[i] and s consist of only lowercase English letters.",
     "python_template": "# Minimum Extra Characters in a String\n\nfrom typing import List\n\ndef minExtraChar(s: str, dictionary: List[str]) -> int:\n    pass\n",
-    "go_template": "// Minimum Extra Characters in a String\n\npackage main\n\nfunc minExtraChar(s string, dictionary []string) int {\n    return 0\n}\n"
+    "go_template": "// Minimum Extra Characters in a String\n\npackage main\n\nfunc minExtraChar(s string, dictionary []string) int {\n    return 0\n}\n",
+    "cpp_template": "// Minimum Extra Characters in a String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minExtraChar(string& s, vector<string>& dictionary) {\n    return 0;\n}\n",
+    "java_template": "// Minimum Extra Characters in a String\n\nclass Solution {\n    public int minExtraChar(String s, String[] dictionary) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Minimum Extra Characters in a String\n\nfunction minExtraChar(s, dictionary) {\n\n}\n"
   },
   {
     "id": "implement-trie-prefix-tree",
@@ -32,12 +53,21 @@
     "difficulty": "Medium",
     "description": "A trie (prefix tree) is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. Implement the Trie class:\n- Trie() Initializes the trie object.\n- insert(word) Inserts the string word into the trie.\n- search(word) Returns true if the string word is in the trie (exact match).\n- startsWith(prefix) Returns true if there is a previously inserted string that has the prefix prefix.",
     "examples": [
-      {"input": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]", "output": "[null,null,true,false,true,null,true]"},
-      {"input": "[\"Trie\",\"insert\",\"search\",\"startsWith\"]\n[[],[\"hello\"],[\"hell\"],[\"hell\"]]", "output": "[null,null,false,true]"}
+      {
+        "input": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]",
+        "output": "[null,null,true,false,true,null,true]"
+      },
+      {
+        "input": "[\"Trie\",\"insert\",\"search\",\"startsWith\"]\n[[],[\"hello\"],[\"hell\"],[\"hell\"]]",
+        "output": "[null,null,false,true]"
+      }
     ],
     "constraints": "1 <= word.length, prefix.length <= 2000. word and prefix consist only of lowercase English letters. At most 3 * 10^4 calls to insert, search, and startsWith.",
     "python_template": "# Implement Trie (Prefix Tree)\n\nclass Trie:\n    def __init__(self):\n        pass\n\n    def insert(self, word: str) -> None:\n        pass\n\n    def search(self, word: str) -> bool:\n        pass\n\n    def startsWith(self, prefix: str) -> bool:\n        pass\n",
-    "go_template": "// Implement Trie (Prefix Tree)\n\npackage main\n\ntype Trie struct {\n\n}\n\nfunc Constructor() Trie {\n    return Trie{}\n}\n\nfunc (t *Trie) Insert(word string) {\n\n}\n\nfunc (t *Trie) Search(word string) bool {\n    return false\n}\n\nfunc (t *Trie) StartsWith(prefix string) bool {\n    return false\n}\n"
+    "go_template": "// Implement Trie (Prefix Tree)\n\npackage main\n\ntype Trie struct {\n\n}\n\nfunc Constructor() Trie {\n    return Trie{}\n}\n\nfunc (t *Trie) Insert(word string) {\n\n}\n\nfunc (t *Trie) Search(word string) bool {\n    return false\n}\n\nfunc (t *Trie) StartsWith(prefix string) bool {\n    return false\n}\n",
+    "cpp_template": "// Implement Trie (Prefix Tree)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Trie {\npublic:\n    Trie() {\n\n    }\n\n    void Insert(string word) {\n\n    }\n\n    bool Search(string word) {\n        return false;\n    }\n\n    bool StartsWith(string prefix) {\n        return false;\n    }\n};\n",
+    "java_template": "// Implement Trie (Prefix Tree)\n\nimport java.util.*;\n\nclass Trie {\n    public Trie() {\n\n    }\n\n    public void Insert(String word) {\n\n    }\n\n    public boolean Search(String word) {\n        return false;\n    }\n\n    public boolean StartsWith(String prefix) {\n        return false;\n    }\n}\n",
+    "js_template": "// Implement Trie (Prefix Tree)\n\nclass Trie {\n    constructor() {\n\n    }\n\n    insert(word) {\n\n    }\n\n    search(word) {\n\n    }\n\n    startsWith(prefix) {\n\n    }\n}\n"
   },
   {
     "id": "word-search-ii",
@@ -45,12 +75,24 @@
     "difficulty": "Hard",
     "description": "Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells (horizontally or vertically neighboring). The same letter cell may not be used more than once in a word. Use a Trie to efficiently search for multiple words simultaneously during DFS.",
     "examples": [
-      {"input": "board = [[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words = [\"oath\",\"pea\",\"eat\",\"rain\"]", "output": "[\"eat\",\"oath\"]"},
-      {"input": "board = [[\"a\",\"b\"],[\"c\",\"d\"]], words = [\"abcb\"]", "output": "[]"},
-      {"input": "board = [[\"a\"]], words = [\"a\"]", "output": "[\"a\"]"}
+      {
+        "input": "board = [[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words = [\"oath\",\"pea\",\"eat\",\"rain\"]",
+        "output": "[\"eat\",\"oath\"]"
+      },
+      {
+        "input": "board = [[\"a\",\"b\"],[\"c\",\"d\"]], words = [\"abcb\"]",
+        "output": "[]"
+      },
+      {
+        "input": "board = [[\"a\"]], words = [\"a\"]",
+        "output": "[\"a\"]"
+      }
     ],
     "constraints": "m == board.length. n == board[i].length. 1 <= m, n <= 12. board[i][j] is a lowercase English letter. 1 <= words.length <= 3 * 10^4. 1 <= words[i].length <= 10. words[i] consists of lowercase English letters. All words are unique.",
     "python_template": "# Word Search II\n\nfrom typing import List\n\ndef findWords(board: List[List[str]], words: List[str]) -> List[str]:\n    pass\n",
-    "go_template": "// Word Search II\n\npackage main\n\nfunc findWords(board [][]byte, words []string) []string {\n    return nil\n}\n"
+    "go_template": "// Word Search II\n\npackage main\n\nfunc findWords(board [][]byte, words []string) []string {\n    return nil\n}\n",
+    "cpp_template": "// Word Search II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> findWords(vector<string>& board, vector<string>& words) {\n    return {};\n}\n",
+    "java_template": "// Word Search II\n\nclass Solution {\n    public String[] findWords(char[][] board, String[] words) {\n        return new String[]{};\n    }\n}\n",
+    "js_template": "// Word Search II\n\nfunction findWords(board, words) {\n\n}\n"
   }
 ]

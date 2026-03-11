@@ -14,7 +14,33 @@ PROGRESS_FILE = USER_DIR / "progress.json"
 PROGRESS_BACKUP_DIR = USER_DIR / "backups"
 SOLUTIONS_DIR = USER_DIR / "solutions"
 
-LANG_EXT = {"Python": ".py", "Go": ".go"}
+LANG_EXT = {"Python": ".py", "Go": ".go", "C++": ".cpp", "Java": ".java", "JavaScript": ".js"}
+
+LANG_ORDER = ["Python", "Go", "C++", "Java", "JavaScript"]
+
+TEMPLATE_KEY = {
+    "Python": "python_template",
+    "Go": "go_template",
+    "C++": "cpp_template",
+    "Java": "java_template",
+    "JavaScript": "js_template",
+}
+
+EDITOR_LANG = {
+    "Python": "python",
+    "Go": "go",
+    "C++": "cpp",
+    "Java": "java",
+    "JavaScript": "javascript",
+}
+
+LANG_DIR = {
+    "Python": "python",
+    "Go": "go",
+    "C++": "cpp",
+    "Java": "java",
+    "JavaScript": "javascript",
+}
 
 _problems_cache: dict[str, dict] | None = None
 
@@ -108,6 +134,9 @@ def get_problem(problem_id: str) -> dict:
         "constraints": "",
         "python_template": f"# {pretty}\n\ndef solve():\n    pass\n",
         "go_template": f"// {pretty}\n\npackage main\n\nfunc solve() {{\n\n}}\n",
+        "cpp_template": f"// {pretty}\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid solve() {{\n\n}}\n",
+        "java_template": f"// {pretty}\n\nclass Solution {{\n    public void solve() {{\n\n    }}\n}}\n",
+        "js_template": f"// {pretty}\n\nfunction solve() {{\n\n}}\n",
     }
 
 
@@ -156,7 +185,7 @@ def _recover_progress() -> dict:
 
 def get_solution_path(problem_id: str, lang: str) -> Path:
     ext = LANG_EXT[lang]
-    lang_dir = SOLUTIONS_DIR / lang.lower()
+    lang_dir = SOLUTIONS_DIR / LANG_DIR[lang]
     lang_dir.mkdir(parents=True, exist_ok=True)
     return lang_dir / f"{problem_id}{ext}"
 

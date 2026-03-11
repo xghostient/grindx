@@ -12,6 +12,7 @@ from textual.screen import Screen
 from ..data import (
     load_solution, save_solution, load_progress,
     save_progress, fmt_duration,
+    TEMPLATE_KEY, LANG_ORDER, EDITOR_LANG,
 )
 from ..widgets import CodeEditor
 
@@ -50,7 +51,8 @@ class SolveScreen(Screen):
     #lang-indicator {
         height: 1;
         padding: 0 1;
-        background: $accent;
+        background: $primary;
+        color: $text;
         text-align: right;
     }
 
@@ -149,7 +151,7 @@ class SolveScreen(Screen):
         if saved:
             self._initial_code = saved
             return saved
-        template_key = "python_template" if self.lang == "Python" else "go_template"
+        template_key = TEMPLATE_KEY[self.lang]
         template = self.problem.get(template_key, "")
         self._initial_code = template
         return template
@@ -250,11 +252,12 @@ class SolveScreen(Screen):
     def action_toggle_lang(self):
         editor = self.query_one("#code-editor", CodeEditor)
         save_solution(self.problem["id"], self.lang, editor.text)
-        self.lang = "Go" if self.lang == "Python" else "Python"
+        idx = LANG_ORDER.index(self.lang)
+        self.lang = LANG_ORDER[(idx + 1) % len(LANG_ORDER)]
         self.query_one("#lang-indicator", Static).update(f"  Language: {self.lang}")
         code = self._load_or_template()
         editor.text = code
-        editor.language = "python" if self.lang == "Python" else "go"
+        editor.language = EDITOR_LANG[self.lang]
 
     def action_evaluate(self):
         editor = self.query_one("#code-editor", CodeEditor)

@@ -5,12 +5,21 @@
     "difficulty": "Easy",
     "description": "You are given an array prices where prices[i] is the price of a stock on the ith day. You want to maximize profit by choosing a single day to buy and a single day in the future to sell. Return the maximum profit, or 0 if no profit is possible.",
     "examples": [
-      {"input": "prices = [7,1,5,3,6,4]", "output": "5 (buy at 1, sell at 6)"},
-      {"input": "prices = [7,6,4,3,1]", "output": "0 (no profitable transaction)"}
+      {
+        "input": "prices = [7,1,5,3,6,4]",
+        "output": "5 (buy at 1, sell at 6)"
+      },
+      {
+        "input": "prices = [7,6,4,3,1]",
+        "output": "0 (no profitable transaction)"
+      }
     ],
     "constraints": "1 <= prices.length <= 10^5. 0 <= prices[i] <= 10^4.",
     "python_template": "# Best Time to Buy and Sell Stock\n\nfrom typing import List\n\ndef maxProfit(prices: List[int]) -> int:\n    pass\n",
-    "go_template": "// Best Time to Buy and Sell Stock\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\n}\n"
+    "go_template": "// Best Time to Buy and Sell Stock\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\n}\n",
+    "cpp_template": "// Best Time to Buy and Sell Stock\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxProfit(vector<int>& prices) {\n    return 0;\n}\n",
+    "java_template": "// Best Time to Buy and Sell Stock\n\nclass Solution {\n    public int maxProfit(int[] prices) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Best Time to Buy and Sell Stock\n\nfunction maxProfit(prices) {\n\n}\n"
   },
   {
     "id": "longest-substring-without-repeating-characters",
@@ -18,13 +27,25 @@
     "difficulty": "Medium",
     "description": "Given a string s, find the length of the longest substring without repeating characters.",
     "examples": [
-      {"input": "s = \"abcabcbb\"", "output": "3 (\"abc\")"},
-      {"input": "s = \"bbbbb\"", "output": "1 (\"b\")"},
-      {"input": "s = \"pwwkew\"", "output": "3 (\"wke\")"}
+      {
+        "input": "s = \"abcabcbb\"",
+        "output": "3 (\"abc\")"
+      },
+      {
+        "input": "s = \"bbbbb\"",
+        "output": "1 (\"b\")"
+      },
+      {
+        "input": "s = \"pwwkew\"",
+        "output": "3 (\"wke\")"
+      }
     ],
     "constraints": "0 <= s.length <= 5 * 10^4. s consists of English letters, digits, symbols and spaces.",
     "python_template": "# Longest Substring Without Repeating Characters\n\ndef lengthOfLongestSubstring(s: str) -> int:\n    pass\n",
-    "go_template": "// Longest Substring Without Repeating Characters\n\npackage main\n\nfunc lengthOfLongestSubstring(s string) int {\n\n}\n"
+    "go_template": "// Longest Substring Without Repeating Characters\n\npackage main\n\nfunc lengthOfLongestSubstring(s string) int {\n\n}\n",
+    "cpp_template": "// Longest Substring Without Repeating Characters\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint lengthOfLongestSubstring(string& s) {\n    return 0;\n}\n",
+    "java_template": "// Longest Substring Without Repeating Characters\n\nclass Solution {\n    public int lengthOfLongestSubstring(String s) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Longest Substring Without Repeating Characters\n\nfunction lengthOfLongestSubstring(s) {\n\n}\n"
   },
   {
     "id": "longest-repeating-character-replacement",
@@ -32,12 +53,21 @@
     "difficulty": "Medium",
     "description": "Given a string s and an integer k, you can choose any character and change it to any other uppercase English character at most k times. Return the length of the longest substring containing the same letter after performing at most k changes.",
     "examples": [
-      {"input": "s = \"ABAB\", k = 2", "output": "4 (replace both A's or both B's)"},
-      {"input": "s = \"AABABBA\", k = 1", "output": "4 (replace one B to get \"AABA\" -> \"AAAA\")"}
+      {
+        "input": "s = \"ABAB\", k = 2",
+        "output": "4 (replace both A's or both B's)"
+      },
+      {
+        "input": "s = \"AABABBA\", k = 1",
+        "output": "4 (replace one B to get \"AABA\" -> \"AAAA\")"
+      }
     ],
     "constraints": "1 <= s.length <= 10^5. s consists of uppercase English letters. 0 <= k <= s.length.",
     "python_template": "# Longest Repeating Character Replacement\n\ndef characterReplacement(s: str, k: int) -> int:\n    pass\n",
-    "go_template": "// Longest Repeating Character Replacement\n\npackage main\n\nfunc characterReplacement(s string, k int) int {\n\n}\n"
+    "go_template": "// Longest Repeating Character Replacement\n\npackage main\n\nfunc characterReplacement(s string, k int) int {\n\n}\n",
+    "cpp_template": "// Longest Repeating Character Replacement\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint characterReplacement(string& s, int k) {\n    return 0;\n}\n",
+    "java_template": "// Longest Repeating Character Replacement\n\nclass Solution {\n    public int characterReplacement(String s, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Longest Repeating Character Replacement\n\nfunction characterReplacement(s, k) {\n\n}\n"
   },
   {
     "id": "minimum-window-substring",
@@ -45,13 +75,25 @@
     "difficulty": "Hard",
     "description": "Given two strings s and t, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If no such substring exists, return \"\".",
     "examples": [
-      {"input": "s = \"ADOBECODEBANC\", t = \"ABC\"", "output": "\"BANC\""},
-      {"input": "s = \"a\", t = \"a\"", "output": "\"a\""},
-      {"input": "s = \"a\", t = \"aa\"", "output": "\"\" (t has 2 a's but s has only 1)"}
+      {
+        "input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+        "output": "\"BANC\""
+      },
+      {
+        "input": "s = \"a\", t = \"a\"",
+        "output": "\"a\""
+      },
+      {
+        "input": "s = \"a\", t = \"aa\"",
+        "output": "\"\" (t has 2 a's but s has only 1)"
+      }
     ],
     "constraints": "1 <= s.length, t.length <= 10^5. s and t consist of uppercase and lowercase English letters.",
     "python_template": "# Minimum Window Substring\n\ndef minWindow(s: str, t: str) -> str:\n    pass\n",
-    "go_template": "// Minimum Window Substring\n\npackage main\n\nfunc minWindow(s string, t string) string {\n\n}\n"
+    "go_template": "// Minimum Window Substring\n\npackage main\n\nfunc minWindow(s string, t string) string {\n\n}\n",
+    "cpp_template": "// Minimum Window Substring\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring minWindow(string& s, string& t) {\n    return \"\";\n}\n",
+    "java_template": "// Minimum Window Substring\n\nclass Solution {\n    public String minWindow(String s, String t) {\n        return \"\";\n    }\n}\n",
+    "js_template": "// Minimum Window Substring\n\nfunction minWindow(s, t) {\n\n}\n"
   },
   {
     "id": "max-consecutive-ones-iii",
@@ -59,12 +101,21 @@
     "difficulty": "Medium",
     "description": "Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.",
     "examples": [
-      {"input": "nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2", "output": "6 (flip zeros at index 5 and 10)"},
-      {"input": "nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3", "output": "10"}
+      {
+        "input": "nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2",
+        "output": "6 (flip zeros at index 5 and 10)"
+      },
+      {
+        "input": "nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3",
+        "output": "10"
+      }
     ],
     "constraints": "1 <= nums.length <= 10^5. nums[i] is either 0 or 1. 0 <= k <= nums.length.",
     "python_template": "# Max Consecutive Ones III\n\nfrom typing import List\n\ndef longestOnes(nums: List[int], k: int) -> int:\n    pass\n",
-    "go_template": "// Max Consecutive Ones III\n\npackage main\n\nfunc longestOnes(nums []int, k int) int {\n\n}\n"
+    "go_template": "// Max Consecutive Ones III\n\npackage main\n\nfunc longestOnes(nums []int, k int) int {\n\n}\n",
+    "cpp_template": "// Max Consecutive Ones III\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestOnes(vector<int>& nums, int k) {\n    return 0;\n}\n",
+    "java_template": "// Max Consecutive Ones III\n\nclass Solution {\n    public int longestOnes(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Max Consecutive Ones III\n\nfunction longestOnes(nums, k) {\n\n}\n"
   },
   {
     "id": "fruits-baskets",
@@ -72,13 +123,25 @@
     "difficulty": "Medium",
     "description": "You are visiting a farm with a row of fruit trees. You have two baskets and each basket can hold only one type of fruit. Starting from any tree, you must pick exactly one fruit from every tree moving right. You stop when you would have to pick a third type. Return the maximum number of fruits you can pick.",
     "examples": [
-      {"input": "fruits = [1,2,1]", "output": "3 (pick all)"},
-      {"input": "fruits = [0,1,2,2]", "output": "3 (pick [1,2,2])"},
-      {"input": "fruits = [1,2,3,2,2]", "output": "4 (pick [2,3,2,2])"}
+      {
+        "input": "fruits = [1,2,1]",
+        "output": "3 (pick all)"
+      },
+      {
+        "input": "fruits = [0,1,2,2]",
+        "output": "3 (pick [1,2,2])"
+      },
+      {
+        "input": "fruits = [1,2,3,2,2]",
+        "output": "4 (pick [2,3,2,2])"
+      }
     ],
     "constraints": "1 <= fruits.length <= 10^5. 0 <= fruits[i] < fruits.length.",
     "python_template": "# Fruit Into Baskets\n\nfrom typing import List\n\ndef totalFruit(fruits: List[int]) -> int:\n    pass\n",
-    "go_template": "// Fruit Into Baskets\n\npackage main\n\nfunc totalFruit(fruits []int) int {\n\n}\n"
+    "go_template": "// Fruit Into Baskets\n\npackage main\n\nfunc totalFruit(fruits []int) int {\n\n}\n",
+    "cpp_template": "// Fruit Into Baskets\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint totalFruit(vector<int>& fruits) {\n    return 0;\n}\n",
+    "java_template": "// Fruit Into Baskets\n\nclass Solution {\n    public int totalFruit(int[] fruits) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Fruit Into Baskets\n\nfunction totalFruit(fruits) {\n\n}\n"
   },
   {
     "id": "longest-k-uniq-chars-substring",
@@ -86,13 +149,25 @@
     "difficulty": "Medium",
     "description": "Given a string s and an integer k, return the length of the longest substring that contains at most k distinct characters.",
     "examples": [
-      {"input": "s = \"eceba\", k = 2", "output": "3 (\"ece\")"},
-      {"input": "s = \"aa\", k = 1", "output": "2 (\"aa\")"},
-      {"input": "s = \"aabacbebebe\", k = 3", "output": "7 (\"cbebebe\")"}
+      {
+        "input": "s = \"eceba\", k = 2",
+        "output": "3 (\"ece\")"
+      },
+      {
+        "input": "s = \"aa\", k = 1",
+        "output": "2 (\"aa\")"
+      },
+      {
+        "input": "s = \"aabacbebebe\", k = 3",
+        "output": "7 (\"cbebebe\")"
+      }
     ],
     "constraints": "1 <= s.length <= 5 * 10^4. 0 <= k <= 50. s consists of lowercase English letters.",
     "python_template": "# Longest Substring with At Most K Distinct Characters\n\ndef lengthOfLongestSubstringKDistinct(s: str, k: int) -> int:\n    pass\n",
-    "go_template": "// Longest Substring with At Most K Distinct Characters\n\npackage main\n\nfunc lengthOfLongestSubstringKDistinct(s string, k int) int {\n\n}\n"
+    "go_template": "// Longest Substring with At Most K Distinct Characters\n\npackage main\n\nfunc lengthOfLongestSubstringKDistinct(s string, k int) int {\n\n}\n",
+    "cpp_template": "// Longest Substring with At Most K Distinct Characters\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint lengthOfLongestSubstringKDistinct(string& s, int k) {\n    return 0;\n}\n",
+    "java_template": "// Longest Substring with At Most K Distinct Characters\n\nclass Solution {\n    public int lengthOfLongestSubstringKDistinct(String s, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Longest Substring with At Most K Distinct Characters\n\nfunction lengthOfLongestSubstringKDistinct(s, k) {\n\n}\n"
   },
   {
     "id": "count-k-uniq-elem-subarray",
@@ -100,12 +175,21 @@
     "difficulty": "Hard",
     "description": "Given an integer array nums and an integer k, return the number of good subarrays of nums. A good subarray has exactly k different integers. Hint: exactly(k) = atMost(k) - atMost(k-1).",
     "examples": [
-      {"input": "nums = [1,2,1,2,3], k = 2", "output": "7 ([1,2],[2,1],[1,2],[2,3],[1,2,1],[2,1,2],[1,2,1,2])"},
-      {"input": "nums = [1,2,1,3,4], k = 3", "output": "3 ([1,2,1,3],[2,1,3],[1,3,4])"}
+      {
+        "input": "nums = [1,2,1,2,3], k = 2",
+        "output": "7 ([1,2],[2,1],[1,2],[2,3],[1,2,1],[2,1,2],[1,2,1,2])"
+      },
+      {
+        "input": "nums = [1,2,1,3,4], k = 3",
+        "output": "3 ([1,2,1,3],[2,1,3],[1,3,4])"
+      }
     ],
     "constraints": "1 <= nums.length <= 2 * 10^4. 1 <= nums[i], k <= nums.length.",
     "python_template": "# Subarrays with K Different Integers\n\nfrom typing import List\n\ndef subarraysWithKDistinct(nums: List[int], k: int) -> int:\n    pass\n",
-    "go_template": "// Subarrays with K Different Integers\n\npackage main\n\nfunc subarraysWithKDistinct(nums []int, k int) int {\n\n}\n"
+    "go_template": "// Subarrays with K Different Integers\n\npackage main\n\nfunc subarraysWithKDistinct(nums []int, k int) int {\n\n}\n",
+    "cpp_template": "// Subarrays with K Different Integers\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint subarraysWithKDistinct(vector<int>& nums, int k) {\n    return 0;\n}\n",
+    "java_template": "// Subarrays with K Different Integers\n\nclass Solution {\n    public int subarraysWithKDistinct(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Subarrays with K Different Integers\n\nfunction subarraysWithKDistinct(nums, k) {\n\n}\n"
   },
   {
     "id": "binary-subarr-with-goal",
@@ -113,12 +197,21 @@
     "difficulty": "Medium",
     "description": "Given a binary array nums and an integer goal, return the number of non-empty subarrays with a sum equal to goal. Hint: count(goal) = atMost(goal) - atMost(goal-1).",
     "examples": [
-      {"input": "nums = [1,0,1,0,1], goal = 2", "output": "4 ([1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1])"},
-      {"input": "nums = [0,0,0,0,0], goal = 0", "output": "15"}
+      {
+        "input": "nums = [1,0,1,0,1], goal = 2",
+        "output": "4 ([1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1])"
+      },
+      {
+        "input": "nums = [0,0,0,0,0], goal = 0",
+        "output": "15"
+      }
     ],
     "constraints": "1 <= nums.length <= 3 * 10^4. nums[i] is either 0 or 1. 0 <= goal <= nums.length.",
     "python_template": "# Binary Subarrays With Sum\n\nfrom typing import List\n\ndef numSubarraysWithSum(nums: List[int], goal: int) -> int:\n    pass\n",
-    "go_template": "// Binary Subarrays With Sum\n\npackage main\n\nfunc numSubarraysWithSum(nums []int, goal int) int {\n\n}\n"
+    "go_template": "// Binary Subarrays With Sum\n\npackage main\n\nfunc numSubarraysWithSum(nums []int, goal int) int {\n\n}\n",
+    "cpp_template": "// Binary Subarrays With Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numSubarraysWithSum(vector<int>& nums, int goal) {\n    return 0;\n}\n",
+    "java_template": "// Binary Subarrays With Sum\n\nclass Solution {\n    public int numSubarraysWithSum(int[] nums, int goal) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Binary Subarrays With Sum\n\nfunction numSubarraysWithSum(nums, goal) {\n\n}\n"
   },
   {
     "id": "nice-subarray",
@@ -126,13 +219,25 @@
     "difficulty": "Medium",
     "description": "Given an array of integers nums and an integer k, return the number of nice subarrays. A subarray is nice if it contains exactly k odd numbers. Hint: convert to binary (odd=1, even=0) and use the same pattern as Binary Subarrays With Sum.",
     "examples": [
-      {"input": "nums = [1,1,2,1,1], k = 3", "output": "2 ([1,1,2,1] and [1,2,1,1])"},
-      {"input": "nums = [2,4,6], k = 1", "output": "0"},
-      {"input": "nums = [2,2,2,1,2,2,1,2,2,2], k = 2", "output": "16"}
+      {
+        "input": "nums = [1,1,2,1,1], k = 3",
+        "output": "2 ([1,1,2,1] and [1,2,1,1])"
+      },
+      {
+        "input": "nums = [2,4,6], k = 1",
+        "output": "0"
+      },
+      {
+        "input": "nums = [2,2,2,1,2,2,1,2,2,2], k = 2",
+        "output": "16"
+      }
     ],
     "constraints": "1 <= nums.length <= 50000. 1 <= nums[i] <= 10^5. 1 <= k <= nums.length.",
     "python_template": "# Count Number of Nice Subarrays\n\nfrom typing import List\n\ndef numberOfSubarrays(nums: List[int], k: int) -> int:\n    pass\n",
-    "go_template": "// Count Number of Nice Subarrays\n\npackage main\n\nfunc numberOfSubarrays(nums []int, k int) int {\n\n}\n"
+    "go_template": "// Count Number of Nice Subarrays\n\npackage main\n\nfunc numberOfSubarrays(nums []int, k int) int {\n\n}\n",
+    "cpp_template": "// Count Number of Nice Subarrays\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numberOfSubarrays(vector<int>& nums, int k) {\n    return 0;\n}\n",
+    "java_template": "// Count Number of Nice Subarrays\n\nclass Solution {\n    public int numberOfSubarrays(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Count Number of Nice Subarrays\n\nfunction numberOfSubarrays(nums, k) {\n\n}\n"
   },
   {
     "id": "substring-containing-all-three-chars",
@@ -140,13 +245,25 @@
     "difficulty": "Medium",
     "description": "Given a string s consisting only of characters 'a', 'b', and 'c', return the number of substrings that contain at least one occurrence of all three characters.",
     "examples": [
-      {"input": "s = \"abcabc\"", "output": "10"},
-      {"input": "s = \"aaacb\"", "output": "3"},
-      {"input": "s = \"abc\"", "output": "1"}
+      {
+        "input": "s = \"abcabc\"",
+        "output": "10"
+      },
+      {
+        "input": "s = \"aaacb\"",
+        "output": "3"
+      },
+      {
+        "input": "s = \"abc\"",
+        "output": "1"
+      }
     ],
     "constraints": "3 <= s.length <= 5 * 10^4. s consists only of 'a', 'b', and 'c'.",
     "python_template": "# Number of Substrings Containing All Three Characters\n\ndef numberOfSubstrings(s: str) -> int:\n    pass\n",
-    "go_template": "// Number of Substrings Containing All Three Characters\n\npackage main\n\nfunc numberOfSubstrings(s string) int {\n\n}\n"
+    "go_template": "// Number of Substrings Containing All Three Characters\n\npackage main\n\nfunc numberOfSubstrings(s string) int {\n\n}\n",
+    "cpp_template": "// Number of Substrings Containing All Three Characters\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numberOfSubstrings(string& s) {\n    return 0;\n}\n",
+    "java_template": "// Number of Substrings Containing All Three Characters\n\nclass Solution {\n    public int numberOfSubstrings(String s) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Number of Substrings Containing All Three Characters\n\nfunction numberOfSubstrings(s) {\n\n}\n"
   },
   {
     "id": "maximum-points-you-can-obtain-from-cards",
@@ -154,13 +271,25 @@
     "difficulty": "Medium",
     "description": "Given an array cardPoints and the integer k, return the maximum score you can obtain by taking exactly k cards. You can take cards from the beginning or the end of the row. Hint: taking k cards from ends = total - minimum subarray of size n-k.",
     "examples": [
-      {"input": "cardPoints = [1,2,3,4,5,6,1], k = 3", "output": "12 (take 1,6,5)"},
-      {"input": "cardPoints = [2,2,2], k = 2", "output": "4"},
-      {"input": "cardPoints = [9,7,7,9,7,7,9], k = 7", "output": "55 (take all)"}
+      {
+        "input": "cardPoints = [1,2,3,4,5,6,1], k = 3",
+        "output": "12 (take 1,6,5)"
+      },
+      {
+        "input": "cardPoints = [2,2,2], k = 2",
+        "output": "4"
+      },
+      {
+        "input": "cardPoints = [9,7,7,9,7,7,9], k = 7",
+        "output": "55 (take all)"
+      }
     ],
     "constraints": "1 <= cardPoints.length <= 10^5. 1 <= cardPoints[i] <= 10^4. 1 <= k <= cardPoints.length.",
     "python_template": "# Maximum Points You Can Obtain from Cards\n\nfrom typing import List\n\ndef maxScore(cardPoints: List[int], k: int) -> int:\n    pass\n",
-    "go_template": "// Maximum Points You Can Obtain from Cards\n\npackage main\n\nfunc maxScore(cardPoints []int, k int) int {\n\n}\n"
+    "go_template": "// Maximum Points You Can Obtain from Cards\n\npackage main\n\nfunc maxScore(cardPoints []int, k int) int {\n\n}\n",
+    "cpp_template": "// Maximum Points You Can Obtain from Cards\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxScore(vector<int>& cardPoints, int k) {\n    return 0;\n}\n",
+    "java_template": "// Maximum Points You Can Obtain from Cards\n\nclass Solution {\n    public int maxScore(int[] cardPoints, int k) {\n        return 0;\n    }\n}\n",
+    "js_template": "// Maximum Points You Can Obtain from Cards\n\nfunction maxScore(cardPoints, k) {\n\n}\n"
   },
   {
     "id": "permutation-in-string",
@@ -168,12 +297,21 @@
     "difficulty": "Medium",
     "description": "Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise. In other words, return true if one of s1's permutations is a substring of s2.",
     "examples": [
-      {"input": "s1 = \"ab\", s2 = \"eidbaooo\"", "output": "true (s2 contains \"ba\")"},
-      {"input": "s1 = \"ab\", s2 = \"eidboaoo\"", "output": "false"}
+      {
+        "input": "s1 = \"ab\", s2 = \"eidbaooo\"",
+        "output": "true (s2 contains \"ba\")"
+      },
+      {
+        "input": "s1 = \"ab\", s2 = \"eidboaoo\"",
+        "output": "false"
+      }
     ],
     "constraints": "1 <= s1.length, s2.length <= 10^4. s1 and s2 consist of lowercase English letters.",
     "python_template": "# Permutation in String\n\ndef checkInclusion(s1: str, s2: str) -> bool:\n    pass\n",
-    "go_template": "// Permutation in String\n\npackage main\n\nfunc checkInclusion(s1 string, s2 string) bool {\n\n}\n"
+    "go_template": "// Permutation in String\n\npackage main\n\nfunc checkInclusion(s1 string, s2 string) bool {\n\n}\n",
+    "cpp_template": "// Permutation in String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool checkInclusion(string& s1, string& s2) {\n    return false;\n}\n",
+    "java_template": "// Permutation in String\n\nclass Solution {\n    public boolean checkInclusion(String s1, String s2) {\n        return false;\n    }\n}\n",
+    "js_template": "// Permutation in String\n\nfunction checkInclusion(s1, s2) {\n\n}\n"
   },
   {
     "id": "sliding-window-maximum",
@@ -181,11 +319,20 @@
     "difficulty": "Hard",
     "description": "Given an array of integers nums and a sliding window of size k moving from left to right, return the max value in each window position. Use a deque for O(n) solution.",
     "examples": [
-      {"input": "nums = [1,3,-1,-3,5,3,6,7], k = 3", "output": "[3,3,5,5,6,7]"},
-      {"input": "nums = [1], k = 1", "output": "[1]"}
+      {
+        "input": "nums = [1,3,-1,-3,5,3,6,7], k = 3",
+        "output": "[3,3,5,5,6,7]"
+      },
+      {
+        "input": "nums = [1], k = 1",
+        "output": "[1]"
+      }
     ],
     "constraints": "1 <= nums.length <= 10^5. -10^4 <= nums[i] <= 10^4. 1 <= k <= nums.length.",
     "python_template": "# Sliding Window Maximum\n\nfrom typing import List\nfrom collections import deque\n\ndef maxSlidingWindow(nums: List[int], k: int) -> List[int]:\n    pass\n",
-    "go_template": "// Sliding Window Maximum\n\npackage main\n\nfunc maxSlidingWindow(nums []int, k int) []int {\n\n}\n"
+    "go_template": "// Sliding Window Maximum\n\npackage main\n\nfunc maxSlidingWindow(nums []int, k int) []int {\n\n}\n",
+    "cpp_template": "// Sliding Window Maximum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> maxSlidingWindow(vector<int>& nums, int k) {\n    return {};\n}\n",
+    "java_template": "// Sliding Window Maximum\n\nclass Solution {\n    public int[] maxSlidingWindow(int[] nums, int k) {\n        return new int[]{};\n    }\n}\n",
+    "js_template": "// Sliding Window Maximum\n\nfunction maxSlidingWindow(nums, k) {\n\n}\n"
   }
 ]
