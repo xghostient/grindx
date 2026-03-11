@@ -5,7 +5,7 @@ Distraction-free DSA practice in your terminal. Zero network footprint.
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-![grindx demo](demo-grindx.gif)
+![grindx demo](https://raw.githubusercontent.com/xghostient/grindx/main/demo-grindx.gif)
 
 ## Why grindx?
 
