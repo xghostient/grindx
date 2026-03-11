@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "grindx"
-version = "0.1.0"
+version = "0.2.0"
 description = "Distraction-free DSA practice in your terminal"
 readme = "README.md"
 license = "MIT"
@@ -22,6 +22,9 @@ dependencies = [
     "tree-sitter>=0.21.0",
     "tree-sitter-python>=0.21.0",
     "tree-sitter-go>=0.21.0",
+    "tree-sitter-cpp>=0.23.0",
+    "tree-sitter-java>=0.23.0",
+    "tree-sitter-javascript>=0.21.0",
 ]
 
 [project.urls]

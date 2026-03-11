@@ -5,12 +5,14 @@ Distraction-free DSA practice in your terminal. Zero network footprint.
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
+![grindx demo](demo-grindx.gif)
+
 ## Why grindx?
 
 - **Zero network calls** — everything runs locally, no tracking (optional AI review)
 - **Terminal-native** — practice DSA without leaving your terminal or opening a browser
 - **Multiple sheets** — Striver A2Z (316), Blind 75, NeetCode 150, Grind 75 built-in
-- **Python & Go** — switch languages on the fly with `Ctrl+L`
+- **5 languages** — Python, Go, C++, Java, JavaScript — switch on the fly with `Ctrl+L`
 - **Progress tracking** — solved/in-progress/not-started states, streaks, best times
 - **Bookmarks & filters** — filter by difficulty (Easy/Medium/Hard) or bookmarked problems
 
@@ -71,7 +73,7 @@ python -m grindx  # or as a module
 | `Ctrl+S` | Save code |
 | `Ctrl+D` | Toggle solved |
 | `Ctrl+E` | AI review |
-| `Ctrl+L` | Switch Python / Go |
+| `Ctrl+L` | Cycle language (Python → Go → C++ → Java → JS) |
 | `Ctrl+B` | Toggle bookmark |
 | `Ctrl+T` | Pause / resume timer |
 | `Ctrl+R` | Reset timer |
