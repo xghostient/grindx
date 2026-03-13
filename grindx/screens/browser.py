@@ -8,6 +8,7 @@ from textual.screen import Screen
 
 from ..data import (
     load_sheet, load_progress, get_problem, short_topic, get_solution_path,
+    LANG_ORDER,
 )
 from ..widgets import TopicItem, ProblemItem
 
@@ -160,9 +161,8 @@ class ProblemBrowser(Screen):
             prob = get_problem(pid)
             solved = self.progress.get(pid, {}).get("solved", False)
             bookmarked = self.progress.get(pid, {}).get("bookmarked", False)
-            started = not solved and (
-                get_solution_path(pid, "Python").exists()
-                or get_solution_path(pid, "Go").exists()
+            started = not solved and any(
+                get_solution_path(pid, lang).exists() for lang in LANG_ORDER
             )
             problem_list.append(ProblemItem(prob, solved, started, bookmarked))
 

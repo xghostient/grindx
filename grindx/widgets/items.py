@@ -41,7 +41,8 @@ class ProblemItem(ListItem):
             diff_tag = f"[{diff_color}]{diff:<6}[/] "
         else:
             diff_tag = "       "
+        safe_name = self.problem['name'].replace("[", "\\[")
         yield Label(
-            f" {marker}  {diff_tag}{self.problem['name']}{bm}",
+            f" {marker}  {diff_tag}{safe_name}{bm}",
             markup=True,
         )

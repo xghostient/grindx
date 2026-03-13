@@ -59,6 +59,19 @@ AI Review (Ctrl+E):
 Data:
   Progress, solutions, and backups are stored in ~/.grindx/
   Built-in sheets: Blind 75, Grind 75, NeetCode 150, Striver A2Z
+
+Custom Sheets & Problems:
+  Add custom sheets:   ~/.grindx/sheets/my-list.json
+  Add custom problems: ~/.grindx/problems/custom.json
+
+  Sheet format:
+    {"Topic Name": ["my-problem", "another-problem"]}
+
+  Problem format:
+    [{"id": "my-problem", "name": "My Problem", "difficulty": "Medium",
+      "description": "...", "python_template": "def solve():\\n    pass\\n"}]
+
+  Use grindx --list-problems to see all available problem IDs.
 """
 
 
@@ -77,6 +90,10 @@ def main():
         "-v", "--version", action="store_true",
         help="Show version and exit",
     )
+    parser.add_argument(
+        "--list-problems", action="store_true",
+        help="List all available problem IDs",
+    )
 
     args = parser.parse_args()
 
@@ -86,6 +103,16 @@ def main():
 
     if args.version:
         print(f"grindx {__version__}")
+        sys.exit(0)
+
+    if args.list_problems:
+        from .data import load_all_problems
+        problems = load_all_problems()
+        for pid in sorted(problems):
+            p = problems[pid]
+            diff = p.get("difficulty", "")
+            print(f"  {pid:40s} {diff}")
+        print(f"\n  {len(problems)} problems available")
         sys.exit(0)
 
     from textual.app import App

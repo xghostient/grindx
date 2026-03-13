@@ -172,11 +172,11 @@ class CodeEditor(TextArea):
             return
 
         if event.key == "enter":
-            row, _col = self.cursor_location
+            row, col = self.cursor_location
             current_line = self.document.get_line(row)
             indent = re.match(r"^(\s*)", current_line).group(1)
-            stripped = current_line.rstrip()
-            if stripped.endswith(":") or stripped.endswith("{"):
+            text_before_cursor = current_line[:col].rstrip()
+            if text_before_cursor.endswith(":") or text_before_cursor.endswith("{"):
                 indent += "    "
             event.stop()
             event.prevent_default()

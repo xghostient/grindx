@@ -1,7 +1,9 @@
 """Data layer — loading, saving, slug helpers."""
 
 import json
+import os
 import shutil
+import tempfile
 from datetime import datetime
 from pathlib import Path
 
@@ -13,6 +15,8 @@ USER_DIR = Path.home() / ".grindx"
 PROGRESS_FILE = USER_DIR / "progress.json"
 PROGRESS_BACKUP_DIR = USER_DIR / "backups"
 SOLUTIONS_DIR = USER_DIR / "solutions"
+USER_SHEETS_DIR = USER_DIR / "sheets"
+USER_PROBLEMS_DIR = USER_DIR / "problems"
 
 LANG_EXT = {"Python": ".py", "Go": ".go", "C++": ".cpp", "Java": ".java", "JavaScript": ".js"}
 
@@ -71,22 +75,28 @@ def short_topic(key: str) -> str:
 def list_sheets() -> list[dict]:
     """Return available sheets as [{id, name, path, count}]."""
     sheets = []
-    if not SHEETS_DIR.exists():
-        return sheets
-    for path in sorted(SHEETS_DIR.glob("*.json")):
-        try:
-            with open(path) as f:
-                data = json.load(f)
-            total = sum(len(v) for v in data.values())
-            name = path.stem.replace("-", " ").title()
-            sheets.append({
-                "id": path.stem,
-                "name": name,
-                "path": path,
-                "count": total,
-            })
-        except (json.JSONDecodeError, OSError):
+    dirs = [SHEETS_DIR, USER_SHEETS_DIR]
+    seen_ids = set()
+    for d in dirs:
+        if not d.exists():
             continue
+        for path in sorted(d.glob("*.json")):
+            if path.stem in seen_ids:
+                continue
+            seen_ids.add(path.stem)
+            try:
+                with open(path) as f:
+                    data = json.load(f)
+                total = sum(len(v) for v in data.values())
+                name = path.stem.replace("-", " ").title()
+                sheets.append({
+                    "id": path.stem,
+                    "name": name,
+                    "path": path,
+                    "count": total,
+                })
+            except (json.JSONDecodeError, OSError):
+                continue
     return sheets
 
 
@@ -102,20 +112,21 @@ def load_sheet(sheet_path: Path) -> dict[str, list[str]]:
 
 
 def load_all_problems() -> dict[str, dict]:
-    """Load all problems from problems/*.json into {id: problem_dict}."""
+    """Load all problems from bundled + user problems/*.json into {id: problem_dict}."""
     global _problems_cache
     if _problems_cache is not None:
         return _problems_cache
     _problems_cache = {}
-    if not PROBLEMS_DIR.exists():
-        return _problems_cache
-    for path in PROBLEMS_DIR.glob("*.json"):
-        try:
-            with open(path) as f:
-                for p in json.load(f):
-                    _problems_cache[p["id"]] = p
-        except (json.JSONDecodeError, KeyError, OSError):
+    for d in [PROBLEMS_DIR, USER_PROBLEMS_DIR]:
+        if not d.exists():
             continue
+        for path in d.glob("*.json"):
+            try:
+                with open(path) as f:
+                    for p in json.load(f):
+                        _problems_cache[p["id"]] = p
+            except (json.JSONDecodeError, KeyError, OSError):
+                continue
     return _problems_cache
 
 
@@ -163,8 +174,15 @@ def save_progress(progress: dict):
         backups = sorted(PROGRESS_BACKUP_DIR.glob("progress_*.json"))
         for old in backups[:-10]:
             old.unlink()
-    with open(PROGRESS_FILE, "w") as f:
-        json.dump(progress, f, indent=2)
+    fd, tmp = tempfile.mkstemp(dir=USER_DIR, suffix=".json")
+    try:
+        with os.fdopen(fd, "w") as f:
+            json.dump(progress, f, indent=2)
+        os.replace(tmp, PROGRESS_FILE)
+    except Exception:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+        raise
 
 
 def _recover_progress() -> dict:

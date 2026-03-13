@@ -102,8 +102,9 @@ class SolveScreen(Screen):
                 diff_color = {"Easy": "green", "Medium": "yellow", "Hard": "red"}.get(diff, "white")
                 bm = self.progress.get(pid, {}).get("bookmarked", False)
                 bm_str = "  ★ Bookmarked" if bm else ""
+                safe_name = self.problem['name'].replace("[", "\\[")
                 yield Static(
-                    f"[bold]{self.problem['name']}[/bold]{bm_str}",
+                    f"[bold]{safe_name}[/bold]{bm_str}",
                     id="problem-title", markup=True,
                 )
                 yield Static(
@@ -143,8 +144,8 @@ class SolveScreen(Screen):
         lines = ["─── Examples ───"]
         for i, ex in enumerate(examples, 1):
             lines.append(f"\nExample {i}:")
-            lines.append(f"  Input:  {ex['input']}")
-            lines.append(f"  Output: {ex['output']}")
+            lines.append(f"  Input:  {ex.get('input', 'N/A')}")
+            lines.append(f"  Output: {ex.get('output', 'N/A')}")
         return "\n".join(lines)
 
     def _load_or_template(self) -> str:
@@ -201,20 +202,22 @@ class SolveScreen(Screen):
 
     def _save_timer(self):
         elapsed = self._get_elapsed()
-        if elapsed > 0:
-            pid = self.problem["id"]
-            if pid not in self.progress:
-                self.progress[pid] = {}
-            best = self.progress[pid].get("best_time")
-            if best is None or elapsed < best:
-                self.progress[pid]["best_time"] = round(elapsed, 1)
-                save_progress(self.progress)
+        if elapsed < 10:
+            return
+        pid = self.problem["id"]
+        if pid not in self.progress:
+            self.progress[pid] = {}
+        best = self.progress[pid].get("best_time")
+        if best is None or best < 10 or elapsed < best:
+            self.progress[pid]["best_time"] = round(elapsed, 1)
+            save_progress(self.progress)
 
     # ─── Actions ───
 
     def action_save(self):
         editor = self.query_one("#code-editor", CodeEditor)
         save_solution(self.problem["id"], self.lang, editor.text)
+        self._initial_code = editor.text
         self._refresh_status("✓ Saved!")
 
     def action_mark_done(self):
@@ -225,6 +228,12 @@ class SolveScreen(Screen):
         if self.progress[pid]["solved"]:
             self.progress[pid]["solved_date"] = date.today().isoformat()
             self._save_timer()
+            if self._timer_running and self._timer_interval:
+                self._timer_elapsed += time.monotonic() - self._timer_start
+                self._timer_running = False
+                self._timer_interval.stop()
+                self._timer_interval = None
+                self._update_timer_display()
         save_progress(self.progress)
         self._refresh_status()
 
@@ -236,8 +245,9 @@ class SolveScreen(Screen):
         save_progress(self.progress)
         bm = self.progress[pid]["bookmarked"]
         bm_str = "  ★ Bookmarked" if bm else ""
+        safe_name = self.problem['name'].replace("[", "\\[")
         self.query_one("#problem-title", Static).update(
-            f"[bold]{self.problem['name']}[/bold]{bm_str}"
+            f"[bold]{safe_name}[/bold]{bm_str}"
         )
         self._refresh_status("★ Bookmarked!" if bm else "Bookmark removed")
 
@@ -286,7 +296,6 @@ class SolveScreen(Screen):
         editor = self.query_one("#code-editor", CodeEditor)
         if editor.text.strip() and editor.text != self._initial_code:
             save_solution(self.problem["id"], self.lang, editor.text)
-        self._save_timer()
         if self._timer_interval:
             self._timer_interval.stop()
         self.app.pop_screen()
