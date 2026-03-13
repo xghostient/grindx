@@ -104,6 +104,13 @@ def _build_prompt(problem: dict, code: str, lang: str) -> str:
 
 You MUST respond in exactly this format with these exact headers. Do not skip any section.
 
+The VERY FIRST line of your response MUST be exactly one of:
+STATUS:PASS
+STATUS:FAIL
+STATUS:PARTIAL
+
+This line is machine-parsed. Do not add anything else on this line.
+
 ## Verdict
 PASS, FAIL, or PARTIAL. One word, then one-line reason.
 

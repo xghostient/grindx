@@ -3,12 +3,12 @@
 from textual.app import ComposeResult
 from textual.binding import Binding
 from textual.containers import Horizontal
-from textual.widgets import Header, Footer, Static, ListView
+from textual.widgets import Header, Footer, Static, ListView, Input
 from textual.screen import Screen
 
 from ..data import (
     load_sheet, load_progress, get_problem, short_topic, get_solution_path,
-    LANG_ORDER,
+    LANG_ORDER, load_all_problems,
 )
 from ..widgets import TopicItem, ProblemItem
 
@@ -25,6 +25,7 @@ class ProblemBrowser(Screen):
         Binding("a", "filter_all", "All"),
         Binding("b", "filter_bookmarked", "Bookmarked"),
         Binding("s", "show_stats", "Stats"),
+        Binding("slash", "search", "Search"),
     ]
 
     CSS = """
@@ -62,6 +63,13 @@ class ProblemBrowser(Screen):
         padding: 0 1;
         background: $accent;
     }
+
+    #search-input {
+        width: 100%;
+        display: none;
+    }
+
+    #search-input.visible { display: block; }
     """
 
     def __init__(self, sheet: dict):
@@ -73,6 +81,8 @@ class ProblemBrowser(Screen):
         self.current_topic = None
         self.difficulty_filter = None
         self._problem_list_index: int | None = None
+        self._search_active = False
+        self._search_query = ""
 
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
@@ -81,6 +91,7 @@ class ProblemBrowser(Screen):
             id="sheet-name-bar",
         )
         yield Static(self._filter_bar_text(), id="filter-bar")
+        yield Input(placeholder="Search problems... (Esc to close)", id="search-input")
         with Horizontal(id="browser-container"):
             yield ListView(*self._build_topic_items(), id="topic-list")
             yield ListView(id="problem-list")
@@ -118,8 +129,8 @@ class ProblemBrowser(Screen):
             if f == key:
                 parts.append(f"[reverse] {shortcut}:{label} [/]")
             else:
-                parts.append(f"[{shortcut}]{label}")
-        return " Filter: " + "  ".join(parts) + "  |  [s]Stats"
+                parts.append(f"{shortcut}:{label}")
+        return " Filter: " + "  ".join(parts) + "  |  s:Stats  /:Search"
 
     def _build_topic_items(self) -> list[TopicItem]:
         items = []
@@ -224,6 +235,90 @@ class ProblemBrowser(Screen):
                 all_problems.append(get_problem(pid))
         self.app.push_screen(StatsScreen(all_problems, self.progress, self.all_topics))
 
+    # ─── Search ───
+
+    def action_search(self):
+        if self._search_active:
+            return
+        self._search_active = True
+        search_input = self.query_one("#search-input", Input)
+        search_input.add_class("visible")
+        search_input.value = ""
+        search_input.focus()
+
+    def _close_search(self):
+        self._search_active = False
+        self._search_query = ""
+        search_input = self.query_one("#search-input", Input)
+        search_input.remove_class("visible")
+        search_input.value = ""
+        self._refresh_topic_list()
+        self._refresh_problem_list()
+        self.query_one("#topic-list", ListView).focus()
+
+    def on_input_changed(self, event: Input.Changed) -> None:
+        if not self._search_active:
+            return
+        query = event.value.strip().lower()
+        self._search_query = query
+        if not query:
+            self._refresh_problem_list()
+            return
+        self._show_search_results(query)
+
+    def _show_search_results(self, query: str):
+        problem_list = self.query_one("#problem-list", ListView)
+        problem_list.clear()
+        all_ids = set()
+        for ids in self.all_topics.values():
+            all_ids.update(ids)
+        for pid in sorted(all_ids):
+            prob = get_problem(pid)
+            name = prob.get("name", "").lower()
+            category = prob.get("category", "").lower()
+            difficulty = prob.get("difficulty", "").lower()
+            if query in name or query in pid or query in category or query in difficulty:
+                if self.difficulty_filter:
+                    if self.difficulty_filter == "Bookmarked":
+                        if not self.progress.get(pid, {}).get("bookmarked", False):
+                            continue
+                    elif prob.get("difficulty") != self.difficulty_filter:
+                        continue
+                solved = self.progress.get(pid, {}).get("solved", False)
+                bookmarked = self.progress.get(pid, {}).get("bookmarked", False)
+                started = not solved and any(
+                    get_solution_path(pid, lang).exists() for lang in LANG_ORDER
+                )
+                problem_list.append(ProblemItem(prob, solved, started, bookmarked))
+
+    def on_input_submitted(self, event: Input.Submitted) -> None:
+        if self._search_active:
+            self.query_one("#problem-list", ListView).focus()
+
+    def on_key(self, event) -> None:
+        if self._search_active and event.key == "escape":
+            event.stop()
+            event.prevent_default()
+            self._close_search()
+            return
+        if self._search_active and event.key == "down":
+            focused = self.focused
+            if isinstance(focused, Input):
+                event.stop()
+                event.prevent_default()
+                self.query_one("#problem-list", ListView).focus()
+        if self._search_active and event.key == "up":
+            problem_list = self.query_one("#problem-list", ListView)
+            topic_list = self.query_one("#topic-list", ListView)
+            at_top = (
+                (self.focused is problem_list and problem_list.index == 0)
+                or (self.focused is topic_list and topic_list.index == 0)
+            )
+            if at_top:
+                event.stop()
+                event.prevent_default()
+                self.query_one("#search-input", Input).focus()
+
     # ─── Navigation ───
 
     def action_focus_right(self):
@@ -236,6 +331,9 @@ class ProblemBrowser(Screen):
         self.app.exit()
 
     def action_go_back(self):
+        if self._search_active:
+            self._close_search()
+            return
         focused = self.focused
         topic_list = self.query_one("#topic-list", ListView)
         if focused is topic_list:
