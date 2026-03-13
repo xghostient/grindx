@@ -86,7 +86,7 @@ def _parse_toml_simple(config: dict):
 def _build_prompt(problem: dict, code: str, lang: str) -> str:
     examples = ""
     for i, ex in enumerate(problem.get("examples", []), 1):
-        examples += f"\nExample {i}:\n  Input: {ex['input']}\n  Output: {ex['output']}"
+        examples += f"\nExample {i}:\n  Input: {ex.get('input', 'N/A')}\n  Output: {ex.get('output', 'N/A')}"
 
     return f"""You are a rigorous DSA solution evaluator. This is a well-known competitive programming problem. Evaluate the solution strictly.
 

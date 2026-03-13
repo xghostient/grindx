@@ -139,6 +139,66 @@ api_key = "gsk_..."
 
 Any OpenAI-compatible API works — set provider to `openai` and add `base_url`.
 
+## Custom Sheets & Problems
+
+You can add your own problem sheets and problems alongside the built-in ones.
+
+### Custom sheet
+
+Create a JSON file in `~/.grindx/sheets/`:
+
+```json
+// ~/.grindx/sheets/my-list.json
+{
+  "Arrays": ["two-sum", "best-time-to-buy-and-sell-stock", "my-custom-problem"],
+  "Strings": ["valid-anagram", "another-custom-problem"]
+}
+```
+
+You can mix built-in problem IDs (like `two-sum`) with your own custom problem IDs. Run `grindx --list-problems` to see all available built-in problem IDs.
+
+### Custom problems
+
+Create a JSON file in `~/.grindx/problems/`:
+
+```json
+// ~/.grindx/problems/custom.json
+[
+  {
+    "id": "my-custom-problem",
+    "name": "My Custom Problem",
+    "difficulty": "Medium",
+    "category": "Arrays",
+    "description": "Given an array of integers, find ...",
+    "examples": [
+      {"input": "nums = [1, 2, 3]", "output": "6"},
+      {"input": "nums = []", "output": "0"}
+    ],
+    "constraints": "1 <= nums.length <= 10^4",
+    "python_template": "def solve(nums):\n    pass\n",
+    "go_template": "func solve(nums []int) int {\n\n}\n",
+    "cpp_template": "int solve(vector<int>& nums) {\n\n}\n",
+    "java_template": "class Solution {\n    public int solve(int[] nums) {\n\n    }\n}\n",
+    "js_template": "function solve(nums) {\n\n}\n"
+  },
+  {
+    "id": "another-custom-problem",
+    "name": "Another Custom Problem",
+    "difficulty": "Easy",
+    "category": "Strings",
+    "description": "Given a string, return ...",
+    "examples": [
+      {"input": "s = \"hello\"", "output": "\"olleh\""}
+    ],
+    "python_template": "def solve(s):\n    pass\n"
+  }
+]
+```
+
+Multiple problems go in the same file as a JSON array. You only need to include the template keys for languages you care about — the rest will get a default stub.
+
+Custom sheets show up on the dashboard alongside the built-in ones.
+
 ## Built with
 
 - [Textual](https://github.com/Textualize/textual) — TUI framework
