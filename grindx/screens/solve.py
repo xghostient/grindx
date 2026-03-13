@@ -82,6 +82,7 @@ class SolveScreen(Screen):
         self._timer_start = 0.0
         self._timer_elapsed = 0.0
         self._timer_interval = None
+        self._resume_timer_on_return = False
 
     def on_mount(self) -> None:
         # Auto-start timer when opening a problem
@@ -228,14 +229,35 @@ class SolveScreen(Screen):
         if self.progress[pid]["solved"]:
             self.progress[pid]["solved_date"] = date.today().isoformat()
             self._save_timer()
+            # Record attempt for history
+            elapsed = self._get_elapsed()
+            attempt = {
+                "date": date.today().isoformat(),
+                "lang": self.lang,
+            }
+            if elapsed >= 10:
+                attempt["time"] = round(elapsed, 1)
+            if "attempts" not in self.progress[pid]:
+                self.progress[pid]["attempts"] = []
+            self.progress[pid]["attempts"].append(attempt)
             if self._timer_running and self._timer_interval:
                 self._timer_elapsed += time.monotonic() - self._timer_start
                 self._timer_running = False
                 self._timer_interval.stop()
                 self._timer_interval = None
                 self._update_timer_display()
+        else:
+            # Unmarked — restart timer so user can keep working
+            if not self._timer_running:
+                self._timer_start = time.monotonic()
+                self._timer_running = True
+                self._timer_interval = self.set_interval(1.0, self._tick_timer)
+                self._update_timer_display()
         save_progress(self.progress)
         self._refresh_status()
+        # Auto-evaluate with AI if configured and just marked solved
+        if self.progress[pid]["solved"]:
+            self._auto_evaluate()
 
     def action_toggle_bookmark(self):
         pid = self.problem["id"]
@@ -271,6 +293,51 @@ class SolveScreen(Screen):
         editor.text = code
         editor.language = EDITOR_LANG[self.lang]
 
+    def _auto_evaluate(self):
+        """Auto-run AI eval after marking done, if AI is configured."""
+        from ..ai import load_ai_config
+        config = load_ai_config()
+        if not config["provider"]:
+            return
+        editor = self.query_one("#code-editor", CodeEditor)
+        code = editor.text.strip()
+        if not code:
+            return
+        save_solution(self.problem["id"], self.lang, editor.text)
+        self._refresh_status("✓ SOLVED  |  ⏳ Running AI review...")
+        self._run_auto_evaluate(code)
+
+    @work(thread=True, exclusive=True)
+    def _run_auto_evaluate(self, code: str) -> None:
+        from ..ai import evaluate
+        result = evaluate(self.problem, code, self.lang)
+        self.app.call_from_thread(self._show_auto_evaluate, result)
+
+    def _show_auto_evaluate(self, result: str) -> None:
+        """Show eval and undo solved if AI says FAIL."""
+        # Parse STATUS: line from AI response
+        verdict = ""
+        for line in result.splitlines():
+            stripped = line.strip().upper()
+            if stripped.startswith("STATUS:"):
+                verdict = stripped.split(":", 1)[1].strip()
+                break
+
+        if verdict == "FAIL":
+            pid = self.problem["id"]
+            self.progress[pid]["solved"] = False
+            # Remove the last attempt we just added
+            attempts = self.progress[pid].get("attempts", [])
+            if attempts:
+                attempts.pop()
+            save_progress(self.progress)
+            self._refresh_status("✗ AI: FAIL — marked unsolved")
+            # Flag to restart timer when user returns from eval screen
+            self._resume_timer_on_return = True
+
+        from .evaluate import EvaluateScreen
+        self.app.push_screen(EvaluateScreen(self.problem["name"], result))
+
     def action_evaluate(self):
         editor = self.query_one("#code-editor", CodeEditor)
         code = editor.text.strip()
@@ -291,6 +358,15 @@ class SolveScreen(Screen):
         from .evaluate import EvaluateScreen
         self.app.push_screen(EvaluateScreen(self.problem["name"], result))
         self._refresh_status()
+
+    def on_screen_resume(self) -> None:
+        if self._resume_timer_on_return:
+            self._resume_timer_on_return = False
+            self._timer_start = time.monotonic()
+            self._timer_running = True
+            self._timer_interval = self.set_interval(1.0, self._tick_timer)
+            self._update_timer_display()
+            self._refresh_status("✗ AI: FAIL — marked unsolved")
 
     def action_go_back(self):
         editor = self.query_one("#code-editor", CodeEditor)

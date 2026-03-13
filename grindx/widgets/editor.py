@@ -121,6 +121,10 @@ class CodeEditor(TextArea):
             cpp_lang = get_language("cpp")
             if cpp_lang is not None:
                 self.register_language("cpp", cpp_lang, _CPP_HIGHLIGHT_QUERY)
+                # Re-apply if editor was created with language="cpp" before registration
+                if self.language == "cpp":
+                    self.language = None
+                    self.language = "cpp"
         except Exception:
             pass
 

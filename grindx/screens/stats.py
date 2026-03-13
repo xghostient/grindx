@@ -1,13 +1,14 @@
 """Stats dashboard screen."""
 
-from datetime import date
+from collections import Counter
+from datetime import date, timedelta
 from textual.app import ComposeResult
 from textual.binding import Binding
 from textual.containers import Vertical
 from textual.widgets import Header, Footer, Static
 from textual.screen import Screen
 
-from ..data import short_topic, fmt_duration
+from ..data import short_topic, fmt_duration, name_from_slug
 
 
 class StatsScreen(Screen):
@@ -81,7 +82,7 @@ class StatsScreen(Screen):
             # Streak
             solve_dates = set()
             for pdata in self.progress.values():
-                if pdata.get("solved_date"):
+                if pdata.get("solved") and pdata.get("solved_date"):
                     solve_dates.add(pdata["solved_date"])
             streak = self._calc_streak(solve_dates)
             yield Static(
@@ -89,11 +90,22 @@ class StatsScreen(Screen):
                 markup=True,
             )
 
+            # Activity calendar
+            solve_counts = Counter()
+            for pdata in self.progress.values():
+                sd = pdata.get("solved_date")
+                if sd:
+                    solve_counts[sd] += 1
+            cal = self._build_calendar(solve_counts)
+            yield Static(cal, classes="stats-section", markup=True)
+
             # Best times
             times = []
             for pid, pdata in self.progress.items():
+                if pid.startswith("_"):
+                    continue
                 if pdata.get("best_time"):
-                    pname = next((p["name"] for p in self.problems if p["id"] == pid), pid)
+                    pname = next((p["name"] for p in self.problems if p["id"] == pid), name_from_slug(pid))
                     times.append((pname, pdata["best_time"]))
             if times:
                 tl = "\n  [bold]Best Times:[/bold]"
@@ -104,6 +116,51 @@ class StatsScreen(Screen):
 
             yield Static("\n  [dim]Press Esc to go back[/dim]", markup=True)
         yield Footer()
+
+    def _build_calendar(self, solve_counts: Counter) -> str:
+        """Build a 12-week activity calendar like GitHub's contribution graph."""
+        today = date.today()
+        # Start from 11 weeks ago on Monday
+        start = today - timedelta(days=today.weekday(), weeks=11)
+        days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+        lines = ["\n  [bold]Activity (12 weeks):[/bold]\n"]
+
+        # Header — 3-char month labels aligned to 3-char-wide columns
+        header = "      "
+        prev_month = ""
+        for week in range(12):
+            d = start + timedelta(weeks=week)
+            month = d.strftime("%b")
+            if month != prev_month:
+                header += month
+                prev_month = month
+            else:
+                header += "   "
+        lines.append(f"  {header}")
+
+        # One row per weekday — 3-char-wide columns (symbol + 2 spaces)
+        for dow in range(7):
+            label = days[dow][0] + " " if dow % 2 == 0 else "  "
+            row = f"  {label}   "
+            for week in range(12):
+                d = start + timedelta(weeks=week, days=dow)
+                if d > today:
+                    row += "[dim]·[/]  "
+                else:
+                    count = solve_counts.get(d.isoformat(), 0)
+                    if count == 0:
+                        row += "[dim]░[/]  "
+                    elif count == 1:
+                        row += "[green]▒[/]  "
+                    elif count <= 3:
+                        row += "[green]▓[/]  "
+                    else:
+                        row += "[green]█[/]  "
+            lines.append(row)
+
+        lines.append("\n    [dim]░[/]=none  [green]▒[/]=1  [green]▓[/]=2-3  [green]█[/]=4+")
+        return "\n".join(lines)
 
     def _calc_streak(self, solve_dates: set[str]) -> int:
         if not solve_dates:

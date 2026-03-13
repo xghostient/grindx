@@ -9,9 +9,11 @@ _HELP_TEXT = """\
 grindx — Distraction-free DSA practice in your terminal
 
 Usage:
-  grindx              Launch the TUI
-  grindx --help       Show this help
-  grindx --version    Show version
+  grindx                  Launch the TUI
+  grindx --help           Show this help
+  grindx --version        Show version
+  grindx --list-problems  List all available problem IDs
+  grindx --solved         List all solved problems
 
 Navigation:
   ↑/↓                 Navigate topics / problems
@@ -94,6 +96,10 @@ def main():
         "--list-problems", action="store_true",
         help="List all available problem IDs",
     )
+    parser.add_argument(
+        "--solved", action="store_true",
+        help="List all solved problems",
+    )
 
     args = parser.parse_args()
 
@@ -108,11 +114,34 @@ def main():
     if args.list_problems:
         from .data import load_all_problems
         problems = load_all_problems()
-        for pid in sorted(problems):
-            p = problems[pid]
-            diff = p.get("difficulty", "")
-            print(f"  {pid:40s} {diff}")
-        print(f"\n  {len(problems)} problems available")
+        items = [(pid, problems[pid].get("difficulty", "")) for pid in sorted(problems)]
+        w = max(len(pid) for pid, _ in items) + 2
+        for pid, diff in items:
+            print(f"  {pid:<{w}} {diff}")
+        print(f"\n  {len(items)} problems available")
+        sys.exit(0)
+
+    if args.solved:
+        from .data import load_all_problems, load_progress, fmt_duration
+        problems = load_all_problems()
+        progress = load_progress()
+        solved = []
+        for pid, pdata in progress.items():
+            if pid.startswith("_"):
+                continue
+            if pdata.get("solved"):
+                prob = problems.get(pid)
+                name = prob["name"] if prob else pid
+                diff = prob.get("difficulty", "") if prob else ""
+                best = pdata.get("best_time")
+                solved_date = pdata.get("solved_date", "")
+                solved.append((name, diff, best, solved_date))
+        solved.sort(key=lambda x: x[3], reverse=True)
+        w = max((len(n) for n, _, _, _ in solved), default=20) + 2
+        for name, diff, best, sd in solved:
+            time_str = fmt_duration(best) if best and best >= 10 else ""
+            print(f"  {name:<{w}} {diff:8s} {sd:12s} {time_str}")
+        print(f"\n  {len(solved)} problems solved")
         sys.exit(0)
 
     from textual.app import App
