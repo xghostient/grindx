@@ -378,6 +378,13 @@ class SolveScreen(Screen):
 
     def _show_test_result(self, result) -> None:
         from .test_result import TestResultScreen
+
+        # Auto-mark solved on AC
+        if result.verdict == "AC":
+            pid = self.problem["id"]
+            if not self.progress.get(pid, {}).get("solved", False):
+                self.action_mark_done()
+
         self._refresh_status()
 
         def _on_dismiss(action: str | None) -> None:

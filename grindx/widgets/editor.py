@@ -106,7 +106,7 @@ _PASSTHROUGH = {
     "ctrl+d": "mark_done",
     "ctrl+b": "toggle_bookmark",
     "ctrl+t": "toggle_timer",
-    "ctrl+r": "reset_timer",
+    "ctrl+r": "run_tests",
     "ctrl+l": "toggle_lang",
     "ctrl+e": "evaluate",
 }
