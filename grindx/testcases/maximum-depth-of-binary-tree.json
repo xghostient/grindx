@@ -1,0 +1,69 @@
+{
+  "problem_id": "maximum-depth-of-binary-tree",
+  "function": "maxDepth",
+  "pattern": "function",
+  "comparison": "exact",
+  "time_limit_s": 5,
+  "cases": [
+    {
+      "input": [[3, 9, 20, null, null, 15, 7]],
+      "expected": 3,
+      "category": "basic",
+      "note": "balanced tree from LeetCode example"
+    },
+    {
+      "input": [[1, null, 2]],
+      "expected": 2,
+      "category": "basic",
+      "note": "right child only"
+    },
+    {
+      "input": [[]],
+      "expected": 0,
+      "category": "edge",
+      "note": "empty tree"
+    },
+    {
+      "input": [[1]],
+      "expected": 1,
+      "category": "edge",
+      "note": "single node"
+    },
+    {
+      "input": [[1, 2, null, 3, null, 4]],
+      "expected": 4,
+      "category": "edge",
+      "note": "left-skewed tree, 4 nodes deep: 1->2->3->4"
+    },
+    {
+      "input": [[1, null, 2, null, 3, null, 4]],
+      "expected": 4,
+      "category": "edge",
+      "note": "right-skewed chain"
+    },
+    {
+      "input": [[1, 2, 3, 4, 5, 6, 7]],
+      "expected": 3,
+      "category": "basic",
+      "note": "complete binary tree with 7 nodes"
+    },
+    {
+      "input": [[1, 2, 3, 4, null, null, null, 5]],
+      "expected": 4,
+      "category": "basic",
+      "note": "left-heavy tree"
+    },
+    {
+      "input": [[1, 2, 3, null, null, 4, null, null, 5]],
+      "expected": 4,
+      "category": "edge",
+      "note": "asymmetric deeper right subtree: root->right->left->left gives depth 4"
+    },
+    {
+      "input": [[1, 2, 3, 4, 5, null, 6, 7, null, null, null, null, 8]],
+      "expected": 4,
+      "category": "basic",
+      "note": "irregular shape tree"
+    }
+  ]
+}

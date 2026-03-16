@@ -1,0 +1,63 @@
+{
+  "problem_id": "reverse-linked-list",
+  "function": "reverseList",
+  "pattern": "function",
+  "comparison": "exact",
+  "time_limit_s": 5,
+  "cases": [
+    {
+      "input": [[1, 2, 3, 4, 5]],
+      "expected": [5, 4, 3, 2, 1],
+      "category": "basic",
+      "note": "standard case from LeetCode examples"
+    },
+    {
+      "input": [[1, 2]],
+      "expected": [2, 1],
+      "category": "basic",
+      "note": "two elements"
+    },
+    {
+      "input": [[1, 2, 3]],
+      "expected": [3, 2, 1],
+      "category": "basic",
+      "note": "three elements"
+    },
+    {
+      "input": [[1, 2, 3, 4]],
+      "expected": [4, 3, 2, 1],
+      "category": "basic",
+      "note": "four elements"
+    },
+    {
+      "input": [[1]],
+      "expected": [1],
+      "category": "edge",
+      "note": "single node, already reversed"
+    },
+    {
+      "input": [[]],
+      "expected": [],
+      "category": "edge",
+      "note": "empty list"
+    },
+    {
+      "input": [[-1, -2, -3]],
+      "expected": [-3, -2, -1],
+      "category": "edge",
+      "note": "negative values"
+    },
+    {
+      "input": [[5, 5, 5, 5]],
+      "expected": [5, 5, 5, 5],
+      "category": "edge",
+      "note": "all identical values, reversed list is the same"
+    },
+    {
+      "input": [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
+      "expected": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+      "category": "basic",
+      "note": "10-element list"
+    }
+  ]
+}

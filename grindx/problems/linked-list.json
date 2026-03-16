@@ -19,11 +19,11 @@
       }
     ],
     "constraints": "The number of nodes is in [0, 5000]. -5000 <= Node.val <= 5000.",
-    "python_template": "# Reverse Linked List\n\nfrom typing import Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef reverseList(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
-    "go_template": "// Reverse Linked List\n\npackage main\n\ntype ListNode struct {\n\tVal  int\n\tNext *ListNode\n}\n\nfunc reverseList(head *ListNode) *ListNode {\n\n}\n",
-    "cpp_template": "// Reverse Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n};\n\nListNode* reverseList(ListNode* head) {\n    return nullptr;\n}\n",
-    "java_template": "// Reverse Linked List\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode reverseList(ListNode head) {\n        return null;\n    }\n}\n",
-    "js_template": "// Reverse Linked List\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction reverseList(head) {\n\n}\n"
+    "python_template": "# Reverse Linked List\n\nfrom typing import Optional\n\n# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\n\ndef reverseList(head: Optional[ListNode]) -> Optional[ListNode]:\n    pass\n",
+    "go_template": "// Reverse Linked List\n\npackage main\n\n// Definition for singly-linked list.\n// type ListNode struct {\n//     Val  int\n//     Next *ListNode\n// }\n\nfunc reverseList(head *ListNode) *ListNode {\n\n}\n",
+    "cpp_template": "// Reverse Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// Definition for singly-linked list.\n// struct ListNode {\n//     int val;\n//     ListNode* next;\n//     ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n// };\n\nListNode* reverseList(ListNode* head) {\n    return nullptr;\n}\n",
+    "java_template": "// Reverse Linked List\n\n// Definition for singly-linked list.\n// class ListNode {\n//     int val;\n//     ListNode next;\n//     ListNode(int val) { this.val = val; }\n// }\n\nclass Solution {\n    public ListNode reverseList(ListNode head) {\n        return null;\n    }\n}\n",
+    "js_template": "// Reverse Linked List\n\n// Definition for singly-linked list.\n// class ListNode {\n//     constructor(val) {\n//         this.val = val;\n//         this.next = null;\n//     }\n// }\n\nfunction reverseList(head) {\n\n}\n"
   },
   {
     "id": "reverse-dll",

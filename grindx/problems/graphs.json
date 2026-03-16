@@ -126,8 +126,8 @@
     ],
     "constraints": "The number of nodes is in [0, 100]. 1 <= Node.val <= 100. All values are unique. No repeated edges or self-loops.",
     "python_template": "# Clone Graph\n\nclass Node:\n    def __init__(self, val=0, neighbors=None):\n        self.val = val\n        self.neighbors = neighbors if neighbors is not None else []\n\ndef cloneGraph(node: Node) -> Node:\n    pass\n",
-    "go_template": "// Clone Graph\n\npackage main\n\ntype Node struct {\n\tVal       int\n\tNeighbors []*Node\n}\n\nfunc cloneGraph(node *Node) *Node {\n\n}\n",
-    "cpp_template": "// Clone Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct Node {\n    int val;\n    vector<Node*> neighbors;\n    Node(int val = 0, vector<Node*> neighbors) : val(val), neighbors(neighbors) {}\n};\n\nNode* cloneGraph(Node* node) {\n    return nullptr;\n}\n",
+    "go_template": "// Clone Graph\n\npackage main\n\n// Node is defined in the judge environment:\n//   type Node struct { Val int; Neighbors []*Node }\n\nfunc cloneGraph(node *Node) *Node {\n\n}\n",
+    "cpp_template": "// Clone Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n#ifndef GRINDX_NODE_DEFINED\n#define GRINDX_NODE_DEFINED\nstruct Node {\n    int val;\n    vector<Node*> neighbors;\n    Node(int val = 0, vector<Node*> neighbors = {}) : val(val), neighbors(neighbors) {}\n};\n#endif\n\nNode* cloneGraph(Node* node) {\n    return nullptr;\n}\n",
     "java_template": "// Clone Graph\n\nclass Node {\n    int val;\n    Node[] neighbors;\n    Node(int val) { this.val = val; }\n}\n\nclass Solution {\n    public Node cloneGraph(Node node) {\n        return null;\n    }\n}\n",
     "js_template": "// Clone Graph\n\nclass Node {\n    constructor(val) {\n        this.val = val;\n        this.neighbors = null;\n    }\n}\n\nfunction cloneGraph(node) {\n\n}\n"
   },

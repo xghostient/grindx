@@ -10,6 +10,8 @@ from pathlib import Path
 _PKG_DIR = Path(__file__).parent
 SHEETS_DIR = _PKG_DIR / "sheets"
 PROBLEMS_DIR = _PKG_DIR / "problems"
+TESTCASES_DIR = _PKG_DIR / "testcases"
+JUDGES_DIR = _PKG_DIR / "judges"
 
 USER_DIR = Path.home() / ".grindx"
 PROGRESS_FILE = USER_DIR / "progress.json"
@@ -17,6 +19,7 @@ PROGRESS_BACKUP_DIR = USER_DIR / "backups"
 SOLUTIONS_DIR = USER_DIR / "solutions"
 USER_SHEETS_DIR = USER_DIR / "sheets"
 USER_PROBLEMS_DIR = USER_DIR / "problems"
+USER_TESTCASES_DIR = USER_DIR / "testcases"
 
 LANG_EXT = {"Python": ".py", "Go": ".go", "C++": ".cpp", "Java": ".java", "JavaScript": ".js"}
 
@@ -218,6 +221,48 @@ def load_solution(problem_id: str, lang: str) -> str:
 def save_solution(problem_id: str, lang: str, code: str):
     path = get_solution_path(problem_id, lang)
     path.write_text(code)
+
+
+# ─── Test Cases & Judges ───
+
+
+def _safe_id(name: str) -> bool:
+    """Reject IDs with path traversal or separators."""
+    return ".." not in name and "/" not in name and "\\" not in name
+
+
+def testcase_path(problem_id: str) -> Path | None:
+    """Return path to test case JSON. User dir overrides bundled."""
+    if not _safe_id(problem_id):
+        return None
+    user_path = USER_TESTCASES_DIR / f"{problem_id}.json"
+    if user_path.exists():
+        return user_path
+    pkg_path = TESTCASES_DIR / f"{problem_id}.json"
+    if pkg_path.exists():
+        return pkg_path
+    return None
+
+
+def judge_path(problem_id: str, lang_dir: str) -> Path | None:
+    """Return path to the judge file for a problem + language."""
+    if not _safe_id(problem_id):
+        return None
+    ext = {"python": ".py", "cpp": ".cpp", "java": ".java", "javascript": ".js", "go": ".go"}
+    judge = JUDGES_DIR / lang_dir / f"{problem_id}{ext.get(lang_dir, '.py')}"
+    if judge.exists():
+        return judge
+    return None
+
+
+def judge_common_path(lang_dir: str) -> Path | None:
+    """Return path to the _common file for a language."""
+    names = {"python": "_common.py", "cpp": "_common.h", "java": "Common.java",
+             "javascript": "_common.js", "go": "common.go"}
+    common = JUDGES_DIR / lang_dir / names.get(lang_dir, "_common.py")
+    if common.exists():
+        return common
+    return None
 
 
 # ─── Settings (stored inside progress.json under _settings) ───

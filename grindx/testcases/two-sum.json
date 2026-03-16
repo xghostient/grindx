@@ -1,0 +1,87 @@
+{
+  "problem_id": "two-sum",
+  "function": "twoSum",
+  "pattern": "function",
+  "comparison": "unordered",
+  "time_limit_s": 5,
+  "cases": [
+    {
+      "input": [[2, 7, 11, 15], 9],
+      "expected": [0, 1],
+      "category": "basic",
+      "note": "standard case from LeetCode examples"
+    },
+    {
+      "input": [[3, 2, 4], 6],
+      "expected": [1, 2],
+      "category": "basic",
+      "note": "answer not at index 0, avoids false match with nums[0]"
+    },
+    {
+      "input": [[3, 3], 6],
+      "expected": [0, 1],
+      "category": "basic",
+      "note": "duplicate values forming the pair"
+    },
+    {
+      "input": [[1, 5, 3, 7, 8, 2], 3],
+      "expected": [0, 5],
+      "category": "basic",
+      "note": "answer indices far apart (first and last)"
+    },
+    {
+      "input": [[-1, -2, -3, -4, -5], -8],
+      "expected": [2, 4],
+      "category": "basic",
+      "note": "all negative values with negative target"
+    },
+    {
+      "input": [[0, 4, 3, 0], 0],
+      "expected": [0, 3],
+      "category": "edge",
+      "note": "zeros summing to zero, tests 0 + 0 = 0 handling"
+    },
+    {
+      "input": [[1000000000, 2000000000, -1000000000], 1000000000],
+      "expected": [1, 2],
+      "category": "edge",
+      "note": "large integers near int32 boundary, tests overflow handling"
+    },
+    {
+      "input": [[1, 2], 3],
+      "expected": [0, 1],
+      "category": "edge",
+      "note": "minimum size array (2 elements)"
+    },
+    {
+      "input": [[-3, 1, 4, -7, 2], -10],
+      "expected": [0, 3],
+      "category": "edge",
+      "note": "mixed signs, negative target, negative + negative sum, answer in middle"
+    },
+    {
+      "input": [[10, 20, 3, 3, 4], 6],
+      "expected": [2, 3],
+      "category": "edge",
+      "note": "duplicate values at end forming pair, answer at last positions"
+    },
+    {
+      "input": [[5, -5, 3], 0],
+      "expected": [0, 1],
+      "category": "edge",
+      "note": "positive + negative summing to zero"
+    },
+    {
+      "input": [[4, 1, 8, 5, 9, 2, 7, 3], 17],
+      "expected": [2, 4],
+      "category": "edge",
+      "note": "larger array, answer at non-obvious positions in the middle (8+9=17)"
+    },
+    {
+      "input": [[2, 5, 5, 3], 5],
+      "expected": [0, 3],
+      "category": "edge",
+      "note": "duplicates (5,5) are red herrings, actual pair is 2+3=5"
+    }
+  ]
+}

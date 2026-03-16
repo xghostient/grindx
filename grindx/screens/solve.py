@@ -12,8 +12,9 @@ from textual.screen import Screen
 from ..data import (
     load_solution, save_solution, load_progress,
     save_progress, fmt_duration,
-    TEMPLATE_KEY, LANG_ORDER, EDITOR_LANG,
+    TEMPLATE_KEY, LANG_ORDER, EDITOR_LANG, LANG_DIR,
     get_preferred_lang, set_preferred_lang,
+    judge_path, testcase_path,
 )
 from ..widgets import CodeEditor
 
@@ -25,9 +26,10 @@ class SolveScreen(Screen):
         Binding("ctrl+d", "mark_done", "Done"),
         Binding("ctrl+e", "evaluate", "AI Review"),
         Binding("ctrl+l", "toggle_lang", "Lang"),
+        Binding("ctrl+r", "run_tests", "Test"),
         Binding("ctrl+b", "toggle_bookmark", "Bookmark", show=False),
         Binding("ctrl+t", "toggle_timer", "Timer", show=False),
-        Binding("ctrl+r", "reset_timer", "Reset", show=False),
+        Binding("ctrl+shift+r", "reset_timer", "Reset", show=False),
     ]
 
     CSS = """
@@ -96,7 +98,7 @@ class SolveScreen(Screen):
         pid = self.problem["id"]
         best = self.progress.get(pid, {}).get("best_time")
         best_str = f"  |  Best: {fmt_duration(best)}" if best else ""
-        yield Static(f" ▶ Timer: 0m 00s{best_str}  [^T pause  ^R reset]", id="timer-bar")
+        yield Static(f" ▶ Timer: 0m 00s{best_str}  [^T pause  ^⇧R reset]", id="timer-bar")
         with Horizontal(id="solve-container"):
             with Vertical(id="problem-pane"):
                 diff = self.problem.get("difficulty", "?")
@@ -133,7 +135,7 @@ class SolveScreen(Screen):
         solved = self.progress.get(pid, {}).get("solved", False)
         status = "✓ SOLVED" if solved else "○ UNSOLVED"
         yield Static(
-            f" {status}  |  ^S Save  ^D Done  ^E AI  ^L Lang  ^B Bookmark  |  Esc: Back",
+            f" {status}  |  ^S Save  ^R Test  ^D Done  ^E AI  ^L Lang  ^B Bookmark  |  Esc: Back",
             id="status-bar",
         )
         yield Footer()
@@ -174,7 +176,7 @@ class SolveScreen(Screen):
         best_str = f"  |  Best: {fmt_duration(best)}" if best else ""
         state = "▶" if self._timer_running else "⏸"
         self.query_one("#timer-bar", Static).update(
-            f" {state} Timer: {fmt_duration(elapsed)}{best_str}  [^T pause  ^R reset]"
+            f" {state} Timer: {fmt_duration(elapsed)}{best_str}  [^T pause  ^⇧R reset]"
         )
 
     def _tick_timer(self):
@@ -279,7 +281,7 @@ class SolveScreen(Screen):
         marker = "✓ SOLVED" if solved else "○ UNSOLVED"
         extra = f"  {flash}  |" if flash else "  |"
         self.query_one("#status-bar", Static).update(
-            f" {marker}{extra}  ^S Save  ^D Done  ^E AI  ^L Lang  ^B Bookmark  |  Esc: Back"
+            f" {marker}{extra}  ^S Save  ^R Test  ^D Done  ^E AI  ^L Lang  ^B Bookmark  |  Esc: Back"
         )
 
     def action_toggle_lang(self):
@@ -337,6 +339,52 @@ class SolveScreen(Screen):
 
         from .evaluate import EvaluateScreen
         self.app.push_screen(EvaluateScreen(self.problem["name"], result))
+
+    # ─── Run Tests ───
+
+    def action_run_tests(self):
+        editor = self.query_one("#code-editor", CodeEditor)
+        if not editor.text.strip():
+            self._refresh_status("Nothing to test!")
+            return
+
+        lang_dir = LANG_DIR[self.lang]
+        pid = self.problem["id"]
+
+        # Check judge and testcases exist
+        if not judge_path(pid, lang_dir):
+            self._refresh_status(f"No judge available for {self.lang}")
+            return
+        if not testcase_path(pid):
+            self._refresh_status("No test cases for this problem yet")
+            return
+
+        # Check runtime
+        from ..runtime_check import runtime_available
+        if not runtime_available(lang_dir):
+            self._refresh_status(f"{self.lang} runtime not found!")
+            return
+
+        save_solution(pid, self.lang, editor.text)
+        self._initial_code = editor.text
+        self._refresh_status("⏳ Running tests...")
+        self._run_tests()
+
+    @work(thread=True, exclusive=True)
+    def _run_tests(self) -> None:
+        from ..judge import run_tests
+        result = run_tests(self.problem["id"], self.lang)
+        self.app.call_from_thread(self._show_test_result, result)
+
+    def _show_test_result(self, result) -> None:
+        from .test_result import TestResultScreen
+        self._refresh_status()
+
+        def _on_dismiss(action: str | None) -> None:
+            if action == "retry":
+                self.action_run_tests()
+
+        self.app.push_screen(TestResultScreen(result, self.problem), callback=_on_dismiss)
 
     def action_evaluate(self):
         editor = self.query_one("#code-editor", CodeEditor)

@@ -1,0 +1,81 @@
+{
+  "problem_id": "rotate-array",
+  "function": "rotate",
+  "pattern": "in_place",
+  "comparison": "exact",
+  "time_limit_s": 5,
+  "cases": [
+    {
+      "input": [[1, 2, 3, 4, 5, 6, 7], 3],
+      "expected": [5, 6, 7, 1, 2, 3, 4],
+      "category": "basic",
+      "note": "standard case from LeetCode example 1"
+    },
+    {
+      "input": [[-1, -100, 3, 99], 2],
+      "expected": [3, 99, -1, -100],
+      "category": "basic",
+      "note": "LeetCode example 2 with negative values"
+    },
+    {
+      "input": [[1, 2, 3, 4, 5], 2],
+      "expected": [4, 5, 1, 2, 3],
+      "category": "basic",
+      "note": "odd length array"
+    },
+    {
+      "input": [[1, 2, 3, 4, 5, 6], 3],
+      "expected": [4, 5, 6, 1, 2, 3],
+      "category": "basic",
+      "note": "rotate by half the array length"
+    },
+    {
+      "input": [[1], 0],
+      "expected": [1],
+      "category": "edge",
+      "note": "k=0, no rotation"
+    },
+    {
+      "input": [[1], 1],
+      "expected": [1],
+      "category": "edge",
+      "note": "single element"
+    },
+    {
+      "input": [[1, 2, 3], 3],
+      "expected": [1, 2, 3],
+      "category": "edge",
+      "note": "k equals array length, array unchanged"
+    },
+    {
+      "input": [[1, 2, 3], 5],
+      "expected": [2, 3, 1],
+      "category": "edge",
+      "note": "k greater than n, effective k=2 after modulo"
+    },
+    {
+      "input": [[1, 2, 3, 4], 6],
+      "expected": [3, 4, 1, 2],
+      "category": "edge",
+      "note": "k greater than n, effective k=2 after modulo"
+    },
+    {
+      "input": [[2147483647, -2147483648, 0], 1],
+      "expected": [0, 2147483647, -2147483648],
+      "category": "edge",
+      "note": "int32 boundary values"
+    },
+    {
+      "input": [[1, 2], 1],
+      "expected": [2, 1],
+      "category": "basic",
+      "note": "two elements rotated by 1"
+    },
+    {
+      "input": [[1, 2, 3, 4, 5, 6, 7, 8], 4],
+      "expected": [5, 6, 7, 8, 1, 2, 3, 4],
+      "category": "basic",
+      "note": "rotate by half, even length"
+    }
+  ]
+}

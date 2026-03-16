@@ -38,4 +38,14 @@ grindx = "grindx.app:main"
 include = ["grindx*"]
 
 [tool.setuptools.package-data]
-grindx = ["sheets/*.json", "problems/*.json"]
+grindx = [
+    "sheets/*.json",
+    "problems/*.json",
+    "testcases/*.json",
+    "judges/python/*.py",
+    "judges/cpp/*.h",
+    "judges/cpp/*.cpp",
+    "judges/java/*.java",
+    "judges/javascript/*.js",
+    "judges/go/*.go",
+]
