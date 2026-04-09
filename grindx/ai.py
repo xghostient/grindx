@@ -1,4 +1,4 @@
-"""AI evaluation for solutions — supports Anthropic, OpenAI, Groq, Ollama."""
+"""AI evaluation for solutions — supports Anthropic, OpenAI, Groq, Ollama, Bedrock."""
 
 import json
 import os
@@ -15,6 +15,7 @@ _PROVIDER_DEFAULTS = {
     "anthropic": ("https://api.anthropic.com", "claude-sonnet-4-20250514"),
     "openai": ("https://api.openai.com", "gpt-4o"),
     "groq": ("https://api.groq.com/openai", "llama-3.3-70b-versatile"),
+    "bedrock": ("", "anthropic.claude-sonnet-4-20250514-v1:0"),
 }
 
 _USER_AGENT = f"grindx/{__version__}"
@@ -22,7 +23,10 @@ _USER_AGENT = f"grindx/{__version__}"
 
 def load_ai_config() -> dict:
     """Load AI config from ~/.grindx.toml, then override with env vars."""
-    config = {"provider": "", "model": "", "api_key": "", "base_url": ""}
+    config = {
+        "provider": "", "model": "", "api_key": "", "base_url": "",
+        "aws_profile": "", "aws_region": "",
+    }
 
     if CONFIG_PATH.exists():
         _load_toml(config)
@@ -32,6 +36,8 @@ def load_ai_config() -> dict:
         "GRINDX_AI_MODEL": "model",
         "GRINDX_AI_KEY": "api_key",
         "GRINDX_AI_URL": "base_url",
+        "AWS_PROFILE": "aws_profile",
+        "AWS_REGION": "aws_region",
     }
     for env_key, cfg_key in env_map.items():
         val = os.environ.get(env_key)
@@ -186,14 +192,17 @@ def evaluate(problem: dict, code: str, lang: str) -> str:
 
     if provider == "anthropic":
         return _call_anthropic(config, prompt)
+    elif provider == "bedrock":
+        return _call_bedrock(config, prompt)
     elif provider in ("openai", "ollama", "groq"):
         return _call_openai_compat(config, prompt)
     else:
         return (
             f"# Unknown provider: `{config['provider']}`\n\n"
-            f"Supported: `ollama`, `anthropic`, `openai`, `groq`\n\n"
+            f"Supported: `ollama`, `anthropic`, `openai`, `groq`, `bedrock`\n\n"
             f"Any OpenAI-compatible API works — set provider to `openai` "
-            f"and configure `base_url`."
+            f"and configure `base_url`.\n\n"
+            f"For AWS Bedrock with SSO/IAM auth, set provider to `bedrock`."
         )
 
 
@@ -216,6 +225,97 @@ def _call_anthropic(config: dict, prompt: str) -> str:
     })
 
     return _do_request(req, extractor=lambda d: d["content"][0]["text"])
+
+
+def _call_bedrock(config: dict, prompt: str) -> str:
+    """Call AWS Bedrock via boto3 with IAM/SSO credentials. No API key needed.
+
+    Supports both native Bedrock model IDs (e.g. ``anthropic.claude-...``)
+    and cross-region inference profile ARNs.  Authentication is handled by
+    the standard AWS credential chain — environment variables, SSO session,
+    instance profile, etc.
+    """
+    try:
+        import boto3
+        import botocore.exceptions
+    except ImportError:
+        return (
+            "# boto3 Not Installed\n\n"
+            "The `bedrock` provider requires the AWS SDK.\n\n"
+            "```\npip install boto3\n```"
+        )
+
+    region = config.get("aws_region") or None
+    profile = config.get("aws_profile") or None
+
+    try:
+        session_kwargs = {}
+        if region:
+            session_kwargs["region_name"] = region
+        if profile:
+            session_kwargs["profile_name"] = profile
+        session = boto3.Session(**session_kwargs)
+        client = session.client("bedrock-runtime")
+    except Exception as e:
+        return (
+            f"# AWS Session Error\n\n"
+            f"`{type(e).__name__}`: {e}\n\n"
+            f"**Hints:**\n"
+            f"- Ensure your AWS credentials are configured "
+            f"(`aws configure` or `aws sso login`)\n"
+            f"- Set `aws_profile` in `~/.grindx.toml` or "
+            f"`AWS_PROFILE` env var\n"
+            f"- Set `aws_region` in `~/.grindx.toml` or "
+            f"`AWS_REGION` env var"
+        )
+
+    model_id = config["model"]
+
+    try:
+        response = client.converse(
+            modelId=model_id,
+            messages=[
+                {
+                    "role": "user",
+                    "content": [{"text": prompt}],
+                }
+            ],
+            inferenceConfig={
+                "maxTokens": 4096,
+            },
+        )
+        return response["output"]["message"]["content"][0]["text"]
+    except botocore.exceptions.ClientError as e:
+        code = e.response["Error"]["Code"]
+        msg = e.response["Error"]["Message"]
+        if code == "AccessDeniedException":
+            return (
+                f"# Bedrock Access Denied\n\n{msg}\n\n"
+                f"**Hints:**\n"
+                f"- Verify your IAM role/policy has "
+                f"`bedrock:InvokeModel` permission\n"
+                f"- Check that model `{model_id}` is enabled in "
+                f"your account/region\n"
+                f"- If using an inference profile ARN, confirm it "
+                f"exists and you have access"
+            )
+        if code == "ValidationException":
+            return (
+                f"# Bedrock Validation Error\n\n{msg}\n\n"
+                f"**Hint:** Check that `model` is a valid Bedrock "
+                f"model ID or inference profile ARN.\n"
+                f"Current model: `{model_id}`"
+            )
+        if code in ("ExpiredTokenException", "UnrecognizedClientException"):
+            return (
+                f"# AWS Credentials Expired\n\n"
+                f"Re-authenticate and try again:\n"
+                f"```\naws sso login"
+                f"{f' --profile {profile}' if profile else ''}\n```"
+            )
+        return f"# Bedrock Error ({code})\n\n{msg}"
+    except Exception as e:
+        return f"# Bedrock Error\n\n`{type(e).__name__}`: {e}"
 
 
 def _call_openai_compat(config: dict, prompt: str) -> str:
@@ -363,5 +463,19 @@ api_key = "gsk_..."
 | `groq` | Yes | llama-3.3-70b-versatile |
 | `anthropic` | Yes | claude-sonnet-4-20250514 |
 | `openai` | Yes | gpt-4o |
+| `bedrock` | No (IAM/SSO) | claude-sonnet (via Bedrock) |
 
-Any OpenAI-compatible API works — set provider to `openai` and add `base_url`."""
+Any OpenAI-compatible API works — set provider to `openai` and add `base_url`.
+
+## AWS Bedrock (IAM / SSO auth, no API key)
+
+```toml
+[ai]
+provider = "bedrock"
+model = "anthropic.claude-sonnet-4-20250514-v1:0"
+aws_profile = "my-profile"   # optional
+aws_region = "us-west-2"     # optional
+```
+
+Supports native model IDs and inference profile ARNs.
+Requires `pip install boto3` and valid AWS credentials."""
