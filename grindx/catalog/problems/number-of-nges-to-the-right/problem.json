@@ -1,0 +1,35 @@
+{
+  "id": "number-of-nges-to-the-right",
+  "name": "Number of NGEs to the Right",
+  "difficulty": "Medium",
+  "description": "Given an array of n integers and q queries. Each query contains an index. For each query, find the count of next greater elements to the right of the given index.",
+  "examples": [
+    {
+      "input": "arr = [3,4,2,7,5,8,10,6], queries = [0,5]",
+      "output": "[6,1] (elements right of index 0 that are greater: 4,7,5,8,10,6=6 count; right of index 5: 10=1 count)"
+    },
+    {
+      "input": "arr = [1,2,3,4], queries = [0]",
+      "output": "[3]"
+    }
+  ],
+  "constraints": "1 <= n <= 10^4. 1 <= q <= 100. 0 <= queries[i] < n.",
+  "python_template": "# Number of NGEs to the Right\n\nfrom typing import List\n\ndef countNGEs(arr: List[int], queries: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Number of NGEs to the Right\n\npackage main\n\nfunc countNGEs(arr []int, queries []int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Number of NGEs to the Right\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> countNGEs(vector<int>& arr, vector<int>& queries) {\n    return {};\n}\n",
+  "java_template": "// Number of NGEs to the Right\n\nclass Solution {\n    public int[] countNGEs(int[] arr, int[] queries) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Number of NGEs to the Right\n\nfunction countNGEs(arr, queries) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n + q)",
+    "accepted_time": [
+      "O(n + q)",
+      "O(n * q)"
+    ],
+    "rejected_time": [
+      "O(n^2 * q)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "query batches punish recomputing greater counts from scratch",
+    "enforcement": "best-effort-local"
+  }
+}

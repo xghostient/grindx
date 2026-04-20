@@ -1,0 +1,40 @@
+{
+  "id": "last-stone-weight",
+  "name": "Last Stone Weight",
+  "difficulty": "Easy",
+  "description": "You are given an array of integers stones where stones[i] is the weight of the ith stone. We play a game with the stones: on each turn, we choose the heaviest two stones and smash them together. If x == y, both stones are destroyed. If x != y, the stone of weight x is destroyed and the stone of weight y has new weight y - x. At the end, there is at most one stone left. Return its weight, or 0 if there are no stones left.",
+  "examples": [
+    {
+      "input": "stones = [2,7,4,1,8,1]",
+      "output": "1 (smash 7&8\u21921, 2&4\u21922, 1&2\u21921, 1&1\u21920, left with 1)"
+    },
+    {
+      "input": "stones = [1]",
+      "output": "1"
+    },
+    {
+      "input": "stones = [3,3]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= stones.length <= 30. 1 <= stones[i] <= 1000.",
+  "python_template": "# Last Stone Weight\n\nfrom typing import List\n\ndef lastStoneWeight(stones: List[int]) -> int:\n    pass\n",
+  "go_template": "// Last Stone Weight\n\npackage main\n\nfunc lastStoneWeight(stones []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Last Stone Weight\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint lastStoneWeight(vector<int>& stones) {\n    return 0;\n}\n",
+  "java_template": "// Last Stone Weight\n\nclass Solution {\n    public int lastStoneWeight(int[] stones) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Last Stone Weight\n\nfunction lastStoneWeight(stones) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise repeated max-extract stone collisions",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

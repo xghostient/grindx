@@ -1,0 +1,41 @@
+{
+  "id": "longest-increasing-path-in-a-matrix",
+  "name": "Longest Increasing Path in a Matrix",
+  "difficulty": "Hard",
+  "category": "Grid DP",
+  "description": "Given an m x n integers matrix, return the length of the longest increasing path. From each cell, you can move in four directions (up, down, left, right). You cannot move diagonally or outside the boundary.",
+  "examples": [
+    {
+      "input": "matrix = [[9,9,4],[6,6,8],[2,1,1]]",
+      "output": "4 (path: 1->2->6->9)"
+    },
+    {
+      "input": "matrix = [[3,4,5],[3,2,6],[2,2,1]]",
+      "output": "4 (path: 3->4->5->6)"
+    },
+    {
+      "input": "matrix = [[1]]",
+      "output": "1"
+    }
+  ],
+  "constraints": "m == matrix.length. n == matrix[i].length. 1 <= m, n <= 200. 0 <= matrix[i][j] <= 2^31 - 1.",
+  "python_template": "# Longest Increasing Path in a Matrix\n\nfrom typing import List\n\ndef longestIncreasingPath(matrix: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Longest Increasing Path in a Matrix\n\npackage main\n\nfunc longestIncreasingPath(matrix [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Increasing Path in a Matrix\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestIncreasingPath(vector<vector<int>>& matrix) {\n    return 0;\n}\n",
+  "java_template": "// Longest Increasing Path in a Matrix\n\nclass Solution {\n    public int longestIncreasingPath(int[][] matrix) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Increasing Path in a Matrix\n\nfunction longestIncreasingPath(matrix) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m * n)",
+    "accepted_time": [
+      "O(m * n)"
+    ],
+    "rejected_time": [
+      "O((m * n)^2)",
+      "O(4^(m*n))"
+    ],
+    "target_space": "O(m * n)",
+    "stress_intent": "separate memoized DFS or topological DP from repeated recursive exploration using larger monotone grids with heavy overlap",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

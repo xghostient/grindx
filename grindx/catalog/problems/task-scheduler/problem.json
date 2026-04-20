@@ -1,0 +1,39 @@
+{
+  "id": "task-scheduler",
+  "name": "Task Scheduler",
+  "difficulty": "Medium",
+  "description": "You are given an array of CPU tasks, each represented by a character, and a cooling interval n. Each cycle allows completion of one task. Tasks can be completed in any order, but there's a constraint: identical tasks must be separated by at least n intervals. Return the minimum number of intervals the CPU will take to finish all tasks.",
+  "examples": [
+    {
+      "input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 2",
+      "output": "8 (A -> B -> idle -> A -> B -> idle -> A -> B)"
+    },
+    {
+      "input": "tasks = [\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"], n = 1",
+      "output": "6 (A -> B -> C -> A -> D -> B, no idle needed)"
+    },
+    {
+      "input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 0",
+      "output": "6"
+    }
+  ],
+  "constraints": "1 <= tasks.length <= 10^4. tasks[i] is an uppercase English letter. 0 <= n <= 100.",
+  "python_template": "# Task Scheduler\n\nfrom typing import List\n\ndef leastInterval(tasks: List[str], n: int) -> int:\n    pass\n",
+  "go_template": "// Task Scheduler\n\npackage main\n\nfunc leastInterval(tasks []byte, n int) int {\n    return 0\n}\n",
+  "cpp_template": "// Task Scheduler\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint leastInterval(string& tasks, int n) {\n    return 0;\n}\n",
+  "java_template": "// Task Scheduler\n\nclass Solution {\n    public int leastInterval(char[] tasks, int n) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Task Scheduler\n\nfunction leastInterval(tasks, n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 10k task streams that punish explicit unit-by-unit schedule simulation",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

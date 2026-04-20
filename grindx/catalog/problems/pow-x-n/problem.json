@@ -1,0 +1,40 @@
+{
+  "id": "pow-x-n",
+  "name": "Pow(x, n)",
+  "difficulty": "Medium",
+  "description": "Implement pow(x, n), which calculates x raised to the power n (x^n). Use binary exponentiation (fast power) for O(log n) time: if n is even, x^n = (x^(n/2))^2; if n is odd, x^n = x * x^(n-1). Handle negative exponents.",
+  "examples": [
+    {
+      "input": "x = 2.0, n = 10",
+      "output": "1024.0"
+    },
+    {
+      "input": "x = 2.1, n = 3",
+      "output": "9.261"
+    },
+    {
+      "input": "x = 2.0, n = -2",
+      "output": "0.25"
+    }
+  ],
+  "constraints": "-100.0 < x < 100.0. -2^31 <= n <= 2^31 - 1. n is an integer. x is not zero when n < 0.",
+  "python_template": "# Pow(x, n)\n\ndef myPow(x: float, n: int) -> float:\n    pass\n",
+  "go_template": "// Pow(x, n)\n\npackage main\n\nfunc myPow(x float64, n int) float64 {\n    return 0.0\n}\n",
+  "cpp_template": "// Pow(x, n)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\ndouble myPow(double x, int n) {\n    return 0.0;\n}\n",
+  "java_template": "// Pow(x, n)\n\nclass Solution {\n    public double myPow(double x, int n) {\n        return 0.0;\n    }\n}\n",
+  "js_template": "// Pow(x, n)\n\nfunction myPow(x, n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)",
+      "O(log |n|)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise exponents near 2^31 that punish linear multiplication loops",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "min-stack",
+  "name": "Min Stack",
+  "difficulty": "Medium",
+  "description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. All operations must run in O(1).",
+  "examples": [
+    {
+      "input": "[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-2],[0],[-3],[],[],[],[]]",
+      "output": "[null,null,null,null,-3,null,0,-2]"
+    }
+  ],
+  "constraints": "-2^31 <= val <= 2^31 - 1. pop, top, getMin always called on non-empty stacks. At most 3 * 10^4 calls.",
+  "python_template": "# Min Stack\n\nclass MinStack:\n    def __init__(self):\n        pass\n\n    def push(self, val: int) -> None:\n        pass\n\n    def pop(self) -> None:\n        pass\n\n    def top(self) -> int:\n        pass\n\n    def getMin(self) -> int:\n        pass\n",
+  "go_template": "// Min Stack\n\npackage main\n\ntype MinStack struct {\n}\n\nfunc Constructor() MinStack {\n    return MinStack{}\n}\n\nfunc (s *MinStack) Push(val int) {\n}\n\nfunc (s *MinStack) Pop() {\n}\n\nfunc (s *MinStack) Top() int {\n    return 0\n}\n\nfunc (s *MinStack) GetMin() int {\n    return 0\n}\n",
+  "cpp_template": "// Min Stack\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass MinStack {\npublic:\n    MinStack() {\n\n    }\n\n    void Push(int val) {\n\n    }\n\n    void Pop() {\n\n    }\n\n    int Top() {\n        return 0;\n    }\n\n    int GetMin() {\n        return 0;\n    }\n};\n",
+  "java_template": "// Min Stack\n\nimport java.util.*;\n\nclass MinStack {\n    public MinStack() {\n\n    }\n\n    public void Push(int val) {\n\n    }\n\n    public void Pop() {\n\n    }\n\n    public int Top() {\n        return 0;\n    }\n\n    public int GetMin() {\n        return 0;\n    }\n}\n",
+  "js_template": "// Min Stack\n\nclass MinStack {\n    constructor() {\n\n    }\n\n    push(val) {\n\n    }\n\n    pop() {\n\n    }\n\n    top() {\n\n    }\n\n    getMin() {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(1)/op",
+    "accepted_time": [
+      "O(1)/op"
+    ],
+    "rejected_time": [
+      "O(n) per pop",
+      "O(n) per getMin"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "deep stacks punish rescanning the whole stack for minima",
+    "enforcement": "best-effort-local"
+  }
+}

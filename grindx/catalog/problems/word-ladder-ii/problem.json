@@ -1,0 +1,36 @@
+{
+  "id": "word-ladder-ii",
+  "name": "Word Ladder II",
+  "difficulty": "Hard",
+  "description": "Given beginWord, endWord, and wordList, find all shortest transformation sequences from beginWord to endWord. Each transformation changes one letter, each intermediate word must be in wordList.",
+  "examples": [
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "output": "[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]"
+    },
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+      "output": "[]"
+    }
+  ],
+  "constraints": "1 <= beginWord.length <= 5. endWord.length == beginWord.length. 1 <= wordList.length <= 500. All words same length.",
+  "python_template": "# Word Ladder II\n\nfrom typing import List\nfrom collections import deque, defaultdict\n\ndef findLadders(beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:\n    pass\n",
+  "go_template": "// Word Ladder II\n\npackage main\n\nfunc findLadders(beginWord string, endWord string, wordList []string) [][]string {\n\treturn [][]string{}\n}\n",
+  "cpp_template": "// Word Ladder II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<string>> findLadders(string& beginWord, string& endWord, vector<string>& wordList) {\n    return {};\n}\n",
+  "java_template": "// Word Ladder II\n\nclass Solution {\n    public String[][] findLadders(String beginWord, String endWord, String[] wordList) {\n        return new String[][]{};\n    }\n}\n",
+  "js_template": "// Word Ladder II\n\nfunction findLadders(beginWord, endWord, wordList) {\n\n}\n",
+  "performance": {
+    "target_time": "O(N * L * alphabet + output)",
+    "accepted_time": [
+      "O(N * L * alphabet + output)",
+      "O(N^2 * L + output)"
+    ],
+    "rejected_time": [
+      "O(N^3 * L + output)"
+    ],
+    "target_space": "O(N * L + output)",
+    "stress_intent": "exercise all shortest-path reconstruction over dense small dictionaries; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "remove-nodes-dll",
+  "name": "Delete Node in a Doubly Linked List",
+  "difficulty": "Easy",
+  "description": "Given a doubly linked list and a reference to a node to be deleted, delete the node. Handle head, tail, and middle cases. Update prev and next pointers accordingly.",
+  "examples": [
+    {
+      "input": "DLL = [1,2,3,4], delete node with val 3",
+      "output": "[1,2,4]"
+    },
+    {
+      "input": "DLL = [1,2,3], delete head (val 1)",
+      "output": "[2,3]"
+    }
+  ],
+  "constraints": "The number of nodes is in [1, 10^4]. -10^5 <= Node.val <= 10^5.",
+  "python_template": "# Delete Node in a Doubly Linked List\n\nclass DLLNode:\n    def __init__(self, val=0, next=None, prev=None):\n        self.val = val\n        self.next = next\n        self.prev = prev\n\ndef deleteNode(head: DLLNode, node: DLLNode) -> DLLNode:\n    pass\n",
+  "go_template": "// Delete Node in a Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc deleteNode(head *DLLNode, node *DLLNode) *DLLNode {\n\treturn nil\n}\n",
+  "cpp_template": "// Delete Node in a Doubly Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct DLLNode {\n    int val;\n    DLLNode* next;\n    DLLNode* prev;\n    DLLNode(int val = 0, DLLNode* next = nullptr, DLLNode* prev = nullptr) : val(val), next(next), prev(prev) {}\n};\n\nDLLNode* deleteNode(DLLNode* head, DLLNode* node) {\n    return nullptr;\n}\n",
+  "java_template": "// Delete Node in a Doubly Linked List\n\nclass DLLNode {\n    int val;\n    DLLNode next;\n    DLLNode prev;\n    DLLNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public DLLNode deleteNode(DLLNode head, DLLNode node) {\n        return null;\n    }\n}\n",
+  "js_template": "// Delete Node in a Doubly Linked List\n\nclass DLLNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.prev = null;\n    }\n}\n\nfunction deleteNode(head, node) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise long doubly linked lists that punish repeated predecessor searches instead of one traversal to the deletion index",
+    "enforcement": "best-effort-local"
+  }
+}

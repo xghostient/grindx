@@ -1,0 +1,39 @@
+{
+  "id": "set-unset-rightmost-unset",
+  "name": "Set the Rightmost Unset Bit",
+  "difficulty": "Easy",
+  "description": "Given a non-negative integer n, set the rightmost unset (0) bit of n to 1 and return the result. If all bits are already set, return n as-is.",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "7 (110 -> 111)"
+    },
+    {
+      "input": "n = 9",
+      "output": "11 (1001 -> 1011)"
+    },
+    {
+      "input": "n = 15",
+      "output": "15 (1111 -> all bits set, no change)"
+    }
+  ],
+  "constraints": "0 <= n <= 10^9.",
+  "python_template": "# Set the Rightmost Unset Bit\n\ndef setRightmostUnset(n: int) -> int:\n    pass\n",
+  "go_template": "// Set the Rightmost Unset Bit\n\npackage main\n\nfunc setRightmostUnset(n int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Set the Rightmost Unset Bit\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint setRightmostUnset(int n) {\n    return 0;\n}\n",
+  "java_template": "// Set the Rightmost Unset Bit\n\nclass Solution {\n    public int setRightmostUnset(int n) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Set the Rightmost Unset Bit\n\nfunction setRightmostUnset(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(1)",
+    "accepted_time": [
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(log n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise all-bits-set and large values",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

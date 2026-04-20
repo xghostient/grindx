@@ -1,0 +1,36 @@
+{
+  "id": "min-falling-path-sum",
+  "name": "Minimum Falling Path Sum",
+  "difficulty": "Medium",
+  "category": "Grid DP",
+  "description": "Given an n x n matrix, find the minimum sum of a falling path. A falling path starts at any element in the first row and moves to the element directly below, or diagonally left/right below.",
+  "examples": [
+    {
+      "input": "matrix = [[2,1,3],[6,5,4],[7,8,9]]",
+      "output": "13"
+    },
+    {
+      "input": "matrix = [[-19,57],[-40,-5]]",
+      "output": "-59"
+    }
+  ],
+  "constraints": "n == matrix.length == matrix[i].length, 1 <= n <= 100",
+  "python_template": "def minFallingPathSum(matrix: list[list[int]]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc minFallingPathSum(matrix [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Minimum Falling Path Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minFallingPathSum(vector<vector<int>>& matrix) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Falling Path Sum\n\nclass Solution {\n    public int minFallingPathSum(int[][] matrix) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimum Falling Path Sum\n\nfunction minFallingPathSum(matrix) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(3^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate falling-path DP from plain three-way recursion using larger square matrices with mixed costs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

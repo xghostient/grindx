@@ -1,0 +1,35 @@
+{
+  "id": "remove-duplicates-from-sorted-array",
+  "name": "Remove Duplicates from Sorted Array",
+  "difficulty": "Easy",
+  "description": "Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Return the number of unique elements k. The first k elements of nums should hold the result.",
+  "examples": [
+    {
+      "input": "nums = [1,1,2]",
+      "output": "2, nums = [1,2,_]"
+    },
+    {
+      "input": "nums = [0,0,1,1,1,2,2,3,3,4]",
+      "output": "5, nums = [0,1,2,3,4,_,_,_,_,_]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 3 * 10^4. -100 <= nums[i] <= 100. nums is sorted in non-decreasing order.",
+  "python_template": "# Remove Duplicates from Sorted Array\n\nfrom typing import List\n\ndef removeDuplicates(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Remove Duplicates from Sorted Array\n\npackage main\n\nfunc removeDuplicates(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Remove Duplicates from Sorted Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint removeDuplicates(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Remove Duplicates from Sorted Array\n\nclass Solution {\n    public int removeDuplicates(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Remove Duplicates from Sorted Array\n\nfunction removeDuplicates(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 30k sorted arrays with long runs that punish repeated deletions",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "subseq-05-partn-with-given-diff",
+  "name": "Partitions with Given Difference",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "Given an array and a difference d, count the number of ways to partition the array into two subsets such that the difference of their sums equals d.",
+  "examples": [
+    {
+      "input": "arr = [5, 2, 6, 4], d = 3",
+      "output": "1"
+    },
+    {
+      "input": "arr = [1, 1, 1, 1], d = 0",
+      "output": "6"
+    }
+  ],
+  "constraints": "1 <= n <= 50, 0 <= arr[i] <= 50, 0 <= d <= 2500",
+  "python_template": "def countPartitions(arr: list[int], d: int) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc countPartitions(arr []int, d int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Partitions with Given Difference\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countPartitions(vector<int>& arr, int d) {\n    return 0;\n}\n",
+  "java_template": "// Partitions with Given Difference\n\nclass Solution {\n    public int countPartitions(int[] arr, int d) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Partitions with Given Difference\n\nfunction countPartitions(arr, d) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * sum(arr))",
+    "accepted_time": [
+      "O(n * sum(arr))"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(sum(arr))",
+    "stress_intent": "separate partition-count DP from plain recursion using longer arrays with many balanced splits",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "string-to-integer-atoi",
+  "name": "String to Integer (atoi)",
+  "difficulty": "Medium",
+  "description": "Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer. The algorithm: 1) Read and ignore leading whitespace. 2) Check if the next character is '-' or '+' (optional sign). 3) Read digits until a non-digit character or end of input. 4) Convert digits to integer. 5) Clamp the result to the 32-bit signed integer range [-2^31, 2^31 - 1].",
+  "examples": [
+    {
+      "input": "s = \"42\"",
+      "output": "42"
+    },
+    {
+      "input": "s = \"   -42\"",
+      "output": "-42"
+    },
+    {
+      "input": "s = \"4193 with words\"",
+      "output": "4193"
+    },
+    {
+      "input": "s = \"words and 987\"",
+      "output": "0"
+    }
+  ],
+  "constraints": "0 <= s.length <= 200. s consists of English letters, digits, ' ', '+', '-', and '.'.",
+  "python_template": "# String to Integer (atoi)\n\ndef myAtoi(s: str) -> int:\n    pass\n",
+  "go_template": "// String to Integer (atoi)\n\npackage main\n\nfunc myAtoi(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// String to Integer (atoi)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint myAtoi(string& s) {\n    return 0;\n}\n",
+  "java_template": "// String to Integer (atoi)\n\nclass Solution {\n    public int myAtoi(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// String to Integer (atoi)\n\nfunction myAtoi(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise trimming, sign parsing, early stop, and int32 clamping; strict local separation is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

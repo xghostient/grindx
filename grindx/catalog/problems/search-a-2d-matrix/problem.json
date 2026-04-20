@@ -1,0 +1,35 @@
+{
+  "id": "search-a-2d-matrix",
+  "name": "Search a 2D Matrix",
+  "difficulty": "Medium",
+  "description": "Given an m x n matrix where each row is sorted in ascending order and the first integer of each row is greater than the last integer of the previous row, determine if a target value exists in the matrix. Write an efficient algorithm.",
+  "examples": [
+    {
+      "input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3",
+      "output": "true"
+    },
+    {
+      "input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13",
+      "output": "false"
+    }
+  ],
+  "constraints": "m == matrix.length. n == matrix[i].length. 1 <= m, n <= 100. -10^4 <= matrix[i][j], target <= 10^4.",
+  "python_template": "# Search a 2D Matrix\n\nfrom typing import List\n\ndef searchMatrix(matrix: List[List[int]], target: int) -> bool:\n    pass\n",
+  "go_template": "// Search a 2D Matrix\n\npackage main\n\nfunc searchMatrix(matrix [][]int, target int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Search a 2D Matrix\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool searchMatrix(vector<vector<int>>& matrix, int target) {\n    return false;\n}\n",
+  "java_template": "// Search a 2D Matrix\n\nclass Solution {\n    public boolean searchMatrix(int[][] matrix, int target) {\n        return false;\n    }\n}\n",
+  "js_template": "// Search a 2D Matrix\n\nfunction searchMatrix(matrix, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log(m*n))",
+    "accepted_time": [
+      "O(log(m*n))"
+    ],
+    "rejected_time": [
+      "O(m*n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large matrices that punish scanning every cell",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

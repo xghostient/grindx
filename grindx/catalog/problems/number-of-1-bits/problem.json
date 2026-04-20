@@ -1,0 +1,40 @@
+{
+  "id": "number-of-1-bits",
+  "name": "Number of 1 Bits",
+  "difficulty": "Easy",
+  "description": "Given a positive integer n, return the number of set bits (1s) in its binary representation (also known as the Hamming weight).",
+  "examples": [
+    {
+      "input": "n = 11",
+      "output": "3 (11 = 1011)"
+    },
+    {
+      "input": "n = 128",
+      "output": "1 (128 = 10000000)"
+    },
+    {
+      "input": "n = 2147483645",
+      "output": "30"
+    }
+  ],
+  "constraints": "1 <= n <= 2^31 - 1.",
+  "python_template": "# Number of 1 Bits\n\ndef hammingWeight(n: int) -> int:\n    pass\n",
+  "go_template": "// Number of 1 Bits\n\npackage main\n\nfunc hammingWeight(n int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Number of 1 Bits\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint hammingWeight(int n) {\n    return 0;\n}\n",
+  "java_template": "// Number of 1 Bits\n\nclass Solution {\n    public int hammingWeight(int n) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of 1 Bits\n\nfunction hammingWeight(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)",
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large values near 2^31",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

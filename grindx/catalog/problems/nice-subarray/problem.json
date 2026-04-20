@@ -1,0 +1,39 @@
+{
+  "id": "nice-subarray",
+  "name": "Count Number of Nice Subarrays",
+  "difficulty": "Medium",
+  "description": "Given an array of integers nums and an integer k, return the number of nice subarrays. A subarray is nice if it contains exactly k odd numbers. Hint: convert to binary (odd=1, even=0) and use the same pattern as Binary Subarrays With Sum.",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,1,1], k = 3",
+      "output": "2 ([1,1,2,1] and [1,2,1,1])"
+    },
+    {
+      "input": "nums = [2,4,6], k = 1",
+      "output": "0"
+    },
+    {
+      "input": "nums = [2,2,2,1,2,2,1,2,2,2], k = 2",
+      "output": "16"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 50000. 1 <= nums[i] <= 10^5. 1 <= k <= nums.length.",
+  "python_template": "# Count Number of Nice Subarrays\n\nfrom typing import List\n\ndef numberOfSubarrays(nums: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Count Number of Nice Subarrays\n\npackage main\n\nfunc numberOfSubarrays(nums []int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Count Number of Nice Subarrays\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numberOfSubarrays(vector<int>& nums, int k) {\n    return 0;\n}\n",
+  "java_template": "// Count Number of Nice Subarrays\n\nclass Solution {\n    public int numberOfSubarrays(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Count Number of Nice Subarrays\n\nfunction numberOfSubarrays(nums, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise odd-count window maintenance over 50k arrays that punish quadratic subarray scans locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

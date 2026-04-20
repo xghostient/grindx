@@ -1,0 +1,36 @@
+{
+  "id": "longest-common-substring",
+  "name": "Longest Common Substring",
+  "difficulty": "Medium",
+  "category": "Strings DP",
+  "description": "Given two strings, find the length of the longest common substring (contiguous characters).",
+  "examples": [
+    {
+      "input": "s1 = \"ABCDGH\", s2 = \"ACDGHR\"",
+      "output": "4"
+    },
+    {
+      "input": "s1 = \"ABC\", s2 = \"ACB\"",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= s1.length, s2.length <= 1000",
+  "python_template": "def longestCommonSubstring(s1: str, s2: str) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc longestCommonSubstring(s1, s2 string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Common Substring\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestCommonSubstring(string& s1, string& s2) {\n    return 0;\n}\n",
+  "java_template": "// Longest Common Substring\n\nclass Solution {\n    public int longestCommonSubstring(String s1, String s2) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Common Substring\n\nfunction longestCommonSubstring(s1, s2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m)",
+    "accepted_time": [
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(2^(n+m))"
+    ],
+    "target_space": "O(m)",
+    "stress_intent": "separate quadratic contiguous-match DP from exponential recursion using longer high-branching string pairs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

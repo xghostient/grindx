@@ -1,0 +1,40 @@
+{
+  "id": "quick-sort",
+  "name": "Quick Sort",
+  "difficulty": "Medium",
+  "description": "Implement the quick sort algorithm. Pick a pivot element, partition the array such that elements less than the pivot come before it and elements greater come after, then recursively sort the partitions. Time: O(n log n) average, O(n^2) worst case. Space: O(log n) stack space.",
+  "examples": [
+    {
+      "input": "arr = [10, 7, 8, 9, 1, 5]",
+      "output": "[1, 5, 7, 8, 9, 10]"
+    },
+    {
+      "input": "arr = [3, 6, 8, 10, 1, 2, 1]",
+      "output": "[1, 1, 2, 3, 6, 8, 10]"
+    },
+    {
+      "input": "arr = [1]",
+      "output": "[1]"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. -10^4 <= arr[i] <= 10^4.",
+  "python_template": "# Quick Sort\n\nfrom typing import List\n\ndef quickSort(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Quick Sort\n\npackage main\n\nfunc quickSort(arr []int) []int {\n    return arr\n}\n",
+  "cpp_template": "// Quick Sort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> quickSort(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Quick Sort\n\nclass Solution {\n    public int[] quickSort(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Quick Sort\n\nfunction quickSort(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(log n)",
+    "stress_intent": "exercise mixed arrays that confirm sorting correctness without penalizing naive pivot selection",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

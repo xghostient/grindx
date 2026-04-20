@@ -1,0 +1,35 @@
+{
+  "id": "undirected-graph-cycle-dfs",
+  "name": "Detect Cycle in Undirected Graph (DFS)",
+  "difficulty": "Medium",
+  "description": "Given an undirected graph with V vertices and E edges, detect whether the graph contains a cycle using DFS. Return true if a cycle exists.",
+  "examples": [
+    {
+      "input": "V = 5, edges = [[0,1],[1,2],[2,3],[3,4],[4,1]]",
+      "output": "true"
+    },
+    {
+      "input": "V = 3, edges = [[0,1],[1,2]]",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= V <= 10^5. 0 <= E <= 10^5.",
+  "python_template": "# Detect Cycle in Undirected Graph (DFS)\n\nfrom typing import List\n\ndef isCycle(V: int, adj: List[List[int]]) -> bool:\n    pass\n",
+  "go_template": "// Detect Cycle in Undirected Graph (DFS)\n\npackage main\n\nfunc isCycle(V int, adj [][]int) bool {\n\treturn false;\n}\n",
+  "cpp_template": "// Detect Cycle in Undirected Graph (DFS)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isCycle(int V, vector<vector<int>>& adj) {\n    return false;\n}\n",
+  "java_template": "// Detect Cycle in Undirected Graph (DFS)\n\nclass Solution {\n    public boolean isCycle(int V, int[][] adj) {\n        return false;\n    }\n}\n",
+  "js_template": "// Detect Cycle in Undirected Graph (DFS)\n\nfunction isCycle(V, adj) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill parent-unaware or restart-heavy DFS implementations on giant sparse graphs",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

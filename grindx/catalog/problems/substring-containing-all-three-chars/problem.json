@@ -1,0 +1,39 @@
+{
+  "id": "substring-containing-all-three-chars",
+  "name": "Number of Substrings Containing All Three Characters",
+  "difficulty": "Medium",
+  "description": "Given a string s consisting only of characters 'a', 'b', and 'c', return the number of substrings that contain at least one occurrence of all three characters.",
+  "examples": [
+    {
+      "input": "s = \"abcabc\"",
+      "output": "10"
+    },
+    {
+      "input": "s = \"aaacb\"",
+      "output": "3"
+    },
+    {
+      "input": "s = \"abc\"",
+      "output": "1"
+    }
+  ],
+  "constraints": "3 <= s.length <= 5 * 10^4. s consists only of 'a', 'b', and 'c'.",
+  "python_template": "# Number of Substrings Containing All Three Characters\n\ndef numberOfSubstrings(s: str) -> int:\n    pass\n",
+  "go_template": "// Number of Substrings Containing All Three Characters\n\npackage main\n\nfunc numberOfSubstrings(s string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Number of Substrings Containing All Three Characters\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numberOfSubstrings(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Number of Substrings Containing All Three Characters\n\nclass Solution {\n    public int numberOfSubstrings(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Substrings Containing All Three Characters\n\nfunction numberOfSubstrings(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise last-seen tracking over 50k abc strings that punish quadratic substring counting locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

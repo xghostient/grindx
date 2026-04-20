@@ -1,0 +1,36 @@
+{
+  "id": "aggressive-cows",
+  "name": "Aggressive Cows",
+  "difficulty": "Medium",
+  "description": "Given an array of stall positions and an integer k (number of cows), place k cows in the stalls such that the minimum distance between any two cows is maximized. Return the largest minimum distance.",
+  "examples": [
+    {
+      "input": "stalls = [1, 2, 4, 8, 9], k = 3",
+      "output": "3 (place at 1, 4, 8)"
+    },
+    {
+      "input": "stalls = [10, 1, 2, 7, 5], k = 3",
+      "output": "4 (place at 1, 5, 10)"
+    }
+  ],
+  "constraints": "2 <= stalls.length <= 10^5. 0 <= stalls[i] <= 10^9. 2 <= k <= stalls.length.",
+  "python_template": "# Aggressive Cows\n\nfrom typing import List\n\ndef aggressiveCows(stalls: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Aggressive Cows\n\npackage main\n\n\nfunc aggressiveCows(stalls []int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Aggressive Cows\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint aggressiveCows(vector<int>& stalls, int k) {\n    return 0;\n}\n",
+  "java_template": "// Aggressive Cows\n\nclass Solution {\n    public int aggressiveCows(int[] stalls, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Aggressive Cows\n\nfunction aggressiveCows(stalls, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log(max-min))",
+    "accepted_time": [
+      "O(n log(max-min))"
+    ],
+    "rejected_time": [
+      "O(n^2)",
+      "O(n * (max-min))"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100k stalls that punish repeated distance scans",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

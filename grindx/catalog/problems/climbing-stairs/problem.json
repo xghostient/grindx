@@ -1,0 +1,37 @@
+{
+  "id": "climbing-stairs",
+  "name": "Climbing Stairs",
+  "difficulty": "Easy",
+  "category": "1D DP",
+  "description": "You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "2"
+    },
+    {
+      "input": "n = 3",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= n <= 45",
+  "python_template": "def climbStairs(n: int) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc climbStairs(n int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Climbing Stairs\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint climbStairs(int n) {\n    return 0;\n}\n",
+  "java_template": "// Climbing Stairs\n\nclass Solution {\n    public int climbStairs(int n) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Climbing Stairs\n\nfunction climbStairs(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear Fibonacci DP from exponential recursion using n in the low-40s while keeping outputs within int32",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

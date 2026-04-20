@@ -1,0 +1,35 @@
+{
+  "id": "counting-bits",
+  "name": "Counting Bits",
+  "difficulty": "Easy",
+  "description": "Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "[0,1,1]"
+    },
+    {
+      "input": "n = 5",
+      "output": "[0,1,1,2,1,2]"
+    }
+  ],
+  "constraints": "0 <= n <= 10^5.",
+  "python_template": "# Counting Bits\n\nfrom typing import List\n\ndef countBits(n: int) -> List[int]:\n    pass\n",
+  "go_template": "// Counting Bits\n\npackage main\n\nfunc countBits(n int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Counting Bits\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> countBits(int n) {\n    return {};\n}\n",
+  "java_template": "// Counting Bits\n\nclass Solution {\n    public int[] countBits(int n) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Counting Bits\n\nfunction countBits(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n log n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large n to distinguish O(n) from O(n log n)",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

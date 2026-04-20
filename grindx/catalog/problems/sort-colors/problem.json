@@ -1,0 +1,36 @@
+{
+  "id": "sort-colors",
+  "name": "Sort Colors",
+  "difficulty": "Medium",
+  "description": "Given an array nums with n objects colored red (0), white (1), or blue (2), sort them in-place so that objects of the same color are adjacent, in the order red, white, blue. You must solve this without using the library's sort function. Use the Dutch National Flag algorithm with three pointers.",
+  "examples": [
+    {
+      "input": "nums = [2,0,2,1,1,0]",
+      "output": "[0,0,1,1,2,2]"
+    },
+    {
+      "input": "nums = [2,0,1]",
+      "output": "[0,1,2]"
+    }
+  ],
+  "constraints": "n == nums.length. 1 <= n <= 300. nums[i] is 0, 1, or 2.",
+  "python_template": "# Sort Colors\n\nfrom typing import List\n\ndef sortColors(nums: List[int]) -> None:\n    pass\n",
+  "go_template": "// Sort Colors\n\npackage main\n\nfunc sortColors(nums []int) {\n\n}\n",
+  "cpp_template": "// Sort Colors\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid sortColors(vector<int>& nums) {\n\n}\n",
+  "java_template": "// Sort Colors\n\nclass Solution {\n    public void sortColors(int[] nums) {\n\n    }\n}\n",
+  "js_template": "// Sort Colors\n\nfunction sortColors(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 300-length color arrays that punish repeated swapping passes",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "lis-06-longest-string-chain",
+  "name": "Longest String Chain",
+  "difficulty": "Medium",
+  "category": "LIS",
+  "description": "Given a list of words, find the longest chain where each word is formed by adding exactly one letter to the previous word. Words can be reordered.",
+  "examples": [
+    {
+      "input": "words = [\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]",
+      "output": "4"
+    },
+    {
+      "input": "words = [\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]",
+      "output": "5"
+    }
+  ],
+  "constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 16",
+  "python_template": "def longestStrChain(words: list[str]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc longestStrChain(words []string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest String Chain\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestStrChain(vector<string>& words) {\n    return 0;\n}\n",
+  "java_template": "// Longest String Chain\n\nclass Solution {\n    public int longestStrChain(String[] words) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest String Chain\n\nfunction longestStrChain(words) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * L^2)",
+    "accepted_time": [
+      "O(n * L^2)"
+    ],
+    "rejected_time": [
+      "O(n^2 * L)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate predecessor-deletion DP from exponential subset recursion using longer chain-heavy word sets",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

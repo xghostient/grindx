@@ -1,0 +1,36 @@
+{
+  "id": "combination-sum-iv",
+  "name": "Combination Sum IV",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "Given an array of distinct positive integers nums and a target, return the number of possible combinations that add up to target. Different orderings count as different combinations.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], target = 4",
+      "output": "7 (sequences: [1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1])"
+    },
+    {
+      "input": "nums = [9], target = 3",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 200. 1 <= nums[i] <= 1000. All nums are unique. 1 <= target <= 1000.",
+  "python_template": "# Combination Sum IV\n\nfrom typing import List\n\ndef combinationSum4(nums: List[int], target: int) -> int:\n    pass\n",
+  "go_template": "// Combination Sum IV\n\npackage main\n\nfunc combinationSum4(nums []int, target int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Combination Sum IV\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint combinationSum4(vector<int>& nums, int target) {\n    return 0;\n}\n",
+  "java_template": "// Combination Sum IV\n\nclass Solution {\n    public int combinationSum4(int[] nums, int target) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Combination Sum IV\n\nfunction combinationSum4(nums, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(target * nums.length)",
+    "accepted_time": [
+      "O(target * nums.length)"
+    ],
+    "rejected_time": [
+      "O(2^target)"
+    ],
+    "target_space": "O(target)",
+    "stress_intent": "separate order-sensitive counting DP from plain recursion using targets large enough to explode branching",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

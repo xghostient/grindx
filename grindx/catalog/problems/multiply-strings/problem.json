@@ -1,0 +1,39 @@
+{
+  "id": "multiply-strings",
+  "name": "Multiply Strings",
+  "difficulty": "Medium",
+  "description": "Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string. You must not use any built-in BigInteger library or convert the inputs to integer directly. Simulate grade-school multiplication.",
+  "examples": [
+    {
+      "input": "num1 = \"2\", num2 = \"3\"",
+      "output": "\"6\""
+    },
+    {
+      "input": "num1 = \"123\", num2 = \"456\"",
+      "output": "\"56088\""
+    },
+    {
+      "input": "num1 = \"0\", num2 = \"999\"",
+      "output": "\"0\""
+    }
+  ],
+  "constraints": "1 <= num1.length, num2.length <= 200. num1 and num2 consist of digits only. Neither contains leading zeros (except \"0\" itself).",
+  "python_template": "# Multiply Strings\n\ndef multiply(num1: str, num2: str) -> str:\n    pass\n",
+  "go_template": "// Multiply Strings\n\npackage main\n\nfunc multiply(num1 string, num2 string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Multiply Strings\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring multiply(string& num1, string& num2) {\n    return \"\";\n}\n",
+  "java_template": "// Multiply Strings\n\nclass Solution {\n    public String multiply(String num1, String num2) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Multiply Strings\n\nfunction multiply(num1, num2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m * n)",
+    "accepted_time": [
+      "O(m * n)"
+    ],
+    "rejected_time": [
+      "O(m * n * (m + n))"
+    ],
+    "target_space": "O(m + n)",
+    "stress_intent": "exercise 200-digit strings that punish repeated string concatenation inside the multiplication loop",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

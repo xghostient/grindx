@@ -1,0 +1,40 @@
+{
+  "id": "contains-duplicate",
+  "name": "Contains Duplicate",
+  "difficulty": "Easy",
+  "description": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,1]",
+      "output": "true"
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "false"
+    },
+    {
+      "input": "nums = [1,1,1,3,3,4,3,2,4,2]",
+      "output": "true"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10^5. -10^9 <= nums[i] <= 10^9.",
+  "python_template": "# Contains Duplicate\n\nfrom typing import List\n\ndef containsDuplicate(nums: List[int]) -> bool:\n    pass\n",
+  "go_template": "// Contains Duplicate\n\npackage main\n\nfunc containsDuplicate(nums []int) bool {\n    return false\n}\n",
+  "cpp_template": "// Contains Duplicate\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool containsDuplicate(vector<int>& nums) {\n    return false;\n}\n",
+  "java_template": "// Contains Duplicate\n\nclass Solution {\n    public boolean containsDuplicate(int[] nums) {\n        return false;\n    }\n}\n",
+  "js_template": "// Contains Duplicate\n\nfunction containsDuplicate(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill nested pair-scan solutions while still accepting hash-set and sort-based approaches",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

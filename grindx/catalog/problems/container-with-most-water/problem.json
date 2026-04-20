@@ -1,0 +1,35 @@
+{
+  "id": "container-with-most-water",
+  "name": "Container With Most Water",
+  "difficulty": "Medium",
+  "description": "You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container that holds the most water. Return the maximum amount of water.",
+  "examples": [
+    {
+      "input": "height = [1,8,6,2,5,4,8,3,7]",
+      "output": "49"
+    },
+    {
+      "input": "height = [1,1]",
+      "output": "1"
+    }
+  ],
+  "constraints": "n == height.length. 2 <= n <= 10^5. 0 <= height[i] <= 10^4.",
+  "python_template": "# Container With Most Water\n\nfrom typing import List\n\ndef maxArea(height: List[int]) -> int:\n    pass\n",
+  "go_template": "// Container With Most Water\n\npackage main\n\nfunc maxArea(height []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Container With Most Water\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxArea(vector<int>& height) {\n    return 0;\n}\n",
+  "java_template": "// Container With Most Water\n\nclass Solution {\n    public int maxArea(int[] height) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Container With Most Water\n\nfunction maxArea(height) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100k height arrays that punish pairwise area scans",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

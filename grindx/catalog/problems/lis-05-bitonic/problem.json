@@ -1,0 +1,36 @@
+{
+  "id": "lis-05-bitonic",
+  "name": "Longest Bitonic Subsequence",
+  "difficulty": "Medium",
+  "category": "LIS",
+  "description": "A bitonic subsequence first increases then decreases. Given an array, find the length of the longest bitonic subsequence.",
+  "examples": [
+    {
+      "input": "nums = [1, 11, 2, 10, 4, 5, 2, 1]",
+      "output": "6"
+    },
+    {
+      "input": "nums = [12, 11, 40, 5, 3, 1]",
+      "output": "5"
+    }
+  ],
+  "constraints": "1 <= n <= 1000",
+  "python_template": "def longestBitonicSubseq(nums: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc longestBitonicSubseq(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Bitonic Subsequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestBitonicSubseq(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Longest Bitonic Subsequence\n\nclass Solution {\n    public int longestBitonicSubseq(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Bitonic Subsequence\n\nfunction longestBitonicSubseq(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate bitonic DP from exponential phase-tracking recursion using longer mountain-shaped arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

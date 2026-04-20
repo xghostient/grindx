@@ -1,0 +1,39 @@
+{
+  "id": "sum-of-beauty-of-all-substr",
+  "name": "Sum of Beauty of All Substrings",
+  "difficulty": "Medium",
+  "description": "The beauty of a string is the difference in frequencies between the most frequent and least frequent characters. Given a string s, return the sum of beauty of all of its substrings.",
+  "examples": [
+    {
+      "input": "s = \"aabcb\"",
+      "output": "5"
+    },
+    {
+      "input": "s = \"aabcbaa\"",
+      "output": "17"
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= s.length <= 500. s consists of only lowercase English letters.",
+  "python_template": "# Sum of Beauty of All Substrings\n\ndef beautySum(s: str) -> int:\n    pass\n",
+  "go_template": "// Sum of Beauty of All Substrings\n\npackage main\n\nfunc beautySum(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// Sum of Beauty of All Substrings\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint beautySum(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Sum of Beauty of All Substrings\n\nclass Solution {\n    public int beautySum(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Sum of Beauty of All Substrings\n\nfunction beautySum(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2 * alphabet)",
+    "accepted_time": [
+      "O(n^2 * alphabet)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(alphabet)",
+    "stress_intent": "exercise incremental frequency maintenance across all substring starts; strict local separation is deferred",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

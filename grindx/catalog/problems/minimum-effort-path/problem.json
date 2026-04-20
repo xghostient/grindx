@@ -1,0 +1,39 @@
+{
+  "id": "minimum-effort-path",
+  "name": "Path With Minimum Effort",
+  "difficulty": "Medium",
+  "description": "Given a 2D grid of heights, find a path from top-left to bottom-right that minimizes the maximum absolute difference in heights between consecutive cells. You can move 4-directionally.",
+  "examples": [
+    {
+      "input": "heights = [[1,2,2],[3,8,2],[5,3,5]]",
+      "output": "2"
+    },
+    {
+      "input": "heights = [[1,2,3],[3,8,4],[5,3,5]]",
+      "output": "1"
+    },
+    {
+      "input": "heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]",
+      "output": "0"
+    }
+  ],
+  "constraints": "rows == heights.length. columns == heights[i].length. 1 <= rows, columns <= 100. 1 <= heights[i][j] <= 10^6.",
+  "python_template": "# Path With Minimum Effort\n\nfrom typing import List\nimport heapq\n\ndef minimumEffortPath(heights: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Path With Minimum Effort\n\npackage main\n\nfunc minimumEffortPath(heights [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Path With Minimum Effort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minimumEffortPath(vector<vector<int>>& heights) {\n    return 0;\n}\n",
+  "java_template": "// Path With Minimum Effort\n\nclass Solution {\n    public int minimumEffortPath(int[][] heights) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Path With Minimum Effort\n\nfunction minimumEffortPath(heights) {\n\n}\n",
+  "performance": {
+    "target_time": "O(mn log(mn))",
+    "accepted_time": [
+      "O(mn log(mn))"
+    ],
+    "rejected_time": [
+      "O((mn)^2)"
+    ],
+    "target_space": "O(mn)",
+    "stress_intent": "exercise minimax path selection on small height grids; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

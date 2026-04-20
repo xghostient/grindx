@@ -1,0 +1,36 @@
+{
+  "id": "house-robber",
+  "name": "House Robber",
+  "difficulty": "Medium",
+  "category": "1D DP",
+  "description": "You are a robber planning to rob houses along a street. Each house has a certain amount of money. Adjacent houses have connected security systems \u2014 if two adjacent houses are broken into on the same night, the police will be alerted. Return the maximum amount of money you can rob without alerting the police.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,1]",
+      "output": "4 (rob house 1 and 3)"
+    },
+    {
+      "input": "nums = [2,7,9,3,1]",
+      "output": "12 (rob house 1, 3, and 5)"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 100. 0 <= nums[i] <= 400.",
+  "python_template": "# House Robber\n\nfrom typing import List\n\ndef rob(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\n// House Robber\n\n\nfunc rob(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// House Robber\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint rob(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// House Robber\n\nclass Solution {\n    public int rob(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// House Robber\n\nfunction rob(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear adjacency DP from exponential include-skip recursion on long ambiguous robbery arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

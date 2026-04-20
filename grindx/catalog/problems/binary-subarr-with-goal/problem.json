@@ -1,0 +1,35 @@
+{
+  "id": "binary-subarr-with-goal",
+  "name": "Binary Subarrays With Sum",
+  "difficulty": "Medium",
+  "description": "Given a binary array nums and an integer goal, return the number of non-empty subarrays with a sum equal to goal. Hint: count(goal) = atMost(goal) - atMost(goal-1).",
+  "examples": [
+    {
+      "input": "nums = [1,0,1,0,1], goal = 2",
+      "output": "4 ([1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1])"
+    },
+    {
+      "input": "nums = [0,0,0,0,0], goal = 0",
+      "output": "15"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 3 * 10^4. nums[i] is either 0 or 1. 0 <= goal <= nums.length.",
+  "python_template": "# Binary Subarrays With Sum\n\nfrom typing import List\n\ndef numSubarraysWithSum(nums: List[int], goal: int) -> int:\n    pass\n",
+  "go_template": "// Binary Subarrays With Sum\n\npackage main\n\nfunc numSubarraysWithSum(nums []int, goal int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Binary Subarrays With Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numSubarraysWithSum(vector<int>& nums, int goal) {\n    return 0;\n}\n",
+  "java_template": "// Binary Subarrays With Sum\n\nclass Solution {\n    public int numSubarraysWithSum(int[] nums, int goal) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Binary Subarrays With Sum\n\nfunction numSubarraysWithSum(nums, goal) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise prefix-sum counting over 30k binary arrays that punish quadratic subarray summation locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

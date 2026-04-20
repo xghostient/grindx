@@ -1,0 +1,36 @@
+{
+  "id": "wildcard-matching",
+  "name": "Wildcard Matching",
+  "difficulty": "Hard",
+  "category": "Strings DP",
+  "description": "Given a string s and a pattern p, implement wildcard pattern matching. '?' matches any single character. '*' matches any sequence of characters (including empty).",
+  "examples": [
+    {
+      "input": "s = \"aa\", p = \"a\"",
+      "output": "false"
+    },
+    {
+      "input": "s = \"adceb\", p = \"*a*b\"",
+      "output": "true"
+    }
+  ],
+  "constraints": "0 <= s.length, p.length <= 2000",
+  "python_template": "def isMatch(s: str, p: str) -> bool:\n    pass\n",
+  "go_template": "package main\n\nfunc isMatch(s string, p string) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Wildcard Matching\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isMatch(string& s, string& p) {\n    return false;\n}\n",
+  "java_template": "// Wildcard Matching\n\nclass Solution {\n    public boolean isMatch(String s, String p) {\n        return false;\n    }\n}\n",
+  "js_template": "// Wildcard Matching\n\nfunction isMatch(s, p) {\n\n}\n",
+  "performance": {
+    "target_time": "O(len(s) * len(p))",
+    "accepted_time": [
+      "O(len(s) * len(p))"
+    ],
+    "rejected_time": [
+      "O(2^(len(s)+len(p)))"
+    ],
+    "target_space": "O(len(p))",
+    "stress_intent": "separate wildcard DP from exponential star backtracking using repeated split points with a final mismatch",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

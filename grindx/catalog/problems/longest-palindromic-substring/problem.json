@@ -1,0 +1,40 @@
+{
+  "id": "longest-palindromic-substring",
+  "name": "Longest Palindromic Substring",
+  "difficulty": "Medium",
+  "description": "Given a string s, return the longest palindromic substring in s. Use expand-around-center approach for O(n^2) time and O(1) space.",
+  "examples": [
+    {
+      "input": "s = \"babad\"",
+      "output": "\"bab\" (or \"aba\")"
+    },
+    {
+      "input": "s = \"cbbd\"",
+      "output": "\"bb\""
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "\"a\""
+    }
+  ],
+  "constraints": "1 <= s.length <= 1000. s consist of only digits and English letters.",
+  "python_template": "# Longest Palindromic Substring\n\ndef longestPalindrome(s: str) -> str:\n    pass\n",
+  "go_template": "// Longest Palindromic Substring\n\npackage main\n\nfunc longestPalindrome(s string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Longest Palindromic Substring\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring longestPalindrome(string& s) {\n    return \"\";\n}\n",
+  "java_template": "// Longest Palindromic Substring\n\nclass Solution {\n    public String longestPalindrome(String s) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Longest Palindromic Substring\n\nfunction longestPalindrome(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)",
+      "O(n^2 log n)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise longest-palindrome validation on max-size 1000-character strings that reject cubic substring enumeration locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

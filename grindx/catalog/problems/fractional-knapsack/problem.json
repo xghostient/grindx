@@ -1,0 +1,39 @@
+{
+  "id": "fractional-knapsack",
+  "name": "Fractional Knapsack",
+  "difficulty": "Medium",
+  "description": "Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. You can break items \u2014 i.e., take fractions of items. Sort by value/weight ratio and greedily pick items.",
+  "examples": [
+    {
+      "input": "values = [60, 100, 120], weights = [10, 20, 30], W = 50",
+      "output": "240.0 (take items 0 and 1 fully: 60+100=160, then 2/3 of item 2: 80 \u2192 total 240)"
+    },
+    {
+      "input": "values = [500], weights = [30], W = 10",
+      "output": "166.67 (take 10/30 of the item)"
+    },
+    {
+      "input": "values = [10, 20], weights = [5, 10], W = 15",
+      "output": "30.0"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. 1 <= W <= 10^9. 1 <= values[i], weights[i] <= 10^4.",
+  "python_template": "# Fractional Knapsack\n\nfrom typing import List\n\ndef fractionalKnapsack(values: List[int], weights: List[int], W: int) -> float:\n    pass\n",
+  "go_template": "// Fractional Knapsack\n\npackage main\n\nfunc fractionalKnapsack(values, weights []int, W int) float64 {\n    return 0.0\n}\n",
+  "cpp_template": "// Fractional Knapsack\n\n#include <bits/stdc++.h>\nusing namespace std;\n\ndouble fractionalKnapsack(vector<int>& values, vector<int>& weights, int W) {\n    return 0.0;\n}\n",
+  "java_template": "// Fractional Knapsack\n\nclass Solution {\n    public double fractionalKnapsack(int[] values, int[] weights, int W) {\n        return 0.0;\n    }\n}\n",
+  "js_template": "// Fractional Knapsack\n\nfunction fractionalKnapsack(values, weights, W) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) auxiliary",
+    "stress_intent": "exercise large item arrays that punish non-sorted knapsack filling",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

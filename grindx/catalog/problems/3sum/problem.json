@@ -1,0 +1,39 @@
+{
+  "id": "3sum",
+  "name": "3Sum",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, j != k, and nums[i] + nums[j] + nums[k] == 0. The solution set must not contain duplicate triplets.",
+  "examples": [
+    {
+      "input": "nums = [-1,0,1,2,-1,-4]",
+      "output": "[[-1,-1,2],[-1,0,1]]"
+    },
+    {
+      "input": "nums = [0,1,1]",
+      "output": "[]"
+    },
+    {
+      "input": "nums = [0,0,0]",
+      "output": "[[0,0,0]]"
+    }
+  ],
+  "constraints": "3 <= nums.length <= 3000. -10^5 <= nums[i] <= 10^5.",
+  "python_template": "# 3Sum\n\nfrom typing import List\n\ndef threeSum(nums: List[int]) -> List[List[int]]:\n    pass\n",
+  "go_template": "// 3Sum\n\npackage main\n\nfunc threeSum(nums []int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// 3Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> threeSum(vector<int>& nums) {\n    return {};\n}\n",
+  "java_template": "// 3Sum\n\nclass Solution {\n    public int[][] threeSum(int[] nums) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// 3Sum\n\nfunction threeSum(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(1) auxiliary",
+    "stress_intent": "exercise 3k arrays with dense duplicates and balanced values that punish cubic triplet enumeration",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

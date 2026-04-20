@@ -1,0 +1,39 @@
+{
+  "id": "selection-sort",
+  "name": "Selection Sort",
+  "difficulty": "Easy",
+  "description": "Implement the selection sort algorithm. Repeatedly find the minimum element from the unsorted portion and swap it with the first unsorted element. Time: O(n^2), Space: O(1). Simple but inefficient for large datasets.",
+  "examples": [
+    {
+      "input": "arr = [64, 25, 12, 22, 11]",
+      "output": "[11, 12, 22, 25, 64]"
+    },
+    {
+      "input": "arr = [29, 10, 14, 37, 13]",
+      "output": "[10, 13, 14, 29, 37]"
+    },
+    {
+      "input": "arr = [1, 2, 3]",
+      "output": "[1, 2, 3]"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^4. -10^4 <= arr[i] <= 10^4.",
+  "python_template": "# Selection Sort\n\nfrom typing import List\n\ndef selectionSort(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Selection Sort\n\npackage main\n\nfunc selectionSort(arr []int) []int {\n    return arr\n}\n",
+  "cpp_template": "// Selection Sort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> selectionSort(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Selection Sort\n\nclass Solution {\n    public int[] selectionSort(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Selection Sort\n\nfunction selectionSort(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise reverse-sorted and constant arrays that confirm quadratic behavior",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

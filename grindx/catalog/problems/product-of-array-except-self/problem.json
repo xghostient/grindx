@@ -1,0 +1,35 @@
+{
+  "id": "product-of-array-except-self",
+  "name": "Product of Array Except Self",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. You must write an algorithm that runs in O(n) time and without using the division operation.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "[24,12,8,6]"
+    },
+    {
+      "input": "nums = [-1,1,0,-3,3]",
+      "output": "[0,0,9,0,0]"
+    }
+  ],
+  "constraints": "2 <= nums.length <= 10^5. -30 <= nums[i] <= 30. The product of any prefix or suffix of nums fits in a 32-bit integer.",
+  "python_template": "# Product of Array Except Self\n\nfrom typing import List\n\ndef productExceptSelf(nums: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Product of Array Except Self\n\npackage main\n\nfunc productExceptSelf(nums []int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Product of Array Except Self\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> productExceptSelf(vector<int>& nums) {\n    return {};\n}\n",
+  "java_template": "// Product of Array Except Self\n\nclass Solution {\n    public int[] productExceptSelf(int[] nums) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Product of Array Except Self\n\nfunction productExceptSelf(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) auxiliary, excluding output",
+    "stress_intent": "kill recomputing the full product for each index on max-size arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

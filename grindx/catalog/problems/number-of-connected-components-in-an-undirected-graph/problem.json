@@ -1,0 +1,35 @@
+{
+  "id": "number-of-connected-components-in-an-undirected-graph",
+  "name": "Number of Connected Components in an Undirected Graph",
+  "difficulty": "Medium",
+  "description": "Given n nodes labeled 0 to n-1 and a list of undirected edges, return the number of connected components in the graph.",
+  "examples": [
+    {
+      "input": "n = 5, edges = [[0,1],[1,2],[3,4]]",
+      "output": "2"
+    },
+    {
+      "input": "n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= n <= 2000. 0 <= edges.length <= 5000. No duplicate edges.",
+  "python_template": "# Number of Connected Components in an Undirected Graph\n\nfrom typing import List\n\ndef countComponents(n: int, edges: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Number of Connected Components in an Undirected Graph\n\npackage main\n\nfunc countComponents(n int, edges [][]int) int {\n\treturn 0;\n}\n",
+  "cpp_template": "// Number of Connected Components in an Undirected Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countComponents(int n, vector<vector<int>>& edges) {\n    return 0;\n}\n",
+  "java_template": "// Number of Connected Components in an Undirected Graph\n\nclass Solution {\n    public int countComponents(int n, int[][] edges) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Connected Components in an Undirected Graph\n\nfunction countComponents(n, edges) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill repeated component traversals on giant sparse forests while still accepting one-pass DFS/BFS or DSU",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

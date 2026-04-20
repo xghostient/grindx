@@ -1,0 +1,36 @@
+{
+  "id": "min-cost-climbing-stairs",
+  "name": "Min Cost Climbing Stairs",
+  "difficulty": "Easy",
+  "category": "1D DP",
+  "description": "You are given an integer array cost where cost[i] is the cost of the ith step. Once you pay the cost, you can climb one or two steps. You can start from step 0 or step 1. Return the minimum cost to reach the top of the floor (past the last step).",
+  "examples": [
+    {
+      "input": "cost = [10,15,20]",
+      "output": "15 (start at step 1, pay 15, climb two steps)"
+    },
+    {
+      "input": "cost = [1,100,1,1,1,100,1,1,100,1]",
+      "output": "6"
+    }
+  ],
+  "constraints": "2 <= cost.length <= 1000. 0 <= cost[i] <= 999.",
+  "python_template": "# Min Cost Climbing Stairs\n\nfrom typing import List\n\ndef minCostClimbingStairs(cost: List[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\n// Min Cost Climbing Stairs\n\n\nfunc minCostClimbingStairs(cost []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Min Cost Climbing Stairs\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minCostClimbingStairs(vector<int>& cost) {\n    return 0;\n}\n",
+  "java_template": "// Min Cost Climbing Stairs\n\nclass Solution {\n    public int minCostClimbingStairs(int[] cost) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Min Cost Climbing Stairs\n\nfunction minCostClimbingStairs(cost) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear stair DP from exponential recursion using long alternating and plateau-heavy cost arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

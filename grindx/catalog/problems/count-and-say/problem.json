@@ -1,0 +1,39 @@
+{
+  "id": "count-and-say",
+  "name": "Count and Say",
+  "difficulty": "Medium",
+  "description": "The count-and-say sequence is a sequence of digit strings defined by the recursive formula: countAndSay(1) = \"1\". countAndSay(n) is the run-length encoding of countAndSay(n - 1). Run-length encoding replaces consecutive identical characters with the count followed by the character. For example, \"3322251\" becomes \"23321511\" (two 3s, three 2s, one 5, one 1). Given a positive integer n, return the nth element of the count-and-say sequence.",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "\"1\""
+    },
+    {
+      "input": "n = 4",
+      "output": "\"1211\" (1 \u2192 11 \u2192 21 \u2192 1211)"
+    },
+    {
+      "input": "n = 5",
+      "output": "\"111221\""
+    }
+  ],
+  "constraints": "1 <= n <= 30.",
+  "python_template": "# Count and Say\n\ndef countAndSay(n: int) -> str:\n    pass\n",
+  "go_template": "// Count and Say\n\npackage main\n\nfunc countAndSay(n int) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Count and Say\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring countAndSay(int n) {\n    return \"\";\n}\n",
+  "java_template": "// Count and Say\n\nclass Solution {\n    public String countAndSay(int n) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Count and Say\n\nfunction countAndSay(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(total output length)",
+    "accepted_time": [
+      "O(total output length)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(total output length)",
+    "stress_intent": "exercise late count-and-say terms up to n=30 that reject recursive recomputation locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

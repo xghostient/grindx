@@ -1,0 +1,35 @@
+{
+  "id": "spiral-matrix-iv",
+  "name": "Spiral Matrix IV",
+  "difficulty": "Medium",
+  "description": "You are given two integers m and n representing the dimensions of a matrix, and the head of a linked list. Generate an m x n matrix that contains the integers in the linked list presented in spiral order (clockwise), starting from the top-left. Fill remaining empty spaces with -1.",
+  "examples": [
+    {
+      "input": "m = 3, n = 5, head = [3,0,2,6,8,1,7,9,4,2,5,5,0]",
+      "output": "[[3,0,2,6,8],[5,0,-1,-1,1],[5,2,4,9,7]]"
+    },
+    {
+      "input": "m = 1, n = 4, head = [0,1,2]",
+      "output": "[[0,1,2,-1]]"
+    }
+  ],
+  "constraints": "1 <= m, n <= 10^5. 1 <= m * n <= 10^5. The number of nodes <= m * n.",
+  "python_template": "# Spiral Matrix IV\n\nfrom typing import List, Optional\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef spiralMatrix(m: int, n: int, head: Optional[ListNode]) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Spiral Matrix IV\n\npackage main\n\n// type ListNode struct {\n//     Val  int\n//     Next *ListNode\n// }\n\nfunc spiralMatrix(m int, n int, head *ListNode) [][]int {\n    return nil\n}\n",
+  "cpp_template": "// Spiral Matrix IV\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// struct ListNode {\n//     int val;\n//     ListNode* next;\n//     ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n// };\n\nvector<vector<int>> spiralMatrix(int m, int n, ListNode* head) {\n    return {};\n}\n",
+  "java_template": "// Spiral Matrix IV\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public int[][] spiralMatrix(int m, int n, ListNode head) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Spiral Matrix IV\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction spiralMatrix(m, n, head) {\n\n}\n",
+  "performance": {
+    "target_time": "O(mn)",
+    "accepted_time": [
+      "O(mn)"
+    ],
+    "rejected_time": [
+      "O(mn^2)"
+    ],
+    "target_space": "O(mn)",
+    "stress_intent": "verify spiral fill order for short, exact-fit, and large linked lists up to 40k cells",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "find-minimum-in-rotated-sorted-array",
+  "name": "Find Minimum in Rotated Sorted Array",
+  "difficulty": "Medium",
+  "description": "Given a sorted rotated array of unique elements, return the minimum element. You must write an algorithm that runs in O(log n) time.",
+  "examples": [
+    {
+      "input": "nums = [3,4,5,1,2]",
+      "output": "1"
+    },
+    {
+      "input": "nums = [4,5,6,7,0,1,2]",
+      "output": "0"
+    },
+    {
+      "input": "nums = [11,13,15,17]",
+      "output": "11"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 5000. -5000 <= nums[i] <= 5000. All values are unique. nums is a rotated sorted array.",
+  "python_template": "# Find Minimum in Rotated Sorted Array\n\nfrom typing import List\n\ndef findMin(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Find Minimum in Rotated Sorted Array\n\npackage main\n\nfunc findMin(nums []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Find Minimum in Rotated Sorted Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findMin(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Find Minimum in Rotated Sorted Array\n\nclass Solution {\n    public int findMin(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Find Minimum in Rotated Sorted Array\n\nfunction findMin(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)",
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise boundary rotations and pivot handling; constraints are too small to separate linear scans fairly",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "longest-palindrome",
+  "name": "Longest Palindrome",
+  "difficulty": "Easy",
+  "description": "Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters. Letters are case sensitive.",
+  "examples": [
+    {
+      "input": "s = \"abccccdd\"",
+      "output": "7 (one possible palindrome: \"dccaccd\")"
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "1"
+    },
+    {
+      "input": "s = \"Aa\"",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= s.length <= 2000. s consists of lowercase and/or uppercase English letters only.",
+  "python_template": "# Longest Palindrome\n\ndef longestPalindrome(s: str) -> int:\n    pass\n",
+  "go_template": "// Longest Palindrome\n\npackage main\n\nfunc longestPalindrome(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// Longest Palindrome\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestPalindrome(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Longest Palindrome\n\nclass Solution {\n    public int longestPalindrome(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Palindrome\n\nfunction longestPalindrome(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise odd-count handling and large repeated frequency tables; strict local separation is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

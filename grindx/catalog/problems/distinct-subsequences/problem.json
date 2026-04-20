@@ -1,0 +1,36 @@
+{
+  "id": "distinct-subsequences",
+  "name": "Distinct Subsequences",
+  "difficulty": "Hard",
+  "category": "Strings DP",
+  "description": "Given two strings s and t, return the number of distinct subsequences of s which equals t. A subsequence is a sequence derived from another by deleting some or no characters without changing the order.",
+  "examples": [
+    {
+      "input": "s = \"rabbbit\", t = \"rabbit\"",
+      "output": "3"
+    },
+    {
+      "input": "s = \"babgbag\", t = \"bag\"",
+      "output": "5"
+    }
+  ],
+  "constraints": "1 <= s.length, t.length <= 1000. s and t consist of English letters.",
+  "python_template": "# Distinct Subsequences\n\ndef numDistinct(s: str, t: str) -> int:\n    pass\n",
+  "go_template": "// Distinct Subsequences\n\npackage main\n\nfunc numDistinct(s string, t string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Distinct Subsequences\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numDistinct(string& s, string& t) {\n    return 0;\n}\n",
+  "java_template": "// Distinct Subsequences\n\nclass Solution {\n    public int numDistinct(String s, String t) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Distinct Subsequences\n\nfunction numDistinct(s, t) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m)",
+    "accepted_time": [
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(m)",
+    "stress_intent": "separate quadratic DP from exponential include-skip recursion using long repeated-character counting cases",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

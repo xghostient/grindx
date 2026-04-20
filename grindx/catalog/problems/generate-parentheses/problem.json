@@ -1,0 +1,34 @@
+{
+  "id": "generate-parentheses",
+  "name": "Generate Parentheses",
+  "difficulty": "Medium",
+  "description": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]"
+    },
+    {
+      "input": "n = 1",
+      "output": "[\"()\"]"
+    }
+  ],
+  "constraints": "1 <= n <= 8.",
+  "python_template": "# Generate Parentheses\n\nfrom typing import List\n\ndef generateParenthesis(n: int) -> List[str]:\n    pass\n",
+  "go_template": "// Generate Parentheses\n\npackage main\n\nfunc generateParenthesis(n int) []string {\n\treturn []string{}\n}\n",
+  "cpp_template": "// Generate Parentheses\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> generateParenthesis(int n) {\n    return {};\n}\n",
+  "java_template": "// Generate Parentheses\n\nclass Solution {\n    public String[] generateParenthesis(int n) {\n        return new String[]{};\n    }\n}\n",
+  "js_template": "// Generate Parentheses\n\nfunction generateParenthesis(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(Cn * n)",
+    "accepted_time": [
+      "O(Cn * n)"
+    ],
+    "rejected_time": [
+      "O(4^n * n^2)"
+    ],
+    "target_space": "O(Cn * n)",
+    "stress_intent": "higher n punishes duplicate-generating or invalid-prefix search",
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "count-palindromic-subseq",
+  "name": "Count Palindromic Subsequences",
+  "difficulty": "Hard",
+  "description": "Given a string s, return the number of different non-empty palindromic subsequences in s. Since the answer may be very large, return it modulo 10^9 + 7. A subsequence is a sequence derived by deleting some or no characters without changing the order.",
+  "examples": [
+    {
+      "input": "s = \"bccb\"",
+      "output": "6 (b, c, bb, bc, cb, bccb \u2014 wait, palindromic ones: b, c, bb, cc, bcb, bccb \u2192 6)"
+    },
+    {
+      "input": "s = \"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"",
+      "output": "104860361"
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= s.length <= 1000. s consists only of lowercase English letters.",
+  "python_template": "# Count Palindromic Subsequences\n\ndef countPalindromicSubsequences(s: str) -> int:\n    pass\n",
+  "go_template": "// Count Palindromic Subsequences\n\npackage main\n\nfunc countPalindromicSubsequences(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// Count Palindromic Subsequences\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countPalindromicSubsequences(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Count Palindromic Subsequences\n\nclass Solution {\n    public int countPalindromicSubsequences(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Count Palindromic Subsequences\n\nfunction countPalindromicSubsequences(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)",
+      "O(n^3)"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "exercise distinct-palindromic-subsequence DP with repeated-boundary 200-length strings that reject non-memoized recurrence locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

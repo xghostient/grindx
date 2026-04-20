@@ -1,0 +1,35 @@
+{
+  "id": "validate-binary-search-tree",
+  "name": "Validate Binary Search Tree",
+  "difficulty": "Medium",
+  "description": "Given the root of a binary tree, determine if it is a valid BST. A valid BST has: left subtree values strictly less than the node, right subtree values strictly greater, and both subtrees are also valid BSTs.",
+  "examples": [
+    {
+      "input": "root = [2,1,3]",
+      "output": "true"
+    },
+    {
+      "input": "root = [5,1,4,null,null,3,6]",
+      "output": "false (node 4 is in right subtree of 5 but 4 < 5)"
+    }
+  ],
+  "constraints": "The number of nodes is in [1, 10^4]. -2^31 <= Node.val <= 2^31 - 1.",
+  "python_template": "# Validate Binary Search Tree\n\nfrom typing import Optional\n\nclass TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef isValidBST(root: Optional[TreeNode]) -> bool:\n    pass\n",
+  "go_template": "// Validate Binary Search Tree\n\npackage main\n\n\n// type TreeNode struct {\n// \tVal   int\n// \tLeft  *TreeNode\n// \tRight *TreeNode\n// }\n\nfunc isValidBST(root *TreeNode) bool {\n\treturn false;\n}\n",
+  "cpp_template": "// Validate Binary Search Tree\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// struct TreeNode {\n//     int val;\n//     TreeNode* left;\n//     TreeNode* right;\n//     TreeNode(int val = 0, TreeNode* left = nullptr, TreeNode* right = nullptr) : val(val), left(left), right(right) {}\n// };\n\nbool isValidBST(TreeNode* root) {\n    return false;\n}\n",
+  "java_template": "// Validate Binary Search Tree\n\nclass TreeNode {\n    int val;\n    TreeNode left;\n    TreeNode right;\n    TreeNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public boolean isValidBST(TreeNode root) {\n        return false;\n    }\n}\n",
+  "js_template": "// Validate Binary Search Tree\n\nclass TreeNode {\n    constructor(val) {\n        this.val = val;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nfunction isValidBST(root) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(h)",
+    "stress_intent": "kill subtree min/max recomputation on deep valid BST chains near the 10k-node limit",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

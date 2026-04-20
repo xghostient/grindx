@@ -1,0 +1,35 @@
+{
+  "id": "reverse-stack",
+  "name": "Reverse a Stack using Recursion",
+  "difficulty": "Easy",
+  "description": "Given a stack, reverse the elements of the stack using only recursion. You are not allowed to use any loop constructs or extra data structures. You must use the call stack itself to reverse the elements in-place.",
+  "examples": [
+    {
+      "input": "stack = [1, 2, 3, 4, 5] (top is 5)",
+      "output": "[5, 4, 3, 2, 1] (top is 1)"
+    },
+    {
+      "input": "stack = [1, 2] (top is 2)",
+      "output": "[2, 1] (top is 1)"
+    }
+  ],
+  "constraints": "1 <= stack.size <= 1000. -10^9 <= stack[i] <= 10^9.",
+  "python_template": "# Reverse a Stack using Recursion\n\ndef reverseStack(stack: list) -> None:\n    pass\n",
+  "go_template": "// Reverse a Stack using Recursion\n\npackage main\n\nfunc reverseStack(stack *[]int) {\n\n}\n",
+  "cpp_template": "// Reverse a Stack using Recursion\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid reverseStack(vector<int>& stack) {\n\n}\n",
+  "java_template": "// Reverse a Stack using Recursion\n\nimport java.util.*;\n\nclass Solution {\n    public void reverseStack(java.util.Stack<Integer> stack) {\n\n    }\n}\n",
+  "js_template": "// Reverse a Stack using Recursion\n\nfunction reverseStack(stack) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise 100-element stacks that confirm recursive reversal",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "kth-largest-element-in-an-array",
+  "name": "Kth Largest Element in an Array",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in the sorted order, not the kth distinct element. Can you solve it without sorting?",
+  "examples": [
+    {
+      "input": "nums = [3,2,1,5,6,4], k = 2",
+      "output": "5"
+    },
+    {
+      "input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
+      "output": "4"
+    }
+  ],
+  "constraints": "1 <= k <= nums.length <= 10^5. -10^4 <= nums[i] <= 10^4.",
+  "python_template": "# Kth Largest Element in an Array\n\nfrom typing import List\n\ndef findKthLargest(nums: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Kth Largest Element in an Array\n\npackage main\n\nfunc findKthLargest(nums []int, k int) int {\n    return 0\n}\n",
+  "cpp_template": "// Kth Largest Element in an Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findKthLargest(vector<int>& nums, int k) {\n    return 0;\n}\n",
+  "java_template": "// Kth Largest Element in an Array\n\nclass Solution {\n    public int findKthLargest(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Kth Largest Element in an Array\n\nfunction findKthLargest(nums, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log k)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log k)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(k)",
+    "stress_intent": "exercise 100k arrays that punish repeated nested selection or full repeated sorts",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

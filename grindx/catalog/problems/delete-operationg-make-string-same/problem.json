@@ -1,0 +1,36 @@
+{
+  "id": "delete-operationg-make-string-same",
+  "name": "Delete Operations for Two Strings",
+  "difficulty": "Medium",
+  "category": "Strings DP",
+  "description": "Given two strings word1 and word2, return the minimum number of steps to make word1 and word2 the same. In each step, you can delete one character from either string.",
+  "examples": [
+    {
+      "input": "word1 = \"sea\", word2 = \"eat\"",
+      "output": "2"
+    },
+    {
+      "input": "word1 = \"leetcode\", word2 = \"etco\"",
+      "output": "4"
+    }
+  ],
+  "constraints": "1 <= word1.length, word2.length <= 500",
+  "python_template": "def minDistance(word1: str, word2: str) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc minDistance(word1 string, word2 string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Delete Operations for Two Strings\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minDistance(string& word1, string& word2) {\n    return 0;\n}\n",
+  "java_template": "// Delete Operations for Two Strings\n\nclass Solution {\n    public int minDistance(String word1, String word2) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Delete Operations for Two Strings\n\nfunction minDistance(word1, word2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m)",
+    "accepted_time": [
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(2^(n+m))"
+    ],
+    "target_space": "O(m)",
+    "stress_intent": "separate LCS-style DP from exponential mismatch recursion using longer delete-only alignment pairs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

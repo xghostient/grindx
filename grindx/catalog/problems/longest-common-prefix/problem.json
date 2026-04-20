@@ -1,0 +1,39 @@
+{
+  "id": "longest-common-prefix",
+  "name": "Longest Common Prefix",
+  "difficulty": "Easy",
+  "description": "Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string.",
+  "examples": [
+    {
+      "input": "strs = [\"flower\",\"flow\",\"flight\"]",
+      "output": "\"fl\""
+    },
+    {
+      "input": "strs = [\"dog\",\"racecar\",\"car\"]",
+      "output": "\"\""
+    },
+    {
+      "input": "strs = [\"ab\",\"a\"]",
+      "output": "\"a\""
+    }
+  ],
+  "constraints": "1 <= strs.length <= 200. 0 <= strs[i].length <= 200. strs[i] consists of only lowercase English letters.",
+  "python_template": "# Longest Common Prefix\n\nfrom typing import List\n\ndef longestCommonPrefix(strs: List[str]) -> str:\n    pass\n",
+  "go_template": "// Longest Common Prefix\n\npackage main\n\nfunc longestCommonPrefix(strs []string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Longest Common Prefix\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring longestCommonPrefix(vector<string>& strs) {\n    return \"\";\n}\n",
+  "java_template": "// Longest Common Prefix\n\nclass Solution {\n    public String longestCommonPrefix(String[] strs) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Longest Common Prefix\n\nfunction longestCommonPrefix(strs) {\n\n}\n",
+  "performance": {
+    "target_time": "O(total chars)",
+    "accepted_time": [
+      "O(total chars)"
+    ],
+    "rejected_time": [
+      "O(n^2 * m)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise shrinking-prefix logic across three max-size 200-word arrays that reject quadratic pairwise prefix scans locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

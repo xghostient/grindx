@@ -1,0 +1,39 @@
+{
+  "id": "array-leaders",
+  "name": "Array Leaders",
+  "difficulty": "Easy",
+  "description": "Given an array of positive integers, find all the leaders in the array. An element is a leader if it is greater than or equal to all the elements to its right. The rightmost element is always a leader. Return the leaders in the order they appear in the array.",
+  "examples": [
+    {
+      "input": "arr = [16, 17, 4, 3, 5, 2]",
+      "output": "[17, 5, 2]"
+    },
+    {
+      "input": "arr = [1, 2, 3, 4, 0]",
+      "output": "[4, 0]"
+    },
+    {
+      "input": "arr = [5, 4, 3, 2, 1]",
+      "output": "[5, 4, 3, 2, 1]"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. 0 <= arr[i] <= 10^9.",
+  "python_template": "# Array Leaders\n\nfrom typing import List\n\ndef leaders(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Array Leaders\n\npackage main\n\nfunc leaders(arr []int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Array Leaders\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> leaders(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Array Leaders\n\nclass Solution {\n    public int[] leaders(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Array Leaders\n\nfunction leaders(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill right-side rescans on 100k-element arrays while preserving the required output order",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

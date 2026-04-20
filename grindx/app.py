@@ -14,6 +14,10 @@ Usage:
   grindx --version        Show version
   grindx --list-problems  List all available problem IDs
   grindx --solved         List all solved problems
+  grindx --fetch-testcases
+                         Download and install an external testcase bundle
+  grindx --testcase-bundle-status
+                         Show installed external testcase bundle metadata
 
 Navigation:
   ↑/↓                 Navigate topics / problems
@@ -29,10 +33,16 @@ Solve Screen:
   Ctrl+L              Cycle language (Python → Go → C++ → Java → JS)
   Ctrl+B              Toggle bookmark
   Ctrl+T              Pause / resume timer
-  Ctrl+R              Reset timer
+  Ctrl+R              Run tests
+  Ctrl+Shift+R        Reset timer
   Ctrl+Shift+C/V      Copy / paste (clipboard)
   Alt+↑/↓             Move line up / down
   Alt+Shift+↓         Duplicate line
+
+Result Screen:
+  Ctrl+Y              Copy verdict + error details
+  Ctrl+Shift+C        Copy verdict + error details
+  r                   Retry
 
 Browser Filters:
   a / e / m / h / b   All / Easy / Medium / Hard / Bookmarked
@@ -61,19 +71,33 @@ AI Review (Ctrl+E):
 Data:
   Progress, solutions, and backups are stored in ~/.grindx/
   Built-in sheets: Blind 75, Grind 75, NeetCode 150, Striver A2Z
+  External testcase bundles install under ~/.grindx/downloaded-testcases/
+  Packaged installs do not include bundled testcases; fetch them once before local test runs.
 
 Custom Sheets & Problems:
   Add custom sheets:   ~/.grindx/sheets/my-list.json
-  Add custom problems: ~/.grindx/problems/custom.json
+  Add custom problems: ~/.grindx/problems/my-problem/problem.json
+  Optional local test cases: ~/.grindx/problems/my-problem/testcases.json
+  Optional local judges: ~/.grindx/problems/my-problem/judges/<language>.<ext>
 
   Sheet format:
     {"Topic Name": ["my-problem", "another-problem"]}
 
-  Problem format:
-    [{"id": "my-problem", "name": "My Problem", "difficulty": "Medium",
-      "description": "...", "python_template": "def solve():\\n    pass\\n"}]
+  Preferred problem format:
+    ~/.grindx/problems/my-problem/problem.json
+
+  Legacy ~/.grindx/problems/custom.json is still loaded for compatibility.
 
   Use grindx --list-problems to see all available problem IDs.
+
+External Testcase Bundles:
+  Default manifest:
+    https://github.com/grindxhq/dsa-catalog/releases/latest/download/manifest.json
+
+  Override with:
+    --testcase-manifest-url URL
+  or:
+    GRINDX_TESTCASE_MANIFEST_URL=https://...
 """
 
 
@@ -99,6 +123,18 @@ def main():
     parser.add_argument(
         "--solved", action="store_true",
         help="List all solved problems",
+    )
+    parser.add_argument(
+        "--fetch-testcases", action="store_true",
+        help="Download and install an external testcase bundle",
+    )
+    parser.add_argument(
+        "--testcase-bundle-status", action="store_true",
+        help="Show installed external testcase bundle metadata",
+    )
+    parser.add_argument(
+        "--testcase-manifest-url",
+        help="Manifest URL used by --fetch-testcases",
     )
 
     args = parser.parse_args()
@@ -142,6 +178,46 @@ def main():
             time_str = fmt_duration(best) if best and best >= 10 else ""
             print(f"  {name:<{w}} {diff:8s} {sd:12s} {time_str}")
         print(f"\n  {len(solved)} problems solved")
+        sys.exit(0)
+
+    if args.testcase_bundle_status:
+        from .data import installed_testcase_bundle_metadata
+
+        meta = installed_testcase_bundle_metadata()
+        if not meta:
+            print("No external testcase bundle installed")
+            sys.exit(0)
+
+        print("Installed external testcase bundle")
+        for key in (
+            "manifest_version",
+            "bundle_format_version",
+            "bundle_kind",
+            "release_tag",
+            "catalog_commit_short",
+            "min_app_version",
+            "problem_count",
+            "installed_at",
+            "manifest_url",
+        ):
+            value = meta.get(key)
+            if value:
+                print(f"  {key}: {value}")
+        sys.exit(0)
+
+    if args.fetch_testcases:
+        from .data import fetch_testcase_bundle
+
+        try:
+            meta = fetch_testcase_bundle(args.testcase_manifest_url)
+        except Exception as exc:
+            print(f"Failed to install testcase bundle: {exc}", file=sys.stderr)
+            sys.exit(1)
+
+        print("Installed external testcase bundle")
+        print(f"  release_tag: {meta.get('release_tag', '')}")
+        print(f"  problem_count: {meta.get('problem_count', '')}")
+        print(f"  sha256: {meta.get('sha256', '')}")
         sys.exit(0)
 
     from textual.app import App

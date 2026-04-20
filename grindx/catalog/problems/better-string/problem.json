@@ -1,0 +1,35 @@
+{
+  "id": "better-string",
+  "name": "Better String",
+  "difficulty": "Medium",
+  "description": "Given two strings str1 and str2, return the string that has the greater number of distinct subsequences. A subsequence is a sequence derived from another string by deleting some or no characters without changing the order. If both strings have the same number of distinct subsequences, return str1.",
+  "examples": [
+    {
+      "input": "str1 = \"gfg\", str2 = \"ggg\"",
+      "output": "\"gfg\" (gfg has 7 distinct subsequences: '', g, f, gf, fg, gg, gfg; ggg has 4: '', g, gg, ggg)"
+    },
+    {
+      "input": "str1 = \"a\", str2 = \"b\"",
+      "output": "\"a\" (both have 2 distinct subsequences, return str1)"
+    }
+  ],
+  "constraints": "1 <= str1.length, str2.length <= 30. Strings contain only lowercase English letters.",
+  "python_template": "# Better String\n\ndef betterString(str1: str, str2: str) -> str:\n    pass\n",
+  "go_template": "// Better String\n\npackage main\n\nfunc betterString(str1, str2 string) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Better String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring betterString(string& str1, string& str2) {\n    return \"\";\n}\n",
+  "java_template": "// Better String\n\nclass Solution {\n    public String betterString(String str1, String str2) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Better String\n\nfunction betterString(str1, str2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise max-length strings that punish brute-force subsequence enumeration",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

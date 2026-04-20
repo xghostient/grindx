@@ -1,0 +1,37 @@
+{
+  "id": "best-time-to-buy-and-sell-stock-with-cooldown",
+  "name": "Best Time to Buy and Sell Stock with Cooldown",
+  "difficulty": "Medium",
+  "category": "Stock DP",
+  "description": "You are given an array prices where prices[i] is the price of a stock on the ith day. You may complete as many transactions as you like with the following restriction: after you sell, you cannot buy the next day (1-day cooldown). Return the maximum profit.",
+  "examples": [
+    {
+      "input": "prices = [1,2,3,0,2]",
+      "output": "3 (buy at 1, sell at 3, cooldown, buy at 0, sell at 2)"
+    },
+    {
+      "input": "prices = [1]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= prices.length <= 5000. 0 <= prices[i] <= 1000.",
+  "python_template": "# Best Time to Buy and Sell Stock with Cooldown\n\nfrom typing import List\n\ndef maxProfit(prices: List[int]) -> int:\n    pass\n",
+  "go_template": "// Best Time to Buy and Sell Stock with Cooldown\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Best Time to Buy and Sell Stock with Cooldown\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxProfit(vector<int>& prices) {\n    return 0;\n}\n",
+  "java_template": "// Best Time to Buy and Sell Stock with Cooldown\n\nclass Solution {\n    public int maxProfit(int[] prices) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Best Time to Buy and Sell Stock with Cooldown\n\nfunction maxProfit(prices) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)",
+      "O(2^n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate cooldown DP from exponential buy-sell-skip recursion using longer zig-zag price histories",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

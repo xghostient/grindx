@@ -1,0 +1,40 @@
+{
+  "id": "check-rotation",
+  "name": "Check if Strings are Rotations",
+  "difficulty": "Easy",
+  "description": "Given two strings s1 and s2, check if s2 is a rotation of s1. A rotation means moving some characters from the front to the back. For example, \"abcde\" rotated by 2 gives \"cdeab\". Hint: if s2 is a rotation of s1, then s2 is always a substring of s1 + s1.",
+  "examples": [
+    {
+      "input": "s1 = \"abcde\", s2 = \"cdeab\"",
+      "output": "true"
+    },
+    {
+      "input": "s1 = \"abcde\", s2 = \"abced\"",
+      "output": "false"
+    },
+    {
+      "input": "s1 = \"a\", s2 = \"a\"",
+      "output": "true"
+    }
+  ],
+  "constraints": "1 <= s1.length, s2.length <= 10^5. s1 and s2 consist of lowercase English letters.",
+  "python_template": "# Check if Strings are Rotations\n\ndef isRotation(s1: str, s2: str) -> bool:\n    pass\n",
+  "go_template": "// Check if Strings are Rotations\n\npackage main\n\nfunc isRotation(s1, s2 string) bool {\n    return false\n}\n",
+  "cpp_template": "// Check if Strings are Rotations\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isRotation(string& s1, string& s2) {\n    return false;\n}\n",
+  "java_template": "// Check if Strings are Rotations\n\nclass Solution {\n    public boolean isRotation(String s1, String s2) {\n        return false;\n    }\n}\n",
+  "js_template": "// Check if Strings are Rotations\n\nfunction isRotation(s1, s2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise max-length repeated-character and periodic rotations that still accept O(n^2) direct comparison while rejecting cubic rotation rebuilding locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

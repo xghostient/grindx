@@ -1,0 +1,40 @@
+{
+  "id": "alien-dictionary",
+  "name": "Alien Dictionary",
+  "difficulty": "Hard",
+  "description": "Given a sorted list of words in an alien language, derive the order of characters in that language. Return the characters in order. If invalid (cycle), return \"\". If multiple valid orderings, return any.",
+  "examples": [
+    {
+      "input": "words = [\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]",
+      "output": "\"wertf\""
+    },
+    {
+      "input": "words = [\"z\",\"x\"]",
+      "output": "\"zx\""
+    },
+    {
+      "input": "words = [\"z\",\"x\",\"z\"]",
+      "output": "\"\" (invalid order)"
+    }
+  ],
+  "constraints": "1 <= words.length <= 100. 1 <= words[i].length <= 100. words[i] consists of lowercase English letters.",
+  "python_template": "# Alien Dictionary\n\nfrom typing import List\n\ndef alienOrder(words: List[str]) -> str:\n    pass\n",
+  "go_template": "// Alien Dictionary\n\npackage main\n\nfunc alienOrder(words []string) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Alien Dictionary\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring alienOrder(vector<string>& words) {\n    return \"\";\n}\n",
+  "java_template": "// Alien Dictionary\n\nclass Solution {\n    public String alienOrder(String[] words) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Alien Dictionary\n\nfunction alienOrder(words) {\n\n}\n",
+  "performance": {
+    "target_time": "O(total_chars + U log U)",
+    "accepted_time": [
+      "O(total_chars + U log U)",
+      "O(total_chars + U^2)"
+    ],
+    "rejected_time": [
+      "O(total_chars * U^2)"
+    ],
+    "target_space": "O(U + total_chars)",
+    "stress_intent": "exercise prefix invalidity, cycles, and underconstrained orderings; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

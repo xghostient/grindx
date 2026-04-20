@@ -1,0 +1,36 @@
+{
+  "id": "most-stones-removed-within-same-row",
+  "name": "Most Stones Removed with Same Row or Column",
+  "difficulty": "Medium",
+  "description": "On a 2D plane, n stones are placed at integer coordinates. A stone can be removed if it shares a row or column with another stone that has not been removed. Return the largest possible number of stones that can be removed.",
+  "examples": [
+    {
+      "input": "stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]",
+      "output": "5"
+    },
+    {
+      "input": "stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= stones.length <= 1000. 0 <= stones[i][j] <= 10^4. No two stones are at the same position.",
+  "python_template": "# Most Stones Removed with Same Row or Column\n\nfrom typing import List\n\ndef removeStones(stones: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Most Stones Removed with Same Row or Column\n\npackage main\n\nfunc removeStones(stones [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Most Stones Removed with Same Row or Column\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint removeStones(vector<vector<int>>& stones) {\n    return 0;\n}\n",
+  "java_template": "// Most Stones Removed with Same Row or Column\n\nclass Solution {\n    public int removeStones(int[][] stones) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Most Stones Removed with Same Row or Column\n\nfunction removeStones(stones) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)",
+      "O(n * alpha(n))"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise connected components induced by shared rows or columns; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

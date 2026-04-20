@@ -1,0 +1,44 @@
+{
+  "id": "valid-parenthesis-string",
+  "name": "Valid Parenthesis String",
+  "difficulty": "Medium",
+  "description": "Given a string s containing only three types of characters: '(', ')' and '*', return true if s is valid. '*' can be treated as a '(', ')' or an empty string. A valid string has every '(' matched by ')' in the correct order. Greedy: track the range of possible open parentheses counts (lo, hi).",
+  "examples": [
+    {
+      "input": "s = \"()\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"(*)\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"(*))\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \")(\"",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= s.length <= 100. s consists of '(', ')' and '*' only.",
+  "python_template": "# Valid Parenthesis String\n\ndef checkValidString(s: str) -> bool:\n    pass\n",
+  "go_template": "// Valid Parenthesis String\n\npackage main\n\nfunc checkValidString(s string) bool {\n    return false\n}\n",
+  "cpp_template": "// Valid Parenthesis String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool checkValidString(string& s) {\n    return false;\n}\n",
+  "java_template": "// Valid Parenthesis String\n\nclass Solution {\n    public boolean checkValidString(String s) {\n        return false;\n    }\n}\n",
+  "js_template": "// Valid Parenthesis String\n\nfunction checkValidString(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^n)",
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large strings that punish backtracking or DP approaches",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

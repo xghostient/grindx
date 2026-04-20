@@ -1,0 +1,40 @@
+{
+  "id": "two-sum-ii-input-array-is-sorted",
+  "name": "Two Sum II - Input Array Is Sorted",
+  "difficulty": "Medium",
+  "description": "Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target. Return the indices of the two numbers (1-indexed). You may not use the same element twice. There is exactly one solution.",
+  "examples": [
+    {
+      "input": "numbers = [2,7,11,15], target = 9",
+      "output": "[1,2]"
+    },
+    {
+      "input": "numbers = [2,3,4], target = 6",
+      "output": "[1,3]"
+    },
+    {
+      "input": "numbers = [-1,0], target = -1",
+      "output": "[1,2]"
+    }
+  ],
+  "constraints": "2 <= numbers.length <= 3 * 10^4. -1000 <= numbers[i] <= 1000. numbers is sorted in non-decreasing order. Exactly one solution exists.",
+  "python_template": "# Two Sum II - Input Array Is Sorted\n\nfrom typing import List\n\ndef twoSum(numbers: List[int], target: int) -> List[int]:\n    pass\n",
+  "go_template": "// Two Sum II - Input Array Is Sorted\n\npackage main\n\nfunc twoSum(numbers []int, target int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Two Sum II - Input Array Is Sorted\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> twoSum(vector<int>& numbers, int target) {\n    return {};\n}\n",
+  "java_template": "// Two Sum II - Input Array Is Sorted\n\nclass Solution {\n    public int[] twoSum(int[] numbers, int target) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Two Sum II - Input Array Is Sorted\n\nfunction twoSum(numbers, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 30k sorted arrays that punish nested pair scans",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

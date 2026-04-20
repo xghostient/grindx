@@ -1,0 +1,40 @@
+{
+  "id": "divide-two-integers",
+  "name": "Divide Two Integers",
+  "difficulty": "Medium",
+  "description": "Given two integers dividend and divisor, divide them without using multiplication, division, or mod operators. Return the quotient truncated toward zero. If the quotient overflows 32-bit signed integer range, return 2^31 - 1.",
+  "examples": [
+    {
+      "input": "dividend = 10, divisor = 3",
+      "output": "3"
+    },
+    {
+      "input": "dividend = 7, divisor = -3",
+      "output": "-2"
+    },
+    {
+      "input": "dividend = -2147483648, divisor = -1",
+      "output": "2147483647 (overflow clamped)"
+    }
+  ],
+  "constraints": "-2^31 <= dividend, divisor <= 2^31 - 1. divisor != 0.",
+  "python_template": "# Divide Two Integers\n\ndef divide(dividend: int, divisor: int) -> int:\n    pass\n",
+  "go_template": "// Divide Two Integers\n\npackage main\n\nfunc divide(dividend int, divisor int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Divide Two Integers\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint divide(int dividend, int divisor) {\n    return 0;\n}\n",
+  "java_template": "// Divide Two Integers\n\nclass Solution {\n    public int divide(int dividend, int divisor) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Divide Two Integers\n\nfunction divide(dividend, divisor) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)",
+      "O((log n)^2)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large dividends that punish linear subtraction",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "binary-tree-maximum-path-sum",
+  "name": "Binary Tree Maximum Path Sum",
+  "difficulty": "Hard",
+  "description": "A path in a binary tree is a sequence of nodes where each pair of adjacent nodes has an edge. A node can only appear at most once in the path. The path does not need to pass through the root. Return the maximum path sum of any non-empty path.",
+  "examples": [
+    {
+      "input": "root = [1,2,3]",
+      "output": "6 (path: 2->1->3)"
+    },
+    {
+      "input": "root = [-10,9,20,null,null,15,7]",
+      "output": "42 (path: 15->20->7)"
+    }
+  ],
+  "constraints": "The number of nodes is in [1, 3 * 10^4]. -1000 <= Node.val <= 1000.",
+  "python_template": "# Binary Tree Maximum Path Sum\n\nfrom typing import Optional\n\nclass TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef maxPathSum(root: Optional[TreeNode]) -> int:\n    pass\n",
+  "go_template": "// Binary Tree Maximum Path Sum\n\npackage main\n\n\n// type TreeNode struct {\n// \tVal   int\n// \tLeft  *TreeNode\n// \tRight *TreeNode\n// }\n\nfunc maxPathSum(root *TreeNode) int {\n\treturn 0;\n}\n",
+  "cpp_template": "// Binary Tree Maximum Path Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// struct TreeNode {\n//     int val;\n//     TreeNode* left;\n//     TreeNode* right;\n//     TreeNode(int val = 0, TreeNode* left = nullptr, TreeNode* right = nullptr) : val(val), left(left), right(right) {}\n// };\n\nint maxPathSum(TreeNode* root) {\n    return 0;\n}\n",
+  "java_template": "// Binary Tree Maximum Path Sum\n\nclass TreeNode {\n    int val;\n    TreeNode left;\n    TreeNode right;\n    TreeNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public int maxPathSum(TreeNode root) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Binary Tree Maximum Path Sum\n\nclass TreeNode {\n    constructor(val) {\n        this.val = val;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nfunction maxPathSum(root) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(h)",
+    "stress_intent": "kill repeated downward-gain recomputation on deep positive comb trees",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

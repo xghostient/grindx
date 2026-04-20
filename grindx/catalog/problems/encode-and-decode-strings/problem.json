@@ -1,0 +1,39 @@
+{
+  "id": "encode-and-decode-strings",
+  "name": "Encode and Decode Strings",
+  "difficulty": "Medium",
+  "description": "Design an algorithm to encode a list of strings to a single string and decode it back. The encoded string should be able to handle any characters including delimiters. Implement encode(strs) and decode(s). A common approach: prefix each string with its length followed by a delimiter like '#'.",
+  "examples": [
+    {
+      "input": "strs = [\"hello\",\"world\"]",
+      "output": "encode \u2192 \"5#hello5#world\", decode \u2192 [\"hello\",\"world\"]"
+    },
+    {
+      "input": "strs = [\"\"]",
+      "output": "encode \u2192 \"0#\", decode \u2192 [\"\"]"
+    },
+    {
+      "input": "strs = [\"we\",\"say\",\":\",\"yes\"]",
+      "output": "encode \u2192 \"2#we3#say1#:3#yes\", decode \u2192 [\"we\",\"say\",\":\",\"yes\"]"
+    }
+  ],
+  "constraints": "0 <= strs.length <= 200. 0 <= strs[i].length <= 200. strs[i] contains any possible characters.",
+  "python_template": "# Encode and Decode Strings\n\nfrom typing import List\n\ndef encode(strs: List[str]) -> str:\n    pass\n\ndef decode(s: str) -> List[str]:\n    pass\n",
+  "go_template": "// Encode and Decode Strings\n\npackage main\n\nfunc encode(strs []string) string {\n    return \"\"\n}\n\nfunc decode(s string) []string {\n    return nil\n}\n",
+  "cpp_template": "// Encode and Decode Strings\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring encode(vector<string>& strs) {\n    return \"\";\n}\n\nvector<string> decode(string& s) {\n    return {};\n}\n",
+  "java_template": "// Encode and Decode Strings\n\nclass Solution {\n    public String encode(String[] strs) {\n        return \"\";\n    }\n\n    public String[] decode(String s) {\n        return new String[]{};\n    }\n}\n",
+  "js_template": "// Encode and Decode Strings\n\nfunction encode(strs) {\n\n}\n\nfunction decode(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(total chars)",
+    "accepted_time": [
+      "O(total chars)"
+    ],
+    "rejected_time": [
+      "O(total chars^2)"
+    ],
+    "target_space": "O(total chars)",
+    "stress_intent": "exercise delimiter-safe round trips on three 200-string near-max payload sets that reject quadratic concatenation and scanning locally",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

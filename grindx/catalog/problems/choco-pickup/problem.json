@@ -1,0 +1,37 @@
+{
+  "id": "choco-pickup",
+  "name": "Cherry Pickup II",
+  "difficulty": "Hard",
+  "category": "Grid DP",
+  "description": "Given a grid of chocolates, two robots start at the top-left and top-right corners. Each robot moves down one row per step (down, down-left, or down-right). Both collect chocolates in their cell (shared cell counted once). Find the maximum total chocolates collected.",
+  "examples": [
+    {
+      "input": "grid = [[3,1,1],[2,5,1],[1,5,5],[2,1,1]]",
+      "output": "24"
+    },
+    {
+      "input": "grid = [[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]",
+      "output": "28"
+    }
+  ],
+  "constraints": "rows == grid.length, cols == grid[i].length, 2 <= rows, cols <= 70",
+  "python_template": "def cherryPickup(grid: list[list[int]]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc cherryPickup(grid [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Cherry Pickup II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint cherryPickup(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+  "java_template": "// Cherry Pickup II\n\nclass Solution {\n    public int cherryPickup(int[][] grid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Cherry Pickup II\n\nfunction cherryPickup(grid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(rows * cols^2)",
+    "accepted_time": [
+      "O(rows * cols^2)"
+    ],
+    "rejected_time": [
+      "O(9^rows)",
+      "O(rows * cols^3)"
+    ],
+    "target_space": "O(cols^2)",
+    "stress_intent": "separate dual-robot row DP from plain 9-way branching recursion using larger deterministic grids",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

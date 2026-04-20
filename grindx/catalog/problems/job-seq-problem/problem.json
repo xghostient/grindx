@@ -1,0 +1,36 @@
+{
+  "id": "job-seq-problem",
+  "name": "Job Sequencing Problem",
+  "difficulty": "Medium",
+  "description": "Given a set of n jobs where each job i has a deadline and a profit. Every job takes 1 unit of time to complete and only one job can be scheduled at a time. Each job earns profit only if it is completed by its deadline. Find the maximum number of jobs that can be done and the maximum profit. Greedy: sort by profit descending, assign each job to the latest available slot before its deadline.",
+  "examples": [
+    {
+      "input": "jobs = [[1,4,20],[2,1,10],[3,1,40],[4,1,30]], format: [id, deadline, profit]",
+      "output": "[2, 60] (jobs 3 and 1: profit 40+20=60)"
+    },
+    {
+      "input": "jobs = [[1,2,100],[2,1,19],[3,2,27],[4,1,25],[5,1,15]]",
+      "output": "[2, 127] (jobs 1 and 3: profit 100+27=127)"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. 1 <= deadline <= n. 1 <= profit <= 500.",
+  "python_template": "# Job Sequencing Problem\n\nfrom typing import List\n\ndef jobSequencing(jobs: List[List[int]]) -> List[int]:\n    \"\"\"Returns [number_of_jobs, max_profit]\"\"\"\n    pass\n",
+  "go_template": "// Job Sequencing Problem\n\npackage main\n\nfunc jobSequencing(jobs [][]int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Job Sequencing Problem\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> jobSequencing(vector<vector<int>>& jobs) {\n    return {};\n}\n",
+  "java_template": "// Job Sequencing Problem\n\nclass Solution {\n    public int[] jobSequencing(int[][] jobs) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Job Sequencing Problem\n\nfunction jobSequencing(jobs) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large job sets that punish cubic slot searching",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "merge-sort",
+  "name": "Merge Sort",
+  "difficulty": "Medium",
+  "description": "Implement the merge sort algorithm. Divide the array into two halves, recursively sort each half, then merge the two sorted halves. Time: O(n log n), Space: O(n). This is a stable, divide-and-conquer sorting algorithm.",
+  "examples": [
+    {
+      "input": "arr = [38, 27, 43, 3, 9, 82, 10]",
+      "output": "[3, 9, 10, 27, 38, 43, 82]"
+    },
+    {
+      "input": "arr = [5, 2, 4, 7, 1, 3, 2, 6]",
+      "output": "[1, 2, 2, 3, 4, 5, 6, 7]"
+    },
+    {
+      "input": "arr = [1]",
+      "output": "[1]"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. -10^4 <= arr[i] <= 10^4.",
+  "python_template": "# Merge Sort\n\nfrom typing import List\n\ndef mergeSort(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Merge Sort\n\npackage main\n\nfunc mergeSort(arr []int) []int {\n    return arr\n}\n",
+  "cpp_template": "// Merge Sort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> mergeSort(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Merge Sort\n\nclass Solution {\n    public int[] mergeSort(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Merge Sort\n\nfunction mergeSort(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise 50000-length arrays that punish quadratic fallback",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

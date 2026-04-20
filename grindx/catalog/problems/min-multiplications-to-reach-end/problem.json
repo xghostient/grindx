@@ -1,0 +1,35 @@
+{
+  "id": "min-multiplications-to-reach-end",
+  "name": "Minimum Multiplications to Reach End",
+  "difficulty": "Medium",
+  "description": "Given an array of integers arr and two integers start and end, find the minimum number of multiplications needed to reach end from start. At each step, multiply current value by any element of arr and take mod 100000. Return -1 if impossible.",
+  "examples": [
+    {
+      "input": "arr = [2, 5, 7], start = 3, end = 30",
+      "output": "2 (3->6->30)"
+    },
+    {
+      "input": "arr = [3, 4, 65], start = 7, end = 66175",
+      "output": "4"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 50. 1 <= arr[i] <= 10^5. 1 <= start, end < 10^5.",
+  "python_template": "# Minimum Multiplications to Reach End\n\nfrom typing import List\nfrom collections import deque\n\ndef minimumMultiplications(arr: List[int], start: int, end: int) -> int:\n    pass\n",
+  "go_template": "// Minimum Multiplications to Reach End\n\npackage main\n\nfunc minimumMultiplications(arr []int, start int, end int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Minimum Multiplications to Reach End\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minimumMultiplications(vector<int>& arr, int start, int end) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Multiplications to Reach End\n\nclass Solution {\n    public int minimumMultiplications(int[] arr, int start, int end) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimum Multiplications to Reach End\n\nfunction minimumMultiplications(arr, start, end) {\n\n}\n",
+  "performance": {
+    "target_time": "O(100000 * len(arr))",
+    "accepted_time": [
+      "O(100000 * len(arr))"
+    ],
+    "rejected_time": [
+      "O(100000^2)"
+    ],
+    "target_space": "O(100000)",
+    "stress_intent": "exercise modular BFS transitions and unreachable targets; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

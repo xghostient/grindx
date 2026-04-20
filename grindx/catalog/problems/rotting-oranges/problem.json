@@ -1,0 +1,39 @@
+{
+  "id": "rotting-oranges",
+  "name": "Rotting Oranges",
+  "difficulty": "Medium",
+  "description": "Given an m x n grid where 0 = empty, 1 = fresh orange, 2 = rotten orange. Every minute, any fresh orange adjacent (4-directionally) to a rotten orange becomes rotten. Return the minimum number of minutes until no fresh orange remains. If impossible, return -1.",
+  "examples": [
+    {
+      "input": "grid = [[2,1,1],[1,1,0],[0,1,1]]",
+      "output": "4"
+    },
+    {
+      "input": "grid = [[2,1,1],[0,1,1],[1,0,1]]",
+      "output": "-1"
+    },
+    {
+      "input": "grid = [[0,2]]",
+      "output": "0"
+    }
+  ],
+  "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 10. grid[i][j] is 0, 1, or 2.",
+  "python_template": "# Rotting Oranges\n\nfrom typing import List\nfrom collections import deque\n\ndef orangesRotting(grid: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Rotting Oranges\n\npackage main\n\nfunc orangesRotting(grid [][]int) int {\n\treturn 0;\n}\n",
+  "cpp_template": "// Rotting Oranges\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint orangesRotting(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+  "java_template": "// Rotting Oranges\n\nclass Solution {\n    public int orangesRotting(int[][] grid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Rotting Oranges\n\nfunction orangesRotting(grid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise multi-source BFS timing and impossible states; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

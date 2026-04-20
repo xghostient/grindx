@@ -1,0 +1,40 @@
+{
+  "id": "majority-element-2",
+  "name": "Majority Element II",
+  "difficulty": "Medium",
+  "description": "Given an integer array of size n, find all elements that appear more than n/3 times. There can be at most two such elements. Solve it in O(1) space using extended Boyer-Moore Voting.",
+  "examples": [
+    {
+      "input": "nums = [3,2,3]",
+      "output": "[3]"
+    },
+    {
+      "input": "nums = [1]",
+      "output": "[1]"
+    },
+    {
+      "input": "nums = [1,2]",
+      "output": "[1,2]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 5 * 10^4. -10^9 <= nums[i] <= 10^9.",
+  "python_template": "# Majority Element II\n\nfrom typing import List\n\ndef majorityElement(nums: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Majority Element II\n\npackage main\n\nfunc majorityElement(nums []int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Majority Element II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> majorityElement(vector<int>& nums) {\n    return {};\n}\n",
+  "java_template": "// Majority Element II\n\nclass Solution {\n    public int[] majorityElement(int[] nums) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Majority Element II\n\nfunction majorityElement(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "kill repeated frequency rescans while checking both one-winner and two-winner outcomes",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

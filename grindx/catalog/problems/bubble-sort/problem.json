@@ -1,0 +1,39 @@
+{
+  "id": "bubble-sort",
+  "name": "Bubble Sort",
+  "difficulty": "Easy",
+  "description": "Implement the bubble sort algorithm. Repeatedly step through the array, compare adjacent elements, and swap them if they are in the wrong order. The pass through the array is repeated until the array is sorted. Optimize by stopping early if no swaps occur in a pass. Time: O(n^2), Space: O(1).",
+  "examples": [
+    {
+      "input": "arr = [64, 34, 25, 12, 22, 11, 90]",
+      "output": "[11, 12, 22, 25, 34, 64, 90]"
+    },
+    {
+      "input": "arr = [5, 1, 4, 2, 8]",
+      "output": "[1, 2, 4, 5, 8]"
+    },
+    {
+      "input": "arr = [1, 2, 3]",
+      "output": "[1, 2, 3] (already sorted, early exit)"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^4. -10^4 <= arr[i] <= 10^4.",
+  "python_template": "# Bubble Sort\n\nfrom typing import List\n\ndef bubbleSort(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Bubble Sort\n\npackage main\n\nfunc bubbleSort(arr []int) []int {\n    return arr\n}\n",
+  "cpp_template": "// Bubble Sort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> bubbleSort(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Bubble Sort\n\nclass Solution {\n    public int[] bubbleSort(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Bubble Sort\n\nfunction bubbleSort(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 1200-length reverse-sorted and duplicate-heavy arrays that punish cubic fallback",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

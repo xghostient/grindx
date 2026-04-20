@@ -1,0 +1,35 @@
+{
+  "id": "longest-repeating-character-replacement",
+  "name": "Longest Repeating Character Replacement",
+  "difficulty": "Medium",
+  "description": "Given a string s and an integer k, you can choose any character and change it to any other uppercase English character at most k times. Return the length of the longest substring containing the same letter after performing at most k changes.",
+  "examples": [
+    {
+      "input": "s = \"ABAB\", k = 2",
+      "output": "4 (replace both A's or both B's)"
+    },
+    {
+      "input": "s = \"AABABBA\", k = 1",
+      "output": "4 (replace one B to get \"AABA\" -> \"AAAA\")"
+    }
+  ],
+  "constraints": "1 <= s.length <= 10^5. s consists of uppercase English letters. 0 <= k <= s.length.",
+  "python_template": "# Longest Repeating Character Replacement\n\ndef characterReplacement(s: str, k: int) -> int:\n    pass\n",
+  "go_template": "// Longest Repeating Character Replacement\n\npackage main\n\nfunc characterReplacement(s string, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Repeating Character Replacement\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint characterReplacement(string& s, int k) {\n    return 0;\n}\n",
+  "java_template": "// Longest Repeating Character Replacement\n\nclass Solution {\n    public int characterReplacement(String s, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Repeating Character Replacement\n\nfunction characterReplacement(s, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(alphabet)",
+    "stress_intent": "exercise max-frequency window maintenance over 100k uppercase strings that punish rescanning every window locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

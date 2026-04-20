@@ -1,0 +1,40 @@
+{
+  "id": "combination-sum-iii",
+  "name": "Combination Sum III",
+  "difficulty": "Medium",
+  "description": "Find all valid combinations of k numbers that sum up to n such that only numbers 1 through 9 are used, and each number is used at most once. Return a list of all possible valid combinations. The list must not contain the same combination twice, and the combinations may be returned in any order.",
+  "examples": [
+    {
+      "input": "k = 3, n = 7",
+      "output": "[[1,2,4]]"
+    },
+    {
+      "input": "k = 3, n = 9",
+      "output": "[[1,2,6],[1,3,5],[2,3,4]]"
+    },
+    {
+      "input": "k = 4, n = 1",
+      "output": "[]"
+    }
+  ],
+  "constraints": "2 <= k <= 9. 1 <= n <= 60.",
+  "python_template": "# Combination Sum III\n\nfrom typing import List\n\ndef combinationSum3(k: int, n: int) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Combination Sum III\n\npackage main\n\nfunc combinationSum3(k int, n int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// Combination Sum III\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> combinationSum3(int k, int n) {\n    return {};\n}\n",
+  "java_template": "// Combination Sum III\n\nclass Solution {\n    public int[][] combinationSum3(int k, int n) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Combination Sum III\n\nfunction combinationSum3(k, n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(C(9,k))",
+    "accepted_time": [
+      "O(C(9,k))",
+      "O(2^9)"
+    ],
+    "rejected_time": [
+      "O(9^k)"
+    ],
+    "target_space": "O(k)",
+    "stress_intent": "exercise all (k,n) pairs that confirm correct combination enumeration",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "k-closest-points-to-origin",
+  "name": "K Closest Points to Origin",
+  "difficulty": "Medium",
+  "description": "Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0). The distance between two points on the X-Y plane is the Euclidean distance sqrt(xi^2 + yi^2). You may return the answer in any order.",
+  "examples": [
+    {
+      "input": "points = [[1,3],[-2,2]], k = 1",
+      "output": "[[-2,2]]"
+    },
+    {
+      "input": "points = [[3,3],[5,-1],[-2,4]], k = 2",
+      "output": "[[3,3],[-2,4]]"
+    }
+  ],
+  "constraints": "1 <= k <= points.length <= 10^4. -10^4 <= xi, yi <= 10^4.",
+  "python_template": "# K Closest Points to Origin\n\nfrom typing import List\n\ndef kClosest(points: List[List[int]], k: int) -> List[List[int]]:\n    pass\n",
+  "go_template": "// K Closest Points to Origin\n\npackage main\n\nfunc kClosest(points [][]int, k int) [][]int {\n    return nil\n}\n",
+  "cpp_template": "// K Closest Points to Origin\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> kClosest(vector<vector<int>>& points, int k) {\n    return {};\n}\n",
+  "java_template": "// K Closest Points to Origin\n\nclass Solution {\n    public int[][] kClosest(int[][] points, int k) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// K Closest Points to Origin\n\nfunction kClosest(points, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log k)",
+    "accepted_time": [
+      "O(n log k)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(k)",
+    "stress_intent": "exercise 10k unique-distance points that punish repeated pairwise nearest selection",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "missing-number",
+  "name": "Missing Number",
+  "difficulty": "Easy",
+  "description": "Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array. Solve in O(n) time and O(1) extra space using XOR or math.",
+  "examples": [
+    {
+      "input": "nums = [3,0,1]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [0,1]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [9,6,4,2,3,5,7,0,1]",
+      "output": "8"
+    }
+  ],
+  "constraints": "n == nums.length. 1 <= n <= 10^4. 0 <= nums[i] <= n. All values are unique.",
+  "python_template": "# Missing Number\n\nfrom typing import List\n\ndef missingNumber(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Missing Number\n\npackage main\n\nfunc missingNumber(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Missing Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint missingNumber(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Missing Number\n\nclass Solution {\n    public int missingNumber(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Missing Number\n\nfunction missingNumber(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n log n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large arrays to distinguish XOR/math from sorting",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

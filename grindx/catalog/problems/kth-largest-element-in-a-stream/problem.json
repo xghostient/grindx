@@ -1,0 +1,36 @@
+{
+  "id": "kth-largest-element-in-a-stream",
+  "name": "Kth Largest Element in a Stream",
+  "difficulty": "Easy",
+  "description": "Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element. Implement KthLargest class:\n- KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.\n- int add(int val) Appends the integer val to the stream and returns the element representing the kth largest element in the stream.",
+  "examples": [
+    {
+      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]",
+      "output": "[null,4,5,5,8,8]"
+    },
+    {
+      "input": "[\"KthLargest\",\"add\",\"add\"]\n[[1,[]],[1],[2]]",
+      "output": "[null,1,2]"
+    }
+  ],
+  "constraints": "1 <= k <= 10^4. 0 <= nums.length <= 10^4. -10^4 <= nums[i] <= 10^4. -10^4 <= val <= 10^4. At most 10^4 calls to add.",
+  "python_template": "# Kth Largest Element in a Stream\n\nfrom typing import List\n\nclass KthLargest:\n    def __init__(self, k: int, nums: List[int]):\n        pass\n\n    def add(self, val: int) -> int:\n        pass\n",
+  "go_template": "// Kth Largest Element in a Stream\n\npackage main\n\ntype KthLargest struct {\n\n}\n\nfunc Constructor(k int, nums []int) KthLargest {\n    return KthLargest{}\n}\n\nfunc (kl *KthLargest) Add(val int) int {\n    return 0\n}\n",
+  "cpp_template": "// Kth Largest Element in a Stream\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass KthLargest {\npublic:\n    KthLargest(int k, vector<int> nums) {\n\n    }\n\n    int Add(int val) {\n        return 0;\n    }\n};\n",
+  "java_template": "// Kth Largest Element in a Stream\n\nimport java.util.*;\n\nclass KthLargest {\n    public KthLargest(int k, int[] nums) {\n\n    }\n\n    public int Add(int val) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Kth Largest Element in a Stream\n\nclass KthLargest {\n    constructor(k, nums) {\n\n    }\n\n    add(val) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(log k) per add",
+    "accepted_time": [
+      "O(log k) per add"
+    ],
+    "rejected_time": [
+      "O(n log n) per add",
+      "O(n) per add"
+    ],
+    "target_space": "O(k)",
+    "stress_intent": "exercise long add streams that punish re-sorting or rescanning all seen values after each insertion",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

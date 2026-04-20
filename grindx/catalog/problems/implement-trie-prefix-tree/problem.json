@@ -1,0 +1,35 @@
+{
+  "id": "implement-trie-prefix-tree",
+  "name": "Implement Trie (Prefix Tree)",
+  "difficulty": "Medium",
+  "description": "A trie (prefix tree) is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. Implement the Trie class:\n- Trie() Initializes the trie object.\n- insert(word) Inserts the string word into the trie.\n- search(word) Returns true if the string word is in the trie (exact match).\n- startsWith(prefix) Returns true if there is a previously inserted string that has the prefix prefix.",
+  "examples": [
+    {
+      "input": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]",
+      "output": "[null,null,true,false,true,null,true]"
+    },
+    {
+      "input": "[\"Trie\",\"insert\",\"search\",\"startsWith\"]\n[[],[\"hello\"],[\"hell\"],[\"hell\"]]",
+      "output": "[null,null,false,true]"
+    }
+  ],
+  "constraints": "1 <= word.length, prefix.length <= 2000. word and prefix consist only of lowercase English letters. At most 3 * 10^4 calls to insert, search, and startsWith.",
+  "python_template": "# Implement Trie (Prefix Tree)\n\nclass Trie:\n    def __init__(self):\n        pass\n\n    def insert(self, word: str) -> None:\n        pass\n\n    def search(self, word: str) -> bool:\n        pass\n\n    def startsWith(self, prefix: str) -> bool:\n        pass\n",
+  "go_template": "// Implement Trie (Prefix Tree)\n\npackage main\n\ntype Trie struct {\n\n}\n\nfunc Constructor() Trie {\n    return Trie{}\n}\n\nfunc (t *Trie) Insert(word string) {\n\n}\n\nfunc (t *Trie) Search(word string) bool {\n    return false\n}\n\nfunc (t *Trie) StartsWith(prefix string) bool {\n    return false\n}\n",
+  "cpp_template": "// Implement Trie (Prefix Tree)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Trie {\npublic:\n    Trie() {\n\n    }\n\n    void Insert(string word) {\n\n    }\n\n    bool Search(string word) {\n        return false;\n    }\n\n    bool StartsWith(string prefix) {\n        return false;\n    }\n};\n",
+  "java_template": "// Implement Trie (Prefix Tree)\n\nimport java.util.*;\n\nclass Trie {\n    public Trie() {\n\n    }\n\n    public void Insert(String word) {\n\n    }\n\n    public boolean Search(String word) {\n        return false;\n    }\n\n    public boolean StartsWith(String prefix) {\n        return false;\n    }\n}\n",
+  "js_template": "// Implement Trie (Prefix Tree)\n\nclass Trie {\n    constructor() {\n\n    }\n\n    insert(word) {\n\n    }\n\n    search(word) {\n\n    }\n\n    startsWith(prefix) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(m) per operation where m is word length",
+    "accepted_time": [
+      "O(m) per operation where m is word length"
+    ],
+    "rejected_time": [
+      "O(n*m) per search where n is number of words"
+    ],
+    "target_space": "O(total characters inserted)",
+    "stress_intent": "exercise long operation traces that punish linear word-list scans instead of trie traversal",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

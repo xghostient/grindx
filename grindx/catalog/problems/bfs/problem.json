@@ -1,0 +1,35 @@
+{
+  "id": "bfs",
+  "name": "BFS of Graph",
+  "difficulty": "Easy",
+  "description": "Given a directed graph represented as an adjacency list, return the BFS traversal of the graph starting from node 0.",
+  "examples": [
+    {
+      "input": "adj = [[1,2],[3],[3,4],[],[]]",
+      "output": "[0,1,2,3,4]"
+    },
+    {
+      "input": "adj = [[1],[2],[]]",
+      "output": "[0,1,2]"
+    }
+  ],
+  "constraints": "1 <= V <= 10^4. 0 <= E <= 10^4.",
+  "python_template": "# BFS of Graph\n\nfrom typing import List\nfrom collections import deque\n\ndef bfs(adj: List[List[int]]) -> List[int]:\n    pass\n",
+  "go_template": "// BFS of Graph\n\npackage main\n\nfunc bfs(adj [][]int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// BFS of Graph\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> bfs(vector<vector<int>>& adj) {\n    return {};\n}\n",
+  "java_template": "// BFS of Graph\n\nclass Solution {\n    public int[] bfs(int[][] adj) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// BFS of Graph\n\nfunction bfs(adj) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "exercise traversal order, reachability, and disconnected nodes from source 0; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

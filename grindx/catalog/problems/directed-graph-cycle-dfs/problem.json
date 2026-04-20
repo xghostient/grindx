@@ -1,0 +1,35 @@
+{
+  "id": "directed-graph-cycle-dfs",
+  "name": "Detect Cycle in Directed Graph (DFS)",
+  "difficulty": "Medium",
+  "description": "Given a directed graph with V vertices, detect whether it contains a cycle using DFS with recursion stack tracking.",
+  "examples": [
+    {
+      "input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,1]]",
+      "output": "true"
+    },
+    {
+      "input": "V = 3, edges = [[0,1],[1,2]]",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= V <= 10^5. 0 <= E <= 10^5.",
+  "python_template": "# Detect Cycle in Directed Graph (DFS)\n\nfrom typing import List\n\ndef isCyclic(V: int, adj: List[List[int]]) -> bool:\n    pass\n",
+  "go_template": "// Detect Cycle in Directed Graph (DFS)\n\npackage main\n\nfunc isCyclic(V int, adj [][]int) bool {\n\treturn false;\n}\n",
+  "cpp_template": "// Detect Cycle in Directed Graph (DFS)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isCyclic(int V, vector<vector<int>>& adj) {\n    return false;\n}\n",
+  "java_template": "// Detect Cycle in Directed Graph (DFS)\n\nclass Solution {\n    public boolean isCyclic(int V, int[][] adj) {\n        return false;\n    }\n}\n",
+  "js_template": "// Detect Cycle in Directed Graph (DFS)\n\nfunction isCyclic(V, adj) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill repeated DFS-from-every-node variants on giant sparse directed graphs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

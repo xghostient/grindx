@@ -1,0 +1,35 @@
+{
+  "id": "swim-in-rising-water",
+  "name": "Swim in Rising Water",
+  "difficulty": "Hard",
+  "description": "Given an n x n grid where grid[i][j] represents elevation, at time t the water depth is t everywhere. You can swim from (i,j) to adjacent cells if both elevations are <= t. Find the minimum time to swim from (0,0) to (n-1,n-1).",
+  "examples": [
+    {
+      "input": "grid = [[0,2],[1,3]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]",
+      "output": "16"
+    }
+  ],
+  "constraints": "n == grid.length. n == grid[i].length. 1 <= n <= 50. 0 <= grid[i][j] < n^2. Each value appears exactly once.",
+  "python_template": "# Swim in Rising Water\n\nfrom typing import List\nimport heapq\n\ndef swimInWater(grid: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Swim in Rising Water\n\npackage main\n\nfunc swimInWater(grid [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Swim in Rising Water\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint swimInWater(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+  "java_template": "// Swim in Rising Water\n\nclass Solution {\n    public int swimInWater(int[][] grid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Swim in Rising Water\n\nfunction swimInWater(grid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2 log n)",
+    "accepted_time": [
+      "O(n^2 log n)"
+    ],
+    "rejected_time": [
+      "O(n^4)"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "exercise minimax grid traversal on all 2x2 permutations and handpicked 3x3 boards; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

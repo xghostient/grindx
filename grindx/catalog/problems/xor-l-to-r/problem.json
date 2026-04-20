@@ -1,0 +1,39 @@
+{
+  "id": "xor-l-to-r",
+  "name": "XOR from L to R",
+  "difficulty": "Easy",
+  "description": "Given two integers L and R, find the XOR of all numbers from L to R (inclusive). Use the pattern: XOR(1 to N) cycles every 4 values. So XOR(L to R) = XOR(1 to R) ^ XOR(1 to L-1).",
+  "examples": [
+    {
+      "input": "L = 3, R = 5",
+      "output": "6 (3^4^5 = 6)"
+    },
+    {
+      "input": "L = 1, R = 4",
+      "output": "4 (1^2^3^4 = 4)"
+    },
+    {
+      "input": "L = 5, R = 5",
+      "output": "5"
+    }
+  ],
+  "constraints": "1 <= L <= R <= 10^9.",
+  "python_template": "# XOR from L to R\n\ndef xorRange(L: int, R: int) -> int:\n    pass\n",
+  "go_template": "// XOR from L to R\n\npackage main\n\nfunc xorRange(L int, R int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// XOR from L to R\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint xorRange(int L, int R) {\n    return 0;\n}\n",
+  "java_template": "// XOR from L to R\n\nclass Solution {\n    public int xorRange(int L, int R) {\n        return 0;\n    }\n}\n",
+  "js_template": "// XOR from L to R\n\nfunction xorRange(L, R) {\n\n}\n",
+  "performance": {
+    "target_time": "O(1)",
+    "accepted_time": [
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large ranges that punish linear iteration",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

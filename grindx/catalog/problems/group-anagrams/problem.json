@@ -1,0 +1,40 @@
+{
+  "id": "group-anagrams",
+  "name": "Group Anagrams",
+  "difficulty": "Medium",
+  "description": "Given an array of strings strs, group the anagrams together. You can return the answer in any order. An anagram is a word formed by rearranging the letters of another word using all the original letters exactly once.",
+  "examples": [
+    {
+      "input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "output": "[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]"
+    },
+    {
+      "input": "strs = [\"\"]",
+      "output": "[[\"\"]]"
+    },
+    {
+      "input": "strs = [\"a\"]",
+      "output": "[[\"a\"]]"
+    }
+  ],
+  "constraints": "1 <= strs.length <= 10^4. 0 <= strs[i].length <= 100. strs[i] consists of lowercase English letters.",
+  "python_template": "# Group Anagrams\n\nfrom typing import List\n\ndef groupAnagrams(strs: List[str]) -> List[List[str]]:\n    pass\n",
+  "go_template": "// Group Anagrams\n\npackage main\n\nfunc groupAnagrams(strs []string) [][]string {\n    return nil\n}\n",
+  "cpp_template": "// Group Anagrams\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<string>> groupAnagrams(vector<string>& strs) {\n    return {};\n}\n",
+  "java_template": "// Group Anagrams\n\nclass Solution {\n    public String[][] groupAnagrams(String[] strs) {\n        return new String[][]{};\n    }\n}\n",
+  "js_template": "// Group Anagrams\n\nfunction groupAnagrams(strs) {\n\n}\n",
+  "performance": {
+    "target_time": "O(total chars)",
+    "accepted_time": [
+      "O(total chars)",
+      "O(total chars log maxLen)"
+    ],
+    "rejected_time": [
+      "O(n^2 * maxLen)"
+    ],
+    "target_space": "O(total chars)",
+    "stress_intent": "exercise unordered group normalization on thousands of max-length singleton groups that reject quadratic regrouping locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

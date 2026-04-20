@@ -1,0 +1,39 @@
+{
+  "id": "candy",
+  "name": "Candy",
+  "difficulty": "Hard",
+  "description": "There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings. You are giving candies to these children subject to: Each child must have at least one candy. Children with a higher rating than their neighbors get more candies than their neighbors. Return the minimum number of candies you need to distribute.",
+  "examples": [
+    {
+      "input": "ratings = [1,0,2]",
+      "output": "5 (candies: [2,1,2])"
+    },
+    {
+      "input": "ratings = [1,2,2]",
+      "output": "4 (candies: [1,2,1])"
+    },
+    {
+      "input": "ratings = [1,3,2,2,1]",
+      "output": "7 (candies: [1,2,1,2,1] \u2014 wait, [1,3,1,2,1] also doesn't work. Correct: [1,2,1,2,1]\u21927)"
+    }
+  ],
+  "constraints": "n == ratings.length. 1 <= n <= 2 * 10^4. 0 <= ratings[i] <= 2 * 10^4.",
+  "python_template": "# Candy\n\nfrom typing import List\n\ndef candy(ratings: List[int]) -> int:\n    pass\n",
+  "go_template": "// Candy\n\npackage main\n\nfunc candy(ratings []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Candy\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint candy(vector<int>& ratings) {\n    return 0;\n}\n",
+  "java_template": "// Candy\n\nclass Solution {\n    public int candy(int[] ratings) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Candy\n\nfunction candy(ratings) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large rating arrays that punish repeated re-scanning",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

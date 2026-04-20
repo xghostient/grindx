@@ -1,0 +1,36 @@
+{
+  "id": "0-1-knapsack",
+  "name": "0/1 Knapsack",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "Given N items with weight and value, and a knapsack of capacity W, find the maximum value you can carry. Each item can be taken at most once.",
+  "examples": [
+    {
+      "input": "W = 4, wt = [4, 5, 1], val = [1, 2, 3]",
+      "output": "3"
+    },
+    {
+      "input": "W = 3, wt = [4, 5, 6], val = [1, 2, 3]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= N <= 1000, 1 <= W <= 1000",
+  "python_template": "def knapsack(W: int, wt: list[int], val: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc knapsack(W int, wt, val []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// 0/1 Knapsack\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint knapsack(int W, vector<int>& wt, vector<int>& val) {\n    return 0;\n}\n",
+  "java_template": "// 0/1 Knapsack\n\nclass Solution {\n    public int knapsack(int W, int[] wt, int[] val) {\n        return 0;\n    }\n}\n",
+  "js_template": "// 0/1 Knapsack\n\nfunction knapsack(W, wt, val) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * W)",
+    "accepted_time": [
+      "O(n * W)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(W)",
+    "stress_intent": "separate knapsack DP from plain recursion using longer item lists with dense include-skip tradeoffs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

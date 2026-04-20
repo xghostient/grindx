@@ -1,0 +1,39 @@
+{
+  "id": "linked-list-cycle",
+  "name": "Linked List Cycle",
+  "difficulty": "Easy",
+  "description": "Given head of a linked list, determine if it has a cycle. A cycle exists if some node can be reached again by continuously following the next pointer. Use Floyd's tortoise and hare algorithm.",
+  "examples": [
+    {
+      "input": "head = [3,2,0,-4], pos = 1 (tail connects to node index 1)",
+      "output": "true"
+    },
+    {
+      "input": "head = [1,2], pos = 0",
+      "output": "true"
+    },
+    {
+      "input": "head = [1], pos = -1 (no cycle)",
+      "output": "false"
+    }
+  ],
+  "constraints": "The number of nodes is in [0, 10^4]. -10^5 <= Node.val <= 10^5. pos is -1 or a valid index.",
+  "python_template": "# Linked List Cycle\n\nfrom typing import Optional\n\n# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\n\ndef hasCycle(head: Optional[ListNode]) -> bool:\n    pass\n",
+  "go_template": "// Linked List Cycle\n\npackage main\n\n// Definition for singly-linked list.\n// type ListNode struct {\n//     Val  int\n//     Next *ListNode\n// }\n\nfunc hasCycle(head *ListNode) bool {\n\n}\n",
+  "cpp_template": "// Linked List Cycle\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// Definition for singly-linked list.\n// struct ListNode {\n//     int val;\n//     ListNode* next;\n//     ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n// };\n\nbool hasCycle(ListNode* head) {\n    return false;\n}\n",
+  "java_template": "// Linked List Cycle\n\n// Definition for singly-linked list.\n// class ListNode {\n//     int val;\n//     ListNode next;\n//     ListNode(int val) { this.val = val; }\n// }\n\nclass Solution {\n    public boolean hasCycle(ListNode head) {\n        return false;\n    }\n}\n",
+  "js_template": "// Linked List Cycle\n\n// Definition for singly-linked list.\n// class ListNode {\n//     constructor(val) {\n//         this.val = val;\n//         this.next = null;\n//     }\n// }\n\nfunction hasCycle(head) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n) with O(n) visited set"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise long acyclic and cyclic lists that punish nested rescans or per-node visited checks implemented with repeated traversal",
+    "enforcement": "best-effort-local"
+  }
+}

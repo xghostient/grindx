@@ -1,0 +1,39 @@
+{
+  "id": "reverse-words-in-a-string",
+  "name": "Reverse Words in a String",
+  "difficulty": "Medium",
+  "description": "Given an input string s, reverse the order of the words. A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space. Return a string of the words in reverse order concatenated by a single space. Note that s may contain leading or trailing spaces or multiple spaces between two words.",
+  "examples": [
+    {
+      "input": "s = \"the sky is blue\"",
+      "output": "\"blue is sky the\""
+    },
+    {
+      "input": "s = \"  hello world  \"",
+      "output": "\"world hello\""
+    },
+    {
+      "input": "s = \"a good   example\"",
+      "output": "\"example good a\""
+    }
+  ],
+  "constraints": "1 <= s.length <= 10^4. s contains English letters (upper and lower case), digits, and spaces ' '.",
+  "python_template": "# Reverse Words in a String\n\ndef reverseWords(s: str) -> str:\n    pass\n",
+  "go_template": "// Reverse Words in a String\n\npackage main\n\nfunc reverseWords(s string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Reverse Words in a String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring reverseWords(string& s) {\n    return \"\";\n}\n",
+  "java_template": "// Reverse Words in a String\n\nclass Solution {\n    public String reverseWords(String s) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Reverse Words in a String\n\nfunction reverseWords(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise whitespace collapsing, trimming, and order reversal on max-length many-word strings that reject repeated prepend concatenation locally",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

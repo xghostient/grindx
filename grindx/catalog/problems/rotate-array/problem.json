@@ -1,0 +1,35 @@
+{
+  "id": "rotate-array",
+  "name": "Rotate Array",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums, rotate the array to the right by k steps, where k is non-negative. Do it in-place with O(1) extra space.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5,6,7], k = 3",
+      "output": "[5,6,7,1,2,3,4]"
+    },
+    {
+      "input": "nums = [-1,-100,3,99], k = 2",
+      "output": "[3,99,-1,-100]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10^5. -2^31 <= nums[i] <= 2^31 - 1. 0 <= k <= 10^5.",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n*k)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "kill repeated single-step rotation solutions on max n and large k",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  },
+  "python_template": "# Rotate Array\n\nfrom typing import List\n\ndef rotate(nums: List[int], k: int) -> None:\n    pass\n",
+  "go_template": "// Rotate Array\n\npackage main\n\nfunc rotate(nums []int, k int) {\n\n}\n",
+  "cpp_template": "// Rotate Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid rotate(vector<int>& nums, int k) {\n\n}\n",
+  "java_template": "// Rotate Array\n\nclass Solution {\n    public void rotate(int[] nums, int k) {\n\n    }\n}\n",
+  "js_template": "// Rotate Array\n\nfunction rotate(nums, k) {\n\n}\n"
+}

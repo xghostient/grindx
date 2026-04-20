@@ -1,0 +1,38 @@
+{
+  "id": "remove-k-digits",
+  "name": "Remove K Digits",
+  "difficulty": "Medium",
+  "description": "Given string num representing a non-negative integer and an integer k, return the smallest possible integer after removing k digits from num. The result should not have leading zeros.",
+  "examples": [
+    {
+      "input": "num = \"1432219\", k = 3",
+      "output": "\"1219\""
+    },
+    {
+      "input": "num = \"10200\", k = 1",
+      "output": "\"200\""
+    },
+    {
+      "input": "num = \"10\", k = 2",
+      "output": "\"0\""
+    }
+  ],
+  "constraints": "1 <= k <= num.length <= 10^5. num consists of only digits. num does not have leading zeros except for zero itself.",
+  "python_template": "# Remove K Digits\n\ndef removeKdigits(num: str, k: int) -> str:\n    pass\n",
+  "go_template": "// Remove K Digits\n\npackage main\n\nfunc removeKdigits(num string, k int) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Remove K Digits\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring removeKdigits(string& num, int k) {\n    return \"\";\n}\n",
+  "java_template": "// Remove K Digits\n\nclass Solution {\n    public String removeKdigits(String num, int k) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Remove K Digits\n\nfunction removeKdigits(num, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "max-length numeric strings punish repeated deletions or slicing",
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "meeting-rooms",
+  "name": "Meeting Rooms",
+  "difficulty": "Easy",
+  "description": "Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings. Return true if no two meetings overlap, false otherwise.",
+  "examples": [
+    {
+      "input": "intervals = [[0,30],[5,10],[15,20]]",
+      "output": "false (meetings [0,30] and [5,10] overlap)"
+    },
+    {
+      "input": "intervals = [[7,10],[2,4]]",
+      "output": "true"
+    },
+    {
+      "input": "intervals = [[1,5],[5,10]]",
+      "output": "true (touching at 5 is not overlapping)"
+    }
+  ],
+  "constraints": "0 <= intervals.length <= 10^4. intervals[i].length == 2. 0 <= starti < endi <= 10^6.",
+  "python_template": "# Meeting Rooms\n\nfrom typing import List\n\ndef canAttendMeetings(intervals: List[List[int]]) -> bool:\n    pass\n",
+  "go_template": "// Meeting Rooms\n\npackage main\n\nfunc canAttendMeetings(intervals [][]int) bool {\n    return false\n}\n",
+  "cpp_template": "// Meeting Rooms\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool canAttendMeetings(vector<vector<int>>& intervals) {\n    return false;\n}\n",
+  "java_template": "// Meeting Rooms\n\nclass Solution {\n    public boolean canAttendMeetings(int[][] intervals) {\n        return false;\n    }\n}\n",
+  "js_template": "// Meeting Rooms\n\nfunction canAttendMeetings(intervals) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) auxiliary",
+    "stress_intent": "exercise large interval lists that punish pairwise overlap checks",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "intro-implement",
+  "name": "Implement a Min-Heap",
+  "difficulty": "Easy",
+  "description": "Implement a min-heap data structure from scratch that supports the following operations:\n- insert(val): Insert a value into the heap.\n- extractMin(): Remove and return the minimum element.\n- peek(): Return the minimum element without removing it.\n- size(): Return the number of elements in the heap.\nDo not use any built-in heap/priority queue library.",
+  "examples": [
+    {
+      "input": "insert(3), insert(1), insert(2), peek(), extractMin(), peek()",
+      "output": "peek()=1, extractMin()=1, peek()=2"
+    },
+    {
+      "input": "insert(5), insert(3), insert(8), insert(1), extractMin(), extractMin()",
+      "output": "extractMin()=1, extractMin()=3"
+    }
+  ],
+  "constraints": "1 <= val <= 10^5. extractMin and peek are only called when heap is non-empty. At most 10^4 operations.",
+  "python_template": "# Implement a Min-Heap\n\nclass MinHeap:\n    def __init__(self):\n        self.heap = []\n\n    def insert(self, val: int) -> None:\n        pass\n\n    def extractMin(self) -> int:\n        pass\n\n    def peek(self) -> int:\n        pass\n\n    def size(self) -> int:\n        pass\n",
+  "go_template": "// Implement a Min-Heap\n\npackage main\n\ntype MinHeap struct {\n    heap []int\n}\n\nfunc NewMinHeap() *MinHeap {\n    return &MinHeap{}\n}\n\nfunc (h *MinHeap) Insert(val int) {\n\n}\n\nfunc (h *MinHeap) ExtractMin() int {\n    return 0\n}\n\nfunc (h *MinHeap) Peek() int {\n    return 0\n}\n\nfunc (h *MinHeap) Size() int {\n    return 0\n}\n",
+  "cpp_template": "// Implement a Min-Heap\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass MinHeap {\npublic:\n    MinHeap() {\n\n    }\n\n    void Insert(int val) {\n\n    }\n\n    int ExtractMin() {\n        return 0;\n    }\n\n    int Peek() {\n        return 0;\n    }\n\n    int Size() {\n        return 0;\n    }\n};\n",
+  "java_template": "// Implement a Min-Heap\n\nimport java.util.*;\n\nclass MinHeap {\n    public MinHeap() {\n\n    }\n\n    public void Insert(int val) {\n\n    }\n\n    public int ExtractMin() {\n        return 0;\n    }\n\n    public int Peek() {\n        return 0;\n    }\n\n    public int Size() {\n        return 0;\n    }\n}\n",
+  "js_template": "// Implement a Min-Heap\n\nclass MinHeap {\n    constructor() {\n\n    }\n\n    insert(val) {\n\n    }\n\n    extractMin() {\n\n    }\n\n    peek() {\n\n    }\n\n    size() {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(log n) insert/extract, O(1) peek/size",
+    "accepted_time": [
+      "O(log n) insert/extract, O(1) peek/size"
+    ],
+    "rejected_time": [
+      "O(n) extractMin",
+      "O(n) peek"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise long heap-operation traces that punish linear minimum scans and repeated array resorting",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

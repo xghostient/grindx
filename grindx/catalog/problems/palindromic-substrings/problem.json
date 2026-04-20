@@ -1,0 +1,35 @@
+{
+  "id": "palindromic-substrings",
+  "name": "Palindromic Substrings",
+  "difficulty": "Medium",
+  "description": "Given a string s, return the number of palindromic substrings in it. A string is a palindrome when it reads the same backward as forward. A substring is a contiguous sequence of characters within the string.",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "3 (\"a\", \"b\", \"c\")"
+    },
+    {
+      "input": "s = \"aaa\"",
+      "output": "6 (\"a\", \"a\", \"a\", \"aa\", \"aa\", \"aaa\")"
+    }
+  ],
+  "constraints": "1 <= s.length <= 1000. s consists of lowercase English letters.",
+  "python_template": "# Palindromic Substrings\n\ndef countSubstrings(s: str) -> int:\n    pass\n",
+  "go_template": "// Palindromic Substrings\n\npackage main\n\nfunc countSubstrings(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// Palindromic Substrings\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countSubstrings(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Palindromic Substrings\n\nclass Solution {\n    public int countSubstrings(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Palindromic Substrings\n\nfunction countSubstrings(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise odd/even palindrome counting on max-size 1000-character strings that reject cubic substring rescans locally",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

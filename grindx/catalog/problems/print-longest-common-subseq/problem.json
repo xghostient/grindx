@@ -1,0 +1,36 @@
+{
+  "id": "print-longest-common-subseq",
+  "name": "Print Longest Common Subsequence",
+  "difficulty": "Medium",
+  "category": "Strings DP",
+  "description": "Given two strings, find and return the longest common subsequence string (not just the length).",
+  "examples": [
+    {
+      "input": "s1 = \"abcde\", s2 = \"bdgek\"",
+      "output": "\"bde\""
+    },
+    {
+      "input": "s1 = \"abc\", s2 = \"abc\"",
+      "output": "\"abc\""
+    }
+  ],
+  "constraints": "1 <= s1.length, s2.length <= 1000",
+  "python_template": "def printLCS(s1: str, s2: str) -> str:\n    pass\n",
+  "go_template": "package main\n\nfunc printLCS(s1, s2 string) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Print Longest Common Subsequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring printLCS(string& s1, string& s2) {\n    return \"\";\n}\n",
+  "java_template": "// Print Longest Common Subsequence\n\nclass Solution {\n    public String printLCS(String s1, String s2) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Print Longest Common Subsequence\n\nfunction printLCS(s1, s2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m)",
+    "accepted_time": [
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(2^(n+m))"
+    ],
+    "target_space": "O(n * m)",
+    "stress_intent": "separate quadratic LCS reconstruction from exponential recursion while accepting any valid longest subsequence",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

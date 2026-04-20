@@ -1,0 +1,36 @@
+{
+  "id": "dp-square-count-submatrics",
+  "name": "Count Square Submatrices with All Ones",
+  "difficulty": "Medium",
+  "category": "Grid DP",
+  "description": "Given an m x n binary matrix, return the total number of square submatrices that have all ones.",
+  "examples": [
+    {
+      "input": "matrix = [[0,1,1,1],[1,1,1,1],[0,1,1,1]]",
+      "output": "15"
+    },
+    {
+      "input": "matrix = [[1,0,1],[1,1,0],[1,1,0]]",
+      "output": "7"
+    }
+  ],
+  "constraints": "1 <= m, n <= 300, matrix[i][j] is 0 or 1",
+  "python_template": "def countSquares(matrix: list[list[int]]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc countSquares(matrix [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Count Square Submatrices with All Ones\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countSquares(vector<vector<int>>& matrix) {\n    return 0;\n}\n",
+  "java_template": "// Count Square Submatrices with All Ones\n\nclass Solution {\n    public int countSquares(int[][] matrix) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Count Square Submatrices with All Ones\n\nfunction countSquares(matrix) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m * n)",
+    "accepted_time": [
+      "O(m * n)"
+    ],
+    "rejected_time": [
+      "O(m * n * min(m,n))"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear DP accumulation from repeatedly scanning every square size using large all-one matrices",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

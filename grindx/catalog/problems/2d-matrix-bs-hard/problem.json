@@ -1,0 +1,35 @@
+{
+  "id": "2d-matrix-bs-hard",
+  "name": "Search a 2D Matrix II",
+  "difficulty": "Medium",
+  "description": "Write an efficient algorithm to search for a target value in an m x n matrix. Each row is sorted in ascending order from left to right. Each column is sorted in ascending order from top to bottom.",
+  "examples": [
+    {
+      "input": "matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5",
+      "output": "true"
+    },
+    {
+      "input": "matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20",
+      "output": "false"
+    }
+  ],
+  "constraints": "m == matrix.length. n == matrix[i].length. 1 <= n, m <= 300. -10^9 <= matrix[i][j] <= 10^9. Rows and columns are sorted independently.",
+  "python_template": "# Search a 2D Matrix II\n\nfrom typing import List\n\ndef searchMatrix(matrix: List[List[int]], target: int) -> bool:\n    pass\n",
+  "go_template": "// Search a 2D Matrix II\n\npackage main\n\nfunc searchMatrix(matrix [][]int, target int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Search a 2D Matrix II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool searchMatrix(vector<vector<int>>& matrix, int target) {\n    return false;\n}\n",
+  "java_template": "// Search a 2D Matrix II\n\nclass Solution {\n    public boolean searchMatrix(int[][] matrix, int target) {\n        return false;\n    }\n}\n",
+  "js_template": "// Search a 2D Matrix II\n\nfunction searchMatrix(matrix, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m + n)",
+    "accepted_time": [
+      "O(m + n)"
+    ],
+    "rejected_time": [
+      "O(m*n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large row-col sorted matrices that punish full scans",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

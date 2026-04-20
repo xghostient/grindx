@@ -1,0 +1,39 @@
+{
+  "id": "fruits-baskets",
+  "name": "Fruit Into Baskets",
+  "difficulty": "Medium",
+  "description": "You are visiting a farm with a row of fruit trees. You have two baskets and each basket can hold only one type of fruit. Starting from any tree, you must pick exactly one fruit from every tree moving right. You stop when you would have to pick a third type. Return the maximum number of fruits you can pick.",
+  "examples": [
+    {
+      "input": "fruits = [1,2,1]",
+      "output": "3 (pick all)"
+    },
+    {
+      "input": "fruits = [0,1,2,2]",
+      "output": "3 (pick [1,2,2])"
+    },
+    {
+      "input": "fruits = [1,2,3,2,2]",
+      "output": "4 (pick [2,3,2,2])"
+    }
+  ],
+  "constraints": "1 <= fruits.length <= 10^5. 0 <= fruits[i] < fruits.length.",
+  "python_template": "# Fruit Into Baskets\n\nfrom typing import List\n\ndef totalFruit(fruits: List[int]) -> int:\n    pass\n",
+  "go_template": "// Fruit Into Baskets\n\npackage main\n\nfunc totalFruit(fruits []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Fruit Into Baskets\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint totalFruit(vector<int>& fruits) {\n    return 0;\n}\n",
+  "java_template": "// Fruit Into Baskets\n\nclass Solution {\n    public int totalFruit(int[] fruits) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Fruit Into Baskets\n\nfunction totalFruit(fruits) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise two-basket windows over 100k fruit arrays that punish repeated distinct-type rescans locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

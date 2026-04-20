@@ -1,0 +1,39 @@
+{
+  "id": "longest-happy-prefix",
+  "name": "Longest Happy Prefix",
+  "difficulty": "Hard",
+  "description": "A string is called a happy prefix if it is a non-empty prefix which is also a suffix (excluding itself). Given a string s, return the longest happy prefix of s. Return an empty string if no such prefix exists. This is directly related to the KMP failure function / LPS array.",
+  "examples": [
+    {
+      "input": "s = \"level\"",
+      "output": "\"l\""
+    },
+    {
+      "input": "s = \"ababab\"",
+      "output": "\"abab\""
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "\"\""
+    }
+  ],
+  "constraints": "1 <= s.length <= 10^5. s contains only lowercase English letters.",
+  "python_template": "# Longest Happy Prefix\n\ndef longestPrefix(s: str) -> str:\n    pass\n",
+  "go_template": "// Longest Happy Prefix\n\npackage main\n\nfunc longestPrefix(s string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Longest Happy Prefix\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring longestPrefix(string& s) {\n    return \"\";\n}\n",
+  "java_template": "// Longest Happy Prefix\n\nclass Solution {\n    public String longestPrefix(String s) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Longest Happy Prefix\n\nfunction longestPrefix(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise border computation on max-length border-heavy strings that reject repeated whole-prefix comparisons locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

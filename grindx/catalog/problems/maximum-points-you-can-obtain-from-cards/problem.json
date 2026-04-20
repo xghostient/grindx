@@ -1,0 +1,40 @@
+{
+  "id": "maximum-points-you-can-obtain-from-cards",
+  "name": "Maximum Points You Can Obtain from Cards",
+  "difficulty": "Medium",
+  "description": "Given an array cardPoints and the integer k, return the maximum score you can obtain by taking exactly k cards. You can take cards from the beginning or the end of the row. Hint: taking k cards from ends = total - minimum subarray of size n-k.",
+  "examples": [
+    {
+      "input": "cardPoints = [1,2,3,4,5,6,1], k = 3",
+      "output": "12 (take 1,6,5)"
+    },
+    {
+      "input": "cardPoints = [2,2,2], k = 2",
+      "output": "4"
+    },
+    {
+      "input": "cardPoints = [9,7,7,9,7,7,9], k = 7",
+      "output": "55 (take all)"
+    }
+  ],
+  "constraints": "1 <= cardPoints.length <= 10^5. 1 <= cardPoints[i] <= 10^4. 1 <= k <= cardPoints.length.",
+  "python_template": "# Maximum Points You Can Obtain from Cards\n\nfrom typing import List\n\ndef maxScore(cardPoints: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Maximum Points You Can Obtain from Cards\n\npackage main\n\nfunc maxScore(cardPoints []int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Maximum Points You Can Obtain from Cards\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxScore(vector<int>& cardPoints, int k) {\n    return 0;\n}\n",
+  "java_template": "// Maximum Points You Can Obtain from Cards\n\nclass Solution {\n    public int maxScore(int[] cardPoints, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Maximum Points You Can Obtain from Cards\n\nfunction maxScore(cardPoints, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^k)",
+      "O(n*k)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise complement-window scoring over 100k cards that punish recursive left-right picks locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "happy-number",
+  "name": "Happy Number",
+  "difficulty": "Easy",
+  "description": "Write an algorithm to determine if a number n is happy. A happy number is defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat until the number equals 1 (happy) or loops endlessly in a cycle (not happy). Use Floyd's cycle detection or a hash set.",
+  "examples": [
+    {
+      "input": "n = 19",
+      "output": "true (19 \u2192 82 \u2192 68 \u2192 100 \u2192 1)"
+    },
+    {
+      "input": "n = 2",
+      "output": "false (loops: 2\u21924\u219216\u219237\u219258\u219289\u2192145\u219242\u219220\u21924...)"
+    },
+    {
+      "input": "n = 1",
+      "output": "true"
+    }
+  ],
+  "constraints": "1 <= n <= 2^31 - 1.",
+  "python_template": "# Happy Number\n\ndef isHappy(n: int) -> bool:\n    pass\n",
+  "go_template": "// Happy Number\n\npackage main\n\nfunc isHappy(n int) bool {\n    return false\n}\n",
+  "cpp_template": "// Happy Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isHappy(int n) {\n    return false;\n}\n",
+  "java_template": "// Happy Number\n\nclass Solution {\n    public boolean isHappy(int n) {\n        return false;\n    }\n}\n",
+  "js_template": "// Happy Number\n\nfunction isHappy(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)",
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(log n)",
+    "stress_intent": "exercise large values near 2^31 that punish unbounded cycle detection without Floyd's or hash set",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

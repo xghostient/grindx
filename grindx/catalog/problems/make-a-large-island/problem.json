@@ -1,0 +1,39 @@
+{
+  "id": "make-a-large-island",
+  "name": "Making A Large Island",
+  "difficulty": "Hard",
+  "description": "Given an n x n binary grid, you can change at most one 0 to 1. Return the size of the largest island after this operation. An island is a 4-connected group of 1s.",
+  "examples": [
+    {
+      "input": "grid = [[1,0],[0,1]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[1,1],[1,0]]",
+      "output": "4"
+    },
+    {
+      "input": "grid = [[1,1],[1,1]]",
+      "output": "4"
+    }
+  ],
+  "constraints": "n == grid.length. n == grid[i].length. 1 <= n <= 500. grid[i][j] is 0 or 1.",
+  "python_template": "# Making A Large Island\n\nfrom typing import List\n\ndef largestIsland(grid: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Making A Large Island\n\npackage main\n\nfunc largestIsland(grid [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Making A Large Island\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint largestIsland(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+  "java_template": "// Making A Large Island\n\nclass Solution {\n    public int largestIsland(int[][] grid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Making A Large Island\n\nfunction largestIsland(grid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^4)"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "kill solutions that recompute island areas from scratch for every zero while still accepting component-label reuse",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

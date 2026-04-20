@@ -1,0 +1,32 @@
+{
+  "id": "accounts-merge",
+  "name": "Accounts Merge",
+  "difficulty": "Medium",
+  "description": "Given a list of accounts where each account has a name and a list of emails, merge accounts that share common emails. Two accounts belong to the same person if they share at least one email. Return merged accounts with emails sorted.",
+  "examples": [
+    {
+      "input": "accounts = [[\"John\",\"j1@mail.com\",\"j2@mail.com\"],[\"John\",\"j1@mail.com\",\"j3@mail.com\"],[\"Mary\",\"m@mail.com\"]]",
+      "output": "[[\"John\",\"j1@mail.com\",\"j2@mail.com\",\"j3@mail.com\"],[\"Mary\",\"m@mail.com\"]]"
+    }
+  ],
+  "constraints": "1 <= accounts.length <= 1000. 2 <= accounts[i].length <= 10. 1 <= emails[j].length <= 30.",
+  "python_template": "# Accounts Merge\n\nfrom typing import List\n\ndef accountsMerge(accounts: List[List[str]]) -> List[List[str]]:\n    pass\n",
+  "go_template": "// Accounts Merge\n\npackage main\n\nfunc accountsMerge(accounts [][]string) [][]string {\n\treturn [][]string{}\n}\n",
+  "cpp_template": "// Accounts Merge\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {\n    return {};\n}\n",
+  "java_template": "// Accounts Merge\n\nclass Solution {\n    public String[][] accountsMerge(String[][] accounts) {\n        return new String[][]{};\n    }\n}\n",
+  "js_template": "// Accounts Merge\n\nfunction accountsMerge(accounts) {\n\n}\n",
+  "performance": {
+    "target_time": "O(A * alpha(A) + E log E)",
+    "accepted_time": [
+      "O(A * alpha(A) + E log E)",
+      "O(A * log A + E log E)"
+    ],
+    "rejected_time": [
+      "O(A^2 * E)"
+    ],
+    "target_space": "O(A + E)",
+    "stress_intent": "exercise chain merges, same-name splits, and duplicate-email normalization; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

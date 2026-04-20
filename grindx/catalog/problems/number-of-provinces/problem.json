@@ -1,0 +1,35 @@
+{
+  "id": "number-of-provinces",
+  "name": "Number of Provinces",
+  "difficulty": "Medium",
+  "description": "There are n cities. Some are connected directly, some indirectly, and some not at all. A province is a group of directly or indirectly connected cities. Given an n x n adjacency matrix isConnected, return the total number of provinces.",
+  "examples": [
+    {
+      "input": "isConnected = [[1,1,0],[1,1,0],[0,0,1]]",
+      "output": "2"
+    },
+    {
+      "input": "isConnected = [[1,0,0],[0,1,0],[0,0,1]]",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= n <= 200. n == isConnected.length. isConnected[i][j] is 0 or 1. isConnected[i][i] == 1. isConnected[i][j] == isConnected[j][i].",
+  "python_template": "# Number of Provinces\n\nfrom typing import List\n\ndef findCircleNum(isConnected: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Number of Provinces\n\npackage main\n\nfunc findCircleNum(isConnected [][]int) int {\n\treturn 0;\n}\n",
+  "cpp_template": "// Number of Provinces\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findCircleNum(vector<vector<int>>& isConnected) {\n    return 0;\n}\n",
+  "java_template": "// Number of Provinces\n\nclass Solution {\n    public int findCircleNum(int[][] isConnected) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Provinces\n\nfunction findCircleNum(isConnected) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill cubic transitive-closure style solutions on large adjacency matrices while still accepting one-pass DFS/BFS",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

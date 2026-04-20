@@ -1,0 +1,40 @@
+{
+  "id": "find-the-index-of-the-first-occurrence-in-a-string",
+  "name": "Find the Index of the First Occurrence in a String",
+  "difficulty": "Easy",
+  "description": "Given two strings haystack and needle, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+  "examples": [
+    {
+      "input": "haystack = \"sadbutsad\", needle = \"sad\"",
+      "output": "0"
+    },
+    {
+      "input": "haystack = \"leetcode\", needle = \"leeto\"",
+      "output": "-1"
+    },
+    {
+      "input": "haystack = \"hello\", needle = \"ll\"",
+      "output": "2"
+    }
+  ],
+  "constraints": "1 <= haystack.length, needle.length <= 10^4. haystack and needle consist of only lowercase English characters.",
+  "python_template": "# Find the Index of the First Occurrence in a String\n\ndef strStr(haystack: str, needle: str) -> int:\n    pass\n",
+  "go_template": "// Find the Index of the First Occurrence in a String\n\npackage main\n\nfunc strStr(haystack string, needle string) int {\n    return -1\n}\n",
+  "cpp_template": "// Find the Index of the First Occurrence in a String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint strStr(string& haystack, string& needle) {\n    return 0;\n}\n",
+  "java_template": "// Find the Index of the First Occurrence in a String\n\nclass Solution {\n    public int strStr(String haystack, String needle) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Find the Index of the First Occurrence in a String\n\nfunction strStr(haystack, needle) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n + m)",
+    "accepted_time": [
+      "O(n + m)",
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(n^2 * m)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise empty needle behavior, repeated prefixes, and missed near-matches; strict local separation is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

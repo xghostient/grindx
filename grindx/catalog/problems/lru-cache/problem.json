@@ -1,0 +1,30 @@
+{
+  "id": "lru-cache",
+  "name": "LRU Cache",
+  "difficulty": "Medium",
+  "description": "Design a data structure that follows the constraints of a Least Recently Used (LRU) cache. Implement get(key) and put(key, value). Both must run in O(1) time. When the cache reaches capacity, evict the least recently used key before inserting a new one.",
+  "examples": [
+    {
+      "input": "LRUCache(2), put(1,1), put(2,2), get(1)=1, put(3,3), get(2)=-1, put(4,4), get(1)=-1, get(3)=3, get(4)=4",
+      "output": "See above"
+    }
+  ],
+  "constraints": "1 <= capacity <= 3000. 0 <= key <= 10^4. 0 <= value <= 10^5. At most 2 * 10^5 calls to get and put.",
+  "python_template": "# LRU Cache\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        pass\n\n    def get(self, key: int) -> int:\n        pass\n\n    def put(self, key: int, value: int) -> None:\n        pass\n",
+  "go_template": "// LRU Cache\n\npackage main\n\ntype LRUCache struct {\n}\n\nfunc Constructor(capacity int) LRUCache {\n\treturn LRUCache{}\n}\n\nfunc (c *LRUCache) Get(key int) int {\n\treturn -1\n}\n\nfunc (c *LRUCache) Put(key int, value int) {\n}\n",
+  "cpp_template": "// LRU Cache\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass LRUCache {\npublic:\n    LRUCache(int capacity) {\n\n    }\n\n    int Get(int key) {\n        return 0;\n    }\n\n    void Put(int key, int value) {\n\n    }\n};\n",
+  "java_template": "// LRU Cache\n\nimport java.util.*;\n\nclass LRUCache {\n    public LRUCache(int capacity) {\n\n    }\n\n    public int Get(int key) {\n        return 0;\n    }\n\n    public void Put(int key, int value) {\n\n    }\n}\n",
+  "js_template": "// LRU Cache\n\nclass LRUCache {\n    constructor(capacity) {\n\n    }\n\n    get(key) {\n\n    }\n\n    put(key, value) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(1) amortized per get/put",
+    "accepted_time": [
+      "O(1) amortized per get/put"
+    ],
+    "rejected_time": [
+      "O(n) per get/put"
+    ],
+    "target_space": "O(capacity)",
+    "stress_intent": "exercise long hot-cache access traces that punish list or array recency updates without direct node relocation",
+    "enforcement": "best-effort-local"
+  }
+}

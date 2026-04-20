@@ -1,0 +1,36 @@
+{
+  "id": "min-cost-to-connect-all-points",
+  "name": "Min Cost to Connect All Points",
+  "difficulty": "Medium",
+  "description": "Given an array of points on a 2D plane, return the minimum cost to connect all points. The cost of connecting two points is the Manhattan distance |xi - xj| + |yi - yj|. All points must be connected with exactly one simple path.",
+  "examples": [
+    {
+      "input": "points = [[0,0],[2,2],[3,10],[5,2],[7,0]]",
+      "output": "20"
+    },
+    {
+      "input": "points = [[3,12],[-2,5],[-4,1]]",
+      "output": "18"
+    }
+  ],
+  "constraints": "1 <= points.length <= 1000. -10^6 <= xi, yi <= 10^6. All pairs (xi, yi) are distinct.",
+  "python_template": "# Min Cost to Connect All Points\n\nfrom typing import List\nimport heapq\n\ndef minCostConnectPoints(points: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Min Cost to Connect All Points\n\npackage main\n\nfunc minCostConnectPoints(points [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Min Cost to Connect All Points\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minCostConnectPoints(vector<vector<int>>& points) {\n    return 0;\n}\n",
+  "java_template": "// Min Cost to Connect All Points\n\nclass Solution {\n    public int minCostConnectPoints(int[][] points) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Min Cost to Connect All Points\n\nfunction minCostConnectPoints(points) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2 log n)",
+    "accepted_time": [
+      "O(n^2 log n)",
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "kill cubic Prim variants that rescan all visited-to-unvisited edges from scratch on large point sets",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "merge-triplets-to-form-target-triplet",
+  "name": "Merge Triplets to Form Target Triplet",
+  "difficulty": "Medium",
+  "description": "A triplet is an array of three integers. You are given a 2D integer array triplets, where triplets[i] = [ai, bi, ci]. You are also given an integer array target = [x, y, z]. To form the target, you can select some triplets and update the target by taking the element-wise maximum. Return true if it is possible to obtain the target as the element-wise maximum of some subset of triplets.",
+  "examples": [
+    {
+      "input": "triplets = [[2,5,3],[1,8,4],[1,7,5]], target = [2,7,5]",
+      "output": "true (pick triplets 0 and 2: max(2,1)=2, max(5,7)=7, max(3,5)=5)"
+    },
+    {
+      "input": "triplets = [[3,4,5],[4,5,6]], target = [3,2,5]",
+      "output": "false"
+    },
+    {
+      "input": "triplets = [[2,5,3],[2,3,4],[1,2,5],[5,2,3]], target = [5,5,5]",
+      "output": "true"
+    }
+  ],
+  "constraints": "1 <= triplets.length <= 10^5. triplets[i].length == target.length == 3. 1 <= ai, bi, ci, x, y, z <= 1000.",
+  "python_template": "# Merge Triplets to Form Target Triplet\n\nfrom typing import List\n\ndef mergeTriplets(triplets: List[List[int]], target: List[int]) -> bool:\n    pass\n",
+  "go_template": "// Merge Triplets to Form Target Triplet\n\npackage main\n\nfunc mergeTriplets(triplets [][]int, target []int) bool {\n    return false\n}\n",
+  "cpp_template": "// Merge Triplets to Form Target Triplet\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool mergeTriplets(vector<vector<int>>& triplets, vector<int>& target) {\n    return false;\n}\n",
+  "java_template": "// Merge Triplets to Form Target Triplet\n\nclass Solution {\n    public boolean mergeTriplets(int[][] triplets, int[] target) {\n        return false;\n    }\n}\n",
+  "js_template": "// Merge Triplets to Form Target Triplet\n\nfunction mergeTriplets(triplets, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large triplet sets that punish brute-force subset checking",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

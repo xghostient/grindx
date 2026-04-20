@@ -1,0 +1,35 @@
+{
+  "id": "max-combination-sum",
+  "name": "Maximum Sum Combination",
+  "difficulty": "Medium",
+  "description": "Given two integer arrays A and B of size n each, find the maximum k valid sum combinations from all possible sum combinations. A sum combination is formed by taking one element from array A and another from array B. Return the k maximum sum combinations in descending order.",
+  "examples": [
+    {
+      "input": "A = [3, 2], B = [1, 4], k = 2",
+      "output": "[7, 6] (3+4=7, 2+4=6)"
+    },
+    {
+      "input": "A = [1, 4, 2, 3], B = [2, 5, 1, 6], k = 3",
+      "output": "[10, 9, 9] (4+6=10, 3+6=9, 4+5=9)"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. 1 <= k <= n. 1 <= A[i], B[i] <= 10^5.",
+  "python_template": "# Maximum Sum Combination\n\nfrom typing import List\n\ndef maxSumCombinations(A: List[int], B: List[int], k: int) -> List[int]:\n    pass\n",
+  "go_template": "// Maximum Sum Combination\n\npackage main\n\nfunc maxSumCombinations(A, B []int, k int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Maximum Sum Combination\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> maxSumCombinations(vector<int>& A, vector<int>& B, int k) {\n    return {};\n}\n",
+  "java_template": "// Maximum Sum Combination\n\nclass Solution {\n    public int[] maxSumCombinations(int[] A, int[] B, int k) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Maximum Sum Combination\n\nfunction maxSumCombinations(A, B, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n + k log k)",
+    "accepted_time": [
+      "O(n log n + k log k)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n + k)",
+    "stress_intent": "exercise large sorted arrays that punish enumerating every pair sum",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

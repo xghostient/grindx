@@ -1,0 +1,40 @@
+{
+  "id": "minimum-window-substring",
+  "name": "Minimum Window Substring",
+  "difficulty": "Hard",
+  "description": "Given two strings s and t, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If no such substring exists, return \"\".",
+  "examples": [
+    {
+      "input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+      "output": "\"BANC\""
+    },
+    {
+      "input": "s = \"a\", t = \"a\"",
+      "output": "\"a\""
+    },
+    {
+      "input": "s = \"a\", t = \"aa\"",
+      "output": "\"\" (t has 2 a's but s has only 1)"
+    }
+  ],
+  "constraints": "1 <= s.length, t.length <= 10^5. s and t consist of uppercase and lowercase English letters.",
+  "python_template": "# Minimum Window Substring\n\ndef minWindow(s: str, t: str) -> str:\n    pass\n",
+  "go_template": "// Minimum Window Substring\n\npackage main\n\nfunc minWindow(s string, t string) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Minimum Window Substring\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring minWindow(string& s, string& t) {\n    return \"\";\n}\n",
+  "java_template": "// Minimum Window Substring\n\nclass Solution {\n    public String minWindow(String s, String t) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Minimum Window Substring\n\nfunction minWindow(s, t) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n + m)",
+    "accepted_time": [
+      "O(n + m)"
+    ],
+    "rejected_time": [
+      "O(n^2)",
+      "O(n*m^2)"
+    ],
+    "target_space": "O(alphabet)",
+    "stress_intent": "exercise minimal-cover window maintenance over 100k sources that punish repeated substring rescans locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "course-schedule",
+  "name": "Course Schedule",
+  "difficulty": "Medium",
+  "description": "There are numCourses courses labeled 0 to numCourses-1. Given prerequisites where prerequisites[i] = [a, b] means you must take b before a, return true if you can finish all courses (i.e., no cycle in the prerequisite graph).",
+  "examples": [
+    {
+      "input": "numCourses = 2, prerequisites = [[1,0]]",
+      "output": "true"
+    },
+    {
+      "input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= numCourses <= 2000. 0 <= prerequisites.length <= 5000. All pairs are unique.",
+  "python_template": "# Course Schedule\n\nfrom typing import List\n\ndef canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:\n    pass\n",
+  "go_template": "// Course Schedule\n\npackage main\n\nfunc canFinish(numCourses int, prerequisites [][]int) bool {\n\treturn false;\n}\n",
+  "cpp_template": "// Course Schedule\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool canFinish(int numCourses, vector<vector<int>>& prerequisites) {\n    return false;\n}\n",
+  "java_template": "// Course Schedule\n\nclass Solution {\n    public boolean canFinish(int numCourses, int[][] prerequisites) {\n        return false;\n    }\n}\n",
+  "js_template": "// Course Schedule\n\nfunction canFinish(numCourses, prerequisites) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill repeated reachability checks on giant prerequisite chains, cycles, and layered DAGs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

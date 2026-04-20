@@ -1,0 +1,38 @@
+{
+  "id": "valid-parentheses",
+  "name": "Valid Parentheses",
+  "difficulty": "Easy",
+  "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. A string is valid if: open brackets are closed by the same type, and open brackets are closed in the correct order. Every close bracket has a corresponding open bracket of the same type.",
+  "examples": [
+    {
+      "input": "s = \"()\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"()[]{}\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"(]\"",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= s.length <= 10^4. s consists of parentheses only '()[]{}'.",
+  "python_template": "# Valid Parentheses\n\ndef isValid(s: str) -> bool:\n    pass\n",
+  "go_template": "// Valid Parentheses\n\npackage main\n\nfunc isValid(s string) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Valid Parentheses\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isValid(string& s) {\n    return false;\n}\n",
+  "java_template": "// Valid Parentheses\n\nclass Solution {\n    public boolean isValid(String s) {\n        return false;\n    }\n}\n",
+  "js_template": "// Valid Parentheses\n\nfunction isValid(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "long bracket strings punish repeated substring elimination",
+    "enforcement": "best-effort-local"
+  }
+}

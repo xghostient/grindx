@@ -1,0 +1,40 @@
+{
+  "id": "house-robber-ii",
+  "name": "House Robber II",
+  "difficulty": "Medium",
+  "category": "1D DP",
+  "description": "All houses are arranged in a circle. Adjacent houses have connected security systems. You cannot rob two adjacent houses. The first and last houses are also adjacent. Return the maximum amount you can rob.",
+  "examples": [
+    {
+      "input": "nums = [2,3,2]",
+      "output": "3 (rob house 2)"
+    },
+    {
+      "input": "nums = [1,2,3,1]",
+      "output": "4 (rob house 1 and 3)"
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 100. 0 <= nums[i] <= 1000.",
+  "python_template": "# House Robber II\n\nfrom typing import List\n\ndef rob(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\n// House Robber II\n\n\nfunc rob(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// House Robber II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint rob(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// House Robber II\n\nclass Solution {\n    public int rob(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// House Robber II\n\nfunction rob(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear circular-house DP from exponential include-skip recursion on long ambiguous rings",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "subseq-03-partition-arr-to-min-sum-diff",
+  "name": "Partition Array for Min Sum Diff",
+  "difficulty": "Hard",
+  "category": "Subsequences",
+  "description": "Partition an array into two subsets such that the absolute difference of their sums is minimized. Return the minimum difference.",
+  "examples": [
+    {
+      "input": "arr = [1, 6, 11, 5]",
+      "output": "1"
+    },
+    {
+      "input": "arr = [1, 2, 3, 4]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= n <= 100, 1 <= arr[i] <= 1000",
+  "python_template": "def minDifference(arr: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc minDifference(arr []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Partition Array for Min Sum Diff\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minDifference(vector<int>& arr) {\n    return 0;\n}\n",
+  "java_template": "// Partition Array for Min Sum Diff\n\nclass Solution {\n    public int minDifference(int[] arr) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Partition Array for Min Sum Diff\n\nfunction minDifference(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * sum(arr))",
+    "accepted_time": [
+      "O(n * sum(arr))"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(sum(arr))",
+    "stress_intent": "separate pseudo-polynomial subset DP from exhaustive partition recursion using longer balanced-value arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

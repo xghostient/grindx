@@ -1,0 +1,35 @@
+{
+  "id": "number-of-islands",
+  "name": "Number of Islands",
+  "difficulty": "Medium",
+  "description": "Given an m x n 2D grid of '1's (land) and '0's (water), return the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.",
+  "examples": [
+    {
+      "input": "grid = [[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]",
+      "output": "1"
+    },
+    {
+      "input": "grid = [[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]",
+      "output": "3"
+    }
+  ],
+  "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 300. grid[i][j] is '0' or '1'.",
+  "python_template": "# Number of Islands\n\nfrom typing import List\n\ndef numIslands(grid: List[List[str]]) -> int:\n    pass\n",
+  "go_template": "// Number of Islands\n\npackage main\n\nfunc numIslands(grid [][]byte) int {\n\treturn 0;\n}\n",
+  "cpp_template": "// Number of Islands\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numIslands(vector<string>& grid) {\n    return 0;\n}\n",
+  "java_template": "// Number of Islands\n\nclass Solution {\n    public int numIslands(char[][] grid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Islands\n\nfunction numIslands(grid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise island counting across sparse, dense, and diagonal-only land patterns; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

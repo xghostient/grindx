@@ -1,0 +1,38 @@
+{
+  "id": "daily-temperatures",
+  "name": "Daily Temperatures",
+  "difficulty": "Medium",
+  "description": "Given an array of integers temperatures representing daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future warmer day, answer[i] = 0.",
+  "examples": [
+    {
+      "input": "temperatures = [73,74,75,71,69,72,76,73]",
+      "output": "[1,1,4,2,1,1,0,0]"
+    },
+    {
+      "input": "temperatures = [30,40,50,60]",
+      "output": "[1,1,1,0]"
+    },
+    {
+      "input": "temperatures = [30,60,90]",
+      "output": "[1,1,0]"
+    }
+  ],
+  "constraints": "1 <= temperatures.length <= 10^5. 30 <= temperatures[i] <= 100.",
+  "python_template": "# Daily Temperatures\n\nfrom typing import List\n\ndef dailyTemperatures(temperatures: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Daily Temperatures\n\npackage main\n\nfunc dailyTemperatures(temperatures []int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Daily Temperatures\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> dailyTemperatures(vector<int>& temperatures) {\n    return {};\n}\n",
+  "java_template": "// Daily Temperatures\n\nclass Solution {\n    public int[] dailyTemperatures(int[] temperatures) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Daily Temperatures\n\nfunction dailyTemperatures(temperatures) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "max-length temperature runs punish per-day forward scans",
+    "enforcement": "strict-local"
+  }
+}

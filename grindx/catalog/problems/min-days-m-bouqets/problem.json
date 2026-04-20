@@ -1,0 +1,39 @@
+{
+  "id": "min-days-m-bouqets",
+  "name": "Minimum Number of Days to Make M Bouquets",
+  "difficulty": "Medium",
+  "description": "Given an array bloomDay, an integer m (number of bouquets needed) and an integer k (adjacent flowers per bouquet), return the minimum number of days to wait to make m bouquets from the garden. If impossible, return -1. Each flower can only be used in one bouquet.",
+  "examples": [
+    {
+      "input": "bloomDay = [1,10,3,10,2], m = 3, k = 1",
+      "output": "3"
+    },
+    {
+      "input": "bloomDay = [1,10,3,10,2], m = 3, k = 2",
+      "output": "-1"
+    },
+    {
+      "input": "bloomDay = [7,7,7,7,12,7,7], m = 2, k = 3",
+      "output": "12"
+    }
+  ],
+  "constraints": "1 <= bloomDay.length <= 10^5. 1 <= bloomDay[i] <= 10^9. 1 <= m <= 10^6. 1 <= k <= bloomDay.length.",
+  "python_template": "# Minimum Number of Days to Make M Bouquets\n\nfrom typing import List\n\ndef minDays(bloomDay: List[int], m: int, k: int) -> int:\n    pass\n",
+  "go_template": "// Minimum Number of Days to Make M Bouquets\n\npackage main\n\nfunc minDays(bloomDay []int, m int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Minimum Number of Days to Make M Bouquets\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minDays(vector<int>& bloomDay, int m, int k) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Number of Days to Make M Bouquets\n\nclass Solution {\n    public int minDays(int[] bloomDay, int m, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimum Number of Days to Make M Bouquets\n\nfunction minDays(bloomDay, m, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log max)",
+    "accepted_time": [
+      "O(n log max)"
+    ],
+    "rejected_time": [
+      "O(n * max)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 10k bloom arrays that punish linear day search",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

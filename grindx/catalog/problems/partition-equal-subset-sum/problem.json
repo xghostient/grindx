@@ -1,0 +1,36 @@
+{
+  "id": "partition-equal-subset-sum",
+  "name": "Partition Equal Subset Sum",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "Given an integer array nums, return true if you can partition the array into two subsets such that the sum of elements in both subsets is equal.",
+  "examples": [
+    {
+      "input": "nums = [1,5,11,5]",
+      "output": "true (subsets [1,5,5] and [11])"
+    },
+    {
+      "input": "nums = [1,2,3,5]",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 200. 1 <= nums[i] <= 100.",
+  "python_template": "# Partition Equal Subset Sum\n\nfrom typing import List\n\ndef canPartition(nums: List[int]) -> bool:\n    pass\n",
+  "go_template": "// Partition Equal Subset Sum\n\npackage main\n\nfunc canPartition(nums []int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Partition Equal Subset Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool canPartition(vector<int>& nums) {\n    return false;\n}\n",
+  "java_template": "// Partition Equal Subset Sum\n\nclass Solution {\n    public boolean canPartition(int[] nums) {\n        return false;\n    }\n}\n",
+  "js_template": "// Partition Equal Subset Sum\n\nfunction canPartition(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * sum(nums))",
+    "accepted_time": [
+      "O(n * sum(nums))"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(sum(nums))",
+    "stress_intent": "separate subset-sum DP from exhaustive subset search using repeated-value arrays with many near-half combinations",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

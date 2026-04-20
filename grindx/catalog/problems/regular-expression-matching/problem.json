@@ -1,0 +1,40 @@
+{
+  "id": "regular-expression-matching",
+  "name": "Regular Expression Matching",
+  "difficulty": "Hard",
+  "category": "Strings DP",
+  "description": "Given a string s and a pattern p, implement regular expression matching with support for '.' (matches any single character) and '*' (matches zero or more of the preceding element). The matching should cover the entire string.",
+  "examples": [
+    {
+      "input": "s = \"aa\", p = \"a\"",
+      "output": "false"
+    },
+    {
+      "input": "s = \"aa\", p = \"a*\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"ab\", p = \".*\"",
+      "output": "true"
+    }
+  ],
+  "constraints": "1 <= s.length <= 20. 1 <= p.length <= 20. s contains only lowercase English letters. p contains only lowercase English letters, '.', and '*'.",
+  "python_template": "# Regular Expression Matching\n\ndef isMatch(s: str, p: str) -> bool:\n    pass\n",
+  "go_template": "// Regular Expression Matching\n\npackage main\n\nfunc isMatch(s string, p string) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Regular Expression Matching\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isMatch(string& s, string& p) {\n    return false;\n}\n",
+  "java_template": "// Regular Expression Matching\n\nclass Solution {\n    public boolean isMatch(String s, String p) {\n        return false;\n    }\n}\n",
+  "js_template": "// Regular Expression Matching\n\nfunction isMatch(s, p) {\n\n}\n",
+  "performance": {
+    "target_time": "O(len(s) * len(p))",
+    "accepted_time": [
+      "O(len(s) * len(p))"
+    ],
+    "rejected_time": [
+      "O(2^(len(s)+len(p)))"
+    ],
+    "target_space": "O(len(p))",
+    "stress_intent": "separate regex DP from exponential backtracking using repeated a* groups followed by a final mismatch",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

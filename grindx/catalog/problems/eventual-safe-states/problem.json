@@ -1,0 +1,35 @@
+{
+  "id": "eventual-safe-states",
+  "name": "Find Eventual Safe States",
+  "difficulty": "Medium",
+  "description": "Given a directed graph, a node is safe if every possible path from that node leads to a terminal node (no outgoing edges). Return all safe nodes sorted in ascending order.",
+  "examples": [
+    {
+      "input": "graph = [[1,2],[2,3],[5],[0],[5],[],[]]",
+      "output": "[2,4,5,6]"
+    },
+    {
+      "input": "graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]",
+      "output": "[4]"
+    }
+  ],
+  "constraints": "n == graph.length. 1 <= n <= 10^4. 0 <= graph[i].length <= n.",
+  "python_template": "# Find Eventual Safe States\n\nfrom typing import List\n\ndef eventualSafeNodes(graph: List[List[int]]) -> List[int]:\n    pass\n",
+  "go_template": "// Find Eventual Safe States\n\npackage main\n\nfunc eventualSafeNodes(graph [][]int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Find Eventual Safe States\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> eventualSafeNodes(vector<vector<int>>& graph) {\n    return {};\n}\n",
+  "java_template": "// Find Eventual Safe States\n\nclass Solution {\n    public int[] eventualSafeNodes(int[][] graph) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Find Eventual Safe States\n\nfunction eventualSafeNodes(graph) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill per-node DFS recomputation on giant chains, lollipops, and large DAGs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

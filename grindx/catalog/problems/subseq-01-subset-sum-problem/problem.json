@@ -1,0 +1,36 @@
+{
+  "id": "subseq-01-subset-sum-problem",
+  "name": "Subset Sum Problem",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "Given an array of non-negative integers and a target sum, determine if there is a subset of the array that adds up to exactly the target sum.",
+  "examples": [
+    {
+      "input": "arr = [3, 34, 4, 12, 5, 2], target = 9",
+      "output": "true"
+    },
+    {
+      "input": "arr = [3, 34, 4, 12, 5, 2], target = 30",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= n <= 200, 1 <= arr[i] <= 200, 1 <= target <= 4*10^4",
+  "python_template": "def isSubsetSum(arr: list[int], target: int) -> bool:\n    pass\n",
+  "go_template": "package main\n\nfunc isSubsetSum(arr []int, target int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Subset Sum Problem\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isSubsetSum(vector<int>& arr, int target) {\n    return false;\n}\n",
+  "java_template": "// Subset Sum Problem\n\nclass Solution {\n    public boolean isSubsetSum(int[] arr, int target) {\n        return false;\n    }\n}\n",
+  "js_template": "// Subset Sum Problem\n\nfunction isSubsetSum(arr, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * target)",
+    "accepted_time": [
+      "O(n * target)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(target)",
+    "stress_intent": "separate subset-sum DP from plain recursion using longer arrays with many near-target combinations",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

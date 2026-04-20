@@ -1,0 +1,36 @@
+{
+  "id": "combination-sum-ii",
+  "name": "Combination Sum II",
+  "difficulty": "Medium",
+  "description": "Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target. Each number in candidates may only be used once in the combination. The solution set must not contain duplicate combinations.",
+  "examples": [
+    {
+      "input": "candidates = [10,1,2,7,6,1,5], target = 8",
+      "output": "[[1,1,6],[1,2,5],[1,7],[2,6]]"
+    },
+    {
+      "input": "candidates = [2,5,2,1,2], target = 5",
+      "output": "[[1,2,2],[5]]"
+    }
+  ],
+  "constraints": "1 <= candidates.length <= 100. 1 <= candidates[i] <= 50. 1 <= target <= 30.",
+  "python_template": "# Combination Sum II\n\nfrom typing import List\n\ndef combinationSum2(candidates: List[int], target: int) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Combination Sum II\n\npackage main\n\nfunc combinationSum2(candidates []int, target int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// Combination Sum II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> combinationSum2(vector<int>& candidates, int target) {\n    return {};\n}\n",
+  "java_template": "// Combination Sum II\n\nclass Solution {\n    public int[][] combinationSum2(int[] candidates, int target) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Combination Sum II\n\nfunction combinationSum2(candidates, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(2^n)",
+    "accepted_time": [
+      "O(2^n)",
+      "O(n * 2^n)"
+    ],
+    "rejected_time": [
+      "O(n * 2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise candidate arrays with duplicates that punish failure to prune",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "stack-using-two-queue",
+  "name": "Implement Stack Using Two Queues",
+  "difficulty": "Easy",
+  "description": "Implement a last-in-first-out (LIFO) stack using only two queues. The stack should support push, pop, top, and empty operations.",
+  "examples": [
+    {
+      "input": "[\"MyStack\",\"push\",\"push\",\"top\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]",
+      "output": "[null,null,null,2,2,false]"
+    }
+  ],
+  "constraints": "1 <= x <= 9. At most 100 calls. All operations are valid.",
+  "python_template": "# Implement Stack Using Two Queues\n\nfrom collections import deque\n\nclass MyStack:\n    def __init__(self):\n        pass\n\n    def push(self, x: int) -> None:\n        pass\n\n    def pop(self) -> int:\n        pass\n\n    def top(self) -> int:\n        pass\n\n    def empty(self) -> bool:\n        pass\n",
+  "go_template": "// Implement Stack Using Two Queues\n\npackage main\n\ntype MyStack struct {\n}\n\nfunc Constructor() MyStack {\n    return MyStack{}\n}\n\nfunc (s *MyStack) Push(x int) {\n}\n\nfunc (s *MyStack) Pop() int {\n    return 0\n}\n\nfunc (s *MyStack) Top() int {\n    return 0\n}\n\nfunc (s *MyStack) Empty() bool {\n    return true\n}\n",
+  "cpp_template": "// Implement Stack Using Two Queues\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass MyStack {\npublic:\n    MyStack() {\n\n    }\n\n    void Push(int x) {\n\n    }\n\n    int Pop() {\n        return 0;\n    }\n\n    int Top() {\n        return 0;\n    }\n\n    bool Empty() {\n        return false;\n    }\n};\n",
+  "java_template": "// Implement Stack Using Two Queues\n\nimport java.util.*;\n\nclass MyStack {\n    public MyStack() {\n\n    }\n\n    public void Push(int x) {\n\n    }\n\n    public int Pop() {\n        return 0;\n    }\n\n    public int Top() {\n        return 0;\n    }\n\n    public boolean Empty() {\n        return false;\n    }\n}\n",
+  "js_template": "// Implement Stack Using Two Queues\n\nclass MyStack {\n    constructor() {\n\n    }\n\n    push(x) {\n\n    }\n\n    pop() {\n\n    }\n\n    top() {\n\n    }\n\n    empty() {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(1) amortized/op",
+    "accepted_time": [
+      "O(1) amortized/op"
+    ],
+    "rejected_time": [
+      "O(n) per top",
+      "O(n^2) overall"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "queue-backed stack operations punish full shuffles on every call",
+    "enforcement": "best-effort-local"
+  }
+}

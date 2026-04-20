@@ -1,0 +1,36 @@
+{
+  "id": "find-median-from-data-stream",
+  "name": "Find Median from Data Stream",
+  "difficulty": "Hard",
+  "description": "The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values. Implement the MedianFinder class:\n- MedianFinder() initializes the MedianFinder object.\n- addNum(num) adds the integer num to the data structure.\n- findMedian() returns the median of all elements so far.",
+  "examples": [
+    {
+      "input": "[\"MedianFinder\",\"addNum\",\"addNum\",\"findMedian\",\"addNum\",\"findMedian\"]\n[[],[1],[2],[],[3],[]]",
+      "output": "[null,null,null,1.5,null,2.0]"
+    },
+    {
+      "input": "[\"MedianFinder\",\"addNum\",\"findMedian\"]\n[[],[5],[]]",
+      "output": "[null,null,5.0]"
+    }
+  ],
+  "constraints": "-10^5 <= num <= 10^5. There will be at least one element before calling findMedian. At most 5 * 10^4 calls to addNum and findMedian.",
+  "python_template": "# Find Median from Data Stream\n\nclass MedianFinder:\n    def __init__(self):\n        pass\n\n    def addNum(self, num: int) -> None:\n        pass\n\n    def findMedian(self) -> float:\n        pass\n",
+  "go_template": "// Find Median from Data Stream\n\npackage main\n\ntype MedianFinder struct {\n\n}\n\nfunc Constructor() MedianFinder {\n    return MedianFinder{}\n}\n\nfunc (mf *MedianFinder) AddNum(num int) {\n\n}\n\nfunc (mf *MedianFinder) FindMedian() float64 {\n    return 0.0\n}\n",
+  "cpp_template": "// Find Median from Data Stream\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass MedianFinder {\npublic:\n    MedianFinder() {\n\n    }\n\n    void AddNum(int num) {\n\n    }\n\n    double FindMedian() {\n        return 0.0;\n    }\n};\n",
+  "java_template": "// Find Median from Data Stream\n\nimport java.util.*;\n\nclass MedianFinder {\n    public MedianFinder() {\n\n    }\n\n    public void AddNum(int num) {\n\n    }\n\n    public double FindMedian() {\n        return 0.0;\n    }\n}\n",
+  "js_template": "// Find Median from Data Stream\n\nclass MedianFinder {\n    constructor() {\n\n    }\n\n    addNum(num) {\n\n    }\n\n    findMedian() {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(log n) add, O(1) median",
+    "accepted_time": [
+      "O(log n) add, O(1) median"
+    ],
+    "rejected_time": [
+      "O(n log n) per query",
+      "O(n) per query"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise long add/query streams that punish resorting or rescanning the full stream after each update",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

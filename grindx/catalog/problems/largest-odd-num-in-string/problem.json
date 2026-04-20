@@ -1,0 +1,39 @@
+{
+  "id": "largest-odd-num-in-string",
+  "name": "Largest Odd Number in String",
+  "difficulty": "Easy",
+  "description": "You are given a string num, representing a large integer. Return the largest-valued odd integer (as a string) that is a non-empty substring of num, or an empty string if no odd integer exists. A substring is a contiguous sequence of characters within a string.",
+  "examples": [
+    {
+      "input": "num = \"52\"",
+      "output": "\"5\""
+    },
+    {
+      "input": "num = \"4206\"",
+      "output": "\"\""
+    },
+    {
+      "input": "num = \"35427\"",
+      "output": "\"35427\""
+    }
+  ],
+  "constraints": "1 <= num.length <= 10^5. num only consists of digits and does not contain any leading zeros.",
+  "python_template": "# Largest Odd Number in String\n\ndef largestOddNumber(num: str) -> str:\n    pass\n",
+  "go_template": "// Largest Odd Number in String\n\npackage main\n\nfunc largestOddNumber(num string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Largest Odd Number in String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring largestOddNumber(string& num) {\n    return \"\";\n}\n",
+  "java_template": "// Largest Odd Number in String\n\nclass Solution {\n    public String largestOddNumber(String num) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Largest Odd Number in String\n\nfunction largestOddNumber(num) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise suffix scanning on three max-length numeric strings that reject quadratic prefix rebuilding locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

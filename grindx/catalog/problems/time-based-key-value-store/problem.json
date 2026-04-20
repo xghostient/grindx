@@ -1,0 +1,43 @@
+{
+  "id": "time-based-key-value-store",
+  "name": "Time Based Key-Value Store",
+  "difficulty": "Medium",
+  "description": "Design a time-based key-value data structure that can store multiple values for the same key at different timestamps and retrieve the key's value at a certain timestamp. Implement set(key, value, timestamp) and get(key, timestamp) which returns the value with the largest timestamp <= the given timestamp.",
+  "examples": [
+    {
+      "input": "set(\"foo\", \"bar\", 1), get(\"foo\", 1)",
+      "output": "\"bar\""
+    },
+    {
+      "input": "set(\"foo\", \"bar\", 1), get(\"foo\", 3)",
+      "output": "\"bar\""
+    },
+    {
+      "input": "set(\"foo\", \"bar\", 1), set(\"foo\", \"bar2\", 4), get(\"foo\", 4)",
+      "output": "\"bar2\""
+    },
+    {
+      "input": "set(\"foo\", \"bar\", 1), set(\"foo\", \"bar2\", 4), get(\"foo\", 5)",
+      "output": "\"bar2\""
+    }
+  ],
+  "constraints": "1 <= key.length, value.length <= 100. 1 <= timestamp <= 10^7. All timestamps of set are strictly increasing. At most 2 * 10^5 calls to set and get.",
+  "python_template": "# Time Based Key-Value Store\n\nclass TimeMap:\n    def __init__(self):\n        pass\n\n    def set(self, key: str, value: str, timestamp: int) -> None:\n        pass\n\n    def get(self, key: str, timestamp: int) -> str:\n        pass\n",
+  "go_template": "// Time Based Key-Value Store\n\npackage main\n\ntype TimeMap struct {\n}\n\nfunc Constructor() TimeMap {\n\treturn TimeMap{}\n}\n\nfunc (t *TimeMap) Set(key string, value string, timestamp int) {\n}\n\nfunc (t *TimeMap) Get(key string, timestamp int) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Time Based Key-Value Store\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass TimeMap {\npublic:\n    TimeMap() {\n\n    }\n\n    void Set(string key, string value, int timestamp) {\n\n    }\n\n    string Get(string key, int timestamp) {\n        return \"\";\n    }\n};\n",
+  "java_template": "// Time Based Key-Value Store\n\nimport java.util.*;\n\nclass TimeMap {\n    public TimeMap() {\n\n    }\n\n    public void Set(String key, String value, int timestamp) {\n\n    }\n\n    public String Get(String key, int timestamp) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Time Based Key-Value Store\n\nclass TimeMap {\n    constructor() {\n\n    }\n\n    set(key, value, timestamp) {\n\n    }\n\n    get(key, timestamp) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(log n) per get",
+    "accepted_time": [
+      "O(log n) per get"
+    ],
+    "rejected_time": [
+      "O(n) per get"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise 10k ops that punish linear timestamp scan",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

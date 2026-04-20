@@ -1,0 +1,36 @@
+{
+  "id": "jump-game",
+  "name": "Jump Game",
+  "difficulty": "Medium",
+  "category": "1D DP",
+  "description": "You are given an integer array nums. You are initially at the first index. Each element represents your maximum jump length from that position. Return true if you can reach the last index.",
+  "examples": [
+    {
+      "input": "nums = [2,3,1,1,4]",
+      "output": "true (jump 1->2->last)"
+    },
+    {
+      "input": "nums = [3,2,1,0,4]",
+      "output": "false (always stuck at index 3)"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10^4. 0 <= nums[i] <= 10^5.",
+  "python_template": "# Jump Game\n\nfrom typing import List\n\ndef canJump(nums: List[int]) -> bool:\n    pass\n",
+  "go_template": "// Jump Game\n\npackage main\n\nfunc canJump(nums []int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Jump Game\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool canJump(vector<int>& nums) {\n    return false;\n}\n",
+  "java_template": "// Jump Game\n\nclass Solution {\n    public boolean canJump(int[] nums) {\n        return false;\n    }\n}\n",
+  "js_template": "// Jump Game\n\nfunction canJump(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate greedy reachability from exhaustive jump recursion using long wide-branching arrays that end in an unavoidable dead tail",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

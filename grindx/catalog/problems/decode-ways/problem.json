@@ -1,0 +1,40 @@
+{
+  "id": "decode-ways",
+  "name": "Decode Ways",
+  "difficulty": "Medium",
+  "category": "1D DP",
+  "description": "A message containing letters A-Z can be encoded as numbers 1-26 ('A'->1, 'B'->2, ..., 'Z'->26). Given a string s containing only digits, return the number of ways to decode it. '06' is not valid because '6' != '06'.",
+  "examples": [
+    {
+      "input": "s = \"12\"",
+      "output": "2 (\"AB\" or \"L\")"
+    },
+    {
+      "input": "s = \"226\"",
+      "output": "3 (\"BZ\", \"VF\", \"BBF\")"
+    },
+    {
+      "input": "s = \"06\"",
+      "output": "0 (leading zero is invalid)"
+    }
+  ],
+  "constraints": "1 <= s.length <= 100. s contains only digits and may contain leading zeros.",
+  "python_template": "# Decode Ways\n\ndef numDecodings(s: str) -> int:\n    pass\n",
+  "go_template": "// Decode Ways\n\npackage main\n\nfunc numDecodings(s string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Decode Ways\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numDecodings(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Decode Ways\n\nclass Solution {\n    public int numDecodings(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Decode Ways\n\nfunction numDecodings(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear decode DP from exponential split recursion using long runs of ambiguous 1-digits",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "maximum-product-subarray",
+  "name": "Maximum Product Subarray",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums, find a subarray that has the largest product, and return the product. A subarray is a contiguous non-empty sequence of elements.",
+  "examples": [
+    {
+      "input": "nums = [2,3,-2,4]",
+      "output": "6 (subarray [2,3])"
+    },
+    {
+      "input": "nums = [-2,0,-1]",
+      "output": "0"
+    },
+    {
+      "input": "nums = [-2,3,-4]",
+      "output": "24"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 2 * 10^4. -10 <= nums[i] <= 10. The product of any subarray fits in a 32-bit integer.",
+  "python_template": "# Maximum Product Subarray\n\nfrom typing import List\n\ndef maxProduct(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Maximum Product Subarray\n\npackage main\n\nfunc maxProduct(nums []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Maximum Product Subarray\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxProduct(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Maximum Product Subarray\n\nclass Solution {\n    public int maxProduct(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Maximum Product Subarray\n\nfunction maxProduct(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "kill quadratic subarray-product scans on 20k-element signed arrays with zeros and negative runs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

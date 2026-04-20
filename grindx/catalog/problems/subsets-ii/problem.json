@@ -1,0 +1,36 @@
+{
+  "id": "subsets-ii",
+  "name": "Subsets II",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums that may contain duplicates, return all possible subsets (the power set). The solution set must not contain duplicate subsets. Return the solution in any order.",
+  "examples": [
+    {
+      "input": "nums = [1,2,2]",
+      "output": "[[],[1],[1,2],[1,2,2],[2],[2,2]]"
+    },
+    {
+      "input": "nums = [0]",
+      "output": "[[],[0]]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10. -10 <= nums[i] <= 10.",
+  "python_template": "# Subsets II\n\nfrom typing import List\n\ndef subsetsWithDup(nums: List[int]) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Subsets II\n\npackage main\n\nfunc subsetsWithDup(nums []int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// Subsets II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> subsetsWithDup(vector<int>& nums) {\n    return {};\n}\n",
+  "java_template": "// Subsets II\n\nclass Solution {\n    public int[][] subsetsWithDup(int[] nums) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Subsets II\n\nfunction subsetsWithDup(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * 2^n)",
+    "accepted_time": [
+      "O(n * 2^n)",
+      "O(n^2 * 2^n)"
+    ],
+    "rejected_time": [
+      "O(n^2 * 2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise arrays with duplicates that confirm dedup subset generation",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "meeting-rooms-ii",
+  "name": "Meeting Rooms II",
+  "difficulty": "Medium",
+  "description": "Given an array of meeting time intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required. This is equivalent to finding the maximum number of overlapping intervals at any point in time.",
+  "examples": [
+    {
+      "input": "intervals = [[0,30],[5,10],[15,20]]",
+      "output": "2"
+    },
+    {
+      "input": "intervals = [[7,10],[2,4]]",
+      "output": "1"
+    },
+    {
+      "input": "intervals = [[1,5],[2,6],[3,7],[4,8]]",
+      "output": "4"
+    }
+  ],
+  "constraints": "1 <= intervals.length <= 10^4. 0 <= starti < endi <= 10^6.",
+  "python_template": "# Meeting Rooms II\n\nfrom typing import List\n\ndef minMeetingRooms(intervals: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Meeting Rooms II\n\npackage main\n\nfunc minMeetingRooms(intervals [][]int) int {\n    return 0\n}\n",
+  "cpp_template": "// Meeting Rooms II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minMeetingRooms(vector<vector<int>>& intervals) {\n    return 0;\n}\n",
+  "java_template": "// Meeting Rooms II\n\nclass Solution {\n    public int minMeetingRooms(int[][] intervals) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Meeting Rooms II\n\nfunction minMeetingRooms(intervals) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large interval lists that punish quadratic room counting",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

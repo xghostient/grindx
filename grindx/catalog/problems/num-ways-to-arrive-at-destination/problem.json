@@ -1,0 +1,35 @@
+{
+  "id": "num-ways-to-arrive-at-destination",
+  "name": "Number of Ways to Arrive at Destination",
+  "difficulty": "Medium",
+  "description": "Given n intersections and a list of roads [u, v, time], find the number of ways to arrive at intersection n-1 from intersection 0 in the shortest amount of time. Return the count modulo 10^9 + 7.",
+  "examples": [
+    {
+      "input": "n=7, roads=[[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]",
+      "output": "4"
+    },
+    {
+      "input": "n=2, roads=[[1,0,10]]",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= n <= 200. n - 1 <= roads.length <= n * (n - 1) / 2. 1 <= time <= 10^9.",
+  "python_template": "# Number of Ways to Arrive at Destination\n\nfrom typing import List\nimport heapq\n\ndef countPaths(n: int, roads: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Number of Ways to Arrive at Destination\n\npackage main\n\nfunc countPaths(n int, roads [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Number of Ways to Arrive at Destination\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countPaths(int n, vector<vector<int>>& roads) {\n    return 0;\n}\n",
+  "java_template": "// Number of Ways to Arrive at Destination\n\nclass Solution {\n    public int countPaths(int n, int[][] roads) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Ways to Arrive at Destination\n\nfunction countPaths(n, roads) {\n\n}\n",
+  "performance": {
+    "target_time": "O((V + E) log V)",
+    "accepted_time": [
+      "O((V + E) log V)"
+    ],
+    "rejected_time": [
+      "O(V^2)"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "exercise shortest-path counting with equal-distance alternatives; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "power-of-two",
+  "name": "Power of Two",
+  "difficulty": "Easy",
+  "description": "Given an integer n, return true if it is a power of two. Otherwise, return false. An integer is a power of two if there exists x such that n == 2^x. Hint: a power of two has exactly one set bit.",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "true (2^0)"
+    },
+    {
+      "input": "n = 16",
+      "output": "true (2^4)"
+    },
+    {
+      "input": "n = 3",
+      "output": "false"
+    },
+    {
+      "input": "n = 0",
+      "output": "false"
+    }
+  ],
+  "constraints": "-2^31 <= n <= 2^31 - 1.",
+  "python_template": "# Power of Two\n\ndef isPowerOfTwo(n: int) -> bool:\n    pass\n",
+  "go_template": "// Power of Two\n\npackage main\n\nfunc isPowerOfTwo(n int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Power of Two\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isPowerOfTwo(int n) {\n    return false;\n}\n",
+  "java_template": "// Power of Two\n\nclass Solution {\n    public boolean isPowerOfTwo(int n) {\n        return false;\n    }\n}\n",
+  "js_template": "// Power of Two\n\nfunction isPowerOfTwo(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(1)",
+    "accepted_time": [
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(log n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise all powers of two and near-misses",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

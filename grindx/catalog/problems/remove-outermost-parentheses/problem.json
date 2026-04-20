@@ -1,0 +1,39 @@
+{
+  "id": "remove-outermost-parentheses",
+  "name": "Remove Outermost Parentheses",
+  "difficulty": "Easy",
+  "description": "A valid parentheses string s is primitive if it is nonempty, and there does not exist a way to split it into s = A + B, with A and B nonempty valid parentheses strings. Given a valid parentheses string s, consider its primitive decomposition. Return s after removing the outermost parentheses of every primitive string in the primitive decomposition of s.",
+  "examples": [
+    {
+      "input": "s = \"(()())(())\"",
+      "output": "\"()()()\""
+    },
+    {
+      "input": "s = \"(()())(())(()(()))\"",
+      "output": "\"()()()()(())\""
+    },
+    {
+      "input": "s = \"()()\"",
+      "output": "\"\""
+    }
+  ],
+  "constraints": "1 <= s.length <= 10^5. s is a valid parentheses string. s[i] is either '(' or ')'.",
+  "python_template": "# Remove Outermost Parentheses\n\ndef removeOuterParentheses(s: str) -> str:\n    pass\n",
+  "go_template": "// Remove Outermost Parentheses\n\npackage main\n\nfunc removeOuterParentheses(s string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Remove Outermost Parentheses\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring removeOuterParentheses(string& s) {\n    return \"\";\n}\n",
+  "java_template": "// Remove Outermost Parentheses\n\nclass Solution {\n    public String removeOuterParentheses(String s) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Remove Outermost Parentheses\n\nfunction removeOuterParentheses(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise primitive decomposition and nesting-depth tracking on three max-length valid parenthesis strings that reject quadratic output concatenation locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

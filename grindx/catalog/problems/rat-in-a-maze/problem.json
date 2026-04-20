@@ -1,0 +1,36 @@
+{
+  "id": "rat-in-a-maze",
+  "name": "Rat in a Maze",
+  "difficulty": "Medium",
+  "description": "Consider a rat placed at (0, 0) in a square matrix of order n x n. The rat has to reach the destination at (n-1, n-1). Find all possible paths that the rat can take from source to destination. The rat can move up (U), down (D), left (L), right (R). Value 0 in a cell means the cell is blocked, value 1 means the rat can move through it. In a path, no cell can be visited more than once. Return sorted list of path strings.",
+  "examples": [
+    {
+      "input": "maze = [[1,0,0,0],[1,1,0,1],[1,1,0,0],[0,1,1,1]]",
+      "output": "[\"DDRDRR\", \"DRDDRR\"]"
+    },
+    {
+      "input": "maze = [[1,0],[1,1]]",
+      "output": "[\"DR\"]"
+    }
+  ],
+  "constraints": "2 <= n <= 5. 0 <= maze[i][j] <= 1. If maze[0][0] = 0 or maze[n-1][n-1] = 0, return empty list.",
+  "python_template": "# Rat in a Maze\n\nfrom typing import List\n\ndef findPath(maze: List[List[int]]) -> List[str]:\n    pass\n",
+  "go_template": "// Rat in a Maze\n\npackage main\n\nfunc findPath(maze [][]int) []string {\n\treturn []string{}\n}\n",
+  "cpp_template": "// Rat in a Maze\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> findPath(vector<vector<int>>& maze) {\n    return {};\n}\n",
+  "java_template": "// Rat in a Maze\n\nclass Solution {\n    public String[] findPath(int[][] maze) {\n        return new String[]{};\n    }\n}\n",
+  "js_template": "// Rat in a Maze\n\nfunction findPath(maze) {\n\n}\n",
+  "performance": {
+    "target_time": "O(4^(n^2))",
+    "accepted_time": [
+      "O(4^(n^2))",
+      "O(n^2 * 4^(n^2))"
+    ],
+    "rejected_time": [
+      "O(n^2 * 4^(n^2))"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "exercise all small mazes and 5x5 open mazes that punish path enumeration without pruning",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

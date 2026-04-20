@@ -1,0 +1,35 @@
+{
+  "id": "3sum-closest",
+  "name": "3Sum Closest",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target. Return the sum of the three integers. You may assume that each input has exactly one solution.",
+  "examples": [
+    {
+      "input": "nums = [-1,2,1,-4], target = 1",
+      "output": "2 (-1+2+1=2)"
+    },
+    {
+      "input": "nums = [0,0,0], target = 1",
+      "output": "0"
+    }
+  ],
+  "constraints": "3 <= nums.length <= 500. -1000 <= nums[i] <= 1000. -10^4 <= target <= 10^4.",
+  "python_template": "# 3Sum Closest\n\nfrom typing import List\n\ndef threeSumClosest(nums: List[int], target: int) -> int:\n    pass\n",
+  "go_template": "// 3Sum Closest\n\npackage main\n\nfunc threeSumClosest(nums []int, target int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// 3Sum Closest\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint threeSumClosest(vector<int>& nums, int target) {\n    return 0;\n}\n",
+  "java_template": "// 3Sum Closest\n\nclass Solution {\n    public int threeSumClosest(int[] nums, int target) {\n        return 0;\n    }\n}\n",
+  "js_template": "// 3Sum Closest\n\nfunction threeSumClosest(nums, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(1) auxiliary",
+    "stress_intent": "exercise upper-bound arrays that punish cubic closest-triplet search",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

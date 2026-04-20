@@ -1,0 +1,40 @@
+{
+  "id": "best-time-to-buy-and-sell-stock-ii",
+  "name": "Best Time to Buy and Sell Stock II",
+  "difficulty": "Medium",
+  "category": "Stock DP",
+  "description": "You are given an array prices where prices[i] is the price of a stock on the ith day. You may complete as many transactions as you like (buy one and sell one share multiple times). You cannot hold more than one share at a time. Return the maximum profit.",
+  "examples": [
+    {
+      "input": "prices = [7,1,5,3,6,4]",
+      "output": "7 (buy at 1, sell at 5, buy at 3, sell at 6)"
+    },
+    {
+      "input": "prices = [1,2,3,4,5]",
+      "output": "4 (buy at 1, sell at 5)"
+    },
+    {
+      "input": "prices = [7,6,4,3,1]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= prices.length <= 3 * 10^4. 0 <= prices[i] <= 10^4.",
+  "python_template": "# Best Time to Buy and Sell Stock II\n\nfrom typing import List\n\ndef maxProfit(prices: List[int]) -> int:\n    pass\n",
+  "go_template": "// Best Time to Buy and Sell Stock II\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Best Time to Buy and Sell Stock II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxProfit(vector<int>& prices) {\n    return 0;\n}\n",
+  "java_template": "// Best Time to Buy and Sell Stock II\n\nclass Solution {\n    public int maxProfit(int[] prices) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Best Time to Buy and Sell Stock II\n\nfunction maxProfit(prices) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear trading DP from exponential buy-sell recursion using long oscillating price histories",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "burst-balloons",
+  "name": "Burst Balloons",
+  "difficulty": "Hard",
+  "category": "MCM/Partition",
+  "description": "You are given n balloons indexed 0 to n-1. Each balloon is painted with a number on it represented by nums. You burst all balloons. When you burst balloon i, you get nums[i-1] * nums[i] * nums[i+1] coins (boundaries are treated as 1). Return the maximum coins you can collect by bursting all balloons wisely.",
+  "examples": [
+    {
+      "input": "nums = [3,1,5,8]",
+      "output": "167 (burst 1, then 5, then 3, then 8)"
+    },
+    {
+      "input": "nums = [1,5]",
+      "output": "10"
+    }
+  ],
+  "constraints": "1 <= n <= 300. 0 <= nums[i] <= 100.",
+  "python_template": "# Burst Balloons\n\nfrom typing import List\n\ndef maxCoins(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Burst Balloons\n\npackage main\n\nfunc maxCoins(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Burst Balloons\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxCoins(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Burst Balloons\n\nclass Solution {\n    public int maxCoins(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Burst Balloons\n\nfunction maxCoins(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^3)",
+    "accepted_time": [
+      "O(n^3)"
+    ],
+    "rejected_time": [
+      "O(n!)",
+      "O(2^n * n)"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "separate interval DP from exponential burst-order recursion using longer deterministic balloon arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

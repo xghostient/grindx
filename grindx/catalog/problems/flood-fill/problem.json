@@ -1,0 +1,35 @@
+{
+  "id": "flood-fill",
+  "name": "Flood Fill",
+  "difficulty": "Easy",
+  "description": "Given an m x n image grid, a starting pixel (sr, sc), and a color, perform a flood fill. Starting from the pixel, color all connected pixels (4-directionally) that share the same original color with the new color.",
+  "examples": [
+    {
+      "input": "image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2",
+      "output": "[[2,2,2],[2,2,0],[2,0,1]]"
+    },
+    {
+      "input": "image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0",
+      "output": "[[0,0,0],[0,0,0]]"
+    }
+  ],
+  "constraints": "m == image.length. n == image[i].length. 1 <= m, n <= 50. 0 <= image[i][j], color < 2^16.",
+  "python_template": "# Flood Fill\n\nfrom typing import List\n\ndef floodFill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Flood Fill\n\npackage main\n\nfunc floodFill(image [][]int, sr int, sc int, color int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// Flood Fill\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {\n    return {};\n}\n",
+  "java_template": "// Flood Fill\n\nclass Solution {\n    public int[][] floodFill(int[][] image, int sr, int sc, int color) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Flood Fill\n\nfunction floodFill(image, sr, sc, color) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise connected-component recoloring, no-op recolors, and component boundaries; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

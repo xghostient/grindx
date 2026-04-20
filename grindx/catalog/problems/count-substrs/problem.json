@@ -1,0 +1,39 @@
+{
+  "id": "count-substrs",
+  "name": "Count Substrings with All Three Characters",
+  "difficulty": "Medium",
+  "description": "Given a string s consisting only of characters a, b and c, return the number of substrings containing at least one occurrence of all these characters a, b and c.",
+  "examples": [
+    {
+      "input": "s = \"abcabc\"",
+      "output": "10"
+    },
+    {
+      "input": "s = \"aaacb\"",
+      "output": "3"
+    },
+    {
+      "input": "s = \"abc\"",
+      "output": "1"
+    }
+  ],
+  "constraints": "3 <= s.length <= 5 * 10^4. s only consists of a, b or c characters.",
+  "python_template": "# Count Substrings with All Three Characters\n\ndef numberOfSubstrings(s: str) -> int:\n    pass\n",
+  "go_template": "// Count Substrings with All Three Characters\n\npackage main\n\nfunc numberOfSubstrings(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// Count Substrings with All Three Characters\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numberOfSubstrings(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Count Substrings with All Three Characters\n\nclass Solution {\n    public int numberOfSubstrings(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Count Substrings with All Three Characters\n\nfunction numberOfSubstrings(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise sliding-window tracking of last seen a/b/c positions over adversarial 50k-scale block strings that reject quadratic rescans locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

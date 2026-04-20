@@ -1,0 +1,36 @@
+{
+  "id": "mcm-01-mcm",
+  "name": "Matrix Chain Multiplication",
+  "difficulty": "Hard",
+  "category": "MCM/Partition",
+  "description": "Given dimensions of n matrices in an array, find the minimum number of scalar multiplications needed to multiply the chain of matrices.",
+  "examples": [
+    {
+      "input": "arr = [40, 20, 30, 10, 30]",
+      "output": "26000"
+    },
+    {
+      "input": "arr = [10, 20, 30, 40, 30]",
+      "output": "30000"
+    }
+  ],
+  "constraints": "2 <= N <= 100, 1 <= arr[i] <= 500",
+  "python_template": "def matrixChainMul(arr: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc matrixChainMul(arr []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Matrix Chain Multiplication\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint matrixChainMul(vector<int>& arr) {\n    return 0;\n}\n",
+  "java_template": "// Matrix Chain Multiplication\n\nclass Solution {\n    public int matrixChainMul(int[] arr) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Matrix Chain Multiplication\n\nfunction matrixChainMul(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^3)",
+    "accepted_time": [
+      "O(n^3)"
+    ],
+    "rejected_time": [
+      "O(Catalan(n))"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "separate matrix-chain DP from exponential split recursion using longer deterministic dimension sequences",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

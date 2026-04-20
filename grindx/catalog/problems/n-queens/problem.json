@@ -1,0 +1,35 @@
+{
+  "id": "n-queens",
+  "name": "N-Queens",
+  "difficulty": "Hard",
+  "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration where 'Q' indicates a queen and '.' indicates an empty space.",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]"
+    },
+    {
+      "input": "n = 1",
+      "output": "[[\"Q\"]]"
+    }
+  ],
+  "constraints": "1 <= n <= 9.",
+  "python_template": "# N-Queens\n\nfrom typing import List\n\ndef solveNQueens(n: int) -> List[List[str]]:\n    pass\n",
+  "go_template": "// N-Queens\n\npackage main\n\nfunc solveNQueens(n int) [][]string {\n\treturn [][]string{}\n}\n",
+  "cpp_template": "// N-Queens\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<string>> solveNQueens(int n) {\n    return {};\n}\n",
+  "java_template": "// N-Queens\n\nclass Solution {\n    public String[][] solveNQueens(int n) {\n        return new String[][]{};\n    }\n}\n",
+  "js_template": "// N-Queens\n\nfunction solveNQueens(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n!)",
+    "accepted_time": [
+      "O(n!)"
+    ],
+    "rejected_time": [
+      "O(n^n)"
+    ],
+    "target_space": "O(n^2)",
+    "stress_intent": "exercise n up to 9 that confirm correct queen placement pruning",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

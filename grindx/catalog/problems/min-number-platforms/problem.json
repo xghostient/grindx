@@ -1,0 +1,39 @@
+{
+  "id": "min-number-platforms",
+  "name": "Minimum Number of Platforms",
+  "difficulty": "Medium",
+  "description": "Given arrival and departure times of all trains that reach a railway station, find the minimum number of platforms required so that no train has to wait. Consider that if a train arrives at time t and another departs at time t, the platform can be shared.",
+  "examples": [
+    {
+      "input": "arrival = [900, 940, 950, 1100, 1500, 1800], departure = [910, 1200, 1120, 1130, 1900, 2000]",
+      "output": "3"
+    },
+    {
+      "input": "arrival = [900, 1100, 1235], departure = [1000, 1200, 1240]",
+      "output": "1"
+    },
+    {
+      "input": "arrival = [100, 200, 300], departure = [900, 900, 900]",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. Times are in HHMM format (24-hour).",
+  "python_template": "# Minimum Number of Platforms\n\nfrom typing import List\n\ndef minPlatforms(arrival: List[int], departure: List[int]) -> int:\n    pass\n",
+  "go_template": "// Minimum Number of Platforms\n\npackage main\n\nfunc minPlatforms(arrival, departure []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Minimum Number of Platforms\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minPlatforms(vector<int>& arrival, vector<int>& departure) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Number of Platforms\n\nclass Solution {\n    public int minPlatforms(int[] arrival, int[] departure) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimum Number of Platforms\n\nfunction minPlatforms(arrival, departure) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large schedules that punish pairwise overlap counting",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "union-find",
+  "name": "Union Find (Disjoint Set Union)",
+  "difficulty": "Medium",
+  "description": "Implement the Union-Find (Disjoint Set Union) data structure with path compression and union by rank. Support the following operations:\n- find(x): Find the root representative of x's set.\n- union(x, y): Merge the sets containing x and y.\n- connected(x, y): Check if x and y are in the same set.\nGiven n elements (0 to n-1) and a list of union operations, determine which pairs are connected.",
+  "examples": [
+    {
+      "input": "n = 5, unions = [[0,1],[1,2],[3,4]], queries = [[0,2],[0,3]]",
+      "output": "[true, false]"
+    },
+    {
+      "input": "n = 3, unions = [[0,1],[1,2]], queries = [[0,2]]",
+      "output": "[true]"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. 0 <= x, y < n.",
+  "python_template": "# Union Find (Disjoint Set Union)\n\nclass UnionFind:\n    def __init__(self, n: int):\n        pass\n\n    def find(self, x: int) -> int:\n        pass\n\n    def union(self, x: int, y: int) -> None:\n        pass\n\n    def connected(self, x: int, y: int) -> bool:\n        pass\n",
+  "go_template": "// Union Find (Disjoint Set Union)\n\npackage main\n\ntype UnionFind struct {\n    parent []int\n    rank   []int\n}\n\nfunc NewUnionFind(n int) *UnionFind {\n    return nil\n}\n\nfunc (uf *UnionFind) Find(x int) int {\n    return 0\n}\n\nfunc (uf *UnionFind) Union(x, y int) {\n\n}\n\nfunc (uf *UnionFind) Connected(x, y int) bool {\n    return false\n}\n",
+  "cpp_template": "// Union Find (Disjoint Set Union)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass UnionFind {\npublic:\n    UnionFind(int n) {\n\n    }\n\n    int Find(int x) {\n        return 0;\n    }\n\n    void Union(int x, int y) {\n\n    }\n\n    bool Connected(int x, int y) {\n        return false;\n    }\n};\n",
+  "java_template": "// Union Find (Disjoint Set Union)\n\nimport java.util.*;\n\nclass UnionFind {\n    public UnionFind(int n) {\n\n    }\n\n    public int Find(int x) {\n        return 0;\n    }\n\n    public void Union(int x, int y) {\n\n    }\n\n    public boolean Connected(int x, int y) {\n        return false;\n    }\n}\n",
+  "js_template": "// Union Find (Disjoint Set Union)\n\nclass UnionFind {\n    constructor(n) {\n\n    }\n\n    find(x) {\n\n    }\n\n    union(x, y) {\n\n    }\n\n    connected(x, y) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "near O((u + q) alpha(n))",
+    "accepted_time": [
+      "near O((u + q) alpha(n))",
+      "O((u + q) log n)"
+    ],
+    "rejected_time": [
+      "O(n(u + q))"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "verify connectivity semantics on exhaustive small edge subsets and large chained components",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "split-array-largest-sum",
+  "name": "Split Array Largest Sum",
+  "difficulty": "Hard",
+  "description": "Given an integer array nums and an integer k, split nums into k non-empty subarrays such that the largest sum among the subarrays is minimized. Return the minimized largest sum.",
+  "examples": [
+    {
+      "input": "nums = [7,2,5,10,8], k = 2",
+      "output": "18 ([7,2,5] and [10,8])"
+    },
+    {
+      "input": "nums = [1,2,3,4,5], k = 2",
+      "output": "9 ([1,2,3,4] and [5], or [1,2,3] and [4,5])"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 1000. 0 <= nums[i] <= 10^6. 1 <= k <= min(50, nums.length).",
+  "python_template": "# Split Array Largest Sum\n\nfrom typing import List\n\ndef splitArray(nums: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Split Array Largest Sum\n\npackage main\n\nfunc splitArray(nums []int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Split Array Largest Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint splitArray(vector<int>& nums, int k) {\n    return 0;\n}\n",
+  "java_template": "// Split Array Largest Sum\n\nclass Solution {\n    public int splitArray(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Split Array Largest Sum\n\nfunction splitArray(nums, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log sum)",
+    "accepted_time": [
+      "O(n log sum)"
+    ],
+    "rejected_time": [
+      "O(n * sum)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 10k arrays that punish linear split search",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

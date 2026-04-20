@@ -1,0 +1,40 @@
+{
+  "id": "longest-common-subsequence",
+  "name": "Longest Common Subsequence",
+  "difficulty": "Medium",
+  "category": "Strings DP",
+  "description": "Given two strings text1 and text2, return the length of their longest common subsequence. A subsequence is a sequence derived from another by deleting some or no characters without changing the relative order.",
+  "examples": [
+    {
+      "input": "text1 = \"abcde\", text2 = \"ace\"",
+      "output": "3 (\"ace\")"
+    },
+    {
+      "input": "text1 = \"abc\", text2 = \"abc\"",
+      "output": "3"
+    },
+    {
+      "input": "text1 = \"abc\", text2 = \"def\"",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= text1.length, text2.length <= 1000. text1 and text2 consist of lowercase English characters.",
+  "python_template": "# Longest Common Subsequence\n\ndef longestCommonSubsequence(text1: str, text2: str) -> int:\n    pass\n",
+  "go_template": "// Longest Common Subsequence\n\npackage main\n\nfunc longestCommonSubsequence(text1 string, text2 string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Common Subsequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestCommonSubsequence(string& text1, string& text2) {\n    return 0;\n}\n",
+  "java_template": "// Longest Common Subsequence\n\nclass Solution {\n    public int longestCommonSubsequence(String text1, String text2) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Common Subsequence\n\nfunction longestCommonSubsequence(text1, text2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m)",
+    "accepted_time": [
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(2^(n+m))"
+    ],
+    "target_space": "O(m)",
+    "stress_intent": "separate quadratic DP from exponential recursion using longer highly ambiguous alternating string pairs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

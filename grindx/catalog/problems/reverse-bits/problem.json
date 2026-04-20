@@ -1,0 +1,36 @@
+{
+  "id": "reverse-bits",
+  "name": "Reverse Bits",
+  "difficulty": "Easy",
+  "description": "Reverse bits of a given 32-bit unsigned integer. Return the integer formed by reversing all 32 bits.",
+  "examples": [
+    {
+      "input": "n = 43261596 (00000010100101000001111010011100)",
+      "output": "964176192 (00111001011110000010100101000000)"
+    },
+    {
+      "input": "n = 4294967293 (11111111111111111111111111111101)",
+      "output": "3221225471 (10111111111111111111111111111111)"
+    }
+  ],
+  "constraints": "The input is a 32-bit unsigned integer.",
+  "python_template": "# Reverse Bits\n\ndef reverseBits(n: int) -> int:\n    pass\n",
+  "go_template": "// Reverse Bits\n\npackage main\n\nfunc reverseBits(num uint32) uint32 {\n\treturn 0\n}\n",
+  "cpp_template": "// Reverse Bits\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nuint32_t reverseBits(uint32_t num) {\n    return 0;\n}\n",
+  "java_template": "// Reverse Bits\n\nclass Solution {\n    public long reverseBits(long num) {\n        return 0L;\n    }\n}\n",
+  "js_template": "// Reverse Bits\n\nfunction reverseBits(num) {\n\n}\n",
+  "performance": {
+    "target_time": "O(1)",
+    "accepted_time": [
+      "O(1)",
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise all 32-bit positions with varied patterns",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "pascals-triangle",
+  "name": "Pascal's Triangle",
+  "difficulty": "Easy",
+  "description": "Given an integer numRows, return the first numRows of Pascal's triangle. In Pascal's triangle, each number is the sum of the two numbers directly above it.",
+  "examples": [
+    {
+      "input": "numRows = 5",
+      "output": "[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]"
+    },
+    {
+      "input": "numRows = 1",
+      "output": "[[1]]"
+    }
+  ],
+  "constraints": "1 <= numRows <= 30.",
+  "python_template": "# Pascal's Triangle\n\nfrom typing import List\n\ndef generate(numRows: int) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Pascal's Triangle\n\npackage main\n\nfunc generate(numRows int) [][]int {\n    return nil\n}\n",
+  "cpp_template": "// Pascal's Triangle\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> generate(int numRows) {\n    return {};\n}\n",
+  "java_template": "// Pascal's Triangle\n\nclass Solution {\n    public int[][] generate(int numRows) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Pascal's Triangle\n\nfunction generate(numRows) {\n\n}\n",
+  "performance": {
+    "target_time": "O(numRows^2)",
+    "accepted_time": [
+      "O(numRows^2)"
+    ],
+    "rejected_time": [
+      "exponential recomputation"
+    ],
+    "target_space": "O(numRows^2)",
+    "stress_intent": "verify full triangle structure through the upper row bound rather than timing separation",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}
