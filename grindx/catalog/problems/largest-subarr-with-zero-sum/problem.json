@@ -1,0 +1,39 @@
+{
+  "id": "largest-subarr-with-zero-sum",
+  "name": "Largest Subarray with Zero Sum",
+  "difficulty": "Medium",
+  "description": "Given an array of integers, find the length of the longest subarray whose sum is 0. Use prefix sums and a hash map for O(n) solution.",
+  "examples": [
+    {
+      "input": "arr = [15, -2, 2, -8, 1, 7, 10, 23]",
+      "output": "5 (subarray [-2, 2, -8, 1, 7] has sum 0)"
+    },
+    {
+      "input": "arr = [1, 2, 3]",
+      "output": "0"
+    },
+    {
+      "input": "arr = [1, 0, -1]",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. -10^5 <= arr[i] <= 10^5.",
+  "python_template": "# Largest Subarray with Zero Sum\n\nfrom typing import List\n\ndef maxLen(arr: List[int]) -> int:\n    pass\n",
+  "go_template": "// Largest Subarray with Zero Sum\n\npackage main\n\nfunc maxLen(arr []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Largest Subarray with Zero Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxLen(vector<int>& arr) {\n    return 0;\n}\n",
+  "java_template": "// Largest Subarray with Zero Sum\n\nclass Solution {\n    public int maxLen(int[] arr) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Largest Subarray with Zero Sum\n\nfunction maxLen(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill subarray enumeration and repeated prefix rescans on max-size arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

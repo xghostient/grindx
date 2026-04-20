@@ -1,0 +1,41 @@
+{
+  "id": "word-break",
+  "name": "Word Break",
+  "difficulty": "Medium",
+  "category": "1D DP",
+  "description": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.",
+  "examples": [
+    {
+      "input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
+      "output": "true"
+    },
+    {
+      "input": "s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]",
+      "output": "true"
+    },
+    {
+      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= s.length <= 300. 1 <= wordDict.length <= 1000. 1 <= wordDict[i].length <= 20. s and wordDict[i] consist of lowercase English letters.",
+  "python_template": "# Word Break\n\nfrom typing import List\n\ndef wordBreak(s: str, wordDict: List[str]) -> bool:\n    pass\n",
+  "go_template": "// Word Break\n\npackage main\n\nfunc wordBreak(s string, wordDict []string) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Word Break\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool wordBreak(string& s, vector<string>& wordDict) {\n    return false;\n}\n",
+  "java_template": "// Word Break\n\nclass Solution {\n    public boolean wordBreak(String s, String[] wordDict) {\n        return false;\n    }\n}\n",
+  "js_template": "// Word Break\n\nfunction wordBreak(s, wordDict) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m * k)",
+    "accepted_time": [
+      "O(n^2)",
+      "O(n * m * k)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate prefix-DP from exponential segmentation recursion using long repeated-prefix strings with many valid cut choices",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

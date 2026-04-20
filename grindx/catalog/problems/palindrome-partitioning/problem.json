@@ -1,0 +1,36 @@
+{
+  "id": "palindrome-partitioning",
+  "name": "Palindrome Partitioning",
+  "difficulty": "Medium",
+  "description": "Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitionings of s.",
+  "examples": [
+    {
+      "input": "s = \"aab\"",
+      "output": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]"
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "[[\"a\"]]"
+    }
+  ],
+  "constraints": "1 <= s.length <= 16. s contains only lowercase English letters.",
+  "python_template": "# Palindrome Partitioning\n\nfrom typing import List\n\ndef partition(s: str) -> List[List[str]]:\n    pass\n",
+  "go_template": "// Palindrome Partitioning\n\npackage main\n\nfunc partition(s string) [][]string {\n\treturn [][]string{}\n}\n",
+  "cpp_template": "// Palindrome Partitioning\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<string>> partition(string& s) {\n    return {};\n}\n",
+  "java_template": "// Palindrome Partitioning\n\nclass Solution {\n    public String[][] partition(String s) {\n        return new String[][]{};\n    }\n}\n",
+  "js_template": "// Palindrome Partitioning\n\nfunction partition(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * 2^n)",
+    "accepted_time": [
+      "O(n * 2^n)",
+      "O(n^2 * 2^n)"
+    ],
+    "rejected_time": [
+      "O(n^2 * 2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise max-length strings with rich palindromic structure",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

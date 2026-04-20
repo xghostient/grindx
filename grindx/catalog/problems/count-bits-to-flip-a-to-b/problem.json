@@ -1,0 +1,40 @@
+{
+  "id": "count-bits-to-flip-a-to-b",
+  "name": "Minimum Bit Flips to Convert",
+  "difficulty": "Easy",
+  "description": "Given two integers start and goal, return the minimum number of bit flips to convert start to goal. A bit flip is changing a bit from 0 to 1 or from 1 to 0. Hint: count set bits in start XOR goal.",
+  "examples": [
+    {
+      "input": "start = 10, goal = 7",
+      "output": "3 (10=1010, 7=0111, XOR=1101, 3 bits differ)"
+    },
+    {
+      "input": "start = 3, goal = 4",
+      "output": "3 (3=011, 4=100)"
+    },
+    {
+      "input": "start = 0, goal = 0",
+      "output": "0"
+    }
+  ],
+  "constraints": "0 <= start, goal <= 10^9.",
+  "python_template": "# Minimum Bit Flips to Convert\n\ndef minBitFlips(start: int, goal: int) -> int:\n    pass\n",
+  "go_template": "// Minimum Bit Flips to Convert\n\npackage main\n\nfunc minBitFlips(start int, goal int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Minimum Bit Flips to Convert\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minBitFlips(int start, int goal) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Bit Flips to Convert\n\nclass Solution {\n    public int minBitFlips(int start, int goal) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimum Bit Flips to Convert\n\nfunction minBitFlips(start, goal) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)",
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large pairs with many differing bits",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

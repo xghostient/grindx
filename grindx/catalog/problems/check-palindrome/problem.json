@@ -1,0 +1,40 @@
+{
+  "id": "check-palindrome",
+  "name": "Check Palindrome Number",
+  "difficulty": "Easy",
+  "description": "Given an integer x, return true if x is a palindrome, and false otherwise. An integer is a palindrome when it reads the same forward and backward. Negative numbers are not palindromes. Solve it without converting the integer to a string.",
+  "examples": [
+    {
+      "input": "x = 121",
+      "output": "true"
+    },
+    {
+      "input": "x = -121",
+      "output": "false"
+    },
+    {
+      "input": "x = 10",
+      "output": "false"
+    }
+  ],
+  "constraints": "-2^31 <= x <= 2^31 - 1.",
+  "python_template": "# Check Palindrome Number\n\ndef isPalindrome(x: int) -> bool:\n    pass\n",
+  "go_template": "// Check Palindrome Number\n\npackage main\n\nfunc isPalindrome(x int) bool {\n    return false\n}\n",
+  "cpp_template": "// Check Palindrome Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isPalindrome(int x) {\n    return false;\n}\n",
+  "java_template": "// Check Palindrome Number\n\nclass Solution {\n    public boolean isPalindrome(int x) {\n        return false;\n    }\n}\n",
+  "js_template": "// Check Palindrome Number\n\nfunction isPalindrome(x) {\n\n}\n",
+  "performance": {
+    "target_time": "O(d)",
+    "accepted_time": [
+      "O(d)",
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large integers where d is number of digits",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

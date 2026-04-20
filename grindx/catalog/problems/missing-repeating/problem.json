@@ -1,0 +1,40 @@
+{
+  "id": "missing-repeating",
+  "name": "Find Missing and Repeating Number",
+  "difficulty": "Medium",
+  "description": "Given an unsorted array of size n containing numbers from 1 to n. One number is missing and one number occurs twice. Find both the missing and the repeating number.",
+  "examples": [
+    {
+      "input": "arr = [3, 1, 2, 5, 3]",
+      "output": "[3, 4] (3 is repeating, 4 is missing)"
+    },
+    {
+      "input": "arr = [1, 1]",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "arr = [2, 2]",
+      "output": "[2, 1]"
+    }
+  ],
+  "constraints": "2 <= n <= 10^5. 1 <= arr[i] <= n.",
+  "python_template": "# Find Missing and Repeating Number\n\nfrom typing import List\n\ndef findMissingRepeating(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Find Missing and Repeating Number\n\npackage main\n\nfunc findMissingRepeating(arr []int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Find Missing and Repeating Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findMissingRepeating(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Find Missing and Repeating Number\n\nclass Solution {\n    public int[] findMissingRepeating(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Find Missing and Repeating Number\n\nfunction findMissingRepeating(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) or O(n)",
+    "stress_intent": "kill repeated membership scans on 100k-element arrays with distant missing/repeating values",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

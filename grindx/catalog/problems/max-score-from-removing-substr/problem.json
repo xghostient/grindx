@@ -1,0 +1,40 @@
+{
+  "id": "max-score-from-removing-substr",
+  "name": "Maximum Score From Removing Substrings",
+  "difficulty": "Medium",
+  "description": "You are given a string s and two integers x and y. You can perform two types of operations any number of times: Remove substring \"ab\" and gain x points. Remove substring \"ba\" and gain y points. Return the maximum points you can gain after applying the above operations on s. Greedy: always remove the higher-scoring pair first.",
+  "examples": [
+    {
+      "input": "s = \"cdbcbbaaabab\", x = 4, y = 5",
+      "output": "19"
+    },
+    {
+      "input": "s = \"aabbaaxybbaabb\", x = 5, y = 4",
+      "output": "20"
+    },
+    {
+      "input": "s = \"ab\", x = 1, y = 1",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= s.length <= 10^5. 1 <= x, y <= 10^4. s consists of lowercase English letters.",
+  "python_template": "# Maximum Score From Removing Substrings\n\ndef maximumGain(s: str, x: int, y: int) -> int:\n    pass\n",
+  "go_template": "// Maximum Score From Removing Substrings\n\npackage main\n\nfunc maximumGain(s string, x int, y int) int {\n    return 0\n}\n",
+  "cpp_template": "// Maximum Score From Removing Substrings\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maximumGain(string& s, int x, int y) {\n    return 0;\n}\n",
+  "java_template": "// Maximum Score From Removing Substrings\n\nclass Solution {\n    public int maximumGain(String s, int x, int y) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Maximum Score From Removing Substrings\n\nfunction maximumGain(s, x, y) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)",
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise greedy ordering between removing ab and ba on multiple max-length removable chains that reject repeated find-and-slice locally",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

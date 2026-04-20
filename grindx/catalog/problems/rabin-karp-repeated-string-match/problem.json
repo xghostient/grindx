@@ -1,0 +1,40 @@
+{
+  "id": "rabin-karp-repeated-string-match",
+  "name": "Repeated String Match (Rabin-Karp)",
+  "difficulty": "Medium",
+  "description": "Given two strings a and b, return the minimum number of times you should repeat string a so that string b is a substring of the repeated string. If it is impossible, return -1. Use Rabin-Karp or any string matching algorithm for efficiency.",
+  "examples": [
+    {
+      "input": "a = \"abcd\", b = \"cdabcdab\"",
+      "output": "3 (\"abcdabcdabcd\" contains \"cdabcdab\")"
+    },
+    {
+      "input": "a = \"a\", b = \"aa\"",
+      "output": "2"
+    },
+    {
+      "input": "a = \"abc\", b = \"xyz\"",
+      "output": "-1"
+    }
+  ],
+  "constraints": "1 <= a.length, b.length <= 10^4. a and b consist of lowercase English letters.",
+  "python_template": "# Repeated String Match (Rabin-Karp)\n\ndef repeatedStringMatch(a: str, b: str) -> int:\n    pass\n",
+  "go_template": "// Repeated String Match (Rabin-Karp)\n\npackage main\n\nfunc repeatedStringMatch(a string, b string) int {\n    return -1\n}\n",
+  "cpp_template": "// Repeated String Match (Rabin-Karp)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint repeatedStringMatch(string& a, string& b) {\n    return 0;\n}\n",
+  "java_template": "// Repeated String Match (Rabin-Karp)\n\nclass Solution {\n    public int repeatedStringMatch(String a, String b) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Repeated String Match (Rabin-Karp)\n\nfunction repeatedStringMatch(a, b) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n + m)",
+    "accepted_time": [
+      "O(n + m)",
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(n^2 * m)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise boundary-crossing matches across repeated source strings; strict local separation is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

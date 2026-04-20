@@ -1,0 +1,40 @@
+{
+  "id": "sieve",
+  "name": "Sieve of Eratosthenes",
+  "difficulty": "Easy",
+  "description": "Given an integer n, return all prime numbers less than or equal to n using the Sieve of Eratosthenes algorithm.",
+  "examples": [
+    {
+      "input": "n = 10",
+      "output": "[2, 3, 5, 7]"
+    },
+    {
+      "input": "n = 20",
+      "output": "[2, 3, 5, 7, 11, 13, 17, 19]"
+    },
+    {
+      "input": "n = 1",
+      "output": "[]"
+    }
+  ],
+  "constraints": "0 <= n <= 10^6.",
+  "python_template": "# Sieve of Eratosthenes\n\nfrom typing import List\n\ndef sieve(n: int) -> List[int]:\n    pass\n",
+  "go_template": "// Sieve of Eratosthenes\n\npackage main\n\nfunc sieve(n int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Sieve of Eratosthenes\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> sieve(int n) {\n    return {};\n}\n",
+  "java_template": "// Sieve of Eratosthenes\n\nclass Solution {\n    public int[] sieve(int n) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Sieve of Eratosthenes\n\nfunction sieve(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log log n)",
+    "accepted_time": [
+      "O(n log log n)",
+      "O(n sqrt(n))"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large n to punish trial-division approaches",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

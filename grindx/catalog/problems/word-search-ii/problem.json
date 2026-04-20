@@ -1,0 +1,40 @@
+{
+  "id": "word-search-ii",
+  "name": "Word Search II",
+  "difficulty": "Hard",
+  "description": "Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells (horizontally or vertically neighboring). The same letter cell may not be used more than once in a word. Use a Trie to efficiently search for multiple words simultaneously during DFS.",
+  "examples": [
+    {
+      "input": "board = [[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words = [\"oath\",\"pea\",\"eat\",\"rain\"]",
+      "output": "[\"eat\",\"oath\"]"
+    },
+    {
+      "input": "board = [[\"a\",\"b\"],[\"c\",\"d\"]], words = [\"abcb\"]",
+      "output": "[]"
+    },
+    {
+      "input": "board = [[\"a\"]], words = [\"a\"]",
+      "output": "[\"a\"]"
+    }
+  ],
+  "constraints": "m == board.length. n == board[i].length. 1 <= m, n <= 12. board[i][j] is a lowercase English letter. 1 <= words.length <= 3 * 10^4. 1 <= words[i].length <= 10. words[i] consists of lowercase English letters. All words are unique.",
+  "python_template": "# Word Search II\n\nfrom typing import List\n\ndef findWords(board: List[List[str]], words: List[str]) -> List[str]:\n    pass\n",
+  "go_template": "// Word Search II\n\npackage main\n\nfunc findWords(board [][]byte, words []string) []string {\n    return nil\n}\n",
+  "cpp_template": "// Word Search II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> findWords(vector<string>& board, vector<string>& words) {\n    return {};\n}\n",
+  "java_template": "// Word Search II\n\nclass Solution {\n    public String[] findWords(char[][] board, String[] words) {\n        return new String[]{};\n    }\n}\n",
+  "js_template": "// Word Search II\n\nfunction findWords(board, words) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m * n * 4^L) where L is max word length",
+    "accepted_time": [
+      "O(m * n * 4^L)",
+      "O(m * n * W * L)"
+    ],
+    "rejected_time": [
+      "O(m * n * W * 4^L) where W is number of words"
+    ],
+    "target_space": "O(total word characters)",
+    "stress_intent": "exercise large boards with many words that punish per-word DFS instead of trie-based simultaneous search",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

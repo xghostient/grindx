@@ -1,0 +1,35 @@
+{
+  "id": "reconstruct-itinerary",
+  "name": "Reconstruct Itinerary",
+  "difficulty": "Hard",
+  "description": "Given a list of airline tickets [from, to], reconstruct the itinerary starting from \"JFK\". If multiple valid itineraries, return the lexicographically smallest one. All tickets must be used exactly once.",
+  "examples": [
+    {
+      "input": "tickets = [[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+      "output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]"
+    },
+    {
+      "input": "tickets = [[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]",
+      "output": "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]"
+    }
+  ],
+  "constraints": "1 <= tickets.length <= 300. tickets[i] = [from, to]. from.length == to.length == 3. All airports are uppercase letters.",
+  "python_template": "# Reconstruct Itinerary\n\nfrom typing import List\n\ndef findItinerary(tickets: List[List[str]]) -> List[str]:\n    pass\n",
+  "go_template": "// Reconstruct Itinerary\n\npackage main\n\n\nfunc findItinerary(tickets [][]string) []string {\n\treturn []string{}\n}\n",
+  "cpp_template": "// Reconstruct Itinerary\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> findItinerary(vector<vector<string>>& tickets) {\n    return {};\n}\n",
+  "java_template": "// Reconstruct Itinerary\n\nclass Solution {\n    public String[] findItinerary(String[][] tickets) {\n        return new String[]{};\n    }\n}\n",
+  "js_template": "// Reconstruct Itinerary\n\nfunction findItinerary(tickets) {\n\n}\n",
+  "performance": {
+    "target_time": "O(E log E)",
+    "accepted_time": [
+      "O(E log E)"
+    ],
+    "rejected_time": [
+      "O(E^2)"
+    ],
+    "target_space": "O(E)",
+    "stress_intent": "exercise lexicographically smallest Eulerian traversal behavior; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

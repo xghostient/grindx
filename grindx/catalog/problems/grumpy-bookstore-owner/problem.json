@@ -1,0 +1,35 @@
+{
+  "id": "grumpy-bookstore-owner",
+  "name": "Grumpy Bookstore Owner",
+  "difficulty": "Medium",
+  "description": "A bookstore owner has a store open for n minutes. Every minute, some customers enter. The owner is grumpy[i] = 1 for some minutes (unhappy customers don't count), and grumpy[i] = 0 otherwise. The owner can use a secret technique to not be grumpy for minutes consecutive minutes, but can only use it once. Return the maximum number of satisfied customers.",
+  "examples": [
+    {
+      "input": "customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], minutes = 3",
+      "output": "16"
+    },
+    {
+      "input": "customers = [1], grumpy = [0], minutes = 1",
+      "output": "1"
+    }
+  ],
+  "constraints": "n == customers.length == grumpy.length. 1 <= minutes <= n <= 2 * 10^4. 0 <= customers[i] <= 1000. grumpy[i] is 0 or 1.",
+  "python_template": "# Grumpy Bookstore Owner\n\nfrom typing import List\n\ndef maxSatisfied(customers: List[int], grumpy: List[int], minutes: int) -> int:\n    pass\n",
+  "go_template": "// Grumpy Bookstore Owner\n\npackage main\n\nfunc maxSatisfied(customers []int, grumpy []int, minutes int) int {\n    return 0\n}\n",
+  "cpp_template": "// Grumpy Bookstore Owner\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes) {\n    return 0;\n}\n",
+  "java_template": "// Grumpy Bookstore Owner\n\nclass Solution {\n    public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Grumpy Bookstore Owner\n\nfunction maxSatisfied(customers, grumpy, minutes) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "kill window rescans over 20k-element inputs with long secret-technique intervals",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

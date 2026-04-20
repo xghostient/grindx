@@ -1,0 +1,31 @@
+{
+  "id": "floyd-warshall",
+  "name": "Floyd-Warshall Algorithm",
+  "difficulty": "Medium",
+  "description": "Given an adjacency matrix of a weighted directed graph, find the shortest distances between every pair of vertices. If no path exists, the distance remains as infinity (-1).",
+  "examples": [
+    {
+      "input": "matrix = [[0,3,-1,7],[8,0,2,-1],[-1,-1,0,1],[-1,-1,-1,0]]",
+      "output": "[[0,3,5,6],[8,0,2,3],[-1,-1,0,1],[-1,-1,-1,0]]"
+    }
+  ],
+  "constraints": "1 <= V <= 500. -1000 <= matrix[i][j] <= 1000. matrix[i][i] = 0. -1 means no edge.",
+  "python_template": "# Floyd-Warshall Algorithm\n\nfrom typing import List\n\ndef floydWarshall(matrix: List[List[int]]) -> List[List[int]]:\n    \"\"\"Modify matrix in-place. -1 means no path.\"\"\"\n    pass\n",
+  "go_template": "// Floyd-Warshall Algorithm\n\npackage main\n\nfunc floydWarshall(matrix [][]int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// Floyd-Warshall Algorithm\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> floydWarshall(vector<vector<int>>& matrix) {\n    return {};\n}\n",
+  "java_template": "// Floyd-Warshall Algorithm\n\nclass Solution {\n    public int[][] floydWarshall(int[][] matrix) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Floyd-Warshall Algorithm\n\nfunction floydWarshall(matrix) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V^3)",
+    "accepted_time": [
+      "O(V^3)"
+    ],
+    "rejected_time": [
+      "O(V^4)"
+    ],
+    "target_space": "O(V^2)",
+    "stress_intent": "exercise all-pairs relaxation with missing edges encoded as -1; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

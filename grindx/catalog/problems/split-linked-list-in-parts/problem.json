@@ -1,0 +1,35 @@
+{
+  "id": "split-linked-list-in-parts",
+  "name": "Split Linked List in Parts",
+  "difficulty": "Medium",
+  "description": "Given the head of a linked list and an integer k, split the list into k consecutive parts. Parts should be as equal in size as possible \u2014 earlier parts should be at most one node larger. Parts that have no nodes should be null.",
+  "examples": [
+    {
+      "input": "head = [1,2,3], k = 5",
+      "output": "[[1],[2],[3],[],[]]"
+    },
+    {
+      "input": "head = [1,2,3,4,5,6,7,8,9,10], k = 3",
+      "output": "[[1,2,3,4],[5,6,7],[8,9,10]]"
+    }
+  ],
+  "constraints": "The number of nodes is in [0, 1000]. 0 <= Node.val <= 1000. 1 <= k <= 50.",
+  "python_template": "# Split Linked List in Parts\n\nfrom typing import Optional, List\n\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\ndef splitListToParts(head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:\n    pass\n",
+  "go_template": "            // Split Linked List in Parts\n\n            package main\n\n            // Definition for singly-linked list.\n            // type ListNode struct {\n//     Val  int\n//     Next *ListNode\n// }\n\n            func splitListToParts(head *ListNode, k int) []*ListNode {\n            \treturn []*ListNode{}\n            }\n",
+  "cpp_template": "            // Split Linked List in Parts\n\n            #include <bits/stdc++.h>\n            using namespace std;\n\n            // Definition for singly-linked list.\n            // struct ListNode {\n//     int val;\n//     ListNode* next;\n//     ListNode(int val = 0, ListNode* next = nullptr) : val(val), next(next) {}\n// };\n\n            vector<ListNode*> splitListToParts(ListNode* head, int k) {\n                return {};\n            }\n",
+  "java_template": "// Split Linked List in Parts\n\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public ListNode[] splitListToParts(ListNode head, int k) {\n        return new ListNode[]{};\n    }\n}\n",
+  "js_template": "// Split Linked List in Parts\n\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n\nfunction splitListToParts(head, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n + k)",
+    "accepted_time": [
+      "O(n + k)"
+    ],
+    "rejected_time": [
+      "O(nk)",
+      "O(n^2)"
+    ],
+    "target_space": "O(k) output",
+    "stress_intent": "exercise large lists with many parts that punish restarting from head for each part instead of a single size-aware split pass",
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "valid-anagram",
+  "name": "Valid Anagram",
+  "difficulty": "Easy",
+  "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise. An anagram is a word formed by rearranging the letters of another word using all the original letters exactly once.",
+  "examples": [
+    {
+      "input": "s = \"anagram\", t = \"nagaram\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"rat\", t = \"car\"",
+      "output": "false"
+    },
+    {
+      "input": "s = \"a\", t = \"ab\"",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= s.length, t.length <= 5 * 10^4. s and t consist of lowercase English letters.",
+  "python_template": "# Valid Anagram\n\ndef isAnagram(s: str, t: str) -> bool:\n    pass\n",
+  "go_template": "// Valid Anagram\n\npackage main\n\nfunc isAnagram(s string, t string) bool {\n    return false\n}\n",
+  "cpp_template": "// Valid Anagram\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isAnagram(string& s, string& t) {\n    return false;\n}\n",
+  "java_template": "// Valid Anagram\n\nclass Solution {\n    public boolean isAnagram(String s, String t) {\n        return false;\n    }\n}\n",
+  "js_template": "// Valid Anagram\n\nfunction isAnagram(s, t) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise duplicate-sensitive anagram logic and several 20k-scale pairs that punish quadratic character matching locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

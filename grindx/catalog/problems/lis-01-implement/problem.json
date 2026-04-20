@@ -1,0 +1,37 @@
+{
+  "id": "lis-01-implement",
+  "name": "Longest Increasing Subsequence",
+  "difficulty": "Medium",
+  "category": "LIS",
+  "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.",
+  "examples": [
+    {
+      "input": "nums = [10, 9, 2, 5, 3, 7, 101, 18]",
+      "output": "4"
+    },
+    {
+      "input": "nums = [0, 1, 0, 3, 2, 3]",
+      "output": "4"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 2500, -10^4 <= nums[i] <= 10^4",
+  "python_template": "def lengthOfLIS(nums: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc lengthOfLIS(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Increasing Subsequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint lengthOfLIS(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Longest Increasing Subsequence\n\nclass Solution {\n    public int lengthOfLIS(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Increasing Subsequence\n\nfunction lengthOfLIS(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n^2)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate LIS DP or patience sorting from exponential include-skip recursion using longer increasing arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

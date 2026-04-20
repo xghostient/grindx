@@ -1,0 +1,35 @@
+{
+  "id": "enclaves",
+  "name": "Number of Enclaves",
+  "difficulty": "Medium",
+  "description": "Given an m x n binary matrix grid where 0 = sea, 1 = land, return the number of land cells that cannot reach any border by walking only through land cells.",
+  "examples": [
+    {
+      "input": "grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]",
+      "output": "0"
+    }
+  ],
+  "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 500. grid[i][j] is 0 or 1.",
+  "python_template": "# Number of Enclaves\n\nfrom typing import List\n\ndef numEnclaves(grid: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Number of Enclaves\n\npackage main\n\nfunc numEnclaves(grid [][]int) int {\n\treturn 0;\n}\n",
+  "cpp_template": "// Number of Enclaves\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint numEnclaves(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+  "java_template": "// Number of Enclaves\n\nclass Solution {\n    public int numEnclaves(int[][] grid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Enclaves\n\nfunction numEnclaves(grid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise border flood-removal and enclosed land counting; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

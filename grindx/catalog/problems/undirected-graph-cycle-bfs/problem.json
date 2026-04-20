@@ -1,0 +1,35 @@
+{
+  "id": "undirected-graph-cycle-bfs",
+  "name": "Detect Cycle in Undirected Graph (BFS)",
+  "difficulty": "Medium",
+  "description": "Given an undirected graph with V vertices and E edges, detect whether the graph contains a cycle using BFS. Return true if a cycle exists.",
+  "examples": [
+    {
+      "input": "V = 4, edges = [[0,1],[1,2],[2,3],[3,0]]",
+      "output": "true"
+    },
+    {
+      "input": "V = 3, edges = [[0,1],[1,2]]",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= V <= 10^5. 0 <= E <= 10^5.",
+  "python_template": "# Detect Cycle in Undirected Graph (BFS)\n\nfrom typing import List\nfrom collections import deque\n\ndef isCycle(V: int, adj: List[List[int]]) -> bool:\n    pass\n",
+  "go_template": "// Detect Cycle in Undirected Graph (BFS)\n\npackage main\n\nfunc isCycle(V int, adj [][]int) bool {\n\treturn false;\n}\n",
+  "cpp_template": "// Detect Cycle in Undirected Graph (BFS)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isCycle(int V, vector<vector<int>>& adj) {\n    return false;\n}\n",
+  "java_template": "// Detect Cycle in Undirected Graph (BFS)\n\nclass Solution {\n    public boolean isCycle(int V, int[][] adj) {\n        return false;\n    }\n}\n",
+  "js_template": "// Detect Cycle in Undirected Graph (BFS)\n\nfunction isCycle(V, adj) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill solutions that restart BFS from many vertices instead of traversing each component once",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

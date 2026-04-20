@@ -1,0 +1,36 @@
+{
+  "id": "shortest-common-superseq",
+  "name": "Shortest Common Supersequence",
+  "difficulty": "Hard",
+  "category": "Strings DP",
+  "description": "Given two strings str1 and str2, return the shortest string that has both str1 and str2 as subsequences.",
+  "examples": [
+    {
+      "input": "str1 = \"abac\", str2 = \"cab\"",
+      "output": "\"cabac\""
+    },
+    {
+      "input": "str1 = \"aaaaaaaa\", str2 = \"aaaaaaaa\"",
+      "output": "\"aaaaaaaa\""
+    }
+  ],
+  "constraints": "1 <= str1.length, str2.length <= 1000",
+  "python_template": "def shortestCommonSupersequence(str1: str, str2: str) -> str:\n    pass\n",
+  "go_template": "package main\n\nfunc shortestCommonSupersequence(str1, str2 string) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Shortest Common Supersequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring shortestCommonSupersequence(string& str1, string& str2) {\n    return \"\";\n}\n",
+  "java_template": "// Shortest Common Supersequence\n\nclass Solution {\n    public String shortestCommonSupersequence(String str1, String str2) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Shortest Common Supersequence\n\nfunction shortestCommonSupersequence(str1, str2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m)",
+    "accepted_time": [
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(2^(n+m))"
+    ],
+    "target_space": "O(n * m)",
+    "stress_intent": "separate shortest-supersequence DP from exponential recursion using longer overlap-heavy string pairs while accepting any valid optimal supersequence",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

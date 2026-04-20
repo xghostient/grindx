@@ -1,0 +1,36 @@
+{
+  "id": "longest-consecutive-sequence",
+  "name": "Longest Consecutive Sequence",
+  "difficulty": "Medium",
+  "description": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.",
+  "examples": [
+    {
+      "input": "nums = [100,4,200,1,3,2]",
+      "output": "4 (sequence: [1,2,3,4])"
+    },
+    {
+      "input": "nums = [0,3,7,2,5,8,4,6,0,1]",
+      "output": "9 (sequence: [0,1,2,3,4,5,6,7,8])"
+    }
+  ],
+  "constraints": "0 <= nums.length <= 10^5. -10^9 <= nums[i] <= 10^9.",
+  "python_template": "# Longest Consecutive Sequence\n\nfrom typing import List\n\ndef longestConsecutive(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Longest Consecutive Sequence\n\npackage main\n\nfunc longestConsecutive(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Consecutive Sequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestConsecutive(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Longest Consecutive Sequence\n\nclass Solution {\n    public int longestConsecutive(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Consecutive Sequence\n\nfunction longestConsecutive(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill list-membership streak scans on large consecutive blocks while still accepting hash-set and sort-based solutions",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

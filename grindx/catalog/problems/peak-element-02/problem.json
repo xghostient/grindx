@@ -1,0 +1,35 @@
+{
+  "id": "peak-element-02",
+  "name": "Peak Element in 2D Matrix",
+  "difficulty": "Hard",
+  "description": "Given a 2D grid where no two adjacent cells are equal, find any peak element. A peak element is strictly greater than all of its adjacent neighbors (up, down, left, right). Return the row and column of any peak.",
+  "examples": [
+    {
+      "input": "mat = [[1,4],[3,2]]",
+      "output": "[0, 1] (value 4 is a peak)"
+    },
+    {
+      "input": "mat = [[10,20,15],[21,30,14],[7,16,32]]",
+      "output": "[1, 1] (value 30 is a peak)"
+    }
+  ],
+  "constraints": "1 <= m, n <= 500. 1 <= mat[i][j] <= 10^5. No two adjacent cells are equal.",
+  "python_template": "# Peak Element in 2D Matrix\n\nfrom typing import List\n\ndef findPeakGrid(mat: List[List[int]]) -> List[int]:\n    pass\n",
+  "go_template": "// Peak Element in 2D Matrix\n\npackage main\n\nfunc findPeakGrid(mat [][]int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Peak Element in 2D Matrix\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findPeakGrid(vector<vector<int>>& mat) {\n    return {};\n}\n",
+  "java_template": "// Peak Element in 2D Matrix\n\nclass Solution {\n    public int[] findPeakGrid(int[][] mat) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Peak Element in 2D Matrix\n\nfunction findPeakGrid(mat) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m log n)",
+    "accepted_time": [
+      "O(m log n)"
+    ],
+    "rejected_time": [
+      "O(m*n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100x100 grids that punish scanning every cell",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "insert-node-dll",
+  "name": "Insert Node in Doubly Linked List",
+  "difficulty": "Easy",
+  "description": "Given a doubly linked list and a position, insert a new node with a given value at the specified position. Handle insertion at head, tail, and middle.",
+  "examples": [
+    {
+      "input": "DLL = [1,3,5], pos = 1, val = 2",
+      "output": "[1,2,3,5]"
+    },
+    {
+      "input": "DLL = [1,3,5], pos = 0, val = 0",
+      "output": "[0,1,3,5]"
+    }
+  ],
+  "constraints": "0 <= pos <= length of DLL. -10^5 <= val <= 10^5.",
+  "python_template": "# Insert Node in Doubly Linked List\n\nclass DLLNode:\n    def __init__(self, val=0, next=None, prev=None):\n        self.val = val\n        self.next = next\n        self.prev = prev\n\ndef insertNode(head: DLLNode, pos: int, val: int) -> DLLNode:\n    pass\n",
+  "go_template": "// Insert Node in Doubly Linked List\n\npackage main\n\ntype DLLNode struct {\n\tVal  int\n\tNext *DLLNode\n\tPrev *DLLNode\n}\n\nfunc insertNode(head *DLLNode, pos int, val int) *DLLNode {\n\treturn nil\n}\n",
+  "cpp_template": "// Insert Node in Doubly Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstruct DLLNode {\n    int val;\n    DLLNode* next;\n    DLLNode* prev;\n    DLLNode(int val = 0, DLLNode* next = nullptr, DLLNode* prev = nullptr) : val(val), next(next), prev(prev) {}\n};\n\nDLLNode* insertNode(DLLNode* head, int pos, int val) {\n    return nullptr;\n}\n",
+  "java_template": "// Insert Node in Doubly Linked List\n\nclass DLLNode {\n    int val;\n    DLLNode next;\n    DLLNode prev;\n    DLLNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public DLLNode insertNode(DLLNode head, int pos, int val) {\n        return null;\n    }\n}\n",
+  "js_template": "// Insert Node in Doubly Linked List\n\nclass DLLNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.prev = null;\n    }\n}\n\nfunction insertNode(head, pos, val) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise long doubly linked lists that punish repeated positional rescans or full rebuilds instead of one traversal to the insertion point",
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "longest-substring-without-repeating-characters",
+  "name": "Longest Substring Without Repeating Characters",
+  "difficulty": "Medium",
+  "description": "Given a string s, find the length of the longest substring without repeating characters.",
+  "examples": [
+    {
+      "input": "s = \"abcabcbb\"",
+      "output": "3 (\"abc\")"
+    },
+    {
+      "input": "s = \"bbbbb\"",
+      "output": "1 (\"b\")"
+    },
+    {
+      "input": "s = \"pwwkew\"",
+      "output": "3 (\"wke\")"
+    }
+  ],
+  "constraints": "0 <= s.length <= 5 * 10^4. s consists of English letters, digits, symbols and spaces.",
+  "python_template": "# Longest Substring Without Repeating Characters\n\ndef lengthOfLongestSubstring(s: str) -> int:\n    pass\n",
+  "go_template": "// Longest Substring Without Repeating Characters\n\npackage main\n\nfunc lengthOfLongestSubstring(s string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Substring Without Repeating Characters\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint lengthOfLongestSubstring(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Longest Substring Without Repeating Characters\n\nclass Solution {\n    public int lengthOfLongestSubstring(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Substring Without Repeating Characters\n\nfunction lengthOfLongestSubstring(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(alphabet)",
+    "stress_intent": "exercise index-tracking sliding windows over 50k strings that punish repeated substring/set rebuilding locally",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

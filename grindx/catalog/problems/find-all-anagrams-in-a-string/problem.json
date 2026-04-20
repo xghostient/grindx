@@ -1,0 +1,35 @@
+{
+  "id": "find-all-anagrams-in-a-string",
+  "name": "Find All Anagrams in a String",
+  "difficulty": "Medium",
+  "description": "Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order. An anagram is a word formed by rearranging the letters of another word using all the original letters exactly once.",
+  "examples": [
+    {
+      "input": "s = \"cbaebabacd\", p = \"abc\"",
+      "output": "[0,6]"
+    },
+    {
+      "input": "s = \"abab\", p = \"ab\"",
+      "output": "[0,1,2]"
+    }
+  ],
+  "constraints": "1 <= s.length, p.length <= 3 * 10^4. s and p consist of lowercase English letters.",
+  "python_template": "# Find All Anagrams in a String\n\nfrom typing import List\n\ndef findAnagrams(s: str, p: str) -> List[int]:\n    pass\n",
+  "go_template": "// Find All Anagrams in a String\n\npackage main\n\nfunc findAnagrams(s string, p string) []int {\n    return nil\n}\n",
+  "cpp_template": "// Find All Anagrams in a String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findAnagrams(string& s, string& p) {\n    return {};\n}\n",
+  "java_template": "// Find All Anagrams in a String\n\nclass Solution {\n    public int[] findAnagrams(String s, String p) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Find All Anagrams in a String\n\nfunction findAnagrams(s, p) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n * m)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise sliding-window frequency maintenance with 30k-scale sources and large patterns that reject recomputing whole windows locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

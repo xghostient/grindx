@@ -1,0 +1,40 @@
+{
+  "id": "kmp-pattern-matching",
+  "name": "KMP Pattern Matching",
+  "difficulty": "Medium",
+  "description": "Implement the Knuth-Morris-Pratt (KMP) string matching algorithm. Given a text string and a pattern string, find all occurrences of the pattern in the text. Build the LPS (Longest Proper Prefix which is also Suffix) array, then use it to avoid re-checking characters. Return all starting indices where pattern occurs.",
+  "examples": [
+    {
+      "input": "text = \"aabaacaadaabaaba\", pattern = \"aaba\"",
+      "output": "[0, 9, 12]"
+    },
+    {
+      "input": "text = \"abcdef\", pattern = \"xyz\"",
+      "output": "[]"
+    },
+    {
+      "input": "text = \"aaaaaa\", pattern = \"aa\"",
+      "output": "[0, 1, 2, 3, 4]"
+    }
+  ],
+  "constraints": "1 <= text.length <= 10^5. 1 <= pattern.length <= text.length.",
+  "python_template": "# KMP Pattern Matching\n\nfrom typing import List\n\ndef kmpSearch(text: str, pattern: str) -> List[int]:\n    pass\n",
+  "go_template": "// KMP Pattern Matching\n\npackage main\n\nfunc kmpSearch(text, pattern string) []int {\n    return nil\n}\n",
+  "cpp_template": "// KMP Pattern Matching\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> kmpSearch(string& text, string& pattern) {\n    return {};\n}\n",
+  "java_template": "// KMP Pattern Matching\n\nclass Solution {\n    public int[] kmpSearch(String text, String pattern) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// KMP Pattern Matching\n\nfunction kmpSearch(text, pattern) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n + m)",
+    "accepted_time": [
+      "O(n + m)",
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(n^2 * m)"
+    ],
+    "target_space": "O(m)",
+    "stress_intent": "exercise overlapping matches and long prefix-failure chains in pattern search; strict local separation is deferred",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

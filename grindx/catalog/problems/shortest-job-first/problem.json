@@ -1,0 +1,39 @@
+{
+  "id": "shortest-job-first",
+  "name": "Shortest Job First (SJF) Scheduling",
+  "difficulty": "Easy",
+  "description": "Given an array of burst times of n processes, calculate the average waiting time using the Shortest Job First (non-preemptive) CPU scheduling algorithm. Processes are executed in order of their burst times (shortest first). Waiting time of a process = start time - arrival time (all arrive at time 0).",
+  "examples": [
+    {
+      "input": "burst = [6, 8, 7, 3]",
+      "output": "7.0 (sorted: [3,6,7,8], wait: 0+3+9+16=28, avg=28/4=7.0)"
+    },
+    {
+      "input": "burst = [1, 2, 3]",
+      "output": "1.0 (wait: 0+1+3=4, avg=4/3\u22481.33 \u2014 actually 1.33)"
+    },
+    {
+      "input": "burst = [5, 5, 5]",
+      "output": "5.0 (wait: 0+5+10=15, avg=15/3=5.0)"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. 1 <= burst[i] <= 10^4.",
+  "python_template": "# Shortest Job First (SJF) Scheduling\n\nfrom typing import List\n\ndef sjfAvgWait(burst: List[int]) -> float:\n    pass\n",
+  "go_template": "// Shortest Job First (SJF) Scheduling\n\npackage main\n\nfunc sjfAvgWait(burst []int) float64 {\n    return 0.0\n}\n",
+  "cpp_template": "// Shortest Job First (SJF) Scheduling\n\n#include <bits/stdc++.h>\nusing namespace std;\n\ndouble sjfAvgWait(vector<int>& burst) {\n    return 0.0;\n}\n",
+  "java_template": "// Shortest Job First (SJF) Scheduling\n\nclass Solution {\n    public double sjfAvgWait(int[] burst) {\n        return 0.0;\n    }\n}\n",
+  "js_template": "// Shortest Job First (SJF) Scheduling\n\nfunction sjfAvgWait(burst) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) auxiliary",
+    "stress_intent": "exercise large burst arrays that punish non-sorted scheduling",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

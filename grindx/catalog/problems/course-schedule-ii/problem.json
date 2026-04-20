@@ -1,0 +1,39 @@
+{
+  "id": "course-schedule-ii",
+  "name": "Course Schedule II",
+  "difficulty": "Medium",
+  "description": "There are numCourses courses. Given prerequisites, return the ordering of courses you should take to finish all. If impossible, return an empty array. If multiple valid orderings, return any.",
+  "examples": [
+    {
+      "input": "numCourses = 2, prerequisites = [[1,0]]",
+      "output": "[0,1]"
+    },
+    {
+      "input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
+      "output": "[0,1,2,3] or [0,2,1,3]"
+    },
+    {
+      "input": "numCourses = 1, prerequisites = []",
+      "output": "[0]"
+    }
+  ],
+  "constraints": "1 <= numCourses <= 2000. 0 <= prerequisites.length <= numCourses * (numCourses - 1).",
+  "python_template": "# Course Schedule II\n\nfrom typing import List\n\ndef findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:\n    pass\n",
+  "go_template": "// Course Schedule II\n\npackage main\n\nfunc findOrder(numCourses int, prerequisites [][]int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Course Schedule II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {\n    return {};\n}\n",
+  "java_template": "// Course Schedule II\n\nclass Solution {\n    public int[] findOrder(int numCourses, int[][] prerequisites) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Course Schedule II\n\nfunction findOrder(numCourses, prerequisites) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill repeated scans for next available course on giant prerequisite graphs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

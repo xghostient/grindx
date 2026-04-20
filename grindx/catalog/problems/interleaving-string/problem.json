@@ -1,0 +1,40 @@
+{
+  "id": "interleaving-string",
+  "name": "Interleaving String",
+  "difficulty": "Medium",
+  "category": "Strings DP",
+  "description": "Given strings s1, s2, and s3, determine whether s3 is formed by an interleaving of s1 and s2. An interleaving is a configuration where s3 contains all characters of s1 and s2 and the relative order of characters from each string is preserved.",
+  "examples": [
+    {
+      "input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbcbcac\"",
+      "output": "true"
+    },
+    {
+      "input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbbaccc\"",
+      "output": "false"
+    },
+    {
+      "input": "s1 = \"\", s2 = \"\", s3 = \"\"",
+      "output": "true"
+    }
+  ],
+  "constraints": "0 <= s1.length, s2.length <= 100. 0 <= s3.length <= 200. s1, s2, s3 consist of lowercase English letters.",
+  "python_template": "# Interleaving String\n\ndef isInterleave(s1: str, s2: str, s3: str) -> bool:\n    pass\n",
+  "go_template": "// Interleaving String\n\npackage main\n\nfunc isInterleave(s1 string, s2 string, s3 string) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Interleaving String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isInterleave(string& s1, string& s2, string& s3) {\n    return false;\n}\n",
+  "java_template": "// Interleaving String\n\nclass Solution {\n    public boolean isInterleave(String s1, String s2, String s3) {\n        return false;\n    }\n}\n",
+  "js_template": "// Interleaving String\n\nfunction isInterleave(s1, s2, s3) {\n\n}\n",
+  "performance": {
+    "target_time": "O(len(s1) * len(s2))",
+    "accepted_time": [
+      "O(len(s1) * len(s2))"
+    ],
+    "rejected_time": [
+      "O(2^(len(s1)+len(s2)))"
+    ],
+    "target_space": "O(len(s2))",
+    "stress_intent": "separate interleaving DP from exponential backtracking using long repeated-character merge ambiguities",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

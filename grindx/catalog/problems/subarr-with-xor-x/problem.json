@@ -1,0 +1,39 @@
+{
+  "id": "subarr-with-xor-x",
+  "name": "Count Subarrays with XOR K",
+  "difficulty": "Medium",
+  "description": "Given an array of integers and an integer k, count the number of subarrays whose XOR of all elements equals k. Use prefix XOR and hash map for O(n) solution.",
+  "examples": [
+    {
+      "input": "arr = [4, 2, 2, 6, 4], k = 6",
+      "output": "4"
+    },
+    {
+      "input": "arr = [5, 6, 7, 8, 9], k = 5",
+      "output": "2"
+    },
+    {
+      "input": "arr = [1, 1, 1], k = 0",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. 0 <= arr[i] <= 10^5. 0 <= k <= 10^5.",
+  "python_template": "# Count Subarrays with XOR K\n\nfrom typing import List\n\ndef countSubarraysXOR(arr: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Count Subarrays with XOR K\n\npackage main\n\nfunc countSubarraysXOR(arr []int, k int) int {\n    return 0\n}\n",
+  "cpp_template": "// Count Subarrays with XOR K\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countSubarraysXOR(vector<int>& arr, int k) {\n    return 0;\n}\n",
+  "java_template": "// Count Subarrays with XOR K\n\nclass Solution {\n    public int countSubarraysXOR(int[] arr, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Count Subarrays with XOR K\n\nfunction countSubarraysXOR(arr, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill nested xor scans on 100k-element arrays with repeated prefix xor collisions",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

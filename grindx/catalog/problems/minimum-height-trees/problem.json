@@ -1,0 +1,35 @@
+{
+  "id": "minimum-height-trees",
+  "name": "Minimum Height Trees",
+  "difficulty": "Medium",
+  "description": "Given a tree of n nodes labeled 0 to n-1 with n-1 edges, find all roots that minimize the tree height. These are the centroids of the tree. Hint: repeatedly peel leaf nodes.",
+  "examples": [
+    {
+      "input": "n = 4, edges = [[1,0],[1,2],[1,3]]",
+      "output": "[1]"
+    },
+    {
+      "input": "n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]",
+      "output": "[3,4]"
+    }
+  ],
+  "constraints": "1 <= n <= 2 * 10^4. edges.length == n - 1. 0 <= edges[i][j] < n. All pairs are unique.",
+  "python_template": "# Minimum Height Trees\n\nfrom typing import List\nfrom collections import deque\n\ndef findMinHeightTrees(n: int, edges: List[List[int]]) -> List[int]:\n    pass\n",
+  "go_template": "// Minimum Height Trees\n\npackage main\n\nfunc findMinHeightTrees(n int, edges [][]int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Minimum Height Trees\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {\n    return {};\n}\n",
+  "java_template": "// Minimum Height Trees\n\nclass Solution {\n    public int[] findMinHeightTrees(int n, int[][] edges) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Minimum Height Trees\n\nfunction findMinHeightTrees(n, edges) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill root-by-root height recomputation on long paths while still accepting leaf-trimming solutions",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

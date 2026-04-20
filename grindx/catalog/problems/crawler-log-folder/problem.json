@@ -1,0 +1,38 @@
+{
+  "id": "crawler-log-folder",
+  "name": "Crawler Log Folder",
+  "difficulty": "Easy",
+  "description": "The Leetcode file system keeps a log each time some user performs a change folder operation. The operations are: \"../\" (move to parent folder), \"./\" (stay in current folder), \"x/\" (move to child folder named x). You start at the main folder. Given a list of logs, return the minimum number of operations needed to go back to the main folder after the log operations.",
+  "examples": [
+    {
+      "input": "logs = [\"d1/\",\"d2/\",\"../\",\"d21/\",\"./\"]",
+      "output": "2"
+    },
+    {
+      "input": "logs = [\"d1/\",\"d2/\",\"./\",\"d3/\",\"../\",\"d31/\"]",
+      "output": "3"
+    },
+    {
+      "input": "logs = [\"d1/\",\"../\",\"../\",\"../\"]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= logs.length <= 10^3. 2 <= logs[i].length <= 10.",
+  "python_template": "# Crawler Log Folder\n\nfrom typing import List\n\ndef minOperations(logs: List[str]) -> int:\n    pass\n",
+  "go_template": "// Crawler Log Folder\n\npackage main\n\nfunc minOperations(logs []string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Crawler Log Folder\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minOperations(vector<string>& logs) {\n    return 0;\n}\n",
+  "java_template": "// Crawler Log Folder\n\nclass Solution {\n    public int minOperations(String[] logs) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Crawler Log Folder\n\nfunction minOperations(logs) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "long log streams punish explicit path reconstruction",
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "edit-distance",
+  "name": "Edit Distance",
+  "difficulty": "Medium",
+  "category": "Strings DP",
+  "description": "Given two strings word1 and word2, return the minimum number of operations (insert, delete, replace) to convert word1 to word2.",
+  "examples": [
+    {
+      "input": "word1 = \"horse\", word2 = \"ros\"",
+      "output": "3"
+    },
+    {
+      "input": "word1 = \"intention\", word2 = \"execution\"",
+      "output": "5"
+    }
+  ],
+  "constraints": "0 <= word1.length, word2.length <= 500",
+  "python_template": "def minDistance(word1: str, word2: str) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc minDistance(word1 string, word2 string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Edit Distance\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minDistance(string& word1, string& word2) {\n    return 0;\n}\n",
+  "java_template": "// Edit Distance\n\nclass Solution {\n    public int minDistance(String word1, String word2) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Edit Distance\n\nfunction minDistance(word1, word2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * m)",
+    "accepted_time": [
+      "O(n * m)"
+    ],
+    "rejected_time": [
+      "O(3^(n+m))"
+    ],
+    "target_space": "O(m)",
+    "stress_intent": "separate quadratic edit DP from exponential recursion using longer mismatch-heavy string pairs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

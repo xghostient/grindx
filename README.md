@@ -1,6 +1,6 @@
 # grindx
 
-Distraction-free DSA practice in your terminal. Zero network footprint.
+Distraction-free DSA practice in your terminal.
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
@@ -9,7 +9,7 @@ Distraction-free DSA practice in your terminal. Zero network footprint.
 
 ## Why grindx?
 
-- **Zero network calls** — everything runs locally, no tracking (optional AI review)
+- **Local-first** — problem browsing, progress, and solutions stay local; AI review and testcase bundle downloads are optional
 - **Terminal-native** — practice DSA without leaving your terminal or opening a browser
 - **Multiple sheets** — Striver A2Z (316), Blind 75, NeetCode 150, Grind 75 built-in
 - **5 languages** — Python, Go, C++, Java, JavaScript — switch on the fly with `Ctrl+L`
@@ -36,6 +36,28 @@ cd grindx
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 grindx
+```
+
+### Local testcase bundle
+
+PyPI installs keep the package lean and do not ship the full bundled testcase corpus. To enable local `Ctrl+R` test runs, fetch the external testcase bundle once:
+
+```bash
+grindx --fetch-testcases
+```
+
+By default this pulls from:
+
+```text
+https://github.com/grindxhq/dsa-catalog/releases/latest/download/manifest.json
+```
+
+Override the manifest source if needed:
+
+```bash
+grindx --fetch-testcases --testcase-manifest-url https://example.com/manifest.json
+# or
+export GRINDX_TESTCASE_MANIFEST_URL=https://example.com/manifest.json
 ```
 
 ## Usage
@@ -76,7 +98,8 @@ python -m grindx  # or as a module
 | `Ctrl+L` | Cycle language (Python → Go → C++ → Java → JS) |
 | `Ctrl+B` | Toggle bookmark |
 | `Ctrl+T` | Pause / resume timer |
-| `Ctrl+R` | Reset timer |
+| `Ctrl+R` | Run tests |
+| `Ctrl+Shift+R` | Reset timer |
 | `Ctrl+Shift+C` | Copy selection to clipboard |
 | `Ctrl+Shift+V` | Paste from clipboard |
 | `Alt+↑` / `Alt+↓` | Move line up / down |
@@ -102,7 +125,7 @@ python -m grindx  # or as a module
 }
 ```
 
-**Progress safety** — automatic backups with corruption recovery. Progress, solutions, and backups are stored in `~/.grindx/` so they persist across installs and upgrades.
+**Progress safety** — automatic backups with corruption recovery. Progress, solutions, backups, and downloaded testcase bundles are stored in `~/.grindx/` so they persist across installs and upgrades.
 
 ## AI Review (optional)
 
@@ -159,43 +182,43 @@ You can mix built-in problem IDs (like `two-sum`) with your own custom problem I
 
 ### Custom problems
 
-Create a JSON file in `~/.grindx/problems/`:
+Create a folder per problem under `~/.grindx/problems/`:
 
 ```json
-// ~/.grindx/problems/custom.json
-[
-  {
-    "id": "my-custom-problem",
-    "name": "My Custom Problem",
-    "difficulty": "Medium",
-    "category": "Arrays",
-    "description": "Given an array of integers, find ...",
-    "examples": [
-      {"input": "nums = [1, 2, 3]", "output": "6"},
-      {"input": "nums = []", "output": "0"}
-    ],
-    "constraints": "1 <= nums.length <= 10^4",
-    "python_template": "def solve(nums):\n    pass\n",
-    "go_template": "func solve(nums []int) int {\n\n}\n",
-    "cpp_template": "int solve(vector<int>& nums) {\n\n}\n",
-    "java_template": "class Solution {\n    public int solve(int[] nums) {\n\n    }\n}\n",
-    "js_template": "function solve(nums) {\n\n}\n"
-  },
-  {
-    "id": "another-custom-problem",
-    "name": "Another Custom Problem",
-    "difficulty": "Easy",
-    "category": "Strings",
-    "description": "Given a string, return ...",
-    "examples": [
-      {"input": "s = \"hello\"", "output": "\"olleh\""}
-    ],
-    "python_template": "def solve(s):\n    pass\n"
-  }
-]
+// ~/.grindx/problems/my-custom-problem/problem.json
+{
+  "id": "my-custom-problem",
+  "name": "My Custom Problem",
+  "difficulty": "Medium",
+  "category": "Arrays",
+  "description": "Given an array of integers, find ...",
+  "examples": [
+    {"input": "nums = [1, 2, 3]", "output": "6"},
+    {"input": "nums = []", "output": "0"}
+  ],
+  "constraints": "1 <= nums.length <= 10^4",
+  "python_template": "def solve(nums):\n    pass\n",
+  "go_template": "func solve(nums []int) int {\n\n}\n",
+  "cpp_template": "int solve(vector<int>& nums) {\n\n}\n",
+  "java_template": "class Solution {\n    public int solve(int[] nums) {\n\n    }\n}\n",
+  "js_template": "function solve(nums) {\n\n}\n"
+}
 ```
 
-Multiple problems go in the same file as a JSON array. You only need to include the template keys for languages you care about — the rest will get a default stub.
+Optional local judge assets for a custom problem:
+
+```text
+~/.grindx/problems/my-custom-problem/testcases.json
+~/.grindx/problems/my-custom-problem/judges/python.py
+~/.grindx/problems/my-custom-problem/judges/go.go
+~/.grindx/problems/my-custom-problem/judges/cpp.cpp
+~/.grindx/problems/my-custom-problem/judges/java.java
+~/.grindx/problems/my-custom-problem/judges/javascript.js
+```
+
+You only need to include the template keys and local judge assets for the languages you care about.
+
+Legacy `~/.grindx/problems/custom.json` is still loaded for compatibility, but new custom problems should use the folder-based format above.
 
 Custom sheets show up on the dashboard alongside the built-in ones.
 

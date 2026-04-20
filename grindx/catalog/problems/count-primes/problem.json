@@ -1,0 +1,43 @@
+{
+  "id": "count-primes",
+  "name": "Count Primes",
+  "difficulty": "Easy",
+  "description": "Given an integer n, return the number of prime numbers that are strictly less than n. Use the Sieve of Eratosthenes for O(n log log n) solution.",
+  "examples": [
+    {
+      "input": "n = 10",
+      "output": "4 (primes: 2, 3, 5, 7)"
+    },
+    {
+      "input": "n = 0",
+      "output": "0"
+    },
+    {
+      "input": "n = 1",
+      "output": "0"
+    },
+    {
+      "input": "n = 20",
+      "output": "8 (primes: 2, 3, 5, 7, 11, 13, 17, 19)"
+    }
+  ],
+  "constraints": "0 <= n <= 5 * 10^6.",
+  "python_template": "# Count Primes\n\ndef countPrimes(n: int) -> int:\n    pass\n",
+  "go_template": "// Count Primes\n\npackage main\n\nfunc countPrimes(n int) int {\n    return 0\n}\n",
+  "cpp_template": "// Count Primes\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countPrimes(int n) {\n    return 0;\n}\n",
+  "java_template": "// Count Primes\n\nclass Solution {\n    public int countPrimes(int n) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Count Primes\n\nfunction countPrimes(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log log n)",
+    "accepted_time": [
+      "O(n log log n)"
+    ],
+    "rejected_time": [
+      "O(n * sqrt(n))"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large n that punishes trial division per number",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

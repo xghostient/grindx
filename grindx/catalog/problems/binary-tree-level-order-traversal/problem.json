@@ -1,0 +1,39 @@
+{
+  "id": "binary-tree-level-order-traversal",
+  "name": "Binary Tree Level Order Traversal",
+  "difficulty": "Medium",
+  "description": "Given the root of a binary tree, return the level order traversal of its nodes' values (i.e., from left to right, level by level).",
+  "examples": [
+    {
+      "input": "root = [3,9,20,null,null,15,7]",
+      "output": "[[3],[9,20],[15,7]]"
+    },
+    {
+      "input": "root = [1]",
+      "output": "[[1]]"
+    },
+    {
+      "input": "root = []",
+      "output": "[]"
+    }
+  ],
+  "constraints": "The number of nodes is in [0, 2000]. -1000 <= Node.val <= 1000.",
+  "python_template": "# Binary Tree Level Order Traversal\n\nfrom typing import List, Optional\n\nclass TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef levelOrder(root: Optional[TreeNode]) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Binary Tree Level Order Traversal\n\npackage main\n\n// type TreeNode struct {\n// \tVal   int\n// \tLeft  *TreeNode\n// \tRight *TreeNode\n// }\n\nfunc levelOrder(root *TreeNode) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// Binary Tree Level Order Traversal\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// struct TreeNode {\n//     int val;\n//     TreeNode* left;\n//     TreeNode* right;\n//     TreeNode(int val = 0, TreeNode* left = nullptr, TreeNode* right = nullptr) : val(val), left(left), right(right) {}\n// };\n\nvector<vector<int>> levelOrder(TreeNode* root) {\n    return {};\n}\n",
+  "java_template": "// Binary Tree Level Order Traversal\n\nclass TreeNode {\n    int val;\n    TreeNode left;\n    TreeNode right;\n    TreeNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public int[][] levelOrder(TreeNode root) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Binary Tree Level Order Traversal\n\nclass TreeNode {\n    constructor(val) {\n        this.val = val;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nfunction levelOrder(root) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(w)",
+    "stress_intent": "exercise BFS layering and null handling; constraints are too small for stronger separation than repeated rescans",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

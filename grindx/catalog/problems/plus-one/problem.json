@@ -1,0 +1,39 @@
+{
+  "id": "plus-one",
+  "name": "Plus One",
+  "difficulty": "Easy",
+  "description": "You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant. The integer does not contain any leading zeros. Increment the large integer by one and return the resulting array of digits.",
+  "examples": [
+    {
+      "input": "digits = [1,2,3]",
+      "output": "[1,2,4]"
+    },
+    {
+      "input": "digits = [4,3,2,1]",
+      "output": "[4,3,2,2]"
+    },
+    {
+      "input": "digits = [9,9,9]",
+      "output": "[1,0,0,0]"
+    }
+  ],
+  "constraints": "1 <= digits.length <= 100. 0 <= digits[i] <= 9. digits does not contain any leading 0's.",
+  "python_template": "# Plus One\n\nfrom typing import List\n\ndef plusOne(digits: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Plus One\n\npackage main\n\nfunc plusOne(digits []int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Plus One\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> plusOne(vector<int>& digits) {\n    return {};\n}\n",
+  "java_template": "// Plus One\n\nclass Solution {\n    public int[] plusOne(int[] digits) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Plus One\n\nfunction plusOne(digits) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise 100-digit all-nines arrays that punish non-linear carry propagation",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

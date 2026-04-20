@@ -1,0 +1,36 @@
+{
+  "id": "minimum-interval-to-include-each-query",
+  "name": "Minimum Interval to Include Each Query",
+  "difficulty": "Hard",
+  "description": "You are given a 2D integer array intervals where intervals[i] = [lefti, righti] describes the ith interval starting at lefti and ending at righti (inclusive). You are also given an integer array queries. For each query queries[j], find the size of the smallest interval i such that lefti <= queries[j] <= righti. The size of an interval is (righti - lefti + 1). Return an array ans where ans[j] is the answer to the jth query. If no interval contains queries[j], then ans[j] = -1.",
+  "examples": [
+    {
+      "input": "intervals = [[1,4],[2,4],[3,6],[4,4]], queries = [2,3,4,5]",
+      "output": "[3,3,1,4]"
+    },
+    {
+      "input": "intervals = [[2,3],[2,5],[1,8],[20,25]], queries = [2,19,5,22]",
+      "output": "[2,-1,4,6]"
+    }
+  ],
+  "constraints": "1 <= intervals.length <= 10^5. 1 <= queries.length <= 10^5. intervals[i].length == 2. 1 <= lefti <= righti <= 10^7. 1 <= queries[j] <= 10^7.",
+  "python_template": "# Minimum Interval to Include Each Query\n\nfrom typing import List\n\ndef minInterval(intervals: List[List[int]], queries: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Minimum Interval to Include Each Query\n\npackage main\n\nfunc minInterval(intervals [][]int, queries []int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Minimum Interval to Include Each Query\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> minInterval(vector<vector<int>>& intervals, vector<int>& queries) {\n    return {};\n}\n",
+  "java_template": "// Minimum Interval to Include Each Query\n\nclass Solution {\n    public int[] minInterval(int[][] intervals, int[] queries) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Minimum Interval to Include Each Query\n\nfunction minInterval(intervals, queries) {\n\n}\n",
+  "performance": {
+    "target_time": "O((n + q) log n)",
+    "accepted_time": [
+      "O((n + q) log n)",
+      "O(n * q)"
+    ],
+    "rejected_time": [
+      "O(n * q)"
+    ],
+    "target_space": "O(n + q)",
+    "stress_intent": "exercise large interval and query lists that punish brute-force per-query scanning",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

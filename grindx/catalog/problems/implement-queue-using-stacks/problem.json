@@ -1,0 +1,30 @@
+{
+  "id": "implement-queue-using-stacks",
+  "name": "Implement Queue Using Stacks",
+  "difficulty": "Easy",
+  "description": "Implement a first-in-first-out (FIFO) queue using only two stacks. The queue should support push, pop, peek, and empty operations. All operations must be valid (no pop/peek on empty queue).",
+  "examples": [
+    {
+      "input": "[\"MyQueue\",\"push\",\"push\",\"peek\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]",
+      "output": "[null,null,null,1,1,false]"
+    }
+  ],
+  "constraints": "1 <= x <= 9. At most 100 calls. All operations are valid.",
+  "python_template": "# Implement Queue Using Stacks\n\nclass MyQueue:\n    def __init__(self):\n        pass\n\n    def push(self, x: int) -> None:\n        pass\n\n    def pop(self) -> int:\n        pass\n\n    def peek(self) -> int:\n        pass\n\n    def empty(self) -> bool:\n        pass\n",
+  "go_template": "// Implement Queue Using Stacks\n\npackage main\n\ntype MyQueue struct {\n}\n\nfunc Constructor() MyQueue {\n    return MyQueue{}\n}\n\nfunc (q *MyQueue) Push(x int) {\n}\n\nfunc (q *MyQueue) Pop() int {\n    return 0\n}\n\nfunc (q *MyQueue) Peek() int {\n    return 0\n}\n\nfunc (q *MyQueue) Empty() bool {\n    return true\n}\n",
+  "cpp_template": "// Implement Queue Using Stacks\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass MyQueue {\npublic:\n    MyQueue() {\n\n    }\n\n    void Push(int x) {\n\n    }\n\n    int Pop() {\n        return 0;\n    }\n\n    int Peek() {\n        return 0;\n    }\n\n    bool Empty() {\n        return false;\n    }\n};\n",
+  "java_template": "// Implement Queue Using Stacks\n\nimport java.util.*;\n\nclass MyQueue {\n    public MyQueue() {\n\n    }\n\n    public void Push(int x) {\n\n    }\n\n    public int Pop() {\n        return 0;\n    }\n\n    public int Peek() {\n        return 0;\n    }\n\n    public boolean Empty() {\n        return false;\n    }\n}\n",
+  "js_template": "// Implement Queue Using Stacks\n\nclass MyQueue {\n    constructor() {\n\n    }\n\n    push(x) {\n\n    }\n\n    pop() {\n\n    }\n\n    peek() {\n\n    }\n\n    empty() {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(1) amortized/op",
+    "accepted_time": [
+      "O(1) amortized/op"
+    ],
+    "rejected_time": [
+      "O(n) per op"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "batched queue operations punish full-stack transfers on every call",
+    "enforcement": "best-effort-local"
+  }
+}

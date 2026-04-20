@@ -1,0 +1,39 @@
+{
+  "id": "network-delay-time",
+  "name": "Network Delay Time",
+  "difficulty": "Medium",
+  "description": "Given n nodes and a list of travel times as directed edges times[i] = (u, v, w), send a signal from node k. Return the minimum time for all nodes to receive the signal. If impossible, return -1.",
+  "examples": [
+    {
+      "input": "times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2",
+      "output": "2"
+    },
+    {
+      "input": "times = [[1,2,1]], n = 2, k = 1",
+      "output": "1"
+    },
+    {
+      "input": "times = [[1,2,1]], n = 2, k = 2",
+      "output": "-1"
+    }
+  ],
+  "constraints": "1 <= k <= n <= 100. 1 <= times.length <= 6000. 1 <= w <= 100.",
+  "python_template": "# Network Delay Time\n\nfrom typing import List\nimport heapq\n\ndef networkDelayTime(times: List[List[int]], n: int, k: int) -> int:\n    pass\n",
+  "go_template": "// Network Delay Time\n\npackage main\n\nfunc networkDelayTime(times [][]int, n int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Network Delay Time\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint networkDelayTime(vector<vector<int>>& times, int n, int k) {\n    return 0;\n}\n",
+  "java_template": "// Network Delay Time\n\nclass Solution {\n    public int networkDelayTime(int[][] times, int n, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Network Delay Time\n\nfunction networkDelayTime(times, n, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O((V + E) log V)",
+    "accepted_time": [
+      "O((V + E) log V)"
+    ],
+    "rejected_time": [
+      "O(V^2)"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "exercise propagation delay and impossibility detection; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

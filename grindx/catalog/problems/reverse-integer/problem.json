@@ -1,0 +1,43 @@
+{
+  "id": "reverse-integer",
+  "name": "Reverse Integer",
+  "difficulty": "Medium",
+  "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.",
+  "examples": [
+    {
+      "input": "x = 123",
+      "output": "321"
+    },
+    {
+      "input": "x = -123",
+      "output": "-321"
+    },
+    {
+      "input": "x = 120",
+      "output": "21"
+    },
+    {
+      "input": "x = 0",
+      "output": "0"
+    }
+  ],
+  "constraints": "-2^31 <= x <= 2^31 - 1.",
+  "python_template": "# Reverse Integer\n\ndef reverse(x: int) -> int:\n    pass\n",
+  "go_template": "// Reverse Integer\n\npackage main\n\nfunc reverse(x int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Reverse Integer\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint reverse(int x) {\n    return 0;\n}\n",
+  "java_template": "// Reverse Integer\n\nclass Solution {\n    public int reverse(int x) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Reverse Integer\n\nfunction reverse(x) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise overflow edge cases near INT_MAX/INT_MIN",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

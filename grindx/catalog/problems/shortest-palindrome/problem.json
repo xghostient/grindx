@@ -1,0 +1,39 @@
+{
+  "id": "shortest-palindrome",
+  "name": "Shortest Palindrome",
+  "difficulty": "Hard",
+  "description": "You are given a string s. You can convert s to a palindrome by adding characters in front of it. Return the shortest palindrome you can find by performing this transformation. This is equivalent to finding the longest palindromic prefix of s, then prepending the reverse of the remaining suffix. KMP / Z-algorithm can solve this in O(n).",
+  "examples": [
+    {
+      "input": "s = \"aacecaaa\"",
+      "output": "\"aaacecaaa\""
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "\"dcbabcd\""
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "\"a\""
+    }
+  ],
+  "constraints": "0 <= s.length <= 5 * 10^4. s consists of lowercase English letters only.",
+  "python_template": "# Shortest Palindrome\n\ndef shortestPalindrome(s: str) -> str:\n    pass\n",
+  "go_template": "// Shortest Palindrome\n\npackage main\n\nfunc shortestPalindrome(s string) string {\n    return \"\"\n}\n",
+  "cpp_template": "// Shortest Palindrome\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring shortestPalindrome(string& s) {\n    return \"\";\n}\n",
+  "java_template": "// Shortest Palindrome\n\nclass Solution {\n    public String shortestPalindrome(String s) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Shortest Palindrome\n\nfunction shortestPalindrome(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise longest palindromic prefix detection on max-length near-palindromic strings that reject repeated prefix checks locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

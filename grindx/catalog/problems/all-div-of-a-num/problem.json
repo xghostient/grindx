@@ -1,0 +1,39 @@
+{
+  "id": "all-div-of-a-num",
+  "name": "All Divisors of a Number",
+  "difficulty": "Easy",
+  "description": "Given an integer n, find all the divisors of n and return them in sorted order. A divisor of n is any integer d such that n % d == 0.",
+  "examples": [
+    {
+      "input": "n = 36",
+      "output": "[1, 2, 3, 4, 6, 9, 12, 18, 36]"
+    },
+    {
+      "input": "n = 7",
+      "output": "[1, 7]"
+    },
+    {
+      "input": "n = 1",
+      "output": "[1]"
+    }
+  ],
+  "constraints": "1 <= n <= 10^6.",
+  "python_template": "# All Divisors of a Number\n\nfrom typing import List\n\ndef allDivisors(n: int) -> List[int]:\n    pass\n",
+  "go_template": "// All Divisors of a Number\n\npackage main\n\nfunc allDivisors(n int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// All Divisors of a Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> allDivisors(int n) {\n    return {};\n}\n",
+  "java_template": "// All Divisors of a Number\n\nclass Solution {\n    public int[] allDivisors(int n) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// All Divisors of a Number\n\nfunction allDivisors(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(sqrt(n))",
+    "accepted_time": [
+      "O(sqrt(n))"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(sqrt(n))",
+    "stress_intent": "exercise highly composite numbers that produce many divisors",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

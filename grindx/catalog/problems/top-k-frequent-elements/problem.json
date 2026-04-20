@@ -1,0 +1,41 @@
+{
+  "id": "top-k-frequent-elements",
+  "name": "Top K Frequent Elements",
+  "difficulty": "Medium",
+  "description": "Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.",
+  "examples": [
+    {
+      "input": "nums = [1,1,1,2,2,3], k = 2",
+      "output": "[1,2]"
+    },
+    {
+      "input": "nums = [1], k = 1",
+      "output": "[1]"
+    },
+    {
+      "input": "nums = [4,1,-1,2,-1,2,3], k = 2",
+      "output": "[-1,2]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10^5. -10^4 <= nums[i] <= 10^4. k is in the range [1, the number of unique elements]. The answer is guaranteed to be unique.",
+  "python_template": "# Top K Frequent Elements\n\nfrom typing import List\n\ndef topKFrequent(nums: List[int], k: int) -> List[int]:\n    pass\n",
+  "go_template": "// Top K Frequent Elements\n\npackage main\n\nfunc topKFrequent(nums []int, k int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Top K Frequent Elements\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> topKFrequent(vector<int>& nums, int k) {\n    return {};\n}\n",
+  "java_template": "// Top K Frequent Elements\n\nclass Solution {\n    public int[] topKFrequent(int[] nums, int k) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Top K Frequent Elements\n\nfunction topKFrequent(nums, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log k)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log k)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise 100k arrays that punish repeated full-frequency rescans",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "frog-jump",
+  "name": "Frog Jump (Cost)",
+  "difficulty": "Easy",
+  "category": "1D DP",
+  "description": "A frog wants to climb from the 0th stair to the (n-1)th stair. The frog can jump 1 or 2 steps at a time. The cost of a jump is abs(height[i] - height[j]). Find the minimum cost to reach the last stair.",
+  "examples": [
+    {
+      "input": "heights = [10, 20, 30, 10]",
+      "output": "20"
+    },
+    {
+      "input": "heights = [10, 50, 10]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5, 1 <= heights[i] <= 1000",
+  "python_template": "def frogJump(heights: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc frogJump(heights []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Frog Jump (Cost)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint frogJump(vector<int>& heights) {\n    return 0;\n}\n",
+  "java_template": "// Frog Jump (Cost)\n\nclass Solution {\n    public int frogJump(int[] heights) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Frog Jump (Cost)\n\nfunction frogJump(heights) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(2^n)",
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate linear frog-jump DP from plain recursion using long ambiguous one-step/two-step chains",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

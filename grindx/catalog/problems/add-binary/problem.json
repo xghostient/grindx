@@ -1,0 +1,35 @@
+{
+  "id": "add-binary",
+  "name": "Add Binary",
+  "difficulty": "Easy",
+  "description": "Given two binary strings a and b, return their sum as a binary string.",
+  "examples": [
+    {
+      "input": "a = \"11\", b = \"1\"",
+      "output": "\"100\""
+    },
+    {
+      "input": "a = \"1010\", b = \"1011\"",
+      "output": "\"10101\""
+    }
+  ],
+  "constraints": "1 <= a.length, b.length <= 10^4. a and b consist only of '0' or '1'. Each string does not contain leading zeros except '0' itself.",
+  "python_template": "# Add Binary\n\ndef addBinary(a: str, b: str) -> str:\n    pass\n",
+  "go_template": "// Add Binary\n\npackage main\n\nfunc addBinary(a string, b string) string {\n\treturn \"\"\n}\n",
+  "cpp_template": "// Add Binary\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nstring addBinary(string& a, string& b) {\n    return \"\";\n}\n",
+  "java_template": "// Add Binary\n\nclass Solution {\n    public String addBinary(String a, String b) {\n        return \"\";\n    }\n}\n",
+  "js_template": "// Add Binary\n\nfunction addBinary(a, b) {\n\n}\n",
+  "performance": {
+    "target_time": "O(max(m,n))",
+    "accepted_time": [
+      "O(max(m,n))"
+    ],
+    "rejected_time": [
+      "O(m*n)"
+    ],
+    "target_space": "O(max(m,n))",
+    "stress_intent": "exercise carry propagation across long binary strings",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "subarray-sum-equals-k",
+  "name": "Subarray Sum Equals K",
+  "difficulty": "Medium",
+  "description": "Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k. A subarray is a contiguous non-empty sequence of elements.",
+  "examples": [
+    {
+      "input": "nums = [1,1,1], k = 2",
+      "output": "2"
+    },
+    {
+      "input": "nums = [1,2,3], k = 3",
+      "output": "2 (subarrays [1,2] and [3])"
+    },
+    {
+      "input": "nums = [1,-1,0], k = 0",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 2 * 10^4. -1000 <= nums[i] <= 1000. -10^7 <= k <= 10^7.",
+  "python_template": "# Subarray Sum Equals K\n\nfrom typing import List\n\ndef subarraySum(nums: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Subarray Sum Equals K\n\npackage main\n\nfunc subarraySum(nums []int, k int) int {\n    return 0\n}\n",
+  "cpp_template": "// Subarray Sum Equals K\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint subarraySum(vector<int>& nums, int k) {\n    return 0;\n}\n",
+  "java_template": "// Subarray Sum Equals K\n\nclass Solution {\n    public int subarraySum(int[] nums, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Subarray Sum Equals K\n\nfunction subarraySum(nums, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill nested subarray enumeration on 20k-element adversarial arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

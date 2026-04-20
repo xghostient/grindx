@@ -1,0 +1,35 @@
+{
+  "id": "best-time-to-buy-and-sell-stock",
+  "name": "Best Time to Buy and Sell Stock",
+  "difficulty": "Easy",
+  "description": "You are given an array prices where prices[i] is the price of a stock on the ith day. You want to maximize profit by choosing a single day to buy and a single day in the future to sell. Return the maximum profit, or 0 if no profit is possible.",
+  "examples": [
+    {
+      "input": "prices = [7,1,5,3,6,4]",
+      "output": "5 (buy at 1, sell at 6)"
+    },
+    {
+      "input": "prices = [7,6,4,3,1]",
+      "output": "0 (no profitable transaction)"
+    }
+  ],
+  "constraints": "1 <= prices.length <= 10^5. 0 <= prices[i] <= 10^4.",
+  "python_template": "# Best Time to Buy and Sell Stock\n\nfrom typing import List\n\ndef maxProfit(prices: List[int]) -> int:\n    pass\n",
+  "go_template": "// Best Time to Buy and Sell Stock\n\npackage main\n\nfunc maxProfit(prices []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Best Time to Buy and Sell Stock\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxProfit(vector<int>& prices) {\n    return 0;\n}\n",
+  "java_template": "// Best Time to Buy and Sell Stock\n\nclass Solution {\n    public int maxProfit(int[] prices) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Best Time to Buy and Sell Stock\n\nfunction maxProfit(prices) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise one-pass min-price tracking over 100k price arrays that punish quadratic pair scans locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

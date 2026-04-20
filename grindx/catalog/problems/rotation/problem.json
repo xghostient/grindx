@@ -1,0 +1,39 @@
+{
+  "id": "rotation",
+  "name": "Number of Rotations in Sorted Array",
+  "difficulty": "Easy",
+  "description": "Given a sorted array that has been rotated some number of times, find the number of times the array has been rotated. The number of rotations equals the index of the minimum element.",
+  "examples": [
+    {
+      "input": "arr = [15, 18, 2, 3, 6, 12]",
+      "output": "2"
+    },
+    {
+      "input": "arr = [7, 9, 11, 12, 5]",
+      "output": "4"
+    },
+    {
+      "input": "arr = [1, 2, 3, 4, 5]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. All elements are distinct.",
+  "python_template": "# Number of Rotations in Sorted Array\n\nfrom typing import List\n\ndef countRotations(arr: List[int]) -> int:\n    pass\n",
+  "go_template": "// Number of Rotations in Sorted Array\n\npackage main\n\nfunc countRotations(arr []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Number of Rotations in Sorted Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countRotations(vector<int>& arr) {\n    return 0;\n}\n",
+  "java_template": "// Number of Rotations in Sorted Array\n\nclass Solution {\n    public int countRotations(int[] arr) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Rotations in Sorted Array\n\nfunction countRotations(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100k rotated sorted arrays that punish linear minimum search",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

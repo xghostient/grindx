@@ -1,0 +1,39 @@
+{
+  "id": "hand-of-straights",
+  "name": "Hand of Straights",
+  "difficulty": "Medium",
+  "description": "Alice has some number of cards given as an integer array hand. She wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards. Return true if she can, otherwise return false.",
+  "examples": [
+    {
+      "input": "hand = [1,2,3,6,2,3,4,7,8], groupSize = 3",
+      "output": "true ([1,2,3],[2,3,4],[6,7,8])"
+    },
+    {
+      "input": "hand = [1,2,3,4,5], groupSize = 4",
+      "output": "false"
+    },
+    {
+      "input": "hand = [8,10,12], groupSize = 3",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= hand.length <= 10^4. 0 <= hand[i] <= 10^9. 1 <= groupSize <= hand.length.",
+  "python_template": "# Hand of Straights\n\nfrom typing import List\n\ndef isNStraightHand(hand: List[int], groupSize: int) -> bool:\n    pass\n",
+  "go_template": "// Hand of Straights\n\npackage main\n\nfunc isNStraightHand(hand []int, groupSize int) bool {\n    return false\n}\n",
+  "cpp_template": "// Hand of Straights\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isNStraightHand(vector<int>& hand, int groupSize) {\n    return false;\n}\n",
+  "java_template": "// Hand of Straights\n\nclass Solution {\n    public boolean isNStraightHand(int[] hand, int groupSize) {\n        return false;\n    }\n}\n",
+  "js_template": "// Hand of Straights\n\nfunction isNStraightHand(hand, groupSize) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise large hands that punish unsorted grouping",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

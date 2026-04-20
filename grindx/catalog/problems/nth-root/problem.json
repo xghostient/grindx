@@ -1,0 +1,39 @@
+{
+  "id": "nth-root",
+  "name": "Nth Root of M",
+  "difficulty": "Easy",
+  "description": "Given two integers n and m, find the nth root of m. If the nth root is not an integer, return -1. The nth root of m is a number x such that x^n = m.",
+  "examples": [
+    {
+      "input": "n = 3, m = 27",
+      "output": "3 (3^3 = 27)"
+    },
+    {
+      "input": "n = 4, m = 69",
+      "output": "-1 (no integer x where x^4 = 69)"
+    },
+    {
+      "input": "n = 2, m = 9",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= n <= 30. 1 <= m <= 10^9.",
+  "python_template": "# Nth Root of M\n\ndef nthRoot(n: int, m: int) -> int:\n    \"\"\"Return nth root of m if integer, else -1.\"\"\"\n    pass\n",
+  "go_template": "// Nth Root of M\n\npackage main\n\nfunc nthRoot(n int, m int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Nth Root of M\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint nthRoot(int n, int m) {\n    return 0;\n}\n",
+  "java_template": "// Nth Root of M\n\nclass Solution {\n    public int nthRoot(int n, int m) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Nth Root of M\n\nfunction nthRoot(n, m) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log m)",
+    "accepted_time": [
+      "O(log m)"
+    ],
+    "rejected_time": [
+      "O(m)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large m that punish linear scan for nth root",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

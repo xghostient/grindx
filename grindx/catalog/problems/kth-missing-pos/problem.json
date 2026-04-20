@@ -1,0 +1,35 @@
+{
+  "id": "kth-missing-pos",
+  "name": "Kth Missing Positive Number",
+  "difficulty": "Easy",
+  "description": "Given an array of positive integers sorted in strictly increasing order and an integer k, return the kth positive integer that is missing from the array.",
+  "examples": [
+    {
+      "input": "arr = [2,3,4,7,11], k = 5",
+      "output": "9 (missing: 1,5,6,8,9)"
+    },
+    {
+      "input": "arr = [1,2,3,4], k = 2",
+      "output": "6 (missing: 5,6)"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 1000. 1 <= arr[i] <= 1000. 1 <= k <= 1000. arr is sorted in strictly increasing order.",
+  "python_template": "# Kth Missing Positive Number\n\nfrom typing import List\n\ndef findKthPositive(arr: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Kth Missing Positive Number\n\npackage main\n\nfunc findKthPositive(arr []int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Kth Missing Positive Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findKthPositive(vector<int>& arr, int k) {\n    return 0;\n}\n",
+  "java_template": "// Kth Missing Positive Number\n\nclass Solution {\n    public int findKthPositive(int[] arr, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Kth Missing Positive Number\n\nfunction findKthPositive(arr, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large arrays that punish linear missing number enumeration",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "search-in-rotated-sorted-array-ii",
+  "name": "Search in Rotated Sorted Array II",
+  "difficulty": "Medium",
+  "description": "Given a rotated sorted array that may contain duplicates, return true if target is in the array, false otherwise. Try to minimize the overall operation steps.",
+  "examples": [
+    {
+      "input": "nums = [2,5,6,0,0,1,2], target = 0",
+      "output": "true"
+    },
+    {
+      "input": "nums = [2,5,6,0,0,1,2], target = 3",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 5000. -10^4 <= nums[i] <= 10^4. nums may contain duplicates.",
+  "python_template": "# Search in Rotated Sorted Array II\n\nfrom typing import List\n\ndef search(nums: List[int], target: int) -> bool:\n    pass\n",
+  "go_template": "// Search in Rotated Sorted Array II\n\npackage main\n\nfunc search(nums []int, target int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Search in Rotated Sorted Array II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool search(vector<int>& nums, int target) {\n    return false;\n}\n",
+  "java_template": "// Search in Rotated Sorted Array II\n\nclass Solution {\n    public boolean search(int[] nums, int target) {\n        return false;\n    }\n}\n",
+  "js_template": "// Search in Rotated Sorted Array II\n\nfunction search(nums, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)",
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100k rotated arrays with duplicates",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

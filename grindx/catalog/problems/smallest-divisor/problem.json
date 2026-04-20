@@ -1,0 +1,35 @@
+{
+  "id": "smallest-divisor",
+  "name": "Find the Smallest Divisor Given a Threshold",
+  "difficulty": "Medium",
+  "description": "Given an array of integers nums and an integer threshold, choose a positive integer divisor, divide all elements by it, and sum the division results (rounded up). Find the smallest divisor such that the sum is <= threshold.",
+  "examples": [
+    {
+      "input": "nums = [1,2,5,9], threshold = 6",
+      "output": "5"
+    },
+    {
+      "input": "nums = [44,22,33,11,1], threshold = 5",
+      "output": "44"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 5 * 10^4. 1 <= nums[i] <= 10^6. nums.length <= threshold <= 10^6.",
+  "python_template": "# Find the Smallest Divisor Given a Threshold\n\nfrom typing import List\n\ndef smallestDivisor(nums: List[int], threshold: int) -> int:\n    pass\n",
+  "go_template": "// Find the Smallest Divisor Given a Threshold\n\npackage main\n\nfunc smallestDivisor(nums []int, threshold int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Find the Smallest Divisor Given a Threshold\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint smallestDivisor(vector<int>& nums, int threshold) {\n    return 0;\n}\n",
+  "java_template": "// Find the Smallest Divisor Given a Threshold\n\nclass Solution {\n    public int smallestDivisor(int[] nums, int threshold) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Find the Smallest Divisor Given a Threshold\n\nfunction smallestDivisor(nums, threshold) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log max)",
+    "accepted_time": [
+      "O(n log max)"
+    ],
+    "rejected_time": [
+      "O(n * max)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 10k arrays that punish linear divisor search",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

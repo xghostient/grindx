@@ -1,0 +1,35 @@
+{
+  "id": "serialize-and-deserialize-binary-tree",
+  "name": "Serialize and Deserialize Binary Tree",
+  "difficulty": "Hard",
+  "description": "Design an algorithm to serialize a binary tree to a string and deserialize that string back to the original tree structure. There is no restriction on how your serialization/deserialization algorithm should work.",
+  "examples": [
+    {
+      "input": "root = [1,2,3,null,null,4,5]",
+      "output": "Serialize then deserialize should return the same tree"
+    },
+    {
+      "input": "root = []",
+      "output": "\"\" or similar empty representation"
+    }
+  ],
+  "constraints": "The number of nodes is in [0, 10^4]. -1000 <= Node.val <= 1000.",
+  "python_template": "# Serialize and Deserialize Binary Tree\n\nclass TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\nclass Codec:\n    def serialize(self, root: TreeNode) -> str:\n        pass\n\n    def deserialize(self, data: str) -> TreeNode:\n        pass\n",
+  "go_template": "// Serialize and Deserialize Binary Tree\n\npackage main\n\n\n// type TreeNode struct {\n// \tVal   int\n// \tLeft  *TreeNode\n// \tRight *TreeNode\n// }\n\ntype Codec struct{}\n\nfunc (c *Codec) serialize(root *TreeNode) string {\n\treturn \"\"\n}\n\nfunc (c *Codec) deserialize(data string) *TreeNode {\n\treturn nil\n}\n",
+  "cpp_template": "// Serialize and Deserialize Binary Tree\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Codec {\npublic:\n    Codec() {\n\n    }\n\n    string serialize(TreeNode* root) {\n        return \"\";\n    }\n\n    TreeNode* deserialize(string data) {\n        return nullptr;\n    }\n};\n",
+  "java_template": "// Serialize and Deserialize Binary Tree\n\nimport java.util.*;\n\nclass Codec {\n    public Codec() {\n\n    }\n\n    public String serialize(TreeNode root) {\n        return \"\";\n    }\n\n    public TreeNode deserialize(String data) {\n        return null;\n    }\n}\n",
+  "js_template": "// Serialize and Deserialize Binary Tree\n\nclass Codec {\n    constructor() {\n\n    }\n\n    serialize(root) {\n\n    }\n\n    deserialize(data) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise full-tree codecs and structure preservation; repeated front-pop or subtree rescans are the main slow variants worth rejecting",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

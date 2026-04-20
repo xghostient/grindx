@@ -1,0 +1,39 @@
+{
+  "id": "prime-factorisation",
+  "name": "Prime Factorisation",
+  "difficulty": "Easy",
+  "description": "Given a number n, find all its prime factors and return them in sorted order. Each prime factor should appear as many times as it divides n.",
+  "examples": [
+    {
+      "input": "n = 12",
+      "output": "[2, 2, 3]"
+    },
+    {
+      "input": "n = 100",
+      "output": "[2, 2, 5, 5]"
+    },
+    {
+      "input": "n = 7",
+      "output": "[7]"
+    }
+  ],
+  "constraints": "2 <= n <= 10^6.",
+  "python_template": "# Prime Factorisation\n\nfrom typing import List\n\ndef primeFactors(n: int) -> List[int]:\n    pass\n",
+  "go_template": "// Prime Factorisation\n\npackage main\n\nfunc primeFactors(n int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Prime Factorisation\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> primeFactors(int n) {\n    return {};\n}\n",
+  "java_template": "// Prime Factorisation\n\nclass Solution {\n    public int[] primeFactors(int n) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Prime Factorisation\n\nfunction primeFactors(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(sqrt(n))",
+    "accepted_time": [
+      "O(sqrt(n))"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(log n)",
+    "stress_intent": "exercise large primes and highly composite numbers",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

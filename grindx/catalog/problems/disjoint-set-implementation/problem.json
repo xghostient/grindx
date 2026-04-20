@@ -1,0 +1,36 @@
+{
+  "id": "disjoint-set-implementation",
+  "name": "Disjoint Set Union (Union-Find)",
+  "difficulty": "Medium",
+  "description": "Implement a Disjoint Set Union (Union-Find) data structure with union by rank and path compression. Support: find(x) to find the root of x's set, union(x, y) to merge the sets containing x and y.",
+  "examples": [
+    {
+      "input": "n=5, union(0,1), union(2,3), union(1,3), find(0)==find(3)?",
+      "output": "true (all in same set)"
+    },
+    {
+      "input": "n=5, union(0,1), find(0)==find(4)?",
+      "output": "false (different sets)"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. Operations: union, find.",
+  "python_template": "# Disjoint Set Union (Union-Find)\n\nclass DSU:\n    def __init__(self, n: int):\n        pass\n\n    def find(self, x: int) -> int:\n        pass\n\n    def union(self, x: int, y: int) -> bool:\n        \"\"\"Return False if already in same set.\"\"\"\n        pass\n",
+  "go_template": "// Disjoint Set Union (Union-Find)\n\npackage main\n\ntype DSU struct {\n\tparent []int\n\trank   []int\n}\n\nfunc NewDSU(n int) *DSU {\n\treturn nil\n}\n\nfunc (d *DSU) Find(x int) int {\n\treturn 0\n}\n\nfunc (d *DSU) Union(x, y int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Disjoint Set Union (Union-Find)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass DSU {\npublic:\n    DSU(int n) {\n\n    }\n\n    int Find(int x) {\n        return 0;\n    }\n\n    bool Union(int x, int y) {\n        return false;\n    }\n};\n",
+  "java_template": "// Disjoint Set Union (Union-Find)\n\nimport java.util.*;\n\nclass DSU {\n    public DSU(int n) {\n\n    }\n\n    public int Find(int x) {\n        return 0;\n    }\n\n    public boolean Union(int x, int y) {\n        return false;\n    }\n}\n",
+  "js_template": "// Disjoint Set Union (Union-Find)\n\nvar DSU = class DSU {\n    constructor(n) {\n\n    }\n\n    find(x) {\n\n    }\n\n    union(x, y) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "near O((u + q) alpha(n))",
+    "accepted_time": [
+      "near O((u + q) alpha(n))",
+      "O((u + q) log n)"
+    ],
+    "rejected_time": [
+      "O(n(u + q))"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise union idempotence, transitive connectivity, and same-set queries; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

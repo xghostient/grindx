@@ -1,0 +1,31 @@
+{
+  "id": "walls-and-gates",
+  "name": "Walls and Gates",
+  "difficulty": "Medium",
+  "description": "Given an m x n grid initialized with INF (2^31-1) for empty rooms, 0 for gates, and -1 for walls, fill each empty room with the distance to its nearest gate. If impossible to reach a gate, leave as INF.",
+  "examples": [
+    {
+      "input": "rooms = [[INF,-1,0,INF],[INF,INF,INF,-1],[INF,-1,INF,-1],[0,-1,INF,INF]]",
+      "output": "[[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]"
+    }
+  ],
+  "constraints": "m == rooms.length. n == rooms[i].length. 1 <= m, n <= 250. rooms[i][j] is -1, 0, or 2^31-1.",
+  "python_template": "# Walls and Gates\n\nfrom typing import List\nfrom collections import deque\n\ndef wallsAndGates(rooms: List[List[int]]) -> None:\n    \"\"\"Modify rooms in-place.\"\"\"\n    pass\n",
+  "go_template": "// Walls and Gates\n\npackage main\n\n\nfunc wallsAndGates(rooms [][]int) {\n\n}\n",
+  "cpp_template": "// Walls and Gates\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid wallsAndGates(vector<vector<int>>& rooms) {\n\n}\n",
+  "java_template": "// Walls and Gates\n\nclass Solution {\n    public void wallsAndGates(int[][] rooms) {\n\n    }\n}\n",
+  "js_template": "// Walls and Gates\n\nfunction wallsAndGates(rooms) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise nearest-gate propagation with walls and unreachable rooms; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "word-search",
+  "name": "Word Search",
+  "difficulty": "Medium",
+  "description": "Given an m x n grid of characters board and a string word, return true if word exists in the grid. The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.",
+  "examples": [
+    {
+      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCCED\"",
+      "output": "true"
+    },
+    {
+      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"SEE\"",
+      "output": "true"
+    },
+    {
+      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCB\"",
+      "output": "false"
+    }
+  ],
+  "constraints": "m == board.length. n == board[i].length. 1 <= m, n <= 6. 1 <= word.length <= 15. board and word consist of only lowercase and uppercase English letters.",
+  "python_template": "# Word Search\n\nfrom typing import List\n\ndef exist(board: List[List[str]], word: str) -> bool:\n    pass\n",
+  "go_template": "// Word Search\n\npackage main\n\nfunc exist(board [][]byte, word string) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Word Search\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool exist(vector<string>& board, string& word) {\n    return false;\n}\n",
+  "java_template": "// Word Search\n\nclass Solution {\n    public boolean exist(char[][] board, String word) {\n        return false;\n    }\n}\n",
+  "js_template": "// Word Search\n\nfunction exist(board, word) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m * n * 4^L)",
+    "accepted_time": [
+      "O(m * n * 4^L)",
+      "O(m * n * (m*n)^L)"
+    ],
+    "rejected_time": [
+      "O(m * n * (m*n)^L)"
+    ],
+    "target_space": "O(L)",
+    "stress_intent": "exercise small boards with exhaustive word/board combos",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

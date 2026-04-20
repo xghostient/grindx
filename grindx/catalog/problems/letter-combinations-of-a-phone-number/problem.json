@@ -1,0 +1,40 @@
+{
+  "id": "letter-combinations-of-a-phone-number",
+  "name": "Letter Combinations of a Phone Number",
+  "difficulty": "Medium",
+  "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. The mapping of digit to letters is: 2->abc, 3->def, 4->ghi, 5->jkl, 6->mno, 7->pqrs, 8->tuv, 9->wxyz. Return the answer in any order. If the input is empty, return an empty list.",
+  "examples": [
+    {
+      "input": "digits = \"23\"",
+      "output": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
+    },
+    {
+      "input": "digits = \"\"",
+      "output": "[]"
+    },
+    {
+      "input": "digits = \"2\"",
+      "output": "[\"a\",\"b\",\"c\"]"
+    }
+  ],
+  "constraints": "0 <= digits.length <= 4. digits[i] is a digit in the range ['2', '9'].",
+  "python_template": "# Letter Combinations of a Phone Number\n\nfrom typing import List\n\ndef letterCombinations(digits: str) -> List[str]:\n    pass\n",
+  "go_template": "// Letter Combinations of a Phone Number\n\npackage main\n\nfunc letterCombinations(digits string) []string {\n\treturn []string{}\n}\n",
+  "cpp_template": "// Letter Combinations of a Phone Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> letterCombinations(string& digits) {\n    return {};\n}\n",
+  "java_template": "// Letter Combinations of a Phone Number\n\nclass Solution {\n    public String[] letterCombinations(String digits) {\n        return new String[]{};\n    }\n}\n",
+  "js_template": "// Letter Combinations of a Phone Number\n\nfunction letterCombinations(digits) {\n\n}\n",
+  "performance": {
+    "target_time": "O(4^n)",
+    "accepted_time": [
+      "O(4^n)",
+      "O(n * 4^n)"
+    ],
+    "rejected_time": [
+      "O(n * 4^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise all digit combos up to length 4",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

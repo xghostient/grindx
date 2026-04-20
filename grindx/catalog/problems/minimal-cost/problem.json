@@ -1,0 +1,36 @@
+{
+  "id": "minimal-cost",
+  "name": "Minimal Cost (K jumps)",
+  "difficulty": "Medium",
+  "category": "1D DP",
+  "description": "A frog can jump from stair i to any stair from i+1 to i+k. The cost of jumping from i to j is abs(height[i] - height[j]). Find the minimum cost to reach the last stair from the first.",
+  "examples": [
+    {
+      "input": "heights = [10, 30, 40, 50, 20], k = 3",
+      "output": "30"
+    },
+    {
+      "input": "heights = [10, 20, 10], k = 1",
+      "output": "20"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5, 1 <= k <= n",
+  "python_template": "def minimalCost(heights: list[int], k: int) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc minimalCost(heights []int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Minimal Cost (K jumps)\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minimalCost(vector<int>& heights, int k) {\n    return 0;\n}\n",
+  "java_template": "// Minimal Cost (K jumps)\n\nclass Solution {\n    public int minimalCost(int[] heights, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimal Cost (K jumps)\n\nfunction minimalCost(heights, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * k)",
+    "accepted_time": [
+      "O(n * k)"
+    ],
+    "rejected_time": [
+      "O(k^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate k-jump DP from plain recursive branching using longer profiles with multiple viable jump lengths",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

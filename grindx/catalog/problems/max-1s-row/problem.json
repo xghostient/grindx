@@ -1,0 +1,35 @@
+{
+  "id": "max-1s-row",
+  "name": "Row with Maximum Number of 1s",
+  "difficulty": "Easy",
+  "description": "Given a 2D binary matrix where each row is sorted (0s before 1s), find the row with the maximum number of 1s. If multiple rows have the same count, return the smallest index.",
+  "examples": [
+    {
+      "input": "mat = [[0,1,1,1],[0,0,1,1],[1,1,1,1],[0,0,0,0]]",
+      "output": "2 (row 2 has 4 ones)"
+    },
+    {
+      "input": "mat = [[0,0],[0,1]]",
+      "output": "1 (row 1 has 1 one)"
+    }
+  ],
+  "constraints": "1 <= m, n <= 100. matrix[i][j] is 0 or 1. Each row is sorted in non-decreasing order.",
+  "python_template": "# Row with Maximum Number of 1s\n\nfrom typing import List\n\ndef rowWithMax1s(mat: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Row with Maximum Number of 1s\n\npackage main\n\nfunc rowWithMax1s(mat [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Row with Maximum Number of 1s\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint rowWithMax1s(vector<vector<int>>& mat) {\n    return 0;\n}\n",
+  "java_template": "// Row with Maximum Number of 1s\n\nclass Solution {\n    public int rowWithMax1s(int[][] mat) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Row with Maximum Number of 1s\n\nfunction rowWithMax1s(mat) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m + n)",
+    "accepted_time": [
+      "O(m + n)"
+    ],
+    "rejected_time": [
+      "O(m*n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large binary matrices that punish scanning every element",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

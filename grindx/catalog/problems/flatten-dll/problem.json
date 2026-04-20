@@ -1,0 +1,31 @@
+{
+  "id": "flatten-dll",
+  "name": "Flatten a Linked List with Next and Bottom Pointers",
+  "difficulty": "Medium",
+  "description": "Given a linked list where every node has two pointers: next (right) and bottom (down). All bottom lists are sorted. Merge all lists into a single sorted list using the bottom pointer. Return the head.",
+  "examples": [
+    {
+      "input": "5->10->19->28, with bottom lists: 5->7->8->30, 10->20, 19->22->50, 28->35->40->45",
+      "output": "5->7->8->10->19->20->22->28->30->35->40->45->50"
+    }
+  ],
+  "constraints": "Number of nodes <= 500. 1 <= Node.val <= 1000. All bottom lists are sorted.",
+  "python_template": "# Flatten a Linked List with Next and Bottom Pointers\n\nclass Node:\n    def __init__(self, val=0, next=None, bottom=None):\n        self.val = val\n        self.next = next\n        self.bottom = bottom\n\ndef flatten(head: Node) -> Node:\n    pass\n",
+  "go_template": "            // Flatten a Linked List with Next and Bottom Pointers\n\n            package main\n\n            // Definition for a node with next and bottom pointers.\n            // type Node struct {\n//     Val    int\n//     Next   *Node\n//     Bottom *Node\n// }\n\n            func flatten(head *Node) *Node {\n            \treturn nil\n            }\n",
+  "cpp_template": "            // Flatten a Linked List with Next and Bottom Pointers\n\n            #include <bits/stdc++.h>\n            using namespace std;\n\n            // Definition for a node with next and bottom pointers.\n            // struct Node {\n//     int val;\n//     Node* next;\n//     Node* bottom;\n//     Node(int val = 0, Node* next = nullptr, Node* bottom = nullptr) : val(val), next(next), bottom(bottom) {}\n// };\n\n            Node* flatten(Node* head) {\n                return nullptr;\n            }\n",
+  "java_template": "// Flatten a Linked List with Next and Bottom Pointers\n\nclass Node {\n    int val;\n    Node next;\n    Node bottom;\n    Node(int val) { this.val = val; }\n}\n\nclass Solution {\n    public Node flatten(Node head) {\n        return null;\n    }\n}\n",
+  "js_template": "// Flatten a Linked List with Next and Bottom Pointers\n\nclass Node {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n        this.bottom = null;\n    }\n}\n\nfunction flatten(head) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log k)",
+    "accepted_time": [
+      "O(n log k)",
+      "O(nk)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(k) heap or O(1) recursive merge",
+    "stress_intent": "exercise many sorted bottom chains that punish flatten-then-full-sort or repeated full rescans instead of structured merges",
+    "enforcement": "best-effort-local"
+  }
+}

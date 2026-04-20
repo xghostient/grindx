@@ -1,0 +1,40 @@
+{
+  "id": "two-sum",
+  "name": "Two Sum",
+  "difficulty": "Easy",
+  "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.",
+  "examples": [
+    {
+      "input": "nums = [2,7,11,15], target = 9",
+      "output": "[0,1]"
+    },
+    {
+      "input": "nums = [3,2,4], target = 6",
+      "output": "[1,2]"
+    },
+    {
+      "input": "nums = [3,3], target = 6",
+      "output": "[0,1]"
+    }
+  ],
+  "constraints": "2 <= nums.length <= 10^4. -10^9 <= nums[i] <= 10^9. -10^9 <= target <= 10^9. Only one valid answer exists.",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "prefer hash-map solutions; pair-scan should fail if constraints or time budget permit separation",
+    "reference_solution_required": true,
+    "notes": "Published constraints may not cleanly separate O(n) from O(n^2) on every runtime.",
+    "enforcement": "best-effort-local"
+  },
+  "python_template": "# Two Sum\n\nfrom typing import List\n\ndef twoSum(nums: List[int], target: int) -> List[int]:\n    pass\n",
+  "go_template": "// Two Sum\n\npackage main\n\nfunc twoSum(nums []int, target int) []int {\n    return nil\n}\n",
+  "cpp_template": "// Two Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> twoSum(vector<int>& nums, int target) {\n    return {};\n}\n",
+  "java_template": "// Two Sum\n\nclass Solution {\n    public int[] twoSum(int[] nums, int target) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Two Sum\n\nfunction twoSum(nums, target) {\n\n}\n"
+}

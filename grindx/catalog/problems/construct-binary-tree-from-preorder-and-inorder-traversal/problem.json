@@ -1,0 +1,35 @@
+{
+  "id": "construct-binary-tree-from-preorder-and-inorder-traversal",
+  "name": "Construct Binary Tree from Preorder and Inorder Traversal",
+  "difficulty": "Medium",
+  "description": "Given two integer arrays preorder and inorder where preorder is the preorder traversal and inorder is the inorder traversal of the same tree, construct and return the binary tree.",
+  "examples": [
+    {
+      "input": "preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]",
+      "output": "[3,9,20,null,null,15,7]"
+    },
+    {
+      "input": "preorder = [-1], inorder = [-1]",
+      "output": "[-1]"
+    }
+  ],
+  "constraints": "1 <= preorder.length <= 3000. inorder.length == preorder.length. -3000 <= preorder[i], inorder[i] <= 3000. All values are unique.",
+  "python_template": "# Construct Binary Tree from Preorder and Inorder Traversal\n\nfrom typing import List, Optional\n\nclass TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef buildTree(preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:\n    pass\n",
+  "go_template": "// Construct Binary Tree from Preorder and Inorder Traversal\n\npackage main\n\n// type TreeNode struct {\n// \tVal   int\n// \tLeft  *TreeNode\n// \tRight *TreeNode\n// }\n\nfunc buildTree(preorder []int, inorder []int) *TreeNode {\n\treturn nil\n}\n",
+  "cpp_template": "// Construct Binary Tree from Preorder and Inorder Traversal\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// struct TreeNode {\n//     int val;\n//     TreeNode* left;\n//     TreeNode* right;\n//     TreeNode(int val = 0, TreeNode* left = nullptr, TreeNode* right = nullptr) : val(val), left(left), right(right) {}\n// };\n\nTreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {\n    return nullptr;\n}\n",
+  "java_template": "// Construct Binary Tree from Preorder and Inorder Traversal\n\nclass TreeNode {\n    int val;\n    TreeNode left;\n    TreeNode right;\n    TreeNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public TreeNode buildTree(int[] preorder, int[] inorder) {\n        return null;\n    }\n}\n",
+  "js_template": "// Construct Binary Tree from Preorder and Inorder Traversal\n\nclass TreeNode {\n    constructor(val) {\n        this.val = val;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nfunction buildTree(preorder, inorder) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill traversal reconstruction that uses repeated linear index lookups and slicing on long skewed trees",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

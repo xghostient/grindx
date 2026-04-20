@@ -1,0 +1,35 @@
+{
+  "id": "stack-using-linkedlist",
+  "name": "Implement Stack Using Linked List",
+  "difficulty": "Easy",
+  "description": "Implement a stack using a singly linked list. The stack should support push, pop, top, and isEmpty operations, all in O(1) time.",
+  "examples": [
+    {
+      "input": "push(1), push(2), push(3), top(), pop(), top()",
+      "output": "3, 3, 2"
+    },
+    {
+      "input": "push(5), isEmpty(), pop(), isEmpty()",
+      "output": "false, 5, true"
+    }
+  ],
+  "constraints": "1 <= value <= 10^5. At most 10^4 operations.",
+  "python_template": "# Implement Stack Using Linked List\n\nclass Node:\n    def __init__(self, val: int):\n        self.val = val\n        self.next = None\n\nclass Stack:\n    def __init__(self):\n        pass\n\n    def push(self, val: int) -> None:\n        pass\n\n    def pop(self) -> int:\n        pass\n\n    def top(self) -> int:\n        pass\n\n    def isEmpty(self) -> bool:\n        pass\n",
+  "go_template": "// Implement Stack Using Linked List\n\npackage main\n\ntype Stack struct {\n}\n\nfunc (s *Stack) Push(val int) {\n}\n\nfunc (s *Stack) Pop() int {\n    return 0\n}\n\nfunc (s *Stack) Top() int {\n    return 0\n}\n\nfunc (s *Stack) IsEmpty() bool {\n    return true\n}\n",
+  "cpp_template": "// Implement Stack Using Linked List\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Stack {\npublic:\n    Stack() {\n\n    }\n\n    void Push(int val) {\n\n    }\n\n    int Pop() {\n        return 0;\n    }\n\n    int Top() {\n        return 0;\n    }\n\n    bool IsEmpty() {\n        return false;\n    }\n};\n",
+  "java_template": "// Implement Stack Using Linked List\n\nimport java.util.*;\n\nclass Stack {\n    public Stack() {\n\n    }\n\n    public void Push(int val) {\n\n    }\n\n    public int Pop() {\n        return 0;\n    }\n\n    public int Top() {\n        return 0;\n    }\n\n    public boolean IsEmpty() {\n        return false;\n    }\n}\n",
+  "js_template": "// Implement Stack Using Linked List\n\nclass Stack {\n    constructor() {\n\n    }\n\n    push(val) {\n\n    }\n\n    pop() {\n\n    }\n\n    top() {\n\n    }\n\n    isEmpty() {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(1)/op",
+    "accepted_time": [
+      "O(1)/op"
+    ],
+    "rejected_time": [
+      "O(n) per top",
+      "O(n) per pop"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "deep stack operations punish tail traversal or rebuilding",
+    "enforcement": "best-effort-local"
+  }
+}

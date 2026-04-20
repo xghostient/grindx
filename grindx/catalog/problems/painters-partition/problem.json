@@ -1,0 +1,35 @@
+{
+  "id": "painters-partition",
+  "name": "Painter's Partition Problem",
+  "difficulty": "Hard",
+  "description": "Given an array of board lengths and k painters, each painter paints contiguous boards. Each unit of board takes 1 unit of time. Find the minimum time to paint all boards. (Same pattern as book allocation / split array largest sum.)",
+  "examples": [
+    {
+      "input": "boards = [10, 20, 30, 40], k = 2",
+      "output": "60 (painter1: [10,20,30], painter2: [40])"
+    },
+    {
+      "input": "boards = [5, 5, 5, 5], k = 2",
+      "output": "10"
+    }
+  ],
+  "constraints": "1 <= boards.length <= 10^5. 1 <= boards[i] <= 10^6. 1 <= k <= boards.length.",
+  "python_template": "# Painter's Partition Problem\n\nfrom typing import List\n\ndef paintersPartition(boards: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Painter's Partition Problem\n\npackage main\n\nfunc paintersPartition(boards []int, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Painter's Partition Problem\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint paintersPartition(vector<int>& boards, int k) {\n    return 0;\n}\n",
+  "java_template": "// Painter's Partition Problem\n\nclass Solution {\n    public int paintersPartition(int[] boards, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Painter's Partition Problem\n\nfunction paintersPartition(boards, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log sum)",
+    "accepted_time": [
+      "O(n log sum)"
+    ],
+    "rejected_time": [
+      "O(n * sum)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 10k boards that punish linear partition search",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

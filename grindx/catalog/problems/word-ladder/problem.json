@@ -1,0 +1,36 @@
+{
+  "id": "word-ladder",
+  "name": "Word Ladder",
+  "difficulty": "Hard",
+  "description": "Given beginWord, endWord, and a wordList, find the length of the shortest transformation sequence from beginWord to endWord. Each transformation changes exactly one letter, and each intermediate word must be in wordList. Return 0 if no sequence exists.",
+  "examples": [
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "output": "5 (hit->hot->dot->dog->cog)"
+    },
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+      "output": "0 (endWord not in wordList)"
+    }
+  ],
+  "constraints": "1 <= beginWord.length <= 10. endWord.length == beginWord.length. 1 <= wordList.length <= 5000. All words have the same length. All lowercase English letters.",
+  "python_template": "# Word Ladder\n\nfrom typing import List\nfrom collections import deque\n\ndef ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:\n    pass\n",
+  "go_template": "// Word Ladder\n\npackage main\n\nfunc ladderLength(beginWord string, endWord string, wordList []string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Word Ladder\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint ladderLength(string& beginWord, string& endWord, vector<string>& wordList) {\n    return 0;\n}\n",
+  "java_template": "// Word Ladder\n\nclass Solution {\n    public int ladderLength(String beginWord, String endWord, String[] wordList) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Word Ladder\n\nfunction ladderLength(beginWord, endWord, wordList) {\n\n}\n",
+  "performance": {
+    "target_time": "O(N * L * alphabet)",
+    "accepted_time": [
+      "O(N * L * alphabet)",
+      "O(N^2 * L)"
+    ],
+    "rejected_time": [
+      "O(N^3 * L)"
+    ],
+    "target_space": "O(N * L)",
+    "stress_intent": "exercise shortest-path BFS over dense small dictionaries; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

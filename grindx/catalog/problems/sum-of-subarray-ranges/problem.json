@@ -1,0 +1,39 @@
+{
+  "id": "sum-of-subarray-ranges",
+  "name": "Sum of Subarray Ranges",
+  "difficulty": "Medium",
+  "description": "You are given an integer array nums. The range of a subarray is the difference between the max and min element in the subarray. Return the sum of all subarray ranges. Hint: sum of ranges = sum of subarray maximums - sum of subarray minimums.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "4 (ranges: [1]=0,[2]=0,[3]=0,[1,2]=1,[2,3]=1,[1,2,3]=2)"
+    },
+    {
+      "input": "nums = [1,3,3]",
+      "output": "4"
+    },
+    {
+      "input": "nums = [4,-2,-3,4,1]",
+      "output": "59"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 1000. -10^9 <= nums[i] <= 10^9.",
+  "python_template": "# Sum of Subarray Ranges\n\nfrom typing import List\n\ndef subArrayRanges(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Sum of Subarray Ranges\n\npackage main\n\nfunc subArrayRanges(nums []int) int64 {\n\treturn 0\n}\n",
+  "cpp_template": "// Sum of Subarray Ranges\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nlong long subArrayRanges(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Sum of Subarray Ranges\n\nclass Solution {\n    public long subArrayRanges(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Sum of Subarray Ranges\n\nfunction subArrayRanges(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "n=1000 arrays punish recomputing min and max for every subarray",
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "merge-sorted-array",
+  "name": "Merge Sorted Array",
+  "difficulty": "Easy",
+  "description": "You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n representing the number of elements in nums1 and nums2 respectively. Merge nums2 into nums1 as one sorted array in-place. nums1 has length m + n, where the last n elements are set to 0 and should be ignored. Hint: use two pointers starting from the end.",
+  "examples": [
+    {
+      "input": "nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3",
+      "output": "[1,2,2,3,5,6]"
+    },
+    {
+      "input": "nums1 = [1], m = 1, nums2 = [], n = 0",
+      "output": "[1]"
+    },
+    {
+      "input": "nums1 = [0], m = 0, nums2 = [1], n = 1",
+      "output": "[1]"
+    }
+  ],
+  "constraints": "nums1.length == m + n. nums2.length == n. 0 <= m, n <= 200. 1 <= m + n <= 200.",
+  "python_template": "# Merge Sorted Array\n\nfrom typing import List\n\ndef merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:\n    pass\n",
+  "go_template": "// Merge Sorted Array\n\npackage main\n\nfunc merge(nums1 []int, m int, nums2 []int, n int) {\n\n}\n",
+  "cpp_template": "// Merge Sorted Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {\n\n}\n",
+  "java_template": "// Merge Sorted Array\n\nclass Solution {\n    public void merge(int[] nums1, int m, int[] nums2, int n) {\n\n    }\n}\n",
+  "js_template": "// Merge Sorted Array\n\nfunction merge(nums1, m, nums2, n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m + n)",
+    "accepted_time": [
+      "O(m + n)"
+    ],
+    "rejected_time": [
+      "O((m+n)^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 200-length in-place merges that punish repeated insertion and front shifting",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

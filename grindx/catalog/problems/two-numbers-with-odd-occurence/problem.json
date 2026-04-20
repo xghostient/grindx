@@ -1,0 +1,35 @@
+{
+  "id": "two-numbers-with-odd-occurence",
+  "name": "Two Numbers with Odd Occurrences",
+  "difficulty": "Medium",
+  "description": "Given an array where every element occurs twice except two elements which occur once. Find those two elements. Hint: XOR all elements to get a^b, then use a set bit to partition elements into two groups.",
+  "examples": [
+    {
+      "input": "arr = [4, 2, 4, 5, 2, 3, 3, 1]",
+      "output": "[5, 1]"
+    },
+    {
+      "input": "arr = [2, 3, 2, 4]",
+      "output": "[3, 4]"
+    }
+  ],
+  "constraints": "2 <= arr.length <= 10^6. arr.length is even. Exactly two elements appear once.",
+  "python_template": "# Two Numbers with Odd Occurrences\n\nfrom typing import List\n\ndef twoOddOccurrences(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Two Numbers with Odd Occurrences\n\npackage main\n\nfunc twoOddOccurrences(arr []int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Two Numbers with Odd Occurrences\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> twoOddOccurrences(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Two Numbers with Odd Occurrences\n\nclass Solution {\n    public int[] twoOddOccurrences(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Two Numbers with Odd Occurrences\n\nfunction twoOddOccurrences(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n log n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large arrays to distinguish XOR from sorting/hashing",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

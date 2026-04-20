@@ -1,0 +1,40 @@
+{
+  "id": "page-fault",
+  "name": "Page Faults in LRU",
+  "difficulty": "Easy",
+  "description": "In operating systems, a page fault occurs when a running program accesses a page that is not currently in memory. Given a sequence of page requests and memory capacity, find the total number of page faults using the Least Recently Used (LRU) page replacement algorithm.",
+  "examples": [
+    {
+      "input": "pages = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2], capacity = 4",
+      "output": "7"
+    },
+    {
+      "input": "pages = [1, 2, 3, 4, 1, 2], capacity = 3",
+      "output": "5"
+    },
+    {
+      "input": "pages = [1, 1, 1], capacity = 1",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= pages.length <= 10^5. 0 <= pages[i] <= 10^4. 1 <= capacity <= pages.length.",
+  "python_template": "# Page Faults in LRU\n\nfrom typing import List\n\ndef pageFaults(pages: List[int], capacity: int) -> int:\n    pass\n",
+  "go_template": "// Page Faults in LRU\n\npackage main\n\nfunc pageFaults(pages []int, capacity int) int {\n    return 0\n}\n",
+  "cpp_template": "// Page Faults in LRU\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint pageFaults(vector<int>& pages, int capacity) {\n    return 0;\n}\n",
+  "java_template": "// Page Faults in LRU\n\nclass Solution {\n    public int pageFaults(int[] pages, int capacity) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Page Faults in LRU\n\nfunction pageFaults(pages, capacity) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * capacity)",
+    "accepted_time": [
+      "O(n * capacity)",
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(capacity)",
+    "stress_intent": "exercise large page sequences that punish quadratic cache management",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

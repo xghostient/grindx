@@ -1,0 +1,40 @@
+{
+  "id": "lowest-common-ancestor-of-a-binary-search-tree",
+  "name": "Lowest Common Ancestor of a Binary Search Tree",
+  "difficulty": "Medium",
+  "description": "Given a BST, find the lowest common ancestor (LCA) of two given nodes p and q. The LCA is the lowest node that has both p and q as descendants (a node can be a descendant of itself).",
+  "examples": [
+    {
+      "input": "root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8",
+      "output": "6"
+    },
+    {
+      "input": "root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4",
+      "output": "2"
+    },
+    {
+      "input": "root = [2,1], p = 2, q = 1",
+      "output": "2"
+    }
+  ],
+  "constraints": "The number of nodes is in [2, 10^5]. -10^9 <= Node.val <= 10^9. All values are unique. p != q. p and q exist in the BST.",
+  "python_template": "# Lowest Common Ancestor of a Binary Search Tree\n\nclass TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:\n    pass\n",
+  "go_template": "// Lowest Common Ancestor of a Binary Search Tree\n\npackage main\n\n// type TreeNode struct {\n// \tVal   int\n// \tLeft  *TreeNode\n// \tRight *TreeNode\n// }\n\nfunc lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {\n\treturn nil\n}\n",
+  "cpp_template": "// Lowest Common Ancestor of a Binary Search Tree\n\n#include <bits/stdc++.h>\nusing namespace std;\n\n// struct TreeNode {\n//     int val;\n//     TreeNode* left;\n//     TreeNode* right;\n//     TreeNode(int val = 0, TreeNode* left = nullptr, TreeNode* right = nullptr) : val(val), left(left), right(right) {}\n// };\n\nTreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {\n    return nullptr;\n}\n",
+  "java_template": "// Lowest Common Ancestor of a Binary Search Tree\n\nclass TreeNode {\n    int val;\n    TreeNode left;\n    TreeNode right;\n    TreeNode(int val) { this.val = val; }\n}\n\nclass Solution {\n    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\n        return null;\n    }\n}\n",
+  "js_template": "// Lowest Common Ancestor of a Binary Search Tree\n\nclass TreeNode {\n    constructor(val) {\n        this.val = val;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nfunction lowestCommonAncestor(root, p, q) {\n\n}\n",
+  "performance": {
+    "target_time": "O(h)",
+    "accepted_time": [
+      "O(h)",
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(h)",
+    "stress_intent": "exercise ancestor handling and BST branch decisions; skewed trees make linear scans acceptable under the posted constraints",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

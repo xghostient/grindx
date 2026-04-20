@@ -1,0 +1,36 @@
+{
+  "id": "m-coloring-problem",
+  "name": "M-Coloring Problem",
+  "difficulty": "Medium",
+  "description": "Given an undirected graph represented as an adjacency list and an integer m, determine if the graph can be colored with at most m colors such that no two adjacent vertices share the same color. Return true if possible, false otherwise.",
+  "examples": [
+    {
+      "input": "n = 4, edges = [[0,1],[1,2],[2,3],[3,0],[0,2]], m = 3",
+      "output": "true"
+    },
+    {
+      "input": "n = 3, edges = [[0,1],[1,2],[0,2]], m = 2",
+      "output": "false (triangle needs at least 3 colors)"
+    }
+  ],
+  "constraints": "1 <= n <= 20. 1 <= m <= n. 0 <= edges.length <= n*(n-1)/2.",
+  "python_template": "# M-Coloring Problem\n\nfrom typing import List\n\ndef graphColoring(n: int, edges: List[List[int]], m: int) -> bool:\n    pass\n",
+  "go_template": "// M-Coloring Problem\n\npackage main\n\nfunc graphColoring(n int, edges [][]int, m int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// M-Coloring Problem\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool graphColoring(int n, vector<vector<int>>& edges, int m) {\n    return false;\n}\n",
+  "java_template": "// M-Coloring Problem\n\nclass Solution {\n    public boolean graphColoring(int n, int[][] edges, int m) {\n        return false;\n    }\n}\n",
+  "js_template": "// M-Coloring Problem\n\nfunction graphColoring(n, edges, m) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m^V)",
+    "accepted_time": [
+      "O(m^V)",
+      "O(V * m^V)"
+    ],
+    "rejected_time": [
+      "O(V! * m^V)"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "exercise dense graphs that confirm backtracking pruning",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

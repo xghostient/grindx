@@ -1,0 +1,35 @@
+{
+  "id": "smallest-distance-threshold",
+  "name": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+  "difficulty": "Medium",
+  "description": "Given n cities and weighted edges, find the city with the smallest number of cities reachable within distanceThreshold. If tied, return the city with the greatest number.",
+  "examples": [
+    {
+      "input": "n=4, edges=[[0,1,3],[1,2,1],[1,3,4],[2,3,1]], distanceThreshold=4",
+      "output": "3"
+    },
+    {
+      "input": "n=5, edges=[[0,1,2],[0,4,8],[1,2,3],[1,4,2],[2,3,1],[3,4,1]], distanceThreshold=2",
+      "output": "0"
+    }
+  ],
+  "constraints": "2 <= n <= 100. 1 <= edges.length <= n*(n-1)/2. 1 <= weight, distanceThreshold <= 10^4.",
+  "python_template": "# Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\nfrom typing import List\n\ndef findTheCity(n: int, edges: List[List[int]], distanceThreshold: int) -> int:\n    pass\n",
+  "go_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\npackage main\n\nfunc findTheCity(n int, edges [][]int, distanceThreshold int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {\n    return 0;\n}\n",
+  "java_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\nclass Solution {\n    public int findTheCity(int n, int[][] edges, int distanceThreshold) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Find the City With the Smallest Number of Neighbors at a Threshold Distance\n\nfunction findTheCity(n, edges, distanceThreshold) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V^3)",
+    "accepted_time": [
+      "O(V^3)"
+    ],
+    "rejected_time": [
+      "O(V^4)"
+    ],
+    "target_space": "O(V^2)",
+    "stress_intent": "exercise threshold counting and tie-breaking toward larger city indices; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

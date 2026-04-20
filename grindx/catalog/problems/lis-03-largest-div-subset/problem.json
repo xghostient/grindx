@@ -1,0 +1,36 @@
+{
+  "id": "lis-03-largest-div-subset",
+  "name": "Largest Divisible Subset",
+  "difficulty": "Medium",
+  "category": "LIS",
+  "description": "Given a set of distinct positive integers, find the largest subset such that every pair (a, b) satisfies a % b == 0 or b % a == 0.",
+  "examples": [
+    {
+      "input": "nums = [1, 2, 3]",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "nums = [1, 2, 4, 8]",
+      "output": "[1, 2, 4, 8]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 1000, 1 <= nums[i] <= 2*10^9",
+  "python_template": "def largestDivisibleSubset(nums: list[int]) -> list[int]:\n    pass\n",
+  "go_template": "package main\n\nfunc largestDivisibleSubset(nums []int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Largest Divisible Subset\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> largestDivisibleSubset(vector<int>& nums) {\n    return {};\n}\n",
+  "java_template": "// Largest Divisible Subset\n\nclass Solution {\n    public int[] largestDivisibleSubset(int[] nums) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Largest Divisible Subset\n\nfunction largestDivisibleSubset(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate largest-divisible-subset DP from exponential subset recursion while accepting any valid maximum divisible subset",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

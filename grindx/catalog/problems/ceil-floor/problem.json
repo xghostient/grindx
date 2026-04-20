@@ -1,0 +1,39 @@
+{
+  "id": "ceil-floor",
+  "name": "Ceil and Floor in Sorted Array",
+  "difficulty": "Easy",
+  "description": "Given a sorted array and a target value x, find the floor and ceiling of x. Floor is the largest element <= x. Ceiling is the smallest element >= x. If floor or ceiling doesn't exist, return -1.",
+  "examples": [
+    {
+      "input": "arr = [1, 2, 8, 10, 10, 12, 19], x = 5",
+      "output": "Floor: 2, Ceil: 8"
+    },
+    {
+      "input": "arr = [1, 2, 8, 10, 10, 12, 19], x = 10",
+      "output": "Floor: 10, Ceil: 10"
+    },
+    {
+      "input": "arr = [1, 2, 8, 10, 10, 12, 19], x = 20",
+      "output": "Floor: 19, Ceil: -1"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. 1 <= arr[i] <= 10^6. Array is sorted in non-decreasing order.",
+  "python_template": "# Ceil and Floor in Sorted Array\n\nfrom typing import List, Tuple\n\ndef findFloorCeil(arr: List[int], x: int) -> Tuple[int, int]:\n    \"\"\"Return (floor, ceil). Use -1 if not found.\"\"\"\n    pass\n",
+  "go_template": "// Ceil and Floor in Sorted Array\n\npackage main\n\nfunc findFloorCeil(arr []int, x int) (int, int) {\n\treturn -1, -1\n}\n",
+  "cpp_template": "// Ceil and Floor in Sorted Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\npair<int,int> findFloorCeil(vector<int>& arr, int x) {\n    return {-1, -1};\n}\n",
+  "java_template": "// Ceil and Floor in Sorted Array\n\nclass Solution {\n    public int[] findFloorCeil(int[] arr, int x) {\n        return new int[]{-1, -1};\n    }\n}\n",
+  "js_template": "// Ceil and Floor in Sorted Array\n\nfunction findFloorCeil(arr, x) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100k sorted arrays that punish linear ceil-floor search",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

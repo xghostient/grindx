@@ -1,0 +1,39 @@
+{
+  "id": "sum-of-two-integers",
+  "name": "Sum of Two Integers",
+  "difficulty": "Medium",
+  "description": "Given two integers a and b, return the sum of the two integers without using the operators + and -. Use bitwise operations (XOR for sum without carry, AND + shift for carry).",
+  "examples": [
+    {
+      "input": "a = 1, b = 2",
+      "output": "3"
+    },
+    {
+      "input": "a = 2, b = 3",
+      "output": "5"
+    },
+    {
+      "input": "a = -1, b = 1",
+      "output": "0"
+    }
+  ],
+  "constraints": "-1000 <= a, b <= 1000.",
+  "python_template": "# Sum of Two Integers\n\ndef getSum(a: int, b: int) -> int:\n    pass\n",
+  "go_template": "// Sum of Two Integers\n\npackage main\n\nfunc getSum(a int, b int) int {\n    return 0\n}\n",
+  "cpp_template": "// Sum of Two Integers\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint getSum(int a, int b) {\n    return 0;\n}\n",
+  "java_template": "// Sum of Two Integers\n\nclass Solution {\n    public int getSum(int a, int b) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Sum of Two Integers\n\nfunction getSum(a, b) {\n\n}\n",
+  "performance": {
+    "target_time": "O(1)",
+    "accepted_time": [
+      "O(1)"
+    ],
+    "rejected_time": [
+      "unbounded iterative addition"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "focus on signed-addition correctness across negative and positive boundaries within the published range",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

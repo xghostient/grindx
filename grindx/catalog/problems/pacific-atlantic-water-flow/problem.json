@@ -1,0 +1,35 @@
+{
+  "id": "pacific-atlantic-water-flow",
+  "name": "Pacific Atlantic Water Flow",
+  "difficulty": "Medium",
+  "description": "Given an m x n matrix of heights, water can flow from a cell to an adjacent cell (4-directionally) if the adjacent cell's height is <= current. The Pacific ocean touches the top and left edges. The Atlantic ocean touches the bottom and right edges. Return a list of cells where water can flow to both oceans.",
+  "examples": [
+    {
+      "input": "heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]",
+      "output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]"
+    },
+    {
+      "input": "heights = [[1]]",
+      "output": "[[0,0]]"
+    }
+  ],
+  "constraints": "m == heights.length. n == heights[i].length. 1 <= m, n <= 200. 0 <= heights[i][j] <= 10^5.",
+  "python_template": "# Pacific Atlantic Water Flow\n\nfrom typing import List\n\ndef pacificAtlantic(heights: List[List[int]]) -> List[List[int]]:\n    pass\n",
+  "go_template": "// Pacific Atlantic Water Flow\n\npackage main\n\nfunc pacificAtlantic(heights [][]int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// Pacific Atlantic Water Flow\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {\n    return {};\n}\n",
+  "java_template": "// Pacific Atlantic Water Flow\n\nclass Solution {\n    public int[][] pacificAtlantic(int[][] heights) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// Pacific Atlantic Water Flow\n\nfunction pacificAtlantic(heights) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise reverse-reachability from both oceans and unordered coordinate outputs; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

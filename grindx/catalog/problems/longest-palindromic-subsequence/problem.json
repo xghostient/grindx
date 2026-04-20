@@ -1,0 +1,36 @@
+{
+  "id": "longest-palindromic-subsequence",
+  "name": "Longest Palindromic Subsequence",
+  "difficulty": "Medium",
+  "category": "Strings DP",
+  "description": "Given a string s, find the length of the longest palindromic subsequence. A subsequence is a sequence that can be derived by deleting some or no elements without changing the order of the remaining elements.",
+  "examples": [
+    {
+      "input": "s = \"bbbab\"",
+      "output": "4 (\"bbbb\")"
+    },
+    {
+      "input": "s = \"cbbd\"",
+      "output": "2 (\"bb\")"
+    }
+  ],
+  "constraints": "1 <= s.length <= 1000. s consists only of lowercase English letters.",
+  "python_template": "# Longest Palindromic Subsequence\n\ndef longestPalindromeSubseq(s: str) -> int:\n    pass\n",
+  "go_template": "// Longest Palindromic Subsequence\n\npackage main\n\nfunc longestPalindromeSubseq(s string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Palindromic Subsequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestPalindromeSubseq(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Longest Palindromic Subsequence\n\nclass Solution {\n    public int longestPalindromeSubseq(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Palindromic Subsequence\n\nfunction longestPalindromeSubseq(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate quadratic palindrome DP from exponential end-recursion using longer repeated and alternating strings",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

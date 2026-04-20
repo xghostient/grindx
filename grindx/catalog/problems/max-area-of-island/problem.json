@@ -1,0 +1,35 @@
+{
+  "id": "max-area-of-island",
+  "name": "Max Area of Island",
+  "difficulty": "Medium",
+  "description": "Given an m x n binary matrix grid, return the area of the largest island. An island is a group of 1's connected 4-directionally. If there is no island, return 0.",
+  "examples": [
+    {
+      "input": "grid = [[0,0,1,0,0],[0,1,1,1,0],[0,0,1,0,0]]",
+      "output": "5"
+    },
+    {
+      "input": "grid = [[0,0,0,0,0]]",
+      "output": "0"
+    }
+  ],
+  "constraints": "m == grid.length. n == grid[i].length. 1 <= m, n <= 50. grid[i][j] is 0 or 1.",
+  "python_template": "# Max Area of Island\n\nfrom typing import List\n\ndef maxAreaOfIsland(grid: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Max Area of Island\n\npackage main\n\nfunc maxAreaOfIsland(grid [][]int) int {\n\treturn 0;\n}\n",
+  "cpp_template": "// Max Area of Island\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint maxAreaOfIsland(vector<vector<int>>& grid) {\n    return 0;\n}\n",
+  "java_template": "// Max Area of Island\n\nclass Solution {\n    public int maxAreaOfIsland(int[][] grid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Max Area of Island\n\nfunction maxAreaOfIsland(grid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise largest-component area handling on small exhaustive binary grids; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

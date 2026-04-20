@@ -1,0 +1,39 @@
+{
+  "id": "longest-subarr-with-sum-k",
+  "name": "Longest Subarray with Sum K",
+  "difficulty": "Medium",
+  "description": "Given an array of integers and a target sum k, find the length of the longest subarray whose elements sum to k. If no such subarray exists, return 0.",
+  "examples": [
+    {
+      "input": "arr = [10, 5, 2, 7, 1, 9], k = 15",
+      "output": "4 (subarray [5, 2, 7, 1])"
+    },
+    {
+      "input": "arr = [-1, 2, 3], k = 6",
+      "output": "0"
+    },
+    {
+      "input": "arr = [1, -1, 5, -2, 3], k = 3",
+      "output": "4 (subarray [1, -1, 5, -2])"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. -10^5 <= arr[i] <= 10^5. -10^9 <= k <= 10^9.",
+  "python_template": "# Longest Subarray with Sum K\n\nfrom typing import List\n\ndef longestSubarrayWithSumK(arr: List[int], k: int) -> int:\n    pass\n",
+  "go_template": "// Longest Subarray with Sum K\n\npackage main\n\nfunc longestSubarrayWithSumK(arr []int, k int) int {\n    return 0\n}\n",
+  "cpp_template": "// Longest Subarray with Sum K\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint longestSubarrayWithSumK(vector<int>& arr, int k) {\n    return 0;\n}\n",
+  "java_template": "// Longest Subarray with Sum K\n\nclass Solution {\n    public int longestSubarrayWithSumK(int[] arr, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Subarray with Sum K\n\nfunction longestSubarrayWithSumK(arr, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill subarray enumeration on 100k signed arrays with many repeated prefix sums",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

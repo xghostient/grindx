@@ -1,0 +1,36 @@
+{
+  "id": "lis-02-print-lis",
+  "name": "Print Longest Increasing Subsequence",
+  "difficulty": "Medium",
+  "category": "LIS",
+  "description": "Given an integer array, find and print the actual longest increasing subsequence (not just the length).",
+  "examples": [
+    {
+      "input": "nums = [10, 22, 9, 33, 21, 50, 41, 60]",
+      "output": "[10, 22, 33, 50, 60]"
+    },
+    {
+      "input": "nums = [5, 4, 11, 1, 16, 8]",
+      "output": "[5, 11, 16]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 2500",
+  "python_template": "def printLIS(nums: list[int]) -> list[int]:\n    pass\n",
+  "go_template": "package main\n\nfunc printLIS(nums []int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Print Longest Increasing Subsequence\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> printLIS(vector<int>& nums) {\n    return {};\n}\n",
+  "java_template": "// Print Longest Increasing Subsequence\n\nclass Solution {\n    public int[] printLIS(int[] nums) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Print Longest Increasing Subsequence\n\nfunction printLIS(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate LIS reconstruction DP from exponential include-skip recursion while accepting any valid longest increasing subsequence",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

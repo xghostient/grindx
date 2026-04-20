@@ -1,0 +1,35 @@
+{
+  "id": "binary-search",
+  "name": "Binary Search",
+  "difficulty": "Easy",
+  "description": "Given a sorted array of integers nums and a target value, return the index of target if found. If not found, return -1. You must write an algorithm with O(log n) runtime complexity.",
+  "examples": [
+    {
+      "input": "nums = [-1,0,3,5,9,12], target = 9",
+      "output": "4"
+    },
+    {
+      "input": "nums = [-1,0,3,5,9,12], target = 2",
+      "output": "-1"
+    }
+  ],
+  "constraints": "-10^4 <= nums.length <= 10^4. nums is sorted in ascending order. All values are unique. -10^4 <= target <= 10^4.",
+  "python_template": "# Binary Search\n\nfrom typing import List\n\ndef search(nums: List[int], target: int) -> int:\n    pass\n",
+  "go_template": "// Binary Search\n\npackage main\n\nfunc search(nums []int, target int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Binary Search\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint search(vector<int>& nums, int target) {\n    return 0;\n}\n",
+  "java_template": "// Binary Search\n\nclass Solution {\n    public int search(int[] nums, int target) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Binary Search\n\nfunction search(nums, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100k sorted arrays that punish linear scans",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

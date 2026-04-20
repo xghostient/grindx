@@ -1,0 +1,39 @@
+{
+  "id": "heap-sort",
+  "name": "Heap Sort",
+  "difficulty": "Easy",
+  "description": "Implement the heap sort algorithm. Given an array of integers, sort it in ascending order using heap sort. Build a max-heap from the array, then repeatedly extract the maximum element and place it at the end. Sort the array in-place.",
+  "examples": [
+    {
+      "input": "arr = [12, 11, 13, 5, 6, 7]",
+      "output": "[5, 6, 7, 11, 12, 13]"
+    },
+    {
+      "input": "arr = [4, 1, 3, 9, 7]",
+      "output": "[1, 3, 4, 7, 9]"
+    },
+    {
+      "input": "arr = [1]",
+      "output": "[1]"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. -10^4 <= arr[i] <= 10^4.",
+  "python_template": "# Heap Sort\n\nfrom typing import List\n\ndef heapSort(arr: List[int]) -> List[int]:\n    pass\n",
+  "go_template": "// Heap Sort\n\npackage main\n\nfunc heapSort(arr []int) []int {\n    return arr\n}\n",
+  "cpp_template": "// Heap Sort\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> heapSort(vector<int>& arr) {\n    return {};\n}\n",
+  "java_template": "// Heap Sort\n\nclass Solution {\n    public int[] heapSort(int[] arr) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Heap Sort\n\nfunction heapSort(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) auxiliary or O(n) output",
+    "stress_intent": "exercise 100k arrays that punish quadratic comparison sorting",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

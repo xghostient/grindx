@@ -1,0 +1,39 @@
+{
+  "id": "find-the-duplicate-number",
+  "name": "Find the Duplicate Number",
+  "difficulty": "Medium",
+  "description": "Given an array of n + 1 integers where each integer is in [1, n], there is exactly one repeated number. Find it without modifying the array and using O(1) extra space. Hint: treat indices as linked list pointers and use Floyd's cycle detection.",
+  "examples": [
+    {
+      "input": "nums = [1,3,4,2,2]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [3,1,3,4,2]",
+      "output": "3"
+    },
+    {
+      "input": "nums = [3,3,3,3,3]",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5. nums.length == n + 1. 1 <= nums[i] <= n. There is only one repeated number.",
+  "python_template": "# Find the Duplicate Number\n\nfrom typing import List\n\ndef findDuplicate(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Find the Duplicate Number\n\npackage main\n\nfunc findDuplicate(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Find the Duplicate Number\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findDuplicate(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Find the Duplicate Number\n\nclass Solution {\n    public int findDuplicate(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Find the Duplicate Number\n\nfunction findDuplicate(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) or O(n)",
+    "stress_intent": "exercise duplicate arrays that punish quadratic pair scanning instead of Floyd cycle detection, hashing, or sorting",
+    "enforcement": "best-effort-local"
+  }
+}

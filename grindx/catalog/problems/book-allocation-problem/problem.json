@@ -1,0 +1,35 @@
+{
+  "id": "book-allocation-problem",
+  "name": "Book Allocation Problem",
+  "difficulty": "Medium",
+  "description": "Given an array where arr[i] represents the number of pages in the ith book and m students, allocate books such that: each student gets at least one book, books are allocated contiguously, and the maximum number of pages assigned to a student is minimized. Return this minimized maximum. If allocation is impossible, return -1.",
+  "examples": [
+    {
+      "input": "arr = [12, 34, 67, 90], m = 2",
+      "output": "113 (student1: [12,34,67], student2: [90])"
+    },
+    {
+      "input": "arr = [25, 46, 28, 49, 24], m = 4",
+      "output": "71"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 10^5. 1 <= arr[i] <= 10^6. 1 <= m <= 10^5.",
+  "python_template": "# Book Allocation Problem\n\nfrom typing import List\n\ndef allocateBooks(arr: List[int], m: int) -> int:\n    \"\"\"Return minimized maximum pages, or -1 if impossible.\"\"\"\n    pass\n",
+  "go_template": "// Book Allocation Problem\n\npackage main\n\nfunc allocateBooks(arr []int, m int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Book Allocation Problem\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint allocateBooks(vector<int>& arr, int m) {\n    return 0;\n}\n",
+  "java_template": "// Book Allocation Problem\n\nclass Solution {\n    public int allocateBooks(int[] arr, int m) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Book Allocation Problem\n\nfunction allocateBooks(arr, m) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log sum)",
+    "accepted_time": [
+      "O(n log sum)"
+    ],
+    "rejected_time": [
+      "O(n * sum)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 10k books that punish linear allocation search",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

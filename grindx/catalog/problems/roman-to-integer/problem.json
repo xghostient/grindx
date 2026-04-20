@@ -1,0 +1,39 @@
+{
+  "id": "roman-to-integer",
+  "name": "Roman to Integer",
+  "difficulty": "Easy",
+  "description": "Roman numerals are represented by seven symbols: I(1), V(5), X(10), L(50), C(100), D(500), M(1000). Some subtractive combinations: IV=4, IX=9, XL=40, XC=90, CD=400, CM=900. Given a roman numeral, convert it to an integer.",
+  "examples": [
+    {
+      "input": "s = \"III\"",
+      "output": "3"
+    },
+    {
+      "input": "s = \"LVIII\"",
+      "output": "58"
+    },
+    {
+      "input": "s = \"MCMXCIV\"",
+      "output": "1994"
+    }
+  ],
+  "constraints": "1 <= s.length <= 15. s contains only the characters I, V, X, L, C, D, M. It is guaranteed that s is a valid roman numeral in the range [1, 3999].",
+  "python_template": "# Roman to Integer\n\ndef romanToInt(s: str) -> int:\n    pass\n",
+  "go_template": "// Roman to Integer\n\npackage main\n\nfunc romanToInt(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// Roman to Integer\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint romanToInt(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Roman to Integer\n\nclass Solution {\n    public int romanToInt(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Roman to Integer\n\nfunction romanToInt(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise subtractive notation and the full 1..3999 Roman numeral space; strict local separation is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

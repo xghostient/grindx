@@ -1,0 +1,39 @@
+{
+  "id": "contiguous-array",
+  "name": "Contiguous Array",
+  "difficulty": "Medium",
+  "description": "Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.",
+  "examples": [
+    {
+      "input": "nums = [0,1]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [0,1,0]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [0,0,1,0,0,0,1,1]",
+      "output": "6"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10^5. nums[i] is either 0 or 1.",
+  "python_template": "# Contiguous Array\n\nfrom typing import List\n\ndef findMaxLength(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Contiguous Array\n\npackage main\n\nfunc findMaxLength(nums []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Contiguous Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findMaxLength(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Contiguous Array\n\nclass Solution {\n    public int findMaxLength(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Contiguous Array\n\nfunction findMaxLength(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill subarray enumeration and prefix-count rescans on max-size binary arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

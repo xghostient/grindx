@@ -1,0 +1,39 @@
+{
+  "id": "check-ith-bit",
+  "name": "Check if ith Bit is Set",
+  "difficulty": "Easy",
+  "description": "Given a number n and a bit position i (0-indexed from right), check whether the ith bit of n is set (1) or not (0).",
+  "examples": [
+    {
+      "input": "n = 5, i = 2",
+      "output": "true (5 = 101, bit 2 is 1)"
+    },
+    {
+      "input": "n = 5, i = 1",
+      "output": "false (5 = 101, bit 1 is 0)"
+    },
+    {
+      "input": "n = 8, i = 3",
+      "output": "true (8 = 1000, bit 3 is 1)"
+    }
+  ],
+  "constraints": "0 <= n <= 10^9. 0 <= i <= 30.",
+  "python_template": "# Check if ith Bit is Set\n\ndef checkIthBit(n: int, i: int) -> bool:\n    pass\n",
+  "go_template": "// Check if ith Bit is Set\n\npackage main\n\nfunc checkIthBit(n int, i int) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Check if ith Bit is Set\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool checkIthBit(int n, int i) {\n    return false;\n}\n",
+  "java_template": "// Check if ith Bit is Set\n\nclass Solution {\n    public boolean checkIthBit(int n, int i) {\n        return false;\n    }\n}\n",
+  "js_template": "// Check if ith Bit is Set\n\nfunction checkIthBit(n, i) {\n\n}\n",
+  "performance": {
+    "target_time": "O(1)",
+    "accepted_time": [
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise all bit positions on large values",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

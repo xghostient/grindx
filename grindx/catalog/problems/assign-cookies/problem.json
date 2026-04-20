@@ -1,0 +1,39 @@
+{
+  "id": "assign-cookies",
+  "name": "Assign Cookies",
+  "difficulty": "Easy",
+  "description": "Assume you are an awesome parent and want to give your children some cookies. Each child i has a greed factor g[i], the minimum size cookie that will make them content. Each cookie j has size s[j]. If s[j] >= g[i], you can assign cookie j to child i and the child becomes content. Maximize the number of your content children. Each child gets at most one cookie.",
+  "examples": [
+    {
+      "input": "g = [1,2,3], s = [1,1]",
+      "output": "1"
+    },
+    {
+      "input": "g = [1,2], s = [1,2,3]",
+      "output": "2"
+    },
+    {
+      "input": "g = [10,9,8,7], s = [5,6,7,8]",
+      "output": "2"
+    }
+  ],
+  "constraints": "1 <= g.length <= 3 * 10^4. 0 <= s.length <= 3 * 10^4. 1 <= g[i], s[j] <= 2^31 - 1.",
+  "python_template": "# Assign Cookies\n\nfrom typing import List\n\ndef findContentChildren(g: List[int], s: List[int]) -> int:\n    pass\n",
+  "go_template": "// Assign Cookies\n\npackage main\n\nfunc findContentChildren(g []int, s []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Assign Cookies\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findContentChildren(vector<int>& g, vector<int>& s) {\n    return 0;\n}\n",
+  "java_template": "// Assign Cookies\n\nclass Solution {\n    public int findContentChildren(int[] g, int[] s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Assign Cookies\n\nfunction findContentChildren(g, s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1) auxiliary",
+    "stress_intent": "exercise large arrays that punish pairwise matching without sorting",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "unique-paths-ii",
+  "name": "Unique Paths II",
+  "difficulty": "Medium",
+  "category": "Grid DP",
+  "description": "A robot is located at the top-left corner of an m x n grid. It can only move right or down. Some cells have obstacles (marked as 1). How many unique paths are there to reach the bottom-right corner?",
+  "examples": [
+    {
+      "input": "obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]",
+      "output": "2"
+    },
+    {
+      "input": "obstacleGrid = [[0,1],[0,0]]",
+      "output": "1"
+    }
+  ],
+  "constraints": "m == obstacleGrid.length. n == obstacleGrid[i].length. 1 <= m, n <= 100. obstacleGrid[i][j] is 0 or 1.",
+  "python_template": "# Unique Paths II\n\nfrom typing import List\n\ndef uniquePathsWithObstacles(obstacleGrid: List[List[int]]) -> int:\n    pass\n",
+  "go_template": "// Unique Paths II\n\npackage main\n\nfunc uniquePathsWithObstacles(obstacleGrid [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Unique Paths II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {\n    return 0;\n}\n",
+  "java_template": "// Unique Paths II\n\nclass Solution {\n    public int uniquePathsWithObstacles(int[][] obstacleGrid) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Unique Paths II\n\nfunction uniquePathsWithObstacles(obstacleGrid) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m * n)",
+    "accepted_time": [
+      "O(m * n)"
+    ],
+    "rejected_time": [
+      "O(2^(m+n))"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate obstacle-grid DP from exponential right/down recursion using larger open boards and blocked-edge corner cases",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

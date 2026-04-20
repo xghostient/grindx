@@ -1,0 +1,35 @@
+{
+  "id": "djikstra-algorithm",
+  "name": "Dijkstra's Algorithm",
+  "difficulty": "Medium",
+  "description": "Given a weighted directed graph with V vertices and E edges, and a source vertex, find the shortest distance from source to all other vertices using Dijkstra's algorithm. If a vertex is unreachable, distance is -1.",
+  "examples": [
+    {
+      "input": "V=3, edges=[[0,1,1],[0,2,6],[1,2,3]], src=0",
+      "output": "[0,1,4]"
+    },
+    {
+      "input": "V=2, edges=[[0,1,9]], src=0",
+      "output": "[0,9]"
+    }
+  ],
+  "constraints": "1 <= V <= 10^5. 0 <= E <= V*(V-1)/2. 0 <= weight <= 10^4. No negative weights.",
+  "python_template": "# Dijkstra's Algorithm\n\nfrom typing import List\nimport heapq\n\ndef dijkstra(V: int, adj: List[List[List[int]]], src: int) -> List[int]:\n    \"\"\"adj[u] = [[v, w], ...]. Return shortest distances from src.\"\"\"\n    pass\n",
+  "go_template": "// Dijkstra's Algorithm\n\npackage main\n\n\nfunc dijkstra(V int, adj [][][2]int, src int) []int {\n\treturn []int{}\n}\n",
+  "cpp_template": "// Dijkstra's Algorithm\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> dijkstra(int V, vector<vector<vector<int>>>& adj, int src) {\n    return {};\n}\n",
+  "java_template": "// Dijkstra's Algorithm\n\nclass Solution {\n    public int[] dijkstra(int V, int[][][] adj, int src) {\n        return new int[]{};\n    }\n}\n",
+  "js_template": "// Dijkstra's Algorithm\n\nfunction dijkstra(V, adj, src) {\n\n}\n",
+  "performance": {
+    "target_time": "O((V + E) log V)",
+    "accepted_time": [
+      "O((V + E) log V)"
+    ],
+    "rejected_time": [
+      "O(V^2)"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "exercise shortest-path relaxation and unreachable handling; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

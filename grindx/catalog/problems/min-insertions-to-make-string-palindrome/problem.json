@@ -1,0 +1,36 @@
+{
+  "id": "min-insertions-to-make-string-palindrome",
+  "name": "Min Insertions to Make Palindrome",
+  "difficulty": "Hard",
+  "category": "Strings DP",
+  "description": "Given a string s, find the minimum number of insertions needed to make it a palindrome.",
+  "examples": [
+    {
+      "input": "s = \"zzazz\"",
+      "output": "0"
+    },
+    {
+      "input": "s = \"mbadm\"",
+      "output": "2"
+    }
+  ],
+  "constraints": "1 <= s.length <= 500",
+  "python_template": "def minInsertions(s: str) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc minInsertions(s string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Min Insertions to Make Palindrome\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minInsertions(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Min Insertions to Make Palindrome\n\nclass Solution {\n    public int minInsertions(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Min Insertions to Make Palindrome\n\nfunction minInsertions(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate quadratic palindrome-conversion DP from exponential end-recursion using longer repeated and alternating strings",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

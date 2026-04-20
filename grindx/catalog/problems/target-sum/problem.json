@@ -1,0 +1,36 @@
+{
+  "id": "target-sum",
+  "name": "Target Sum",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "You are given an integer array nums and an integer target. You want to build an expression by adding '+' or '-' before each element. Return the number of different expressions that evaluate to target.",
+  "examples": [
+    {
+      "input": "nums = [1,1,1,1,1], target = 3",
+      "output": "5"
+    },
+    {
+      "input": "nums = [1], target = 1",
+      "output": "1"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 20. 0 <= nums[i] <= 1000. 0 <= sum(nums[i]) <= 1000. -1000 <= target <= 1000.",
+  "python_template": "# Target Sum\n\nfrom typing import List\n\ndef findTargetSumWays(nums: List[int], target: int) -> int:\n    pass\n",
+  "go_template": "// Target Sum\n\npackage main\n\nfunc findTargetSumWays(nums []int, target int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Target Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findTargetSumWays(vector<int>& nums, int target) {\n    return 0;\n}\n",
+  "java_template": "// Target Sum\n\nclass Solution {\n    public int findTargetSumWays(int[] nums, int target) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Target Sum\n\nfunction findTargetSumWays(nums, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n * sum(nums))",
+    "accepted_time": [
+      "O(n * sum(nums))"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(sum(nums))",
+    "stress_intent": "separate signed-sum DP from brute-force sign enumeration using long arrays with many symmetric branches",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "generate-all-bin-strings",
+  "name": "Generate All Binary Strings",
+  "difficulty": "Easy",
+  "description": "Given an integer n, generate all binary strings of length n such that no two consecutive characters are '1'. Return all valid strings in any order.",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "[\"00\", \"01\", \"10\"]"
+    },
+    {
+      "input": "n = 3",
+      "output": "[\"000\", \"001\", \"010\", \"100\", \"101\"]"
+    },
+    {
+      "input": "n = 1",
+      "output": "[\"0\", \"1\"]"
+    }
+  ],
+  "constraints": "1 <= n <= 20.",
+  "python_template": "# Generate All Binary Strings\n\nfrom typing import List\n\ndef generateBinaryStrings(n: int) -> List[str]:\n    pass\n",
+  "go_template": "// Generate All Binary Strings\n\npackage main\n\nfunc generateBinaryStrings(n int) []string {\n\treturn []string{}\n}\n",
+  "cpp_template": "// Generate All Binary Strings\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<string> generateBinaryStrings(int n) {\n    return {};\n}\n",
+  "java_template": "// Generate All Binary Strings\n\nclass Solution {\n    public String[] generateBinaryStrings(int n) {\n        return new String[]{};\n    }\n}\n",
+  "js_template": "// Generate All Binary Strings\n\nfunction generateBinaryStrings(n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(fib(n))",
+    "accepted_time": [
+      "O(fib(n))",
+      "O(2^n)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise n up to 20; correct solution generates Fibonacci-count strings",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "mcm-02-min-cost-to-cut-stick",
+  "name": "Minimum Cost to Cut a Stick",
+  "difficulty": "Hard",
+  "category": "MCM/Partition",
+  "description": "Given a wooden stick of length n and an array of cut positions, find the minimum total cost. The cost of each cut is the length of the stick being cut.",
+  "examples": [
+    {
+      "input": "n = 7, cuts = [1, 3, 4, 5]",
+      "output": "16"
+    },
+    {
+      "input": "n = 9, cuts = [5, 6, 1, 4, 2]",
+      "output": "22"
+    }
+  ],
+  "constraints": "2 <= n <= 10^6, 1 <= cuts.length <= min(n-1, 100)",
+  "python_template": "def minCost(n: int, cuts: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc minCost(n int, cuts []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Minimum Cost to Cut a Stick\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minCost(int n, vector<int>& cuts) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Cost to Cut a Stick\n\nclass Solution {\n    public int minCost(int n, int[] cuts) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimum Cost to Cut a Stick\n\nfunction minCost(n, cuts) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m^3)",
+    "accepted_time": [
+      "O(m^3)"
+    ],
+    "rejected_time": [
+      "O(m!)",
+      "O(2^m * m)"
+    ],
+    "target_space": "O(m^2)",
+    "stress_intent": "separate interval DP from exponential cut-order recursion using sticks with many interior cuts",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

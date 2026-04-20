@@ -1,0 +1,35 @@
+{
+  "id": "4sum",
+  "name": "4Sum",
+  "difficulty": "Medium",
+  "description": "Given an array nums of n integers, return all unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that a, b, c, d are distinct indices and nums[a] + nums[b] + nums[c] + nums[d] == target.",
+  "examples": [
+    {
+      "input": "nums = [1,0,-1,0,-2,2], target = 0",
+      "output": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]"
+    },
+    {
+      "input": "nums = [2,2,2,2,2], target = 8",
+      "output": "[[2,2,2,2]]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 200. -10^9 <= nums[i] <= 10^9. -10^9 <= target <= 10^9.",
+  "python_template": "# 4Sum\n\nfrom typing import List\n\ndef fourSum(nums: List[int], target: int) -> List[List[int]]:\n    pass\n",
+  "go_template": "// 4Sum\n\npackage main\n\nfunc fourSum(nums []int, target int) [][]int {\n\treturn [][]int{}\n}\n",
+  "cpp_template": "// 4Sum\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<vector<int>> fourSum(vector<int>& nums, int target) {\n    return {};\n}\n",
+  "java_template": "// 4Sum\n\nclass Solution {\n    public int[][] fourSum(int[] nums, int target) {\n        return new int[][]{};\n    }\n}\n",
+  "js_template": "// 4Sum\n\nfunction fourSum(nums, target) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^3)",
+    "accepted_time": [
+      "O(n^3)"
+    ],
+    "rejected_time": [
+      "O(n^4)"
+    ],
+    "target_space": "O(1) auxiliary",
+    "stress_intent": "exercise 200-length arrays with duplicates and extreme values that punish quartic quadruplet enumeration",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

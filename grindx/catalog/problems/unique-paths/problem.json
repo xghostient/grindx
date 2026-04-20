@@ -1,0 +1,38 @@
+{
+  "id": "unique-paths",
+  "name": "Unique Paths",
+  "difficulty": "Medium",
+  "category": "Grid DP",
+  "description": "A robot is located at the top-left corner of an m x n grid. It can only move right or down. How many possible unique paths are there to reach the bottom-right corner?",
+  "examples": [
+    {
+      "input": "m = 3, n = 7",
+      "output": "28"
+    },
+    {
+      "input": "m = 3, n = 2",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= m, n <= 100.",
+  "python_template": "# Unique Paths\n\ndef uniquePaths(m: int, n: int) -> int:\n    pass\n",
+  "go_template": "// Unique Paths\n\npackage main\n\nfunc uniquePaths(m int, n int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Unique Paths\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint uniquePaths(int m, int n) {\n    return 0;\n}\n",
+  "java_template": "// Unique Paths\n\nclass Solution {\n    public int uniquePaths(int m, int n) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Unique Paths\n\nfunction uniquePaths(m, n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m * n)",
+    "accepted_time": [
+      "O(m * n)",
+      "O(min(m, n))",
+      "O(1)"
+    ],
+    "rejected_time": [
+      "O(2^(m+n))"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate combinatorial or DP solutions from exponential recursion using square boards with large branching depth",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

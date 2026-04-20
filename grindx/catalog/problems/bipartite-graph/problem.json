@@ -1,0 +1,35 @@
+{
+  "id": "bipartite-graph",
+  "name": "Is Graph Bipartite?",
+  "difficulty": "Medium",
+  "description": "Given an undirected graph represented as an adjacency list, determine if the graph is bipartite. A graph is bipartite if the nodes can be partitioned into two sets such that every edge connects a node in one set to a node in the other.",
+  "examples": [
+    {
+      "input": "graph = [[1,2,3],[0,2],[0,1,3],[0,2]]",
+      "output": "false"
+    },
+    {
+      "input": "graph = [[1,3],[0,2],[1,3],[0,2]]",
+      "output": "true"
+    }
+  ],
+  "constraints": "1 <= graph.length <= 100. 0 <= graph[i].length < 100. graph[u] does not contain u. All values in graph[u] are unique.",
+  "python_template": "# Is Graph Bipartite?\n\nfrom typing import List\n\ndef isBipartite(graph: List[List[int]]) -> bool:\n    pass\n",
+  "go_template": "// Is Graph Bipartite?\n\npackage main\n\nfunc isBipartite(graph [][]int) bool {\n\treturn false;\n}\n",
+  "cpp_template": "// Is Graph Bipartite?\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool isBipartite(vector<vector<int>>& graph) {\n    return false;\n}\n",
+  "java_template": "// Is Graph Bipartite?\n\nclass Solution {\n    public boolean isBipartite(int[][] graph) {\n        return false;\n    }\n}\n",
+  "js_template": "// Is Graph Bipartite?\n\nfunction isBipartite(graph) {\n\n}\n",
+  "performance": {
+    "target_time": "O(V + E)",
+    "accepted_time": [
+      "O(V + E)"
+    ],
+    "rejected_time": [
+      "O(V * (V + E))"
+    ],
+    "target_space": "O(V)",
+    "stress_intent": "kill repeated recoloring/reachability checks on giant paths and parity-critical cycles",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

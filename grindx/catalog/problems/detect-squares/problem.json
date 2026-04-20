@@ -1,0 +1,35 @@
+{
+  "id": "detect-squares",
+  "name": "Detect Squares",
+  "difficulty": "Medium",
+  "description": "You are given a stream of points on the X-Y plane. Design a data structure that:\n- add(point) Adds a new point.\n- count(point) Given a query point, counts the number of ways to choose three other points from the data structure such that the four points form an axis-aligned square with positive area. An axis-aligned square has sides parallel to the X and Y axes.",
+  "examples": [
+    {
+      "input": "[\"DetectSquares\",\"add\",\"add\",\"add\",\"count\",\"count\",\"add\",\"count\"]\n[[],[[3,10]],[[11,1]],[[3,1]],[[11,10]],[[14,8]],[[11,10]],[[11,10]]]",
+      "output": "[null,null,null,null,1,0,null,2]"
+    },
+    {
+      "input": "[\"DetectSquares\",\"add\",\"add\",\"add\",\"add\",\"count\"]\n[[],[[0,0]],[[0,1]],[[1,0]],[[1,1]],[[0,0]]]",
+      "output": "[null,null,null,null,null,1]"
+    }
+  ],
+  "constraints": "point.length == 2. 0 <= x, y <= 1000. At most 3000 calls to add and count.",
+  "python_template": "# Detect Squares\n\nfrom typing import List\n\nclass DetectSquares:\n    def __init__(self):\n        pass\n\n    def add(self, point: List[int]) -> None:\n        pass\n\n    def count(self, point: List[int]) -> int:\n        pass\n",
+  "go_template": "// Detect Squares\n\npackage main\n\ntype DetectSquares struct {\n\n}\n\nfunc Constructor() DetectSquares {\n    return DetectSquares{}\n}\n\nfunc (ds *DetectSquares) Add(point []int) {\n\n}\n\nfunc (ds *DetectSquares) Count(point []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Detect Squares\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass DetectSquares {\npublic:\n    DetectSquares() {\n\n    }\n\n    void Add(vector<int> point) {\n\n    }\n\n    int Count(vector<int> point) {\n        return 0;\n    }\n};\n",
+  "java_template": "// Detect Squares\n\nimport java.util.*;\n\nclass DetectSquares {\n    public DetectSquares() {\n\n    }\n\n    public void Add(int[] point) {\n\n    }\n\n    public int Count(int[] point) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Detect Squares\n\nclass DetectSquares {\n    constructor() {\n\n    }\n\n    add(point) {\n\n    }\n\n    count(point) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(n) per count",
+    "accepted_time": [
+      "O(n) per count"
+    ],
+    "rejected_time": [
+      "O(n^2) per count"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise interleaved add/count operations that punish brute-force pair enumeration over all stored points",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

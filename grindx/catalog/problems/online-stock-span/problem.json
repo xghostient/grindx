@@ -1,0 +1,30 @@
+{
+  "id": "online-stock-span",
+  "name": "Online Stock Span",
+  "difficulty": "Medium",
+  "description": "Design a class StockSpanner that collects daily price quotes and returns the span of the stock's price for the current day. The span is the number of consecutive days (starting from today going backwards) where the price was less than or equal to today's price.",
+  "examples": [
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[100],[80],[60],[70],[60],[75],[85]]",
+      "output": "[null,1,1,1,2,1,4,6]"
+    }
+  ],
+  "constraints": "1 <= price <= 10^5. At most 10^4 calls to next.",
+  "python_template": "# Online Stock Span\n\nclass StockSpanner:\n    def __init__(self):\n        pass\n\n    def next(self, price: int) -> int:\n        pass\n",
+  "go_template": "// Online Stock Span\n\npackage main\n\ntype StockSpanner struct {\n}\n\nfunc Constructor() StockSpanner {\n    return StockSpanner{}\n}\n\nfunc (s *StockSpanner) Next(price int) int {\n    return 0\n}\n",
+  "cpp_template": "// Online Stock Span\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass StockSpanner {\npublic:\n    StockSpanner() {\n\n    }\n\n    int Next(int price) {\n        return 0;\n    }\n};\n",
+  "java_template": "// Online Stock Span\n\nimport java.util.*;\n\nclass StockSpanner {\n    public StockSpanner() {\n\n    }\n\n    public int Next(int price) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Online Stock Span\n\nclass StockSpanner {\n    constructor() {\n\n    }\n\n    next(price) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "O(1) amortized/op",
+    "accepted_time": [
+      "O(1) amortized/op"
+    ],
+    "rejected_time": [
+      "O(n) per op"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "long price streams punish rescanning previous days on every query",
+    "enforcement": "best-effort-local"
+  }
+}

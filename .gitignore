@@ -11,3 +11,9 @@ build/
 .claude/
 scripts/
 PLAN-*.md
+notes
+CLAUDE.md
+tests/*
+!tests/test_testcase_bundle_fetch.py
+!tests/test_catalog_migration.py
+docs/

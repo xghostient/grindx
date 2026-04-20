@@ -1,0 +1,36 @@
+{
+  "id": "subseq-10-rod-cutting",
+  "name": "Rod Cutting Problem",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "Given a rod of length n and prices for each piece length 1 to n, determine the maximum revenue obtainable by cutting up the rod and selling the pieces.",
+  "examples": [
+    {
+      "input": "price = [1, 5, 8, 9, 10, 17, 17, 20], n = 8",
+      "output": "22"
+    },
+    {
+      "input": "price = [3, 5, 8, 9, 10, 17, 17, 20], n = 8",
+      "output": "24"
+    }
+  ],
+  "constraints": "1 <= n <= 1000, 1 <= price[i] <= 10^6",
+  "python_template": "def rodCutting(price: list[int], n: int) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc rodCutting(price []int, n int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Rod Cutting Problem\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint rodCutting(vector<int>& price, int n) {\n    return 0;\n}\n",
+  "java_template": "// Rod Cutting Problem\n\nclass Solution {\n    public int rodCutting(int[] price, int n) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Rod Cutting Problem\n\nfunction rodCutting(price, n) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate rod-cutting DP from plain recursion using longer price tables with many viable cut partitions",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

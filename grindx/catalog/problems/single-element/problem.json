@@ -1,0 +1,35 @@
+{
+  "id": "single-element",
+  "name": "Single Element in a Sorted Array",
+  "difficulty": "Medium",
+  "description": "Given a sorted array where every element appears exactly twice except for one element which appears exactly once, find the single element. Your solution must run in O(log n) time and O(1) space.",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,3,3,4,4,8,8]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [3,3,7,7,10,11,11]",
+      "output": "10"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10^5. 0 <= nums[i] <= 10^5.",
+  "python_template": "# Single Element in a Sorted Array\n\nfrom typing import List\n\ndef singleNonDuplicate(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Single Element in a Sorted Array\n\npackage main\n\nfunc singleNonDuplicate(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Single Element in a Sorted Array\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint singleNonDuplicate(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Single Element in a Sorted Array\n\nclass Solution {\n    public int singleNonDuplicate(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Single Element in a Sorted Array\n\nfunction singleNonDuplicate(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(log n)",
+    "accepted_time": [
+      "O(log n)"
+    ],
+    "rejected_time": [
+      "O(n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 100k paired arrays that punish linear XOR or scan",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

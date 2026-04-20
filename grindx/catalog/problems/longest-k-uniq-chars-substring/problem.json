@@ -1,0 +1,39 @@
+{
+  "id": "longest-k-uniq-chars-substring",
+  "name": "Longest Substring with At Most K Distinct Characters",
+  "difficulty": "Medium",
+  "description": "Given a string s and an integer k, return the length of the longest substring that contains at most k distinct characters.",
+  "examples": [
+    {
+      "input": "s = \"eceba\", k = 2",
+      "output": "3 (\"ece\")"
+    },
+    {
+      "input": "s = \"aa\", k = 1",
+      "output": "2 (\"aa\")"
+    },
+    {
+      "input": "s = \"aabacbebebe\", k = 3",
+      "output": "7 (\"cbebebe\")"
+    }
+  ],
+  "constraints": "1 <= s.length <= 5 * 10^4. 0 <= k <= 50. s consists of lowercase English letters.",
+  "python_template": "# Longest Substring with At Most K Distinct Characters\n\ndef lengthOfLongestSubstringKDistinct(s: str, k: int) -> int:\n    pass\n",
+  "go_template": "// Longest Substring with At Most K Distinct Characters\n\npackage main\n\nfunc lengthOfLongestSubstringKDistinct(s string, k int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Longest Substring with At Most K Distinct Characters\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint lengthOfLongestSubstringKDistinct(string& s, int k) {\n    return 0;\n}\n",
+  "java_template": "// Longest Substring with At Most K Distinct Characters\n\nclass Solution {\n    public int lengthOfLongestSubstringKDistinct(String s, int k) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Longest Substring with At Most K Distinct Characters\n\nfunction lengthOfLongestSubstringKDistinct(s, k) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(k)",
+    "stress_intent": "exercise at-most-k-distinct windows over 50k strings that punish repeated distinct recomputation locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "surrounded-regions",
+  "name": "Surrounded Regions",
+  "difficulty": "Medium",
+  "description": "Given an m x n matrix board containing 'X' and 'O', capture all regions that are 4-directionally surrounded by 'X'. A region is captured by flipping all 'O's into 'X's. 'O's on the border or connected to border 'O's are not captured.",
+  "examples": [
+    {
+      "input": "board = [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
+      "output": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"
+    },
+    {
+      "input": "board = [[\"X\"]]",
+      "output": "[[\"X\"]]"
+    }
+  ],
+  "constraints": "m == board.length. n == board[i].length. 1 <= m, n <= 200. board[i][j] is 'X' or 'O'.",
+  "python_template": "# Surrounded Regions\n\nfrom typing import List\n\ndef solve(board: List[List[str]]) -> None:\n    \"\"\"Modify board in-place.\"\"\"\n    pass\n",
+  "go_template": "// Surrounded Regions\n\npackage main\n\nfunc solve(board [][]byte) {\n\n}\n",
+  "cpp_template": "// Surrounded Regions\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid solve(vector<string>& board) {\n\n}\n",
+  "java_template": "// Surrounded Regions\n\nclass Solution {\n    public void solve(char[][] board) {\n\n    }\n}\n",
+  "js_template": "// Surrounded Regions\n\nfunction solve(board) {\n\n}\n",
+  "performance": {
+    "target_time": "O(m*n)",
+    "accepted_time": [
+      "O(m*n)"
+    ],
+    "rejected_time": [
+      "O((m*n)^2)"
+    ],
+    "target_space": "O(m*n)",
+    "stress_intent": "exercise border-connected escape regions and interior captures; performance enforcement is deferred",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

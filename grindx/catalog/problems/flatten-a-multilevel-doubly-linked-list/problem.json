@@ -1,0 +1,30 @@
+{
+  "id": "flatten-a-multilevel-doubly-linked-list",
+  "name": "Flatten a Multilevel Doubly Linked List",
+  "difficulty": "Medium",
+  "description": "Given a doubly linked list where some nodes have a child pointer to a separate doubly linked list, flatten all lists into a single-level doubly linked list. Child lists should be inserted between the node and its next.",
+  "examples": [
+    {
+      "input": "head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]",
+      "output": "[1,2,3,7,8,11,12,9,10,4,5,6]"
+    }
+  ],
+  "constraints": "The number of nodes is at most 1000. 1 <= Node.val <= 10^5.",
+  "python_template": "# Flatten a Multilevel Doubly Linked List\n\nfrom typing import Optional\n\nclass Node:\n    def __init__(self, val=0, prev=None, next=None, child=None):\n        self.val = val\n        self.prev = prev\n        self.next = next\n        self.child = child\n\ndef flatten(head: Optional[Node]) -> Optional[Node]:\n    pass\n",
+  "go_template": "            // Flatten a Multilevel Doubly Linked List\n\n            package main\n\n            // Definition for a multilevel node.\n            // type Node struct {\n//     Val   int\n//     Prev  *Node\n//     Next  *Node\n//     Child *Node\n// }\n\n            func flatten(head *Node) *Node {\n            \treturn nil\n            }\n",
+  "cpp_template": "            // Flatten a Multilevel Doubly Linked List\n\n            #include <bits/stdc++.h>\n            using namespace std;\n\n            // Definition for a multilevel node.\n            // struct Node {\n//     int val;\n//     Node* prev;\n//     Node* next;\n//     Node* child;\n//     Node(int val = 0, Node* prev = nullptr, Node* next = nullptr, Node* child = nullptr) : val(val), prev(prev), next(next), child(child) {}\n// };\n\n            Node* flatten(Node* head) {\n                return nullptr;\n            }\n",
+  "java_template": "// Flatten a Multilevel Doubly Linked List\n\nclass Node {\n    int val;\n    Node prev;\n    Node next;\n    Node child;\n    Node(int val) { this.val = val; }\n}\n\nclass Solution {\n    public Node flatten(Node head) {\n        return null;\n    }\n}\n",
+  "js_template": "// Flatten a Multilevel Doubly Linked List\n\nclass Node {\n    constructor(val) {\n        this.val = val;\n        this.prev = null;\n        this.next = null;\n        this.child = null;\n    }\n}\n\nfunction flatten(head) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(d) stack or O(1) iterative splicing",
+    "stress_intent": "exercise deeply nested child chains that punish repeated tail-search splicing instead of one depth-first flatten traversal",
+    "enforcement": "best-effort-local"
+  }
+}

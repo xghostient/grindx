@@ -1,0 +1,35 @@
+{
+  "id": "permutation-in-string",
+  "name": "Permutation in String",
+  "difficulty": "Medium",
+  "description": "Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise. In other words, return true if one of s1's permutations is a substring of s2.",
+  "examples": [
+    {
+      "input": "s1 = \"ab\", s2 = \"eidbaooo\"",
+      "output": "true (s2 contains \"ba\")"
+    },
+    {
+      "input": "s1 = \"ab\", s2 = \"eidboaoo\"",
+      "output": "false"
+    }
+  ],
+  "constraints": "1 <= s1.length, s2.length <= 10^4. s1 and s2 consist of lowercase English letters.",
+  "python_template": "# Permutation in String\n\ndef checkInclusion(s1: str, s2: str) -> bool:\n    pass\n",
+  "go_template": "// Permutation in String\n\npackage main\n\nfunc checkInclusion(s1 string, s2 string) bool {\n\treturn false\n}\n",
+  "cpp_template": "// Permutation in String\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nbool checkInclusion(string& s1, string& s2) {\n    return false;\n}\n",
+  "java_template": "// Permutation in String\n\nclass Solution {\n    public boolean checkInclusion(String s1, String s2) {\n        return false;\n    }\n}\n",
+  "js_template": "// Permutation in String\n\nfunction checkInclusion(s1, s2) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n + m)",
+    "accepted_time": [
+      "O(n + m)"
+    ],
+    "rejected_time": [
+      "O(n*m)"
+    ],
+    "target_space": "O(alphabet)",
+    "stress_intent": "exercise fixed-size frequency windows over 100k sources that punish repeated sorting or recounting locally",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

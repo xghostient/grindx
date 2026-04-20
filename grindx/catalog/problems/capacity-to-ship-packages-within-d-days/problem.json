@@ -1,0 +1,39 @@
+{
+  "id": "capacity-to-ship-packages-within-d-days",
+  "name": "Capacity To Ship Packages Within D Days",
+  "difficulty": "Medium",
+  "description": "Packages on a conveyor belt must be shipped within days days. The ith package has weight weights[i]. Packages are loaded in order, and the ship has a weight capacity. Return the least weight capacity of the ship that will result in all packages being shipped within days days.",
+  "examples": [
+    {
+      "input": "weights = [1,2,3,4,5,6,7,8,9,10], days = 5",
+      "output": "15"
+    },
+    {
+      "input": "weights = [3,2,2,4,1,4], days = 3",
+      "output": "6"
+    },
+    {
+      "input": "weights = [1,2,3,1,1], days = 4",
+      "output": "3"
+    }
+  ],
+  "constraints": "1 <= days <= weights.length <= 5 * 10^4. 1 <= weights[i] <= 500.",
+  "python_template": "# Capacity To Ship Packages Within D Days\n\nfrom typing import List\n\ndef shipWithinDays(weights: List[int], days: int) -> int:\n    pass\n",
+  "go_template": "// Capacity To Ship Packages Within D Days\n\npackage main\n\nfunc shipWithinDays(weights []int, days int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Capacity To Ship Packages Within D Days\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint shipWithinDays(vector<int>& weights, int days) {\n    return 0;\n}\n",
+  "java_template": "// Capacity To Ship Packages Within D Days\n\nclass Solution {\n    public int shipWithinDays(int[] weights, int days) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Capacity To Ship Packages Within D Days\n\nfunction shipWithinDays(weights, days) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log sum)",
+    "accepted_time": [
+      "O(n log sum)"
+    ],
+    "rejected_time": [
+      "O(n * sum)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise 10k weights that punish linear capacity search",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

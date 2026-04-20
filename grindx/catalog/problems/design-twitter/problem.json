@@ -1,0 +1,35 @@
+{
+  "id": "design-twitter",
+  "name": "Design Twitter",
+  "difficulty": "Medium",
+  "description": "Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and get the 10 most recent tweets in their news feed. Implement the Twitter class:\n- Twitter() Initializes the twitter object.\n- postTweet(userId, tweetId) Composes a new tweet with ID tweetId by the user userId.\n- getNewsFeed(userId) Retrieves the 10 most recent tweet IDs in the user's news feed (includes own tweets and tweets from followed users), ordered from most recent to least recent.\n- follow(followerId, followeeId) The user with ID followerId follows the user with ID followeeId.\n- unfollow(followerId, followeeId) The user with ID followerId unfollows the user with ID followeeId.",
+  "examples": [
+    {
+      "input": "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[1,5],[1],[1,2],[1],[1,2],[1]]",
+      "output": "[null,null,[5],null,[6,5],null,[5]]"
+    },
+    {
+      "input": "[\"Twitter\",\"postTweet\",\"postTweet\",\"getNewsFeed\"]\n[[],[1,1],[1,2],[1]]",
+      "output": "[null,null,null,[2,1]]"
+    }
+  ],
+  "constraints": "1 <= userId, followerId, followeeId <= 500. 0 <= tweetId <= 10^4. At most 3 * 10^4 calls total.",
+  "python_template": "# Design Twitter\n\nfrom typing import List\n\nclass Twitter:\n    def __init__(self):\n        pass\n\n    def postTweet(self, userId: int, tweetId: int) -> None:\n        pass\n\n    def getNewsFeed(self, userId: int) -> List[int]:\n        pass\n\n    def follow(self, followerId: int, followeeId: int) -> None:\n        pass\n\n    def unfollow(self, followerId: int, followeeId: int) -> None:\n        pass\n",
+  "go_template": "// Design Twitter\n\npackage main\n\ntype Twitter struct {\n\n}\n\nfunc Constructor() Twitter {\n    return Twitter{}\n}\n\nfunc (t *Twitter) PostTweet(userId int, tweetId int) {\n\n}\n\nfunc (t *Twitter) GetNewsFeed(userId int) []int {\n    return nil\n}\n\nfunc (t *Twitter) Follow(followerId int, followeeId int) {\n\n}\n\nfunc (t *Twitter) Unfollow(followerId int, followeeId int) {\n\n}\n",
+  "cpp_template": "// Design Twitter\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Twitter {\npublic:\n    Twitter() {\n\n    }\n\n    void PostTweet(int userId, int tweetId) {\n\n    }\n\n    vector<int> GetNewsFeed(int userId) {\n        return {};\n    }\n\n    void Follow(int followerId, int followeeId) {\n\n    }\n\n    void Unfollow(int followerId, int followeeId) {\n\n    }\n};\n",
+  "java_template": "// Design Twitter\n\nimport java.util.*;\n\nclass Twitter {\n    public Twitter() {\n\n    }\n\n    public void PostTweet(int userId, int tweetId) {\n\n    }\n\n    public int[] GetNewsFeed(int userId) {\n        return new int[]{};\n    }\n\n    public void Follow(int followerId, int followeeId) {\n\n    }\n\n    public void Unfollow(int followerId, int followeeId) {\n\n    }\n}\n",
+  "js_template": "// Design Twitter\n\nclass Twitter {\n    constructor() {\n\n    }\n\n    postTweet(userId, tweetId) {\n\n    }\n\n    getNewsFeed(userId) {\n\n    }\n\n    follow(followerId, followeeId) {\n\n    }\n\n    unfollow(followerId, followeeId) {\n\n    }\n}\n",
+  "performance": {
+    "target_time": "Amortized O(log n) updates, O((f + 10) log f) feed merge",
+    "accepted_time": [
+      "Amortized O(log n) updates, O((f + 10) log f) feed merge"
+    ],
+    "rejected_time": [
+      "O(total_tweets) per feed query"
+    ],
+    "target_space": "O(tweets + follows)",
+    "stress_intent": "exercise multi-user posting, following, and feed queries that punish rescanning all tweets for every request",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

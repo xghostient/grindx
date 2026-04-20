@@ -1,0 +1,39 @@
+{
+  "id": "minimum-add-to-make-parentheses-valid",
+  "name": "Minimum Add to Make Parentheses Valid",
+  "difficulty": "Medium",
+  "description": "A parentheses string is valid if every opening parenthesis '(' has a corresponding closing parenthesis ')' and vice versa. Given a parentheses string s, return the minimum number of parentheses we must add to make the string valid.",
+  "examples": [
+    {
+      "input": "s = \"())\"",
+      "output": "1"
+    },
+    {
+      "input": "s = \"(((\"",
+      "output": "3"
+    },
+    {
+      "input": "s = \"()\"",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= s.length <= 1000. s consists of '(' and ')' characters only.",
+  "python_template": "# Minimum Add to Make Parentheses Valid\n\ndef minAddToMakeValid(s: str) -> int:\n    pass\n",
+  "go_template": "// Minimum Add to Make Parentheses Valid\n\npackage main\n\nfunc minAddToMakeValid(s string) int {\n    return 0\n}\n",
+  "cpp_template": "// Minimum Add to Make Parentheses Valid\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint minAddToMakeValid(string& s) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Add to Make Parentheses Valid\n\nclass Solution {\n    public int minAddToMakeValid(String s) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Minimum Add to Make Parentheses Valid\n\nfunction minAddToMakeValid(s) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise unmatched-open and unmatched-close accounting over multiple max-length parenthesis strings that reject repeated pair-stripping locally",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

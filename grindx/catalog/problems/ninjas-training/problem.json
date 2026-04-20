@@ -1,0 +1,36 @@
+{
+  "id": "ninjas-training",
+  "name": "Ninja's Training",
+  "difficulty": "Medium",
+  "category": "2D DP",
+  "description": "A ninja has a training plan for n days. Each day he can perform one of 3 activities, earning points[i][0], points[i][1], or points[i][2]. He cannot perform the same activity on two consecutive days. Find the maximum points he can earn.",
+  "examples": [
+    {
+      "input": "points = [[1,2,5],[3,1,1],[3,3,3]]",
+      "output": "11"
+    },
+    {
+      "input": "points = [[10,40,70],[20,50,80],[30,60,90]]",
+      "output": "210"
+    }
+  ],
+  "constraints": "1 <= n <= 10^5, 1 <= points[i][j] <= 100",
+  "python_template": "def ninjaTraining(points: list[list[int]]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc ninjaTraining(points [][]int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Ninja's Training\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint ninjaTraining(vector<vector<int>>& points) {\n    return 0;\n}\n",
+  "java_template": "// Ninja's Training\n\nclass Solution {\n    public int ninjaTraining(int[][] points) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Ninja's Training\n\nfunction ninjaTraining(points) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(3^n)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "separate day-task DP from plain recursive branching using longer schedules with persistent tradeoffs",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

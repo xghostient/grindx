@@ -1,0 +1,36 @@
+{
+  "id": "lis-04-number-lis",
+  "name": "Number of Longest Increasing Subsequences",
+  "difficulty": "Hard",
+  "category": "LIS",
+  "description": "Given an integer array nums, return the number of longest increasing subsequences.",
+  "examples": [
+    {
+      "input": "nums = [1, 3, 5, 4, 7]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [2, 2, 2, 2, 2]",
+      "output": "5"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 2000, -10^6 <= nums[i] <= 10^6",
+  "python_template": "def findNumberOfLIS(nums: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc findNumberOfLIS(nums []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Number of Longest Increasing Subsequences\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint findNumberOfLIS(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Number of Longest Increasing Subsequences\n\nclass Solution {\n    public int findNumberOfLIS(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Number of Longest Increasing Subsequences\n\nfunction findNumberOfLIS(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n^2)",
+    "accepted_time": [
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(2^n)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "separate LIS-count DP from exponential include-skip recursion using longer arrays with many valid subsequences",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

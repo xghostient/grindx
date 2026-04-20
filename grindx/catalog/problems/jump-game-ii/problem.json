@@ -1,0 +1,39 @@
+{
+  "id": "jump-game-ii",
+  "name": "Jump Game II",
+  "difficulty": "Medium",
+  "description": "You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0]. Each element nums[i] represents the maximum length of a forward jump from index i. Return the minimum number of jumps to reach nums[n - 1]. You can assume that you can always reach the last index.",
+  "examples": [
+    {
+      "input": "nums = [2,3,1,1,4]",
+      "output": "2 (jump 1 step from 0 to 1, then 3 steps to end)"
+    },
+    {
+      "input": "nums = [2,3,0,1,4]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "2"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 10^4. 0 <= nums[i] <= 1000. It's guaranteed you can reach nums[n - 1].",
+  "python_template": "# Jump Game II\n\nfrom typing import List\n\ndef jump(nums: List[int]) -> int:\n    pass\n",
+  "go_template": "// Jump Game II\n\npackage main\n\nfunc jump(nums []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Jump Game II\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint jump(vector<int>& nums) {\n    return 0;\n}\n",
+  "java_template": "// Jump Game II\n\nclass Solution {\n    public int jump(int[] nums) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Jump Game II\n\nfunction jump(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "exercise large arrays that punish quadratic jump counting",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

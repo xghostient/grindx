@@ -1,0 +1,41 @@
+{
+  "id": "next-permutation",
+  "name": "Next Permutation",
+  "difficulty": "Medium",
+  "description": "A permutation of an array of integers is an arrangement of its members into a sequence. The next permutation of an array is the next lexicographically greater permutation. If the array is the last permutation, rearrange it as the lowest possible order (sorted in ascending order). Modify the array in-place with only constant extra memory.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "[1,3,2]"
+    },
+    {
+      "input": "nums = [3,2,1]",
+      "output": "[1,2,3]"
+    },
+    {
+      "input": "nums = [1,1,5]",
+      "output": "[1,5,1]"
+    }
+  ],
+  "constraints": "1 <= nums.length <= 100. 0 <= nums[i] <= 100.",
+  "python_template": "# Next Permutation\n\nfrom typing import List\n\ndef nextPermutation(nums: List[int]) -> None:\n    pass\n",
+  "go_template": "// Next Permutation\n\npackage main\n\nfunc nextPermutation(nums []int) {\n\n}\n",
+  "cpp_template": "// Next Permutation\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nvoid nextPermutation(vector<int>& nums) {\n\n}\n",
+  "java_template": "// Next Permutation\n\nclass Solution {\n    public void nextPermutation(int[] nums) {\n\n    }\n}\n",
+  "js_template": "// Next Permutation\n\nfunction nextPermutation(nums) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "rejected_time": [
+      "O(n^3)"
+    ],
+    "target_space": "O(1)",
+    "stress_intent": "focus on lexicographic correctness; the published constraints are too small to separate quadratic solutions meaningfully",
+    "reference_solution_required": true,
+    "enforcement": "best-effort-local"
+  }
+}

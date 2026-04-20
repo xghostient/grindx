@@ -1,0 +1,39 @@
+{
+  "id": "count-inversions",
+  "name": "Count Inversions",
+  "difficulty": "Medium",
+  "description": "Given an array of integers, count the number of inversions. An inversion is a pair (i, j) where i < j but arr[i] > arr[j]. The count of inversions indicates how far (or close) the array is from being sorted. A sorted array has 0 inversions.",
+  "examples": [
+    {
+      "input": "arr = [2, 4, 1, 3, 5]",
+      "output": "3 (pairs: (2,1), (4,1), (4,3))"
+    },
+    {
+      "input": "arr = [5, 4, 3, 2, 1]",
+      "output": "10"
+    },
+    {
+      "input": "arr = [1, 2, 3, 4, 5]",
+      "output": "0"
+    }
+  ],
+  "constraints": "1 <= arr.length <= 5 * 10^4. 1 <= arr[i] <= 10^4.",
+  "python_template": "# Count Inversions\n\nfrom typing import List\n\ndef countInversions(arr: List[int]) -> int:\n    pass\n",
+  "go_template": "// Count Inversions\n\npackage main\n\nfunc countInversions(arr []int) int {\n    return 0\n}\n",
+  "cpp_template": "// Count Inversions\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint countInversions(vector<int>& arr) {\n    return 0;\n}\n",
+  "java_template": "// Count Inversions\n\nclass Solution {\n    public int countInversions(int[] arr) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Count Inversions\n\nfunction countInversions(arr) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "kill quadratic inversion counting on 50k-element adversarial arrays",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

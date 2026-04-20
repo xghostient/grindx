@@ -1,0 +1,39 @@
+{
+  "id": "min-cost-of-rope",
+  "name": "Minimum Cost of Ropes",
+  "difficulty": "Easy",
+  "description": "Given an array of rope lengths, connect all ropes into one rope. The cost of connecting two ropes is the sum of their lengths. Return the minimum total cost to connect all ropes. You should always connect the two smallest ropes first (greedy approach using a min-heap).",
+  "examples": [
+    {
+      "input": "ropes = [4, 3, 2, 6]",
+      "output": "29 (connect 2+3=5 cost 5, connect 4+5=9 cost 9, connect 6+9=15 cost 15, total=29)"
+    },
+    {
+      "input": "ropes = [1, 2, 3]",
+      "output": "9 (connect 1+2=3 cost 3, connect 3+3=6 cost 6, total=9)"
+    },
+    {
+      "input": "ropes = [5]",
+      "output": "0 (only one rope, no connections needed)"
+    }
+  ],
+  "constraints": "1 <= ropes.length <= 10^5. 1 <= ropes[i] <= 10^6.",
+  "python_template": "# Minimum Cost of Ropes\n\nfrom typing import List\n\ndef minCostOfRopes(ropes: List[int]) -> int:\n    pass\n",
+  "go_template": "// Minimum Cost of Ropes\n\npackage main\n\nfunc minCostOfRopes(ropes []int) int64 {\n    return 0\n}\n",
+  "cpp_template": "// Minimum Cost of Ropes\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nlong long minCostOfRopes(vector<int>& ropes) {\n    return 0;\n}\n",
+  "java_template": "// Minimum Cost of Ropes\n\nclass Solution {\n    public long minCostOfRopes(int[] ropes) {\n        return 0L;\n    }\n}\n",
+  "js_template": "// Minimum Cost of Ropes\n\nfunction minCostOfRopes(ropes) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n log n)",
+    "accepted_time": [
+      "O(n log n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "exercise 100k rope lengths that punish repeated re-sorting after each merge",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

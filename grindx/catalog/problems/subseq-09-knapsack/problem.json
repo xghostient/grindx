@@ -1,0 +1,36 @@
+{
+  "id": "subseq-09-knapsack",
+  "name": "Unbounded Knapsack",
+  "difficulty": "Medium",
+  "category": "Subsequences",
+  "description": "Given N items with weight and profit, and a knapsack of capacity W, find the maximum profit. You can take unlimited copies of each item.",
+  "examples": [
+    {
+      "input": "N = 2, W = 3, profit = [5, 11], weight = [2, 3]",
+      "output": "11"
+    },
+    {
+      "input": "N = 3, W = 10, profit = [1, 5, 8], weight = [1, 4, 6]",
+      "output": "13"
+    }
+  ],
+  "constraints": "1 <= N <= 1000, 1 <= W <= 1000",
+  "python_template": "def unboundedKnapsack(N: int, W: int, profit: list[int], weight: list[int]) -> int:\n    pass\n",
+  "go_template": "package main\n\nfunc unboundedKnapsack(N, W int, profit, weight []int) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Unbounded Knapsack\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint unboundedKnapsack(int N, int W, vector<int>& profit, vector<int>& weight) {\n    return 0;\n}\n",
+  "java_template": "// Unbounded Knapsack\n\nclass Solution {\n    public int unboundedKnapsack(int N, int W, int[] profit, int[] weight) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Unbounded Knapsack\n\nfunction unboundedKnapsack(N, W, profit, weight) {\n\n}\n",
+  "performance": {
+    "target_time": "O(N * W)",
+    "accepted_time": [
+      "O(N * W)"
+    ],
+    "rejected_time": [
+      "O(W * 2^N)"
+    ],
+    "target_space": "O(W)",
+    "stress_intent": "separate unbounded-knapsack DP from plain recursion using larger capacities with repeated include-stay branching",
+    "reference_solution_required": true,
+    "enforcement": "strict-local"
+  }
+}

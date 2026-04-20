@@ -1,0 +1,38 @@
+{
+  "id": "evaluate-reverse-polish-notation",
+  "name": "Evaluate Reverse Polish Notation",
+  "difficulty": "Medium",
+  "description": "You are given an array of strings tokens that represents an arithmetic expression in Reverse Polish Notation. Evaluate the expression and return the integer result. Valid operators are +, -, *, /. Division truncates toward zero.",
+  "examples": [
+    {
+      "input": "tokens = [\"2\",\"1\",\"+\",\"3\",\"*\"]",
+      "output": "9 ((2+1)*3)"
+    },
+    {
+      "input": "tokens = [\"4\",\"13\",\"5\",\"/\",\"+\"]",
+      "output": "6 (4+(13/5))"
+    },
+    {
+      "input": "tokens = [\"10\",\"6\",\"9\",\"3\",\"+\",\"-11\",\"*\",\"/\",\"*\",\"17\",\"+\",\"5\",\"+\"]",
+      "output": "22"
+    }
+  ],
+  "constraints": "1 <= tokens.length <= 10^4. Each token is an operator or an integer in [-200, 200].",
+  "python_template": "# Evaluate Reverse Polish Notation\n\nfrom typing import List\n\ndef evalRPN(tokens: List[str]) -> int:\n    pass\n",
+  "go_template": "// Evaluate Reverse Polish Notation\n\npackage main\n\nfunc evalRPN(tokens []string) int {\n\treturn 0\n}\n",
+  "cpp_template": "// Evaluate Reverse Polish Notation\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nint evalRPN(vector<string>& tokens) {\n    return 0;\n}\n",
+  "java_template": "// Evaluate Reverse Polish Notation\n\nclass Solution {\n    public int evalRPN(String[] tokens) {\n        return 0;\n    }\n}\n",
+  "js_template": "// Evaluate Reverse Polish Notation\n\nfunction evalRPN(tokens) {\n\n}\n",
+  "performance": {
+    "target_time": "O(n)",
+    "accepted_time": [
+      "O(n)"
+    ],
+    "rejected_time": [
+      "O(n^2)"
+    ],
+    "target_space": "O(n)",
+    "stress_intent": "long postfix streams punish repeated subexpression reparsing",
+    "enforcement": "best-effort-local"
+  }
+}
