@@ -136,9 +136,9 @@ Press `Ctrl+E` on the solve screen to get AI-powered feedback on your solution â
 Set two environment variables:
 
 ```bash
-export GRINDX_AI_PROVIDER=groq              # or ollama, anthropic, openai
+export GRINDX_AI_PROVIDER=groq              # or ollama, anthropic, openai, bedrock
 export GRINDX_AI_MODEL=llama-3.3-70b-versatile  # optional, sensible defaults per provider
-export GRINDX_AI_KEY=gsk_...                # not needed for ollama
+export GRINDX_AI_KEY=gsk_...                # not needed for ollama or bedrock
 export GRINDX_AI_URL=https://custom.api/v1  # optional, auto-detected per provider
 ```
 
@@ -159,8 +159,25 @@ api_key = "gsk_..."
 | `groq` | Yes | llama-3.3-70b-versatile | Fast, free tier available |
 | `anthropic` | Yes | claude-sonnet-4-20250514 | Claude |
 | `openai` | Yes | gpt-4o | GPT |
+| `bedrock` | No (IAM/SSO) | claude-sonnet (Bedrock) | AWS Bedrock, supports inference profile ARNs |
 
 Any OpenAI-compatible API works â€” set provider to `openai` and add `base_url`.
+
+### AWS Bedrock
+
+For corporate environments using AWS Bedrock with IAM or SSO authentication:
+
+```toml
+[ai]
+provider = "bedrock"
+model = "anthropic.claude-sonnet-4-20250514-v1:0"
+aws_profile = "my-profile"   # optional, uses default credential chain if omitted
+aws_region = "us-west-2"     # optional, uses boto3 default if omitted
+```
+
+The `model` field accepts both native Bedrock model IDs (e.g. `anthropic.claude-sonnet-4-20250514-v1:0`) and inference profile ARNs (e.g. `arn:aws:bedrock:us-west-2:123456:application-inference-profile/abc123`).
+
+Requires `boto3` (`pip install boto3`) and valid AWS credentials (SSO session, env vars, instance profile, etc.).
 
 ## Custom Sheets & Problems
 
